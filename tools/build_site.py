@@ -373,7 +373,7 @@ of {pricing['totals']['priced']} priced selections fall inside that band.</div>
         if ol:
             cells = (f"<td class=\"num\">{ol['p_fair']*100:.1f}%</td><td class=\"num\"><strong>{ol['card_decimal']:.2f}</strong></td>"
                      f"<td class=\"num small\">{dec_to_american(ol['card_decimal'])}</td>"
-                     f"<td><span class=\"pill {ol['confidence']}\">{ol['confidence'][:3]}</span></td>")
+                     f"<td><span class=\"pill {ol['confidence']}\">{ol['confidence']}</span></td>")
         else:
             cells = "<td colspan=\"4\" class=\"small muted\">not priced - no split printed</td>"
         doc += f"""<tr><td class="small">{esc(r['s'])}</td><td>{esc(r['e'])}</td><td class="small num">{esc(r['start_label'])}</td>
