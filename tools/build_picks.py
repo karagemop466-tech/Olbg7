@@ -21,6 +21,13 @@ DATA = os.path.join(ROOT, "data")
 # Handball: OLBG prints "Tie" as the most-tipped selection on 11 of 15 matches, which is a
 # page-level artefact (flag F-002), so we publish a match winner and price it from a stated
 # view of the fixture instead of from the split.
+CODES = {
+    "Basketball": "BB", "Baseball": "BL", "Ice Hockey": "IH", "Cricket": "CK",
+    "Rugby Union": "RU", "Rugby League": "RL", "Tennis": "TN", "Volleyball": "VB",
+    "Handball": "HB", "Golf": "GF", "Darts": "DA", "Motor Racing": "MR",
+    "Gaelic Sports": "GS", "Greyhounds": "GY", "Snooker": "SN",
+}
+
 HANDBALL_P = {
     "12136": (0.62, "CAL-2 (Tie split unusable; home favourite)"),
     "12132": (0.60, "CAL-2 (Tie split unusable; home favourite)"),
@@ -93,7 +100,7 @@ def main():
 
     seen = {}
     for rec in out:
-        code = rec["sport"][:3].upper()
+        code = CODES.get(rec["sport"], rec["sport"][:2].upper())
         seen[code] = seen.get(code, 0) + 1
         rec["id"] = f"{code}-{seen[code]:02d}"
 

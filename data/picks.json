@@ -23,7 +23,7 @@
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
-   "id": "BAS-01"
+   "id": "BB-01"
   },
   {
    "sport": "Basketball",
@@ -43,7 +43,7 @@
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
-   "id": "BAS-02"
+   "id": "BB-02"
   },
   {
    "sport": "Basketball",
@@ -63,7 +63,7 @@
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
-   "id": "BAS-03"
+   "id": "BB-03"
   },
   {
    "sport": "Basketball",
@@ -87,7 +87,7 @@
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
-   "id": "BAS-04"
+   "id": "BB-04"
   },
   {
    "sport": "Basketball",
@@ -111,7 +111,7 @@
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
-   "id": "BAS-05"
+   "id": "BB-05"
   },
   {
    "sport": "Ice Hockey",
@@ -139,7 +139,7 @@
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 3 fact(s), each with an https source",
-   "id": "ICE-01"
+   "id": "IH-01"
   },
   {
    "sport": "Ice Hockey",
@@ -163,7 +163,7 @@
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
-   "id": "ICE-02"
+   "id": "IH-02"
   },
   {
    "sport": "Ice Hockey",
@@ -191,7 +191,7 @@
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 3 fact(s), each with an https source",
-   "id": "ICE-03"
+   "id": "IH-03"
   },
   {
    "sport": "Ice Hockey",
@@ -215,7 +215,7 @@
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
-   "id": "ICE-04"
+   "id": "IH-04"
   },
   {
    "sport": "Ice Hockey",
@@ -235,7 +235,7 @@
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
-   "id": "ICE-05"
+   "id": "IH-05"
   },
   {
    "sport": "Cricket",
@@ -267,7 +267,7 @@
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 4 fact(s), each with an https source",
-   "id": "CRI-01"
+   "id": "CK-01"
   },
   {
    "sport": "Cricket",
@@ -291,7 +291,7 @@
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
-   "id": "CRI-02"
+   "id": "CK-02"
   },
   {
    "sport": "Cricket",
@@ -315,7 +315,7 @@
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
-   "id": "CRI-03"
+   "id": "CK-03"
   },
   {
    "sport": "Cricket",
@@ -339,7 +339,7 @@
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
-   "id": "CRI-04"
+   "id": "CK-04"
   },
   {
    "sport": "Cricket",
@@ -363,7 +363,7 @@
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
-   "id": "CRI-05"
+   "id": "CK-05"
   },
   {
    "sport": "Rugby Union",
@@ -391,7 +391,7 @@
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 3 fact(s), each with an https source",
-   "id": "RUG-01"
+   "id": "RU-01"
   },
   {
    "sport": "Rugby Union",
@@ -415,7 +415,7 @@
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
-   "id": "RUG-02"
+   "id": "RU-02"
   },
   {
    "sport": "Rugby Union",
@@ -439,7 +439,7 @@
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
-   "id": "RUG-03"
+   "id": "RU-03"
   },
   {
    "sport": "Rugby Union",
@@ -459,7 +459,7 @@
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
-   "id": "RUG-04"
+   "id": "RU-04"
   },
   {
    "sport": "Rugby Union",
@@ -483,7 +483,7 @@
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
-   "id": "RUG-05"
+   "id": "RU-05"
   },
   {
    "sport": "Tennis",
@@ -515,7 +515,7 @@
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 4 fact(s), each with an https source",
-   "id": "TEN-01"
+   "id": "TN-01"
   },
   {
    "sport": "Tennis",
@@ -539,7 +539,7 @@
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
-   "id": "TEN-02"
+   "id": "TN-02"
   },
   {
    "sport": "Tennis",
@@ -559,7 +559,7 @@
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
-   "id": "TEN-03"
+   "id": "TN-03"
   },
   {
    "sport": "Tennis",
@@ -583,7 +583,7 @@
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
-   "id": "TEN-04"
+   "id": "TN-04"
   },
   {
    "sport": "Tennis",
@@ -603,7 +603,7 @@
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
-   "id": "TEN-05"
+   "id": "TN-05"
   },
   {
    "sport": "Volleyball",
@@ -631,7 +631,7 @@
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 3 fact(s), each with an https source",
-   "id": "VOL-01"
+   "id": "VB-01"
   },
   {
    "sport": "Volleyball",
@@ -651,7 +651,7 @@
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
-   "id": "VOL-02"
+   "id": "VB-02"
   },
   {
    "sport": "Volleyball",
@@ -679,7 +679,7 @@
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 3 fact(s), each with an https source",
-   "id": "VOL-03"
+   "id": "VB-03"
   },
   {
    "sport": "Volleyball",
@@ -699,7 +699,7 @@
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
-   "id": "VOL-04"
+   "id": "VB-04"
   },
   {
    "sport": "Volleyball",
@@ -719,7 +719,7 @@
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
-   "id": "VOL-05"
+   "id": "VB-05"
   },
   {
    "sport": "Handball",
@@ -746,7 +746,7 @@
    "cal2_p_fair": 0.62,
    "method": "CAL-2 (Tie split unusable; home favourite)",
    "verification": "price is an explicit estimate, not a tip-split repricing; 2 fact(s), each with an https source; our own selection replaces the one OLBG lists",
-   "id": "HAN-01"
+   "id": "HB-01"
   },
   {
    "sport": "Handball",
@@ -773,7 +773,7 @@
    "cal2_p_fair": 0.6,
    "method": "CAL-2 (Tie split unusable; home favourite)",
    "verification": "price is an explicit estimate, not a tip-split repricing; 2 fact(s), each with an https source; our own selection replaces the one OLBG lists",
-   "id": "HAN-02"
+   "id": "HB-02"
   },
   {
    "sport": "Handball",
@@ -800,7 +800,7 @@
    "cal2_p_fair": 0.55,
    "method": "CAL-2 (Tie split unusable; away side)",
    "verification": "price is an explicit estimate, not a tip-split repricing; 2 fact(s), each with an https source; our own selection replaces the one OLBG lists",
-   "id": "HAN-03"
+   "id": "HB-03"
   },
   {
    "sport": "Handball",
@@ -827,7 +827,7 @@
    "cal2_p_fair": 0.55,
    "method": "CAL-2 (Tie split unusable; away side)",
    "verification": "price is an explicit estimate, not a tip-split repricing; 2 fact(s), each with an https source; our own selection replaces the one OLBG lists",
-   "id": "HAN-04"
+   "id": "HB-04"
   },
   {
    "sport": "Handball",
@@ -854,7 +854,7 @@
    "cal2_p_fair": 0.58,
    "method": "CAL-2 (Tie split unusable; away side)",
    "verification": "price is an explicit estimate, not a tip-split repricing; 2 fact(s), each with an https source; our own selection replaces the one OLBG lists",
-   "id": "HAN-05"
+   "id": "HB-05"
   },
   {
    "sport": "Greyhounds",
@@ -874,7 +874,7 @@
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
-   "id": "GRE-01"
+   "id": "GY-01"
   },
   {
    "sport": "Greyhounds",
@@ -894,7 +894,7 @@
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
-   "id": "GRE-02"
+   "id": "GY-02"
   },
   {
    "sport": "Greyhounds",
@@ -914,7 +914,7 @@
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
-   "id": "GRE-03"
+   "id": "GY-03"
   },
   {
    "sport": "Greyhounds",
@@ -934,7 +934,7 @@
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
-   "id": "GRE-04"
+   "id": "GY-04"
   },
   {
    "sport": "Greyhounds",
@@ -954,7 +954,7 @@
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
-   "id": "GRE-05"
+   "id": "GY-05"
   },
   {
    "sport": "Baseball",
@@ -986,7 +986,7 @@
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 4 fact(s), each with an https source",
-   "id": "BAS-06"
+   "id": "BL-01"
   },
   {
    "sport": "Baseball",
@@ -1010,7 +1010,7 @@
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
-   "id": "BAS-07"
+   "id": "BL-02"
   },
   {
    "sport": "Golf",
@@ -1036,7 +1036,7 @@
    "cal2_p_fair": 0.035,
    "method": "CAL-3 (outright, two-tip market)",
    "verification": "price is an explicit estimate, not a tip-split repricing; 2 fact(s), each with an https source",
-   "id": "GOL-01"
+   "id": "GF-01"
   },
   {
    "sport": "Golf",
@@ -1058,7 +1058,7 @@
    "cal2_p_fair": 0.05,
    "method": "CAL-3 (outright, two-tip market)",
    "verification": "price is an explicit estimate, not a tip-split repricing; 1 fact(s), each with an https source",
-   "id": "GOL-02"
+   "id": "GF-02"
   },
   {
    "sport": "Golf",
@@ -1080,7 +1080,7 @@
    "cal2_p_fair": 0.05,
    "method": "CAL-3 (outright, two-tip market)",
    "verification": "price is an explicit estimate, not a tip-split repricing; 1 fact(s), each with an https source",
-   "id": "GOL-03"
+   "id": "GF-03"
   },
   {
    "sport": "Darts",
@@ -1106,7 +1106,7 @@
    "cal2_p_fair": 0.2,
    "method": "CAL-3 (outright, 36-tip market)",
    "verification": "price is an explicit estimate, not a tip-split repricing; 2 fact(s), each with an https source",
-   "id": "DAR-01"
+   "id": "DA-01"
   },
   {
    "sport": "Darts",
@@ -1132,7 +1132,7 @@
    "cal2_p_fair": 0.06,
    "method": "CAL-3 (single-day event, four-tip market)",
    "verification": "price is an explicit estimate, not a tip-split repricing; 2 fact(s), each with an https source",
-   "id": "DAR-02"
+   "id": "DA-02"
   },
   {
    "sport": "Gaelic Sports",
@@ -1156,7 +1156,7 @@
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
-   "id": "GAE-01"
+   "id": "GS-01"
   },
   {
    "sport": "Gaelic Sports",
@@ -1176,7 +1176,7 @@
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
-   "id": "GAE-02"
+   "id": "GS-02"
   },
   {
    "sport": "Gaelic Sports",
@@ -1202,7 +1202,7 @@
    "cal2_p_fair": 0.175,
    "method": "CAL-3 (outright, 32-county field)",
    "verification": "price is an explicit estimate, not a tip-split repricing; 2 fact(s), each with an https source",
-   "id": "GAE-03"
+   "id": "GS-03"
   },
   {
    "sport": "Gaelic Sports",
@@ -1228,7 +1228,7 @@
    "cal2_p_fair": 0.267,
    "method": "CAL-3 (outright, 12-county field)",
    "verification": "price is an explicit estimate, not a tip-split repricing; 2 fact(s), each with an https source",
-   "id": "GAE-04"
+   "id": "GS-04"
   },
   {
    "sport": "Motor Racing",
@@ -1254,7 +1254,7 @@
    "cal2_p_fair": 0.7,
    "method": "CAL-2 (no tip split printed)",
    "verification": "price is an explicit estimate, not a tip-split repricing; 2 fact(s), each with an https source",
-   "id": "MOT-01"
+   "id": "MR-01"
   },
   {
    "sport": "Motor Racing",
@@ -1280,7 +1280,7 @@
    "cal2_p_fair": 0.455,
    "method": "CAL-2 (four-runner field, seven tips)",
    "verification": "price is an explicit estimate, not a tip-split repricing; 2 fact(s), each with an https source",
-   "id": "MOT-02"
+   "id": "MR-02"
   },
   {
    "sport": "Rugby League",
@@ -1304,7 +1304,7 @@
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
-   "id": "RUG-06"
+   "id": "RL-01"
   },
   {
    "sport": "Rugby League",
@@ -1330,7 +1330,7 @@
    "cal2_p_fair": 0.1875,
    "method": "CAL-3 (outright, 12-team field)",
    "verification": "price is an explicit estimate, not a tip-split repricing; 2 fact(s), each with an https source",
-   "id": "RUG-07"
+   "id": "RL-02"
   },
   {
    "sport": "Rugby League",
@@ -1356,7 +1356,7 @@
    "cal2_p_fair": 0.1,
    "method": "CAL-3 (outright, 17-team field)",
    "verification": "price is an explicit estimate, not a tip-split repricing; 2 fact(s), each with an https source",
-   "id": "RUG-08"
+   "id": "RL-03"
   }
  ]
 }
