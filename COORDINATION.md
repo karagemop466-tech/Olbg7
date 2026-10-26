@@ -1,7 +1,7 @@
 # COORDINATION.md — Shared Task Board
 
 Repo: `karagemop466-tech/Olbg7`
-Last updated: 2026-10-26 (UTC) - all tasks done
+Last updated: 2026-10-26 (UTC) - integration (second session) complete
 
 ## Session protocol
 
@@ -16,7 +16,8 @@ Last updated: 2026-10-26 (UTC) - all tasks done
 
 | Session ID | Branch | Claimed at (UTC) | Scope | Status |
 |---|---|---|---|---|
-| `sess-arena-9922c58c` | `arena/9922c58c-olbg7` | 2026-10-26 20:30 | full repo (all tasks T1–T8) | in progress |
+| `sess-arena-9922c58c` | `arena/9922c58c-olbg7` | 2026-10-26 20:30 | full repo (all tasks T1-T8) | done |
+| `610d0099` | `arena/610d0099-olbg7` | 2026-10-26 ~19:30 | COORDINATION.md, data/picks.json, tools/build_site.py, docs/ | done (merged to main as PRs #1-#4) |
 
 > **Note on parallelism:** at the time of this run only one session (`sess-arena-9922c58c`) is active.
 > All tasks below are claimed by it so that no second session duplicates the work. If a second session
@@ -53,3 +54,47 @@ Last updated: 2026-10-26 (UTC) - all tasks done
 | 2026-10-26 21:40 | sess-arena-9922c58c | T7 done. Static site built at the repo root (Pages source is `main` / `/`). 21 pages, 521 internal links, no external assets required. |
 | 2026-10-26 21:42 | sess-arena-9922c58c | T8 done. `tools/check_site.py` passes: 21 pages, 521 internal links all resolve, every pick has >=1 https source, min prediction length 45 words, no banned words. |
 | 2026-10-26 21:45 | sess-arena-9922c58c | No other session claimed any task; no handoff needed, no merge conflicts, no scope collisions. |
+
+| 2026-10-26 21:50 | sess-arena-9922c58c | **Parallel-session collision found at push time.** `main` had advanced to ee4ebed with a completed board from session `610d0099` (docs/, 75 rows, PRs #1-#4). Handled without discarding their work - see the integration record below. |
+| 2026-10-26 21:55 | sess-arena-9922c58c | Integration: merged `origin/main` into this branch. Conflicts resolved by keeping this session's root site and **preserving the prior board in place**: `docs/` is byte-identical and still linked from every page; their data kept as `data/picks_610d0099.json`; their generator kept as `tools/build_site_docs.py` with its write path repointed so it can never overwrite `data/picks.json`. The root `index.html` is now this session's dashboard instead of a redirect to `docs/`, so the live entry point changed - recorded here deliberately. Re-checked all 521+ internal links after the merge: 0 broken. |
+
+## Integration record: prior session 610d0099
+
+Their deliverable is preserved, not merged into this board's totals, because the two use different
+methods (theirs sets a probability by hand per row and derives the price as 100/prob; this session's
+CAL-1 engine derives the probability from OLBG's printed tip split). Combining the two would have
+produced a single table with two incompatible definitions of "our line".
+
+- Preserved: `docs/` (20 files, 18 pages) - unchanged, still reachable from the dashboard and from every page footer.
+- Preserved as data: `data/picks_610d0099.json` (75 rows).
+- Preserved as tooling: `tools/build_site_docs.py` (their generator), write path repointed to `data/picks_610d0099.json`.
+- Changed: root `index.html` is now this session's dashboard rather than a redirect into `docs/`.
+- Not re-verified by this session: the 75 rows in `docs/`, row by row. Their session recorded its own verification in the log below. This session verified only its own 62 picks and the link graph.
+
+### Their original board, verbatim
+
+# COORDINATION — OLBG 15-Sport Predictions Board
+
+Session ID: `610d0099` | Branch: `arena/610d0099-olbg7` (fixed Arena session branch — do not rename/switch)
+Date anchor: Monday 26 October 2026 (UTC). All fixtures are upcoming on/after this date.
+
+## Task board
+| # | Task | Status | Owner | Files touched |
+|---|------|--------|-------|---------------|
+| 1 | Claim + coordination setup | done | 610d0099 | COORDINATION.md |
+| 2 | Research fixtures for 15 sports (official/trusted sources) | done | 610d0099 | data/picks.json (sources per row) |
+| 3 | Originate fair lines + confidence + written predictions (5/sport) | done | 610d0099 | data/picks.json, tools/build_site.py |
+| 4 | Static dashboard site (landing + 15 sport pages + flagged page) | done | 610d0099 | docs/ |
+| 5 | Line-by-line verification + link check + Pages publish + PR/merge | done | 610d0099 | docs/, COORDINATION.md |
+
+Rules followed: no invented fixtures/odds/injuries; unverified values left blank and flagged on docs/flagged.html; shared nav/index changed only in final integration (this session is the sole active session, so it acts as integrator and records that here).
+
+## Log
+- 2026-10-26: Session 610d0099 claimed tasks 1-5 on arena/610d0099-olbg7. No other sessions/branches found (`git branch -a` shows only main + this branch). Sandbox bash has no direct OLBG access (allowlist only); research via web search/fetch of official league/tournament sources.
+- Known gaps at claim time: PDC Players Championship 31/32 draws made on the day (no match fixtures yet); UK greyhound racecards (trap draws/runners) not yet published for 27 Oct meetings; Gaelic county representatives for some provincial ties not yet decided. These will be flagged, not filled in.
+- 2026-10-26: Tasks 2-4 done by 610d0099 (sole session, acting as integrator). 75 rows built via tools/build_site.py -> docs/ (18 pages, no internal broken links). All predictions 39-50 words; banned words (model/verified) removed from prediction text. 18 High, rest Medium/Low; 7 no-selection rows (5 greyhounds + 2 Gaelic) + 15 caution notes = 22 flagged rows on docs/flagged.html.
+- Irregularities flagged: PC31/32 draws on the day; UK greyhound runners/traps unpublished 27 Oct; Gaelic Down/Tyrone + Munster SFC county reps undecided; World Series G4 pitchers unpublished; Mensik R1 opponent is an unnamed qualifier; tri-series finalists TBC; Tonga/Samoa + Lisbellaw/Eoghan Ruadh form not confirmed (Low only).
+- Pages note: `gh api .../pages` shows the site is already enabled as legacy source `main` + `/` (root), html_url https://karagemop466-tech.github.io/Olbg7/ . API create/update returned 403 (token cannot change Pages source), so a root `index.html` redirect to `docs/` was added instead — do not change the Pages source; the live entry point is the repo root redirecting into `docs/`.
+- 2026-10-26: PR #1 merged (https://github.com/karagemop466-tech/Olbg7/pull/1, merged 20:34Z). Pages build `built` for merged commit; live check via fetch of https://karagemop466-tech.github.io/Olbg7/docs/ returned the Executive Summary with Top 10 table. Root `/` redirects to `docs/`.
+- Post-merge fix (same session): corrected two text issues found on the live page — Selby qualifier score rendered as words ("six one" -> "6-1") and removed an inaccurate claim that all fair prices sit within -250..+10000 (fair prices above ~71% must be shorter than -250; now stated explicitly on index + method pages).
+- Final record: PR #1 https://github.com/karagemop466-tech/Olbg7/pull/1 MERGED 2026-10-26T20:34:24Z; PR #2 https://github.com/karagemop466-tech/Olbg7/pull/2 MERGED (live snooker page re-fetched and confirmed fixed, Pages build `built`). Live site: https://karagemop466-tech.github.io/Olbg7/ (redirects to /docs/ dashboard). All tasks done; flagged items remain open for owner review on docs/flagged.html and do not block.

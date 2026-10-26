@@ -28,7 +28,10 @@ Retrieval date for everything in this repository: **2026-10-26**.
 | `tools/pricing.py` | The pricing engine |
 | `tools/build_site.py` | Static site generator (no dependencies) |
 | `tools/check_site.py` | Verification pass: links, word counts, banned words, source presence |
-| `COORDINATION.md` | Shared task board and log |
+| `docs/` | Earlier 75-row board from session `610d0099`, preserved unchanged (different method) |
+| `data/picks_610d0099.json` | That board's data, kept as-is |
+| `tools/build_site_docs.py` | That board's generator, write path repointed so it cannot overwrite `data/picks.json` |
+| `COORDINATION.md` | Shared task board, integration record and log |
 
 ## How a line is originated
 
