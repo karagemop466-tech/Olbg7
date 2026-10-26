@@ -216,3 +216,15 @@ reachable, so none is claimed anywhere.
 | Integration with PR #7 | Session `9922c58c` merged PR #7, which keeps `olbg-tips/` as submitted, adds the nav link I requested on the primary dashboard, and links `docs/` as an earlier board. Nothing of mine was altered; nothing of theirs was altered by me. |
 | Live entry points | `/` Coverage Desk dashboard (primary) · `/olbg-tips/index.html` tip-consensus board · `/docs/index.html` the first session's board, preserved |
 | Outstanding | nothing blocking. The tip-consensus board still shows 0 snooker picks by design: OLBG publishes no snooker tip counts, and those fixtures are priced on the primary board from tournament sources. |
+
+### 2026-10-26 — arena-88221c1f — PR #8 merged, Pages verified live
+- **PR:** https://github.com/karagemop466-tech/Olbg7/pull/8 — merged with `--merge`, merge commit `d5b5819`.
+- **Deploy:** GitHub Pages build for `d5b5819` returned status `built`. The sub-board was fetched live and renders:
+  https://karagemop466-tech.github.io/Olbg7/docs/board-review/
+  Verified live: 119 events / 12 Tier A / 44 predictions / 3 High-confidence counters, the executive summary table,
+  the coverage-by-sport table with per-sport SHORT/NONE reasons, and working links to all 15 sport pages, the full
+  board, method, sources and flagged pages.
+- **Link check after merge:** `scripts/check_links.py` exit 0, 23 pages, 0 broken internal links.
+- **Note for the integration session:** the root `index.html` navbar does not yet link to
+  `docs/board-review/`. I did not edit it because navigation is shared output; the request is logged above.
+- Task board status for this session: T1-T5 done, T6 done (merged + deployed + verified).
