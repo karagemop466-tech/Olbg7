@@ -351,7 +351,7 @@
    "market": "Win Match",
    "olbg_tips": "3/7",
    "olbg_pct": 43,
-   "prediction": "The draw in South Africa against Australia, at a price that says the layers expect a result. Three of seven tips are on the draw in a Test that starts on 31 October, and the Wanderers pitch has a habit of flattening out after the first two days. It is a low-confidence position: the sample is small and the weather forecast is the thing that would settle it.",
+   "prediction": "The draw in South Africa against Australia, at a price that says the layers expect a result. Three of seven tips are on the draw in a Test that starts on 31 October, and the Wanderers pitch has a habit of flattening out after the first two days. It is a low-confidence position: the sample is small, a draw is only one of three outcomes, and the weather forecast is the thing that would settle it.",
    "facts": [
     {
      "t": "OLBG: Draw most-tipped, 3 of 7 tips, 43%",
@@ -362,7 +362,9 @@
      "src": "https://www.olbg.com/betting-tips/Cricket/All_Cricket/All_Events/South_Africa_vs_Australia/7?event_id=188835"
     }
    ],
-   "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
+   "cal2_p_fair": 0.3,
+   "method": "CAL-2 (draw is one of three outcomes in a Test)",
+   "verification": "price is an explicit estimate, not a tip-split repricing; 2 fact(s), each with an https source",
    "id": "CK-05"
   },
   {
