@@ -1,0 +1,36 @@
+name: Verify site
+
+# GitHub Pages for this repository is pinned to the repo root of `main`
+# (build_type: legacy, source main:/), so there is no deploy job here - the
+# committed HTML is what gets served. This workflow only proves that the
+# committed pages still match the data and that every link resolves.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Re-price every market (tip-consensus board)
+        run: python scripts/price_model.py
+      - name: Rebuild the tip-consensus board
+        run: python scripts/build_site.py
+        env:
+          SITE_OUT: olbg-tips
+      - name: Check sources, word counts, odds band and internal links
+        run: python scripts/link_check.py
+        env:
+          SITE_OUT: olbg-tips
+      - name: Fail if the committed tip-consensus board is out of date with the data
+        run: git diff --exit-code --stat -- olbg-tips data/consensus
