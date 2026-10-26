@@ -43,8 +43,14 @@ BAND_MIN_DEC = 1.40     # -250 American
 BAND_MAX_DEC = 101.00   # +10000 American
 
 THREE_WAY_MARKETS = {
-    "Money Line", "To Win", "Win Match", "Full Time Result", "Win Hurling",
+    "To Win", "Full Time Result",
 }
+# Markets that are two-way by construction even though a draw exists in the sport.
+TWO_WAY_MARKETS = {
+    "Win Match", "Pointspread", "Handicap", "Game Totals", "Puck Line", "Daily Races",
+    "Top 6 Finish", "Top 10 Finish", "Over/Under", "Run Line",
+}
+THREE_WAY_SPORTS = {"Handball", "Rugby Union", "Football", "Ice Hockey"}
 # Two-way / outright markets. Outrights are treated as "many-way" with prior 1/8 when the
 # number of runners is not printed on OLBG; that is an assumption and is flagged.
 OUTRIGHT_MARKETS = {
@@ -52,7 +58,16 @@ OUTRIGHT_MARKETS = {
 }
 
 
-def n_outcomes(market: str, total: int) -> tuple[float, str]:
+def n_outcomes(market: str, total: int, sport: str = "") -> tuple[float, str]:
+    if market in OUTRIGHT_MARKETS:
+        return 1.0 / 8.0, "outright assumed 8 runners"
+    if market in TWO_WAY_MARKETS:
+        return 0.5, "2-way"
+    if market == "Money Line" and sport in THREE_WAY_SPORTS:
+        return 1.0 / 3.0, "3-way"
+    if market in THREE_WAY_MARKETS:
+        return 1.0 / 3.0, "3-way"
+    return 0.5, "2-way"
     if market in OUTRIGHT_MARKETS:
         return 1.0 / 8.0, "outright assumed 8 runners"
     if market in THREE_WAY_MARKETS:
@@ -69,10 +84,10 @@ def american(dec: float):
     return round(-100.0 / (dec - 1.0))
 
 
-def price(market: str, wins, total, pct=None):
+def price(market: str, wins, total, pct=None, sport=""):
     if wins is None or total is None or total <= 0:
         return None
-    prior, structure = n_outcomes(market, total)
+    prior, structure = n_outcomes(market, total, sport)
     p_fair = (wins + K * prior) / (total + K)
     p_fair = max(0.01, min(0.99, p_fair))
     fair_dec = round(1.0 / p_fair, 2)
@@ -118,7 +133,7 @@ def main():
             except ValueError:
                 wins = total = None
         row = {k: ev.get(k) for k in ("s", "c", "e", "id", "path", "d", "start_label", "sel", "m", "tips", "pct")}
-        row["our_line"] = price(ev["m"], wins, total, ev.get("pct"))
+        row["our_line"] = price(ev["m"], wins, total, ev.get("pct"), ev.get("s", ""))
         if row["our_line"] is None:
             row["our_line_status"] = "not priced - OLBG did not print a tip split for this selection"
         out.append(row)

@@ -26,8 +26,8 @@
   {
    "id": "F-004",
    "area": "All sports - kick-off times",
-   "finding": "OLBG does not print a timezone and several of its times disagree with the official body: Glasgow Warriors v Lions is 15:45 on OLBG but 19:45 GMT on URC.tv; Djokovic v Humbert is 28 Oct 06:00 on OLBG while the ATP draw and tournament coverage put it in the 26-28 October window (one source says Tuesday 27 October, 12:00 local); Montes Claros v Cruzeiro is 22:00 on OLBG against 18:30 local in Brazil, which would be 21:30 UK.",
-   "impact": "All times on this site are quoted exactly as OLBG printed them and marked as unconfirmed. Do not assume any of them is UK time.",
+   "finding": "OLBG prints no timezone and several of its times disagree with the governing body: Glasgow Warriors v Lions is 15:45 on OLBG against 19:45 UK on URC.tv; Djokovic v Humbert is 28 Oct 06:00 on OLBG, the ATP page says Wednesday 28 October and two other outlets say Tuesday 27 October at 12:00 local; Montes Claros v Cruzeiro is 22:00 on OLBG against 18:30 on the CBV's official table (19:00 Brasilia); New Zealand v India 3rd T20 is 03:00 on OLBG against 07:00 GMT (20:00 local) on ESPNcricinfo; the greyhound races are labelled 8:24, 8:36, 8:34 in the race name but 16:24, 16:36, 16:34 in OLBG's start column.",
+   "impact": "Every time on this site is quoted exactly as OLBG printed it and is not treated as a settled kick-off time. Where an official time was retrieved it is given in the fact list on the pick card. Do not assume any OLBG time is UK time.",
    "source": "https://urc.tv/"
   },
   {
@@ -103,8 +103,8 @@
   {
    "id": "F-015",
    "area": "All sports - thin samples",
-   "finding": "25 of the 62 written picks rest on four tips or fewer, and 10 rest on a single tip. OLBG's own sample sizes, not our selection, cause this.",
-   "impact": "Those picks are labelled low or medium and priced close to even money by the shrinkage step. They are published for completeness, not as conviction bets.",
+   "finding": "19 of the 56 written predictions rest on four tips or fewer, and 9 rest on a single tip. OLBG's own sample sizes, not our selection, cause this.",
+   "impact": "Those rows are labelled low or medium and are priced close to even money by the shrinkage step. They are published for completeness, not as conviction bets.",
    "source": "https://www.olbg.com/betting-tips"
   },
   {
@@ -113,6 +113,27 @@
    "finding": "One aggregator describes Djokovic v Humbert as 'Basel, 1/16 round' while the ATP describes it as the first round of the 32-player draw at the Swiss Indoors Basel.",
    "impact": "We use the ATP wording: Swiss Indoors Basel, first round. The aggregator's round label is not repeated.",
    "source": "https://www.atptour.com/en/news/djokovic-basel-2026-draw-preview"
+  },
+  {
+   "id": "F-017",
+   "area": "Handball - no independent source",
+   "finding": "No form, injury or squad source was retrieved for the five handball fixtures we priced. The EHF club pages are behind a competition site we could not read, and the OLBG splits on this sport are unusable (F-002).",
+   "impact": "All five handball prices are fixture-level estimates labelled CAL-2 and capped at medium. They are the weakest rows on the board and should be re-priced against the EHF match centre before any stake.",
+   "source": "https://www.olbg.com/betting-tips/Handball/20"
+  },
+  {
+   "id": "F-018",
+   "area": "Outright markets - estimated prices",
+   "finding": "Nine published selections sit in outright or tournament markets (three golf, two darts, four Gaelic, two rugby league, one motor racing) where the number of runners is not printed and the tip sample is between one and thirty-six tips.",
+   "impact": "These rows carry an explicit probability rather than a repriced split, and are labelled CAL-3 on the page. They are honest estimates, not market-derived prices, and every one of them is labelled low confidence except where noted.",
+   "source": "https://www.olbg.com/betting-tips/Golf/5"
+  },
+  {
+   "id": "F-019",
+   "area": "Coverage gap - seven sports short of the five-pick target",
+   "finding": "Golf (3), Darts (2), Baseball (2), Gaelic Sports (4), Motor Racing (2), Rugby League (3) and Snooker (0) cannot reach five picks. Between them OLBG lists 16 events, several of them season outrights a year away, and one entire sport with no tips at all.",
+   "impact": "56 predictions were published against a 75-pick target. The shortfall is named on the dashboard and on each sport page rather than filled with invented fixtures. Closing it needs either a licensed odds feed or the official fixture lists of each competition, neither of which OLBG exposes.",
+   "source": "https://www.olbg.com/betting-tips"
   }
  ],
  "blanks": [
