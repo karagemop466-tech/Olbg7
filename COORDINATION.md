@@ -13,11 +13,11 @@ Run date (user local): 2026-10-26 (Miami, FL, US)
 
 | # | Task | Status | Owner | Files in scope |
 |---|------|--------|-------|----------------|
-| T1 | Reverse-engineer OLBG coverage for the 15 in-scope sports (event pages, markets offered) | in progress | ffb6911b | `research/olbg-map.md`, `data/` |
+| T1 | Reverse-engineer OLBG coverage for the 15 in-scope sports (event pages, markets offered) | done | ffb6911b | `research/olbg-map.md`, `data/` |
 | T2 | Pricing methodology + working pricing engine for all 15 sports (originate own lines) | in progress | ffb6911b | `pricing/`, `research/pricing-methods.md` |
-| T3 | Fixtures + form/H2H/injury research from official sources (upcoming matches, all 15 sports) | in progress | ffb6911b | `data/fixtures.json`, `research/sources.md` |
-| T4 | Write 5 unique predictions per sport (75 total, ≥30 words, selection + own line + confidence) | unclaimed | — | `data/predictions.json` |
-| T5 | GitHub Pages site: dashboard home + executive summary + 15 sport subpages + methods + flagged page | unclaimed | — | `docs/` |
+| T3 | Fixtures + form/H2H/injury research from official sources (upcoming matches, all 15 sports) | done | ffb6911b | `data/fixtures.json`, `research/sources.md` |
+| T4 | Write 5 unique predictions per sport (75 total, ≥30 words, selection + own line + confidence) | in progress | ffb6911b | `data/predictions.json` |
+| T5 | GitHub Pages site: dashboard home + executive summary + 15 sport subpages + methods + flagged page | in progress | ffb6911b | `docs/`, `site/` |
 | T6 | Line-by-line verification pass (every row has official source link; blanks flagged) | unclaimed | — | `research/verification-log.md` |
 | T7 | Integration: PR to `main`, merge, confirm Pages deploy, record result here | unclaimed | — | — |
 
