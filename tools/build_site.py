@@ -252,7 +252,8 @@ def main():
     short_n = len(short)
     methods = {}
     for pp in enriched:
-        methods[pp["_method_label"]] = methods.get(pp["_method_label"], 0) + 1
+        fam = (pp["_method_label"] or "").split(" ")[0].split("(")[0].strip() or "unpriced"
+        methods[fam] = methods.get(fam, 0) + 1
     method_line = ", ".join(f"{k}: {v}" for k, v in sorted(methods.items()))
 
     doc = head("OLBG Coverage Desk - dashboard", "index.html")
