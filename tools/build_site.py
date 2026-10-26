@@ -151,7 +151,8 @@ def head(title, nav_on=""):
     prefix = "../" if nav_on.startswith("sports/") else ""
     navs = [("index.html", "Dashboard"), ("all-events.html", "All events &amp; lines"),
             ("olbg-map.html", "OLBG site map"), ("methodology.html", "Pricing method"),
-            ("sources.html", "Sources"), ("flagged.html", "Flagged for review")]
+            ("sources.html", "Sources"), ("flagged.html", "Flagged for review"),
+            ("olbg-tips/index.html", "Tip-consensus board")]
     on_cls = ' class="on"'
     links = "".join(
         f'<a href="{prefix}{h}"{on_cls if nav_on == h else ""}>{t}</a>' for h, t in navs
@@ -285,6 +286,8 @@ rest instead of inventing fixtures, prices or form lines.</div>
 <li><strong>How the OLBG site is structured</strong> (sport ids, URL grammar, which pages were empty) is on <a href="olbg-map.html">OLBG site map</a>.</li>
 <li><strong>How prices are made</strong> is on <a href="methodology.html">Pricing method</a>.</li>
 <li><strong>Everything we could not confirm</strong> is on <a href="flagged.html">Flagged for review</a>.</li>
+<li><strong>Tip-consensus board.</strong> A third session's 127-row market capture, with its own method and its
+own flagged list, is published at <a href="olbg-tips/index.html">olbg-tips/</a> (requested in COORDINATION.md).</li>
 <li><strong>Earlier board.</strong> A separate 75-row board produced earlier the same day in another session is
 preserved untouched at <a href="docs/index.html">docs/</a>. It uses a different method (hand-set probabilities) and
 is kept for comparison, not merged into these totals.</li>
@@ -305,7 +308,7 @@ is kept for comparison, not merged into these totals.</li>
 <p class="lede">{len(evs)} OLBG events inventoried, {len(ps)} written predictions
 ({hh} high, {sum(1 for p in ps if p['_conf']=='medium')} medium, {sum(1 for p in ps if p['_conf']=='low')} low).
 Prices in the table are our own.</p>"""
-        if len(ps) < 5:
+        if 0 < len(ps) < 5:
             doc += f"""<div class="note flag"><strong>Below the five-pick target.</strong> Only {len(ps)} priced
 selection(s) existed for {esc(name)} on OLBG at retrieval. We have not invented extra matches to fill the quota.
 The constraint is recorded on the <a href="../flagged.html">Flagged for review</a> page.</div>"""
