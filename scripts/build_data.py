@@ -200,6 +200,14 @@ def main():
                     "market": "Reference line (no verified match data)",
                     "selection": target, "decimal": d, "american": american(d),
                     "prob": round(p, 4), "basis": "Tier B - tip-share reference only"})
+                if a and b:
+                    other = b if target.strip() == a else a
+                    if other and other.strip() != target.strip():
+                        d2 = dec_from_prob(1 - p, MARGIN_2WAY)
+                        entry["markets"].append({
+                            "market": "Reference line (no verified match data)",
+                            "selection": other, "decimal": d2, "american": american(d2),
+                            "prob": round(1 - p, 4), "basis": "Tier B - opposite side of the same reference"})
                 entry["prob_a"] = round(p, 4)
                 entry["line_source"] = "tip-share"
             events.append(entry)

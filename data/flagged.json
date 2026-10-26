@@ -3,7 +3,7 @@
   {
    "item": "Brief contradiction: >70% AND no shorter than -250",
    "finding": "-250 is a 71.4% implied probability, so a selection cannot be both 'greater than 70%' and 'no shorter than -250' outside a 70.0%-71.4% band. A second condition, >70% chance, cannot be met by any price longer than about +43.",
-   "impact": "Price window -250/+10000 applied to every pick; confidence graded on probability separately. One pick (Szeged, 68.5%) sits nearest the band; no pick falls literally inside it, so none is claimed as such.",
+   "impact": "Price window -250/+10000 is applied to every pick and shown as a tag. Confidence is graded on probability separately, and Tier B reference lines are capped at Medium. Result: 3 High picks (Szeged 1.39, Veszprem 1.26, WAS Wizards 1.40); only WAS Wizards is inside the -250/+10000 window because the other two price shorter than -250. No pick is claimed to satisfy the literal 70.0-71.4% band.",
    "sources": [
     "https://www.olbg.com/betting-tips"
    ]

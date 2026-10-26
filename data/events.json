@@ -98,6 +98,14 @@
        "american": "-130",
        "prob": 0.5386,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Sada Cruzeiro",
+       "decimal": 2.06,
+       "american": "+106",
+       "prob": 0.4614,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -120,6 +128,14 @@
        "american": "-156",
        "prob": 0.5817,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Sancor Volei W",
+       "decimal": 2.28,
+       "american": "+128",
+       "prob": 0.4183,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -142,6 +158,14 @@
        "american": "-133",
        "prob": 0.5436,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Volei Renata",
+       "decimal": 2.09,
+       "american": "+109",
+       "prob": 0.4564,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -164,6 +188,14 @@
        "american": "-125",
        "prob": 0.5284,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Conegliano W",
+       "decimal": 2.02,
+       "american": "+102",
+       "prob": 0.4716,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -186,6 +218,14 @@
        "american": "-169",
        "prob": 0.6,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Marignano W",
+       "decimal": 2.38,
+       "american": "+138",
+       "prob": 0.4,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -208,6 +248,14 @@
        "american": "-145",
        "prob": 0.5637,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Palac Bydgoszcz W",
+       "decimal": 2.18,
+       "american": "+118",
+       "prob": 0.4363,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -230,6 +278,14 @@
        "american": "-159",
        "prob": 0.5833,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Gaziantep Genclik Spor",
+       "decimal": 2.29,
+       "american": "+129",
+       "prob": 0.4167,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -252,6 +308,14 @@
        "american": "-159",
        "prob": 0.5833,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "AC Oulu",
+       "decimal": 2.29,
+       "american": "+129",
+       "prob": 0.4167,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -274,6 +338,14 @@
        "american": "-130",
        "prob": 0.5392,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Goias Volei",
+       "decimal": 2.07,
+       "american": "+107",
+       "prob": 0.4608,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -296,6 +368,14 @@
        "american": "-130",
        "prob": 0.5392,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Sao Jose",
+       "decimal": 2.07,
+       "american": "+107",
+       "prob": 0.4608,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -318,6 +398,14 @@
        "american": "-130",
        "prob": 0.5392,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Radomka Radom W",
+       "decimal": 2.07,
+       "american": "+107",
+       "prob": 0.4608,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -340,6 +428,14 @@
        "american": "-130",
        "prob": 0.5392,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Mielec W",
+       "decimal": 2.07,
+       "american": "+107",
+       "prob": 0.4608,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -362,6 +458,14 @@
        "american": "-133",
        "prob": 0.5455,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "TFL Altekma",
+       "decimal": 2.1,
+       "american": "+110",
+       "prob": 0.4545,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -384,6 +488,14 @@
        "american": "-133",
        "prob": 0.5455,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Volleys Borken W",
+       "decimal": 2.1,
+       "american": "+110",
+       "prob": 0.4545,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -406,6 +518,14 @@
        "american": "-111",
        "prob": 0.5,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Scandicci W",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -436,6 +556,14 @@
        "american": "-159",
        "prob": 0.5833,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Agen",
+       "decimal": 2.29,
+       "american": "+129",
+       "prob": 0.4167,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -458,6 +586,14 @@
        "american": "-159",
        "prob": 0.5833,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Narbonne",
+       "decimal": 2.29,
+       "american": "+129",
+       "prob": 0.4167,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -480,6 +616,14 @@
        "american": "-130",
        "prob": 0.5392,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Soyaux Angouleme",
+       "decimal": 2.07,
+       "american": "+107",
+       "prob": 0.4608,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -502,6 +646,14 @@
        "american": "-133",
        "prob": 0.5455,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Dax",
+       "decimal": 2.1,
+       "american": "+110",
+       "prob": 0.4545,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -524,6 +676,14 @@
        "american": "-133",
        "prob": 0.5455,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Beziers",
+       "decimal": 2.1,
+       "american": "+110",
+       "prob": 0.4545,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -546,6 +706,14 @@
        "american": "-133",
        "prob": 0.5455,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Aurillac",
+       "decimal": 2.1,
+       "american": "+110",
+       "prob": 0.4545,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -568,6 +736,14 @@
        "american": "-133",
        "prob": 0.5455,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Lions",
+       "decimal": 2.1,
+       "american": "+110",
+       "prob": 0.4545,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -590,6 +766,14 @@
        "american": "-133",
        "prob": 0.5455,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Connacht",
+       "decimal": 2.1,
+       "american": "+110",
+       "prob": 0.4545,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -612,6 +796,14 @@
        "american": "-133",
        "prob": 0.5455,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Valence Romans",
+       "decimal": 2.1,
+       "american": "+110",
+       "prob": 0.4545,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -634,6 +826,14 @@
        "american": "-133",
        "prob": 0.5455,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Stormers",
+       "decimal": 2.1,
+       "american": "+110",
+       "prob": 0.4545,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -656,6 +856,14 @@
        "american": "-133",
        "prob": 0.5455,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Munster",
+       "decimal": 2.1,
+       "american": "+110",
+       "prob": 0.4545,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -678,6 +886,14 @@
        "american": "-133",
        "prob": 0.5455,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Toulouse",
+       "decimal": 2.1,
+       "american": "+110",
+       "prob": 0.4545,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -730,6 +946,14 @@
        "american": "-208",
        "prob": 0.644,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "New Zealand",
+       "decimal": 2.68,
+       "american": "+168",
+       "prob": 0.356,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -752,6 +976,14 @@
        "american": "-213",
        "prob": 0.6459,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Namibia",
+       "decimal": 2.69,
+       "american": "+169",
+       "prob": 0.3541,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -774,6 +1006,14 @@
        "american": "-182",
        "prob": 0.6152,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Sri Lanka One Day Match",
+       "decimal": 2.47,
+       "american": "+147",
+       "prob": 0.3848,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -796,6 +1036,14 @@
        "american": "-256",
        "prob": 0.6847,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Zimbabwe 1st T20 Match",
+       "decimal": 3.02,
+       "american": "+202",
+       "prob": 0.3153,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -818,6 +1066,14 @@
        "american": "-145",
        "prob": 0.5637,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Melbourne Stars W",
+       "decimal": 2.18,
+       "american": "+118",
+       "prob": 0.4363,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -840,6 +1096,14 @@
        "american": "-127",
        "prob": 0.5333,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Brisbane Heat W",
+       "decimal": 2.04,
+       "american": "+104",
+       "prob": 0.4667,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -862,6 +1126,14 @@
        "american": "+102",
        "prob": 0.4712,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "South Africa",
+       "decimal": 1.8,
+       "american": "-125",
+       "prob": 0.5288,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -884,6 +1156,14 @@
        "american": "-159",
        "prob": 0.5833,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Auckland",
+       "decimal": 2.29,
+       "american": "+129",
+       "prob": 0.4167,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -906,6 +1186,14 @@
        "american": "-111",
        "prob": 0.5,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Northern Districts One Day Match",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -928,6 +1216,14 @@
        "american": "-111",
        "prob": 0.5,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Otago One Day Match",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -950,6 +1246,14 @@
        "american": "-111",
        "prob": 0.5,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Melbourne Renegades W",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -972,6 +1276,14 @@
        "american": "-111",
        "prob": 0.5,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Bangladesh",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -1106,6 +1418,14 @@
        "american": "-286",
        "prob": 0.7043,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "MIL Brewers",
+       "decimal": 3.22,
+       "american": "+222",
+       "prob": 0.2957,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -1136,6 +1456,14 @@
        "american": "-256",
        "prob": 0.6875,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Kanturk",
+       "decimal": 3.05,
+       "american": "+205",
+       "prob": 0.3125,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -1158,6 +1486,14 @@
        "american": "-161",
        "prob": 0.5865,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Fr Caseys",
+       "decimal": 2.3,
+       "american": "+130",
+       "prob": 0.4135,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -1395,6 +1731,14 @@
        "american": "-233",
        "prob": 0.6667,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Aliaksandra Sasnovich",
+       "decimal": 2.86,
+       "american": "+186",
+       "prob": 0.3333,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -1417,6 +1761,14 @@
        "american": "-145",
        "prob": 0.5637,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Himeno Sakatsume",
+       "decimal": 2.18,
+       "american": "+118",
+       "prob": 0.4363,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -1439,6 +1791,14 @@
        "american": "-169",
        "prob": 0.6,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Lilli Tagger",
+       "decimal": 2.38,
+       "american": "+138",
+       "prob": 0.4,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -1461,6 +1821,14 @@
        "american": "-125",
        "prob": 0.5288,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Stan Wawrinka",
+       "decimal": 2.02,
+       "american": "+102",
+       "prob": 0.4712,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -1483,6 +1851,14 @@
        "american": "-169",
        "prob": 0.6,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Ugo Humbert",
+       "decimal": 2.38,
+       "american": "+138",
+       "prob": 0.4,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -1505,6 +1881,14 @@
        "american": "-127",
        "prob": 0.5333,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Alejandro Tabilo",
+       "decimal": 2.04,
+       "american": "+104",
+       "prob": 0.4667,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -1527,6 +1911,14 @@
        "american": "-159",
        "prob": 0.5833,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Nauhany Vitoria Leme Da Silva",
+       "decimal": 2.29,
+       "american": "+129",
+       "prob": 0.4167,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -1549,6 +1941,14 @@
        "american": "-159",
        "prob": 0.5833,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Ann Li",
+       "decimal": 2.29,
+       "american": "+129",
+       "prob": 0.4167,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -1571,6 +1971,14 @@
        "american": "-130",
        "prob": 0.5392,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Botic Van De Zandschulp",
+       "decimal": 2.07,
+       "american": "+107",
+       "prob": 0.4608,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -1593,6 +2001,14 @@
        "american": "-133",
        "prob": 0.5455,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Yulia Putintseva",
+       "decimal": 2.1,
+       "american": "+110",
+       "prob": 0.4545,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -1615,6 +2031,14 @@
        "american": "-111",
        "prob": 0.5,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Jil Teichmann",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -1637,6 +2061,14 @@
        "american": "-133",
        "prob": 0.5455,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Sofia Kenin",
+       "decimal": 2.1,
+       "american": "+110",
+       "prob": 0.4545,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -1659,6 +2091,14 @@
        "american": "-111",
        "prob": 0.5,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Magda Linette",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -1681,6 +2121,14 @@
        "american": "-111",
        "prob": 0.5,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Sara Sorribes Tormo",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -1763,6 +2211,14 @@
        "american": "-147",
        "prob": 0.5678,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "SC Magdeburg",
+       "decimal": 2.2,
+       "american": "+120",
+       "prob": 0.4322,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -1785,6 +2241,14 @@
        "american": "-137",
        "prob": 0.55,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "KS Kielce",
+       "decimal": 2.12,
+       "american": "+112",
+       "prob": 0.45,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -2374,6 +2838,14 @@
        "american": "-133",
        "prob": 0.5455,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "SG Flensburg Handewitt",
+       "decimal": 2.1,
+       "american": "+110",
+       "prob": 0.4545,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -2396,6 +2868,14 @@
        "american": "+107",
        "prob": 0.4608,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Skanderborg Handbold",
+       "decimal": 1.77,
+       "american": "-130",
+       "prob": 0.5392,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -2418,6 +2898,14 @@
        "american": "-133",
        "prob": 0.5455,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "ThSV Eisenach",
+       "decimal": 2.1,
+       "american": "+110",
+       "prob": 0.4545,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -2440,6 +2928,14 @@
        "american": "-133",
        "prob": 0.5455,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "BM Granollers",
+       "decimal": 2.1,
+       "american": "+110",
+       "prob": 0.4545,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -2471,6 +2967,14 @@
        "american": "-263",
        "prob": 0.6908,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "LA Kings",
+       "decimal": 3.08,
+       "american": "+208",
+       "prob": 0.3092,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -2494,6 +2998,14 @@
        "american": "-172",
        "prob": 0.602,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "CGY Flames",
+       "decimal": 2.39,
+       "american": "+139",
+       "prob": 0.398,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -2517,6 +3029,14 @@
        "american": "-233",
        "prob": 0.6676,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "DET Red Wings",
+       "decimal": 2.87,
+       "american": "+187",
+       "prob": 0.3324,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -2540,6 +3060,14 @@
        "american": "-182",
        "prob": 0.6154,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Sport",
+       "decimal": 2.48,
+       "american": "+148",
+       "prob": 0.3846,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -2563,6 +3091,14 @@
        "american": "-159",
        "prob": 0.5833,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Linkoping HC",
+       "decimal": 2.29,
+       "american": "+129",
+       "prob": 0.4167,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -2586,6 +3122,14 @@
        "american": "-159",
        "prob": 0.5833,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Rogle BK",
+       "decimal": 2.29,
+       "american": "+129",
+       "prob": 0.4167,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -2609,6 +3153,14 @@
        "american": "-133",
        "prob": 0.5455,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Kolner Haie",
+       "decimal": 2.1,
+       "american": "+110",
+       "prob": 0.4545,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -2696,6 +3248,14 @@
        "american": "-133",
        "prob": 0.5455,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "NJ Devils",
+       "decimal": 2.1,
+       "american": "+110",
+       "prob": 0.4545,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -2719,6 +3279,14 @@
        "american": "-133",
        "prob": 0.5455,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "NSH Predators",
+       "decimal": 2.1,
+       "american": "+110",
+       "prob": 0.4545,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -2742,6 +3310,14 @@
        "american": "-133",
        "prob": 0.5455,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "FLA Panthers",
+       "decimal": 2.1,
+       "american": "+110",
+       "prob": 0.4545,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -2773,6 +3349,14 @@
        "american": "-130",
        "prob": 0.5369,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "MIN Timberwolves",
+       "decimal": 2.06,
+       "american": "+106",
+       "prob": 0.4631,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -2796,6 +3380,14 @@
        "american": "-200",
        "prob": 0.6364,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "MIL Bucks",
+       "decimal": 2.62,
+       "american": "+162",
+       "prob": 0.3636,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -2819,6 +3411,14 @@
        "american": "-175",
        "prob": 0.6074,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "UTA Jazz",
+       "decimal": 2.43,
+       "american": "+143",
+       "prob": 0.3926,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -2906,6 +3506,14 @@
        "american": "-286",
        "prob": 0.7059,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "DAL Mavericks",
+       "decimal": 3.24,
+       "american": "+224",
+       "prob": 0.2941,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -2929,6 +3537,14 @@
        "american": "-213",
        "prob": 0.6482,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Franca",
+       "decimal": 2.71,
+       "american": "+171",
+       "prob": 0.3518,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -3016,6 +3632,14 @@
        "american": "-161",
        "prob": 0.5865,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Mogi das Cruzes",
+       "decimal": 2.3,
+       "american": "+130",
+       "prob": 0.4135,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -3039,6 +3663,14 @@
        "american": "-161",
        "prob": 0.5865,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "PHX Suns",
+       "decimal": 2.3,
+       "american": "+130",
+       "prob": 0.4135,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -3062,6 +3694,14 @@
        "american": "-145",
        "prob": 0.5637,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "BOS Celtics",
+       "decimal": 2.18,
+       "american": "+118",
+       "prob": 0.4363,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -3085,6 +3725,14 @@
        "american": "-125",
        "prob": 0.5288,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "GS Warriors",
+       "decimal": 2.02,
+       "american": "+102",
+       "prob": 0.4712,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -3108,6 +3756,14 @@
        "american": "-125",
        "prob": 0.5288,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Milano",
+       "decimal": 2.02,
+       "american": "+102",
+       "prob": 0.4712,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -3131,6 +3787,14 @@
        "american": "-149",
        "prob": 0.5714,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "BC Dubai",
+       "decimal": 2.22,
+       "american": "+122",
+       "prob": 0.4286,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -3154,6 +3818,14 @@
        "american": "-149",
        "prob": 0.5714,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Real Madrid",
+       "decimal": 2.22,
+       "american": "+122",
+       "prob": 0.4286,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",
@@ -3177,6 +3849,14 @@
        "american": "-111",
        "prob": 0.5,
        "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Regatas",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier B - opposite side of the same reference"
       }
      ],
      "line_source": "tip-share",

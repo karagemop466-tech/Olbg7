@@ -37,6 +37,10 @@ for p in picks:
     p["prob"] = m["prob"] if m else 0.53
     p["window"] = in_window(m["decimal"]) if m else False
     p["conf"] = conf_of(p["prob"]).lower()
+    if p["tier"] == "B" and p["conf"] == "high":
+        p["conf"] = "medium"   # Tier B reference lines are never graded High
+    if p["tier"] == "B" and p["prob"] is not None and p["prob"] >= 0.65:
+        p["conf"] = "medium"
     p["words"] = len(p["body"].split())
 
 CSS = """*{box-sizing:border-box}body{margin:0;font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#16202c;background:#f5f7fa}
@@ -126,11 +130,7 @@ body = f"""<h1>OLBG board review — 15 sports</h1>
 <p class="sub">Ranked by the probability implied by our originated price. "High" means 65% or better.</p>
 <div class="scroll"><table><thead><tr><th>Match</th><th>Selection</th><th>Our price</th><th>Implied</th><th>Confidence</th><th></th></tr></thead>
 <tbody>{rows}</tbody></table></div>
-<div class="warn"><b>The −250 / 70% rule cannot be satisfied as written.</b> A −250 price already implies 71.4%, so
-"greater than 70% chance and no shorter than −250" describes a band only 1.4 points wide (70.0%–71.4%). Every
-selection above is priced inside the −250 to +10000 window you asked for; the probability filter is applied
-separately and explained on the <a href="methodology.html">method</a> page and in
-<a href="flagged.html">Flagged for Review</a>.</div>
+<div class="warn"><b>The −250 / 70% rule cannot be satisfied as written.</b> A −250 price already implies 71.4%, so "greater than 70% chance and no shorter than −250" describes a band only 1.4 points wide (70.0%–71.4%). The table above is ranked by probability, and each row is tagged in the predictions page with whether its price sits inside the −250 to +10000 window. Three picks are graded High; only one of them (WAS Wizards at 1.40) is inside that window, because the other two price shorter than −250. Full reasoning on the <a href="methodology.html">method</a> page and in <a href="flagged.html">Flagged for Review</a>.</div>
 
 <h2>Coverage by sport</h2>
 <div class="scroll"><table><thead><tr><th>Sport</th><th>Events</th><th>Tier A</th><th>Predictions</th><th>5-a-day target</th><th>Board note</th></tr></thead>
