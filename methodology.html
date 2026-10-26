@@ -1,0 +1,65 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pricing method</title><link rel="stylesheet" href="assets/style.css"></head>
+<body><header><div class="wrap"><div><h1>OLBG Coverage Desk</h1>
+<div class="sub">15 sports &middot; our own lines &middot; written predictions &middot; retrieved 2026-10-26</div></div></div></header>
+<nav><div class="wrap"><a href="index.html">Dashboard</a><a href="all-events.html">All events &amp; lines</a><a href="olbg-map.html">OLBG site map</a><a href="methodology.html" class="on">Pricing method</a><a href="sources.html">Sources</a><a href="flagged.html">Flagged for review</a></div></nav>
+<nav style="border-top:1px solid var(--line)"><div class="wrap"><a href="sports/golf.html">Golf</a><a href="sports/volleyball.html">Volleyball</a><a href="sports/rugby-union.html">Rugby Union</a><a href="sports/cricket.html">Cricket</a><a href="sports/snooker.html">Snooker</a><a href="sports/darts.html">Darts</a><a href="sports/baseball.html">Baseball</a><a href="sports/gaelic-sports.html">Gaelic Sports</a><a href="sports/greyhounds.html">Greyhounds</a><a href="sports/tennis.html">Tennis</a><a href="sports/motor-racing.html">Motor Racing</a><a href="sports/handball.html">Handball</a><a href="sports/ice-hockey.html">Ice Hockey</a><a href="sports/basketball.html">Basketball</a><a href="sports/rugby-league.html">Rugby League</a></div></nav>
+<main><h2>How we originate a line</h2>
+<p class="lede">We cannot read bookmaker prices off OLBG - they are rendered client-side and were missing from every
+page we retrieved (see <a href="flagged.html">Flagged for review</a>). So the board is priced by us, from the one
+numeric market signal OLBG does print: the tip split for each selection.</p>
+
+<h3>CAL-1, the engine behind 116 lines</h3>
+<table><thead><tr><th>Step</th><th>What happens</th></tr></thead><tbody>
+<tr><td>1. Prior</td><td>The market structure sets the starting point: 0.50 for a two-way market, 0.3333 for a
+three-way money line, 0.125 for an outright (assumed eight runners, which is an assumption and is labelled).</td></tr>
+<tr><td>2. Shrinkage</td><td>The printed split is pulled toward that prior with 6.0 pseudo-tips:
+<code>p = (wins + K &times; prior) / (total + K)</code>. This stops a 1/1 tip from becoming a 100% certainty and a
+6/6 from becoming a 1.00 shot.</td></tr>
+<tr><td>3. Fair price</td><td><code>1 / p</code>.</td></tr>
+<tr><td>4. Our card price</td><td><code>1 / (p &times; (1 + 0.05))</code> - a 5% margin,
+so every price we publish is shorter than our fair number.</td></tr>
+<tr><td>5. American</td><td>Standard conversion: <code>(dec &minus; 1) &times; 100</code> at 2.00 and above,
+<code>&minus;100 / (dec &minus; 1)</code> below 2.00.</td></tr>
+<tr><td>6. Confidence</td><td><span class="pill high">high</span> needs fair probability &ge; 60%, a sample of at least
+8 tips and a price inside 1.4 to 101.0. <span class="pill medium">medium</span>
+is fair probability &ge; 50%. Everything else is <span class="pill low">low</span>. The label is computed, never
+typed.</td></tr>
+</tbody></table>
+
+<h3>CAL-2, used for Handball only</h3>
+<p class="small">OLBG's handball listing prints "Tie" as the most-popular selection for nearly every Champions League
+match, which makes the printed split unusable (flag F-002). For those five matches we price from the
+competition base rate OLBG itself publishes - EHF Champions League men, favourites won 446 of 654 games (68.2%) -
+shrunk 15% toward 50% to allow for what we do not know about the specific tie. The results and standings we cite are
+official EHF data.</p>
+
+<h3>CAL-3, used where there is no market at all</h3>
+<p class="small">One pick (Antonelli, top-six finish in Mexico City) sits in a market with zero tips. It is priced by
+us from the championship arithmetic and is labelled CAL-3 so it can never be mistaken for a market-derived number.</p>
+
+<h3>The &minus;250 to +10000 band</h3>
+<p class="small">&minus;250 American is 1.4 decimal; +10000 is 101.0. The band is
+applied to our card price. A strong favourite priced under 1.40 is a real pick but is excluded from the high-confidence
+tier, because beating a 1.20 shot is not the part of the market the brief wants us working. Recorded constants:
+margin 0.05, pseudo-count 6.0, band 1.4-101.0.</p>
+
+<h3>Known limits of this approach</h3>
+<ul class="small">
+<li>A tip split is a crowd signal, not a probability. Shrinkage reduces the damage from small samples; it does not
+manufacture information.</li>
+<li>Only 116 of 121 inventoried events printed a split. Events with no split are
+left unpriced rather than guessed.</li>
+<li>The engine prices the selection OLBG highlights. Other outcomes in the same market stay unpriced unless the event
+page was read.</li>
+<li>Confidence describes the strength of our number. It says nothing about whether the bet wins.</li>
+</ul>
+</main><footer>
+<p><strong>Method.</strong> Lines are originated by this desk from OLBG's published tip splits using the CAL-1
+engine described on the <a href="methodology.html">pricing method</a> page; they are not bookmaker prices.
+Predictions are editorial. Every factual claim carries a source link on the row or card it appears in.</p>
+<p>Earlier board from the first session: <a href="docs/index.html">docs/</a>.</p>
+<p>18+. Betting involves risk. If gambling is causing you concern, support is available from GamCare and GambleAware.
+This site republishes no paid tipster content and gives no assurance of profit.</p>
+</footer></body></html>

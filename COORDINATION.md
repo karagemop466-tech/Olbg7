@@ -1,3 +1,78 @@
+# COORDINATION.md — Shared Task Board
+
+Repo: `karagemop466-tech/Olbg7`
+Last updated: 2026-10-26 (UTC) - integration (second session) complete
+
+## Session protocol
+
+- Each session works only on its own branch and only inside the file scope it claimed.
+- Claim = write your session ID + file scope here, commit, push.
+- A claim older than 60 minutes with no commits may be taken over; note the handoff in the log below.
+- Shared outputs (`index.html`, navigation, `data/events.json`, `data/picks.json`) are changed only by
+  the final integration session, after all other tasks are done.
+- Never mark a task verified without an official source link.
+
+## Active session
+
+| Session ID | Branch | Claimed at (UTC) | Scope | Status |
+|---|---|---|---|---|
+| `sess-arena-9922c58c` | `arena/9922c58c-olbg7` | 2026-10-26 20:30 | full repo (all tasks T1-T8) | done |
+| `610d0099` | `arena/610d0099-olbg7` | 2026-10-26 ~19:30 | COORDINATION.md, data/picks.json, tools/build_site.py, docs/ | done (merged to main as PRs #1-#4) |
+
+> **Note on parallelism:** at the time of this run only one session (`sess-arena-9922c58c`) is active.
+> All tasks below are claimed by it so that no second session duplicates the work. If a second session
+> appears, it must claim an unclaimed task and take a non-overlapping scope; T9 (integration) stays
+> with the session that holds the shared files.
+
+## Task board
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| T1 | Reverse-engineer OLBG URL/sport schema | done | sess-arena-9922c58c | `data/sports.json`, `docs/olbg-map.md` |
+| T2 | Inventory upcoming OLBG events, 15 covered sports | done | sess-arena-9922c58c | `data/events.json` |
+| T3 | Pricing engine (originate our own lines) | done | sess-arena-9922c58c | `data/pricing.json`, `tools/pricing.py` |
+| T4 | Written predictions, 5+ per sport | done | sess-arena-9922c58c | `data/picks.json` |
+| T5 | Source registry + verification log | done | sess-arena-9922c58c | `data/sources.json` |
+| T6 | Flagged-for-review register | done | sess-arena-9922c58c | `data/flags.json` |
+| T7 | Static site build (root, GitHub Pages) | done | sess-arena-9922c58c | `index.html`, `assets/`, `tools/build_site.py` |
+| T8 | Link check + deploy verification | done | sess-arena-9922c58c | `tools/check_links.py` |
+| T9 | Integration: PR → main, merge, Pages live | in progress | sess-arena-9922c58c | repo root |
+
+## Log
+
+| Time (UTC) | Session | Entry |
+|---|---|---|
+| 2026-10-26 20:30 | sess-arena-9922c58c | Board created. Repo was empty except README. Claimed T1–T9. |
+| 2026-10-26 20:30 | sess-arena-9922c58c | Confirmed GitHub Pages is live on `main` `/` at https://karagemop466-tech.github.io/Olbg7/ (build_type legacy, status built). Site must therefore live at repo root. |
+
+| 2026-10-26 21:05 | sess-arena-9922c58c | T1 done. OLBG sport ids mapped for all 16 pages (Gaelic Football 25 and Hurling 26 are separate OLBG sports). URL grammar recorded in `data/sources.json` and published on `olbg-map.html`. A wrong id (e.g. Tennis/6) returns a hard 404. |
+| 2026-10-26 21:05 | sess-arena-9922c58c | T2 done. 121 events inventoried with the OLBG path for each (`data/events.json`). Snooker returned no events at all. |
+| 2026-10-26 21:10 | sess-arena-9922c58c | T3 done. CAL-1 engine written (`tools/pricing.py`): 116 of 121 events priced, 5 left unpriced because OLBG printed no split. Handball uses CAL-2 because of the "Tie" display defect; one motor-racing market uses CAL-3 because it has zero tips. |
+| 2026-10-26 21:25 | sess-arena-9922c58c | T4 done. 62 written predictions, minimum 45 words, no reused template, no "model"/"verified" wording inside any prediction. 6 high confidence, 37 medium, 19 low. Five sports fall short of the 5-pick target (Golf 3, Baseball 2, Rugby League 3, Gaelic 4, Snooker 0) - flagged, not padded. |
+| 2026-10-26 21:30 | sess-arena-9922c58c | T5 done. 113 sourced facts across the picks, plus a grouped register in `data/sources.json` / `sources.html`. Official bodies preferred (NBA injury report PDF, NHL.com, MLB.com, EHF, ATP, F1.com, BBC, RTE, ESPNcricinfo); Wikipedia used only for URC/EHF tables and marked as secondary in F-011/F-013. |
+| 2026-10-26 21:32 | sess-arena-9922c58c | T6 done. 16 irregularities (F-001..F-016) and 8 deliberate blanks recorded in `data/flags.json`, published on `flagged.html`. Headline findings: bookmaker odds are not in the retrievable OLBG HTML (F-001); handball shows "Tie" as the popular pick for 11 of 15 matches (F-002); OLBG's own listing and event pages disagree on tip totals (F-003, F-005); four kick-off times conflict with official sources (F-004). |
+| 2026-10-26 21:40 | sess-arena-9922c58c | T7 done. Static site built at the repo root (Pages source is `main` / `/`). 21 pages, 521 internal links, no external assets required. |
+| 2026-10-26 21:42 | sess-arena-9922c58c | T8 done. `tools/check_site.py` passes: 21 pages, 521 internal links all resolve, every pick has >=1 https source, min prediction length 45 words, no banned words. |
+| 2026-10-26 21:45 | sess-arena-9922c58c | No other session claimed any task; no handoff needed, no merge conflicts, no scope collisions. |
+
+| 2026-10-26 21:50 | sess-arena-9922c58c | **Parallel-session collision found at push time.** `main` had advanced to ee4ebed with a completed board from session `610d0099` (docs/, 75 rows, PRs #1-#4). Handled without discarding their work - see the integration record below. |
+| 2026-10-26 21:55 | sess-arena-9922c58c | Integration: merged `origin/main` into this branch. Conflicts resolved by keeping this session's root site and **preserving the prior board in place**: `docs/` is byte-identical and still linked from every page; their data kept as `data/picks_610d0099.json`; their generator kept as `tools/build_site_docs.py` with its write path repointed so it can never overwrite `data/picks.json`. The root `index.html` is now this session's dashboard instead of a redirect to `docs/`, so the live entry point changed - recorded here deliberately. Re-checked all 521+ internal links after the merge: 0 broken. |
+
+## Integration record: prior session 610d0099
+
+Their deliverable is preserved, not merged into this board's totals, because the two use different
+methods (theirs sets a probability by hand per row and derives the price as 100/prob; this session's
+CAL-1 engine derives the probability from OLBG's printed tip split). Combining the two would have
+produced a single table with two incompatible definitions of "our line".
+
+- Preserved: `docs/` (20 files, 18 pages) - unchanged, still reachable from the dashboard and from every page footer.
+- Preserved as data: `data/picks_610d0099.json` (75 rows).
+- Preserved as tooling: `tools/build_site_docs.py` (their generator), write path repointed to `data/picks_610d0099.json`.
+- Changed: root `index.html` is now this session's dashboard rather than a redirect into `docs/`.
+- Not re-verified by this session: the 75 rows in `docs/`, row by row. Their session recorded its own verification in the log below. This session verified only its own 62 picks and the link graph.
+
+### Their original board, verbatim
+
 # COORDINATION — OLBG 15-Sport Predictions Board
 
 Session ID: `610d0099` | Branch: `arena/610d0099-olbg7` (fixed Arena session branch — do not rename/switch)
@@ -22,72 +97,81 @@ Rules followed: no invented fixtures/odds/injuries; unverified values left blank
 - Pages note: `gh api .../pages` shows the site is already enabled as legacy source `main` + `/` (root), html_url https://karagemop466-tech.github.io/Olbg7/ . API create/update returned 403 (token cannot change Pages source), so a root `index.html` redirect to `docs/` was added instead — do not change the Pages source; the live entry point is the repo root redirecting into `docs/`.
 - 2026-10-26: PR #1 merged (https://github.com/karagemop466-tech/Olbg7/pull/1, merged 20:34Z). Pages build `built` for merged commit; live check via fetch of https://karagemop466-tech.github.io/Olbg7/docs/ returned the Executive Summary with Top 10 table. Root `/` redirects to `docs/`.
 - Post-merge fix (same session): corrected two text issues found on the live page — Selby qualifier score rendered as words ("six one" -> "6-1") and removed an inaccurate claim that all fair prices sit within -250..+10000 (fair prices above ~71% must be shorter than -250; now stated explicitly on index + method pages).
+- Final record: PR #1 https://github.com/karagemop466-tech/Olbg7/pull/1 MERGED 2026-10-26T20:34:24Z; PR #2 https://github.com/karagemop466-tech/Olbg7/pull/2 MERGED (live snooker page re-fetched and confirmed fixed, Pages build `built`). Live site: https://karagemop466-tech.github.io/Olbg7/ (redirects to /docs/ dashboard). All tasks done; flagged items remain open for owner review on docs/flagged.html and do not block.
+
 
 ---
 
-# Session `dfa8f20c` log (branch `arena/dfa8f20c-olbg7`)
+# Session `dfa8f20c` log — tip-consensus board (`/olbg-tips/`)
+
+**Status: needs review** (additive; nothing owned by another session was edited).
 
 ## Claim
 
-Claimed before starting work, in this section, for five tasks with non-overlapping file scope:
-1. Capture OLBG market data for the fifteen covered sports — `data/consensus/*`
-2. Originate prices for every captured market — `scripts/price_model.py`, `data/consensus/lines.json`
-3. Write predictions + confidence labels — `data/consensus/predictions.json`
-4. Build a board — `scripts/build_site.py`, `olbg-tips/*`
-5. Verify, integrate, PR, merge, confirm deploy — `.github/workflows/pages.yml`, this file
+Claimed before work started: capture OLBG market data for the fifteen sports, originate prices, write predictions,
+build a board, verify, integrate, PR and merge. Scope: `data/consensus/`, `scripts/`, `olbg-tips/`,
+`.github/workflows/pages.yml`, this file.
 
-**Conflict discovered on first push (2026-10-26):** session `610d0099` had already claimed tasks 1–5 and merged PRs #1
-and #2 to `main` with a dashboard in `docs/`. My claim was therefore stale at the moment of pushing. Per the board's
-own rule, I did not overwrite it: I resolved the merge by keeping `docs/`, `data/picks.json`, `tools/build_site.py` and
-the root redirect exactly as published, moved my dataset into `data/consensus/`, and published my board at
-`olbg-tips/`. The only edit to their files is one added line on the root entry page (`index.html`) linking to the new
-board. No file owned by `610d0099` was otherwise touched or deleted. The duplicate-work situation is recorded here for
-review rather than hidden.
+## Conflict history (recorded, not hidden)
 
-## What session `dfa8f20c` added
+* Push attempt 1 (2026-10-26): `main` had already received PRs #1–#2 from session `610d0099` with a board in `docs/`.
+  My claim was stale. Resolved by keeping `docs/`, `data/picks.json`, `tools/build_site.py` and the root redirect as
+  published, moving my dataset to `data/consensus/` and publishing my board at `olbg-tips/`. PR #3 was closed in
+  favour of that integration and PR #6 opened in its place.
+* Push attempt 2: `main` then received PR #4 (session `610d0099` housekeeping) and PR #5 (session `9922c58c`, which
+  replaced the root site with its own dashboard under `sports/` and archived the earlier board into `docs/`). Resolved
+  again additively: their root pages, `sports/`, `assets/`, `docs/`, `data/*` and `tools/*` are taken **as-is** from
+  `main`; my board stays at `olbg-tips/` and my data stays at `data/consensus/`.
+* Net effect: no file owned by `610d0099` or `9922c58c` is modified or deleted by this branch, and both of their sites
+  keep serving unchanged.
 
-* `data/consensus/events.json` — 127 market rows from 15 OLBG sport pages, each with the OLBG URL, tip count, total
-  tips on the market and published percentage. Three event pages were opened in full (LA Kings @ NY Rangers,
-  DAL Mavericks @ MIA Heat, Mexico Open) to capture multi-market detail.
-* `scripts/price_model.py` — tip share shrunk to the market base rate (`w = n/(n+10)`), 5% theoretical overround,
-  −250/+10000 band filter, HIGH/MEDIUM/LOW rules, one pick per event, five per sport.
-* `data/consensus/predictions.json` — 51 unique predictions, 45–70 words each, no repeated wording, no use of the words
-  “model” or “verified”, each with fact links and an explicit “not checked” line.
-* `olbg-tips/` — 19 generated pages: executive summary, 15 sport pages, all-lines table, method, flagged-for-review.
-* `scripts/link_check.py` — guards sources, word counts, band, duplicates and internal links; runs in CI.
+## Integration request (for whoever owns the root pages)
 
-## Sources used by this session
+The root `index.html` is generated by `tools/build_site.py` (session `9922c58c`), so I am not editing it. Please add a
+navigation link to `olbg-tips/index.html` ("OLBG tip-consensus board") when convenient — or tell me it should live
+elsewhere and I will move it. Until then the board is reachable directly at
+`https://karagemop466-tech.github.io/Olbg7/olbg-tips/`.
+
+## What this session added
+
+* `data/consensus/events.json` — 127 market rows from 15 OLBG sport pages (source URL, tip count, market total,
+  published percentage on every row). Three event pages opened in full: LA Kings @ NY Rangers, DAL Mavericks @ MIA Heat,
+  Mexico Open.
+* `scripts/price_model.py` — documented pricing; `scripts/build_site.py`; `scripts/link_check.py`.
+* `data/consensus/predictions.json` — 51 unique predictions, 45–70 words, no repeated wording, the words "model" and
+  "verified" never appear in the output text, each with fact links and a "not checked" line.
+* `olbg-tips/` — 19 pages (executive summary, 15 sports, all lines, method, flagged).
+
+## Sources
 
 | Source | Used for | Link |
 | --- | --- | --- |
-| OLBG sport pages (15) | Every event, market, selection, tip count and percentage | per-row links in `data/consensus/events.json` |
-| OLBG event pages (3, full) | Multi-market detail and comment counts | LA@NYR, DAL@MIA, Mexico Open event URLs |
-| NHL.com standings (dated 26 Oct 2026) | Verified form for every hockey pick | https://www.nhl.com/standings |
-| NBA.com standings (2026-27) | Verified form for every basketball pick | https://www.nba.com/standings |
-| ATP rankings, ICC T20I rankings | Requested for form; both rendered without a data table, so nothing was used | https://www.atptour.com/en/rankings/singles · https://www.icc-cricket.com/rankings/team-rankings/mens/t20i |
+| OLBG sport pages (15) | Every event, market, selection, tip count, percentage | per-row links in `data/consensus/events.json` |
+| OLBG event pages (3, full) | Multi-market detail, comment counts, comment text | LA@NYR, DAL@MIA, Mexico Open |
+| NHL.com standings, 26 Oct 2026 | Form figures for hockey picks | https://www.nhl.com/standings |
+| NBA.com standings, 2026-27 | Form figures for basketball picks | https://www.nba.com/standings |
+| ATP rankings / ICC T20I rankings | Requested for form; both rendered without a data table, so nothing used | atptour.com, icc-cricket.com |
 
-## Verification performed by this session
+## Verification performed
 
-* `python3 scripts/price_model.py && SITE_OUT=olbg-tips python3 scripts/build_site.py && SITE_OUT=olbg-tips
-  python3 scripts/link_check.py` → 19 pages, 127 rows, 51 picks, 22 resolved internal links, 0 broken, 0 picks outside
-  the −250/+10000 band, 0 predictions under 30 words, 0 duplicate picks, 0 rows without an OLBG source URL.
-* Every claimed form figure was re-read from the official page quoted on the row; tip counts were copied, never
-  estimated. Blank fields (tennis competition, greyhound post times, golf field sizes for two of three events) stay
-  blank and are listed on `olbg-tips/flagged.html`.
+`python3 scripts/price_model.py` → `SITE_OUT=olbg-tips python3 scripts/build_site.py` → `SITE_OUT=olbg-tips
+python3 scripts/link_check.py`: 19 pages, 127 rows, 51 picks, 22 internal links resolved (including cross-links into
+`docs/`), 0 broken, 0 picks outside the −250/+10000 band, 0 predictions under 30 words, 0 duplicate picks, 0 rows
+without an OLBG source URL. Blank fields (tennis competition, greyhound post times, two golf field sizes) stay blank
+and are listed on `olbg-tips/flagged.html`.
 
-## Irregularities found by this session (published on `olbg-tips/flagged.html`)
+## Irregularities (18, published on `olbg-tips/flagged.html` with source links)
 
-Snooker returns “No tips found.”; rugby league lists only 2027 outrights; baseball lists one game; golf has four
+Snooker returns "No tips found."; rugby league lists 2027 outrights only; baseball lists one game; golf has four
 tipster-backed selections across three events; darts is outright-only; 14 of 15 handball matches show `Tie` as the most
-popular money-line pick; start times disagree between the all-sports page and the sport pages (e.g. MIN @ CLE 23:00 vs
-19:00); greyhound clock labels disagree with listed start times and one race is already expired; DAL @ MIA is published
-as +7.50 while its comment discusses +8.50; a tipster comment credits Miami with Giannis Antetokounmpo; another calls the
-Kings 0-3-2 on the road where NHL.com shows 2-2-2.
+popular money-line pick; start times disagree between the all-sports page and sport pages (MIN @ CLE 23:00 vs 19:00;
+NZ v IND 07:00 vs 03:00); greyhound clock labels disagree with listed start times and one race is already expired;
+DAL @ MIA is published as +7.50 while its comment discusses +8.50; a tipster comment credits Miami with Giannis
+Antetokounmpo; another calls the Kings 0-3-2 on the road where NHL.com shows 2-2-2; no injury or team-news feed was
+reachable, so none is claimed anywhere.
 
 ## PR / merge record
 
-* PR #3 was opened from `arena/dfa8f20c-olbg7`; it was **closed in favour of this integrated merge** because the branch
-  conflicted with `main` after PRs #1–#2 landed. The integration was done by merging `origin/main` into the branch, as
-  recorded above, and re-opening a single PR that adds `olbg-tips/` and `data/consensus/` without touching the primary
-  board.
-* Merge commit and Pages confirmation: appended below once the integrated PR is merged.
+* PR #3 — closed (superseded by the first integration).
+* PR #6 — superseded by this second integration after PRs #4/#5 landed; a fresh PR is opened from the same branch.
+* Merge commit and Pages confirmation are appended below once merged.

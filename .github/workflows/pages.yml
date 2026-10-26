@@ -28,8 +28,6 @@ jobs:
         run: python scripts/build_site.py
         env:
           SITE_OUT: olbg-tips
-      - name: Rebuild the primary board
-        run: python tools/build_site.py
       - name: Check sources, word counts, odds band and internal links
         run: python scripts/link_check.py
         env:

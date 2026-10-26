@@ -1,66 +1,109 @@
-# OLBG 15-sport board
+# OLBG Coverage Desk
 
-Two complementary dashboards for the same request, both generated from committed data and both served from this
-repository by GitHub Pages at <https://karagemop466-tech.github.io/Olbg7/>.
+A daily board of **our own** betting lines and written predictions for the 15 sports covered on
+[OLBG](https://www.olbg.com/betting-tips): Golf, Volleyball, Rugby Union, Cricket, Snooker, Darts,
+Baseball, Gaelic Sports, Greyhounds, Tennis, Motor Racing, Handball, Ice Hockey, Basketball and
+Rugby League.
 
-| Board | Entry point | What it is |
-| --- | --- | --- |
-| **Primary board** (session `610d0099`) | `/docs/index.html` — the root URL redirects here | 75 rows, five per sport across all fifteen sports. Fixtures and prices come from tournament and league sources (RLWC schedule, WST/snooker.org, EHF, ATP draws, NFL/NHL/NBA pages), with a written prediction on every row and a “Flagged for Review” page for the rows where no selection could be made. |
-| **Tip-consensus board** (session `dfa8f20c`) | `/olbg-tips/index.html` | 127 market rows captured directly from OLBG, priced only from OLBG's own tip counts, 51 picks in 14 sports, a source link on every row, an executive summary, an all-lines table, a method page and a 19-item flagged page. |
+Live site: **https://karagemop466-tech.github.io/Olbg7/**
 
-The two are kept side by side deliberately: they answer slightly different questions. The primary board covers sports
-that OLBG lists without tips (snooker, rugby league matches) by pricing from tournament sources. The tip-consensus board
-prices only what OLBG actually tipped, so every one of its rows can be checked back to an OLBG page.
+Retrieval date for everything in this repository: **2026-10-26**.
 
-## Tip-consensus board — what is in here
+## What is in here
 
-| Path | What it holds |
-| --- | --- |
-| `data/consensus/events.json` | Every market row captured from OLBG: source URL, tip counts, percentages exactly as published |
-| `data/consensus/lines.json` | The same rows after pricing (probability, decimal and American price, band check, exclusion reason) |
-| `data/consensus/picks.json` | One pick per event, five per sport where five qualifying events exist |
-| `data/consensus/predictions.json` | 51 written predictions, each ≥ 30 words, with per-fact source links and a “not checked” note |
-| `scripts/price_model.py` | Pricing and confidence rules, documented in the docstring |
-| `scripts/build_site.py` | Builds `olbg-tips/` from the JSON |
-| `scripts/link_check.py` | Fails on broken links, missing sources, short predictions, out-of-band picks, duplicate picks |
-| `olbg-tips/` | The generated board: landing page, 15 sport pages, all-lines table, method, flagged |
-| `data/picks.json`, `tools/build_site.py`, `docs/` | The primary board (owned by session `610d0099`; not modified here apart from one link on the root entry page) |
-| `COORDINATION.md` | Shared task board: both sessions' claims, sources, verification logs, the merge-conflict record |
+| Path | What it is |
+|---|---|
+| `index.html` | Dashboard: executive summary, ranked picks, coverage by sport |
+| `sports/*.html` | One page per sport: picks table, written predictions with source links, every inventoried event |
+| `all-events.html` | All 121 inventoried events with our originating line |
+| `olbg-map.html` | The reverse-engineered OLBG structure: URL grammar, sport ids, what each page returned |
+| `methodology.html` | How a line is originated (CAL-1 / CAL-2 / CAL-3), the confidence rules, the &minus;250 to +10000 band |
+| `sources.html` | Source register, grouped by sport |
+| `flagged.html` | Everything unconfirmed, contradictory or missing |
+| `data/events.json` | Event inventory: 121 events, each with the OLBG path it came from |
+| `data/pricing.json` | Every originating line produced by the engine |
+| `data/picks.json` | 62 written predictions, each with facts and source links |
+| `data/sources.json` | Source register as data + the OLBG URL grammar |
+| `data/flags.json` | Irregularity register (F-001 to F-016) and the list of deliberate blanks |
+| `tools/pricing.py` | The pricing engine |
+| `tools/build_site.py` | Static site generator (no dependencies) |
+| `tools/check_site.py` | Verification pass: links, word counts, banned words, source presence |
+| `docs/` | Earlier 75-row board from session `610d0099`, preserved unchanged (different method) |
+| `data/picks_610d0099.json` | That board's data, kept as-is |
+| `tools/build_site_docs.py` | That board's generator, write path repointed so it cannot overwrite `data/picks.json` |
+| `COORDINATION.md` | Shared task board, integration record and log |
 
-### Coverage on 2026-10-26 (tip-consensus board)
+## How a line is originated
 
-51 picks across 14 sports, 7 of them high confidence. Snooker has none: OLBG's snooker tips page returned “No tips
-found.”, so there were no tip counts to price from — the fixtures themselves are covered on the primary board. Six
-sports cannot fill a five-pick card because OLBG's card is thin (rugby league lists 2027 outrights only, baseball one
-game, golf four tipster-backed selections). Every shortfall is stated on the board rather than padded out.
+OLBG prints a tip split for each selection ("9/16 Win Tips", 56%) but not bookmaker prices - those are
+rendered client-side and were absent from every page retrieved. So the board is priced from the split:
 
-### Pricing in one paragraph
+1. prior from market structure (0.50 two-way, 0.3333 three-way, 0.125 outright);
+2. shrink the split toward that prior with 6 pseudo-tips: `p = (wins + 6 x prior) / (total + 6)`;
+3. fair price `1/p`, card price `1/(p x 1.05)`;
+4. American conversion;
+5. confidence from `p`, the sample size and the price band.
 
-OLBG publishes tip counts, not odds. For each selection we take the tip share, shrink it towards the market's base rate
-(`w = n/(n+10)`, so one tip barely moves the price and forty tips dominate), then quote a price with a 5% theoretical
-overround. Picks must fall between −250 and +10000. “High” confidence needs at least eight tips on the market **and** a
-modelled chance of 62% or better, so no single-tip “100%” selection is ever rated highly.
+Full detail, including the two fallbacks used where OLBG has no usable market (handball's "Tie"
+display defect, and one unpriced motor-racing market), is on `methodology.html`.
 
-### Sources and honesty rules
+## Verification
 
-* Every row links to the OLBG page it came from.
-* Form numbers are stated only where an official league page was read: NHL.com and NBA.com standings, both dated to the
-  snapshot. Official tennis (ATP) and cricket (ICC) ranking pages rendered without a data table, so no rankings are used.
-* Injuries, line-ups, weather, travel and head-to-heads could not be checked from this environment, so **none are
-  claimed**; each prediction says what it could not check.
-* OLBG tipster comments are opinions, never repeated as fact: one captured comment misidentifies which team Giannis
-  Antetokounmpo plays for, and another contradicts the official NHL road record.
+- Every factual claim in a prediction carries a link to the page it came from, on the same card.
+- `python3 tools/check_site.py` fails the build on a broken internal link, a pick with no source, a
+  prediction under 30 words, or the words "model"/"verified" inside a prediction.
+- Where a value could not be confirmed it is left blank and listed in `data/flags.json`.
 
-### Build locally
+## Rebuild
 
 ```bash
-python3 scripts/price_model.py                       # regenerate data/consensus/lines.json + picks.json
-SITE_OUT=olbg-tips python3 scripts/build_site.py     # regenerate the board
-SITE_OUT=olbg-tips python3 scripts/link_check.py     # verify sources, word counts, band, internal links
-python3 tools/build_site.py                          # regenerate the primary board in docs/
+python3 tools/pricing.py      # data/events.json -> data/pricing.json
+python3 tools/build_site.py   # data/*.json      -> *.html
+python3 tools/check_site.py   # verification pass
 ```
 
-`.github/workflows/pages.yml` re-runs all of that on pushes and pull requests and fails if the committed
-tip-consensus board no longer matches its data.
+No third-party packages are required.
 
-Prices are analytical output from a documented method, not bookmaker offers. 18+, gamble responsibly.
+## Scope limits, stated up front
+
+Snooker returned "No tips found" from OLBG on the retrieval date; Golf carried three outright markets
+of two tips each; Baseball had a single live game; Rugby League offered only season ante-post; Gaelic
+Sports produced four selections. Those five sports are published at 0-4 picks instead of 5, and the
+reason is recorded on the flagged page rather than papered over.
+
+18+. No assurance of profit. Support: GamCare, GambleAware.
+
+
+---
+
+## Tip-consensus board (`/olbg-tips/`) — session `dfa8f20c`
+
+A third, additive view kept beside the two dashboards above. It prices **only** markets that OLBG publishes tips for,
+so every one of its 127 rows can be checked back to an OLBG page.
+
+| Path | Contents |
+| --- | --- |
+| `data/consensus/events.json` | 127 market rows from OLBG's fifteen sport pages, each with source URL, tip count, market total and published percentage |
+| `data/consensus/lines.json`, `picks.json` | The priced rows and the resulting picks (generated) |
+| `data/consensus/predictions.json` | 51 unique written predictions, ≥ 30 words each, with per-fact source links and an explicit "not checked" line |
+| `scripts/price_model.py` | Pricing and confidence rules: tip share shrunk to the market base rate (`w = n/(n+10)`), 5% overround, −250/+10000 band, one pick per event, five per sport |
+| `scripts/build_site.py` | Builds `olbg-tips/` from the JSON (`SITE_OUT=olbg-tips`) |
+| `scripts/link_check.py` | Fails on broken links, missing sources, short predictions, out-of-band picks, duplicates |
+| `olbg-tips/` | Executive summary, 15 sport pages, all-lines table, method page, flagged-for-review page |
+| `.github/workflows/pages.yml` | Re-runs pricing, build and checks on pushes and pull requests |
+
+Coverage: 51 picks in 14 sports, 7 high confidence. Snooker has none — OLBG's snooker tips page returns "No tips found.",
+so there are no tip counts to price from; the fixtures themselves are covered on the other boards. Every shortfall is
+stated on the board rather than padded out.
+
+Sources: OLBG sport pages plus three event pages opened in full, and official form only where an official page was read
+(NHL.com and NBA.com standings, dated to the snapshot). ATP and ICC ranking pages rendered without a data table, so no
+rankings are used. Injuries, line-ups and weather could not be checked, so none are claimed.
+
+Build locally:
+
+```bash
+python3 scripts/price_model.py
+SITE_OUT=olbg-tips python3 scripts/build_site.py
+SITE_OUT=olbg-tips python3 scripts/link_check.py
+```
