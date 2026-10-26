@@ -3,8 +3,8 @@
 import json, os, shutil, html, re
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-D = os.path.join(ROOT, "data")
-S = os.path.join(ROOT, "docs")
+D = os.path.join(ROOT, "data", "board-review")
+S = os.path.join(ROOT, "docs", "board-review")
 
 SPORT_ORDER = ["Golf","Volleyball","Rugby Union","Cricket","Snooker","Darts","Baseball","Gaelic Sports",
                "Greyhounds","Tennis","Motor Racing","Handball","Ice Hockey","Basketball","Rugby League"]

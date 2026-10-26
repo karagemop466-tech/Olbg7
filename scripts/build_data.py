@@ -12,7 +12,7 @@ Pricing method (documented in docs/methodology.html):
 import json, math, os, glob
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-D = os.path.join(ROOT, "data")
+D = os.path.join(ROOT, "data", "board-review")
 
 MARGIN_2WAY = 1.05
 SHRINK_N = 10.0

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Fail the build if any internal link in docs/ points at a missing file."""
 import os, re, sys
-S = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "docs")
+S = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "docs", "board-review")
 bad = []
 for root, _, files in os.walk(S):
     for f in files:
