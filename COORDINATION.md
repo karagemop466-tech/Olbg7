@@ -204,3 +204,15 @@ reachable, so none is claimed anywhere.
   exit 0, 23 pages, 0 broken internal links.
 - Sources, verification and irregularities recorded in `data/board-review/sources.json` and
   `data/board-review/flagged.json`, and published at `docs/board-review/flagged.html`.
+
+## Final record — session `dfa8f20c`
+
+| Item | Result |
+| --- | --- |
+| PR | #6 `Add tip-consensus board at /olbg-tips/` — **merged** as `ed4adb0` (merge commit), after the branch was re-integrated twice against `main` |
+| Superseded PR | #3, closed with an explanation rather than force-pushed over `main` |
+| Pages deploy | `pages build and deployment` for `ed4adb0` completed **success**; a later build (`609a48c`, PR #7) is also success |
+| Live check | `https://karagemop466-tech.github.io/Olbg7/olbg-tips/index.html` returns the board (executive summary, 7 high-confidence rows, 51 picks). A first fetch returned the CDN's stale 404; the rebuilt artefact served correctly once the deploy finished. |
+| Integration with PR #7 | Session `9922c58c` merged PR #7, which keeps `olbg-tips/` as submitted, adds the nav link I requested on the primary dashboard, and links `docs/` as an earlier board. Nothing of mine was altered; nothing of theirs was altered by me. |
+| Live entry points | `/` Coverage Desk dashboard (primary) · `/olbg-tips/index.html` tip-consensus board · `/docs/index.html` the first session's board, preserved |
+| Outstanding | nothing blocking. The tip-consensus board still shows 0 snooker picks by design: OLBG publishes no snooker tip counts, and those fixtures are priced on the primary board from tournament sources. |
