@@ -1,0 +1,148 @@
+{
+ "sources": [
+  {
+   "url": "https://www.olbg.com/betting-tips",
+   "publisher": "OLBG",
+   "used_for": "All-sports tips feed; cross-check of cricket, baseball, ice hockey, basketball, volleyball boards",
+   "accessed": "2026-10-26"
+  },
+  {
+   "url": "https://www.olbg.com/sitemap-betting-tips.xml",
+   "publisher": "OLBG",
+   "used_for": "Authoritative sport name to sport id map for all 22 sport hubs",
+   "accessed": "2026-10-26"
+  },
+  {
+   "url": "https://www.olbg.com/betting-tips/Golf/5",
+   "publisher": "OLBG",
+   "used_for": "Golf board: Maybank Championship, Mexico Open, Simmons Bank Championship",
+   "accessed": "2026-10-26"
+  },
+  {
+   "url": "https://www.olbg.com/betting-tips/Volleyball/21",
+   "publisher": "OLBG",
+   "used_for": "Volleyball board: 15 fixtures",
+   "accessed": "2026-10-26"
+  },
+  {
+   "url": "https://www.olbg.com/betting-tips/Rugby_Union/9",
+   "publisher": "OLBG",
+   "used_for": "Rugby Union board: 12 fixtures plus Six Nations 2027 outright",
+   "accessed": "2026-10-26"
+  },
+  {
+   "url": "https://www.olbg.com/betting-tips/Cricket/7",
+   "publisher": "OLBG",
+   "used_for": "Cricket board: 12 fixtures plus two outrights",
+   "accessed": "2026-10-26"
+  },
+  {
+   "url": "https://www.olbg.com/betting-tips/Snooker/8",
+   "publisher": "OLBG",
+   "used_for": "Snooker hub \u2014 returned 'No tips found'; market definitions",
+   "accessed": "2026-10-26"
+  },
+  {
+   "url": "https://www.olbg.com/betting-tips/Darts/15",
+   "publisher": "OLBG",
+   "used_for": "Darts board: two tournament markets only",
+   "accessed": "2026-10-26"
+  },
+  {
+   "url": "https://www.olbg.com/betting-tips/Baseball/12",
+   "publisher": "OLBG",
+   "used_for": "Baseball board: one MLB game; market definitions",
+   "accessed": "2026-10-26"
+  },
+  {
+   "url": "https://www.olbg.com/betting-tips/Gaelic_Football/25",
+   "publisher": "OLBG",
+   "used_for": "Gaelic board: two club fixtures plus 2027 All-Ireland outright",
+   "accessed": "2026-10-26"
+  },
+  {
+   "url": "https://www.olbg.com/betting-tips/Greyhounds/28",
+   "publisher": "OLBG",
+   "used_for": "Greyhound board: eight races across four tracks",
+   "accessed": "2026-10-26"
+  },
+  {
+   "url": "https://www.olbg.com/betting-tips/Tennis/3",
+   "publisher": "OLBG",
+   "used_for": "Tennis board: 14 matches",
+   "accessed": "2026-10-26"
+  },
+  {
+   "url": "https://www.olbg.com/betting-tips/Tennis/All_Tennis/All_Events/Stan_Wawrinka_vs_Jiri_Lehecka/3?event_id=902232",
+   "publisher": "OLBG",
+   "used_for": "Event-page market ladder (Win Match, Set Betting, 1st Set Winner, Games Won, Total Games) and confirmation that prices are not exposed",
+   "accessed": "2026-10-26"
+  },
+  {
+   "url": "https://www.olbg.com/betting-tips/Motor_Racing/14",
+   "publisher": "OLBG",
+   "used_for": "Motor Racing board: Mexico City GP plus one ante-post market; F1 market ladder",
+   "accessed": "2026-10-26"
+  },
+  {
+   "url": "https://www.olbg.com/betting-tips/Handball/20",
+   "publisher": "OLBG",
+   "used_for": "Handball board: 15 EHF fixtures",
+   "accessed": "2026-10-26"
+  },
+  {
+   "url": "https://www.olbg.com/betting-tips/Ice_Hockey/13",
+   "publisher": "OLBG",
+   "used_for": "Ice Hockey board: 11 fixtures across NHL, Liiga, SHL, DEL",
+   "accessed": "2026-10-26"
+  },
+  {
+   "url": "https://www.olbg.com/betting-tips/Basketball/4",
+   "publisher": "OLBG",
+   "used_for": "Basketball board: 15 fixtures across NBA, EuroLeague, NBB, Liga Nacional",
+   "accessed": "2026-10-26"
+  },
+  {
+   "url": "https://www.olbg.com/betting-tips/Rugby_League/10",
+   "publisher": "OLBG",
+   "used_for": "Rugby League board: three 2027 outright markets only",
+   "accessed": "2026-10-26"
+  },
+  {
+   "url": "https://ehfcl.eurohandball.com/men/2026-27/standings/",
+   "publisher": "EHF (official)",
+   "used_for": "Handball Group A standings and goal differentials: Veszprem 185:146, Fuchse Berlin 184:172, Porto 158:173, Partizan 148:184",
+   "accessed": "2026-10-26"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/2026%E2%80%9327_EHF_Champions_League_group_stage",
+   "publisher": "Wikipedia (secondary)",
+   "used_for": "Handball Groups B to E standings and head-to-head scores incl. Zagreb 31-29 Celje",
+   "accessed": "2026-10-26"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/2026%E2%80%9327_NBA_season",
+   "publisher": "Wikipedia (secondary)",
+   "used_for": "NBA win-loss records and points for/against for the Eastern Conference teams on the board",
+   "accessed": "2026-10-26"
+  },
+  {
+   "url": "https://www.bbc.com/sport/basketball/tables",
+   "publisher": "BBC Sport (secondary)",
+   "used_for": "Cross-check of NBA Eastern Conference records and scoring totals",
+   "accessed": "2026-10-26"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/2026%E2%80%9327_NHL_season",
+   "publisher": "Wikipedia (secondary)",
+   "used_for": "NHL records, points, goals for/against for the clubs on the board",
+   "accessed": "2026-10-26"
+  },
+  {
+   "url": "https://www.eliteprospects.com/league/nhl",
+   "publisher": "Elite Prospects (secondary)",
+   "used_for": "Cross-check of NHL points standings (Carolina 20, Boston 19, Edmonton 17)",
+   "accessed": "2026-10-26"
+  }
+ ]
+}

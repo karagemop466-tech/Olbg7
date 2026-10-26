@@ -1,0 +1,119 @@
+{
+ "items": [
+  {
+   "item": "Brief contradiction: >70% AND no shorter than -250",
+   "finding": "-250 is a 71.4% implied probability, so a selection cannot be both 'greater than 70%' and 'no shorter than -250' outside a 70.0%-71.4% band. A second condition, >70% chance, cannot be met by any price longer than about +43.",
+   "impact": "Price window -250/+10000 applied to every pick; confidence graded on probability separately. One pick (Szeged, 68.5%) sits nearest the band; no pick falls literally inside it, so none is claimed as such.",
+   "sources": [
+    "https://www.olbg.com/betting-tips"
+   ]
+  },
+  {
+   "item": "Snooker: nothing to price",
+   "finding": "The Snooker hub (sport id 8) returned 'No tips found' on 26 Oct 2026. OLBG documents four markets (Win Match, Handicap, Frame Betting, Win Tournament) but exposed no bookable fixture.",
+   "impact": "Zero snooker events, zero snooker predictions. The 5-a-day target is unmet for this sport and is reported as such rather than filled with invented fixtures.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Snooker/8"
+   ]
+  },
+  {
+   "item": "Rugby League: futures only",
+   "finding": "Both the 2026 Super League and NRL seasons have finished; the hub lists only State of Origin 2027, Super League 2027 and NRL 2027 outrights.",
+   "impact": "One ante-post prediction only. No match lines exist to originate.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Rugby_League/10"
+   ]
+  },
+  {
+   "item": "Darts: tournament markets only",
+   "finding": "The Darts hub listed PDC World Championship 2027 and Players Championship 31, both outright. No match markets were open.",
+   "impact": "One low-confidence outright prediction; the 5-a-day target is unmet.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Darts/15"
+   ]
+  },
+  {
+   "item": "Baseball: one game on the board",
+   "finding": "Despite documented MLB, NPB and KBO coverage, only MIL Brewers @ TB Rays carried a selection.",
+   "impact": "One prediction. Run line and game totals were left un-priced because confirmed starting pitchers were not available.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Baseball/12"
+   ]
+  },
+  {
+   "item": "Golf: three tournaments, one tip each",
+   "finding": "Maybank Championship, Mexico Open and Simmons Bank Championship each carried a single selection, all settling 1 November.",
+   "impact": "Three low-confidence outright notes. First Round Leader and Top-region markets are listed but un-priced: no field data was confirmed.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Golf/5"
+   ]
+  },
+  {
+   "item": "Gaelic Sports scope",
+   "finding": "OLBG's Gaelic hub is Gaelic Football only (id 25). Hurling exists separately as id 26, which is not in the brief's list. Only two club fixtures plus a 2027 All-Ireland outright were live.",
+   "impact": "Two handicap predictions. Gaelic games were not merged with Hurling to avoid inventing coverage.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Gaelic_Football/25"
+   ]
+  },
+  {
+   "item": "Handball: 'Tie' shown as most-tipped everywhere",
+   "finding": "Ten of fifteen EHF fixtures listed 'Tie' as the most-tipped Money Line selection, including FC Barcelona away at Skanderborg and at Granollers. That pattern is implausible as genuine draw support and looks like a placeholder selection.",
+   "impact": "Draw pricing was ignored entirely. Our lines price two-way win/lose for those fixtures and the board percentage was not used as an input.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Handball/20"
+   ]
+  },
+  {
+   "item": "Greyhounds: clock offset and expired races",
+   "finding": "Race names carry a time (e.g. 8:24 Towcester) while the page prints a timestamp four hours earlier (16:24). One race was already labelled Expired at capture. Absolute post time is therefore unconfirmed.",
+   "impact": "No greyhound prediction was published, because a settled race cannot be bet. The eight races are listed on the board page with the discrepancy noted.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Greyhounds/28"
+   ]
+  },
+  {
+   "item": "OLBG does not expose tip prices",
+   "finding": "The event page for Wawrinka v Lehecka shows tip counts and comments, and a 'WIN @' field with no price, even though OLBG's own copy says odds are displayed.",
+   "impact": "Every price on this site is originated by this project, never copied. This is also why no claim of beating a market price is made anywhere.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Tennis/All_Tennis/All_Events/Stan_Wawrinka_vs_Jiri_Lehecka/3?event_id=902232"
+   ]
+  },
+  {
+   "item": "NBA and NHL records come from secondary sources",
+   "finding": "Official nba.com and nhl.com standings could not be retrieved from this environment. Records were taken from Wikipedia season pages and cross-checked against BBC Sport tables (NBA) and Elite Prospects (NHL).",
+   "impact": "Two Tier A basketball lines and one Tier A hockey line rest on secondary sources. Differential between the sources was nil where both were read. Treat those three lines with less weight than the handball lines, which use the official EHF table.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/2026%E2%80%9327_NBA_season",
+    "https://www.bbc.com/sport/basketball/tables",
+    "https://en.wikipedia.org/wiki/2026%E2%80%9327_NHL_season",
+    "https://www.eliteprospects.com/league/nhl"
+   ]
+  },
+  {
+   "item": "Tennis tournaments not identified",
+   "finding": "The tennis hub lists player names and start times but not the tournament each match belongs to, and the event page read did not state it either.",
+   "impact": "No tournament name is asserted in any tennis prediction. Predictions reference the match and the confirmed market ladder only.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Tennis/3"
+   ]
+  },
+  {
+   "item": "No injury data was confirmed for any fixture",
+   "finding": "Confirmed team news or injury reports for these fixtures could not be retrieved from an official source within this session.",
+   "impact": "No injury claim appears in any of the 44 predictions. This is a real gap against the brief and is the single biggest limitation of this snapshot.",
+   "sources": [
+    "https://www.olbg.com/betting-tips"
+   ]
+  },
+  {
+   "item": "Five-a-day target unmet for 8 of 15 sports",
+   "finding": "Written predictions published: Handball 5, Basketball 5, Ice Hockey 5, Tennis 5, Volleyball 5, Cricket 5, Rugby Union 5, Golf 3, Gaelic 2, Baseball 1, Darts 1, Motor Racing 1, Rugby League 1, Greyhounds 0, Snooker 0.",
+   "impact": "The shortfall tracks the size of each sport's live board, not effort skipped. Sports with five or more priceable events all reached five.",
+   "sources": [
+    "https://www.olbg.com/betting-tips"
+   ]
+  }
+ ]
+}

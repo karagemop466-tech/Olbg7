@@ -1,0 +1,74 @@
+{
+  "_note": "Verified team records captured 2026-10-26. Only teams present here can receive a Tier A (data-backed) line. GF/GA and W-L are transcribed from the official competition standings cited in data/sources.json.",
+  "handball_ehf_cl_2026_27": {
+    "source_url": "https://ehfcl.eurohandball.com/men/2026-27/standings/",
+    "source_secondary": "https://en.wikipedia.org/wiki/2026%E2%80%9327_EHF_Champions_League_group_stage",
+    "metric": "goals",
+    "sigma": 9.0,
+    "home_adv": 0.6,
+    "teams": {
+      "Veszprem": {"gp": 5, "gf": 185, "ga": 146, "w": 5, "d": 0, "l": 0, "group": "A"},
+      "Fuchse Berlin": {"gp": 5, "gf": 184, "ga": 172, "w": 3, "d": 0, "l": 2, "group": "A"},
+      "FC Porto": {"gp": 5, "gf": 158, "ga": 173, "w": 1, "d": 1, "l": 3, "group": "A"},
+      "RK Partizan": {"gp": 5, "gf": 148, "ga": 184, "w": 0, "d": 1, "l": 4, "group": "A"},
+      "Wisla Plock": {"gp": 5, "gf": 141, "ga": 136, "w": 3, "d": 0, "l": 2, "group": "B"},
+      "MT Melsungen": {"gp": 5, "gf": 138, "ga": 138, "w": 3, "d": 0, "l": 2, "group": "B"},
+      "Nantes": {"gp": 5, "gf": 142, "ga": 143, "w": 3, "d": 0, "l": 2, "group": "B"},
+      "HC Vardar": {"gp": 5, "gf": 154, "ga": 158, "w": 1, "d": 0, "l": 4, "group": "B"},
+      "Aalborg Handbold": {"gp": 5, "gf": 170, "ga": 145, "w": 4, "d": 1, "l": 0, "group": "C"},
+      "PSG Handball": {"gp": 5, "gf": 182, "ga": 157, "w": 3, "d": 1, "l": 1, "group": "C"},
+      "RK Zagreb": {"gp": 5, "gf": 146, "ga": 158, "w": 2, "d": 0, "l": 3, "group": "C"},
+      "RK Celje": {"gp": 5, "gf": 150, "ga": 188, "w": 0, "d": 0, "l": 5, "group": "C"},
+      "Sporting CP": {"gp": 5, "gf": 191, "ga": 165, "w": 4, "d": 1, "l": 0, "group": "D"},
+      "GOG": {"gp": 5, "gf": 178, "ga": 172, "w": 3, "d": 1, "l": 1, "group": "D"},
+      "Pick Szeged": {"gp": 5, "gf": 172, "ga": 169, "w": 1, "d": 2, "l": 2, "group": "D"},
+      "IFK Kristianstad": {"gp": 5, "gf": 162, "ga": 197, "w": 0, "d": 0, "l": 5, "group": "D"},
+      "FC Barcelona": {"gp": 5, "gf": 177, "ga": 138, "w": 5, "d": 0, "l": 0, "group": "E"},
+      "Dinamo Bucuresti": {"gp": 5, "gf": 134, "ga": 145, "w": 1, "d": 1, "l": 3, "group": "E"},
+      "Montpellier": {"gp": 5, "gf": 150, "ga": 165, "w": 1, "d": 0, "l": 4, "group": "E"}
+    }
+  },
+  "nba_2026_27": {
+    "source_url": "https://en.wikipedia.org/wiki/2026%E2%80%9327_NBA_season",
+    "source_secondary": "https://www.bbc.com/sport/basketball/tables",
+    "metric": "points",
+    "sigma": 15.0,
+    "home_adv": 2.5,
+    "teams": {
+      "PHI 76ers": {"w": 3, "l": 1, "pf": 440, "pa": 428, "gp": 4},
+      "TOR Raptors": {"w": 2, "l": 1, "pf": 341, "pa": 311, "gp": 3},
+      "BOS Celtics": {"w": 1, "l": 1, "pf": 220, "pa": 224, "gp": 2},
+      "NYK Knicks": {"w": 0, "l": 3, "gp": 3},
+      "BKN Nets": {"w": 0, "l": 3, "gp": 3},
+      "DET Pistons": {"w": 3, "l": 0, "gp": 3},
+      "IND Pacers": {"w": 2, "l": 1, "gp": 3},
+      "CLE Cavaliers": {"w": 1, "l": 1, "gp": 2},
+      "CHI Bulls": {"w": 1, "l": 2, "gp": 3},
+      "MIL Bucks": {"w": 0, "l": 3, "gp": 3},
+      "ATL Hawks": {"w": 2, "l": 1, "pf": 374, "pa": 327, "gp": 3},
+      "WAS Wizards": {"w": 2, "l": 1, "pf": 354, "pa": 348, "gp": 3},
+      "CHA Hornets": {"w": 2, "l": 1, "pf": 306, "pa": 341, "gp": 3},
+      "MIA Heat": {"w": 0, "l": 3, "gp": 3},
+      "HOU Rockets": {"w": 3, "l": 0, "pf": 363, "pa": 334, "gp": 3},
+      "LAL Lakers": {"w": 3, "l": 0, "pf": 384, "pa": 345, "gp": 3}
+    }
+  },
+  "nhl_2026_27": {
+    "source_url": "https://en.wikipedia.org/wiki/2026%E2%80%9327_NHL_season",
+    "source_secondary": "https://www.eliteprospects.com/league/nhl",
+    "metric": "goals",
+    "sigma": 2.6,
+    "home_adv": 0.25,
+    "teams": {
+      "CAR Hurricanes": {"gp": 13, "w": 9, "l": 2, "otl": 2, "gf": 51, "ga": 33, "pts": 20},
+      "NY Rangers": {"gp": 13, "w": 7, "l": 5, "otl": 1, "gf": 41, "ga": 36, "pts": 15},
+      "NJ Devils": {"gp": 11, "w": 7, "l": 4, "otl": 0, "gf": 36, "ga": 32, "pts": 14},
+      "BOS Bruins": {"gp": 12, "w": 9, "l": 2, "otl": 1, "gf": 48, "ga": 26, "pts": 19},
+      "OTT Senators": {"gp": 12, "w": 8, "l": 4, "otl": 0, "gf": 38, "ga": 34, "pts": 16},
+      "TOR Maple Leafs": {"gp": 13, "w": 7, "l": 4, "otl": 2, "gf": 50, "ga": 41, "pts": 16},
+      "NY Islanders": {"gp": 11, "w": 5, "l": 4, "otl": 2, "gf": 32, "ga": 29, "pts": 12},
+      "DET Red Wings": {"gp": 11, "w": 4, "l": 4, "otl": 3, "gf": 29, "ga": 34, "pts": 11},
+      "EDM Oilers": {"gp": 13, "pts": 17}
+    }
+  }
+}

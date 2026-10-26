@@ -1,0 +1,21 @@
+{
+  "sport_id": 9,
+  "sport": "Rugby Union",
+  "source": "https://www.olbg.com/betting-tips/Rugby_Union/9",
+  "captured_utc": "2026-10-26",
+  "events": [
+    {"id": 609604, "name": "Colomiers v Agen", "when": "30 Oct 14:00", "market": "To Win", "consensus": "Colomiers", "tips": "2/2", "pct": 100},
+    {"id": 609603, "name": "Montauban v Narbonne", "when": "30 Oct 14:30", "market": "To Win", "consensus": "Montauban", "tips": "2/2", "pct": 100},
+    {"id": 609598, "name": "Oyonnax v Soyaux Angouleme", "when": "30 Oct 14:30", "market": "To Win", "consensus": "Oyonnax", "tips": "2/3", "pct": 67},
+    {"id": 609605, "name": "Dax v Provence", "when": "29 Oct 16:00", "market": "Handicap", "consensus": "Provence +1.50", "tips": "1/1", "pct": 100},
+    {"id": 609599, "name": "Beziers v Grenoble", "when": "30 Oct 14:30", "market": "To Win", "consensus": "Grenoble", "tips": "1/1", "pct": 100},
+    {"id": 609600, "name": "Nissa v Aurillac", "when": "30 Oct 14:30", "market": "To Win", "consensus": "Nissa", "tips": "1/1", "pct": 100},
+    {"id": 609590, "name": "Glasgow Warriors v Lions", "when": "30 Oct 15:45", "market": "To Win", "consensus": "Glasgow Warriors", "tips": "1/1", "pct": 100},
+    {"id": 609584, "name": "Connacht v Leinster", "when": "30 Oct 15:45", "market": "Handicap", "consensus": "Connacht +3.50", "tips": "1/1", "pct": 100},
+    {"id": 609602, "name": "Biarritz v Valence Romans", "when": "30 Oct 16:00", "market": "To Win", "consensus": "Biarritz", "tips": "1/1", "pct": 100},
+    {"id": 609588, "name": "Stormers v Ulster", "when": "31 Oct 08:45", "market": "To Win", "consensus": "Ulster", "tips": "1/1", "pct": 100},
+    {"id": 609586, "name": "Munster v Sharks", "when": "31 Oct 13:30", "market": "Handicap", "consensus": "Munster -6.50", "tips": "1/1", "pct": 100},
+    {"id": 609611, "name": "Pau v Toulouse", "when": "01 Nov 15:05", "market": "To Win", "consensus": "Pau", "tips": "1/1", "pct": 100},
+    {"id": 609013, "name": "Six Nations 2027 (outright)", "when": "14 Mar 2027 16:00", "market": "Win Tournament", "consensus": "Ireland", "tips": "3/11", "pct": 27}
+  ]
+}

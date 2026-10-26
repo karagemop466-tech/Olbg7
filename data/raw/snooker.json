@@ -1,0 +1,8 @@
+{
+  "sport_id": 8,
+  "sport": "Snooker",
+  "source": "https://www.olbg.com/betting-tips/Snooker/8",
+  "captured_utc": "2026-10-26",
+  "events": [],
+  "note": "Hub returned 'No tips found.' at capture time: no snooker event on OLBG currently carries a tipster selection. Snooker markets OLBG documents are Win Match, Handicap Betting, Frame Betting and Win Tournament. No bookable fixture list was exposed, so no snooker lines can be originated from OLBG's own list. Flagged."
+}

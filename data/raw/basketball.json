@@ -1,0 +1,23 @@
+{
+  "sport_id": 4,
+  "sport": "Basketball",
+  "source": "https://www.olbg.com/betting-tips/Basketball/4",
+  "captured_utc": "2026-10-26",
+  "events": [
+    {"id": 536203, "name": "MIN Timberwolves @ CLE Cavaliers", "comp": "NBA", "when": "Today 19:00", "market": "Money Line", "consensus": "CLE Cavaliers", "tips": "9/16", "pct": 56},
+    {"id": 536204, "name": "IND Pacers @ MIL Bucks", "comp": "NBA", "when": "Today 20:00", "market": "Money Line", "consensus": "IND Pacers", "tips": "9/12", "pct": 75},
+    {"id": 536206, "name": "MEM Grizzlies @ UTA Jazz", "comp": "NBA", "when": "Today 21:00", "market": "Money Line", "consensus": "MEM Grizzlies", "tips": "9/13", "pct": 69},
+    {"id": 536199, "name": "WAS Wizards @ CHA Hornets", "comp": "NBA", "when": "Today 19:00", "market": "Money Line", "consensus": "CHA Hornets", "tips": "7/10", "pct": 70},
+    {"id": 536200, "name": "DAL Mavericks @ MIA Heat", "comp": "NBA", "when": "Today 19:30", "market": "Pointspread", "consensus": "DAL Mavericks +7.50", "tips": "7/7", "pct": 100},
+    {"id": 536173, "name": "Corinthians vs Franca", "comp": "Brazil NBB", "when": "Today 19:00", "market": "Money Line", "consensus": "Corinthians", "tips": "6/7", "pct": 86},
+    {"id": 536201, "name": "ATL Hawks @ HOU Rockets", "comp": "NBA", "when": "Today 20:30", "market": "Money Line", "consensus": "HOU Rockets", "tips": "6/9", "pct": 67},
+    {"id": 536172, "name": "Mogi das Cruzes vs Unifacisa", "comp": "Brazil NBB", "when": "Today 19:00", "market": "Money Line", "consensus": "Unifacisa", "tips": "5/7", "pct": 71},
+    {"id": 536205, "name": "PHX Suns @ OKC Thunder", "comp": "NBA", "when": "Today 20:00", "market": "Money Line", "consensus": "OKC Thunder", "tips": "5/7", "pct": 71},
+    {"id": 534851, "name": "CHI Bulls @ BOS Celtics", "comp": "NBA", "when": "Today 19:30", "market": "Money Line", "consensus": "CHI Bulls", "tips": "4/6", "pct": 67},
+    {"id": 536202, "name": "GS Warriors @ DEN Nuggets", "comp": "NBA", "when": "Today 22:00", "market": "Money Line", "consensus": "DEN Nuggets", "tips": "4/7", "pct": 57},
+    {"id": 536177, "name": "Panathinaikos vs Milano", "comp": "Euroleague", "when": "Tomorrow 15:15", "market": "Money Line", "consensus": "Panathinaikos", "tips": "4/7", "pct": 57},
+    {"id": 536176, "name": "BC Dubai vs Paris", "comp": "Euroleague", "when": "Tomorrow 12:00", "market": "Money Line", "consensus": "Paris", "tips": "3/4", "pct": 75},
+    {"id": 536178, "name": "Baskonia vs Real Madrid", "comp": "Euroleague", "when": "Tomorrow 16:00", "market": "Money Line", "consensus": "Baskonia", "tips": "3/4", "pct": 75},
+    {"id": 536154, "name": "Lanus vs Regatas", "comp": "Argentina Liga Nacional", "when": "Today 19:30", "market": "Money Line", "consensus": "Lanus", "tips": "", "pct": null}
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "sport_id": 28,
+  "sport": "Greyhounds",
+  "source": "https://www.olbg.com/betting-tips/Greyhounds/28",
+  "captured_utc": "2026-10-26",
+  "events": [
+    {"id": 690271, "name": "8:24 Towcester", "when": "Today 16:24", "market": "Daily Races", "consensus": "Melbury Rocket", "tips": "2/3", "pct": 67, "status": "expired"},
+    {"id": 690274, "name": "8:36 Nottingham", "when": "Today 16:36", "market": "Daily Races", "consensus": "Corleones Lady", "tips": "2/3", "pct": 67},
+    {"id": 690275, "name": "8:34 Harlow", "when": "Today 16:34", "market": "Daily Races", "consensus": "Townsend Margo", "tips": "1/1", "pct": 100},
+    {"id": 690276, "name": "8:41 Towcester", "when": "Today 16:41", "market": "Daily Races", "consensus": "Great Time", "tips": "1/1", "pct": 100},
+    {"id": 690277, "name": "8:47 Yarmouth", "when": "Today 16:47", "market": "Daily Races", "consensus": "Savana Buzz", "tips": "1/1", "pct": 100},
+    {"id": 690284, "name": "9:16 Towcester", "when": "Today 17:16", "market": "Daily Races", "consensus": "Ballygogue Jet", "tips": "1/1", "pct": 100},
+    {"id": 690285, "name": "9:23 Yarmouth", "when": "Today 17:23", "market": "Daily Races", "consensus": "Magical Wolf", "tips": "1/1", "pct": 100},
+    {"id": 690288, "name": "9:46 Nottingham", "when": "Today 17:46", "market": "Daily Races", "consensus": "Salacres Lanark", "tips": "1/1", "pct": 100}
+  ],
+  "note": "Race-name clock (e.g. 8:24) and the page's own timestamp (16:24) differ by four hours, consistent with a fixed display offset. Absolute local post time is therefore not confirmed for any race. One race was already labelled Expired at capture. Flagged."
+}
