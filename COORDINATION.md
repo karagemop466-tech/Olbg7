@@ -1,0 +1,19 @@
+# COORDINATION — OLBG 15-Sport Predictions Board
+
+Session ID: `610d0099` | Branch: `arena/610d0099-olbg7` (fixed Arena session branch — do not rename/switch)
+Date anchor: Monday 26 October 2026 (UTC). All fixtures are upcoming on/after this date.
+
+## Task board
+| # | Task | Status | Owner | Files touched |
+|---|------|--------|-------|---------------|
+| 1 | Claim + coordination setup | done | 610d0099 | COORDINATION.md |
+| 2 | Research fixtures for 15 sports (official/trusted sources) | done | 610d0099 | data/picks.json (sources per row) |
+| 3 | Originate fair lines + confidence + written predictions (5/sport) | in progress | 610d0099 | data/picks.json, tools/build_site.py |
+| 4 | Static dashboard site (landing + 15 sport pages + flagged page) | unclaimed | 610d0099 | docs/ |
+| 5 | Line-by-line verification + link check + Pages publish + PR/merge | unclaimed | 610d0099 | docs/, COORDINATION.md |
+
+Rules followed: no invented fixtures/odds/injuries; unverified values left blank and flagged on docs/flagged.html; shared nav/index changed only in final integration (this session is the sole active session, so it acts as integrator and records that here).
+
+## Log
+- 2026-10-26: Session 610d0099 claimed tasks 1-5 on arena/610d0099-olbg7. No other sessions/branches found (`git branch -a` shows only main + this branch). Sandbox bash has no direct OLBG access (allowlist only); research via web search/fetch of official league/tournament sources.
+- Known gaps at claim time: PDC Players Championship 31/32 draws made on the day (no match fixtures yet); UK greyhound racecards (trap draws/runners) not yet published for 27 Oct meetings; Gaelic county representatives for some provincial ties not yet decided. These will be flagged, not filled in.
