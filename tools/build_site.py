@@ -74,7 +74,7 @@ def price_for(pick, pricing_index):
             mod = importlib.util.module_from_spec(spec)
             spec.loader.exec_module(mod)
             cal1 = mod.price
-        out = cal1(pick["market"], int(m.group(1)), int(m.group(2)))
+        out = cal1(pick["market"], int(m.group(1)), int(m.group(2)), pick.get("olbg_pct"), pick.get("sport", ""))
         if out:
             return out["p_fair"], out["card_decimal"], "CAL-1"
     return None, None, "unpriced"
@@ -242,14 +242,28 @@ def main():
 <td class="num">{len(evs)}</td><td class="num">{priced}</td><td class="num">{len(ps)}</td>
 <td class="num">{hh}</td><td>{status}</td></tr>""")
 
+    by_sport_n = {}
+    for pp in enriched:
+        by_sport_n[pp["sport"]] = by_sport_n.get(pp["sport"], 0) + 1
+    for sp in NAME_TO_SLUG:
+        by_sport_n.setdefault(sp, 0)
+    short = sorted(((n, sp) for sp, n in by_sport_n.items() if n < 5))
+    short_list = ", ".join(f"{sp} {n}" for n, sp in short)
+    short_n = len(short)
+    methods = {}
+    for pp in enriched:
+        methods[pp["_method_label"]] = methods.get(pp["_method_label"], 0) + 1
+    method_line = ", ".join(f"{k}: {v}" for k, v in sorted(methods.items()))
+
     doc = head("OLBG Coverage Desk - dashboard", "index.html")
     doc += f"""
 <h2>Executive summary</h2>
 <p class="lede">We inventoried every OLBG event we could reach across the 15 sports in scope, originated a price for
 each one that carries a printed tip split, and wrote {n_picks} full predictions. {len(highs)} selections clear our
-high-confidence bar, {len(meds)} are medium and {len(lows)} are low. Five sports cannot reach the five-pick target
-today because OLBG itself carries too little priced market data in them; those are named below and on the
-<a href="flagged.html">Flagged for review</a> page rather than padded out.</p>
+high-confidence bar, {len(meds)} are medium and {len(lows)} are low. {short_n} sports cannot reach the five-pick
+target today because OLBG itself carries too little priced market data in them ({short_list}); those are named below
+and on the <a href="flagged.html">Flagged for review</a> page rather than padded out with fixtures and prices that no
+source supports.</p>
 <div class="grid">
 <div class="kpi"><div class="n">15</div><div class="l">sports in scope</div></div>
 <div class="kpi"><div class="n">{len(events)}</div><div class="l">OLBG events inventoried</div></div>
@@ -276,8 +290,11 @@ reuse a template.</p>
 <th>High confidence</th><th>5-pick target</th></tr></thead><tbody>{''.join(cov_rows)}</tbody></table>
 <div class="note flag"><strong>Gaps, stated plainly.</strong> Snooker returned no tips at all from OLBG today, Golf
 carried only three tournament markets with two tips each, Baseball had a single live game, Rugby League offered only
-season ante-post markets, and Gaelic Sports produced four selections. We publish what the data supports and flag the
-rest instead of inventing fixtures, prices or form lines.</div>
+season ante-post markets, Darts and Motor Racing two markets each, and Gaelic Sports four selections. We publish what
+the data supports and flag the rest instead of inventing fixtures, prices or form lines.</div>
+<div class="note"><strong>How each price was made.</strong> {method_line}. CAL-1 reprices the tip split OLBG prints.
+CAL-2 is used where the printed split is unusable (the handball draw artefact) and CAL-3 where a tournament market has
+too few runners and tips to reprice at all. Every row on this site carries its method on the pick card.</div>
 
 <h3>What is where</h3>
 <ul class="small">
@@ -325,6 +342,7 @@ The constraint is recorded on the <a href="../flagged.html">Flagged for review</
 
             doc += "<h3>Written predictions</h3>"
             for i, p in enumerate(ps, 1):
+                selnote = ('<div class="small muted">Selection note: ' + esc(p["selection_note"]) + '</div>') if p.get("selection_note") else ""
                 facts = "".join(f'<li>{esc(f["t"])} <a href="{esc(f["src"])}" target="_blank" rel="noopener">source</a></li>'
                                 for f in p["facts"])
                 doc += f"""<div class="card"><h4>{i}. {esc(p['selection'])} &mdash; {esc(p['market'])}
@@ -334,6 +352,7 @@ our price <strong>{p['_card']:.2f}</strong> ({dec_to_american(p['_card'])}) &mid
 fair chance {p['_p_fair']*100:.1f}% &middot; method <span class="tag">{esc(p['_method_label'])}</span>
 &middot; {p['_words']} words</div>
 <div class="pred">{esc(p['prediction'])}</div>
+{selnote}
 <div class="small"><strong>Sources for the facts above</strong><ul>{facts}</ul></div>
 <div class="small muted" style="margin-top:8px">Checks performed: {esc(p['verification'])}</div></div>"""
         else:
@@ -373,7 +392,7 @@ of {pricing['totals']['priced']} priced selections fall inside that band.</div>
         if ol:
             cells = (f"<td class=\"num\">{ol['p_fair']*100:.1f}%</td><td class=\"num\"><strong>{ol['card_decimal']:.2f}</strong></td>"
                      f"<td class=\"num small\">{dec_to_american(ol['card_decimal'])}</td>"
-                     f"<td><span class=\"pill {ol['confidence']}\">{ol['confidence'][:3]}</span></td>")
+                     f"<td><span class=\"pill {ol['confidence']}\">{ol['confidence']}</span></td>")
         else:
             cells = "<td colspan=\"4\" class=\"small muted\">not priced - no split printed</td>"
         doc += f"""<tr><td class="small">{esc(r['s'])}</td><td>{esc(r['e'])}</td><td class="small num">{esc(r['start_label'])}</td>

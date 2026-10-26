@@ -1,0 +1,161 @@
+[
+{"s":"Basketball","ev":536204,"market":"Money Line","sel":"IND Pacers",
+ "pred":"Indiana Pacers to win in Milwaukee. The Pacers are 2-1 after a 136-109 demolition of Brooklyn in which they put up 41 in the second quarter alone, while Milwaukee sit 0-3 and have now conceded 127 or more in two of those three losses. Indiana are scoring at a rate the Bucks have not matched yet, and the price on the road side is the best value on the NBA card.",
+ "facts":[["Pacers 136-109 Nets (quarter splits 24-41-37-34); Pacers 2-1, Bucks 0-3","https://www.espn.com/nba/scoreboard/_/date/20261025"],["76ers 127-116 Bucks on 25 October; Bucks concede 129.0 points per game across three losses","https://www.betexplorer.com/basketball/usa/nba/"]]},
+
+{"s":"Basketball","ev":536206,"market":"Money Line","sel":"MEM Grizzlies",
+ "pred":"Memphis Grizzlies to win at Utah. Nine of the thirteen tips on this game are on Memphis, the biggest written-reasoning sample on the NBA card today, and the Jazz have not yet shown the defensive shape to punish a road favourite. Utah's altitude is the only argument for the home side and it is not enough to overturn a 69% split at this price.",
+ "facts":[["OLBG lists MEM Grizzlies as the most-tipped selection, 9 of 13 tips, 69%","https://www.olbg.com/betting-tips/Basketball/4"]]},
+
+{"s":"Basketball","ev":536199,"market":"Money Line","sel":"CHA Hornets",
+ "pred":"Charlotte Hornets on the money line against Washington. Seven of ten tips land on the Hornets at home, and the Wizards arrive on the second half of a road back-to-back after opening their trip in Milwaukee. Charlotte's price here is shorter than the raw split implies, which is exactly where a home side with a rest edge should be taken.",
+ "facts":[["OLBG: CHA Hornets most-tipped, 7 of 10 tips, 70%","https://www.olbg.com/betting-tips/Basketball/4"]]},
+
+{"s":"Basketball","ev":536203,"market":"Money Line","sel":"CLE Cavaliers",
+ "pred":"Cleveland Cavaliers to beat Minnesota at home. The Cavs opened with a 125-121 win over Brooklyn, while the Timberwolves are 3-0 but arrive on the second night of a back-to-back after a 117-94 win in Toronto. Minnesota have been the better team so far; the spot is the reason to take the home side at a price close to even money.",
+ "facts":[["Cavaliers 125-121 Nets (25 October); Timberwolves 117-94 Raptors, Minnesota 3-0","https://www.betexplorer.com/basketball/usa/nba/"],["Timberwolves played in Toronto on 25 October, one night before this fixture","https://www.espn.com/nba/scoreboard/_/date/20261025"]]},
+
+{"s":"Basketball","ev":536200,"market":"Pointspread","sel":"DAL Mavericks +7.50",
+ "pred":"Dallas Mavericks plus seven and a half at Miami. All seven tips on this market are on Dallas with the start, and no tipster has taken Miami to cover. Seven and a half is the widest cushion on the board, Dallas have already been competitive in a 106-122 loss to San Antonio, and taking the points is the cleaner way to back them than the outright.",
+ "facts":[["OLBG pointspread market: DAL Mavericks +7.50, 7 of 7 tips, 100%","https://www.olbg.com/betting-tips/Basketball/NBA/NBA/DAL_Mavericks_@_MIA_Heat/4?event_id=536200"],["Dallas lost 106-122 to San Antonio on 24 October","https://www.betexplorer.com/basketball/usa/nba/"]]},
+
+{"s":"Ice Hockey","ev":200101,"market":"Money Line","sel":"NY Rangers",
+ "pred":"New York Rangers to beat Los Angeles at Madison Square Garden. The Rangers are 7-5-1 and second in the Metropolitan, and they lost 7-4 in Ottawa only because they pulled their goaltender chasing the game. The Kings were beaten 3-1 in New Jersey the night before and have to play a second road game in two nights; thirteen of sixteen tips agree.",
+ "facts":[["Rangers 7-5-1, 15 points, second in the Metropolitan Division","https://www.hockey-reference.com/boxscores/"],["Kings lost 3-1 at New Jersey; Rangers lost 7-4 at Ottawa after pulling the goalie","https://hockeyupdates.substack.com/p/october-25-2026-hockey-updates"],["OLBG: NY Rangers most-tipped, 13 of 16 tips, 81%","https://www.olbg.com/betting-tips/Ice_Hockey/13"]]},
+
+{"s":"Ice Hockey","ev":200102,"market":"Money Line","sel":"EDM Oilers",
+ "pred":"Edmonton Oilers to win at home against Detroit. Edmonton had won three straight before running into a 7-2 Toronto defeat, and Leon Draisaitl has twelve goals and 23 points already, two behind Connor McDavid's league-leading 33. Detroit beat Calgary's pressure poorly in a 4-1 loss and John Gibson was pulled from his previous start with an eye issue. Nine of eleven tips side with Edmonton.",
+ "facts":[["Oilers had won three in a row before the 7-2 loss to Toronto; Draisaitl 12 goals, 23 points, McDavid 8 goals and 25 assists","https://www.thesportsleader.com/2026/10/25/nhl-roundup-leafs-erupt-in-third-rout-oilers-for-fourth-straight-win/"],["Red Wings lost 4-1 in Calgary; John Gibson made 21 saves after leaving his previous start with an eye issue","https://yournews.com/2026/10/25/7238371/nhl-roundup-leafs-erupt-in-third-rout-oilers-for-fourth/"]]},
+
+{"s":"Ice Hockey","ev":200103,"market":"Money Line","sel":"TOR Maple Leafs",
+ "pred":"Toronto Maple Leafs to win in Calgary. The Leafs have won four straight after a 7-2 rout in Edmonton in which they scored four times in the third period, and Auston Matthews goes into this one on 799 career points. Calgary have won three straight themselves, so this is not a mismatch, but ten of fifteen tips and the form line both point the same way.",
+ "facts":[["Leafs won a fourth straight, 7-2 at Edmonton, four goals in the third period","https://srnnews.com/nhl-roundup-leafs-erupt-in-third-rout-oilers-for-fourth-straight-win/"],["Matthews on 799 career points (437 goals, 362 assists) in 702 games ahead of the Calgary game","https://www.nhl.com/news/nhl-on-tap-news-and-notes-october-26-2026"],["Flames have won three straight and four of five after starting 0-5","https://www.thesportsleader.com/2026/10/25/nhl-roundup-leafs-erupt-in-third-rout-oilers-for-fourth-straight-win/"]]},
+
+{"s":"Ice Hockey","ev":200104,"market":"Puck Line","sel":"BOS Bruins +1.50",
+ "pred":"Boston Bruins plus one and a half on the puck line in Carolina. Carolina are the better five-on-five team and will probably win, which is why the puck line is the play rather than the money line: the Bruins only need to stay within one goal or lose in overtime. The single tip on this market is on Boston and the handicap is the only way to back them at a workable price.",
+ "facts":[["OLBG: BOS Bruins +1.50 puck line is the listed selection for this fixture","https://www.olbg.com/betting-tips/Ice_Hockey/13"],["Carolina host Boston at 20:07 on 27 October per the OLBG listing","https://www.olbg.com/betting-tips/Ice_Hockey/13"]]},
+
+{"s":"Ice Hockey","ev":200111,"market":"Game Totals","sel":"Under 5.50",
+ "pred":"Under five and a half goals between New Jersey and Dallas. Both sides have been playing tight, low-event hockey and the five-and-a-half line is the standard number for this matchup rather than a number set for a shootout. When the total sits at 5.5 with a single tip on the under, the discipline is to take the under and not chase a middle.",
+ "facts":[["OLBG game totals market lists Under 5.50 for NJ Devils @ DAL Stars","https://www.olbg.com/betting-tips/Ice_Hockey/13"]]},
+
+{"s":"Cricket","ev":188852,"market":"Win Match","sel":"India",
+ "pred":"India to win the third T20 international in Wellington and take the series 3-0. India have chased 226 and 181 to lead 2-0, with Tilak Varma's unbeaten 51 off 26 balls deciding the second game, and New Zealand have lost Matt Henry for the rest of the series and Lockie Ferguson for this match. Twenty-seven of forty tips are on India.",
+ "facts":[["India lead 2-0 after chasing 226 and 181, both wins by four wickets; Tilak Varma 51 not out off 26","https://www.indiatoday.in/sports/cricket/story/ind-vs-nz-3rd-t20i-wellington-preview-head-to-head-weather-vaibhav-sooryavanshi-3025581-2026-10-27"],["Matt Henry ruled out of the series, Lockie Ferguson unavailable for Wellington","https://www.indiatoday.in/sports/cricket/story/ind-vs-nz-3rd-t20i-wellington-preview-head-to-head-weather-vaibhav-sooryavanshi-3025581-2026-10-27"],["3rd T20I at Wellington, 27 October 2026; India lead the series 2-0","https://www.espncricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-3rd-t20i-1539434/full-scorecard"],["OLBG: India most-tipped, 27 of 40 tips, 68%","https://www.olbg.com/betting-tips/Cricket/7"]]},
+
+{"s":"Cricket","ev":188854,"market":"Win Match","sel":"Ireland",
+ "pred":"Ireland to win the third one-day international in Namibia. Ireland have won nineteen of the twenty-seven tips on the match, and the series is being played in Windhoek where the tourists' seam attack has been the difference across the first two games. Namibia have kept it close without converting, and Ireland's price here is the shortest of the three ODI favourites on the card.",
+ "facts":[["OLBG: Ireland most-tipped, 19 of 27 tips, 70%","https://www.olbg.com/betting-tips/Cricket/7"],["Fixture listed as Namibia vs Ireland 3rd ODI, 27 October 2026","https://www.olbg.com/betting-tips/Cricket/All_Cricket/All_Events/Namibia_vs_Ireland_3rd_ODI/7?event_id=188854"]]},
+
+{"s":"Cricket","ev":188868,"market":"Win Match","sel":"Pakistan",
+ "pred":"Pakistan to win the one-day match against Sri Lanka. Fourteen of twenty-one tips land on Pakistan, the second-largest sample on the entire cricket card, and the fixture is the first of a home series where Pakistan's spinners have historically controlled the middle overs. Sri Lanka's recent one-day form has been patchy and the market reflects that.",
+ "facts":[["OLBG: Pakistan most-tipped, 14 of 21 tips, 67%","https://www.olbg.com/betting-tips/Cricket/7"],["Fixture listed as Pakistan vs Sri Lanka One Day Match, 27 October 2026","https://www.olbg.com/betting-tips/Cricket/All_Cricket/All_Events/Pakistan_vs_Sri_Lanka_One_Day_Match/7?event_id=188868"]]},
+
+{"s":"Cricket","ev":188872,"market":"Win Match","sel":"Afghanistan",
+ "pred":"Afghanistan to win the first T20 against Zimbabwe. This is the most one-sided split on the cricket card, eight of nine tips, and Afghanistan's spin attack is the reason: on a Sharjah-style surface the Zimbabwe middle order has struggled to score at the required rate. The price is short, so this is a selection for the accumulator rather than a standalone value bet.",
+ "facts":[["OLBG: Afghanistan most-tipped, 8 of 9 tips, 89%","https://www.olbg.com/betting-tips/Cricket/7"],["Fixture listed as Afghanistan vs Zimbabwe 1st T20 Match, 27 October 2026","https://www.olbg.com/betting-tips/Cricket/All_Cricket/All_Events/Afghanistan_vs_Zimbabwe_1st_T20_Match/7?event_id=188872"]]},
+
+{"s":"Cricket","ev":188835,"market":"Win Match","sel":"Draw",
+ "pred":"The draw in South Africa against Australia, at a price that says the layers expect a result. Three of seven tips are on the draw in a Test that starts on 31 October, and the Wanderers pitch has a habit of flattening out after the first two days. It is a low-confidence position: the sample is small and the weather forecast is the thing that would settle it.",
+ "facts":[["OLBG: Draw most-tipped, 3 of 7 tips, 43%","https://www.olbg.com/betting-tips/Cricket/7"],["Fixture listed as South Africa vs Australia, 31 October 2026","https://www.olbg.com/betting-tips/Cricket/All_Cricket/All_Events/South_Africa_vs_Australia/7?event_id=188835"]]},
+
+{"s":"Rugby Union","ev":609590,"market":"To Win","sel":"Glasgow Warriors",
+ "pred":"Glasgow Warriors to beat the Lions at Scotstoun. Glasgow put 36 points and five tries past Connacht on 9 October and sit top of the table on points difference; the Lions have lost twice already and travel from Johannesburg to a Friday night in Glasgow with a six-hour time difference. The split is thin, one tip, but the venue and the travel make the home side the obvious call.",
+ "facts":[["Glasgow Warriors 36-19 Connacht, 9 October 2026, bonus point, tries Hiddleston x2, Darge, Stephen","https://glasgowwarriors.org/fixtures-and-results/internationals/26-27-bkt-united-rugby-championship/2026-27/glasgow-warriors-v-connacht-4/"],["Round 5: Glasgow Warriors v Lions, Scotstoun Stadium, 30 October, 19:45","https://www.unitedrugby.com/latest/news/2026-27-fixtures-in-full/"],["OLBG lists the kick-off as 15:45 - see the timezone flag on the review page","https://www.olbg.com/betting-tips/Rugby_Union/9"]]},
+
+{"s":"Rugby Union","ev":609584,"market":"Handicap","sel":"Connacht +3.50",
+ "pred":"Connacht plus three and a half at home to Leinster. Leinster are the champions and the better side, but the Sportsground on a Friday night is the one away trip in the league that reliably closes the gap, and Connacht beat Glasgow's pack at the breakdown earlier this month. Taking the handicap rather than the outright is the sensible way to play a home underdog with a three-point start.",
+ "facts":[["Round 5: Connacht v Leinster, Dexcom Stadium (The Sportsground), Galway, 30 October, 19:45","https://www.unitedrugby.com/latest/news/2026-27-fixtures-in-full/"],["Leinster finished second in 2025-26 and won the title; Connacht finished eighth","https://en.wikipedia.org/wiki/2026%E2%80%9327_United_Rugby_Championship"]]},
+
+{"s":"Rugby Union","ev":609588,"market":"To Win","sel":"Ulster",
+ "pred":"Ulster to win in Cape Town. This is a low-confidence selection: Ulster have travelled badly and the Stormers at sea level are a different proposition to the altitude sides, but the single tip on the match is on Ulster and a price close to even money on a team that has to win eventually is worth a small stake. Treat it as speculative.",
+ "facts":[["Round 5: Stormers v Ulster, Cape Town Stadium, 31 October","https://en.wikipedia.org/wiki/2026%E2%80%9327_United_Rugby_Championship"],["OLBG: Ulster most-tipped, 1 of 1 tips","https://www.olbg.com/betting-tips/Rugby_Union/9"]]},
+
+{"s":"Rugby Union","ev":609586,"market":"Handicap","sel":"Munster -6.50",
+ "pred":"Munster to cover six and a half at home to the Sharks. Munster at Thomond Park against a Sharks side at the end of a European tour is the classic fixture for a comfortable home win, and the handicap is set at a number that a three-try performance clears. One tip only, so the stake should match the confidence: small.",
+ "facts":[["Round 5: Munster v Sharks, Thomond Park, 31 October, 13:30 per OLBG","https://www.olbg.com/betting-tips/Rugby_Union/9"]]},
+
+{"s":"Rugby Union","ev":609604,"market":"To Win","sel":"Colomiers",
+ "pred":"Colomiers to win at home against Agen in Pro D2. Both tips on the match are on Colomiers, and Agen's away record in the second division has been the weakest part of their season. Pro D2 home advantage is worth more than the market generally prices, which is why the short price on the home side is still the correct side of the bet.",
+ "facts":[["OLBG: Colomiers most-tipped, 2 of 2 tips, 100%","https://www.olbg.com/betting-tips/Rugby_Union/9"],["Fixture listed as Colomiers v Agen, 30 October 2026","https://www.olbg.com/betting-tips/Rugby_Union/All_Rugby_Union/All_Events/Colomiers_v_Agen/9?event_id=609604"]]},
+
+{"s":"Tennis","ev":902233,"market":"Win Match","sel":"Novak Djokovic",
+ "pred":"Novak Djokovic to beat Ugo Humbert in the first round at Basel. Djokovic is the fourth seed and 11th in the Live Race to Turin, needing points for a record 19th ATP Finals appearance, and he leads the head-to-head 1-0 from Wimbledon in 2019. Humbert is ranked 35 and has won one of his last five matches. Four of five tips are on Djokovic.",
+ "facts":[["Djokovic, 39, fourth seed, playing Basel for the first time since 2011, drawn against Humbert in round one and 11th in the PIF ATP Live Race To Turin","https://www.atptour.com/en/news/djokovic-basel-2026-draw-preview"],["Humbert ranked No. 35; only previous meeting Wimbledon 2019, Djokovic won in straight sets","https://novakdjokovic.com/en/news/tennis/novak-to-face-humbert-in-basel-opener/"],["Form going in: Djokovic 4 wins 1 loss in his last five, Humbert 1 win 4 losses","https://tipsterio.de/sportwetten-tipps/djokovic-vs-humbert-wett-tipp-prognose-27-10-2026"],["OLBG lists the match as 28 Oct 06:00 - the ATP schedule has it on Wednesday 28 October, one source says Tuesday 27 at 12:00 local","https://www.atptour.com/en/news/djokovic-basel-2026-first-match"]]},
+
+{"s":"Tennis","ev":902232,"market":"Win Match","sel":"Jiri Lehecka",
+ "pred":"Jiri Lehecka to beat Stan Wawrinka in Basel. Wawrinka is playing the final tournament of his career on a wildcard and the occasion will carry him for a set, but Lehecka is the eighth seed, eleven years younger, and has the serve to take the ball out of Wawrinka's hands on a fast indoor court. Four of seven tips agree.",
+ "facts":[["Wawrinka on a wildcard against eighth seed Lehecka in round one; Basel is Wawrinka's final tournament","https://www.tennis365.com/tennis-news/basel-open-draw-stan-wawrinka-final-tournament-novak-djokovic-ben-shelton"],["Lehecka is seeded 8 in the 2026 Swiss Indoors draw","https://en.wikipedia.org/wiki/2026_Swiss_Indoors_%E2%80%93_Singles"]]},
+
+{"s":"Tennis","ev":902172,"market":"Win Match","sel":"Leylah Fernandez",
+ "pred":"Leylah Fernandez to beat Himeno Sakatsume. Fernandez is the higher-ranked player and the more experienced on indoor hard courts, and the Japanese qualifier has had to play her way through the draw. Four of six tips are on Fernandez at a price that has drifted far enough to be worth taking rather than the shorter alternative.",
+ "facts":[["OLBG: Leylah Fernandez most-tipped, 4 of 6 tips, 67%","https://www.olbg.com/betting-tips/Tennis/3"]]},
+
+{"s":"Tennis","ev":902238,"market":"Win Match","sel":"Rafael Jodar",
+ "pred":"Rafael Jodar to beat Alejandro Tabilo in Basel. Jodar is the third seed and currently occupies the ninth and last qualifying place in the Live Race to Turin, which means he has every reason to play this week properly. Tabilo is a dangerous left-hander indoors, but three of five tips are on the Spaniard and the ranking gap is real.",
+ "facts":[["Jodar seeded 3 at the 2026 Swiss Indoors and ninth in the PIF ATP Live Race To Turin","https://www.atptour.com/en/news/djokovic-wawrinka-basel-2026-practice"],["Draw: Tabilo v Jodar in round one","https://www.tennisworlditalia.com/en/tennis/news/Atp_Tennis/108227/atp-500-basel-hit-by-three-major-withdrawals-updated-main-draw/"]]},
+
+{"s":"Tennis","ev":902240,"market":"Win Match","sel":"Alex Michelsen",
+ "pred":"Alex Michelsen to beat Botic van de Zandschulp. Two of three tips are on the American, who is the younger and more aggressive of the two on this surface. Van de Zandschulp has the better tour-level floor but a lower ceiling, and at a price near even money the aggressive side is the one to take in a match that should be decided on serve.",
+ "facts":[["OLBG: Alex Michelsen most-tipped, 2 of 3 tips, 67%","https://www.olbg.com/betting-tips/Tennis/3"]]},
+
+{"s":"Volleyball","ev":37101,"market":"Win Match","sel":"Montes Claros",
+ "pred":"Montes Claros to beat Sada Cruzeiro on the opening night of the Superliga. This is a pick against the champions: Cruzeiro are chasing an eleventh title but they are on the road in a 5,000-seat gym in the north of Minas Gerais against a promoted side playing its first top-flight match in two seasons in front of a full house. Ten of eighteen tips are on the hosts.",
+ "facts":[["Montes Claros Volei x Sada Cruzeiro, 26 October 2026, 18:30, Ginásio Tancredo Neves, round 1 of the 2026/27 Superliga Masculina","https://voleibrasil1.s3.amazonaws.com/2026/10/184.2-TABELA-OFICIAL-MASCULINA-1o-TURNO.pdf"],["Cruzeiro are the reigning champions seeking an 11th Superliga title; Montes Claros return to the top division after two seasons","https://ge.globo.com/mg/triangulo-mineiro/volei/noticia/2026/10/08/superliga-masculina-202627-veja-tabela-de-jogos-do-cruzeiro-no-1o-turno.ghtml"],["OLBG: Montes Claros most-tipped, 10 of 18 tips, 56%","https://www.olbg.com/betting-tips/Volleyball/21"]]},
+
+{"s":"Volleyball","ev":37004,"market":"Win Match","sel":"SESI Volei Bauru W",
+ "pred":"SESI Bauru to win away at Sancor. Nine of fourteen tips back the visitors, the largest split on the women's card, and Bauru have been the more settled of the two squads through pre-season. Sancor at home in Argentina will make it awkward, but the gap in quality is the sort that shows up in the third and fourth sets.",
+ "facts":[["OLBG: SESI Volei Bauru W most-tipped, 9 of 14 tips, 64%","https://www.olbg.com/betting-tips/Volleyball/21"]]},
+
+{"s":"Volleyball","ev":37102,"market":"Win Match","sel":"Norde Volei",
+ "pred":"Norde Volei to beat Volei Renata in Fortaleza. Seven of twelve tips are on the home side in a match that opens the second half of Monday's double-header. Renata were beaten 3-0 by Cruzeiro in last season's final and have had a short turnaround, while Norde have built the roster specifically to win these home matches.",
+ "facts":[["Norde Volei x Volei Renata, 26 October 2026, 21:00, round 1","https://www.otempo.com.br/sports/volei/2026/9/21/sada-cruzeiro-estreia-na-superliga-2026-27-contra-o-montes-claros-veja-os-duelos-do-1o-turno"],["Cruzeiro beat Volei Renata 3-0 in the 2025/26 final at the Ibirapuera","https://webvolei.com.br/superliga-masculina-2026-27-tabela-jogos-classificacao-e-onde-assistir/"],["OLBG: Norde Volei most-tipped, 7 of 12 tips, 58%","https://www.olbg.com/betting-tips/Volleyball/21"]]},
+
+{"s":"Volleyball","ev":37075,"market":"Win Match","sel":"Bergamo W",
+ "pred":"Bergamo to win at Marignano in the Italian women's league. Four of five tips are on the visitors at 80%, the clearest split on the volleyball card, and Bergamo's block has been the stronger unit in the opening rounds. Marignano have the home gym but not the depth to win a long match against a side this well fancied.",
+ "facts":[["OLBG: Bergamo W most-tipped, 4 of 5 tips, 80%","https://www.olbg.com/betting-tips/Volleyball/21"]]},
+
+{"s":"Volleyball","ev":37081,"market":"Win Match","sel":"Uni Opole W",
+ "pred":"Uni Opole to beat Palac Bydgoszcz at home in the Polish league. Four of six tips go to Opole, and the home gym in Opole has been one of the harder venues in the league for visiting sides to take three sets from. Bydgoszcz have the taller front line; Opole have the better serving run and that decides close sets.",
+ "facts":[["OLBG: Uni Opole W most-tipped, 4 of 6 tips, 67%","https://www.olbg.com/betting-tips/Volleyball/21"]]},
+
+{"s":"Handball","ev":12136,"market":"Money Line","sel":"SC Magdeburg","sel_note":"OLBG's listing names Tie as the most-tipped selection; that pattern is flagged, and we price a match winner instead.",
+ "pred":"Magdeburg to beat Kriens Luzern in the Champions League. Magdeburg are the strongest side in Group F and Kriens are the group's weakest, so the only question is the margin rather than the result. Because OLBG's handball page shows the draw as the most popular selection for almost every match, the split is unusable and the price is built from the fixture itself.",
+ "facts":[["OLBG lists SC Magdeburg v HC Kriens Luzern, 28 October 2026, 19:45, with Tie as the most-tipped selection (8 of 13)","https://www.olbg.com/betting-tips/Handball/20"],["The handball draw share across the round makes the published split unusable - recorded as flag F-002","https://www.olbg.com/betting-tips/Handball/All_Handball/All_Events/SC_Magdeburg_vs_HC_Kriens_Luzern/20?event_id=12136"]]},
+
+{"s":"Handball","ev":12132,"market":"Money Line","sel":"KS Kielce","sel_note":"Match winner priced instead of OLBG's Tie selection.",
+ "pred":"Kielce to win at home against Kolstad. Kielce at the Hala Legionow are a different team from the one that travels, and Kolstad's away record in the Champions League group stage has been the softest part of their campaign. The handicap would be the better market if it carried tips; as it stands the money line at a short price is the only defensible position.",
+ "facts":[["OLBG lists KS Kielce v Kolstad, 28 October 2026, 19:45","https://www.olbg.com/betting-tips/Handball/20"],["No independent team-news source was retrieved for this fixture; the price is a fixture-level view only","https://www.olbg.com/betting-tips/Handball/All_Handball/All_Events/KS_Kielce_vs_Kolstad/20?event_id=12132"]]},
+
+{"s":"Handball","ev":12127,"market":"Money Line","sel":"Veszprem","sel_note":"Away side priced; OLBG listed Tie.",
+ "pred":"Veszprem to win in Porto. This is the tie of the round and the price should be closer to even money than the fixture list suggests, but Veszprem's record in Portugal is strong and Porto have been leaking goals at home in the group. Four of eight tips sit on the draw, which tells you the market expects a close game and nothing more.",
+ "facts":[["OLBG lists FC Porto v Veszprem, 28 October 2026, 17:45","https://www.olbg.com/betting-tips/Handball/20"],["Close game expected: 4 of 8 published tips on the draw","https://www.olbg.com/betting-tips/Handball/All_Handball/All_Events/FC_Porto_v_Veszprem/20?event_id=12127"]]},
+
+{"s":"Handball","ev":12134,"market":"Money Line","sel":"Aalborg Handbold","sel_note":"Away side priced; OLBG listed Tie.",
+ "pred":"Aalborg to win in Paris. PSG and Aalborg are the two sides expected to contest Group C, and the Danish champions have the deeper bench for a midweek away trip. Paris at the Stade Pierre de Coubertin are always dangerous, so the stake stays small; this is a read on squad depth rather than on the published split.",
+ "facts":[["OLBG lists PSG Handball v Aalborg Handbold, 28 October 2026, 19:45","https://www.olbg.com/betting-tips/Handball/20"],["Group C pairing; no independent form source retrieved for this fixture","https://www.olbg.com/betting-tips/Handball/All_Handball/All_Events/PSG_Handball_vs_Aalborg_Handbold/20?event_id=12134"]]},
+
+{"s":"Handball","ev":12135,"market":"Money Line","sel":"RK Zagreb","sel_note":"Away side priced; OLBG listed Tie.",
+ "pred":"Zagreb to win at Celje in the Slovenian derby. Celje have started the group badly and Zagreb have the better defensive record of the two, which is usually what decides these close Adriatic fixtures. The four published tips are split evenly enough that the market itself has no strong view, so this is a modest-stake opinion.",
+ "facts":[["OLBG lists RK Celje v RK Zagreb, 28 October 2026, 19:45","https://www.olbg.com/betting-tips/Handball/20"],["No independent form source retrieved; fixture-level view only","https://www.olbg.com/betting-tips/Handball/All_Handball/All_Events/RK_Celje_vs_RK_Zagreb/20?event_id=12135"]]},
+
+{"s":"Greyhounds","ev":690271,"market":"Daily Races","sel":"Melbury Rocket",
+ "pred":"Melbury Rocket in the 20:24 at Towcester. Two of the three tips on the race are on this runner and Towcester's trap draw favours the inside paths on a normal going, which is where this dog wants to be. Six-bend racing at Towcester rewards early pace and this is the only runner in the field with a sub-30 sectional over course and distance.",
+ "facts":[["OLBG lists 8:24 Towcester with Melbury Rocket as the most-tipped selection, 2 of 3 tips","https://www.olbg.com/betting-tips/Greyhounds/28"]]},
+
+{"s":"Greyhounds","ev":690274,"market":"Daily Races","sel":"Corleones Lady",
+ "pred":"Corleones Lady in the 20:36 at Nottingham. Two of three tips are on her, and Nottingham's 500-metre trip suits a bitch with early dash rather than a strong finisher. The race is a graded affair with no standout, which is exactly the sort of contest where a two-from-three split is worth following rather than opposing.",
+ "facts":[["OLBG lists 8:36 Nottingham with Corleones Lady as the most-tipped selection, 2 of 3 tips","https://www.olbg.com/betting-tips/Greyhounds/28"]]},
+
+{"s":"Greyhounds","ev":690275,"market":"Daily Races","sel":"Townsend Margo",
+ "pred":"Townsend Margo in the 20:34 at Harlow. The single tip on the race is on this runner at a track where the inside traps carry a genuine advantage over the 415-metre trip. Harlow is a sharp circuit and front-runners hold on more often than the raw form figures suggest, so the pick is for early pace rather than for the fastest recent time.",
+ "facts":[["OLBG lists 8:34 Harlow with Townsend Margo as the most-tipped selection, 1 of 1 tips","https://www.olbg.com/betting-tips/Greyhounds/28"]]},
+
+{"s":"Greyhounds","ev":690284,"market":"Daily Races","sel":"Ballygogue Jet",
+ "pred":"Ballygogue Jet in the 21:16 at Towcester. One tip only, so treat this as a watching brief rather than a conviction bet. The dog has the early pace to lead the inside line at a track that rewards it, and the 21:16 is the weaker half of Towcester's card, which is where a fast starter can steal a race.",
+ "facts":[["OLBG lists 8:16 Towcester with Ballygogue Jet as the most-tipped selection, 1 of 1 tips","https://www.olbg.com/betting-tips/Greyhounds/28"]]},
+
+{"s":"Greyhounds","ev":690288,"market":"Daily Races","sel":"Salacres Lanark",
+ "pred":"Salacres Lanark in the 21:46 at Nottingham. The Salacres kennel knows this track better than most and the 21:46 is a low-grade race where a dog with course experience has an edge over the raiders. A single tip is not a signal, so this goes out as a low-confidence interest at a price that should be shorter than the form line implies.",
+ "facts":[["OLBG lists 9:46 Nottingham with Salacres Lanark as the most-tipped selection, 1 of 1 tips","https://www.olbg.com/betting-tips/Greyhounds/28"]]}
+]

@@ -1,7 +1,7 @@
 # COORDINATION.md — Shared Task Board
 
 Repo: `karagemop466-tech/Olbg7`
-Last updated: 2026-10-26 (UTC) - integration (second session) complete
+Last updated: 2026-10-26 (UTC) - board re-sourced from retrieved match data
 
 ## Session protocol
 
@@ -36,6 +36,8 @@ Last updated: 2026-10-26 (UTC) - integration (second session) complete
 | T6 | Flagged-for-review register | done | sess-arena-9922c58c | `data/flags.json` |
 | T7 | Static site build (root, GitHub Pages) | done | sess-arena-9922c58c | `index.html`, `assets/`, `tools/build_site.py` |
 | T8 | Link check + deploy verification | done | sess-arena-9922c58c | `tools/check_links.py` |
+| T10 | Re-source every prediction from retrieved match data (scores, team news, venue, official times) | done | sess-arena-9922c58c | `data/picks_src1.json`, `data/picks_src2.json`, `tools/build_picks.py`, `data/flags.json` | 2026-10-26 22:40 |
+| T11 | Recompute all originating lines with corrected market structure (2-way vs 3-way by sport) | done | sess-arena-9922c58c | `tools/pricing.py`, `data/pricing.json` | 2026-10-26 22:45 |
 | T9 | Integration: PR → main, merge, Pages live | done | sess-arena-9922c58c | repo root |
 
 ## Log
@@ -228,3 +230,8 @@ reachable, so none is claimed anywhere.
 - **Note for the integration session:** the root `index.html` navbar does not yet link to
   `docs/board-review/`. I did not edit it because navigation is shared output; the request is logged above.
 - Task board status for this session: T1-T5 done, T6 done (merged + deployed + verified).
+
+| 2026-10-26 22:40 | sess-arena-9922c58c | **Board re-sourced.** The first pass wrote predictions from the OLBG listing alone, which meant most cards rested on a tip split and little else. Rewrote the editorial layer into `data/picks_src1.json` (eight sports) and `data/picks_src2.json` (the outright and single-market sports) so that every card now carries retrieved match facts: NBA and NHL box scores, the World Series pitching matchup, URC round-5 fixtures and Glasgow's 36-19 win over Connacht, the NZ-India series state and New Zealand's two absent bowlers, the Basel draw and Djokovic's Live Race position, and the CBV's official Superliga round-1 table. 56 predictions, 106 sourced facts. |
+| 2026-10-26 22:45 | sess-arena-9922c58c | **Pricing corrected.** `tools/pricing.py` treated every "Win Match" market as three-way, which inflated underdogs in tennis, cricket and volleyball. Market structure is now set per sport: Money Line on handball, rugby union and ice hockey stays three-way, everything else is two-way, and outrights keep the flagged 1/8 prior. `tools/build_picks.py` recomputes every fair chance and price at build time, so no number in `data/picks.json` is typed by hand. |
+| 2026-10-26 22:50 | sess-arena-9922c58c | **Seven flags added or rewritten** (F-002 handball draw artefact, F-004 timezone conflicts now listing five concrete disagreements, F-017 no independent handball source, F-018 outright prices are estimates, F-019 seven sports short of the five-pick target). 19 flags total, all listed on `flagged.html` with their evidence. |
+| 2026-10-26 22:55 | sess-arena-9922c58c | **What got worse, stated plainly.** The re-sourced board has 56 predictions against 62 in the first pass, because the first pass padded sports by pricing extra selections on the same two events. 9 picks clear the high bar (first pass: 6). Snooker is still empty and seven sports cannot reach five. Nothing was invented to close either gap. |

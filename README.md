@@ -22,7 +22,11 @@ Retrieval date for everything in this repository: **2026-10-26**.
 | `flagged.html` | Everything unconfirmed, contradictory or missing |
 | `data/events.json` | Event inventory: 121 events, each with the OLBG path it came from |
 | `data/pricing.json` | Every originating line produced by the engine |
-| `data/picks.json` | 62 written predictions, each with facts and source links |
+| `data/picks.json` | 56 written predictions (built output), each with facts and source links |
+| `data/picks_src1.json` | Hand-written predictions for the eight sports with a full OLBG card |
+| `data/picks_src2.json` | Hand-written predictions for the outright and single-market sports |
+| `tools/build_picks.py` | Merges the two source files into `data/picks.json` and validates word counts, sources and banned words |
+| `data/pricing.json` | CAL-1 output: 121 events inventoried, 116 priced, 5 unpriced |
 | `data/sources.json` | Source register as data + the OLBG URL grammar |
 | `data/flags.json` | Irregularity register (F-001 to F-016) and the list of deliberate blanks |
 | `tools/pricing.py` | The pricing engine |
