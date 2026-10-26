@@ -36,6 +36,7 @@ for p in picks:
     p["dec"] = m["decimal"] if m else 1.90
     p["prob"] = m["prob"] if m else 0.53
     p["window"] = in_window(m["decimal"]) if m else False
+    p["conf"] = conf_of(p["prob"]).lower()
     p["words"] = len(p["body"].split())
 
 CSS = """*{box-sizing:border-box}body{margin:0;font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#16202c;background:#f5f7fa}
@@ -92,7 +93,7 @@ source link on the <a href="{prefix}sources.html">Sources</a> page.</footer></bo
     open(out,"w").write(doc)
 
 # ---------------- index ----------------
-highp = [p for p in picks if p["prob"] and p["prob"]>=0.65]
+highp = [p for p in picks if p["conf"]=="high"]
 top = sorted(highp, key=lambda p:-p["prob"])[:5]
 rows = "".join(
  f"<tr><td><b>{esc(p['match'])}</b><div class='c' style='font-size:12px;color:#5b6b7f'>{esc(p['sport'])} · {esc(p['when'])}</div></td>"

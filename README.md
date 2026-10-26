@@ -32,7 +32,7 @@ python3 scripts/check_links.py    # link check, must exit 0
 ## Headline numbers (capture: 26 October 2026)
 
 - 15 sports, 119 live events, 119 priced (12 Tier A from official standings, 107 Tier B reference lines)
-- 44 written predictions, 39–55 words each; 5 graded High confidence
+- 44 written predictions, 39–55 words each; 7 graded High confidence (65%+), 18 Medium, 19 Low
 - 0 snooker and 0 greyhound predictions — nothing bettable was on the board; reasons in `docs/flagged.html`
 
 ## Method in one line
