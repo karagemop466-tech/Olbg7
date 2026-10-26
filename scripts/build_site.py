@@ -6,7 +6,7 @@ import os
 import pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
-DATA = ROOT / "data"
+DATA = ROOT / "data" / "consensus"
 # GitHub Pages for this repository is pinned to the repo root of `main`, so the
 # generated pages are written there. Set SITE_OUT to build elsewhere.
 DOCS = pathlib.Path(os.environ.get("SITE_OUT", ROOT)).resolve()
@@ -117,7 +117,8 @@ def page(title, active, body):
 Every market row links to the OLBG page it came from. Form numbers are only stated where an official league page was read
 (<a href="https://www.nhl.com/standings">NHL.com</a>, <a href="https://www.nba.com/standings">NBA.com</a>); everything else is
 attributed to OLBG's published tip counts. Unconfirmed fields are left blank and listed on the
-<a href="flagged.html">Flagged for review</a> page. Our prices are analytical output, not a bookmaker offer.
+<a href="flagged.html">Flagged for review</a> page. This board is the tip-consensus view; the
+<a href="../docs/index.html">primary board</a> covers the same sports with tournament-source pricing. Our prices are analytical output, not a bookmaker offer.
 </footer>
 </body></html>"""
 
@@ -230,7 +231,7 @@ def main():
              '<p><b>4. Everything unresolved is on <a href="flagged.html">Flagged for review</a></b> with source links.</p></div>')
 
     (DOCS / "index.html").write_text(page(
-        "OLBG coverage dashboard — snapshot 26 October 2026", "index.html", "\n".join(b)))
+        "OLBG tip-consensus board — snapshot 26 October 2026", "index.html", "\n".join(b)))
 
     # ---------------- sport pages ----------------
     lines_by_sport = {}
@@ -251,13 +252,18 @@ def main():
 
         if st.get("reason"):
             cls = "ok" if st.get("status") == "ok" else "note"
-            b.append(f'<div class="{cls}"><b>Coverage note.</b> {esc(st["reason"])}</div>')
+            extra = ""
+            if s in ("Rugby League", "Snooker"):
+                extra = (' Fixtures for this sport that OLBG lists without any tip counts are priced on the '
+                         f'<a href="../docs/{SLUG[s]}.html">primary board</a>.')
+            b.append(f'<div class="{cls}"><b>Coverage note.</b> {esc(st["reason"])}{extra}</div>')
 
         if not sp:
             b.append('<h2>No picks for this sport</h2>')
-            b.append('<div class="note">There is nothing to price. OLBG returned <b>“No tips found.”</b> for snooker on '
-                     '2026-10-26, so this page cannot carry a line, a selection or a prediction. This is a gap on the source '
-                     'site, not an omission here — it is logged on the <a href="flagged.html">Flagged for review</a> page.</div>')
+            b.append('<div class="note">There is nothing here to price from tip consensus: OLBG returned <b>“No tips found.”</b> '
+                     'on its snooker tips page on 2026-10-26, so no tip counts exist to originate a line from. Snooker fixtures '
+                     'do exist and are covered on the <a href="../docs/snooker.html">primary board</a>, which prices them from '
+                     'tournament sources instead. This gap is logged on the <a href="flagged.html">Flagged for review</a> page.</div>')
         else:
             b.append('<h2>Picks — what to back</h2>')
             b.append('<p class="sub">The <b>Pick</b> column is the selection. Prices are ours, implied chance is shown '

@@ -42,7 +42,7 @@ import math
 import pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
-DATA = ROOT / "data"
+DATA = ROOT / "data" / "consensus"
 
 K_PSEUDO_TIPS = 10
 OVERROUND = 0.05

@@ -8,7 +8,7 @@ import sys
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 DOCS = pathlib.Path(os.environ.get("SITE_OUT", ROOT)).resolve()
-DATA = ROOT / "data"
+DATA = ROOT / "data" / "consensus"
 
 
 def main():

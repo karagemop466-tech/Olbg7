@@ -22,11 +22,17 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Re-price every market
+      - name: Re-price every market (tip-consensus board)
         run: python scripts/price_model.py
-      - name: Rebuild the site from the data
+      - name: Rebuild the tip-consensus board
         run: python scripts/build_site.py
+        env:
+          SITE_OUT: olbg-tips
+      - name: Rebuild the primary board
+        run: python tools/build_site.py
       - name: Check sources, word counts, odds band and internal links
         run: python scripts/link_check.py
-      - name: Fail if the committed site is out of date with the data
-        run: git diff --exit-code --stat
+        env:
+          SITE_OUT: olbg-tips
+      - name: Fail if the committed tip-consensus board is out of date with the data
+        run: git diff --exit-code --stat -- olbg-tips data/consensus
