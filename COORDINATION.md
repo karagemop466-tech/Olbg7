@@ -36,7 +36,7 @@ Last updated: 2026-10-26 (UTC) - integration (second session) complete
 | T6 | Flagged-for-review register | done | sess-arena-9922c58c | `data/flags.json` |
 | T7 | Static site build (root, GitHub Pages) | done | sess-arena-9922c58c | `index.html`, `assets/`, `tools/build_site.py` |
 | T8 | Link check + deploy verification | done | sess-arena-9922c58c | `tools/check_links.py` |
-| T9 | Integration: PR → main, merge, Pages live | in progress | sess-arena-9922c58c | repo root |
+| T9 | Integration: PR → main, merge, Pages live | done | sess-arena-9922c58c | repo root |
 
 ## Log
 
@@ -98,3 +98,7 @@ Rules followed: no invented fixtures/odds/injuries; unverified values left blank
 - 2026-10-26: PR #1 merged (https://github.com/karagemop466-tech/Olbg7/pull/1, merged 20:34Z). Pages build `built` for merged commit; live check via fetch of https://karagemop466-tech.github.io/Olbg7/docs/ returned the Executive Summary with Top 10 table. Root `/` redirects to `docs/`.
 - Post-merge fix (same session): corrected two text issues found on the live page — Selby qualifier score rendered as words ("six one" -> "6-1") and removed an inaccurate claim that all fair prices sit within -250..+10000 (fair prices above ~71% must be shorter than -250; now stated explicitly on index + method pages).
 - Final record: PR #1 https://github.com/karagemop466-tech/Olbg7/pull/1 MERGED 2026-10-26T20:34:24Z; PR #2 https://github.com/karagemop466-tech/Olbg7/pull/2 MERGED (live snooker page re-fetched and confirmed fixed, Pages build `built`). Live site: https://karagemop466-tech.github.io/Olbg7/ (redirects to /docs/ dashboard). All tasks done; flagged items remain open for owner review on docs/flagged.html and do not block.
+
+| 2026-10-26 21:58 | sess-arena-9922c58c | **PR #5 MERGED** (https://github.com/karagemop466-tech/Olbg7/pull/5, merge commit b75ac01, merged 20:38:34Z). GitHub Pages rebuilt from `main` / (status `built`). Live checks with a cache-buster: root dashboard, `sports/basketball.html`, `sports/snooker.html`, `flagged.html` all return HTTP 200 with the expected content. The prior board at `/docs/` still resolves. |
+| 2026-10-26 22:02 | sess-arena-9922c58c | Two post-merge corrections found by reading the live pages: F-015 quoted a stale pick count (52 instead of 62 - now 25 picks on four tips or fewer and 10 on a single tip, computed from `data/picks.json`), and the Snooker page printed a redundant "below target" note as well as its "no market data" note. Both fixed and rebuilt; checks pass. |
+| 2026-10-26 22:05 | sess-arena-9922c58c | Final state: 21 pages live, 521+ internal links, 0 broken. 6 high-confidence picks, all in the -250 to +10000 band. Five sports short of the 5-pick target, all flagged on `flagged.html` (F-006 to F-009) and named in the dashboard gap note. Nothing was marked verified without a source link. |

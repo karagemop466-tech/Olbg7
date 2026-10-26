@@ -305,7 +305,7 @@ is kept for comparison, not merged into these totals.</li>
 <p class="lede">{len(evs)} OLBG events inventoried, {len(ps)} written predictions
 ({hh} high, {sum(1 for p in ps if p['_conf']=='medium')} medium, {sum(1 for p in ps if p['_conf']=='low')} low).
 Prices in the table are our own.</p>"""
-        if len(ps) < 5:
+        if 0 < len(ps) < 5:
             doc += f"""<div class="note flag"><strong>Below the five-pick target.</strong> Only {len(ps)} priced
 selection(s) existed for {esc(name)} on OLBG at retrieval. We have not invented extra matches to fill the quota.
 The constraint is recorded on the <a href="../flagged.html">Flagged for review</a> page.</div>"""
