@@ -1,0 +1,500 @@
+{
+  "snapshot_utc": "2026-10-26",
+  "editorial_rules": [
+    "Every prediction is tied to one market row captured from OLBG on 2026-10-26 and states the selection, the market and our own price.",
+    "Form and standings numbers are only used where they were read off an official league page during this session (NHL.com, NBA.com). Those rows carry an official source link.",
+    "No injury, team-news, weather or head-to-head claim is made anywhere: none could be checked against an official source from this environment, so the field is left empty rather than guessed.",
+    "Where no independent check was possible the prediction says so in plain words instead of implying research that was not done.",
+    "Confidence labels come from scripts/price_model.py: HIGH needs at least 8 tips on the market and a modelled chance of 62% or better."
+  ],
+  "sport_status": {
+    "Golf": {"events": 3, "picks": 3, "status": "shortfall", "reason": "OLBG lists three tournaments and only four tipster-backed selections (two tips in each). A five-pick golf card would require inventing support that does not exist."},
+    "Volleyball": {"events": 14, "picks": 5, "status": "ok", "reason": ""},
+    "Rugby Union": {"events": 13, "picks": 5, "status": "ok", "reason": "Five picks delivered, but every rugby union match market on the card carries one or two tips, so all five are Low confidence."},
+    "Cricket": {"events": 13, "picks": 5, "status": "ok", "reason": ""},
+    "Snooker": {"events": 0, "picks": 0, "status": "no_data", "reason": "OLBG's snooker page returned 'No tips found.' on 2026-10-26. No fixtures, no markets, no tips - so no lines and no picks. This is not a gap in our research; there is nothing on the site to price."},
+    "Darts": {"events": 2, "picks": 2, "status": "shortfall", "reason": "Only two darts events exist on the card, both outright tournament markets. No match markets are published."},
+    "Baseball": {"events": 1, "picks": 1, "status": "shortfall", "reason": "One MLB game carries tips. Three markets were priced on it; the money line fell inside -250 so the run line was picked."},
+    "Gaelic Sports": {"events": 4, "picks": 4, "status": "shortfall", "reason": "Two club football matches plus two 2027 championship outrights (football and hurling). That is the whole Gaelic card."},
+    "Greyhounds": {"events": 8, "picks": 5, "status": "ok", "reason": "Eight races listed, one already expired. Seven were priceable, five picked. Every race carries a single tip except two, so all are Low."},
+    "Tennis": {"events": 13, "picks": 5, "status": "ok", "reason": "Tournament names are not published on the OLBG tennis list, so competition is blank for every row."},
+    "Motor Racing": {"events": 2, "picks": 1, "status": "shortfall", "reason": "Two events: the Mexico City GP (a top-six finish market with no tip count printed) and the 2026 Drivers' Championship without Kimi Antonelli. Only the second is priceable."},
+    "Handball": {"events": 15, "picks": 2, "status": "flagged", "reason": "Fourteen of fifteen matches show 'Tie' as the most popular selection, which is a market-mapping anomaly rather than genuine support. Only the two rows with a named team were eligible."},
+    "Ice Hockey": {"events": 11, "picks": 5, "status": "ok", "reason": "The richest book on the site: NHL plus SHL, Liiga and DEL, with several five-market event pages."},
+    "Basketball": {"events": 14, "picks": 5, "status": "ok", "reason": ""},
+    "Rugby League": {"events": 3, "picks": 3, "status": "no_matches", "reason": "No rugby league matches are listed. The only events are three 2027 outrights (State of Origin, Super League, NRL)."}
+  },
+  "picks": {
+    "ih-lak-nyr": {
+      "headline": "NY Rangers to win (money line, -244)",
+      "text": "New York are 6-0-0 on home ice and 7-5-1 overall with 41 goals scored, while Los Angeles arrive at 2-5-2 having scored just 21 times in nine games and conceding 32. Thirteen of sixteen tips back the Rangers money line, the second-heaviest support in the hockey book, and our -244 price implies a 69% chance. Back New York to win.",
+      "evidence": "form-checked",
+      "facts": [
+        {"claim": "NY Rangers 13 GP, 7-5-1, home record 6-0-0, 41 GF, 36 GA", "source": "https://www.nhl.com/standings"},
+        {"claim": "LA Kings 9 GP, 2-5-2, road record 2-2-2, 21 GF, 32 GA", "source": "https://www.nhl.com/standings"},
+        {"claim": "13 of 16 tips on the Rangers money line", "source": "https://www.olbg.com/betting-tips/Ice_Hockey/NHL/NHL/LA_Kings_@_NY_Rangers/13?event_id=200101"}
+      ],
+      "not_checked": "No injury or line-combination news was available from an official source, so none is claimed."
+    },
+    "ck-afg-zim": {
+      "headline": "Afghanistan to win the 1st T20 (-238)",
+      "text": "Afghanistan take eight of the nine tips on the opening T20, the most one-sided split in the entire cricket book, and our -238 line implies a 68% chance. Six tipster comments sit behind the selection. We could not reach an official scorecard or squad feed for this fixture, so the case is built on that level of agreement rather than a formline: Afghanistan to win.",
+      "evidence": "market-only",
+      "facts": [
+        {"claim": "8 of 9 tips on Afghanistan, 6 comments", "source": "https://www.olbg.com/betting-tips/Cricket/All_Cricket/All_Events/Afghanistan_vs_Zimbabwe_1st_T20_Match/7?event_id=188872"}
+      ],
+      "not_checked": "Team news, pitch conditions and recent head-to-head could not be checked against an official board or ICC page."
+    },
+    "ih-det-edm": {
+      "headline": "Edmonton Oilers to win (money line, -217)",
+      "text": "Edmonton are 8-2-1 with 49 goals scored and a 3-2-1 home mark, while Detroit are 4-4-3 and have conceded 34 goals against 29 scored. Nine of eleven tips take the Oilers money line, and our -217 price implies a 67% chance. The goal differentials point the same way as the tips, which is what lifts this to High.",
+      "evidence": "form-checked",
+      "facts": [
+        {"claim": "Edmonton 8-2-1, home 3-2-1, 49 GF, 39 GA", "source": "https://www.nhl.com/standings"},
+        {"claim": "Detroit 4-4-3, 29 GF, 34 GA", "source": "https://www.nhl.com/standings"},
+        {"claim": "9 of 11 tips on Edmonton money line", "source": "https://www.olbg.com/betting-tips/Ice_Hockey/NHL/NHL/DET_Red_Wings_@_EDM_Oilers/13?event_id=200102"}
+      ],
+      "not_checked": "Starting goalie confirmation was not available, so no goalie claim is made."
+    },
+    "ck-nam-ire": {
+      "headline": "Ireland to win the 3rd ODI (-200)",
+      "text": "Nineteen of twenty-seven tips (70%) back Ireland in the third one-day international, with one OLBG Expert on the same side, and our -200 price implies a 65% chance. No official scorecard feed for this series was reachable, so nothing is asserted about the series score or the venues: the pick is Ireland to win the match on the weight of support.",
+      "evidence": "market-only",
+      "facts": [
+        {"claim": "19 of 27 tips on Ireland, 1 Expert, 5 comments", "source": "https://www.olbg.com/betting-tips/Cricket/All_Cricket/All_Events/Namibia_vs_Ireland_3rd_ODI/7?event_id=188854"}
+      ],
+      "not_checked": "Series score, toss and squad changes are unpublished in the sources available here."
+    },
+    "ck-nz-ind": {
+      "headline": "India to win the 3rd T20 (-192)",
+      "text": "India draw 27 of the 40 tips in the third T20 — 68% of the largest sample anywhere in the cricket book — and two OLBG Experts plus fourteen comments sit behind the selection. Our -192 line implies a 64% chance, so the price still leaves room above even money. India to win the match.",
+      "evidence": "market-only",
+      "facts": [
+        {"claim": "27 of 40 tips on India, 2 Experts, 14 comments", "source": "https://www.olbg.com/betting-tips/Cricket/All_Cricket/All_Events/New_Zealand_vs_India_3rd_T20_Match/7?event_id=188852"}
+      ],
+      "not_checked": "No official confirmation of the series position or playing XIs was available."
+    },
+    "bb-ind-mil": {
+      "headline": "Indiana Pacers to win (money line, -189)",
+      "text": "Indiana are 2-1 and have won both road games, while Milwaukee are 0-3 and 0-1 at home. Nine of twelve tips take the Pacers money line and our -189 price implies a 64% chance. The standings and the tip split agree, which is why this is one of only two basketball picks carrying a High label.",
+      "evidence": "form-checked",
+      "facts": [
+        {"claim": "Indiana Pacers 2-1, road 2-0", "source": "https://www.nba.com/standings"},
+        {"claim": "Milwaukee Bucks 0-3, home 0-1", "source": "https://www.nba.com/standings"},
+        {"claim": "9 of 12 tips on Indiana money line", "source": "https://www.olbg.com/betting-tips/Basketball/NBA/NBA/IND_Pacers_@_MIL_Bucks/4?event_id=536204"}
+      ],
+      "not_checked": "Injury reports for either roster were not available, so no availability claim is made."
+    },
+    "bs-mil-tb": {
+      "headline": "Tampa Bay Rays +1.50 on the run line (-189)",
+      "text": "Tampa Bay take 21 of 27 money-line tips (78%), but that price lands inside -250 so the quotable bet is the run line. Nine of twelve tips also favour the Rays with a run and a half start, and our -189 line implies 64%. Tampa Bay win by two or more, or lose by a single run.",
+      "evidence": "market-only",
+      "facts": [
+        {"claim": "21 of 27 money-line tips, 9 of 12 run-line tips on Tampa Bay", "source": "https://www.olbg.com/betting-tips/Baseball/MLB/MLB/MIL_Brewers_@_TB_Rays/12?event_id=160795"}
+      ],
+      "not_checked": "Starting pitchers were not confirmed from an official source, so this is written as an action bet rather than a listed-pitcher bet."
+    },
+    "gf-kan-eog": {
+      "headline": "Eire Og Cor +0.50 (handicap, -238)",
+      "text": "All six tips in this Cork club fixture go to Eire Og with a half-point start, and our -238 line implies a 69% chance. The half-point cover means a draw also lands, which is why the price is shorter than a straight win bet. OLBG prints the fixture without a market name or competition, so no table claim is made.",
+      "evidence": "market-only",
+      "facts": [
+        {"claim": "6 of 6 tips on Eire Og Cor +0.50", "source": "https://www.olbg.com/betting-tips/Gaelic_Football/All_Gaelic_Football/All_Events/Kanturk_v_Eire_Og_Cor/25?event_id=3531"}
+      ],
+      "not_checked": "County final status, venue and team sheets could not be checked against an official GAA source."
+    },
+    "tn-sas-bar": {
+      "headline": "Nikola Bartunkova to win (-217)",
+      "text": "Five tips, five on Nikola Bartunkova, and our -217 line implies a 67% chance — but five tips is a thin sample, so the label is Medium rather than High. OLBG does not name the tournament on its tennis list, so no surface or draw claim is made: Bartunkova to win the match.",
+      "evidence": "market-only",
+      "facts": [
+        {"claim": "5 of 5 tips on Bartunkova, 1 comment", "source": "https://www.olbg.com/betting-tips/Tennis/All_Tennis/All_Events/Aliaksandra_Sasnovich_vs_Nikola_Bartunkova/3?event_id=902381"}
+      ],
+      "not_checked": "Tournament, surface and player ranking are not published on the captured page."
+    },
+    "bb-cor-fra": {
+      "headline": "Corinthians to win (money line, -196)",
+      "text": "Corinthians hold six of seven tips in Brazil's NBB against a single tip for Franca, and our -196 price implies a 65% chance. No official NBB box-score feed was reachable here, so the read is the split itself: a market that splits 6-1 in a two-team sport is a meaningful signal, and Corinthians are the side.",
+      "evidence": "market-only",
+      "facts": [
+        {"claim": "6 of 7 tips on Corinthians", "source": "https://www.olbg.com/betting-tips/Basketball/Other/Brazil_NBB/Corinthians_vs_Franca/4?event_id=536173"}
+      ],
+      "not_checked": "NBB standings and roster news were not available."
+    },
+    "ih-kal-spo": {
+      "headline": "Kalpa to win (money line, -172)",
+      "text": "Kalpa take all three tips against Sport in Finland's Liiga, and our -172 line implies a 62% chance. Three tips keeps this at Medium. We found no official Liiga table in this session, so nothing is asserted about either side's recent run — the pick is the clean sweep of the market: Kalpa to win.",
+      "evidence": "market-only",
+      "facts": [
+        {"claim": "3 of 3 tips on Kalpa, 1 comment", "source": "https://www.olbg.com/betting-tips/Ice_Hockey/Other/Finland_SM_Liiga/Kalpa_vs_Sport/13?event_id=200081"}
+      ],
+      "not_checked": "Liiga standings and line-up news were not checked against an official source."
+    },
+    "ck-pak-sl": {
+      "headline": "Pakistan to win the one-day match (-169)",
+      "text": "Fourteen of twenty-one tips (67%) go to Pakistan, with ten comments behind the selection, and our -169 line implies a 61% chance. OLBG publishes the fixture without a venue or series label, so no conditions or home-ground angle is claimed: Pakistan to win the match.",
+      "evidence": "market-only",
+      "facts": [
+        {"claim": "14 of 21 tips on Pakistan, 10 comments", "source": "https://www.olbg.com/betting-tips/Cricket/All_Cricket/All_Events/Pakistan_vs_Sri_Lanka_One_Day_Match/7?event_id=188868"}
+      ],
+      "not_checked": "Venue, series context and XI news are unpublished on the captured page."
+    },
+    "bb-mem-uta": {
+      "headline": "Memphis Grizzlies to win (money line, -167)",
+      "text": "Memphis are 3-0 and have won both road games, while Utah are 1-2 and have lost their only away fixture. Nine of thirteen tips take the Grizzlies and our -167 price implies a 61% chance, with six comments behind the selection. Back Memphis to win in Salt Lake City.",
+      "evidence": "form-checked",
+      "facts": [
+        {"claim": "Memphis Grizzlies 3-0, road 2-0", "source": "https://www.nba.com/standings"},
+        {"claim": "Utah Jazz 1-2, home 1-1, road 0-1", "source": "https://www.nba.com/standings"},
+        {"claim": "9 of 13 tips on Memphis money line", "source": "https://www.olbg.com/betting-tips/Basketball/NBA/NBA/MEM_Grizzlies_@_UTA_Jazz/4?event_id=536206"}
+      ],
+      "not_checked": "Injury reports for either roster were not available."
+    },
+    "rl-soo-2027": {
+      "headline": "New South Wales to win State of Origin 2027 (-167)",
+      "text": "Nine of thirteen tips (69%) take New South Wales for the 2027 State of Origin series, and our -167 line implies a 61% chance. With only two possible outcomes, a 69% tip share is a strong signal once the sample is weighted, and three comments back it. New South Wales to win the series.",
+      "evidence": "market-only",
+      "facts": [
+        {"claim": "9 of 13 tips on New South Wales, 3 comments", "source": "https://www.olbg.com/betting-tips/Rugby_League/All_Rugby_League/All_Events/State_of_Origin_2027/10?event_id=2695857"}
+      ],
+      "not_checked": "No 2027 squad, venue or schedule information exists yet to check."
+    },
+    "bb-was-cha": {
+      "headline": "Charlotte Hornets to win (money line, -161)",
+      "text": "Charlotte are 2-1 and Washington are 2-1, so the records do not separate these teams; the Hornets' 1-1 home mark against Washington's 1-0 road mark explains why the price is only -161, implying 60%. Seven of ten tips still take Charlotte, with two comments behind it. Back the Hornets at home.",
+      "evidence": "form-checked",
+      "facts": [
+        {"claim": "Charlotte Hornets 2-1, home 1-1", "source": "https://www.nba.com/standings"},
+        {"claim": "Washington Wizards 2-1, road 1-0", "source": "https://www.nba.com/standings"},
+        {"claim": "7 of 10 tips on Charlotte money line", "source": "https://www.olbg.com/betting-tips/Basketball/NBA/NBA/WAS_Wizards_@_CHA_Hornets/4?event_id=536199"}
+      ],
+      "not_checked": "Injury reports were not available for either team."
+    },
+    "tn-tag-wil": {
+      "headline": "Venus Williams to win (-161)",
+      "text": "Four of five tips take Venus Williams at -161, an implied 60% chance. Five tips is a small sample and the tournament is not named on OLBG's list, so no claim is made about surface, round or recent match count. The case here is the split against a near coin-flip price: Venus Williams to win.",
+      "evidence": "market-only",
+      "facts": [
+        {"claim": "4 of 5 tips on Venus Williams", "source": "https://www.olbg.com/betting-tips/Tennis/All_Tennis/All_Events/Lilli_Tagger_vs_Venus_Williams/3?event_id=902189"}
+      ],
+      "not_checked": "Tournament, surface and ranking are unpublished on the captured page."
+    },
+    "tn-djo-hum": {
+      "headline": "Novak Djokovic to win (-161)",
+      "text": "Novak Djokovic takes four of five tips for the 28 October meeting with Ugo Humbert, and our -161 price implies a 60% chance. The page we captured does not name the tournament or the round, so no conditions angle is invented here: Djokovic to win the match, with the pick resting on the tip split.",
+      "evidence": "market-only",
+      "facts": [
+        {"claim": "4 of 5 tips on Djokovic, 3 comments", "source": "https://www.olbg.com/betting-tips/Tennis/All_Tennis/All_Events/Novak_Djokovic_vs_Ugo_Humbert/3?event_id=902233"}
+      ],
+      "not_checked": "Tournament and surface are not published on the captured page."
+    },
+    "ih-tor-cgy": {
+      "headline": "Toronto Maple Leafs to win (money line, -161)",
+      "text": "Toronto are 7-4-2 with 50 goals scored and a four-game win streak; Calgary are 4-6-0 with only 23 goals and a minus-16 goal difference. Ten of fifteen tips take the Maple Leafs and our -161 line implies 60%. The underlying numbers and the tip split point the same way: Toronto to win in Calgary.",
+      "evidence": "form-checked",
+      "facts": [
+        {"claim": "Toronto 7-4-2, 50 GF, 41 GA, streak W4", "source": "https://www.nhl.com/standings"},
+        {"claim": "Calgary 4-6-0, 23 GF, 39 GA, goal difference minus 16", "source": "https://www.nhl.com/standings"},
+        {"claim": "10 of 15 tips on Toronto money line", "source": "https://www.olbg.com/betting-tips/Ice_Hockey/NHL/NHL/TOR_Maple_Leafs_@_CGY_Flames/13?event_id=200103"}
+      ],
+      "not_checked": "Starting goalies and injury lists were not confirmed."
+    },
+    "vo-mar-ber": {
+      "headline": "Bergamo W to win (-161)",
+      "text": "Four of five tips back Bergamo W, and one OLBG Expert is on the same side, which is what pushes this to -161 for a 60% implied chance. The Italian league fixture carries no form data we were able to check, so the pick is the tip split and the expert agreement: Bergamo W to win.",
+      "evidence": "market-only",
+      "facts": [
+        {"claim": "4 of 5 tips on Bergamo W, 1 Expert, 1 comment", "source": "https://www.olbg.com/betting-tips/Volleyball/All_Volleyball/All_Events/Marignano_W_vs_Bergamo_W/21?event_id=37075"}
+      ],
+      "not_checked": "Italian league table and squad news were not available."
+    },
+    "bb-mog-uni": {
+      "headline": "Unifacisa to win (money line, -152)",
+      "text": "Five of seven tips go to Unifacisa and our -152 price implies a 59% chance. The sample is small and no official NBB form source was reachable, so this stays Medium. Even so, a 5-2 split in a two-team market is a clear lean, and Unifacisa are the side to back.",
+      "evidence": "market-only",
+      "facts": [
+        {"claim": "5 of 7 tips on Unifacisa", "source": "https://www.olbg.com/betting-tips/Basketball/Other/Brazil_NBB/Mogi_das_Cruzes_vs_Unifacisa/4?event_id=536172"}
+      ],
+      "not_checked": "NBB standings and roster news were not available."
+    },
+    "gf-frc-kil": {
+      "headline": "Kildimo Pallaskenry +3.50 (handicap, -152)",
+      "text": "Kildimo Pallaskenry take a three-and-a-half point start and five of seven tips, which prices at -152 for a 59% implied chance. The bet only loses if Fr Caseys win by four or more. In a Limerick club game with no published form guide, that cushion is the argument: Kildimo Pallaskenry to cover.",
+      "evidence": "market-only",
+      "facts": [
+        {"claim": "5 of 7 tips on Kildimo Pallaskenry +3.50", "source": "https://www.olbg.com/betting-tips/Gaelic_Football/All_Gaelic_Football/All_Events/Fr_Caseys_v_Kildimo_Pallaskenry/25?event_id=3537"}
+      ],
+      "not_checked": "Competition round, venue and team sheets could not be checked against an official GAA source."
+    },
+    "vo-san-ses": {
+      "headline": "SESI Volei Bauru W to win (-149)",
+      "text": "Nine of fourteen tips take SESI Volei Bauru W, with four tipster comments behind the selection, and our -149 line implies a 58% chance. Brazilian women's league data is not published in the sources we could reach, so the pick rests on comment volume and the size of the split: SESI Bauru to win.",
+      "evidence": "market-only",
+      "facts": [
+        {"claim": "9 of 14 tips on SESI Volei Bauru W, 4 comments", "source": "https://www.olbg.com/betting-tips/Volleyball/All_Volleyball/All_Events/Sancor_Volei_W_vs_SESI_Volei_Bauru_W/21?event_id=37004"}
+      ],
+      "not_checked": "Brazilian Superliga table and squad news were not available."
+    },
+    "tn-lem-pap": {
+      "headline": "Despina Papamichail to win (-149)",
+      "text": "Two tips, both on Despina Papamichail, give a -149 price and a 58% implied chance. Two tips is almost no evidence, which is why this is labelled Low. The match appears on the OLBG card without a published tournament, so the pick is simply the only side with support.",
+      "evidence": "market-only",
+      "facts": [
+        {"claim": "2 of 2 tips on Papamichail, 1 comment", "source": "https://www.olbg.com/betting-tips/Tennis/All_Tennis/All_Events/Nauhany_Vitoria_Leme_Da_Silva_vs_Despina_Papamichail/3?event_id=902326"}
+      ],
+      "not_checked": "Tournament and surface are unpublished."
+    },
+    "tn-li-ale": {
+      "headline": "Ekaterina Alexandrova to win (-149)",
+      "text": "Ekaterina Alexandrova holds both tips in a two-tip market and prices at -149, an implied 58% chance. With the tournament unnamed on the page and no official form feed reachable, this is a market-structure pick rather than a form pick: Alexandrova to win the match.",
+      "evidence": "market-only",
+      "facts": [
+        {"claim": "2 of 2 tips on Alexandrova, 1 comment", "source": "https://www.olbg.com/betting-tips/Tennis/All_Tennis/All_Events/Ann_Li_vs_Ekaterina_Alexandrova/3?event_id=902176"}
+      ],
+      "not_checked": "Tournament and surface are unpublished."
+    },
+    "ih-mal-lin": {
+      "headline": "IF Malmo Redhawks to win (money line, -149)",
+      "text": "IF Malmo Redhawks hold both tips in this Swedish Hockey League fixture and price at -149 for a 58% implied chance. Two tips cannot support more than a Low label, and no official SHL table was available to check either side's run, so the selection is the tip split: Malmo to win.",
+      "evidence": "market-only",
+      "facts": [
+        {"claim": "2 of 2 tips on IF Malmo Redhawks, 1 comment", "source": "https://www.olbg.com/betting-tips/Ice_Hockey/Other/Swedish_Hockey_League/IF_Malmo_Redhawks_vs_Linkoping_HC/13?event_id=200082"}
+      ],
+      "not_checked": "SHL standings were not checked against an official source."
+    },
+    "vo-zir-gaz": {
+      "headline": "Ziraat Bankasi to win (-149)",
+      "text": "Ziraat Bankasi take both tips, with one OLBG Expert among them, and price at -149 for a 58% implied chance. Turkish league form was not available from an official source in this session, so the reason this gets a pick is the agreement between an Expert and the wider tips: Ziraat to win.",
+      "evidence": "market-only",
+      "facts": [
+        {"claim": "2 of 2 tips on Ziraat Bankasi, 1 Expert, 2 comments", "source": "https://www.olbg.com/betting-tips/Volleyball/All_Volleyball/All_Events/Ziraat_Bankasi_vs_Gaziantep_Genclik_Spor/21?event_id=37121"}
+      ],
+      "not_checked": "Turkish league table and squad news were not available."
+    },
+    "vo-val-oul": {
+      "headline": "VaLePa to win (-149)",
+      "text": "VaLePa take both tips and one Expert backs the same side, giving -149 and a 58% implied chance. Finnish league standings are not published in the sources we could reach, so the pick is the market split rather than a form read: VaLePa to win the match.",
+      "evidence": "market-only",
+      "facts": [
+        {"claim": "2 of 2 tips on VaLePa, 1 Expert, 1 comment", "source": "https://www.olbg.com/betting-tips/Volleyball/All_Volleyball/All_Events/VaLePa_vs_AC_Oulu/21?event_id=37129"}
+      ],
+      "not_checked": "Finnish league table was not checked."
+    },
+    "ru-col-age": {
+      "headline": "Colomiers to win (-149)",
+      "text": "Colomiers take both tips at -149, an implied 58% chance, in this French second-tier fixture. The competition is not printed on the OLBG list and no official table was reachable, so no league-position claim is made. Two tips keeps the label Low: Colomiers to win.",
+      "evidence": "market-only",
+      "facts": [
+        {"claim": "2 of 2 tips on Colomiers", "source": "https://www.olbg.com/betting-tips/Rugby_Union/All_Rugby_Union/All_Events/Colomiers_v_Agen/9?event_id=609604"}
+      ],
+      "not_checked": "Pro D2 standings, team sheets and travel schedules were not checked."
+    },
+    "ru-mon-nar": {
+      "headline": "Montauban to win (-149)",
+      "text": "Both tips in Montauban v Narbonne go to Montauban, giving -149 and a 58% implied chance. With two tips and no accessible official form guide, the honest label is Low. The market is unanimous, which is the only basis for the selection: Montauban to win.",
+      "evidence": "market-only",
+      "facts": [
+        {"claim": "2 of 2 tips on Montauban", "source": "https://www.olbg.com/betting-tips/Rugby_Union/All_Rugby_Union/All_Events/Montauban_v_Narbonne/9?event_id=609603"}
+      ],
+      "not_checked": "French second-tier standings were not checked."
+    },
+    "ck-auc-can": {
+      "headline": "Canterbury to win (-149)",
+      "text": "Canterbury take both tips in this New Zealand one-day match and price at -149, a 58% implied chance. The domestic competition is unnamed on the page captured, so no table or venue claim is made. The pick is the clean sweep of a two-tip market, with two comments behind it.",
+      "evidence": "market-only",
+      "facts": [
+        {"claim": "2 of 2 tips on Canterbury, 2 comments", "source": "https://www.olbg.com/betting-tips/Cricket/All_Cricket/All_Events/Auckland_vs_Canterbury_One_Day_Match/7?event_id=188876"}
+      ],
+      "not_checked": "New Zealand domestic standings and XI news were not available."
+    },
+    "vo-opo-byd": {
+      "headline": "Uni Opole W to win (-137)",
+      "text": "Four of six tips back Uni Opole W at -137, a 56% implied chance, with one comment on the selection. Polish league form is not published in the sources we could reach, so the pick rests on the split and the comment count rather than a formline: Uni Opole W to win.",
+      "evidence": "market-only",
+      "facts": [
+        {"claim": "4 of 6 tips on Uni Opole W, 1 comment", "source": "https://www.olbg.com/betting-tips/Volleyball/All_Volleyball/All_Events/Uni_Opole_W_vs_Palac_Bydgoszcz_W/21?event_id=37081"}
+      ],
+      "not_checked": "Polish league table was not checked."
+    },
+    "ru-dax-pro": {
+      "headline": "Provence +1.50 (handicap, -127)",
+      "text": "Provence take a point-and-a-half start and the only tip in the market, pricing at -127 for a 54% implied chance. One tip is not evidence, so this is a Low-confidence line built to be beaten rather than a strong call. Provence +1.50 to cover the handicap.",
+      "evidence": "market-only",
+      "facts": [
+        {"claim": "1 of 1 tips on Provence +1.50", "source": "https://www.olbg.com/betting-tips/Rugby_Union/All_Rugby_Union/All_Events/Dax_v_Provence/9?event_id=609605"}
+      ],
+      "not_checked": "No official form or team-news check was possible."
+    },
+    "ru-bez-gre": {
+      "headline": "Grenoble to win (-127)",
+      "text": "The single tip in Beziers v Grenoble is on Grenoble, which prices at -127 for a 54% implied chance. With no official French second-tier table available to check either side's form, the pick is the only supported side and is labelled Low for that reason.",
+      "evidence": "market-only",
+      "facts": [
+        {"claim": "1 of 1 tips on Grenoble", "source": "https://www.olbg.com/betting-tips/Rugby_Union/All_Rugby_Union/All_Events/Beziers_v_Grenoble/9?event_id=609599"}
+      ],
+      "not_checked": "Standings and team sheets were not checked."
+    },
+    "ru-nis-aur": {
+      "headline": "Nissa to win (-127)",
+      "text": "Nissa hold the only tip at -127, a 54% implied chance. OLBG prints this fixture without a competition label and we could not reach an official French rugby table, so nothing about home form is claimed here. The pick is Nissa to win on the single tip.",
+      "evidence": "market-only",
+      "facts": [
+        {"claim": "1 of 1 tips on Nissa", "source": "https://www.olbg.com/betting-tips/Rugby_Union/All_Rugby_Union/All_Events/Nissa_v_Aurillac/9?event_id=609600"}
+      ],
+      "not_checked": "Competition and standings are unconfirmed."
+    },
+    "hb-fle-bal": {
+      "headline": "HBW Balingen-Weilstetten to win (-127)",
+      "text": "HBW Balingen-Weilstetten take the only tip in this Bundesliga fixture at -127, a 54% implied chance, against a Flensburg side that would normally be favoured. That makes it a contrarian single-tip pick, labelled Low, and no official form check was possible to support it.",
+      "evidence": "market-only",
+      "facts": [
+        {"claim": "1 of 1 tips on HBW Balingen-Weilstetten", "source": "https://www.olbg.com/betting-tips/Handball/All_Handball/All_Events/SG_Flensburg_Handewitt_vs_HBW_Balingen_Weilstetten/20?event_id=12180"}
+      ],
+      "not_checked": "Bundesliga table and squad news were not checked."
+    },
+    "dt-pdc-2027": {
+      "headline": "Luke Littler to win the PDC World Championship 2027 (+103)",
+      "text": "Luke Littler takes 22 of 36 tips (61%) to win the 2027 PDC World Championship, with seven comments behind the selection, and our +103 line implies a 48% chance in a 96-player field. That is the strongest outright support in the darts book: Luke Littler to win the title.",
+      "evidence": "market-only",
+      "facts": [
+        {"claim": "22 of 36 tips on Luke Littler, 7 comments", "source": "https://www.olbg.com/betting-tips/Darts/All_Darts/All_Events/PDC_World_Championship_2027/15?event_id=26023"}
+      ],
+      "not_checked": "No rankings or qualifying-field confirmation was available; field size is a documented assumption."
+    },
+    "gf-aif-2027": {
+      "headline": "Kerry to win the All-Ireland Football Championship 2027 (+178)",
+      "text": "Kerry take six of eight tips to win the 2027 All-Ireland football title, and our +178 line implies a 35% chance across a 32-county field. Only eight tips exist in the market, so the label stays Low despite the lopsided split. Kerry to lift Sam Maguire.",
+      "evidence": "market-only",
+      "facts": [
+        {"claim": "6 of 8 tips on Kerry, 2 comments", "source": "https://www.olbg.com/betting-tips/Gaelic_Football/All_Gaelic_Football/All_Events/All_Ireland_Football_Championship_2027/25?event_id=3327"}
+      ],
+      "not_checked": "No official championship draw or panel news exists yet to check."
+    },
+    "hb-ifk-sze": {
+      "headline": "IFK Kristianstad to win (+193)",
+      "text": "IFK Kristianstad are the only side in the handball book whose top selection is not the anomalous 'Tie' label, taking one of three tips at +193, a 33% implied chance. With a single tip behind it and no official EHF form check, this is a Low-label pick driven by a data-quality quirk.",
+      "evidence": "market-only",
+      "facts": [
+        {"claim": "1 of 3 tips on IFK Kristianstad", "source": "https://www.olbg.com/betting-tips/Handball/All_Handball/All_Events/IFK_Kristianstad_vs_Pick_Szeged/20?event_id=12131"}
+      ],
+      "not_checked": "EHF standings and squad news were not checked."
+    },
+    "gh-0836-not": {
+      "headline": "Corleones Lady to win the 8:36 Nottingham (+246)",
+      "text": "Corleones Lady takes two of three tips for the 8:36 at Nottingham and prices at +246, a 28% implied chance in a six-dog race, with one comment behind the selection. Trap draw and sectional times are not published on the page captured, so no draw or early-pace angle is claimed.",
+      "evidence": "market-only",
+      "facts": [
+        {"claim": "2 of 3 tips on Corleones Lady, 1 comment", "source": "https://www.olbg.com/betting-tips/Greyhounds/All_Greyhounds/All_Events/8:36_Nottingham/28?event_id=690274"}
+      ],
+      "not_checked": "Racecard times, trap draws and going were not available; the clock label and listed start time on OLBG disagree."
+    },
+    "hu-aif-2027": {
+      "headline": "Galway to win the All-Ireland Hurling Championship 2027 (+249)",
+      "text": "Galway take seven of eighteen tips (39%) for the 2027 All-Ireland hurling title, and our +249 line implies a 28% chance across a twelve-county field. Eighteen tips is a reasonable ante-post sample, but no official championship form check was possible in this session: Galway to win.",
+      "evidence": "market-only",
+      "facts": [
+        {"claim": "7 of 18 tips on Galway", "source": "https://www.olbg.com/betting-tips/Hurling/All_Hurling/All_Events/All_Ireland_Hurling_Championship_2027/26?event_id=675"}
+      ],
+      "not_checked": "Provincial draws and panel news do not yet exist to check."
+    },
+    "mr-f1-wdc": {
+      "headline": "Max Verstappen, 2026 Drivers' Championship without Kimi Antonelli (+270)",
+      "text": "Max Verstappen takes four of seven tips in the 2026 Drivers' Championship market with Kimi Antonelli removed, and our +270 line implies a 26% chance, with one comment behind the selection. Championship standings were not available from an official Formula 1 source here, so no points gap is asserted.",
+      "evidence": "market-only",
+      "facts": [
+        {"claim": "4 of 7 tips on Verstappen, 1 comment", "source": "https://www.olbg.com/betting-tips/Motor_Racing/All_Motor_Racing/All_Events/Formula_1_Drivers_Championship_2026_Without_Kimi_Antonelli/14?event_id=912"}
+      ],
+      "not_checked": "Current championship points were not checked against an official F1 source."
+    },
+    "gh-0834-har": {
+      "headline": "Townsend Margo to win the 8:34 Harlow (+302)",
+      "text": "Townsend Margo is the only dog backed in the 8:34 at Harlow, which prices at +302 for a 24% chance in a six-runner field. A single tip cannot separate this from a guess, so the label is Low and no trap or sectional claim is made.",
+      "evidence": "market-only",
+      "facts": [
+        {"claim": "1 of 1 tips on Townsend Margo", "source": "https://www.olbg.com/betting-tips/Greyhounds/All_Greyhounds/All_Events/8:34_Harlow/28?event_id=690275"}
+      ],
+      "not_checked": "Racecard, trap draw and going were not available."
+    },
+    "gh-0841-tow": {
+      "headline": "Great Time to win the 8:41 Towcester (+302)",
+      "text": "Great Time takes the sole tip in the 8:41 at Towcester and prices at +302, a 24% implied chance, with one comment attached. Without published trap draws or recent split times, the pick is simply the only supported runner in the race and is labelled Low.",
+      "evidence": "market-only",
+      "facts": [
+        {"claim": "1 of 1 tips on Great Time, 1 comment", "source": "https://www.olbg.com/betting-tips/Greyhounds/All_Greyhounds/All_Events/8:41_Towcester/28?event_id=690276"}
+      ],
+      "not_checked": "Racecard and sectional data were not available."
+    },
+    "gh-0847-yar": {
+      "headline": "Savana Buzz to win the 8:47 Yarmouth (+302)",
+      "text": "Savana Buzz is the lone backed runner in the 8:47 at Yarmouth at +302, a 24% implied chance across six dogs. No form, going or sectional data for the race is published on the page captured, so this stays a Low-confidence market pick rather than a form selection.",
+      "evidence": "market-only",
+      "facts": [
+        {"claim": "1 of 1 tips on Savana Buzz", "source": "https://www.olbg.com/betting-tips/Greyhounds/All_Greyhounds/All_Events/8:47_Yarmouth/28?event_id=690277"}
+      ],
+      "not_checked": "Racecard and form figures were not available."
+    },
+    "gh-0916-tow": {
+      "headline": "Ballygogue Jet to win the 9:16 Towcester (+302)",
+      "text": "Ballygogue Jet holds the only tip for the 9:16 at Towcester, priced +302 for a 24% chance, with a single comment behind it. With no official racecard data available, the selection is the only runner with any support and carries a Low label for that reason alone.",
+      "evidence": "market-only",
+      "facts": [
+        {"claim": "1 of 1 tips on Ballygogue Jet, 1 comment", "source": "https://www.olbg.com/betting-tips/Greyhounds/All_Greyhounds/All_Events/9:16_Towcester/28?event_id=690284"}
+      ],
+      "not_checked": "Racecard and trap draw were not available."
+    },
+    "rl-sl-2027": {
+      "headline": "Wigan Warriors to win the 2027 Super League Grand Final (+382)",
+      "text": "Wigan Warriors take two of four tips for the 2027 Super League Grand Final, pricing at +382 for a 20% implied chance across a twelve-team league, with two comments behind the pick. Four tips is a thin ante-post sample, so the label stays Low: Wigan to win the Grand Final.",
+      "evidence": "market-only",
+      "facts": [
+        {"claim": "2 of 4 tips on Wigan Warriors, 2 comments", "source": "https://www.olbg.com/betting-tips/Rugby_League/All_Rugby_League/All_Events/Super_League_2027/10?event_id=2801554"}
+      ],
+      "not_checked": "No 2027 squad or fixture information exists yet."
+    },
+    "rl-nrl-2027": {
+      "headline": "Penrith Panthers to win the 2027 NRL Grand Final (+698)",
+      "text": "Penrith Panthers take one of three tips for the 2027 NRL Grand Final at +698, a 12% implied chance across seventeen clubs, with one comment attached. A single tip in a seventeen-team market is weak evidence, so this is published as a Low-label outright only.",
+      "evidence": "market-only",
+      "facts": [
+        {"claim": "1 of 3 tips on Penrith Panthers, 1 comment", "source": "https://www.olbg.com/betting-tips/Rugby_League/All_Rugby_League/All_Events/NRL_2027/10?event_id=2801600"}
+      ],
+      "not_checked": "No 2027 roster or draw information exists yet."
+    },
+    "gf2-maybank": {
+      "headline": "Lottie Woad to win the Maybank Championship (+924)",
+      "text": "Lottie Woad takes one of two tips to win the Maybank Championship, pricing at +924 for a 9.5% implied chance against a 70-golfer field assumption. Field size for this event is not published on the page captured, so that base rate is a stated assumption rather than a sourced fact.",
+      "evidence": "market-only",
+      "facts": [
+        {"claim": "1 of 2 tips on Lottie Woad", "source": "https://www.olbg.com/betting-tips/Golf/All_Golf/All_Events/Maybank_Championship/5?event_id=101913"}
+      ],
+      "not_checked": "Field size, tee times and course setup were not confirmed."
+    },
+    "gf2-mexico": {
+      "headline": "Wyndham Clark to win the Mexico Open (+924)",
+      "text": "Wyndham Clark takes one of two tips for the Mexico Open, priced +924 at a 9.5% implied chance. Max Homa holds the other tip and the tie-break takes the first-listed selection. The event page lists more than eighty golfers in the market, which is the only field-size check available here.",
+      "evidence": "market-only",
+      "facts": [
+        {"claim": "1 of 2 tips on Wyndham Clark; Max Homa also 1 of 2", "source": "https://www.olbg.com/betting-tips/Golf/All_Golf/All_Events/Mexico_Open/5?event_id=101915"}
+      ],
+      "not_checked": "Field size beyond 'more than eighty listed' was not verified; tee times and course setup were not checked."
+    },
+    "gf2-simmons": {
+      "headline": "Stewart Cink to win the Simmons Bank Championship (+924)",
+      "text": "Stewart Cink takes one of two tips for the Simmons Bank Championship at +924, a 9.5% implied chance on a 70-golfer assumption. Two tips in an outright market carry almost no information, so this is flagged Low and published for completeness rather than as a strong call.",
+      "evidence": "market-only",
+      "facts": [
+        {"claim": "1 of 2 tips on Stewart Cink", "source": "https://www.olbg.com/betting-tips/Golf/All_Golf/All_Events/Simmons_Bank_Championship/5?event_id=101914"}
+      ],
+      "not_checked": "Field size, tee times and course setup were not confirmed."
+    },
+    "dt-pc31": {
+      "headline": "Nathan Aspinall to win Players Championship 31 (+1076)",
+      "text": "Nathan Aspinall takes one of three tips for Players Championship 31 at +1076, an 8% implied chance across a 128-player field assumption. With a single tip and one comment, this is the weakest selection in the darts book and appears only because OLBG lists the event.",
+      "evidence": "market-only",
+      "facts": [
+        {"claim": "1 of 3 tips on Nathan Aspinall, 1 comment", "source": "https://www.olbg.com/betting-tips/Darts/All_Darts/All_Events/Players_Championship_31/15?event_id=32446"}
+      ],
+      "not_checked": "Field size is a documented assumption; entry list was not confirmed."
+    }
+  }
+}
