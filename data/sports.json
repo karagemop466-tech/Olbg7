@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "retrieved_at": "2026-10-26",
+  "olbg_base": "https://www.olbg.com",
+  "url_grammar": {
+    "sport_root": "{base}/betting-tips/{Sport}/{sport_id}",
+    "competition": "{base}/betting-tips/{Sport}/{Group}/{Competition}/{sport_id}",
+    "competition_events": "{base}/betting-tips/{Sport}/{Group}/{Competition}/All_Events/{sport_id}",
+    "sport_all_events": "{base}/betting-tips/{Sport}/All_{Sport}/All_Events/{sport_id}",
+    "event": "{base}/betting-tips/{Sport}/{Group}/{Competition}/{Event_Slug}/{sport_id}?event_id={id}",
+    "notes": [
+      "Sport id is the trailing path segment and is stable across every page for that sport.",
+      "Event slug is the event name with spaces replaced by underscores; '@' is kept as '@' for US sports.",
+      "event_id is the query-string key that resolves the match/race. It is required: two different events can share a slug.",
+      "The final segment of a sport root URL is NOT the same as the numeric id used by /best-tipsters/{Sport}/{id} in every case - it is, verified across all 16 pages fetched."
+    ]
+  },
+  "sports": [
+    {
+      "key": "Golf",
+      "display": "Golf",
+      "sport_id": 5,
+      "olbg_root": "https://www.olbg.com/betting-tips/Golf/5",
+      "status_on_2026_10_26": "live",
+      "observed_events": 3,
+      "markets_seen": ["Win Tournament"],
+      "notes": "Listing is tournament-level (outright), not match-level. No weekly match-play events listed."
+    },
+    {
+      "key": "Volleyball",
+      "display": "Volleyball",
+      "sport_id": 21,
+      "olbg_root": "https://www.olbg.com/betting-tips/Volleyball/21",
+      "status_on_2026_10_26": "live",
+      "observed_events": 16,
+      "markets_seen": ["Win Match"],
+      "notes": "Match-level coverage. Competitions are implied by team names only; OLBG does not print the league on the sport root list."
+    },
+    {
+      "key": "Rugby_Union",
+      "display": "Rugby Union",
+      "sport_id": 9,
+      "olbg_root": "https://www.olbg.com/betting-tips/Rugby_Union/9",
+      "status_on_2026_10_26": "live",
+      "observed_events": 16,
+      "markets_seen": ["To Win", "Handicap", "Win Tournament"],
+      "notes": "Mix of Pro D2, URC and Top 14 fixtures plus Six Nations 2027 ante-post."
+    },
+    {
+      "key": "Cricket",
+      "display": "Cricket",
+      "sport_id": 7,
+      "olbg_root": "https://www.olbg.com/betting-tips/Cricket/7",
+      "status_on_2026_10_26": "live",
+      "observed_events": 14,
+      "markets_seen": ["Win Match", "Top Team1 Batsman", "Outright Winner", "Man Of The Match"],
+      "notes": "Wide spread of internationals and domestic one-day/T20."
+    },
+    {
+      "key": "Snooker",
+      "display": "Snooker",
+      "sport_id": 8,
+      "olbg_root": "https://www.olbg.com/betting-tips/Snooker/8",
+      "status_on_2026_10_26": "empty_no_tips_found",
+      "observed_events": 0,
+      "markets_seen": [],
+      "notes": "Page returns 'No tips found' and its sport filter renders as 'All Sports' instead of 'Snooker'. See flags for detail."
+    },
+    {
+      "key": "Darts",
+      "display": "Darts",
+      "sport_id": 15,
+      "olbg_root": "https://www.olbg.com/betting-tips/Darts/15",
+      "status_on_2026_10_26": "live",
+      "observed_events": 2,
+      "markets_seen": ["Win Tournament"],
+      "notes": "Tournament-level only on the root page at fetch time."
+    },
+    {
+      "key": "Baseball",
+      "display": "Baseball",
+      "sport_id": 12,
+      "olbg_root": "https://www.olbg.com/betting-tips/Baseball/12",
+      "status_on_2026_10_26": "live",
+      "observed_events": 1,
+      "markets_seen": ["Money Line", "Game Totals"],
+      "notes": "Only one MLB game carried tips at fetch time. MLB sub-page confirms three markets: Money Line, Run Line, Game Totals."
+    },
+    {
+      "key": "Gaelic_Sports",
+      "display": "Gaelic Sports",
+      "sport_id": "25 (Gaelic Football) / 26 (Hurling)",
+      "sport_id_number": [25, 26],
+      "olbg_root": "https://www.olbg.com/betting-tips/Gaelic_Football/25",
+      "secondary_root": "https://www.olbg.com/betting-tips/Hurling/26",
+      "status_on_2026_10_26": "live_thin",
+      "observed_events": 4,
+      "markets_seen": ["Handicap (points start)", "Win Tournament", "Win Hurling"],
+      "notes": "Olbg treats Gaelic Football and Hurling as two sports; the brief counts them as one. Both pages are inventoried."
+    },
+    {
+      "key": "Greyhounds",
+      "display": "Greyhounds",
+      "sport_id": 28,
+      "olbg_root": "https://www.olbg.com/betting-tips/Greyhounds/28",
+      "status_on_2026_10_26": "live",
+      "observed_events": 8,
+      "markets_seen": ["Daily Races"],
+      "notes": "Race-by-race with meeting name and time in the event title (e.g. '8:24 Towcester')."
+    },
+    {
+      "key": "Tennis",
+      "display": "Tennis",
+      "sport_id": 3,
+      "olbg_root": "https://www.olbg.com/betting-tips/Tennis/3",
+      "status_on_2026_10_26": "live",
+      "observed_events": 15,
+      "markets_seen": ["Win Match"],
+      "notes": "Sport id 3, not 6/4 as the ???? would suggest; verified by fetching."
+    },
+    {
+      "key": "Motor_Racing",
+      "display": "Motor Racing",
+      "sport_id": 14,
+      "olbg_root": "https://www.olbg.com/betting-tips/Motor_Racing/14",
+      "status_on_2026_10_26": "live_thin",
+      "observed_events": 2,
+      "markets_seen": ["Top 6 Finish", "Win Tournament"],
+      "notes": "One race (Mexico City GP) plus one championship ante-post market."
+    },
+    {
+      "key": "Handball",
+      "display": "Handball",
+      "sport_id": 20,
+      "olbg_root": "https://www.olbg.com/betting-tips/Handball/20",
+      "status_on_2026_10_26": "live_with_display_defect",
+      "observed_events": 15,
+      "markets_seen": ["Money Line"],
+      "notes": "Every event on the listing shows 'Tie' as the most-popular pick. Implausible; see flags."
+    },
+    {
+      "key": "Ice_Hockey",
+      "display": "Ice Hockey",
+      "sport_id": 13,
+      "olbg_root": "https://www.olbg.com/betting-tips/Ice_Hockey/13",
+      "status_on_2026_10_26": "live",
+      "observed_events": 13,
+      "markets_seen": ["Money Line", "Puck Line", "Game Totals"],
+      "notes": "NHL plus SHL, Liiga, DEL."
+    },
+    {
+      "key": "Basketball",
+      "display": "Basketball",
+      "sport_id": 4,
+      "olbg_root": "https://www.olbg.com/betting-tips/Basketball/4",
+      "status_on_2026_10_26": "live",
+      "observed_events": 18,
+      "markets_seen": ["Money Line", "Pointspread", "Game Totals"],
+      "notes": "NBA, EuroLeague, Brazil NBB, Argentina Liga Nacional."
+    },
+    {
+      "key": "Rugby_League",
+      "display": "Rugby League",
+      "sport_id": 10,
+      "olbg_root": "https://www.olbg.com/betting-tips/Rugby_League/10",
+      "status_on_2026_10_26": "ante_post_only",
+      "observed_events": 3,
+      "markets_seen": ["Win Tournament", "Grand Final Winner"],
+      "notes": "No match-level Rugby League tips on the root page even though the World Cup is in progress; only season ante-post. See flags."
+    }
+  ]
+}

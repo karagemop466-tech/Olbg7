@@ -1,0 +1,22 @@
+{
+  "sport_id": 7,
+  "sport": "Cricket",
+  "source": "https://www.olbg.com/betting-tips/Cricket/7",
+  "captured_utc": "2026-10-26",
+  "events": [
+    {"id": 188852, "name": "New Zealand vs India 3rd T20 Match", "when": "Tomorrow 03:00", "market": "Win Match", "consensus": "India", "tips": "27/40", "pct": 68},
+    {"id": 188854, "name": "Namibia vs Ireland 3rd ODI", "when": "Tomorrow 03:30", "market": "Win Match", "consensus": "Ireland", "tips": "19/27", "pct": 70},
+    {"id": 188868, "name": "Pakistan vs Sri Lanka One Day Match", "when": "Tomorrow 04:00", "market": "Win Match", "consensus": "Pakistan", "tips": "14/21", "pct": 67},
+    {"id": 188872, "name": "Afghanistan vs Zimbabwe 1st T20 Match", "when": "Tomorrow 10:30", "market": "Win Match", "consensus": "Afghanistan", "tips": "8/9", "pct": 89},
+    {"id": 188864, "name": "Melbourne Stars W vs Hobart Hurricanes W T20 Big Bash", "when": "29 Oct 04:10", "market": "Win Match", "consensus": "Hobart Hurricanes W", "tips": "4/6", "pct": 67},
+    {"id": 188865, "name": "Brisbane Heat W vs Sydney Sixers W T20 Big Bash", "when": "30 Oct 04:10", "market": "Win Match", "consensus": "Sydney Sixers W", "tips": "3/5", "pct": 60},
+    {"id": 188835, "name": "South Africa vs Australia", "when": "31 Oct 04:30", "market": "Win Match", "consensus": "Draw", "tips": "3/7", "pct": 43},
+    {"id": 188876, "name": "Auckland vs Canterbury One Day Match", "when": "Tomorrow 17:30", "market": "Win Match", "consensus": "Canterbury", "tips": "2/2", "pct": 100},
+    {"id": 188877, "name": "Central Districts vs Northern Districts One Day Match", "when": "Tomorrow 17:30", "market": "Win Match", "consensus": "Central Districts", "tips": "1/2", "pct": 50},
+    {"id": 188878, "name": "Wellington vs Otago One Day Match", "when": "Tomorrow 17:30", "market": "Win Match", "consensus": "Wellington", "tips": "1/2", "pct": 50},
+    {"id": 188863, "name": "Melbourne Renegades W vs Sydney Thunder W T20 Big Bash", "when": "29 Oct 00:40", "market": "Top Team1 Batsman", "consensus": "G Wareham (Melbourne Renegades W)", "tips": "1/2", "pct": 50},
+    {"id": 188871, "name": "Bangladesh vs West Indies", "when": "31 Oct 23:30", "market": "Man Of The Match", "consensus": "Hasan Mahmud", "tips": "", "pct": null},
+    {"id": 182606, "name": "World Cup 2027 (outright)", "when": "21 Nov 2027 05:00", "market": "Outright Winner", "consensus": "India", "tips": "6/12", "pct": 50},
+    {"id": 187184, "name": "Big Bash Women 2026 (outright)", "when": "05 Dec 03:10", "market": "Outright Winner", "consensus": "Sydney Sixers W", "tips": "2/3", "pct": 67}
+  ]
+}

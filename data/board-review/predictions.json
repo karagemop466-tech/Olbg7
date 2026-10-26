@@ -1,0 +1,462 @@
+{
+ "_note": "Each entry names the sport hub page used for the fixture and the official competition page used for the record quoted. Prices are the originated lines in data/events.json for the same event id.",
+ "picks": [
+  {
+   "sport": "Handball",
+   "event_id": 12131,
+   "selection": "Pick Szeged",
+   "conf": "high",
+   "body": "Szeged travel to IFK Kristianstad with a plus-three goal differential across five Champions League rounds while the hosts sit bottom of Group D at nil from five, having conceded 197 goals. On a per-game basis that is a seven-goal gap in Szeged's favour, so the away win is the clear side of the match line.",
+   "sources": [
+    "https://ehfcl.eurohandball.com/men/2026-27/standings/",
+    "https://www.olbg.com/betting-tips/Handball/20"
+   ]
+  },
+  {
+   "sport": "Handball",
+   "event_id": 12135,
+   "selection": "RK Zagreb",
+   "conf": "high",
+   "body": "Zagreb have won two of five in Group C and hold a minus-twelve record, yet that is a chasm away from Celje, who have lost all five and shipped 188 goals at nearly 38 per game. Zagreb have already beaten Celje 31-29 in this group, which makes the match price the pick.",
+   "sources": [
+    "https://ehfcl.eurohandball.com/men/2026-27/standings/",
+    "https://www.olbg.com/betting-tips/Handball/20"
+   ]
+  },
+  {
+   "sport": "Handball",
+   "event_id": 12129,
+   "selection": "Sporting CP",
+   "conf": "high",
+   "body": "Sporting are unbeaten in Group D at four wins and a draw and score 38 goals a game, the best attacking output in their section. GOG have drawn and lost once in five and give up 34 per game, so the Lisbon side rate a shade under a 1.60 shot away from home.",
+   "sources": [
+    "https://ehfcl.eurohandball.com/men/2026-27/standings/",
+    "https://www.olbg.com/betting-tips/Handball/20"
+   ]
+  },
+  {
+   "sport": "Handball",
+   "event_id": 12138,
+   "selection": "Wisla Plock",
+   "conf": "medium",
+   "body": "Plock top Group B on six points with a plus-five goal difference while Nantes sit level on points but negative. Home advantage in European handball is worth roughly half a goal, which tips a near coin-flip contest the way of the Polish champions on our match line.",
+   "sources": [
+    "https://ehfcl.eurohandball.com/men/2026-27/standings/",
+    "https://www.olbg.com/betting-tips/Handball/20"
+   ]
+  },
+  {
+   "sport": "Handball",
+   "event_id": 12127,
+   "selection": "Veszprem",
+   "conf": "high",
+   "body": "Veszprem are perfect in Group A, five wins from five with a plus-39 differential and 185 goals scored. Porto have one win and one draw from five and sit minus-15. The line is short but the visitors are the right side of the match market.",
+   "sources": [
+    "https://ehfcl.eurohandball.com/men/2026-27/standings/",
+    "https://www.olbg.com/betting-tips/Handball/20"
+   ]
+  },
+  {
+   "sport": "Basketball",
+   "event_id": 536199,
+   "selection": "WAS Wizards",
+   "conf": "high",
+   "body": "Washington are 2-1 and travel to a Charlotte side also 2-1 but with a negative scoring margin, having been outscored 341-306. Our spread has the Wizards clear favourites on the road, and the money line is the cleanest way to take the points-differential edge.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/2026%E2%80%9327_NBA_season",
+    "https://www.bbc.com/sport/basketball/tables",
+    "https://www.olbg.com/betting-tips/Basketball/4"
+   ]
+  },
+  {
+   "sport": "Basketball",
+   "event_id": 536201,
+   "selection": "ATL Hawks",
+   "conf": "medium",
+   "body": "Atlanta have opened 2-1 with a plus-47 points differential, the strongest in the East on our figures, and are scoring 374 points across three games. Houston are 3-0 but at plus-29. Once home court is priced in at 2.5 points the Hawks still rate the value side.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/2026%E2%80%9327_NBA_season",
+    "https://www.bbc.com/sport/basketball/tables",
+    "https://www.olbg.com/betting-tips/Basketball/4"
+   ]
+  },
+  {
+   "sport": "Basketball",
+   "event_id": 536203,
+   "selection": "CLE Cavaliers",
+   "conf": "medium",
+   "body": "Cleveland are 1-1 and host a Minnesota side whose early record is not yet on the published conference table, so this is a shorter-information game. With home court worth about 2.5 points the Cavaliers are a fair favourite and the money line is the play rather than the spread.",
+   "sources": [
+    "https://www.bbc.com/sport/basketball/tables",
+    "https://www.olbg.com/betting-tips/Basketball/4"
+   ]
+  },
+  {
+   "sport": "Basketball",
+   "event_id": 536204,
+   "selection": "IND Pacers",
+   "conf": "medium",
+   "body": "Indiana are 2-1 with both wins on the road while Milwaukee are 0-3 and yet to register. The Bucks' home floor narrows the gap, but a winless start against a side that has already won twice away makes the Pacers the justified favourite on our line.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/2026%E2%80%9327_NBA_season",
+    "https://www.olbg.com/betting-tips/Basketball/4"
+   ]
+  },
+  {
+   "sport": "Basketball",
+   "event_id": 536206,
+   "selection": "MEM Grizzlies",
+   "conf": "medium",
+   "body": "Memphis are 2-1 and face a Utah team on a three-game skid whose scoring numbers are not yet published in the conference tables. The Grizzlies' road form is the deciding input, and the match line prices them as a narrow but legitimate favourite away from home.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/2026%E2%80%9327_NBA_season",
+    "https://www.olbg.com/betting-tips/Basketball/4"
+   ]
+  },
+  {
+   "sport": "Ice Hockey",
+   "event_id": 200104,
+   "selection": "BOS Bruins",
+   "conf": "medium",
+   "body": "Boston are 9-2-1 with 48 goals for and only 26 against, a plus-22 differential across twelve games. Carolina lead the league on 20 points but are plus-18 across thirteen. Our model still has the Bruins narrowly ahead once the road trip is accounted for, and the price reflects that.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/2026%E2%80%9327_NHL_season",
+    "https://www.eliteprospects.com/league/nhl",
+    "https://www.olbg.com/betting-tips/Ice_Hockey/13"
+   ]
+  },
+  {
+   "sport": "Ice Hockey",
+   "event_id": 200101,
+   "selection": "NY Rangers",
+   "conf": "low",
+   "body": "The Rangers are 7-5-1 and plus-five across thirteen games, hosting a Los Angeles side whose record was not on the published conference table at capture. With home ice worth a quarter goal the Rangers rate a slight favourite, but this is a low-information price and should be staked accordingly.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/2026%E2%80%9327_NHL_season",
+    "https://www.olbg.com/betting-tips/Ice_Hockey/13"
+   ]
+  },
+  {
+   "sport": "Ice Hockey",
+   "event_id": 200103,
+   "selection": "TOR Maple Leafs",
+   "conf": "low",
+   "body": "Toronto are 7-4-2 with 50 goals scored, one of the louder offences in the Atlantic, and travel to Calgary. The Flames' early numbers were not published in the conference table used for this price, so the Leafs are favoured on offence alone and the pick is a small-stake call.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/2026%E2%80%9327_NHL_season",
+    "https://www.olbg.com/betting-tips/Ice_Hockey/13"
+   ]
+  },
+  {
+   "sport": "Ice Hockey",
+   "event_id": 200111,
+   "selection": "Under 5.50",
+   "conf": "medium",
+   "body": "New Jersey are 7-4-0 with 36 goals for and 32 against across eleven games, an average of 6.2 combined. Dallas were not on the published table at capture, but with one side averaging in the low sixes the under on a 5.5 line is the defensible side of the total.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/2026%E2%80%9327_NHL_season",
+    "https://www.olbg.com/betting-tips/Ice_Hockey/13"
+   ]
+  },
+  {
+   "sport": "Ice Hockey",
+   "event_id": 200081,
+   "selection": "Kalpa",
+   "conf": "low",
+   "body": "Kalpa host Sport in Finland's Liiga, a league whose table is not part of the verified set used for this project, so the price here is a reference line built from the fixture only. Home ice is the single input we can defend, and Kalpa are the selection at a modest stake.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Ice_Hockey/13"
+   ]
+  },
+  {
+   "sport": "Tennis",
+   "event_id": 902233,
+   "selection": "Novak Djokovic",
+   "conf": "medium",
+   "body": "Djokovic meets Ugo Humbert with the board split four to five in his favour and a price that makes him roughly a 1.60 shot on our line. Nothing in the confirmed tournament data contradicts the favourite here, and the match market is the cleanest route rather than set betting.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Tennis/3"
+   ]
+  },
+  {
+   "sport": "Tennis",
+   "event_id": 902232,
+   "selection": "Jiri Lehecka",
+   "conf": "medium",
+   "body": "The confirmed market ladder for this match, seen on the event page, runs Win Match, Set Betting, 1st Set Winner, Games Won and Total Games. Lehecka is the shorter side of the two and our price has him around 1.65, with a 2-0 set score the logical secondary angle at a bigger number.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Tennis/All_Tennis/All_Events/Stan_Wawrinka_vs_Jiri_Lehecka/3?event_id=902232"
+   ]
+  },
+  {
+   "sport": "Tennis",
+   "event_id": 902189,
+   "selection": "Venus Williams",
+   "conf": "low",
+   "body": "Four of five board selections sit with Venus Williams against Lilli Tagger, which is a strong lean for a match where we hold no independently confirmed ranking data for either player. The price is therefore a reference number and the pick is a low-confidence, small-stake read.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Tennis/3"
+   ]
+  },
+  {
+   "sport": "Tennis",
+   "event_id": 902172,
+   "selection": "Leylah Fernandez",
+   "conf": "medium",
+   "body": "Fernandez is the shorter half of this match at roughly 1.55 on our line after the board ran four from six in her favour. With no confirmed head-to-head or tournament round available for this fixture, the pick rests on the market position alone and is graded medium.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Tennis/3"
+   ]
+  },
+  {
+   "sport": "Tennis",
+   "event_id": 902238,
+   "selection": "Rafael Jodar",
+   "conf": "low",
+   "body": "Three of five selections favour Jodar over Tabilo, and our price makes him a marginal favourite. Because neither player's current ranking or recent results were confirmed from an official source for this fixture, the recommendation is priced from the board only and carries low confidence.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Tennis/3"
+   ]
+  },
+  {
+   "sport": "Volleyball",
+   "event_id": 37075,
+   "selection": "Bergamo W",
+   "conf": "medium",
+   "body": "Bergamo are backed by four of five selections for the trip to Marignano and our line has them at odds-on. Italian women's league standings were not part of the confirmed data set for this project, so the price is a board-anchored reference and the stake should reflect that uncertainty.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Volleyball/21"
+   ]
+  },
+  {
+   "sport": "Volleyball",
+   "event_id": 37121,
+   "selection": "Ziraat Bankasi",
+   "conf": "medium",
+   "body": "Ziraat Bankasi are the strongly favoured side for the visit of Gaziantep Genclik Spor, with the board unanimous and our price in the 1.30 region. Turkish league form was not confirmed independently here, so the pick is an odds-based read rather than a form-based one.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Volleyball/21"
+   ]
+  },
+  {
+   "sport": "Volleyball",
+   "event_id": 37129,
+   "selection": "VaLePa",
+   "conf": "medium",
+   "body": "VaLePa host AC Oulu with the board two from two and our line making them clear favourites. The Finnish league table was not part of the confirmed inputs, so the recommendation rests on home advantage and the fixture, and is graded medium rather than high.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Volleyball/21"
+   ]
+  },
+  {
+   "sport": "Volleyball",
+   "event_id": 37076,
+   "selection": "Conegliano W",
+   "conf": "medium",
+   "body": "Conegliano host Vallefoglia and our price has the home side at around 1.45 despite a split board. Home court in Serie A1 is the input we are weighting, and the money line is the selection rather than a set handicap given the missing confirmed league data.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Volleyball/21"
+   ]
+  },
+  {
+   "sport": "Volleyball",
+   "event_id": 37101,
+   "selection": "Sada Cruzeiro",
+   "conf": "low",
+   "body": "Sada Cruzeiro are the stronger name in the Brazilian Superliga meeting with Montes Claros, though the board leans to the hosts ten from eighteen. Without confirmed league standings the two signals conflict, so this is a low-confidence price and a small stake.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Volleyball/21"
+   ]
+  },
+  {
+   "sport": "Cricket",
+   "event_id": 188872,
+   "selection": "Afghanistan",
+   "conf": "medium",
+   "body": "Afghanistan open their T20 series against Zimbabwe with eight of nine board selections behind them and our line making them around a 1.45 shot. Series-level form for both squads was not confirmed from an official board for this fixture, so the pick is a market-led read at medium confidence.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Cricket/7"
+   ]
+  },
+  {
+   "sport": "Cricket",
+   "event_id": 188854,
+   "selection": "Ireland",
+   "conf": "medium",
+   "body": "Ireland are 19 from 27 on the board for the third ODI in Namibia and our price puts them near 1.50. The series stands at two completed matches before this decider, and the pick is the tourists on the match market rather than any innings or top-batter angle.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Cricket/7"
+   ]
+  },
+  {
+   "sport": "Cricket",
+   "event_id": 188852,
+   "selection": "India",
+   "conf": "medium",
+   "body": "India carry 27 of 40 selections for the third T20 in New Zealand, the largest support on the cricket board, and our line makes them a 1.55 favourite. The match market is preferred to innings runs given the absence of confirmed team news for either side.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Cricket/7"
+   ]
+  },
+  {
+   "sport": "Cricket",
+   "event_id": 188835,
+   "selection": "Draw",
+   "conf": "low",
+   "body": "The board splits three from seven toward the draw in South Africa against Australia, which fits a red-ball game where rain and slow scoring are common. Our price on the draw sits near 2.80, and this is a low-confidence angle that depends on conditions rather than form.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Cricket/7"
+   ]
+  },
+  {
+   "sport": "Cricket",
+   "event_id": 188868,
+   "selection": "Pakistan",
+   "conf": "medium",
+   "body": "Pakistan are 14 from 21 on the board for the one-day match against Sri Lanka and our line makes them about a 1.60 favourite. Neither side's XI was confirmed from an official source for this fixture, so the selection is priced from the market and graded medium.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Cricket/7"
+   ]
+  },
+  {
+   "sport": "Rugby Union",
+   "event_id": 609584,
+   "selection": "Connacht +3.50",
+   "conf": "medium",
+   "body": "Connacht host Leinster in the United Rugby Championship with our handicap line at 3.5 points and the home side the selection. A three-and-a-half start in a derby where travel and familiarity compress margins is the defensible angle, while the match winner market is left alone.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Rugby_Union/9"
+   ]
+  },
+  {
+   "sport": "Rugby Union",
+   "event_id": 609586,
+   "selection": "Munster -6.50",
+   "conf": "medium",
+   "body": "Munster give 6.5 points to the Sharks at Thomond Park on our line. The handicap, rather than the straight win, is the pick because a home side with a six-point cushion is a different proposition to a match-winner bet, and the board carries the same view.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Rugby_Union/9"
+   ]
+  },
+  {
+   "sport": "Rugby Union",
+   "event_id": 609590,
+   "selection": "Glasgow Warriors",
+   "conf": "medium",
+   "body": "Glasgow Warriors host the Lions at Scotstoun and our price makes them clear favourites for the United Rugby Championship fixture. Inter-hemisphere visitors arriving after long travel is the angle behind the number, and the match winner is the selection.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Rugby_Union/9"
+   ]
+  },
+  {
+   "sport": "Rugby Union",
+   "event_id": 609611,
+   "selection": "Toulouse",
+   "conf": "low",
+   "body": "Pau host Toulouse in the Top 14 and our line still makes the visitors favourites despite the trip. Pau's home record is the uncertainty in the price, so the recommendation is graded low and the match winner, not the handicap, is the market to use.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Rugby_Union/9"
+   ]
+  },
+  {
+   "sport": "Rugby Union",
+   "event_id": 609604,
+   "selection": "Colomiers",
+   "conf": "low",
+   "body": "Colomiers host Agen in Pro D2 with both board selections behind the home side. Second-tier French rugby is driven by home advantage more than almost any other league, and our price reflects that, but with no confirmed table for either club this stays low confidence.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Rugby_Union/9"
+   ]
+  },
+  {
+   "sport": "Golf",
+   "event_id": 101915,
+   "selection": "Wyndham Clark",
+   "conf": "low",
+   "body": "Wyndham Clark is the sole selection on the board for the Mexico Open, which runs to a Sunday finish on 1 November. Outright golf is a high-variance market and our price makes him a longshot, so this is a small each-way style opinion rather than a win-only recommendation.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Golf/5"
+   ]
+  },
+  {
+   "sport": "Golf",
+   "event_id": 101913,
+   "selection": "Lottie Woad",
+   "conf": "low",
+   "body": "Lottie Woad carries the only selection for the Maybank Championship on the LPGA schedule, finishing 1 November. With one board selection and no confirmed field or course data in our inputs, this is a low-confidence outright price rather than a staking recommendation.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Golf/5"
+   ]
+  },
+  {
+   "sport": "Golf",
+   "event_id": 101914,
+   "selection": "Stewart Cink",
+   "conf": "low",
+   "body": "Stewart Cink is the single board selection for the Simmons Bank Championship on the PGA Tour Champions, also finishing 1 November. Champions Tour outrights are volatile and our price treats him as an outsider, so the pick is noted for completeness rather than as a strong play.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Golf/5"
+   ]
+  },
+  {
+   "sport": "Gaelic Sports",
+   "event_id": 3531,
+   "selection": "Eire Og Cor +0.50",
+   "conf": "medium",
+   "body": "Kanturk meet Eire Og Cor in the Cork club championship on 1 November with all six board selections on the visitors receiving half a point. Our handicap line mirrors that, and the half-point start is the value because it turns a draw into a winning ticket.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Gaelic_Football/25"
+   ]
+  },
+  {
+   "sport": "Gaelic Sports",
+   "event_id": 3537,
+   "selection": "Kildimo Pallaskenry +3.50",
+   "conf": "medium",
+   "body": "Fr Caseys host Kildimo Pallaskenry on 1 November and the board runs five from seven to the visitors with a 3.5-point start. Club hurling and football handicaps in Munster are usually tight, making a start of that size the sensible side of the line.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Gaelic_Football/25"
+   ]
+  },
+  {
+   "sport": "Baseball",
+   "event_id": 160795,
+   "selection": "TB Rays",
+   "conf": "medium",
+   "body": "Tampa Bay host Milwaukee with 21 of 27 board selections and our line making the Rays around 1.65. Game totals are the usual companion market here, and with confirmed pitching matchups unavailable the money line is the only market we will price with any confidence.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Baseball/12"
+   ]
+  },
+  {
+   "sport": "Darts",
+   "event_id": 32446,
+   "selection": "Nathan Aspinall",
+   "conf": "low",
+   "body": "Players Championship 31 runs on 28 October and Nathan Aspinall is the only selection on a thin board. Player Championship events are single-day floor tournaments with a compressed format, so outright prices are wide and this is a low-confidence note rather than a firm bet.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Darts/15"
+   ]
+  },
+  {
+   "sport": "Motor Racing",
+   "event_id": 914,
+   "selection": "Kimi Antonelli - Yes",
+   "conf": "low",
+   "body": "The Mexico City Grand Prix runs on 1 November and the only supported market on the board is Kimi Antonelli for a top-six finish. Our price treats a top-six as the most likely of the documented F1 markets, but single-race volatility keeps this at low confidence.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Motor_Racing/14"
+   ]
+  },
+  {
+   "sport": "Rugby League",
+   "event_id": 2801554,
+   "selection": "Wigan Warriors",
+   "conf": "low",
+   "body": "No Rugby League fixture was live on the board, so the only priceable market is the 2027 Super League Grand Final outright, where Wigan Warriors are the supported selection. Ante-post prices a year out carry roster and coaching risk that cannot be priced today.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Rugby_League/10"
+   ]
+  }
+ ]
+}

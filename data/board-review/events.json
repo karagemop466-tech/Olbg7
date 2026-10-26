@@ -1,0 +1,3942 @@
+{
+ "captured_utc": "2026-10-26",
+ "sports": [
+  {
+   "sport": "Golf",
+   "sport_id": 5,
+   "source": "https://www.olbg.com/betting-tips/Golf/5",
+   "note": "Three tournaments with a single tip each. Golf markets OLBG documents: Tournament Outright Winner, First Round Leader, Top American/European/GB&I, plus Ryder/Solheim Cup team markets as applicable.",
+   "events": [
+    {
+     "id": 101913,
+     "name": "Maybank Championship",
+     "when": "01 Nov 06:45",
+     "market": "Win Tournament",
+     "consensus": "Lottie Woad",
+     "tips": "1/2",
+     "pct": 50,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Lottie Woad",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier B - tip-share reference only"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5
+    },
+    {
+     "id": 101915,
+     "name": "Mexico Open",
+     "when": "01 Nov 17:45",
+     "market": "Win Tournament",
+     "consensus": "Wyndham Clark",
+     "tips": "1/2",
+     "pct": 50,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Wyndham Clark",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier B - tip-share reference only"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5
+    },
+    {
+     "id": 101914,
+     "name": "Simmons Bank Championship",
+     "when": "01 Nov 17:45",
+     "market": "Win Tournament",
+     "consensus": "Stewart Cink",
+     "tips": "1/2",
+     "pct": 50,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Stewart Cink",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier B - tip-share reference only"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5
+    }
+   ]
+  },
+  {
+   "sport": "Volleyball",
+   "sport_id": 21,
+   "source": "https://www.olbg.com/betting-tips/Volleyball/21",
+   "note": "",
+   "events": [
+    {
+     "id": 37101,
+     "name": "Montes Claros vs Sada Cruzeiro",
+     "when": "Today 22:00",
+     "market": "Win Match",
+     "consensus": "Montes Claros",
+     "tips": "10/18",
+     "pct": 56,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Montes Claros",
+       "decimal": 1.77,
+       "american": "-130",
+       "prob": 0.5386,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Sada Cruzeiro",
+       "decimal": 2.06,
+       "american": "+106",
+       "prob": 0.4614,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5386
+    },
+    {
+     "id": 37004,
+     "name": "Sancor Volei W vs SESI Volei Bauru W",
+     "when": "Today 21:30",
+     "market": "Win Match",
+     "consensus": "SESI Volei Bauru W",
+     "tips": "9/14",
+     "pct": 64,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "SESI Volei Bauru W",
+       "decimal": 1.64,
+       "american": "-156",
+       "prob": 0.5817,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Sancor Volei W",
+       "decimal": 2.28,
+       "american": "+128",
+       "prob": 0.4183,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5817
+    },
+    {
+     "id": 37102,
+     "name": "Norde Volei vs Volei Renata",
+     "when": "Tomorrow 00:00",
+     "market": "Win Match",
+     "consensus": "Norde Volei",
+     "tips": "7/12",
+     "pct": 58,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Norde Volei",
+       "decimal": 1.75,
+       "american": "-133",
+       "prob": 0.5436,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Volei Renata",
+       "decimal": 2.09,
+       "american": "+109",
+       "prob": 0.4564,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5436
+    },
+    {
+     "id": 37076,
+     "name": "Conegliano W vs Vallefoglia W",
+     "when": "28 Oct 19:00",
+     "market": "Win Match",
+     "consensus": "Vallefoglia W",
+     "tips": "5/9",
+     "pct": 56,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Vallefoglia W",
+       "decimal": 1.8,
+       "american": "-125",
+       "prob": 0.5284,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Conegliano W",
+       "decimal": 2.02,
+       "american": "+102",
+       "prob": 0.4716,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5284
+    },
+    {
+     "id": 37075,
+     "name": "Marignano W vs Bergamo W",
+     "when": "Tomorrow 19:00",
+     "market": "Win Match",
+     "consensus": "Bergamo W",
+     "tips": "4/5",
+     "pct": 80,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Bergamo W",
+       "decimal": 1.59,
+       "american": "-169",
+       "prob": 0.6,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Marignano W",
+       "decimal": 2.38,
+       "american": "+138",
+       "prob": 0.4,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.6
+    },
+    {
+     "id": 37081,
+     "name": "Uni Opole W vs Palac Bydgoszcz W",
+     "when": "Tomorrow 19:30",
+     "market": "Win Match",
+     "consensus": "Uni Opole W",
+     "tips": "4/6",
+     "pct": 67,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Uni Opole W",
+       "decimal": 1.69,
+       "american": "-145",
+       "prob": 0.5637,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Palac Bydgoszcz W",
+       "decimal": 2.18,
+       "american": "+118",
+       "prob": 0.4363,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5637
+    },
+    {
+     "id": 37121,
+     "name": "Ziraat Bankasi vs Gaziantep Genclik Spor",
+     "when": "Tomorrow 16:00",
+     "market": "Win Match",
+     "consensus": "Ziraat Bankasi",
+     "tips": "2/2",
+     "pct": 100,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Ziraat Bankasi",
+       "decimal": 1.63,
+       "american": "-159",
+       "prob": 0.5833,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Gaziantep Genclik Spor",
+       "decimal": 2.29,
+       "american": "+129",
+       "prob": 0.4167,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5833
+    },
+    {
+     "id": 37129,
+     "name": "VaLePa vs AC Oulu",
+     "when": "Tomorrow 16:30",
+     "market": "Win Match",
+     "consensus": "VaLePa",
+     "tips": "2/2",
+     "pct": 100,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "VaLePa",
+       "decimal": 1.63,
+       "american": "-159",
+       "prob": 0.5833,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "AC Oulu",
+       "decimal": 2.29,
+       "american": "+129",
+       "prob": 0.4167,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5833
+    },
+    {
+     "id": 37103,
+     "name": "Suzano Volei vs Goias Volei",
+     "when": "Tomorrow 21:30",
+     "market": "Win Match",
+     "consensus": "Suzano Volei",
+     "tips": "2/3",
+     "pct": 67,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Suzano Volei",
+       "decimal": 1.77,
+       "american": "-130",
+       "prob": 0.5392,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Goias Volei",
+       "decimal": 2.07,
+       "american": "+107",
+       "prob": 0.4608,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5392
+    },
+    {
+     "id": 37104,
+     "name": "Praia Clube vs Sao Jose",
+     "when": "28 Oct 00:00",
+     "market": "Win Match",
+     "consensus": "Praia Clube",
+     "tips": "2/3",
+     "pct": 67,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Praia Clube",
+       "decimal": 1.77,
+       "american": "-130",
+       "prob": 0.5392,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Sao Jose",
+       "decimal": 2.07,
+       "american": "+107",
+       "prob": 0.4608,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5392
+    },
+    {
+     "id": 37082,
+     "name": "Budowlani Lodz W vs Radomka Radom W",
+     "when": "28 Oct 16:30",
+     "market": "Win Match",
+     "consensus": "Budowlani Lodz W",
+     "tips": "2/3",
+     "pct": 67,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Budowlani Lodz W",
+       "decimal": 1.77,
+       "american": "-130",
+       "prob": 0.5392,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Radomka Radom W",
+       "decimal": 2.07,
+       "american": "+107",
+       "prob": 0.4608,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5392
+    },
+    {
+     "id": 37083,
+     "name": "Mielec W vs Rzeszow W",
+     "when": "28 Oct 18:00",
+     "market": "Win Match",
+     "consensus": "Rzeszow W",
+     "tips": "2/3",
+     "pct": 67,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Rzeszow W",
+       "decimal": 1.77,
+       "american": "-130",
+       "prob": 0.5392,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Mielec W",
+       "decimal": 2.07,
+       "american": "+107",
+       "prob": 0.4608,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5392
+    },
+    {
+     "id": 37126,
+     "name": "TFL Altekma vs Halkbank Ankara",
+     "when": "Tomorrow 12:00",
+     "market": "Win Match",
+     "consensus": "Halkbank Ankara",
+     "tips": "1/1",
+     "pct": 100,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Halkbank Ankara",
+       "decimal": 1.75,
+       "american": "-133",
+       "prob": 0.5455,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "TFL Altekma",
+       "decimal": 2.1,
+       "american": "+110",
+       "prob": 0.4545,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5455
+    },
+    {
+     "id": 37131,
+     "name": "Volleys Borken W vs Vilsbiburg W",
+     "when": "Tomorrow 17:30",
+     "market": "Win Match",
+     "consensus": "Vilsbiburg W",
+     "tips": "1/1",
+     "pct": 100,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Vilsbiburg W",
+       "decimal": 1.75,
+       "american": "-133",
+       "prob": 0.5455,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Volleys Borken W",
+       "decimal": 2.1,
+       "american": "+110",
+       "prob": 0.4545,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5455
+    },
+    {
+     "id": 37065,
+     "name": "Scandicci W vs Novara W",
+     "when": "28 Oct 19:30",
+     "market": "Win Match",
+     "consensus": "Novara W",
+     "tips": "",
+     "pct": null,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Novara W",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Scandicci W",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5
+    }
+   ]
+  },
+  {
+   "sport": "Rugby Union",
+   "sport_id": 9,
+   "source": "https://www.olbg.com/betting-tips/Rugby_Union/9",
+   "note": "",
+   "events": [
+    {
+     "id": 609604,
+     "name": "Colomiers v Agen",
+     "when": "30 Oct 14:00",
+     "market": "To Win",
+     "consensus": "Colomiers",
+     "tips": "2/2",
+     "pct": 100,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Colomiers",
+       "decimal": 1.63,
+       "american": "-159",
+       "prob": 0.5833,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Agen",
+       "decimal": 2.29,
+       "american": "+129",
+       "prob": 0.4167,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5833
+    },
+    {
+     "id": 609603,
+     "name": "Montauban v Narbonne",
+     "when": "30 Oct 14:30",
+     "market": "To Win",
+     "consensus": "Montauban",
+     "tips": "2/2",
+     "pct": 100,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Montauban",
+       "decimal": 1.63,
+       "american": "-159",
+       "prob": 0.5833,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Narbonne",
+       "decimal": 2.29,
+       "american": "+129",
+       "prob": 0.4167,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5833
+    },
+    {
+     "id": 609598,
+     "name": "Oyonnax v Soyaux Angouleme",
+     "when": "30 Oct 14:30",
+     "market": "To Win",
+     "consensus": "Oyonnax",
+     "tips": "2/3",
+     "pct": 67,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Oyonnax",
+       "decimal": 1.77,
+       "american": "-130",
+       "prob": 0.5392,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Soyaux Angouleme",
+       "decimal": 2.07,
+       "american": "+107",
+       "prob": 0.4608,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5392
+    },
+    {
+     "id": 609605,
+     "name": "Dax v Provence",
+     "when": "29 Oct 16:00",
+     "market": "Handicap",
+     "consensus": "Provence +1.50",
+     "tips": "1/1",
+     "pct": 100,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Provence +1.50",
+       "decimal": 1.75,
+       "american": "-133",
+       "prob": 0.5455,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Dax",
+       "decimal": 2.1,
+       "american": "+110",
+       "prob": 0.4545,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5455
+    },
+    {
+     "id": 609599,
+     "name": "Beziers v Grenoble",
+     "when": "30 Oct 14:30",
+     "market": "To Win",
+     "consensus": "Grenoble",
+     "tips": "1/1",
+     "pct": 100,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Grenoble",
+       "decimal": 1.75,
+       "american": "-133",
+       "prob": 0.5455,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Beziers",
+       "decimal": 2.1,
+       "american": "+110",
+       "prob": 0.4545,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5455
+    },
+    {
+     "id": 609600,
+     "name": "Nissa v Aurillac",
+     "when": "30 Oct 14:30",
+     "market": "To Win",
+     "consensus": "Nissa",
+     "tips": "1/1",
+     "pct": 100,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Nissa",
+       "decimal": 1.75,
+       "american": "-133",
+       "prob": 0.5455,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Aurillac",
+       "decimal": 2.1,
+       "american": "+110",
+       "prob": 0.4545,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5455
+    },
+    {
+     "id": 609590,
+     "name": "Glasgow Warriors v Lions",
+     "when": "30 Oct 15:45",
+     "market": "To Win",
+     "consensus": "Glasgow Warriors",
+     "tips": "1/1",
+     "pct": 100,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Glasgow Warriors",
+       "decimal": 1.75,
+       "american": "-133",
+       "prob": 0.5455,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Lions",
+       "decimal": 2.1,
+       "american": "+110",
+       "prob": 0.4545,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5455
+    },
+    {
+     "id": 609584,
+     "name": "Connacht v Leinster",
+     "when": "30 Oct 15:45",
+     "market": "Handicap",
+     "consensus": "Connacht +3.50",
+     "tips": "1/1",
+     "pct": 100,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Connacht +3.50",
+       "decimal": 1.75,
+       "american": "-133",
+       "prob": 0.5455,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Connacht",
+       "decimal": 2.1,
+       "american": "+110",
+       "prob": 0.4545,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5455
+    },
+    {
+     "id": 609602,
+     "name": "Biarritz v Valence Romans",
+     "when": "30 Oct 16:00",
+     "market": "To Win",
+     "consensus": "Biarritz",
+     "tips": "1/1",
+     "pct": 100,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Biarritz",
+       "decimal": 1.75,
+       "american": "-133",
+       "prob": 0.5455,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Valence Romans",
+       "decimal": 2.1,
+       "american": "+110",
+       "prob": 0.4545,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5455
+    },
+    {
+     "id": 609588,
+     "name": "Stormers v Ulster",
+     "when": "31 Oct 08:45",
+     "market": "To Win",
+     "consensus": "Ulster",
+     "tips": "1/1",
+     "pct": 100,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Ulster",
+       "decimal": 1.75,
+       "american": "-133",
+       "prob": 0.5455,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Stormers",
+       "decimal": 2.1,
+       "american": "+110",
+       "prob": 0.4545,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5455
+    },
+    {
+     "id": 609586,
+     "name": "Munster v Sharks",
+     "when": "31 Oct 13:30",
+     "market": "Handicap",
+     "consensus": "Munster -6.50",
+     "tips": "1/1",
+     "pct": 100,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Munster -6.50",
+       "decimal": 1.75,
+       "american": "-133",
+       "prob": 0.5455,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Munster",
+       "decimal": 2.1,
+       "american": "+110",
+       "prob": 0.4545,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5455
+    },
+    {
+     "id": 609611,
+     "name": "Pau v Toulouse",
+     "when": "01 Nov 15:05",
+     "market": "To Win",
+     "consensus": "Pau",
+     "tips": "1/1",
+     "pct": 100,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Pau",
+       "decimal": 1.75,
+       "american": "-133",
+       "prob": 0.5455,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Toulouse",
+       "decimal": 2.1,
+       "american": "+110",
+       "prob": 0.4545,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5455
+    },
+    {
+     "id": 609013,
+     "name": "Six Nations 2027 (outright)",
+     "when": "14 Mar 2027 16:00",
+     "market": "Win Tournament",
+     "consensus": "Ireland",
+     "tips": "3/11",
+     "pct": 27,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Ireland",
+       "decimal": 2.51,
+       "american": "+151",
+       "prob": 0.3795,
+       "basis": "Tier B - tip-share reference only"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.3795
+    }
+   ]
+  },
+  {
+   "sport": "Cricket",
+   "sport_id": 7,
+   "source": "https://www.olbg.com/betting-tips/Cricket/7",
+   "note": "",
+   "events": [
+    {
+     "id": 188852,
+     "name": "New Zealand vs India 3rd T20 Match",
+     "when": "Tomorrow 03:00",
+     "market": "Win Match",
+     "consensus": "India",
+     "tips": "27/40",
+     "pct": 68,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "India",
+       "decimal": 1.48,
+       "american": "-208",
+       "prob": 0.644,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "New Zealand",
+       "decimal": 2.68,
+       "american": "+168",
+       "prob": 0.356,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.644
+    },
+    {
+     "id": 188854,
+     "name": "Namibia vs Ireland 3rd ODI",
+     "when": "Tomorrow 03:30",
+     "market": "Win Match",
+     "consensus": "Ireland",
+     "tips": "19/27",
+     "pct": 70,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Ireland",
+       "decimal": 1.47,
+       "american": "-213",
+       "prob": 0.6459,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Namibia",
+       "decimal": 2.69,
+       "american": "+169",
+       "prob": 0.3541,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.6459
+    },
+    {
+     "id": 188868,
+     "name": "Pakistan vs Sri Lanka One Day Match",
+     "when": "Tomorrow 04:00",
+     "market": "Win Match",
+     "consensus": "Pakistan",
+     "tips": "14/21",
+     "pct": 67,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Pakistan",
+       "decimal": 1.55,
+       "american": "-182",
+       "prob": 0.6152,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Sri Lanka One Day Match",
+       "decimal": 2.47,
+       "american": "+147",
+       "prob": 0.3848,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.6152
+    },
+    {
+     "id": 188872,
+     "name": "Afghanistan vs Zimbabwe 1st T20 Match",
+     "when": "Tomorrow 10:30",
+     "market": "Win Match",
+     "consensus": "Afghanistan",
+     "tips": "8/9",
+     "pct": 89,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Afghanistan",
+       "decimal": 1.39,
+       "american": "-256",
+       "prob": 0.6847,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Zimbabwe 1st T20 Match",
+       "decimal": 3.02,
+       "american": "+202",
+       "prob": 0.3153,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.6847
+    },
+    {
+     "id": 188864,
+     "name": "Melbourne Stars W vs Hobart Hurricanes W T20 Big Bash",
+     "when": "29 Oct 04:10",
+     "market": "Win Match",
+     "consensus": "Hobart Hurricanes W",
+     "tips": "4/6",
+     "pct": 67,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Hobart Hurricanes W",
+       "decimal": 1.69,
+       "american": "-145",
+       "prob": 0.5637,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Melbourne Stars W",
+       "decimal": 2.18,
+       "american": "+118",
+       "prob": 0.4363,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5637
+    },
+    {
+     "id": 188865,
+     "name": "Brisbane Heat W vs Sydney Sixers W T20 Big Bash",
+     "when": "30 Oct 04:10",
+     "market": "Win Match",
+     "consensus": "Sydney Sixers W",
+     "tips": "3/5",
+     "pct": 60,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Sydney Sixers W",
+       "decimal": 1.79,
+       "american": "-127",
+       "prob": 0.5333,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Brisbane Heat W",
+       "decimal": 2.04,
+       "american": "+104",
+       "prob": 0.4667,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5333
+    },
+    {
+     "id": 188835,
+     "name": "South Africa vs Australia",
+     "when": "31 Oct 04:30",
+     "market": "Win Match",
+     "consensus": "Draw",
+     "tips": "3/7",
+     "pct": 43,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Draw",
+       "decimal": 2.02,
+       "american": "+102",
+       "prob": 0.4712,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "South Africa",
+       "decimal": 1.8,
+       "american": "-125",
+       "prob": 0.5288,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.4712
+    },
+    {
+     "id": 188876,
+     "name": "Auckland vs Canterbury One Day Match",
+     "when": "Tomorrow 17:30",
+     "market": "Win Match",
+     "consensus": "Canterbury",
+     "tips": "2/2",
+     "pct": 100,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Canterbury",
+       "decimal": 1.63,
+       "american": "-159",
+       "prob": 0.5833,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Auckland",
+       "decimal": 2.29,
+       "american": "+129",
+       "prob": 0.4167,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5833
+    },
+    {
+     "id": 188877,
+     "name": "Central Districts vs Northern Districts One Day Match",
+     "when": "Tomorrow 17:30",
+     "market": "Win Match",
+     "consensus": "Central Districts",
+     "tips": "1/2",
+     "pct": 50,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Central Districts",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Northern Districts One Day Match",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5
+    },
+    {
+     "id": 188878,
+     "name": "Wellington vs Otago One Day Match",
+     "when": "Tomorrow 17:30",
+     "market": "Win Match",
+     "consensus": "Wellington",
+     "tips": "1/2",
+     "pct": 50,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Wellington",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Otago One Day Match",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5
+    },
+    {
+     "id": 188863,
+     "name": "Melbourne Renegades W vs Sydney Thunder W T20 Big Bash",
+     "when": "29 Oct 00:40",
+     "market": "Top Team1 Batsman",
+     "consensus": "G Wareham (Melbourne Renegades W)",
+     "tips": "1/2",
+     "pct": 50,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "G Wareham (Melbourne Renegades W)",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Melbourne Renegades W",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5
+    },
+    {
+     "id": 188871,
+     "name": "Bangladesh vs West Indies",
+     "when": "31 Oct 23:30",
+     "market": "Man Of The Match",
+     "consensus": "Hasan Mahmud",
+     "tips": "",
+     "pct": null,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Hasan Mahmud",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Bangladesh",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5
+    },
+    {
+     "id": 182606,
+     "name": "World Cup 2027 (outright)",
+     "when": "21 Nov 2027 05:00",
+     "market": "Outright Winner",
+     "consensus": "India",
+     "tips": "6/12",
+     "pct": 50,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "India",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier B - tip-share reference only"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5
+    },
+    {
+     "id": 187184,
+     "name": "Big Bash Women 2026 (outright)",
+     "when": "05 Dec 03:10",
+     "market": "Outright Winner",
+     "consensus": "Sydney Sixers W",
+     "tips": "2/3",
+     "pct": 67,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Sydney Sixers W",
+       "decimal": 1.77,
+       "american": "-130",
+       "prob": 0.5392,
+       "basis": "Tier B - tip-share reference only"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5392
+    }
+   ]
+  },
+  {
+   "sport": "Snooker",
+   "sport_id": 8,
+   "source": "https://www.olbg.com/betting-tips/Snooker/8",
+   "note": "Hub returned 'No tips found.' at capture time: no snooker event on OLBG currently carries a tipster selection. Snooker markets OLBG documents are Win Match, Handicap Betting, Frame Betting and Win Tournament. No bookable fixture list was exposed, so no snooker lines can be originated from OLBG's own list. Flagged.",
+   "events": []
+  },
+  {
+   "sport": "Darts",
+   "sport_id": 15,
+   "source": "https://www.olbg.com/betting-tips/Darts/15",
+   "note": "The Darts hub currently lists only two events, both tournament-level, with no individual match markets. Match-level darts inventory is therefore limited to what OLBG has opened. Flagged as a data-availability issue, not a pricing gap.",
+   "events": [
+    {
+     "id": 26023,
+     "name": "PDC World Championship 2027 (outright)",
+     "when": "03 Jan 2027 12:00",
+     "market": "Win Tournament",
+     "consensus": "Luke Littler",
+     "tips": "22/36",
+     "pct": 61,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Luke Littler",
+       "decimal": 1.62,
+       "american": "-161",
+       "prob": 0.5861,
+       "basis": "Tier B - tip-share reference only"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5861
+    },
+    {
+     "id": 32446,
+     "name": "Players Championship 31 (outright)",
+     "when": "28 Oct 08:00",
+     "market": "Win Tournament",
+     "consensus": "Nathan Aspinall",
+     "tips": "1/3",
+     "pct": 33,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Nathan Aspinall",
+       "decimal": 2.07,
+       "american": "+107",
+       "prob": 0.4608,
+       "basis": "Tier B - tip-share reference only"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.4608
+    }
+   ]
+  },
+  {
+   "sport": "Baseball",
+   "sport_id": 12,
+   "source": "https://www.olbg.com/betting-tips/Baseball/12",
+   "note": "Only one baseball game carried tips at capture time even though the page lists MLB, NPB and KBO coverage. Flagged as a thin board.",
+   "events": [
+    {
+     "id": 160795,
+     "name": "MIL Brewers @ TB Rays",
+     "comp": "MLB",
+     "when": "Tomorrow 00:00",
+     "market": "Money Line",
+     "consensus": "TB Rays",
+     "tips": "21/27",
+     "pct": 78,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "TB Rays",
+       "decimal": 1.35,
+       "american": "-286",
+       "prob": 0.7043,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "MIL Brewers",
+       "decimal": 3.22,
+       "american": "+222",
+       "prob": 0.2957,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.7043
+    }
+   ]
+  },
+  {
+   "sport": "Gaelic Sports",
+   "sport_id": 25,
+   "source": "https://www.olbg.com/betting-tips/Gaelic_Football/25",
+   "note": "OLBG's Gaelic hub is Gaelic Football only. OLBG also runs a Hurling hub (sport id 26) which is outside this brief's listed sports. Only two club fixtures plus one 2027 outright were live.",
+   "events": [
+    {
+     "id": 3531,
+     "name": "Kanturk v Eire Og Cor",
+     "when": "01 Nov 09:00",
+     "market": "Handicap",
+     "consensus": "Eire Og Cor +0.50",
+     "tips": "6/6",
+     "pct": 100,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Eire Og Cor +0.50",
+       "decimal": 1.39,
+       "american": "-256",
+       "prob": 0.6875,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Kanturk",
+       "decimal": 3.05,
+       "american": "+205",
+       "prob": 0.3125,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.6875
+    },
+    {
+     "id": 3537,
+     "name": "Fr Caseys v Kildimo Pallaskenry",
+     "when": "01 Nov 10:30",
+     "market": "Handicap",
+     "consensus": "Kildimo Pallaskenry +3.50",
+     "tips": "5/7",
+     "pct": 71,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Kildimo Pallaskenry +3.50",
+       "decimal": 1.62,
+       "american": "-161",
+       "prob": 0.5865,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Fr Caseys",
+       "decimal": 2.3,
+       "american": "+130",
+       "prob": 0.4135,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5865
+    },
+    {
+     "id": 3327,
+     "name": "All Ireland Football Championship 2027 (outright)",
+     "when": "25 Jul 2027 10:30",
+     "market": "Win Tournament",
+     "consensus": "Kerry",
+     "tips": "6/8",
+     "pct": 75,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Kerry",
+       "decimal": 1.56,
+       "american": "-179",
+       "prob": 0.6111,
+       "basis": "Tier B - tip-share reference only"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.6111
+    }
+   ]
+  },
+  {
+   "sport": "Greyhounds",
+   "sport_id": 28,
+   "source": "https://www.olbg.com/betting-tips/Greyhounds/28",
+   "note": "Race-name clock (e.g. 8:24) and the page's own timestamp (16:24) differ by four hours, consistent with a fixed display offset. Absolute local post time is therefore not confirmed for any race. One race was already labelled Expired at capture. Flagged.",
+   "events": [
+    {
+     "id": 690271,
+     "name": "8:24 Towcester",
+     "when": "Today 16:24",
+     "market": "Daily Races",
+     "consensus": "Melbury Rocket",
+     "tips": "2/3",
+     "pct": 67,
+     "status": "expired",
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Melbury Rocket",
+       "decimal": 1.77,
+       "american": "-130",
+       "prob": 0.5392,
+       "basis": "Tier B - tip-share reference only"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5392
+    },
+    {
+     "id": 690274,
+     "name": "8:36 Nottingham",
+     "when": "Today 16:36",
+     "market": "Daily Races",
+     "consensus": "Corleones Lady",
+     "tips": "2/3",
+     "pct": 67,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Corleones Lady",
+       "decimal": 1.77,
+       "american": "-130",
+       "prob": 0.5392,
+       "basis": "Tier B - tip-share reference only"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5392
+    },
+    {
+     "id": 690275,
+     "name": "8:34 Harlow",
+     "when": "Today 16:34",
+     "market": "Daily Races",
+     "consensus": "Townsend Margo",
+     "tips": "1/1",
+     "pct": 100,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Townsend Margo",
+       "decimal": 1.75,
+       "american": "-133",
+       "prob": 0.5455,
+       "basis": "Tier B - tip-share reference only"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5455
+    },
+    {
+     "id": 690276,
+     "name": "8:41 Towcester",
+     "when": "Today 16:41",
+     "market": "Daily Races",
+     "consensus": "Great Time",
+     "tips": "1/1",
+     "pct": 100,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Great Time",
+       "decimal": 1.75,
+       "american": "-133",
+       "prob": 0.5455,
+       "basis": "Tier B - tip-share reference only"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5455
+    },
+    {
+     "id": 690277,
+     "name": "8:47 Yarmouth",
+     "when": "Today 16:47",
+     "market": "Daily Races",
+     "consensus": "Savana Buzz",
+     "tips": "1/1",
+     "pct": 100,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Savana Buzz",
+       "decimal": 1.75,
+       "american": "-133",
+       "prob": 0.5455,
+       "basis": "Tier B - tip-share reference only"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5455
+    },
+    {
+     "id": 690284,
+     "name": "9:16 Towcester",
+     "when": "Today 17:16",
+     "market": "Daily Races",
+     "consensus": "Ballygogue Jet",
+     "tips": "1/1",
+     "pct": 100,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Ballygogue Jet",
+       "decimal": 1.75,
+       "american": "-133",
+       "prob": 0.5455,
+       "basis": "Tier B - tip-share reference only"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5455
+    },
+    {
+     "id": 690285,
+     "name": "9:23 Yarmouth",
+     "when": "Today 17:23",
+     "market": "Daily Races",
+     "consensus": "Magical Wolf",
+     "tips": "1/1",
+     "pct": 100,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Magical Wolf",
+       "decimal": 1.75,
+       "american": "-133",
+       "prob": 0.5455,
+       "basis": "Tier B - tip-share reference only"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5455
+    },
+    {
+     "id": 690288,
+     "name": "9:46 Nottingham",
+     "when": "Today 17:46",
+     "market": "Daily Races",
+     "consensus": "Salacres Lanark",
+     "tips": "1/1",
+     "pct": 100,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Salacres Lanark",
+       "decimal": 1.75,
+       "american": "-133",
+       "prob": 0.5455,
+       "basis": "Tier B - tip-share reference only"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5455
+    }
+   ]
+  },
+  {
+   "sport": "Tennis",
+   "sport_id": 3,
+   "source": "https://www.olbg.com/betting-tips/Tennis/3",
+   "note": "Event page for Wawrinka v Lehecka (event 902232) verified live and lists five markets; this is the authoritative example of OLBG's tennis market ladder. Tip prices are not exposed on event pages, so prices in this project are originated, not copied.",
+   "events": [
+    {
+     "id": 902381,
+     "name": "Aliaksandra Sasnovich vs Nikola Bartunkova",
+     "when": "Tomorrow 01:00",
+     "market": "Win Match",
+     "consensus": "Nikola Bartunkova",
+     "tips": "5/5",
+     "pct": 100,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Nikola Bartunkova",
+       "decimal": 1.43,
+       "american": "-233",
+       "prob": 0.6667,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Aliaksandra Sasnovich",
+       "decimal": 2.86,
+       "american": "+186",
+       "prob": 0.3333,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.6667
+    },
+    {
+     "id": 902172,
+     "name": "Leylah Fernandez vs Himeno Sakatsume",
+     "when": "Tomorrow 02:00",
+     "market": "Win Match",
+     "consensus": "Leylah Fernandez",
+     "tips": "4/6",
+     "pct": 67,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Leylah Fernandez",
+       "decimal": 1.69,
+       "american": "-145",
+       "prob": 0.5637,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Himeno Sakatsume",
+       "decimal": 2.18,
+       "american": "+118",
+       "prob": 0.4363,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5637
+    },
+    {
+     "id": 902189,
+     "name": "Lilli Tagger vs Venus Williams",
+     "when": "Tomorrow 03:30",
+     "market": "Win Match",
+     "consensus": "Venus Williams",
+     "tips": "4/5",
+     "pct": 80,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Venus Williams",
+       "decimal": 1.59,
+       "american": "-169",
+       "prob": 0.6,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Lilli Tagger",
+       "decimal": 2.38,
+       "american": "+138",
+       "prob": 0.4,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.6
+    },
+    {
+     "id": 902232,
+     "name": "Stan Wawrinka vs Jiri Lehecka",
+     "when": "Tomorrow 14:30",
+     "market": "Win Match",
+     "consensus": "Jiri Lehecka",
+     "tips": "4/7",
+     "pct": 57,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Jiri Lehecka",
+       "decimal": 1.8,
+       "american": "-125",
+       "prob": 0.5288,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Stan Wawrinka",
+       "decimal": 2.02,
+       "american": "+102",
+       "prob": 0.4712,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5288
+    },
+    {
+     "id": 902233,
+     "name": "Novak Djokovic vs Ugo Humbert",
+     "when": "28 Oct 06:00",
+     "market": "Win Match",
+     "consensus": "Novak Djokovic",
+     "tips": "4/5",
+     "pct": 80,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Novak Djokovic",
+       "decimal": 1.59,
+       "american": "-169",
+       "prob": 0.6,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Ugo Humbert",
+       "decimal": 2.38,
+       "american": "+138",
+       "prob": 0.4,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.6
+    },
+    {
+     "id": 902238,
+     "name": "Alejandro Tabilo vs Rafael Jodar",
+     "when": "Tomorrow 09:00",
+     "market": "Win Match",
+     "consensus": "Rafael Jodar",
+     "tips": "3/5",
+     "pct": 60,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Rafael Jodar",
+       "decimal": 1.79,
+       "american": "-127",
+       "prob": 0.5333,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Alejandro Tabilo",
+       "decimal": 2.04,
+       "american": "+104",
+       "prob": 0.4667,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5333
+    },
+    {
+     "id": 902326,
+     "name": "Nauhany Vitoria Leme Da Silva vs Despina Papamichail",
+     "when": "Today 17:00",
+     "market": "Win Match",
+     "consensus": "Despina Papamichail",
+     "tips": "2/2",
+     "pct": 100,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Despina Papamichail",
+       "decimal": 1.63,
+       "american": "-159",
+       "prob": 0.5833,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Nauhany Vitoria Leme Da Silva",
+       "decimal": 2.29,
+       "american": "+129",
+       "prob": 0.4167,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5833
+    },
+    {
+     "id": 902176,
+     "name": "Ann Li vs Ekaterina Alexandrova",
+     "when": "Today 22:00",
+     "market": "Win Match",
+     "consensus": "Ekaterina Alexandrova",
+     "tips": "2/2",
+     "pct": 100,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Ekaterina Alexandrova",
+       "decimal": 1.63,
+       "american": "-159",
+       "prob": 0.5833,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Ann Li",
+       "decimal": 2.29,
+       "american": "+129",
+       "prob": 0.4167,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5833
+    },
+    {
+     "id": 902240,
+     "name": "Alex Michelsen vs Botic Van De Zandschulp",
+     "when": "Tomorrow 10:00",
+     "market": "Win Match",
+     "consensus": "Alex Michelsen",
+     "tips": "2/3",
+     "pct": 67,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Alex Michelsen",
+       "decimal": 1.77,
+       "american": "-130",
+       "prob": 0.5392,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Botic Van De Zandschulp",
+       "decimal": 2.07,
+       "american": "+107",
+       "prob": 0.4608,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5392
+    },
+    {
+     "id": 902305,
+     "name": "Yulia Putintseva vs Maria Sakkari",
+     "when": "Today 23:00",
+     "market": "Win Match",
+     "consensus": "Maria Sakkari",
+     "tips": "1/1",
+     "pct": 100,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Maria Sakkari",
+       "decimal": 1.75,
+       "american": "-133",
+       "prob": 0.5455,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Yulia Putintseva",
+       "decimal": 2.1,
+       "american": "+110",
+       "prob": 0.4545,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5455
+    },
+    {
+     "id": 902180,
+     "name": "Simona Waltert vs Jil Teichmann",
+     "when": "Today 23:00",
+     "market": "Win Match",
+     "consensus": "Simona Waltert",
+     "tips": "1/2",
+     "pct": 50,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Simona Waltert",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Jil Teichmann",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5
+    },
+    {
+     "id": 902179,
+     "name": "Kaitlin Quevedo vs Sofia Kenin",
+     "when": "Today 23:00",
+     "market": "Win Match",
+     "consensus": "Kaitlin Quevedo",
+     "tips": "1/1",
+     "pct": 100,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Kaitlin Quevedo",
+       "decimal": 1.75,
+       "american": "-133",
+       "prob": 0.5455,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Sofia Kenin",
+       "decimal": 2.1,
+       "american": "+110",
+       "prob": 0.4545,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5455
+    },
+    {
+     "id": 902301,
+     "name": "Anastasia Zakharova vs Magda Linette",
+     "when": "Today 23:00",
+     "market": "Win Match",
+     "consensus": "Anastasia Zakharova",
+     "tips": "1/2",
+     "pct": 50,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Anastasia Zakharova",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Magda Linette",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5
+    },
+    {
+     "id": 902181,
+     "name": "Sara Sorribes Tormo vs Zeynep Sonmez",
+     "when": "Tomorrow 00:30",
+     "market": "Win Match",
+     "consensus": "Zeynep Sonmez",
+     "tips": "",
+     "pct": null,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Zeynep Sonmez",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Sara Sorribes Tormo",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5
+    }
+   ]
+  },
+  {
+   "sport": "Motor Racing",
+   "sport_id": 14,
+   "source": "https://www.olbg.com/betting-tips/Motor_Racing/14",
+   "note": "Only one race (Mexico City GP, 01 Nov) plus one ante-post market were live. No qualifying or sprint tips. Markets OLBG documents: Fastest Qualifier, Win Race, Podium Finish, Top 6 Finish, Points Finish, Fastest Lap, Win Tournament.",
+   "events": [
+    {
+     "id": 914,
+     "name": "Mexico City Grand Prix",
+     "when": "01 Nov 15:00",
+     "market": "Top 6 Finish",
+     "consensus": "Kimi Antonelli - Yes",
+     "tips": "",
+     "pct": null,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Kimi Antonelli - Yes",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier B - tip-share reference only"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5
+    },
+    {
+     "id": 912,
+     "name": "Formula 1 Drivers Championship 2026 Without Kimi Antonelli",
+     "when": "06 Dec 08:00",
+     "market": "Win Tournament",
+     "consensus": "Max Verstappen",
+     "tips": "4/7",
+     "pct": 57,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Max Verstappen",
+       "decimal": 1.8,
+       "american": "-125",
+       "prob": 0.5288,
+       "basis": "Tier B - tip-share reference only"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5288
+    }
+   ]
+  },
+  {
+   "sport": "Handball",
+   "sport_id": 20,
+   "source": "https://www.olbg.com/betting-tips/Handball/20",
+   "note": "Every listed EHF Champions League fixture shows 'Tie' as the most-tipped Money Line selection, including heavy favourites such as FC Barcelona away at Skanderborg and at BM Granollers. This is consistent with a placeholder/default selection rather than genuine draw support and is flagged as an irregularity.",
+   "events": [
+    {
+     "id": 12136,
+     "name": "SC Magdeburg vs HC Kriens Luzern",
+     "when": "28 Oct 19:45",
+     "market": "Money Line",
+     "consensus": "Tie",
+     "tips": "8/13",
+     "pct": 62,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Tie",
+       "decimal": 1.68,
+       "american": "-147",
+       "prob": 0.5678,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "SC Magdeburg",
+       "decimal": 2.2,
+       "american": "+120",
+       "prob": 0.4322,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5678
+    },
+    {
+     "id": 12132,
+     "name": "KS Kielce vs Kolstad",
+     "when": "28 Oct 19:45",
+     "market": "Money Line",
+     "consensus": "Tie",
+     "tips": "6/10",
+     "pct": 60,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Tie",
+       "decimal": 1.73,
+       "american": "-137",
+       "prob": 0.55,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "KS Kielce",
+       "decimal": 2.12,
+       "american": "+112",
+       "prob": 0.45,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.55
+    },
+    {
+     "id": 12128,
+     "name": "Fuchse Berlin vs RK Partizan",
+     "when": "29 Oct 17:45",
+     "market": "Money Line",
+     "consensus": "Tie",
+     "tips": "6/13",
+     "pct": 46,
+     "tier": "A",
+     "markets": [
+      {
+       "market": "Match Winner / Money Line",
+       "selection": "Fuchse Berlin",
+       "decimal": 1.26,
+       "american": "-385",
+       "prob": 0.7565,
+       "basis": "Tier A - verified standings"
+      },
+      {
+       "market": "Match Winner / Money Line",
+       "selection": "RK Partizan",
+       "decimal": 3.91,
+       "american": "+291",
+       "prob": 0.2435,
+       "basis": "Tier A - verified standings"
+      },
+      {
+       "market": "Handicap",
+       "selection": "Fuchse Berlin -10.00",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - spread from the same expected margin"
+      },
+      {
+       "market": "Handicap",
+       "selection": "RK Partizan +10.00",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - spread from the same expected margin"
+      },
+      {
+       "market": "Match Total",
+       "selection": "Over 69.5",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - total anchored on verified GF/GA"
+      },
+      {
+       "market": "Match Total",
+       "selection": "Under 69.5",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - total anchored on verified GF/GA"
+      }
+     ],
+     "line_source": "none",
+     "prob_a": 0.7565,
+     "edge_note": "net goals per game +2.40 vs -7.20"
+    },
+    {
+     "id": 12130,
+     "name": "HC Vardar vs MT Melsungen",
+     "when": "28 Oct 17:45",
+     "market": "Money Line",
+     "consensus": "Tie",
+     "tips": "5/10",
+     "pct": 50,
+     "tier": "A",
+     "markets": [
+      {
+       "market": "Match Winner / Money Line",
+       "selection": "HC Vardar",
+       "decimal": 1.93,
+       "american": "-108",
+       "prob": 0.4944,
+       "basis": "Tier A - verified standings"
+      },
+      {
+       "market": "Match Winner / Money Line",
+       "selection": "MT Melsungen",
+       "decimal": 1.88,
+       "american": "-114",
+       "prob": 0.5056,
+       "basis": "Tier A - verified standings"
+      },
+      {
+       "market": "Handicap",
+       "selection": "MT Melsungen +0.00",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - spread from the same expected margin"
+      },
+      {
+       "market": "Handicap",
+       "selection": "HC Vardar -0.00",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - spread from the same expected margin"
+      },
+      {
+       "market": "Match Total",
+       "selection": "Over 59.5",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - total anchored on verified GF/GA"
+      },
+      {
+       "market": "Match Total",
+       "selection": "Under 59.5",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - total anchored on verified GF/GA"
+      }
+     ],
+     "line_source": "none",
+     "prob_a": 0.4944,
+     "edge_note": "net goals per game -0.80 vs +0.00"
+    },
+    {
+     "id": 12138,
+     "name": "Wisla Plock vs Nantes",
+     "when": "28 Oct 17:45",
+     "market": "Money Line",
+     "consensus": "Tie",
+     "tips": "5/8",
+     "pct": 63,
+     "tier": "A",
+     "markets": [
+      {
+       "market": "Match Winner / Money Line",
+       "selection": "Wisla Plock",
+       "decimal": 1.73,
+       "american": "-137",
+       "prob": 0.5498,
+       "basis": "Tier A - verified standings"
+      },
+      {
+       "market": "Match Winner / Money Line",
+       "selection": "Nantes",
+       "decimal": 2.12,
+       "american": "+112",
+       "prob": 0.4502,
+       "basis": "Tier A - verified standings"
+      },
+      {
+       "market": "Handicap",
+       "selection": "Wisla Plock -2.00",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - spread from the same expected margin"
+      },
+      {
+       "market": "Handicap",
+       "selection": "Nantes +2.00",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - spread from the same expected margin"
+      },
+      {
+       "market": "Match Total",
+       "selection": "Over 56.5",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - total anchored on verified GF/GA"
+      },
+      {
+       "market": "Match Total",
+       "selection": "Under 56.5",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - total anchored on verified GF/GA"
+      }
+     ],
+     "line_source": "none",
+     "prob_a": 0.5498,
+     "edge_note": "net goals per game +1.00 vs -0.20"
+    },
+    {
+     "id": 12127,
+     "name": "FC Porto vs Veszprem",
+     "when": "28 Oct 17:45",
+     "market": "Money Line",
+     "consensus": "Tie",
+     "tips": "4/8",
+     "pct": 50,
+     "tier": "A",
+     "markets": [
+      {
+       "market": "Match Winner / Money Line",
+       "selection": "FC Porto",
+       "decimal": 3.91,
+       "american": "+291",
+       "prob": 0.2435,
+       "basis": "Tier A - verified standings"
+      },
+      {
+       "market": "Match Winner / Money Line",
+       "selection": "Veszprem",
+       "decimal": 1.26,
+       "american": "-385",
+       "prob": 0.7565,
+       "basis": "Tier A - verified standings"
+      },
+      {
+       "market": "Handicap",
+       "selection": "Veszprem +10.00",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - spread from the same expected margin"
+      },
+      {
+       "market": "Handicap",
+       "selection": "FC Porto -10.00",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - spread from the same expected margin"
+      },
+      {
+       "market": "Match Total",
+       "selection": "Over 66.5",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - total anchored on verified GF/GA"
+      },
+      {
+       "market": "Match Total",
+       "selection": "Under 66.5",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - total anchored on verified GF/GA"
+      }
+     ],
+     "line_source": "none",
+     "prob_a": 0.2435,
+     "edge_note": "net goals per game -3.00 vs +7.80"
+    },
+    {
+     "id": 12135,
+     "name": "RK Celje vs RK Zagreb",
+     "when": "28 Oct 19:45",
+     "market": "Money Line",
+     "consensus": "Tie",
+     "tips": "4/6",
+     "pct": 67,
+     "tier": "A",
+     "markets": [
+      {
+       "market": "Match Winner / Money Line",
+       "selection": "RK Celje",
+       "decimal": 2.54,
+       "american": "+154",
+       "prob": 0.3749,
+       "basis": "Tier A - verified standings"
+      },
+      {
+       "market": "Match Winner / Money Line",
+       "selection": "RK Zagreb",
+       "decimal": 1.52,
+       "american": "-192",
+       "prob": 0.6251,
+       "basis": "Tier A - verified standings"
+      },
+      {
+       "market": "Handicap",
+       "selection": "RK Zagreb +4.50",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - spread from the same expected margin"
+      },
+      {
+       "market": "Handicap",
+       "selection": "RK Celje -4.50",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - spread from the same expected margin"
+      },
+      {
+       "market": "Match Total",
+       "selection": "Over 64.5",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - total anchored on verified GF/GA"
+      },
+      {
+       "market": "Match Total",
+       "selection": "Under 64.5",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - total anchored on verified GF/GA"
+      }
+     ],
+     "line_source": "none",
+     "prob_a": 0.3749,
+     "edge_note": "net goals per game -7.60 vs -2.40"
+    },
+    {
+     "id": 12134,
+     "name": "PSG Handball vs Aalborg Handbold",
+     "when": "28 Oct 19:45",
+     "market": "Money Line",
+     "consensus": "Tie",
+     "tips": "4/6",
+     "pct": 67,
+     "tier": "A",
+     "markets": [
+      {
+       "market": "Match Winner / Money Line",
+       "selection": "PSG Handball",
+       "decimal": 1.84,
+       "american": "-119",
+       "prob": 0.5167,
+       "basis": "Tier A - verified standings"
+      },
+      {
+       "market": "Match Winner / Money Line",
+       "selection": "Aalborg Handbold",
+       "decimal": 1.97,
+       "american": "-103",
+       "prob": 0.4833,
+       "basis": "Tier A - verified standings"
+      },
+      {
+       "market": "Handicap",
+       "selection": "PSG Handball -0.50",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - spread from the same expected margin"
+      },
+      {
+       "market": "Handicap",
+       "selection": "Aalborg Handbold +0.50",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - spread from the same expected margin"
+      },
+      {
+       "market": "Match Total",
+       "selection": "Over 66.0",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - total anchored on verified GF/GA"
+      },
+      {
+       "market": "Match Total",
+       "selection": "Under 66.0",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - total anchored on verified GF/GA"
+      }
+     ],
+     "line_source": "none",
+     "prob_a": 0.5167,
+     "edge_note": "net goals per game +5.00 vs +5.00"
+    },
+    {
+     "id": 12129,
+     "name": "GOG vs Sporting CP",
+     "when": "29 Oct 17:45",
+     "market": "Money Line",
+     "consensus": "Tie",
+     "tips": "2/4",
+     "pct": 50,
+     "tier": "A",
+     "markets": [
+      {
+       "market": "Match Winner / Money Line",
+       "selection": "GOG",
+       "decimal": 2.34,
+       "american": "+134",
+       "prob": 0.4067,
+       "basis": "Tier A - verified standings"
+      },
+      {
+       "market": "Match Winner / Money Line",
+       "selection": "Sporting CP",
+       "decimal": 1.61,
+       "american": "-164",
+       "prob": 0.5933,
+       "basis": "Tier A - verified standings"
+      },
+      {
+       "market": "Handicap",
+       "selection": "Sporting CP +3.50",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - spread from the same expected margin"
+      },
+      {
+       "market": "Handicap",
+       "selection": "GOG -3.50",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - spread from the same expected margin"
+      },
+      {
+       "market": "Match Total",
+       "selection": "Over 71.0",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - total anchored on verified GF/GA"
+      },
+      {
+       "market": "Match Total",
+       "selection": "Under 71.0",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - total anchored on verified GF/GA"
+      }
+     ],
+     "line_source": "none",
+     "prob_a": 0.4067,
+     "edge_note": "net goals per game +1.20 vs +5.20"
+    },
+    {
+     "id": 12133,
+     "name": "Montpellier vs Dinamo Bucuresti",
+     "when": "29 Oct 19:45",
+     "market": "Money Line",
+     "consensus": "Tie",
+     "tips": "2/3",
+     "pct": 67,
+     "tier": "A",
+     "markets": [
+      {
+       "market": "Match Winner / Money Line",
+       "selection": "Montpellier",
+       "decimal": 1.93,
+       "american": "-108",
+       "prob": 0.4944,
+       "basis": "Tier A - verified standings"
+      },
+      {
+       "market": "Match Winner / Money Line",
+       "selection": "Dinamo Bucuresti",
+       "decimal": 1.88,
+       "american": "-114",
+       "prob": 0.5056,
+       "basis": "Tier A - verified standings"
+      },
+      {
+       "market": "Handicap",
+       "selection": "Dinamo Bucuresti +0.00",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - spread from the same expected margin"
+      },
+      {
+       "market": "Handicap",
+       "selection": "Montpellier -0.00",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - spread from the same expected margin"
+      },
+      {
+       "market": "Match Total",
+       "selection": "Over 60.0",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - total anchored on verified GF/GA"
+      },
+      {
+       "market": "Match Total",
+       "selection": "Under 60.0",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - total anchored on verified GF/GA"
+      }
+     ],
+     "line_source": "none",
+     "prob_a": 0.4944,
+     "edge_note": "net goals per game -3.00 vs -2.20"
+    },
+    {
+     "id": 12131,
+     "name": "IFK Kristianstad vs Pick Szeged",
+     "when": "29 Oct 17:45",
+     "market": "Money Line",
+     "consensus": "IFK Kristianstad",
+     "tips": "1/3",
+     "pct": 33,
+     "tier": "A",
+     "markets": [
+      {
+       "market": "Match Winner / Money Line",
+       "selection": "IFK Kristianstad",
+       "decimal": 3.03,
+       "american": "+203",
+       "prob": 0.3148,
+       "basis": "Tier A - verified standings"
+      },
+      {
+       "market": "Match Winner / Money Line",
+       "selection": "Pick Szeged",
+       "decimal": 1.39,
+       "american": "-256",
+       "prob": 0.6852,
+       "basis": "Tier A - verified standings"
+      },
+      {
+       "market": "Handicap",
+       "selection": "Pick Szeged +7.00",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - spread from the same expected margin"
+      },
+      {
+       "market": "Handicap",
+       "selection": "IFK Kristianstad -7.00",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - spread from the same expected margin"
+      },
+      {
+       "market": "Match Total",
+       "selection": "Over 70.5",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - total anchored on verified GF/GA"
+      },
+      {
+       "market": "Match Total",
+       "selection": "Under 70.5",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - total anchored on verified GF/GA"
+      }
+     ],
+     "line_source": "none",
+     "prob_a": 0.3148,
+     "edge_note": "net goals per game -7.00 vs +0.60"
+    },
+    {
+     "id": 12180,
+     "name": "SG Flensburg Handewitt vs HBW Balingen Weilstetten",
+     "when": "29 Oct 18:00",
+     "market": "Money Line",
+     "consensus": "HBW Balingen-Weilstetten",
+     "tips": "1/1",
+     "pct": 100,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "HBW Balingen-Weilstetten",
+       "decimal": 1.75,
+       "american": "-133",
+       "prob": 0.5455,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "SG Flensburg Handewitt",
+       "decimal": 2.1,
+       "american": "+110",
+       "prob": 0.4545,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5455
+    },
+    {
+     "id": 12137,
+     "name": "Skanderborg Handbold vs FC Barcelona",
+     "when": "29 Oct 19:45",
+     "market": "Money Line",
+     "consensus": "Tie",
+     "tips": "1/3",
+     "pct": 33,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Tie",
+       "decimal": 2.07,
+       "american": "+107",
+       "prob": 0.4608,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Skanderborg Handbold",
+       "decimal": 1.77,
+       "american": "-130",
+       "prob": 0.5392,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.4608
+    },
+    {
+     "id": 12169,
+     "name": "ThSV Eisenach vs Fuchse Berlin",
+     "when": "01 Nov 15:30",
+     "market": "Money Line",
+     "consensus": "Tie",
+     "tips": "1/1",
+     "pct": 100,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Tie",
+       "decimal": 1.75,
+       "american": "-133",
+       "prob": 0.5455,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "ThSV Eisenach",
+       "decimal": 2.1,
+       "american": "+110",
+       "prob": 0.4545,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5455
+    },
+    {
+     "id": 12185,
+     "name": "BM Granollers vs FC Barcelona",
+     "when": "01 Nov 17:00",
+     "market": "Money Line",
+     "consensus": "Tie",
+     "tips": "1/1",
+     "pct": 100,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Tie",
+       "decimal": 1.75,
+       "american": "-133",
+       "prob": 0.5455,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "BM Granollers",
+       "decimal": 2.1,
+       "american": "+110",
+       "prob": 0.4545,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5455
+    }
+   ]
+  },
+  {
+   "sport": "Ice Hockey",
+   "sport_id": 13,
+   "source": "https://www.olbg.com/betting-tips/Ice_Hockey/13",
+   "note": "",
+   "events": [
+    {
+     "id": 200101,
+     "name": "LA Kings @ NY Rangers",
+     "comp": "NHL",
+     "when": "Today 19:07",
+     "market": "Money Line",
+     "consensus": "NY Rangers",
+     "tips": "13/16",
+     "pct": 81,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "NY Rangers",
+       "decimal": 1.38,
+       "american": "-263",
+       "prob": 0.6908,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "LA Kings",
+       "decimal": 3.08,
+       "american": "+208",
+       "prob": 0.3092,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.6908
+    },
+    {
+     "id": 200103,
+     "name": "TOR Maple Leafs @ CGY Flames",
+     "comp": "NHL",
+     "when": "Today 20:37",
+     "market": "Money Line",
+     "consensus": "TOR Maple Leafs",
+     "tips": "10/15",
+     "pct": 67,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "TOR Maple Leafs",
+       "decimal": 1.58,
+       "american": "-172",
+       "prob": 0.602,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "CGY Flames",
+       "decimal": 2.39,
+       "american": "+139",
+       "prob": 0.398,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.602
+    },
+    {
+     "id": 200102,
+     "name": "DET Red Wings @ EDM Oilers",
+     "comp": "NHL",
+     "when": "Today 21:37",
+     "market": "Money Line",
+     "consensus": "EDM Oilers",
+     "tips": "9/11",
+     "pct": 82,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "EDM Oilers",
+       "decimal": 1.43,
+       "american": "-233",
+       "prob": 0.6676,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "DET Red Wings",
+       "decimal": 2.87,
+       "american": "+187",
+       "prob": 0.3324,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.6676
+    },
+    {
+     "id": 200081,
+     "name": "Kalpa vs Sport",
+     "comp": "Finland SM Liiga",
+     "when": "Tomorrow 12:30",
+     "market": "Money Line",
+     "consensus": "Kalpa",
+     "tips": "3/3",
+     "pct": 100,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Kalpa",
+       "decimal": 1.55,
+       "american": "-182",
+       "prob": 0.6154,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Sport",
+       "decimal": 2.48,
+       "american": "+148",
+       "prob": 0.3846,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.6154
+    },
+    {
+     "id": 200082,
+     "name": "IF Malmo Redhawks vs Linkoping HC",
+     "comp": "Swedish Hockey League",
+     "when": "Tomorrow 14:00",
+     "market": "Money Line",
+     "consensus": "IF Malmo Redhawks",
+     "tips": "2/2",
+     "pct": 100,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "IF Malmo Redhawks",
+       "decimal": 1.63,
+       "american": "-159",
+       "prob": 0.5833,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Linkoping HC",
+       "decimal": 2.29,
+       "american": "+129",
+       "prob": 0.4167,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5833
+    },
+    {
+     "id": 200083,
+     "name": "Frolunda HC vs Rogle BK",
+     "comp": "Swedish Hockey League",
+     "when": "Tomorrow 14:00",
+     "market": "Money Line",
+     "consensus": "Frolunda HC",
+     "tips": "2/2",
+     "pct": 100,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Frolunda HC",
+       "decimal": 1.63,
+       "american": "-159",
+       "prob": 0.5833,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Rogle BK",
+       "decimal": 2.29,
+       "american": "+129",
+       "prob": 0.4167,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5833
+    },
+    {
+     "id": 200100,
+     "name": "Kolner Haie vs Adler Mannheim",
+     "comp": "Germany Eishockey Liga",
+     "when": "Tomorrow 14:30",
+     "market": "Money Line",
+     "consensus": "Adler Mannheim",
+     "tips": "1/1",
+     "pct": 100,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Adler Mannheim",
+       "decimal": 1.75,
+       "american": "-133",
+       "prob": 0.5455,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Kolner Haie",
+       "decimal": 2.1,
+       "american": "+110",
+       "prob": 0.4545,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5455
+    },
+    {
+     "id": 200104,
+     "name": "BOS Bruins @ CAR Hurricanes",
+     "comp": "NHL",
+     "when": "Tomorrow 20:07",
+     "market": "Puck Line",
+     "consensus": "BOS Bruins +1.50",
+     "tips": "1/1",
+     "pct": 100,
+     "tier": "A",
+     "markets": [
+      {
+       "market": "Match Winner / Money Line",
+       "selection": "BOS Bruins",
+       "decimal": 1.83,
+       "american": "-120",
+       "prob": 0.5191,
+       "basis": "Tier A - verified standings"
+      },
+      {
+       "market": "Match Winner / Money Line",
+       "selection": "CAR Hurricanes",
+       "decimal": 1.98,
+       "american": "-102",
+       "prob": 0.4809,
+       "basis": "Tier A - verified standings"
+      },
+      {
+       "market": "Handicap",
+       "selection": "BOS Bruins -0.00",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - spread from the same expected margin"
+      },
+      {
+       "market": "Handicap",
+       "selection": "CAR Hurricanes +0.00",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - spread from the same expected margin"
+      },
+      {
+       "market": "Match Total",
+       "selection": "Over 7.0",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - total anchored on verified GF/GA"
+      },
+      {
+       "market": "Match Total",
+       "selection": "Under 7.0",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - total anchored on verified GF/GA"
+      }
+     ],
+     "line_source": "none",
+     "prob_a": 0.5191,
+     "edge_note": "net goals per game +1.83 vs +1.38"
+    },
+    {
+     "id": 200111,
+     "name": "NJ Devils @ DAL Stars",
+     "comp": "NHL",
+     "when": "Tomorrow 20:07",
+     "market": "Game Totals",
+     "consensus": "Under 5.50",
+     "tips": "1/1",
+     "pct": 100,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Under 5.50",
+       "decimal": 1.75,
+       "american": "-133",
+       "prob": 0.5455,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "NJ Devils",
+       "decimal": 2.1,
+       "american": "+110",
+       "prob": 0.4545,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5455
+    },
+    {
+     "id": 200112,
+     "name": "NY Islanders @ NSH Predators",
+     "comp": "NHL",
+     "when": "Tomorrow 20:07",
+     "market": "Money Line",
+     "consensus": "NY Islanders",
+     "tips": "1/1",
+     "pct": 100,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "NY Islanders",
+       "decimal": 1.75,
+       "american": "-133",
+       "prob": 0.5455,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "NSH Predators",
+       "decimal": 2.1,
+       "american": "+110",
+       "prob": 0.4545,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5455
+    },
+    {
+     "id": 200105,
+     "name": "FLA Panthers @ WPG Jets",
+     "comp": "NHL",
+     "when": "Tomorrow 20:07",
+     "market": "Game Totals",
+     "consensus": "Under 5.50",
+     "tips": "1/1",
+     "pct": 100,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Under 5.50",
+       "decimal": 1.75,
+       "american": "-133",
+       "prob": 0.5455,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "FLA Panthers",
+       "decimal": 2.1,
+       "american": "+110",
+       "prob": 0.4545,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5455
+    }
+   ]
+  },
+  {
+   "sport": "Basketball",
+   "sport_id": 4,
+   "source": "https://www.olbg.com/betting-tips/Basketball/4",
+   "note": "",
+   "events": [
+    {
+     "id": 536203,
+     "name": "MIN Timberwolves @ CLE Cavaliers",
+     "comp": "NBA",
+     "when": "Today 19:00",
+     "market": "Money Line",
+     "consensus": "CLE Cavaliers",
+     "tips": "9/16",
+     "pct": 56,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "CLE Cavaliers",
+       "decimal": 1.77,
+       "american": "-130",
+       "prob": 0.5369,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "MIN Timberwolves",
+       "decimal": 2.06,
+       "american": "+106",
+       "prob": 0.4631,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5369
+    },
+    {
+     "id": 536204,
+     "name": "IND Pacers @ MIL Bucks",
+     "comp": "NBA",
+     "when": "Today 20:00",
+     "market": "Money Line",
+     "consensus": "IND Pacers",
+     "tips": "9/12",
+     "pct": 75,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "IND Pacers",
+       "decimal": 1.5,
+       "american": "-200",
+       "prob": 0.6364,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "MIL Bucks",
+       "decimal": 2.62,
+       "american": "+162",
+       "prob": 0.3636,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.6364
+    },
+    {
+     "id": 536206,
+     "name": "MEM Grizzlies @ UTA Jazz",
+     "comp": "NBA",
+     "when": "Today 21:00",
+     "market": "Money Line",
+     "consensus": "MEM Grizzlies",
+     "tips": "9/13",
+     "pct": 69,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "MEM Grizzlies",
+       "decimal": 1.57,
+       "american": "-175",
+       "prob": 0.6074,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "UTA Jazz",
+       "decimal": 2.43,
+       "american": "+143",
+       "prob": 0.3926,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.6074
+    },
+    {
+     "id": 536199,
+     "name": "WAS Wizards @ CHA Hornets",
+     "comp": "NBA",
+     "when": "Today 19:00",
+     "market": "Money Line",
+     "consensus": "CHA Hornets",
+     "tips": "7/10",
+     "pct": 70,
+     "tier": "A",
+     "markets": [
+      {
+       "market": "Match Winner / Money Line",
+       "selection": "WAS Wizards",
+       "decimal": 1.4,
+       "american": "-250",
+       "prob": 0.678,
+       "basis": "Tier A - verified standings"
+      },
+      {
+       "market": "Match Winner / Money Line",
+       "selection": "CHA Hornets",
+       "decimal": 2.96,
+       "american": "+196",
+       "prob": 0.322,
+       "basis": "Tier A - verified standings"
+      },
+      {
+       "market": "Handicap",
+       "selection": "WAS Wizards -11.00",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - spread from the same expected margin"
+      },
+      {
+       "market": "Handicap",
+       "selection": "CHA Hornets +11.00",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - spread from the same expected margin"
+      },
+      {
+       "market": "Match Total",
+       "selection": "Over 225.5",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - total anchored on verified GF/GA"
+      },
+      {
+       "market": "Match Total",
+       "selection": "Under 225.5",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - total anchored on verified GF/GA"
+      }
+     ],
+     "line_source": "none",
+     "prob_a": 0.678,
+     "edge_note": "net points per game +2.00 vs -11.67"
+    },
+    {
+     "id": 536200,
+     "name": "DAL Mavericks @ MIA Heat",
+     "comp": "NBA",
+     "when": "Today 19:30",
+     "market": "Pointspread",
+     "consensus": "DAL Mavericks +7.50",
+     "tips": "7/7",
+     "pct": 100,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "DAL Mavericks +7.50",
+       "decimal": 1.35,
+       "american": "-286",
+       "prob": 0.7059,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "DAL Mavericks",
+       "decimal": 3.24,
+       "american": "+224",
+       "prob": 0.2941,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.7059
+    },
+    {
+     "id": 536173,
+     "name": "Corinthians vs Franca",
+     "comp": "Brazil NBB",
+     "when": "Today 19:00",
+     "market": "Money Line",
+     "consensus": "Corinthians",
+     "tips": "6/7",
+     "pct": 86,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Corinthians",
+       "decimal": 1.47,
+       "american": "-213",
+       "prob": 0.6482,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Franca",
+       "decimal": 2.71,
+       "american": "+171",
+       "prob": 0.3518,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.6482
+    },
+    {
+     "id": 536201,
+     "name": "ATL Hawks @ HOU Rockets",
+     "comp": "NBA",
+     "when": "Today 20:30",
+     "market": "Money Line",
+     "consensus": "HOU Rockets",
+     "tips": "6/9",
+     "pct": 67,
+     "tier": "A",
+     "markets": [
+      {
+       "market": "Match Winner / Money Line",
+       "selection": "ATL Hawks",
+       "decimal": 1.71,
+       "american": "-141",
+       "prob": 0.5581,
+       "basis": "Tier A - verified standings"
+      },
+      {
+       "market": "Match Winner / Money Line",
+       "selection": "HOU Rockets",
+       "decimal": 2.16,
+       "american": "+116",
+       "prob": 0.4419,
+       "basis": "Tier A - verified standings"
+      },
+      {
+       "market": "Handicap",
+       "selection": "ATL Hawks -3.50",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - spread from the same expected margin"
+      },
+      {
+       "market": "Handicap",
+       "selection": "HOU Rockets +3.50",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - spread from the same expected margin"
+      },
+      {
+       "market": "Match Total",
+       "selection": "Over 233.5",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - total anchored on verified GF/GA"
+      },
+      {
+       "market": "Match Total",
+       "selection": "Under 233.5",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier A - total anchored on verified GF/GA"
+      }
+     ],
+     "line_source": "none",
+     "prob_a": 0.5581,
+     "edge_note": "net points per game +15.67 vs +9.67"
+    },
+    {
+     "id": 536172,
+     "name": "Mogi das Cruzes vs Unifacisa",
+     "comp": "Brazil NBB",
+     "when": "Today 19:00",
+     "market": "Money Line",
+     "consensus": "Unifacisa",
+     "tips": "5/7",
+     "pct": 71,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Unifacisa",
+       "decimal": 1.62,
+       "american": "-161",
+       "prob": 0.5865,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Mogi das Cruzes",
+       "decimal": 2.3,
+       "american": "+130",
+       "prob": 0.4135,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5865
+    },
+    {
+     "id": 536205,
+     "name": "PHX Suns @ OKC Thunder",
+     "comp": "NBA",
+     "when": "Today 20:00",
+     "market": "Money Line",
+     "consensus": "OKC Thunder",
+     "tips": "5/7",
+     "pct": 71,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "OKC Thunder",
+       "decimal": 1.62,
+       "american": "-161",
+       "prob": 0.5865,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "PHX Suns",
+       "decimal": 2.3,
+       "american": "+130",
+       "prob": 0.4135,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5865
+    },
+    {
+     "id": 534851,
+     "name": "CHI Bulls @ BOS Celtics",
+     "comp": "NBA",
+     "when": "Today 19:30",
+     "market": "Money Line",
+     "consensus": "CHI Bulls",
+     "tips": "4/6",
+     "pct": 67,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "CHI Bulls",
+       "decimal": 1.69,
+       "american": "-145",
+       "prob": 0.5637,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "BOS Celtics",
+       "decimal": 2.18,
+       "american": "+118",
+       "prob": 0.4363,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5637
+    },
+    {
+     "id": 536202,
+     "name": "GS Warriors @ DEN Nuggets",
+     "comp": "NBA",
+     "when": "Today 22:00",
+     "market": "Money Line",
+     "consensus": "DEN Nuggets",
+     "tips": "4/7",
+     "pct": 57,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "DEN Nuggets",
+       "decimal": 1.8,
+       "american": "-125",
+       "prob": 0.5288,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "GS Warriors",
+       "decimal": 2.02,
+       "american": "+102",
+       "prob": 0.4712,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5288
+    },
+    {
+     "id": 536177,
+     "name": "Panathinaikos vs Milano",
+     "comp": "Euroleague",
+     "when": "Tomorrow 15:15",
+     "market": "Money Line",
+     "consensus": "Panathinaikos",
+     "tips": "4/7",
+     "pct": 57,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Panathinaikos",
+       "decimal": 1.8,
+       "american": "-125",
+       "prob": 0.5288,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Milano",
+       "decimal": 2.02,
+       "american": "+102",
+       "prob": 0.4712,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5288
+    },
+    {
+     "id": 536176,
+     "name": "BC Dubai vs Paris",
+     "comp": "Euroleague",
+     "when": "Tomorrow 12:00",
+     "market": "Money Line",
+     "consensus": "Paris",
+     "tips": "3/4",
+     "pct": 75,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Paris",
+       "decimal": 1.67,
+       "american": "-149",
+       "prob": 0.5714,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "BC Dubai",
+       "decimal": 2.22,
+       "american": "+122",
+       "prob": 0.4286,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5714
+    },
+    {
+     "id": 536178,
+     "name": "Baskonia vs Real Madrid",
+     "comp": "Euroleague",
+     "when": "Tomorrow 16:00",
+     "market": "Money Line",
+     "consensus": "Baskonia",
+     "tips": "3/4",
+     "pct": 75,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Baskonia",
+       "decimal": 1.67,
+       "american": "-149",
+       "prob": 0.5714,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Real Madrid",
+       "decimal": 2.22,
+       "american": "+122",
+       "prob": 0.4286,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5714
+    },
+    {
+     "id": 536154,
+     "name": "Lanus vs Regatas",
+     "comp": "Argentina Liga Nacional",
+     "when": "Today 19:30",
+     "market": "Money Line",
+     "consensus": "Lanus",
+     "tips": "",
+     "pct": null,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Lanus",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier B - tip-share reference only"
+      },
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Regatas",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier B - opposite side of the same reference"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5
+    }
+   ]
+  },
+  {
+   "sport": "Rugby League",
+   "sport_id": 10,
+   "source": "https://www.olbg.com/betting-tips/Rugby_League/10",
+   "note": "No individual Rugby League fixtures were live on the hub at capture time (both 2026 seasons finished). Only 2027 outright markets are open. Flagged.",
+   "events": [
+    {
+     "id": 2695857,
+     "name": "State of Origin 2027 (outright)",
+     "when": "27 May 2027 06:00",
+     "market": "Win Tournament",
+     "consensus": "New South Wales",
+     "tips": "9/13",
+     "pct": 69,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "New South Wales",
+       "decimal": 1.57,
+       "american": "-175",
+       "prob": 0.6074,
+       "basis": "Tier B - tip-share reference only"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.6074
+    },
+    {
+     "id": 2801554,
+     "name": "Super League 2027 (Grand Final winner)",
+     "when": "02 Oct 2027 13:00",
+     "market": "Grand Final Winner",
+     "consensus": "Wigan Warriors",
+     "tips": "2/4",
+     "pct": 50,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Wigan Warriors",
+       "decimal": 1.9,
+       "american": "-111",
+       "prob": 0.5,
+       "basis": "Tier B - tip-share reference only"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.5
+    },
+    {
+     "id": 2801600,
+     "name": "NRL 2027 (Grand Final winner)",
+     "when": "03 Oct 2027 04:30",
+     "market": "Grand Final Winner",
+     "consensus": "Penrith Panthers",
+     "tips": "1/3",
+     "pct": 33,
+     "tier": "B",
+     "markets": [
+      {
+       "market": "Reference line (no verified match data)",
+       "selection": "Penrith Panthers",
+       "decimal": 2.07,
+       "american": "+107",
+       "prob": 0.4608,
+       "basis": "Tier B - tip-share reference only"
+      }
+     ],
+     "line_source": "tip-share",
+     "prob_a": 0.4608
+    }
+   ]
+  }
+ ]
+}

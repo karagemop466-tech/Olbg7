@@ -1,0 +1,24 @@
+{
+  "sport_id": 3,
+  "sport": "Tennis",
+  "source": "https://www.olbg.com/betting-tips/Tennis/3",
+  "captured_utc": "2026-10-26",
+  "events": [
+    {"id": 902381, "name": "Aliaksandra Sasnovich vs Nikola Bartunkova", "when": "Tomorrow 01:00", "market": "Win Match", "consensus": "Nikola Bartunkova", "tips": "5/5", "pct": 100},
+    {"id": 902172, "name": "Leylah Fernandez vs Himeno Sakatsume", "when": "Tomorrow 02:00", "market": "Win Match", "consensus": "Leylah Fernandez", "tips": "4/6", "pct": 67},
+    {"id": 902189, "name": "Lilli Tagger vs Venus Williams", "when": "Tomorrow 03:30", "market": "Win Match", "consensus": "Venus Williams", "tips": "4/5", "pct": 80},
+    {"id": 902232, "name": "Stan Wawrinka vs Jiri Lehecka", "when": "Tomorrow 14:30", "market": "Win Match", "consensus": "Jiri Lehecka", "tips": "4/7", "pct": 57},
+    {"id": 902233, "name": "Novak Djokovic vs Ugo Humbert", "when": "28 Oct 06:00", "market": "Win Match", "consensus": "Novak Djokovic", "tips": "4/5", "pct": 80},
+    {"id": 902238, "name": "Alejandro Tabilo vs Rafael Jodar", "when": "Tomorrow 09:00", "market": "Win Match", "consensus": "Rafael Jodar", "tips": "3/5", "pct": 60},
+    {"id": 902326, "name": "Nauhany Vitoria Leme Da Silva vs Despina Papamichail", "when": "Today 17:00", "market": "Win Match", "consensus": "Despina Papamichail", "tips": "2/2", "pct": 100},
+    {"id": 902176, "name": "Ann Li vs Ekaterina Alexandrova", "when": "Today 22:00", "market": "Win Match", "consensus": "Ekaterina Alexandrova", "tips": "2/2", "pct": 100},
+    {"id": 902240, "name": "Alex Michelsen vs Botic Van De Zandschulp", "when": "Tomorrow 10:00", "market": "Win Match", "consensus": "Alex Michelsen", "tips": "2/3", "pct": 67},
+    {"id": 902305, "name": "Yulia Putintseva vs Maria Sakkari", "when": "Today 23:00", "market": "Win Match", "consensus": "Maria Sakkari", "tips": "1/1", "pct": 100},
+    {"id": 902180, "name": "Simona Waltert vs Jil Teichmann", "when": "Today 23:00", "market": "Win Match", "consensus": "Simona Waltert", "tips": "1/2", "pct": 50},
+    {"id": 902179, "name": "Kaitlin Quevedo vs Sofia Kenin", "when": "Today 23:00", "market": "Win Match", "consensus": "Kaitlin Quevedo", "tips": "1/1", "pct": 100},
+    {"id": 902301, "name": "Anastasia Zakharova vs Magda Linette", "when": "Today 23:00", "market": "Win Match", "consensus": "Anastasia Zakharova", "tips": "1/2", "pct": 50},
+    {"id": 902181, "name": "Sara Sorribes Tormo vs Zeynep Sonmez", "when": "Tomorrow 00:30", "market": "Win Match", "consensus": "Zeynep Sonmez", "tips": "", "pct": null}
+  ],
+  "verified_markets_902232": ["Win Match", "Set Betting", "1st Set Winner", "Games Won", "Total Games"],
+  "note": "Event page for Wawrinka v Lehecka (event 902232) verified live and lists five markets; this is the authoritative example of OLBG's tennis market ladder. Tip prices are not exposed on event pages, so prices in this project are originated, not copied."
+}

@@ -1,0 +1,11 @@
+{
+  "sport_id": 14,
+  "sport": "Motor Racing",
+  "source": "https://www.olbg.com/betting-tips/Motor_Racing/14",
+  "captured_utc": "2026-10-26",
+  "events": [
+    {"id": 914, "name": "Mexico City Grand Prix", "when": "01 Nov 15:00", "market": "Top 6 Finish", "consensus": "Kimi Antonelli - Yes", "tips": "", "pct": null},
+    {"id": 912, "name": "Formula 1 Drivers Championship 2026 Without Kimi Antonelli", "when": "06 Dec 08:00", "market": "Win Tournament", "consensus": "Max Verstappen", "tips": "4/7", "pct": 57}
+  ],
+  "note": "Only one race (Mexico City GP, 01 Nov) plus one ante-post market were live. No qualifying or sprint tips. Markets OLBG documents: Fastest Qualifier, Win Race, Podium Finish, Top 6 Finish, Points Finish, Fastest Lap, Win Tournament."
+}
