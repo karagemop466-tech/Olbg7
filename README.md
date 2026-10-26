@@ -72,3 +72,38 @@ Sports produced four selections. Those five sports are published at 0-4 picks in
 reason is recorded on the flagged page rather than papered over.
 
 18+. No assurance of profit. Support: GamCare, GambleAware.
+
+
+---
+
+## Tip-consensus board (`/olbg-tips/`) — session `dfa8f20c`
+
+A third, additive view kept beside the two dashboards above. It prices **only** markets that OLBG publishes tips for,
+so every one of its 127 rows can be checked back to an OLBG page.
+
+| Path | Contents |
+| --- | --- |
+| `data/consensus/events.json` | 127 market rows from OLBG's fifteen sport pages, each with source URL, tip count, market total and published percentage |
+| `data/consensus/lines.json`, `picks.json` | The priced rows and the resulting picks (generated) |
+| `data/consensus/predictions.json` | 51 unique written predictions, ≥ 30 words each, with per-fact source links and an explicit "not checked" line |
+| `scripts/price_model.py` | Pricing and confidence rules: tip share shrunk to the market base rate (`w = n/(n+10)`), 5% overround, −250/+10000 band, one pick per event, five per sport |
+| `scripts/build_site.py` | Builds `olbg-tips/` from the JSON (`SITE_OUT=olbg-tips`) |
+| `scripts/link_check.py` | Fails on broken links, missing sources, short predictions, out-of-band picks, duplicates |
+| `olbg-tips/` | Executive summary, 15 sport pages, all-lines table, method page, flagged-for-review page |
+| `.github/workflows/pages.yml` | Re-runs pricing, build and checks on pushes and pull requests |
+
+Coverage: 51 picks in 14 sports, 7 high confidence. Snooker has none — OLBG's snooker tips page returns "No tips found.",
+so there are no tip counts to price from; the fixtures themselves are covered on the other boards. Every shortfall is
+stated on the board rather than padded out.
+
+Sources: OLBG sport pages plus three event pages opened in full, and official form only where an official page was read
+(NHL.com and NBA.com standings, dated to the snapshot). ATP and ICC ranking pages rendered without a data table, so no
+rankings are used. Injuries, line-ups and weather could not be checked, so none are claimed.
+
+Build locally:
+
+```bash
+python3 scripts/price_model.py
+SITE_OUT=olbg-tips python3 scripts/build_site.py
+SITE_OUT=olbg-tips python3 scripts/link_check.py
+```
