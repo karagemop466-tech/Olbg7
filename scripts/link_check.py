@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """Fail the build if the generated site has broken internal links or bad data."""
 import json
+import os
 import pathlib
 import re
 import sys
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
-DOCS = ROOT / "docs"
+DOCS = pathlib.Path(os.environ.get("SITE_OUT", ROOT)).resolve()
 DATA = ROOT / "data"
 
 

@@ -2,12 +2,14 @@
 """Build the static dashboard from data/*.json into docs/."""
 import html
 import json
+import os
 import pathlib
-import shutil
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
-DOCS = ROOT / "docs"
+# GitHub Pages for this repository is pinned to the repo root of `main`, so the
+# generated pages are written there. Set SITE_OUT to build elsewhere.
+DOCS = pathlib.Path(os.environ.get("SITE_OUT", ROOT)).resolve()
 
 SLUG = {
     "Golf": "golf",
@@ -150,9 +152,13 @@ def main():
     for ev in events["events"]:
         events_per_sport[ev["sport"]] = events_per_sport.get(ev["sport"], 0) + 1
 
-    if DOCS.exists():
-        shutil.rmtree(DOCS)
-    DOCS.mkdir(parents=True)
+    DOCS.mkdir(parents=True, exist_ok=True)
+    # remove only pages this script owns - never the repository itself
+    owned = ["index.html", "lines.html", "method.html", "flagged.html"] + [SLUG[s] + ".html" for s in SPORT_ORDER]
+    for name in owned:
+        target = DOCS / name
+        if target.exists():
+            target.unlink()
 
     # ---------------- index ----------------
     highs = [p for p in all_picks if p["confidence"] == "high"]

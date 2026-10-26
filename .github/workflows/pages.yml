@@ -1,44 +1,32 @@
-name: Build and deploy site
+name: Verify site
+
+# GitHub Pages for this repository is pinned to the repo root of `main`
+# (build_type: legacy, source main:/), so there is no deploy job here - the
+# committed HTML is what gets served. This workflow only proves that the
+# committed pages still match the data and that every link resolves.
 
 on:
   push:
     branches: [main]
+  pull_request:
   workflow_dispatch:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: pages
-  cancel-in-progress: false
 
 jobs:
-  build:
+  verify:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Price every market
+      - name: Re-price every market
         run: python scripts/price_model.py
-      - name: Build site
+      - name: Rebuild the site from the data
         run: python scripts/build_site.py
-      - name: Check data and internal links
+      - name: Check sources, word counts, odds band and internal links
         run: python scripts/link_check.py
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: docs
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Fail if the committed site is out of date with the data
+        run: git diff --exit-code --stat
