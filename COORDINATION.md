@@ -10,7 +10,7 @@ Date anchor: Monday 26 October 2026 (UTC). All fixtures are upcoming on/after th
 | 2 | Research fixtures for 15 sports (official/trusted sources) | done | 610d0099 | data/picks.json (sources per row) |
 | 3 | Originate fair lines + confidence + written predictions (5/sport) | done | 610d0099 | data/picks.json, tools/build_site.py |
 | 4 | Static dashboard site (landing + 15 sport pages + flagged page) | done | 610d0099 | docs/ |
-| 5 | Line-by-line verification + link check + Pages publish + PR/merge | in progress | 610d0099 | docs/, COORDINATION.md |
+| 5 | Line-by-line verification + link check + Pages publish + PR/merge | done | 610d0099 | docs/, COORDINATION.md |
 
 Rules followed: no invented fixtures/odds/injuries; unverified values left blank and flagged on docs/flagged.html; shared nav/index changed only in final integration (this session is the sole active session, so it acts as integrator and records that here).
 
@@ -20,3 +20,5 @@ Rules followed: no invented fixtures/odds/injuries; unverified values left blank
 - 2026-10-26: Tasks 2-4 done by 610d0099 (sole session, acting as integrator). 75 rows built via tools/build_site.py -> docs/ (18 pages, no internal broken links). All predictions 39-50 words; banned words (model/verified) removed from prediction text. 18 High, rest Medium/Low; 7 no-selection rows (5 greyhounds + 2 Gaelic) + 15 caution notes = 22 flagged rows on docs/flagged.html.
 - Irregularities flagged: PC31/32 draws on the day; UK greyhound runners/traps unpublished 27 Oct; Gaelic Down/Tyrone + Munster SFC county reps undecided; World Series G4 pitchers unpublished; Mensik R1 opponent is an unnamed qualifier; tri-series finalists TBC; Tonga/Samoa + Lisbellaw/Eoghan Ruadh form not confirmed (Low only).
 - Pages note: `gh api .../pages` shows the site is already enabled as legacy source `main` + `/` (root), html_url https://karagemop466-tech.github.io/Olbg7/ . API create/update returned 403 (token cannot change Pages source), so a root `index.html` redirect to `docs/` was added instead — do not change the Pages source; the live entry point is the repo root redirecting into `docs/`.
+- 2026-10-26: PR #1 merged (https://github.com/karagemop466-tech/Olbg7/pull/1, merged 20:34Z). Pages build `built` for merged commit; live check via fetch of https://karagemop466-tech.github.io/Olbg7/docs/ returned the Executive Summary with Top 10 table. Root `/` redirects to `docs/`.
+- Post-merge fix (same session): corrected two text issues found on the live page — Selby qualifier score rendered as words ("six one" -> "6-1") and removed an inaccurate claim that all fair prices sit within -250..+10000 (fair prices above ~71% must be shorter than -250; now stated explicitly on index + method pages).
