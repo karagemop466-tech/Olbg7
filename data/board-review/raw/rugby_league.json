@@ -1,0 +1,12 @@
+{
+  "sport_id": 10,
+  "sport": "Rugby League",
+  "source": "https://www.olbg.com/betting-tips/Rugby_League/10",
+  "captured_utc": "2026-10-26",
+  "events": [
+    {"id": 2695857, "name": "State of Origin 2027 (outright)", "when": "27 May 2027 06:00", "market": "Win Tournament", "consensus": "New South Wales", "tips": "9/13", "pct": 69},
+    {"id": 2801554, "name": "Super League 2027 (Grand Final winner)", "when": "02 Oct 2027 13:00", "market": "Grand Final Winner", "consensus": "Wigan Warriors", "tips": "2/4", "pct": 50},
+    {"id": 2801600, "name": "NRL 2027 (Grand Final winner)", "when": "03 Oct 2027 04:30", "market": "Grand Final Winner", "consensus": "Penrith Panthers", "tips": "1/3", "pct": 33}
+  ],
+  "note": "No individual Rugby League fixtures were live on the hub at capture time (both 2026 seasons finished). Only 2027 outright markets are open. Flagged."
+}

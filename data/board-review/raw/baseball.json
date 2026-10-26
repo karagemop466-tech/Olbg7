@@ -1,0 +1,10 @@
+{
+  "sport_id": 12,
+  "sport": "Baseball",
+  "source": "https://www.olbg.com/betting-tips/Baseball/12",
+  "captured_utc": "2026-10-26",
+  "events": [
+    {"id": 160795, "name": "MIL Brewers @ TB Rays", "comp": "MLB", "when": "Tomorrow 00:00", "market": "Money Line", "consensus": "TB Rays", "tips": "21/27", "pct": 78}
+  ],
+  "note": "Only one baseball game carried tips at capture time even though the page lists MLB, NPB and KBO coverage. Flagged as a thin board."
+}

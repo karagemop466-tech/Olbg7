@@ -107,3 +107,34 @@ python3 scripts/price_model.py
 SITE_OUT=olbg-tips python3 scripts/build_site.py
 SITE_OUT=olbg-tips python3 scripts/link_check.py
 ```
+
+---
+
+## Sub-board: `/docs/board-review/` (session arena-88221c1f)
+
+A second, independent board review published alongside the main desk dashboard. It is namespaced so the two
+never collide: pages live under `docs/board-review/`, data under `data/board-review/`.
+
+**Direct link:** https://karagemop466-tech.github.io/Olbg7/docs/board-review/
+
+| Path | What it is |
+|---|---|
+| `docs/board-review/` | Published sub-board: summary, 44 predictions, full board, 15 sport pages, method, sources, flagged |
+| `data/board-review/raw/` | Raw capture of each of the 15 OLBG sport hubs (names, ids, times, most-tipped selection) |
+| `data/board-review/events.json` | 119 events, each with originated lines, tier and basis |
+| `data/board-review/verified_tables.json` | The competition records every Tier A line is computed from |
+| `data/board-review/predictions.json` | 44 written predictions, each tied to an event id and a price |
+| `scripts/build_data.py` | Prices every event (writes `data/board-review/events.json`) |
+| `scripts/build_board_review.py` | Generates `docs/board-review/` |
+
+Results (capture 26 Oct 2026): 15 sports, 119 events, 119 priced (12 Tier A from official standings, 107 Tier B
+reference lines); 44 predictions of 39-55 words; 3 High / 22 Medium / 19 Low confidence; 0 snooker and 0 greyhound
+predictions because nothing bettable was on the board.
+
+Method: Tier A strength = (for - against) / games, expected margin = strength gap + home edge, probability =
+logistic(margin / sigma), price = 1 / probability x 1.05. Tier B: OLBG tip share shrunk toward 50/50 by sample size.
+Sport ids were taken from OLBG's own sitemap, not third-party repos.
+
+Known gaps, all published on the sub-board's Flagged for Review page: no injury or team-news data could be confirmed
+for any fixture so none is claimed; NBA and NHL records rest on secondary sources (Wikipedia / BBC / Elite Prospects)
+because the official league sites were unreachable; handball is the only sport with fully official data (EHF).

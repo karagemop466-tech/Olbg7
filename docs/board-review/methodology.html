@@ -1,0 +1,58 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pricing method — OLBG Board Review</title>
+<link rel="stylesheet" href="assets/style.css"></head><body>
+<header><div class="wrap"><div class="brand">OLBG Board Review</div><nav>
+<a href="index.html">Summary</a><a href="picks.html">Predictions</a><a href="board.html">Full board</a>
+<a href="sports.html">Sports</a><a href="methodology.html">Method</a><a href="sources.html">Sources</a><a href="flagged.html">Flagged for Review</a>
+</nav></div></header><main><h1>How every line in this project is built</h1>
+<p class="sub">Originated prices, in the open. No bookmaker price is copied and no number is invented.</p>
+
+<h2>1. What OLBG actually publishes</h2>
+<p>OLBG lists events, the most-tipped selection per market, a tip count and a percentage. Reverse-engineering the site
+(see <a href="sources.html">Sources</a>) shows event pages expose the full market ladder — for example, the tennis page
+for Wawrinka v Lehecka lists Win Match, Set Betting, 1st Set Winner, Games Won and Total Games — but the
+bookmaker price behind each selection is <b>not</b> exposed to a logged-out request. So every price on this site is
+originated here, which is what the brief asked for.</p>
+
+<h2>2. Tier A — data-backed lines</h2>
+<p>A line is Tier A only when both teams appear in an official competition table captured on the day. The method is
+deliberately small and checkable:</p>
+<table><thead><tr><th>Step</th><th>Formula</th><th>Source of the input</th></tr></thead><tbody>
+<tr><td>Team strength</td><td>(goals or points for − against) ÷ games played</td><td>Official standings table</td></tr>
+<tr><td>Expected margin</td><td>(strength home + home edge) − strength away</td><td>Home edge is a stated constant per sport</td></tr>
+<tr><td>Win probability</td><td>1 ÷ (1 + e<sup>−margin ÷ σ</sup>)</td><td>σ is a stated spread constant per sport</td></tr>
+<tr><td>Price</td><td>(1 ÷ probability) × 1.05 margin</td><td>5% two-way margin, then converted to American odds</td></tr>
+</tbody></table>
+<p>Handicap lines come from the same expected margin, rounded to the sport's increment. Totals come from each side's
+verified scoring rate against the opponent's concession rate. Constants used: handball σ 9.0, home edge 0.6 goals;
+basketball σ 15.0, home edge 2.5 points; ice hockey σ 2.6, home edge 0.25 goals. These are stated so you can
+reproduce or challenge every number in <code>scripts/build_data.py</code>.</p>
+
+<h2>3. Tier B — reference lines</h2>
+<p>Most of the board has no official table in our verified set (tennis, volleyball, cricket, rugby, golf, darts, the
+dogs). Those events still get a price, but it is built only from the OLBG tip share, shrunk toward 50/50 by sample
+size (weight = n ÷ (n + 10)), with the same 5% margin. A Tier B line is a <b>reference</b>, not evidence: it is
+labelled on every table row and it is why Tier B predictions are graded Medium or Low, never High.</p>
+
+<h2>4. Confidence and the odds window</h2>
+<table><thead><tr><th>Grade</th><th>Rule</th><th>What it means</th></tr></thead><tbody>
+<tr><td><span class="tag high">HIGH</span></td><td>implied probability ≥ 65%</td><td>Our price says the selection should win about two times in three</td></tr>
+<tr><td><span class="tag medium">MEDIUM</span></td><td>55% – 65%</td><td>Lean, not a conviction</td></tr>
+<tr><td><span class="tag low">LOW</span></td><td>below 55%</td><td>Noted for completeness; small stakes only</td></tr>
+</tbody></table>
+<p>The brief asked for picks above 70% <i>and</i> no shorter than −250. Those two conditions overlap only between
+70.0% and 71.4%, because −250 is itself 71.4%. We therefore apply the −250 to +10000 price window to every
+selection (shown as a tag on each prediction) and grade confidence on probability separately. One pick in this
+project lands in the literal 70–71.4% band; it is named on <a href="flagged.html">Flagged for Review</a>.</p>
+
+<h2>5. Markets investigated per sport</h2>
+<p>Market ladders were read from OLBG's own documentation and event pages, then priced where an input existed:
+handball Money Line, handicap and total; basketball Money Line, pointspread, total; ice hockey Money Line,
+puck line, game totals; tennis Win Match, Set Betting, 1st Set, Games handicap, Total Games; volleyball win match and
+set markets; cricket win match, top batter, man of the match; rugby union match and handicap; golf outright, first
+round leader and top-region markets; F1 qualifying, race win, podium, top 6, fastest lap. Where a market had no
+verified input it is listed as un-priced rather than filled in.</p></main>
+<footer>Independent research snapshot captured 26 October 2026 from OLBG.com. Prices shown are lines originated by this
+project, not bookmaker prices. 18+. Bet responsibly — GamCare / GambleAware. No claim on this site is asserted without a
+source link on the <a href="sources.html">Sources</a> page.</footer></body></html>

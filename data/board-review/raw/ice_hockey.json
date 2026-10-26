@@ -1,0 +1,19 @@
+{
+  "sport_id": 13,
+  "sport": "Ice Hockey",
+  "source": "https://www.olbg.com/betting-tips/Ice_Hockey/13",
+  "captured_utc": "2026-10-26",
+  "events": [
+    {"id": 200101, "name": "LA Kings @ NY Rangers", "comp": "NHL", "when": "Today 19:07", "market": "Money Line", "consensus": "NY Rangers", "tips": "13/16", "pct": 81},
+    {"id": 200103, "name": "TOR Maple Leafs @ CGY Flames", "comp": "NHL", "when": "Today 20:37", "market": "Money Line", "consensus": "TOR Maple Leafs", "tips": "10/15", "pct": 67},
+    {"id": 200102, "name": "DET Red Wings @ EDM Oilers", "comp": "NHL", "when": "Today 21:37", "market": "Money Line", "consensus": "EDM Oilers", "tips": "9/11", "pct": 82},
+    {"id": 200081, "name": "Kalpa vs Sport", "comp": "Finland SM Liiga", "when": "Tomorrow 12:30", "market": "Money Line", "consensus": "Kalpa", "tips": "3/3", "pct": 100},
+    {"id": 200082, "name": "IF Malmo Redhawks vs Linkoping HC", "comp": "Swedish Hockey League", "when": "Tomorrow 14:00", "market": "Money Line", "consensus": "IF Malmo Redhawks", "tips": "2/2", "pct": 100},
+    {"id": 200083, "name": "Frolunda HC vs Rogle BK", "comp": "Swedish Hockey League", "when": "Tomorrow 14:00", "market": "Money Line", "consensus": "Frolunda HC", "tips": "2/2", "pct": 100},
+    {"id": 200100, "name": "Kolner Haie vs Adler Mannheim", "comp": "Germany Eishockey Liga", "when": "Tomorrow 14:30", "market": "Money Line", "consensus": "Adler Mannheim", "tips": "1/1", "pct": 100},
+    {"id": 200104, "name": "BOS Bruins @ CAR Hurricanes", "comp": "NHL", "when": "Tomorrow 20:07", "market": "Puck Line", "consensus": "BOS Bruins +1.50", "tips": "1/1", "pct": 100},
+    {"id": 200111, "name": "NJ Devils @ DAL Stars", "comp": "NHL", "when": "Tomorrow 20:07", "market": "Game Totals", "consensus": "Under 5.50", "tips": "1/1", "pct": 100},
+    {"id": 200112, "name": "NY Islanders @ NSH Predators", "comp": "NHL", "when": "Tomorrow 20:07", "market": "Money Line", "consensus": "NY Islanders", "tips": "1/1", "pct": 100},
+    {"id": 200105, "name": "FLA Panthers @ WPG Jets", "comp": "NHL", "when": "Tomorrow 20:07", "market": "Game Totals", "consensus": "Under 5.50", "tips": "1/1", "pct": 100}
+  ]
+}

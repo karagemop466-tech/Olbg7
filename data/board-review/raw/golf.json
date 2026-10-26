@@ -1,0 +1,12 @@
+{
+  "sport_id": 5,
+  "sport": "Golf",
+  "source": "https://www.olbg.com/betting-tips/Golf/5",
+  "captured_utc": "2026-10-26",
+  "events": [
+    {"id": 101913, "name": "Maybank Championship", "when": "01 Nov 06:45", "market": "Win Tournament", "consensus": "Lottie Woad", "tips": "1/2", "pct": 50},
+    {"id": 101915, "name": "Mexico Open", "when": "01 Nov 17:45", "market": "Win Tournament", "consensus": "Wyndham Clark", "tips": "1/2", "pct": 50},
+    {"id": 101914, "name": "Simmons Bank Championship", "when": "01 Nov 17:45", "market": "Win Tournament", "consensus": "Stewart Cink", "tips": "1/2", "pct": 50}
+  ],
+  "note": "Three tournaments with a single tip each. Golf markets OLBG documents: Tournament Outright Winner, First Round Leader, Top American/European/GB&I, plus Ryder/Solheim Cup team markets as applicable."
+}
