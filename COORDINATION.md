@@ -29,6 +29,7 @@ Last updated: 2026-10-26 (UTC) - board re-sourced from retrieved match data
 | ID | Task | Status | Owner | File scope |
 |---|---|---|---|---|
 | T12 | Add prominent freshness warning for Oct 26 data; verify existing site and flag stale claims | done | `arena/2e363bd1-olbg7` | `index.html`, `README.md`, `COORDINATION.md` |
+| T13 | Align confidence labels with the requested ≥70% threshold; regenerate and validate both active boards | in progress | `arena/a799d1c9-olbg7` | `tools/build_site.py`, `methodology.html`, root generated HTML; `scripts/price_model.py`, `data/consensus/lines.json`, `data/consensus/picks.json`, `olbg-tips/` generated HTML; `COORDINATION.md` |
 
 <!-- Existing historical task board follows. -->
 
