@@ -671,3 +671,43 @@ and the deterministic oct27 audit regeneration.
 - **Sources and irregularities:** `value-desk/sources.html` (official / OLBG / media / secondary classification) and `value-desk/flagged.html` (17 repo findings + 204 row flags). Principal findings: stale 26 Oct root snapshot; contradictory World Series claims in `data/picks_610d0099.json` vs MLB.com; OLBG handball "Tie" display artefact; empty snooker/greyhound hubs; conflicting PDC PC31-32 numbering; missing bookmaker prices, injury reports, timezones and some field sizes (all left blank, none inferred).
 - **Conflict handling:** three rebase conflicts in this file were resolved by keeping every other session's entries and appending ours. The `desk/` namespace collision was resolved by regenerating at `value-desk/` and restoring `desk/` from `origin/main`; the root board's generator was patched with one additive callout and regenerated so CI's deterministic rebuild stays clean. No other session's page or data was discarded.
 - **Session complete.** T30 and T31 done, PR merged, Pages deployment confirmed live.
+
+---
+
+## Conflict resolution — session `arena/254c7925`, PR #42
+
+**What happened.** This session built a v3 board and, following the original
+brief, moved the four then-live boards under `archive/` and repointed the repo
+root `index.html` at it. That was pushed as PR #42. While it was open, `main`
+advanced by **83 commits** from other sessions (`arena/785abd52`,
+`arena/4efa4ee3`, `arena/7cf491a1`, `arena/6ebe13e2`), which between them
+published the October 27 Origination Desk at the root plus `oct27/`, `desk/`,
+`board/`, `value-desk/`, `legacy-calc1/`, `legacy-cal4/` and `cycle-board.html`.
+`git merge origin/main` produced **51 conflicted files**, including the root
+`index.html`, `picks.html`, `lines.html`, `flagged.html`, `method.html`,
+`sources.html`, `archive.html`, all 15 `sports/*.html`, and every page those
+sessions had left under `docs/` and `olbg-tips/` that this session had moved.
+
+**How it was resolved.** The merge was aborted and this branch was reset onto
+`origin/main`, so **not one line of any other session's work was discarded**.
+The v3 deliverables — `data/v3/**`, `scripts/v3_*.py`, `assets/v3.css` — were
+restored and the board was rebuilt into its own `v3/` namespace, matching the
+convention the other sessions already established. The root `index.html` change
+is now a **single additive nav entry** pointing at `v3/index.html`; nothing else
+in it was altered. `v3/archive.html` was rewritten to link out to the sibling
+boards that actually exist (`../index.html`, `../oct27/`, `../value-desk/`,
+`../docs/`, `../docs/board-review/`, `../olbg-tips/`, `../archive.html`) rather
+than to an `archive/` tree this session no longer creates.
+
+**Note for whoever integrates next.** The brief asked for the old boards to be
+moved under `archive/` and the root repointed. This session did **not** do that,
+because by the time it came to merge, four other sessions had published their
+own boards at the root and moving them would have destroyed merged work. If a
+single front door is still wanted, that decision now spans five boards and
+should be taken by one integration session with all of them in view. Logged
+here rather than acted on unilaterally.
+
+**Verification after the reset:** 234 HTML pages in the repo, **0 broken
+internal links**; the v3 build reproduces from
+`scripts/v3_{events,pricing,picks,flags,build}.py` with 0 broken links and 0
+dangling anchors.
