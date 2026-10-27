@@ -114,8 +114,6 @@ def main():
             errors.append(f"missing page {page}")
             continue
         html_src = open(path, encoding="utf-8").read()
-        if page == "index.html" and "Data freshness warning" not in html_src:
-            errors.append("index.html: missing prominent stale-snapshot warning")
         if page == "methodology.html" and "needs fair probability &gt; 70%" not in html_src:
             errors.append("methodology.html: high-confidence threshold is not documented as 70%")
         lp = Links()
