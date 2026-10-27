@@ -309,6 +309,16 @@ def build_index(events, lines, picks, flags, sources, pick_counts):
   </div>
 </section>
 
+<section class="panel" style="border-left:5px solid #0f8b8d;background:#f2fbfa">
+  <h2>Looking for the full pick list? Open the Value Desk</h2>
+  <p>The additive <a href="value-desk/index.html"><strong>OLBG Value Desk &rarr;</strong></a> puts
+  <strong>85 sourced written predictions</strong> (5-6 per sport, including Snooker and Greyhounds,
+  which OLBG left empty today), <strong>193 originated lines</strong>, an executive summary,
+  <strong>29 plus-money picks</strong> inside &minus;250 to +10000, and all
+  <strong>221 flagged items</strong> on one clearly labelled board. Every table row carries an
+  official source link; blank values stay blank and are flagged rather than filled.</p>
+</section>
+
 <section class="panel">
   <h2>1. Highest-Confidence Picks (&minus;250 to +10000 Odds Band)</h2>
   <p class="sub">All {len(high_picks)} High-Confidence selections ({len(med_picks)} Medium and {len(low_picks)} Low picks are on the sport subpages). Heavy &gt;71% money-line chalk shorter than &minus;250 is excluded here and routed to pointspread, handicap, set-betting or player-award markets.</p>

@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-27",
+  "session": "sess-arena-7cf491a1",
+  "passed": true,
+  "errors": [],
+  "warnings": [],
+  "checked": {
+    "picks": 85,
+    "facts": 175,
+    "lines": 193,
+    "sources": 59,
+    "flags": 221,
+    "pages": 23,
+    "html_rows_with_source": 896
+  },
+  "counts": {
+    "sports": 15,
+    "picks": 85,
+    "lines": 193,
+    "facts": 175,
+    "sources": 59,
+    "flags": 221,
+    "pages": 23,
+    "high": 30,
+    "plus_money": 29
+  }
+}

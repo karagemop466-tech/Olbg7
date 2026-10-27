@@ -615,3 +615,32 @@ hard-coded 26 October structural-defect narratives (AUD-26-01 etc.) are preserve
 historical findings; only the computed counts change. Re-running the full workflow job locally
 is green: oct27 diff gate, `verify_oct27.py`, `check_today.py`, `scripts/link_check.py`,
 `check_board.py` and the freshness tests all pass.
+---
+
+## CLAIM — session `sess-arena-7cf491a1` (re-stated 2026-10-27 07:10 UTC)
+
+**Branch:** `arena/7cf491a1-olbg7` (Arena-fixed branch). **Scope (additive only):**
+`data/value/`, `value-desk/`, `tools/value_*.py`, plus one documented generator patch
+(`tools/oct27/build_oct27_site.py`) that adds a single callout to the shared root landing page,
+one README section and this file. `desk/` is **not** touched: session `arena-6ebe13e2` relocated the
+Coverage Desk there and `tools/oct27/verify_oct27.py` requires exactly those 21 pages.
+
+| ID | Task | Status | Result |
+|---|---|---|---|
+| T30 | Originate a line for every OLBG event and publish a value-band pick set with sourced written predictions | done | 193 lines (143 fresh OLBG hub rows + 50 event-page/official rows), 85 picks, 175 facts, 59 sources |
+| T31 | Build a clean, obviously-navigable dashboard with executive summary, 15 sport pages, sources and flagged pages | done | 23 pages at `value-desk/`, linked from the root landing page and README |
+
+**Namespace conflict and resolution (07:05 UTC):** while this session worked, `desk/` was claimed by
+another session for a verbatim archive of the Coverage Desk, and a CI guard was added that fails if
+`desk/` is not exactly 21 relocated pages. Rather than overwrite that board or break CI, the Value
+Desk was regenerated at `value-desk/` with its own stylesheet, and `desk/` was restored byte-for-byte
+from `origin/main`. No other session's content was discarded. The root board's generator is patched
+so its deterministic CI rebuild reproduces the one added callout; the regenerated root pages were
+committed with it.
+
+**Verification (all green locally):** `tools/value_check.py` (896 HTML table rows each with an https
+source link, 0 broken links, 0 duplicate ids, 0 banned words, 0 sports under five picks),
+`tools/oct27/verify_oct27.py`, `tools/check_today.py`, `scripts/link_check.py`,
+`tools/check_board.py`, `node --test tests/freshness.test.js`, and the four-script CI rebuild pipeline.
+Result saved to `data/value/verification.json`. Rebase conflicts in this file were resolved by keeping
+every other session's entries and appending ours.

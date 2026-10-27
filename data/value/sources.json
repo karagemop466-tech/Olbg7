@@ -1,0 +1,848 @@
+{
+ "schema_version": 1,
+ "date": "2026-10-27",
+ "sources": [
+  {
+   "url": "https://www.olbg.com/betting-tips/Cricket/7",
+   "count": 6,
+   "kinds": [
+    "olbg"
+   ],
+   "sports": [
+    "Cricket"
+   ],
+   "claims": [
+    "OLBG 27 October listing: India 35/49 Win Match tips, 71%",
+    "OLBG 27 October listing: India 35/49 Win Match tips for the third T20I",
+    "OLBG 27 October listing: Ireland 22/32 Win Match tips, 69%"
+   ]
+  },
+  {
+   "url": "https://www.olbg.com/betting-tips/Ice_Hockey/13",
+   "count": 6,
+   "kinds": [
+    "olbg"
+   ],
+   "sports": [
+    "Ice Hockey"
+   ],
+   "claims": [
+    "OLBG 27 October listing: Kalpa 5/5 Money Line tips against Sport",
+    "OLBG 27 October listing: BOS Bruins +1.50 2/2 Puck Line tips",
+    "OLBG 27 October listing: FLA Panthers @ WPG Jets, Under 5.50 1/1 Game Totals tips"
+   ]
+  },
+  {
+   "url": "https://www.olbg.com/betting-tips/Tennis/3",
+   "count": 6,
+   "kinds": [
+    "olbg"
+   ],
+   "sports": [
+    "Tennis"
+   ],
+   "claims": [
+    "OLBG 27 October listing: Leylah Fernandez 10/12 Win Match tips, 83%",
+    "OLBG 27 October listing: Naomi Osaka 4/4 Win Match tips, 100%",
+    "OLBG 27 October listing: Rafael Jodar 4/6 Win Match tips, 67%"
+   ]
+  },
+  {
+   "url": "https://www.wst.tv/rankings/",
+   "count": 6,
+   "kinds": [
+    "official"
+   ],
+   "sports": [
+    "Snooker"
+   ],
+   "claims": [
+    "WST official world rankings: Selby 4th (GBP 1,070,500), Murphy 7th (GBP 884,150), Wu Yize 2nd, Wilson 9th",
+    "WST official world rankings: Selby 4th (GBP 1,070,500), Murphy 7th (GBP 884,150), Wu Yize 2nd, Wilson 9th",
+    "WST's official Home Nations bonus list has Liam Davies ninth on GBP 18,600"
+   ]
+  },
+  {
+   "url": "https://ehfcl.eurohandball.com/men/2026-27/standings/",
+   "count": 5,
+   "kinds": [
+    "official"
+   ],
+   "sports": [
+    "Handball"
+   ],
+   "claims": [
+    "EHF Champions League official group tables after five rounds: Magdeburg 5-0 (+36), Veszprem 5-0 (+39), Aalborg 4-1-0 (+25), Kolstad 0-5 (-35), Celje 0-5 (-38)",
+    "EHF Champions League official group tables after five rounds: Magdeburg 5-0 (+36), Veszprem 5-0 (+39), Aalborg 4-1-0 (+25), Kolstad 0-5 (-35), Celje 0-5 (-38)",
+    "EHF Champions League official group tables after five rounds: Magdeburg 5-0 (+36), Veszprem 5-0 (+39), Aalborg 4-1-0 (+25), Kolstad 0-5 (-35), Celje 0-5 (-38)"
+   ]
+  },
+  {
+   "url": "https://imminent-otter.files.svdcdn.com/production/assets/results/Romford/race-advances/TUESDAY-ADVANCED_2026-10-26-121153_lbhn.pdf",
+   "count": 5,
+   "kinds": [
+    "official"
+   ],
+   "sports": [
+    "Greyhounds"
+   ],
+   "claims": [
+    "Romford Stadium's final advance card for Tuesday 27 October 2026 lists twelve 400m races with trap draws and trainers",
+    "Romford Stadium's final advance card for Tuesday 27 October 2026 lists twelve 400m races with trap draws and trainers",
+    "Romford Stadium's final advance card for Tuesday 27 October 2026 lists twelve 400m races with trap draws and trainers"
+   ]
+  },
+  {
+   "url": "https://www.bbc.com/sport/ice-hockey/tables",
+   "count": 5,
+   "kinds": [
+    "media"
+   ],
+   "sports": [
+    "Ice Hockey"
+   ],
+   "claims": [
+    "NHL standings through 26 October: Carolina 9-2-2 with 51 goals for and 33 against; Philadelphia 3-7-3 with 24 for and 42 against; Dallas 7-3-1; Winnipeg 4-4-3",
+    "NHL standings through 26 October: Carolina 9-2-2 with 51 goals for and 33 against; Philadelphia 3-7-3 with 24 for and 42 against; Dallas 7-3-1; Winnipeg 4-4-3",
+    "NHL standings through 26 October: Carolina 9-2-2 with 51 goals for and 33 against; Philadelphia 3-7-3 with 24 for and 42 against; Dallas 7-3-1; Winnipeg 4-4-3"
+   ]
+  },
+  {
+   "url": "https://www.mlb.com/news/2026-mlb-playoff-and-world-series-schedule",
+   "count": 5,
+   "kinds": [
+    "official"
+   ],
+   "sports": [
+    "Baseball"
+   ],
+   "claims": [
+    "MLB's official postseason schedule shows Milwaukee winning 3-2, 5-4 and 10-1 to lead the World Series 3-0, with Game 4 on 27 October at 8pm ET",
+    "MLB's official postseason schedule shows Milwaukee winning 3-2, 5-4 and 10-1 to lead the World Series 3-0, with Game 4 on 27 October at 8pm ET",
+    "MLB's Game 3 report: Robert Gasser allowed one hit over six scoreless innings and Jackson Chourio had four hits in a 10-1 win, Milwaukee's eighth straight postseason win"
+   ]
+  },
+  {
+   "url": "https://www.olbg.com/betting-tips/Basketball/4",
+   "count": 5,
+   "kinds": [
+    "olbg"
+   ],
+   "sports": [
+    "Basketball"
+   ],
+   "claims": [
+    "OLBG 27 October listing: Panathinaikos 5/8 Money Line tips vs Milano",
+    "OLBG 27 October listing: Fenerbahce 4/6 Money Line tips, 67%",
+    "OLBG 27 October listing: BOS Celtics 1/1 Money Line tip vs BKN Nets"
+   ]
+  },
+  {
+   "url": "https://www.olbg.com/betting-tips/Greyhounds/28",
+   "count": 5,
+   "kinds": [
+    "olbg"
+   ],
+   "sports": [
+    "Greyhounds"
+   ],
+   "claims": [
+    "OLBG's own track table records trap 1 winning 19.4% of 3,655 Romford races, the best single-trap strike rate listed",
+    "OLBG's own track table records trap 1 winning 19.4% of 3,655 Romford races, the best single-trap strike rate listed",
+    "OLBG's own track table records trap 1 winning 19.4% of 3,655 Romford races, the best single-trap strike rate listed"
+   ]
+  },
+  {
+   "url": "https://www.olbg.com/betting-tips/Handball/20",
+   "count": 5,
+   "kinds": [
+    "olbg"
+   ],
+   "sports": [
+    "Handball"
+   ],
+   "claims": [
+    "OLBG 27 October handball listing shows 'Tie' as the most-tipped outcome at 9/14 for Magdeburg v Kriens",
+    "OLBG 27 October handball listing: KS Kielce v Kolstad, 'Tie' 7/11 tips",
+    "OLBG 27 October handball listing: PSG v Aalborg, 'Tie' 7/9 tips, 78%"
+   ]
+  },
+  {
+   "url": "https://www.olbg.com/betting-tips/Rugby_Union/9",
+   "count": 5,
+   "kinds": [
+    "olbg"
+   ],
+   "sports": [
+    "Rugby Union"
+   ],
+   "claims": [
+    "OLBG 27 October rugby union listing: Colomiers 2/2 To Win tips against Agen",
+    "OLBG 27 October listing: Glasgow Warriors 1/1 To Win tips",
+    "OLBG 27 October listing: Connacht +3.50 Handicap 1/1 Win Tips"
+   ]
+  },
+  {
+   "url": "https://www.olbg.com/betting-tips/Snooker/8",
+   "count": 5,
+   "kinds": [
+    "olbg"
+   ],
+   "sports": [
+    "Snooker"
+   ],
+   "claims": [
+    "OLBG's snooker hub showed 'No tips found.' when checked on 27 October, so no community tip split exists for these matches",
+    "OLBG's snooker hub showed 'No tips found.' when checked on 27 October, so no community tip split exists for these matches",
+    "OLBG's snooker hub showed 'No tips found.' when checked on 27 October, so no community tip split exists for these matches"
+   ]
+  },
+  {
+   "url": "https://www.pdc.tv/news/2026/october/26/2026-players-championships-31-32-entries-confirmed",
+   "count": 5,
+   "kinds": [
+    "official"
+   ],
+   "sports": [
+    "Darts"
+   ],
+   "claims": [
+    "PDC confirmed Players Championships 31-32 for 28-29 October at Maassport Den Bosch with two 128-player fields",
+    "PDC confirmed Players Championships 31-32 for 28-29 October at Maassport Den Bosch with two 128-player fields",
+    "PDC confirmed Players Championships 31-32 for 28-29 October at Maassport Den Bosch with two 128-player fields"
+   ]
+  },
+  {
+   "url": "https://www.wst.tv/match-centre/bb4f8b36-42f0-490f-b97b-b8f8799f693b",
+   "count": 5,
+   "kinds": [
+    "official"
+   ],
+   "sports": [
+    "Snooker"
+   ],
+   "claims": [
+    "WST match centre lists the International Championship 2026 round-two and held-over matches in Nanjing on 30-31 October",
+    "WST match centre lists the International Championship 2026 round-two and held-over matches in Nanjing on 30-31 October",
+    "WST match centre lists the International Championship 2026 round-two and held-over matches in Nanjing on 30-31 October"
+   ]
+  },
+  {
+   "url": "https://www.formula1.com/",
+   "count": 4,
+   "kinds": [
+    "official"
+   ],
+   "sports": [
+    "Motor Racing"
+   ],
+   "claims": [
+    "F1's official 2026 standings show Antonelli on 365 points, Russell 242, Hamilton 241, Verstappen 236 and Leclerc 233",
+    "F1's official 2026 standings show Antonelli on 365 points, Russell 242, Hamilton 241, Verstappen 236 and Leclerc 233",
+    "F1's official 2026 standings show Antonelli on 365 points, Russell 242, Hamilton 241, Verstappen 236 and Leclerc 233"
+   ]
+  },
+  {
+   "url": "https://www.formula1.com/en/latest/article/antonelli-surges-to-dominant-victory-in-united-states-grand-prix-ahead-of-leclerc-and-verstappen.6kmBQv9FNTW7LzkDj8S34j",
+   "count": 4,
+   "kinds": [
+    "official"
+   ],
+   "sports": [
+    "Motor Racing"
+   ],
+   "claims": [
+    "Formula 1's official United States GP report: Antonelli won from pole, Leclerc was second and Verstappen third",
+    "Formula 1's official United States GP report: Antonelli won from pole, Leclerc was second and Verstappen third",
+    "Formula 1's official United States GP report: Antonelli won from pole, Leclerc was second and Verstappen third"
+   ]
+  },
+  {
+   "url": "https://www.formula1.com/en/racing/2026/mexico",
+   "count": 4,
+   "kinds": [
+    "official"
+   ],
+   "sports": [
+    "Motor Racing"
+   ],
+   "claims": [
+    "F1's official Mexico City GP page lists a 71-lap race on 1 November at the 4.304km Autodromo Hermanos Rodriguez",
+    "F1's official Mexico City GP page lists a 71-lap race on 1 November at the 4.304km Autodromo Hermanos Rodriguez",
+    "F1's official Mexico City GP page lists a 71-lap race on 1 November at the 4.304km Autodromo Hermanos Rodriguez"
+   ]
+  },
+  {
+   "url": "https://www.mlb.com/news/2026-world-series-game-4-storylines-brewers-rays",
+   "count": 4,
+   "kinds": [
+    "official"
+   ],
+   "sports": [
+    "Baseball"
+   ],
+   "claims": [
+    "MLB's Game 4 storylines page lists the starting pitchers as TBA for Milwaukee and Griffin Jax for Tampa Bay",
+    "MLB's Game 4 storylines page lists the starting pitchers as TBA for Milwaukee and Griffin Jax for Tampa Bay",
+    "MLB's Game 4 storylines page lists the starting pitchers as TBA for Milwaukee and Griffin Jax for Tampa Bay"
+   ]
+  },
+  {
+   "url": "https://www.olbg.com/betting-tips/Darts/All_Darts/All_Events/Players_Championship_31/15?event_id=32446",
+   "count": 4,
+   "kinds": [
+    "olbg"
+   ],
+   "sports": [
+    "Darts"
+   ],
+   "claims": [
+    "OLBG PC31 page: Wessel Nijman 2/8 Win Tips and Best Tipster's Tip",
+    "OLBG PC31 page: Nathan Aspinall 2/8 Win Tips, 25%",
+    "OLBG PC31 page: Gian van Veen 1/8 Win Tips, 13%"
+   ]
+  },
+  {
+   "url": "https://www.olbg.com/betting-tips/Volleyball/21",
+   "count": 4,
+   "kinds": [
+    "olbg"
+   ],
+   "sports": [
+    "Volleyball"
+   ],
+   "claims": [
+    "OLBG 27 October volleyball listing: Praia Clube 3/4 Win Tips",
+    "OLBG 27 October listing: Ziraat Bankasi 4/4 Win Tips, 100%",
+    "OLBG 27 October listing: Bergamo W 5/7 Win Tips, 71%"
+   ]
+  },
+  {
+   "url": "https://www.unitedrugby.com/latest/news/2026-27-fixtures-in-full/",
+   "count": 4,
+   "kinds": [
+    "official"
+   ],
+   "sports": [
+    "Rugby Union"
+   ],
+   "claims": [
+    "United Rugby Championship's official fixture list puts Connacht v Leinster and Glasgow v Lions on 30 October, with Stormers v Ulster and Munster v Sharks on 31 October in round 5",
+    "United Rugby Championship's official fixture list puts Connacht v Leinster and Glasgow v Lions on 30 October, with Stormers v Ulster and Munster v Sharks on 31 October in round 5",
+    "United Rugby Championship's official fixture list puts Connacht v Leinster and Glasgow v Lions on 30 October, with Stormers v Ulster and Munster v Sharks on 31 October in round 5"
+   ]
+  },
+  {
+   "url": "https://leagueworldcup2026.com/schedule/",
+   "count": 3,
+   "kinds": [
+    "official"
+   ],
+   "sports": [
+    "Rugby League"
+   ],
+   "claims": [
+    "The official RLWC 2026 schedule lists England v Papua New Guinea (30 Oct, WIN Stadium), New Zealand v Fiji and Australia v Cook Islands (both 31 Oct)",
+    "The official RLWC 2026 schedule lists England v Papua New Guinea (30 Oct, WIN Stadium), New Zealand v Fiji and Australia v Cook Islands (both 31 Oct)",
+    "The official RLWC 2026 schedule lists England v Papua New Guinea (30 Oct, WIN Stadium), New Zealand v Fiji and Australia v Cook Islands (both 31 Oct)"
+   ]
+  },
+  {
+   "url": "https://munster.gaa.ie/fixtures/club-championships-2026/",
+   "count": 3,
+   "kinds": [
+    "official"
+   ],
+   "sports": [
+    "Gaelic Sports"
+   ],
+   "claims": [
+    "Munster GAA's official club championship table lists Glen Rovers v Inagh-Kilnamona on 1 November at Pairc Ui Rinn, 1:15pm, and Ballygunner v Kilmallock in the semi-finals on 15 November",
+    "Munster GAA's official club championship table lists Glen Rovers v Inagh-Kilnamona on 1 November at Pairc Ui Rinn, 1:15pm, and Ballygunner v Kilmallock in the semi-finals on 15 November",
+    "Munster GAA's official club championship table lists Glen Rovers v Inagh-Kilnamona on 1 November at Pairc Ui Rinn, 1:15pm, and Ballygunner v Kilmallock in the semi-finals on 15 November"
+   ]
+  },
+  {
+   "url": "https://www.atptour.com/en/news/basel-atp-500-2026-history-draw-schedule",
+   "count": 3,
+   "kinds": [
+    "official"
+   ],
+   "sports": [
+    "Tennis"
+   ],
+   "claims": [
+    "ATP's official Basel coverage: the Swiss Indoors runs 26 October-1 November, Djokovic accepted a wild card, and Hurkacz is the No.10 seed",
+    "ATP's official Basel coverage: the Swiss Indoors runs 26 October-1 November, Djokovic accepted a wild card, and Hurkacz is the No.10 seed",
+    "ATP's official Basel coverage: the Swiss Indoors runs 26 October-1 November, Djokovic accepted a wild card, and Hurkacz is the No.10 seed"
+   ]
+  },
+  {
+   "url": "https://www.espncricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-3rd-t20i-1539434/full-scorecard",
+   "count": 3,
+   "kinds": [
+    "media"
+   ],
+   "sports": [
+    "Cricket"
+   ],
+   "claims": [
+    "ESPNcricinfo's series page: India won the first two T20Is in Christchurch by four wickets each and lead New Zealand 2-0 before the third match in Wellington on 27 October",
+    "ESPNcricinfo's series page: India won the first two T20Is in Christchurch by four wickets each and lead New Zealand 2-0 before the third match in Wellington on 27 October",
+    "ESPNcricinfo's series page: India won the first two T20Is in Christchurch by four wickets each and lead New Zealand 2-0 before the third match in Wellington on 27 October"
+   ]
+  },
+  {
+   "url": "https://www.nba.com/team/1610612751/nets",
+   "count": 3,
+   "kinds": [
+    "official"
+   ],
+   "sports": [
+    "Basketball"
+   ],
+   "claims": [
+    "NBA.com's official Nets page lists Brooklyn 0-3 and Boston 2-1 ahead of their 27 October game; NBA.com preseason power rankings had Boston first in defensive rating and Brooklyn first in offensive rating",
+    "NBA.com's official Nets page lists Brooklyn 0-3 and Boston 2-1 ahead of their 27 October game; NBA.com preseason power rankings had Boston first in defensive rating and Brooklyn first in offensive rating",
+    "NBA.com's official Nets page lists Brooklyn 0-3 and Boston 2-1 ahead of their 27 October game; NBA.com preseason power rankings had Boston first in defensive rating and Brooklyn first in offensive rating"
+   ]
+  },
+  {
+   "url": "https://www.olbg.com/betting-tips/Baseball/MLB/MLB/MIL_Brewers_@_TB_Rays/12?event_id=160799",
+   "count": 3,
+   "kinds": [
+    "olbg"
+   ],
+   "sports": [
+    "Baseball"
+   ],
+   "claims": [
+    "OLBG Game 4 event page: MIL Brewers 2/2 Money Line Win Tips",
+    "OLBG Game 4 event page: MIL Brewers -1.50 1/1 Run Line Win Tips; TB Rays +1.50 0/1",
+    "OLBG Game 4 event page: Under 7.50 and Over 7.50 both 0/0 Win Tips"
+   ]
+  },
+  {
+   "url": "https://www.olbg.com/betting-tips/Gaelic_Football/25",
+   "count": 3,
+   "kinds": [
+    "olbg"
+   ],
+   "sports": [
+    "Gaelic Sports"
+   ],
+   "claims": [
+    "OLBG 27 October listing: Eire Og Cor +0.50 6/6 Win Tips, 100%",
+    "OLBG 27 October listing: Kildimo Pallaskenry +3.50 5/7 Win Tips, 71%",
+    "OLBG 27 October listing: Kerry 6/8 tips for the All Ireland Football Championship 2027"
+   ]
+  },
+  {
+   "url": "https://www.olbg.com/betting-tips/Motor_Racing/All_Motor_Racing/All_Events/Mexico_City_Grand_Prix/14?event_id=914",
+   "count": 3,
+   "kinds": [
+    "olbg"
+   ],
+   "sports": [
+    "Motor Racing"
+   ],
+   "claims": [
+    "OLBG's Mexico City GP page lists Verstappen as a five-time winner of the race",
+    "OLBG event page: Lando Norris 1/2 Fastest Qualifier tips; OLBG history lists Norris as the 2025 Mexico winner",
+    "OLBG event page: Oscar Piastri 1/2 Fastest Qualifier tips"
+   ]
+  },
+  {
+   "url": "https://www.olbg.com/betting-tips/Rugby_League/10",
+   "count": 3,
+   "kinds": [
+    "olbg"
+   ],
+   "sports": [
+    "Rugby League"
+   ],
+   "claims": [
+    "OLBG 27 October listing: New South Wales 9/13 Win Tips, 69%, State of Origin 2027",
+    "OLBG 27 October listing: Wigan Warriors 2/4 Grand Final Winner tips, 50%",
+    "OLBG 27 October listing: Penrith Panthers 1/3 Grand Final Winner tips, 33%"
+   ]
+  },
+  {
+   "url": "https://www.pdc.tv/news/2026/october/26/schindler---coates-secure-grand-slam-qualification",
+   "count": 3,
+   "kinds": [
+    "official"
+   ],
+   "sports": [
+    "Darts"
+   ],
+   "claims": [
+    "PDC's 26 October Grand Slam article lists the 2026 Players Championship event winners, including Kevin Doets, Chris Dobey and Cameron Menzies",
+    "PDC's 26 October Grand Slam article lists the 2026 Players Championship event winners, including Kevin Doets, Chris Dobey and Cameron Menzies",
+    "PDC's 26 October Grand Slam article lists the 2026 Players Championship event winners, including Kevin Doets, Chris Dobey and Cameron Menzies"
+   ]
+  },
+  {
+   "url": "https://www.skysports.com/rugby-league/news/13598071/rugby-league-world-cup-2026-schedule-dates-format-results-from-mens-women-s-and-wheelchair-tournaments",
+   "count": 3,
+   "kinds": [
+    "media"
+   ],
+   "sports": [
+    "Rugby League"
+   ],
+   "claims": [
+    "Sky Sports RLWC results: England lost 12-30 to Tonga then beat France 82-0",
+    "Sky Sports RLWC results: New Zealand 82-16 Cook Islands; Australia 36-22 Fiji",
+    "Sky Sports RLWC results: Australia 24-22 New Zealand and 36-22 Fiji; New Zealand 82-16 Cook Islands"
+   ]
+  },
+  {
+   "url": "https://basketnews.com/leagues/25-euroleague/standings.html",
+   "count": 2,
+   "kinds": [
+    "secondary"
+   ],
+   "sports": [
+    "Basketball"
+   ],
+   "claims": [
+    "EuroLeague standings after seven rounds list Panathinaikos and Fenerbahce at 6-1, with Panathinaikos scoring 87.6 points per game and conceding 73.9",
+    "EuroLeague standings after seven rounds list Panathinaikos and Fenerbahce at 6-1, with Panathinaikos scoring 87.6 points per game and conceding 73.9"
+   ]
+  },
+  {
+   "url": "https://cbv.com.br/volei-de-quadra/superliga-a-masculina",
+   "count": 2,
+   "kinds": [
+    "official"
+   ],
+   "sports": [
+    "Volleyball"
+   ],
+   "claims": [
+    "CBV's official Superliga table shows the 2026-27 season in round one, with Suzano, Praia Clube, Goias and Sao Jose all yet to record a point",
+    "CBV's official Superliga table shows the 2026-27 season in round one, with Suzano, Praia Clube, Goias and Sao Jose all yet to record a point"
+   ]
+  },
+  {
+   "url": "https://simmonsbankchampionship.com/",
+   "count": 2,
+   "kinds": [
+    "official"
+   ],
+   "sports": [
+    "Golf"
+   ],
+   "claims": [
+    "The official Simmons Bank Championship site says the 30 October-1 November event is a 54-hole, no-cut playoff limited to the top 54 in the Charles Schwab Cup standings",
+    "The official Simmons Bank Championship site says the 30 October-1 November event is a 54-hole, no-cut playoff limited to the top 54 in the Charles Schwab Cup standings"
+   ]
+  },
+  {
+   "url": "https://www.lpga.com/tournaments/maybank-championship",
+   "count": 2,
+   "kinds": [
+    "official"
+   ],
+   "sports": [
+    "Golf"
+   ],
+   "claims": [
+    "LPGA's official tournament page confirms the Maybank Championship runs 29 October-1 November at Kuala Lumpur Golf & Country Club's West Course, and its entries page lists Lottie Woad",
+    "LPGA's official tournament page confirms the Maybank Championship runs 29 October-1 November at Kuala Lumpur Golf & Country Club's West Course, and its entries page lists Lottie Woad"
+   ]
+  },
+  {
+   "url": "https://www.nba.com/news/power-rankings-2026-27-week-1",
+   "count": 2,
+   "kinds": [
+    "official"
+   ],
+   "sports": [
+    "Basketball"
+   ],
+   "claims": [
+    "NBA.com preseason power rankings placed Detroit 10th and New York 3rd",
+    "NBA.com power rankings: Brooklyn 1st offensive rating 120.3, Boston 1st defensive rating 98.6 in the preseason"
+   ]
+  },
+  {
+   "url": "https://www.olbg.com/betting-tips/Golf/All_Golf/All_Events/Maybank_Championship/5?event_id=101913",
+   "count": 2,
+   "kinds": [
+    "olbg"
+   ],
+   "sports": [
+    "Golf"
+   ],
+   "claims": [
+    "OLBG's Maybank Championship event page shows Lottie Woad on 1/2 Win Tips",
+    "OLBG event page names Hye Jin Choi the Most Popular Tip on 1/2 Win Tips"
+   ]
+  },
+  {
+   "url": "https://www.olbg.com/betting-tips/Golf/All_Golf/All_Events/Mexico_Open/5?event_id=101915",
+   "count": 2,
+   "kinds": [
+    "olbg"
+   ],
+   "sports": [
+    "Golf"
+   ],
+   "claims": [
+    "OLBG's Mexico Open event page shows Wyndham Clark 1/2 Win Tips",
+    "OLBG event page: Max Homa 1/2 Win Tips; a tipster cites his John Deere Classic runner-up finish"
+   ]
+  },
+  {
+   "url": "https://www.olbg.com/betting-tips/Golf/All_Golf/All_Events/Simmons_Bank_Championship/5?event_id=101914",
+   "count": 2,
+   "kinds": [
+    "olbg"
+   ],
+   "sports": [
+    "Golf"
+   ],
+   "claims": [
+    "OLBG event page: Stewart Cink 1/2 Win Tips",
+    "OLBG event page: Ernie Els 1/2 Win Tips; a tipster cites seven senior titles"
+   ]
+  },
+  {
+   "url": "https://www.pgatour.com/article/news/the-first-look/2026/10/26/vidantaworld-mexico-open-preview-storylines-fedexcup-fall-2027-pga-tour-cards",
+   "count": 2,
+   "kinds": [
+    "official"
+   ],
+   "sports": [
+    "Golf"
+   ],
+   "claims": [
+    "PGA TOUR's First Look names Wyndham Clark as the highest-ranked player in the Mexico Open field with three 2026 wins, and says the 120-man field plays the par-71, 7,337-yard Vidanta Vallarta course from 29 October",
+    "PGA TOUR's First Look names Wyndham Clark as the highest-ranked player in the Mexico Open field with three 2026 wins, and says the 120-man field plays the par-71, 7,337-yard Vidanta Vallarta course from 29 October"
+   ]
+  },
+  {
+   "url": "https://sports.yahoo.com/articles/zealand-vs-india-3rd-t20i-050525124.html",
+   "count": 1,
+   "kinds": [
+    "media"
+   ],
+   "sports": [
+    "Cricket"
+   ],
+   "claims": [
+    "New Zealand scored 225 and 180 in the first two T20Is; Glenn Phillips made 82* and 70"
+   ]
+  },
+  {
+   "url": "https://tennisuptodate.com/atp/swiss-indoors-basel-2026-results-draw-entry-list-prize-money-and-history",
+   "count": 1,
+   "kinds": [
+    "secondary"
+   ],
+   "sports": [
+    "Tennis"
+   ],
+   "claims": [
+    "2026 Swiss Indoors entry list names Rafael Jodar as the No.3 seed"
+   ]
+  },
+  {
+   "url": "https://thegolfnewsnet.com/golfnewsnetteam/2026/10/25/2026-maybank-championship-field-lpga-tour-players-rankings-145290/",
+   "count": 1,
+   "kinds": [
+    "secondary"
+   ],
+   "sports": [
+    "Golf"
+   ],
+   "claims": [
+    "2026 Maybank Championship field rankings place Hye Jin Choi 27th in the world"
+   ]
+  },
+  {
+   "url": "https://www.atptour.com/en/news/basel-2026-results",
+   "count": 1,
+   "kinds": [
+    "official"
+   ],
+   "sports": [
+    "Tennis"
+   ],
+   "claims": [
+    "ATP official Basel results, 26 October: Ruud d. Stricker 4-6, 7-5, 6-3"
+   ]
+  },
+  {
+   "url": "https://www.atptour.com/en/news/djokovic-basel-2026-wild-card",
+   "count": 1,
+   "kinds": [
+    "official"
+   ],
+   "sports": [
+    "Tennis"
+   ],
+   "claims": [
+    "ATP official: Djokovic accepts a Basel wild card; he won the 2009 title"
+   ]
+  },
+  {
+   "url": "https://www.atptour.com/en/rankings/singles?dateWeek=Current+Week",
+   "count": 1,
+   "kinds": [
+    "official"
+   ],
+   "sports": [
+    "Tennis"
+   ],
+   "claims": [
+    "ATP official rankings list Casper Ruud at No.25"
+   ]
+  },
+  {
+   "url": "https://www.bbc.com/sport/formula1/articles/c6wyrgejp0w8o",
+   "count": 1,
+   "kinds": [
+    "media"
+   ],
+   "sports": [
+    "Motor Racing"
+   ],
+   "claims": [
+    "BBC Sport's Mexico City GP preview: round 19, 30 October-1 November, 71 laps"
+   ]
+  },
+  {
+   "url": "https://www.espn.com/golf/schedule/_/tour/champions-tour",
+   "count": 1,
+   "kinds": [
+    "media"
+   ],
+   "sports": [
+    "Golf"
+   ],
+   "claims": [
+    "ESPN's 2026 Champions Tour schedule lists Cink as the season money leader and the defending Schwab Cup champion"
+   ]
+  },
+  {
+   "url": "https://www.espn.com/golf/schedule/_/tour/lpga",
+   "count": 1,
+   "kinds": [
+    "media"
+   ],
+   "sports": [
+    "Golf"
+   ],
+   "claims": [
+    "Woad won the 2026 Kroger Queen City Championship and the 2025 ISPS Handa Scottish Open"
+   ]
+  },
+  {
+   "url": "https://www.espn.com/mlb/game/_/gameId/401908045/brewers-rays",
+   "count": 1,
+   "kinds": [
+    "media"
+   ],
+   "sports": [
+    "Baseball"
+   ],
+   "claims": [
+    "ESPN's Game 4 page lists Tampa Bay 55-26 at home and Milwaukee 48-33 on the road in 2026"
+   ]
+  },
+  {
+   "url": "https://www.olbg.com/betting-tips/Darts/15",
+   "count": 1,
+   "kinds": [
+    "olbg"
+   ],
+   "sports": [
+    "Darts"
+   ],
+   "claims": [
+    "OLBG darts hub: Luke Littler 22/36 Win Tips, 61%, for the PDC World Championship 2027"
+   ]
+  },
+  {
+   "url": "https://www.olbg.com/betting-tips/Hurling/26",
+   "count": 1,
+   "kinds": [
+    "olbg"
+   ],
+   "sports": [
+    "Gaelic Sports"
+   ],
+   "claims": [
+    "OLBG 27 October listing: Galway 7/18 Win Hurling tips, 39%"
+   ]
+  },
+  {
+   "url": "https://www.olbg.com/betting-tips/Motor_Racing/14",
+   "count": 1,
+   "kinds": [
+    "olbg"
+   ],
+   "sports": [
+    "Motor Racing"
+   ],
+   "claims": [
+    "OLBG's motor racing guide lists Podium Finish as a covered F1 market"
+   ]
+  },
+  {
+   "url": "https://www.otempo.com.br/sports/volei/2026/9/21/superliga-masculina-de-volei-2026-27-tabela-com-jogos-e-horarios-do-1-turno",
+   "count": 1,
+   "kinds": [
+    "secondary"
+   ],
+   "sports": [
+    "Volleyball"
+   ],
+   "claims": [
+    "CBV's published round-one schedule lists Suzano Volei v Goias Volei on 27 October"
+   ]
+  },
+  {
+   "url": "https://www.pgatour.com/article/news/betting-dfs/2026/10/26/odds-outlook-vidantaworld-mexico-open-betting-fantasy-picks-advice-fedexcup-fall",
+   "count": 1,
+   "kinds": [
+    "official"
+   ],
+   "sports": [
+    "Golf"
+   ],
+   "claims": [
+    "The PGA TOUR's own betting article quoted FanDuel prices of +1200 for Clark, +17500 for defending champion Brian Campbell and +8000 for 2023 winner Tony Finau"
+   ]
+  },
+  {
+   "url": "https://www.snooker.org/res/index.asp?event=2762",
+   "count": 1,
+   "kinds": [
+    "secondary"
+   ],
+   "sports": [
+    "Snooker"
+   ],
+   "claims": [
+    "The International Championship round-two draw lists Liam Highfield v Kyren Wilson on 1 November"
+   ]
+  },
+  {
+   "url": "https://www.wst.tv/news/2026/october/25/Wilson-Reigns-Supreme-In-Belfast/",
+   "count": 1,
+   "kinds": [
+    "official"
+   ],
+   "sports": [
+    "Snooker"
+   ],
+   "claims": [
+    "WST official news, 25 October 2026: 'Wilson Reigns Supreme In Belfast'"
+   ]
+  }
+ ]
+}
