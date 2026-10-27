@@ -6,19 +6,19 @@
   "warnings": [],
   "checked": {
     "picks": 85,
-    "facts": 175,
+    "facts": 177,
     "lines": 193,
-    "sources": 59,
+    "sources": 60,
     "flags": 221,
     "pages": 23,
-    "html_rows_with_source": 896
+    "html_rows_with_source": 897
   },
   "counts": {
     "sports": 15,
     "picks": 85,
     "lines": 193,
-    "facts": 175,
-    "sources": 59,
+    "facts": 177,
+    "sources": 60,
     "flags": 221,
     "pages": 23,
     "high": 30,
