@@ -88,7 +88,7 @@ def confidence_of(p_fair, card, tips_total):
     if p_fair is None or card is None:
         return "low"
     in_band = 1.40 <= card <= 101.0
-    if p_fair >= 0.60 and (tips_total or 0) >= 8 and in_band:
+    if p_fair > 0.70 and (tips_total or 0) >= 8 and in_band:
         return "high"
     if p_fair >= 0.50:
         return "medium"
@@ -261,12 +261,22 @@ def main():
     method_line = ", ".join(f"{k}: {v}" for k, v in sorted(methods.items()))
 
     doc = head("OLBG Coverage Desk - dashboard", "index.html")
+    snapshot_day = date.fromisoformat(TODAY)
+    build_day = date.today()
+    freshness_note = (
+        f'<div class="note" style="border-left:4px solid #b45309;background:#fff7ed">'
+        f'<strong>Data freshness warning — {build_day:%d %B %Y}.</strong> This board uses a snapshot retrieved '
+        f'{snapshot_day:%d %B %Y} and has not been refreshed for today. Do not treat its selections as current or '
+        'actionable; event status, start times, team news and markets may have changed or expired. '
+        'Review the <a href="flagged.html">Flagged for review</a> page for known uncertainties.</div>'
+    ) if build_day > snapshot_day else ''
+    doc += freshness_note
     doc += f"""
 <h2>Executive summary</h2>
 <p class="lede">We inventoried every OLBG event we could reach across the 15 sports in scope, originated a price for
 each one that carries a printed tip split, and wrote {n_picks} full predictions. {len(highs)} selections clear our
 high-confidence bar, {len(meds)} are medium and {len(lows)} are low. {short_n} sports cannot reach the five-pick
-target today because OLBG itself carries too little priced market data in them ({short_list}); those are named below
+the five-pick target in this snapshot because OLBG carries too little priced market data in them ({short_list}); those are named below
 and on the <a href="flagged.html">Flagged for review</a> page rather than padded out with fixtures and prices that no
 source supports.</p>
 <div class="grid">
@@ -274,26 +284,26 @@ source supports.</p>
 <div class="kpi"><div class="n">{len(events)}</div><div class="l">OLBG events inventoried</div></div>
 <div class="kpi"><div class="n">{pricing['totals']['priced']}</div><div class="l">events with our own line</div></div>
 <div class="kpi"><div class="n">{n_picks}</div><div class="l">written predictions</div></div>
-<div class="kpi"><div class="n">{len(todays)}</div><div class="l">picks on today's card</div></div>
+<div class="kpi"><div class="n">{len(todays)}</div><div class="l">picks marked Today in snapshot</div></div>
 <div class="kpi"><div class="n">{len(flags['flags'])}</div><div class="l">irregularities flagged</div></div>
 </div>
 <div class="note"><strong>How to read the picks.</strong> Confidence is computed from our fair probability, the size of
 the tip sample and the price band, not typed in by hand. A pick only earns <span class="pill high">high</span> if the
-fair probability is at least 60%, the market has at least 8 tips, and our price sits inside the requested
+fair probability is greater than 70%, the market has at least 8 tips, and our price sits inside the requested
 &minus;250 to +10000 band (1.40 to 101.00 decimal). Selection prices shown are <em>our</em> originating prices, not
 bookmaker prices - see the <a href="methodology.html">pricing method</a>.</div>
 
 <h2>Picks ranked by confidence, then by our fair chance</h2>
 <table><thead><tr><th>Sport</th><th>Selection &amp; event</th><th>Market</th><th>Our price</th>
 <th>Fair chance</th><th>Confidence</th></tr></thead><tbody>{''.join(rows)}</tbody></table>
-<p class="small muted">The high-confidence tier is {', '.join(f"{esc(x['selection'])} ({esc(x['sport'])})" for x in sorted(highs, key=lambda y: -(y['_p_fair'] or 0))) or 'empty today'}.
+<p class="small muted">The high-confidence tier is {', '.join(f"{esc(x['selection'])} ({esc(x['sport'])})" for x in sorted(highs, key=lambda y: -(y['_p_fair'] or 0))) or 'empty in this snapshot'}.
 Full written reasoning for every pick is on each sport page; all {n_picks} picks run to at least 30 words and none
 reuse a template.</p>
 
 <h2>Coverage by sport</h2>
 <table><thead><tr><th>Sport</th><th>Events found</th><th>Events priced</th><th>Picks written</th>
 <th>High confidence</th><th>5-pick target</th></tr></thead><tbody>{''.join(cov_rows)}</tbody></table>
-<div class="note flag"><strong>Gaps, stated plainly.</strong> Snooker returned no tips at all from OLBG today, Golf
+<div class="note flag"><strong>Gaps, stated plainly.</strong> In this snapshot, Snooker returned no tips at all from OLBG, Golf
 carried only three tournament markets with two tips each, Baseball had a single live game, Rugby League offered only
 season ante-post markets, Darts and Motor Racing two markets each, and Gaelic Sports four selections. We publish what
 the data supports and flag the rest instead of inventing fixtures, prices or form lines.</div>
@@ -464,7 +474,7 @@ three-way money line, 0.125 for an outright (assumed eight runners, which is an 
 so every price we publish is shorter than our fair number.</td></tr>
 <tr><td>5. American</td><td>Standard conversion: <code>(dec &minus; 1) &times; 100</code> at 2.00 and above,
 <code>&minus;100 / (dec &minus; 1)</code> below 2.00.</td></tr>
-<tr><td>6. Confidence</td><td><span class="pill high">high</span> needs fair probability &ge; 60%, a sample of at least
+<tr><td>6. Confidence</td><td><span class="pill high">high</span> needs fair probability &gt; 70%, a sample of at least
 8 tips and a price inside {m['band_min_decimal']} to {m['band_max_decimal']}. <span class="pill medium">medium</span>
 is fair probability &ge; 50%. Everything else is <span class="pill low">low</span>. The label is computed, never
 typed.</td></tr>

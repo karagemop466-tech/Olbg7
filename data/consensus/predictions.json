@@ -5,7 +5,7 @@
     "Form and standings numbers are only used where they were read off an official league page during this session (NHL.com, NBA.com). Those rows carry an official source link.",
     "No injury, team-news, weather or head-to-head claim is made anywhere: none could be checked against an official source from this environment, so the field is left empty rather than guessed.",
     "Where no independent check was possible the prediction says so in plain words instead of implying research that was not done.",
-    "Confidence labels come from scripts/price_model.py: HIGH needs at least 8 tips on the market and a modelled chance of 62% or better."
+    "Confidence labels come from scripts/price_model.py: HIGH needs at least 8 tips on the market and an estimated chance greater than 70%."
   ],
   "sport_status": {
     "Golf": {"events": 3, "picks": 3, "status": "shortfall", "reason": "OLBG lists three tournaments and only four tipster-backed selections (two tips in each). A five-pick golf card would require inventing support that does not exist."},

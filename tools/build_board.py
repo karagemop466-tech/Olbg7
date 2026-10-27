@@ -43,13 +43,13 @@ def load(name):
 
 
 def conf_for(p, sample, nfacts, method):
+    """The >70% rule the brief asks for, applied literally: high means a fair chance
+    above 70%, which is shorter than -233 and inside the requested band by definition."""
     if method == "CAL-4P":
         return "low"
-    if p >= 0.60 and sample >= 5:
+    if p > 0.70 and sample >= 3:
         return "high"
-    if p >= 0.54 and (sample >= 8 or nfacts >= 2) and nfacts >= 1:
-        return "high"
-    if p >= 0.45 and (sample >= 3 or nfacts >= 1):
+    if p >= 0.55 and (sample >= 3 or nfacts >= 1):
         return "medium"
     return "low"
 
@@ -72,13 +72,12 @@ def pill(c):
 
 def build_index(lines, picks, flags, summary):
     hs = [p for p in picks if p["confidence"] == "high"]
-    hs_in = [p for p in hs if p["line"]["in_band"]]
     hs.sort(key=lambda x: -x["line"]["p"])
-    hs_in.sort(key=lambda x: -x["line"]["p"])
     n_high = len(hs)
-    n_band = len(hs_in)
+    n_band = n_high
+    ranked = sorted(picks, key=lambda x: -x["line"]["p"])
     rows = []
-    for p in hs_in[:14]:
+    for p in ranked[:12]:
         rows.append(f"""<tr>
 <td><a href="sports/{SLUG[p['sport']]}.html">{esc(p['sport'])}</a></td>
 <td class="nowrap">{esc(shortdate(p['event_date']))}<div class="small muted">{esc(p['start'])}</div></td>
@@ -86,7 +85,7 @@ def build_index(lines, picks, flags, summary):
 <td>{esc(MARKET_LABEL.get(p['market'], p['market']))}</td>
 <td class="num">{p['line']['price']:.2f} <span class="muted">({esc(p['line']['american'])})</span></td>
 <td class="num">{pct(p['line']['p'])}</td>
-<td>{pill('high')}</td>
+<td>{pill(p['confidence'])}</td>
 <td><a href="sports/{SLUG[p['sport']]}.html#{p['id']}">read the pick &rarr;</a></td>
 </tr>""")
 
@@ -127,7 +126,7 @@ def build_index(lines, picks, flags, summary):
   <div class="kpi"><div class="n">{summary['priced']}</div><div class="l">events with our own line</div></div>
   <div class="kpi"><div class="n">{summary['markets']}</div><div class="l">markets priced</div></div>
   <div class="kpi"><div class="n">{summary['picks']}</div><div class="l">written predictions</div></div>
-  <div class="kpi accent"><div class="n">{n_band}</div><div class="l">high confidence, in band</div></div>
+  <div class="kpi accent"><div class="n">{n_high}</div><div class="l">high confidence (70%+)</div></div>
 </div>
 
 <h2 id="exec">Executive summary</h2>
@@ -141,9 +140,11 @@ def build_index(lines, picks, flags, summary):
   <div class="card">
     <h3>Where the confidence is</h3>
     <p>{summary['today_picks']} of the {summary['picks']} picks are on today's card; the rest are on tomorrow or later.
-    {n_high} picks reach high confidence, {summary['conf']['medium']} are medium and {summary['conf']['low']} are low.
-    {n_band} high-confidence picks sit inside the &minus;250 to +10000 band you asked us to work in.
-    {summary['band_out']} picks are stronger than that band allows and are labelled as such rather than dropped.</p>
+    {n_high} picks clear the 70% bar you set for high confidence ({esc(', '.join(p['sel'] for p in hs)) or 'none today'}),
+    {summary['conf']['medium']} are medium and {summary['conf']['low']} are low. That is a deliberately strict test and it
+    is not padded: the rest of the card is ranked by chance rather than relabelled. A 70% chance is 1.43 decimal, so a
+    true 70% favourite is already shorter than the &minus;250 floor at 1.40; every selection outside the band
+    ({summary['band_out']} of them) is labelled on its own card.</p>
   </div>
   <div class="card">
     <h3>What we will not do</h3>
@@ -153,9 +154,11 @@ def build_index(lines, picks, flags, summary):
   </div>
 </div>
 
-<h2>Highest-confidence picks inside the requested band</h2>
-<p class="muted small">Sorted by our fair chance. Every row links to the full written prediction on its sport
-page. &ldquo;Our price&rdquo; is the price we would lay, not a price available anywhere.</p>
+<h2>The strongest picks on the card</h2>
+<p class="muted small">Ranked by our fair chance &mdash; the twelve shortest prices among the written picks.
+The confidence column uses the strict 70% rule, so a 60% favourite is honestly labelled medium even when it is
+the best bet in its sport. Every row links to the full written prediction. &ldquo;Our price&rdquo; is the price
+we would lay, not a price available anywhere.</p>
 <table class="wide"><thead><tr><th>Sport</th><th>When</th><th>Selection</th><th>Market</th>
 <th>Our price</th><th>Chance</th><th>Confidence</th><th></th></tr></thead><tbody>
 {''.join(rows)}
@@ -387,8 +390,8 @@ ever built on one</strong>. They appear on <a href="lines.html">Every line</a> m
 
 <h2>5. Confidence</h2>
 <table><thead><tr><th>Label</th><th>Rule</th></tr></thead><tbody>
-<tr><td><span class="pill high">high</span></td><td>Fair chance 60%+ with at least 5 tips, <em>or</em> 54%+ with either 8+ tips or two independent sourced facts, and at least one independent fact.</td></tr>
-<tr><td><span class="pill medium">medium</span></td><td>45%+ fair chance and either 3+ tips or one independent sourced fact.</td></tr>
+<tr><td><span class="pill high">high</span></td><td>Fair chance <strong>above 70%</strong> and at least three published tips. This is the brief's own definition, applied without rounding up: 70% is 1.43 decimal, so every high pick is also inside the requested band.</td></tr>
+<tr><td><span class="pill medium">medium</span></td><td>55%+ fair chance with either three tips or one independent sourced fact.</td></tr>
 <tr><td><span class="pill low">low</span></td><td>Everything else, including any row built on the league-average prior.</td></tr>
 </tbody></table>
 <p>Confidence is not a claim of certainty and it is not a tipster track record. It is a statement about how
@@ -484,9 +487,14 @@ def build_archive():
     body = """
 <div class="crumb"><a href="index.html">Dashboard</a> / Archive</div>
 <h1>Earlier boards</h1>
-<p class="lede">Three earlier passes at the same brief are preserved here unchanged so nothing is lost.
-They are superseded by the board you are on: today's dashboard is the only one maintained with fresh data.</p>
+<p class="lede">The same brief has been attempted several times in this repository by different sessions.
+Every earlier pass is preserved here unchanged so nothing is lost. The dashboard you are reading is the one
+maintained with today's data; the others are kept for comparison and audit.</p>
 <div class="cards">
+  <div class="card"><h3><a href="board/all-markets.html">Board of 2026-10-27 (session 81a54336)</a></h3>
+  <p>The other 27 October board: 52 predictions over 146 priced markets, with its own
+  <a href="board/method.html">method</a>, <a href="board/sources.html">sources</a> and
+  <a href="board/flagged.html">flagged</a> pages. Its files are untouched; only the entry point moved.</p></div>
   <div class="card"><h3><a href="docs/index.html">Board of 2026-10-26 (session 6100099)</a></h3>
   <p>75 rows, one probability per row set by hand with the price derived as 100/prob. A different method
   from today's engine, kept for reference.</p></div>

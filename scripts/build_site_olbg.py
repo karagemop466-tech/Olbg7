@@ -176,16 +176,16 @@ def main():
     b.append(f'<div class="kpi"><div class="v">{len(all_picks)}</div><div class="l">picks published</div></div>')
     b.append(f'<div class="kpi"><div class="v">{len(highs)}</div><div class="l">high confidence</div></div>')
     b.append('</div>')
+    b.append('<div class="note"><b>Historical snapshot — 26 October 2026.</b> This market and fixture capture has not been refreshed for the current date. Do not treat its listed selections, times or availability as current or actionable; events may have started or markets may have changed. See <a href="flagged.html">Flagged for review</a> for known data limitations.</div>')
 
     b.append('<h2>Executive summary</h2>')
-    b.append('<div class="ok"><b>The short version.</b> Seven picks clear the high-confidence bar today, led by the '
-             'NY Rangers money line at -244 (13 of 16 tips, 6-0-0 at home) and Afghanistan in the first T20 at -238 '
-             '(8 of 9 tips). Six of the fifteen covered sports cannot fill a five-pick card because OLBG itself is thin: '
-             'snooker has no tips at all, rugby league has only 2027 outrights, and baseball lists a single game. '
-             'Every gap is named below rather than padded out.</div>')
+    b.append(f'<div class="ok"><b>Executive summary.</b> {len(highs)} picks meet the strict high-confidence bar '
+             '(estimated chance greater than 70%, at least eight market tips, and odds within -250 to +10000). '
+             'No picks are promoted to high when the available support falls short. The ranked picks below show the '
+             'best-supported available selections; sport-level gaps are stated rather than padded out.</div>')
 
     b.append('<h2>High-confidence picks (odds between -250 and +10000)</h2>')
-    b.append('<p class="sub">Ranked by confidence, then by modelled probability. Every row links to the OLBG event page it came from.</p>')
+    b.append('<p class="sub">Ranked by confidence, then by estimated probability. Every row links to the OLBG event page it came from.</p>')
     b.append('<div class="scroll"><table><thead><tr><th>#</th><th>Sport</th><th>Match / event</th><th>When</th>'
              '<th>Pick</th><th>Market</th><th>Our price</th><th>OLBG tips</th><th>Conf.</th><th>Source</th></tr></thead><tbody>')
     for i, p in enumerate(highs, 1):
@@ -231,7 +231,7 @@ def main():
              'we originate a price from the share of tips on each selection, shrunk towards the market\'s base rate. '
              'The arithmetic is on the <a href="method.html">Method</a> page and in scripts/price_model.py.</p>'
              '<p><b>3. Confidence is a data-quality label, not a promise.</b> High needs at least eight tips on the '
-             'market and a modelled chance of 62% or better. Single-tip “100%” selections are never high.</p>'
+             'market and an estimated chance greater than 70%. Single-tip “100%” selections are never high.</p>'
              '<p><b>4. Everything unresolved is on <a href="flagged.html">Flagged for review</a></b> with source links.</p></div>')
 
     (DOCS / "index.html").write_text(page(
