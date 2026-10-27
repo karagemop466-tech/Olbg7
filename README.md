@@ -1,13 +1,13 @@
 # OLBG Coverage Desk
 
-A daily board of **our own** betting lines and written predictions for the 15 sports covered on
+An archived research snapshot of **our own** originated betting lines and written predictions for the 15 sports covered on
 [OLBG](https://www.olbg.com/betting-tips): Golf, Volleyball, Rugby Union, Cricket, Snooker, Darts,
 Baseball, Gaelic Sports, Greyhounds, Tennis, Motor Racing, Handball, Ice Hockey, Basketball and
 Rugby League.
 
 Live site: **https://karagemop466-tech.github.io/Olbg7/**
 
-Retrieval date for the published event inventory, prices and predictions: **2026-10-26**. This is a historical snapshot, not a current 2026-10-27 betting card; event status, markets, start times and team news have not been refreshed. See the dashboard freshness warning before using any entry.
+Primary board snapshot date: **2026-10-26**. It was **not refreshed on 2026-10-27** and must not be treated as a live/upcoming betting card. See [`freshness.html`](freshness.html) for the audit and recorded OLBG source links.
 
 ## What is in here
 
@@ -20,6 +20,7 @@ Retrieval date for the published event inventory, prices and predictions: **2026
 | `methodology.html` | How a line is originated (CAL-1 / CAL-2 / CAL-3), the confidence rules, the &minus;250 to +10000 band |
 | `sources.html` | Source register, grouped by sport |
 | `flagged.html` | Everything unconfirmed, contradictory or missing |
+| `freshness.html` | Snapshot-date warning, 2026-10-27 freshness audit and official OLBG hub links recorded for the prior capture |
 | `data/events.json` | Event inventory: 121 events, each with the OLBG path it came from |
 | `data/pricing.json` | Every originating line produced by the engine |
 | `data/picks.json` | 56 written predictions (built output), each with facts and source links |
@@ -28,7 +29,7 @@ Retrieval date for the published event inventory, prices and predictions: **2026
 | `tools/build_picks.py` | Merges the two source files into `data/picks.json` and validates word counts, sources and banned words |
 | `data/pricing.json` | CAL-1 output: 121 events inventoried, 116 priced, 5 unpriced |
 | `data/sources.json` | Source register as data + the OLBG URL grammar |
-| `data/flags.json` | Irregularity register (F-001 to F-016) and the list of deliberate blanks |
+| `data/flags.json` | Irregularity register (F-001 to F-020) and the list of deliberate blanks |
 | `tools/pricing.py` | The pricing engine |
 | `tools/build_site.py` | Static site generator (no dependencies) |
 | `tools/check_site.py` | Verification pass: links, word counts, banned words, source presence |

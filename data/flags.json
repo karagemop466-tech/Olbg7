@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "generated_at": "2026-10-26",
+ "generated_at": "2026-10-27",
  "flags": [
   {
    "id": "F-001",
@@ -133,6 +133,13 @@
    "area": "Coverage gap - seven sports short of the five-pick target",
    "finding": "Golf (3), Darts (2), Baseball (2), Gaelic Sports (4), Motor Racing (2), Rugby League (3) and Snooker (0) cannot reach five picks. Between them OLBG lists 16 events, several of them season outrights a year away, and one entire sport with no tips at all.",
    "impact": "56 predictions were published against a 75-pick target. The shortfall is named on the dashboard and on each sport page rather than filled with invented fixtures. Closing it needs either a licensed odds feed or the official fixture lists of each competition, neither of which OLBG exposes.",
+   "source": "https://www.olbg.com/betting-tips"
+  },
+  {
+   "id": "F-020",
+   "area": "Data freshness - primary board",
+   "finding": "The event inventory, originating lines and written predictions on the primary board were captured/generated on 2026-10-26. This repository update did not re-fetch the OLBG event pages, so current fixture availability, start times, markets and prices are not established. Relative labels such as “Today” and “Tomorrow” refer to the capture date, not the present date.",
+   "impact": "Treat the primary board as an archive, not an actionable current card. Re-open the official OLBG hub and event page and re-check official team/competition sources before using any entry. The dashboard and every generated page link to the snapshot freshness audit; no new picks were invented to imply current coverage.",
    "source": "https://www.olbg.com/betting-tips"
   }
  ],
