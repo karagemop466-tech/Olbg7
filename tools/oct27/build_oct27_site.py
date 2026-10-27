@@ -64,6 +64,9 @@ def render_shell(title: str, active_nav: str, active_sport: str, prefix: str, bo
         ("audit", "Repo Audit", f"{prefix}oct27/repo-audit.html"),
         ("method", "How We Price", f"{prefix}oct27/methodology.html"),
         ("sources", "Official Sources", f"{prefix}oct27/sources.html"),
+        # Added by session arena/254c7925: the v3 board lives in its own namespace
+        # and links back here. Additive only - no existing nav item was changed.
+        ("v3", "v3 Written Picks", f"{prefix}v3/index.html"),
     ]
     nav_links = "".join(
         f'<a href="{href}" class="{"active" if key == active_nav else ""}">{esc(lbl)}</a>'

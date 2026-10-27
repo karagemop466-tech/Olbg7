@@ -1,0 +1,604 @@
+{
+ "generated": "2026-10-27",
+ "note": "Published on the Flagged for Review page. 'Needs review' means published here; it does not block any pick, any line or the site build.",
+ "counts": {
+  "total": 31,
+  "HIGH": 9,
+  "MEDIUM": 13,
+  "LOW": 9,
+  "sports": [
+   "All sports",
+   "Baseball",
+   "Basketball",
+   "Cricket",
+   "Darts",
+   "Gaelic Sports",
+   "Golf",
+   "Greyhounds",
+   "Handball",
+   "Ice Hockey",
+   "Motor Racing",
+   "Rugby League",
+   "Rugby Union",
+   "Snooker",
+   "Tennis",
+   "Volleyball"
+  ]
+ },
+ "flags": [
+  {
+   "id": "F01",
+   "severity": "HIGH",
+   "sport": "Basketball",
+   "title": "Three EuroLeague rows tipped against the official league table",
+   "detail": "Besiktas v Olympiacos (event 536180), Bayern Munich v Barcelona (event 536174) and Baskonia v Real Madrid all carry OLBG tip flows that favour the weaker club on the official table. Bayern Munich are 2-5 with 612 for and 659 against, having lost 91-107 at home to Dubai; Barcelona are 4-3 with +17. Kosner Baskonia are 20th of 20 on 1 win from 7, 583 for and 649 against; Real Madrid are 4-3 with +37 and on a four-game winning streak.",
+   "board_effect": "For Barcelona v Bayern and Real Madrid v Baskonia we publish our own line against the tips and say so in the prose.",
+   "sources": [
+    {
+     "label": "L'Equipe - official EuroLeague standings",
+     "url": "https://www.lequipe.fr/Basket/CLA_EUH.html"
+    },
+    {
+     "label": "EuroLeague media centre - round 7 official standings",
+     "url": "https://mediacentre.euroleague.net/uploads/EuroleagueCore/pastmatchups/game19234.pdf"
+    },
+    {
+     "label": "OLBG basketball tips board",
+     "url": "https://www.olbg.com/betting-tips/Basketball/3"
+    }
+   ]
+  },
+  {
+   "id": "F02",
+   "severity": "HIGH",
+   "sport": "Cricket",
+   "title": "Central Stags tipped against at home as defending champions",
+   "detail": "OLBG tips Northern Districts 2 of 3 for Central Stags v Northern Districts in round 1 of the Ford Trophy, although Central Stags are the defending champions, won the 2025-26 Grand Final by six wickets, and are at home at Saxton Oval.",
+   "board_effect": "Published as a flagged row; no pick taken on it.",
+   "sources": [
+    {
+     "label": "New Zealand Cricket - official Ford Trophy schedule",
+     "url": "https://www.nzc.nz/media/w40g2zm4/print_2026_ford-trophy-schedule.pdf"
+    },
+    {
+     "label": "Canterbury Cricket - Canterbury Kings",
+     "url": "https://www.canterburycricket.org.nz/teams/canterbury-kings/"
+    }
+   ]
+  },
+  {
+   "id": "F03",
+   "severity": "HIGH",
+   "sport": "Gaelic Sports",
+   "title": "Handicap selections printed with no market label",
+   "detail": "OLBG's Gaelic rows print handicap selections inline - 'Eire Og Cor +0.50', 'Kildimo Pallaskenry +3.50' - with no market name attached to the row, so a reader cannot tell from the page whether the number is a match-winner price or a handicap. The same defect appears on the Rugby Union board: 'Connacht +3.50', 'Ulster +12.50', 'Munster -6.50'.",
+   "board_effect": "Every affected row is labelled with the market we believe it belongs to, and the label is stated as our own reading rather than OLBG's.",
+   "sources": [
+    {
+     "label": "OLBG gaelic football tips board",
+     "url": "https://www.olbg.com/betting-tips/Gaelic_Football/25"
+    },
+    {
+     "label": "OLBG rugby union tips board",
+     "url": "https://www.olbg.com/betting-tips/Rugby_Union/9"
+    }
+   ]
+  },
+  {
+   "id": "F04",
+   "severity": "HIGH",
+   "sport": "Greyhounds",
+   "title": "Greyhounds dropped from 8 events to 0 overnight",
+   "detail": "The OLBG Greyhounds board carried 8 tip-able events on 26 October 2026 and 0 on 27 October. Both the root board and the All_Events listing print the literal string 'No tips found.' We swept the page twice and confirmed the empty state is what OLBG serves, not a retrieval failure.",
+   "board_effect": "No Greyhounds picks are published. We do not pad an empty board with invented races.",
+   "sources": [
+    {
+     "label": "OLBG Greyhounds tips board",
+     "url": "https://www.olbg.com/betting-tips/Greyhounds/19"
+    }
+   ]
+  },
+  {
+   "id": "F05",
+   "severity": "HIGH",
+   "sport": "Handball",
+   "title": "'Tie' printed as the most-tipped Money Line selection on 11 of 15 matches",
+   "detail": "OLBG's Handball listing prints the literal string 'Tie' as the most-tipped Money Line selection on eleven of the fifteen listed events, including SC Magdeburg v HC Kriens-Luzern at 9 of 14, where the official EHF Champions League group F table has Magdeburg 5-0-0 with +36 and Kriens-Luzern 2-0-3 with -3. A draw is a legal group-phase result - the official tables record two draws across the thirty group-phase games played in groups A, C and F - but it cannot be backed on a money line, so the selection is unusable as a match-winner tip.",
+   "board_effect": "All fifteen handball rows are priced from the official EHF group tables instead. Six rows are left blank: HC Vardar v MT Melsungen, Wisla Plock v Nantes, RK Celje v RK Zagreb, GOG v Sporting CP, Montpellier v Dinamo Bucuresti and IFK Kristianstad v Pick Szeged, none of which appear in the official Champions League group tables.",
+   "sources": [
+    {
+     "label": "EHF Champions League - official standings",
+     "url": "https://ehfcl.eurohandball.com/men/2026-27/standings/"
+    },
+    {
+     "label": "EHF - three main round spots still open before round 6",
+     "url": "https://ehfcl.eurohandball.com/news/en/three-main-round-spots-still-open-before-final-round-6/"
+    },
+    {
+     "label": "OLBG handball tips board",
+     "url": "https://www.olbg.com/betting-tips/Handball/20"
+    }
+   ]
+  },
+  {
+   "id": "F06",
+   "severity": "HIGH",
+   "sport": "Snooker",
+   "title": "Snooker board empty on both the root listing and All_Events",
+   "detail": "OLBG's Snooker board prints 'No tips found.' on both the sport root and the All_Events listing on 27 October 2026. The sport is one of the fifteen in scope and there is no fixture and no tip data to work from on either page.",
+   "board_effect": "No Snooker picks are published.",
+   "sources": [
+    {
+     "label": "OLBG Snooker tips board",
+     "url": "https://www.olbg.com/betting-tips/Snooker/8"
+    }
+   ]
+  },
+  {
+   "id": "F07",
+   "severity": "HIGH",
+   "sport": "Tennis",
+   "title": "Khachanov v Alcaraz: 2 of 2 tips against the world No. 3",
+   "detail": "OLBG's most-tipped selection for the ATP Vienna round of 32 is Karen Khachanov on 2 of 2 tips, against Carlos Alcaraz - world No. 3 on 5,610 ranking points, seeded second in a EUR 2,797,985 ATP 500, and seeking a fourth tour-level title of 2026. Khachanov is No. 25 on 1,990 points and a recent US Open semi-finalist, so he is not a soft opponent, but the tip flow has no support in the official ranking.",
+   "board_effect": "We publish Alcaraz -282 / Khachanov +282 from the official points ratio and grade the pick MEDIUM because the price falls outside the band.",
+   "sources": [
+    {
+     "label": "ATP Tour - official singles rankings",
+     "url": "https://www.atptour.com/en/rankings/singles"
+    },
+    {
+     "label": "ATP Tour - Basel and Vienna 2026 scouting report",
+     "url": "https://www.atptour.com/en/news/basel-vienna-2026-scouting-report"
+    },
+    {
+     "label": "OLBG tennis tips board",
+     "url": "https://www.olbg.com/betting-tips/Tennis/15"
+    }
+   ]
+  },
+  {
+   "id": "F08",
+   "severity": "HIGH",
+   "sport": "Volleyball",
+   "title": "Conegliano v Vallefoglia: 6 of 10 tips on the side that has dropped no sets",
+   "detail": "OLBG tips Vallefoglia 6 of 10 on the round-5 make-up fixture at the Palaverde. Conegliano are 4-0 in Serie A1 with 12 sets won and 0 lost (3-0 v Cuneo 4 Oct, 3-0 v Busto Arsizio 10 Oct, 3-0 at Chieri 14 Oct taking the sets 25-19 25-14 25-22, 3-0 v Talmassons 18 Oct) and won a ninth Supercoppa Italiana in Bari on Saturday 24 October, beating Scandicci in the final. Vallefoglia are also 4-0 but on 11 points, having needed five sets at Scandicci on 10 October.",
+   "board_effect": "We publish our own line, Conegliano -209 / Vallefoglia +209, and say in the prose that it is against the OLBG tip flow.",
+   "sources": [
+    {
+     "label": "LegaVolley Femminile - Serie A1 results",
+     "url": "https://www.legavolleyfemminile.it/risultati/"
+    },
+    {
+     "label": "Vallefoglia v Conegliano, Palaverde, 28 October 20:00",
+     "url": "https://www.volleynews.it/vallefoglia-si-prepara-a-una-sfida-di-alta-quota-con-conegliano/"
+    },
+    {
+     "label": "Conegliano 2026-27 fixture list and results",
+     "url": "https://www.dazn.com/it-IT/news/volley/conegliano-volley-calendario-rosa-e-dove-vedere-le-partite/1w3ms5p4jzo7a1vkuwale2k35d"
+    },
+    {
+     "label": "OLBG volleyball tips board",
+     "url": "https://www.olbg.com/betting-tips/Volleyball/21"
+    }
+   ]
+  },
+  {
+   "id": "F09",
+   "severity": "HIGH",
+   "sport": "Volleyball",
+   "title": "Fenerbahce v Alanya Bld: 2 of 3 tips on the away side",
+   "detail": "OLBG tips Alanya Belediyespor 2 of 3 on a Turkish fixture whose competition standing we could not confirm from an official source, so there is nothing independent to test the tip flow against.",
+   "board_effect": "Row published with the tip share only; no line originated.",
+   "sources": [
+    {
+     "label": "OLBG volleyball tips board",
+     "url": "https://www.olbg.com/betting-tips/Volleyball/21"
+    }
+   ]
+  },
+  {
+   "id": "F10",
+   "severity": "MEDIUM",
+   "sport": "Baseball",
+   "title": "Brewers @ Rays start time conflicts with MLB.com",
+   "detail": "OLBG prints 'Today 21:00' for World Series Game 4. MLB.com's official schedule and FOX's broadcast listing both print 8:00 p.m. ET on Tuesday 27 October at Tropicana Field. The OLBG clock is US Eastern, confirmed on four other fixtures the same day, so 21:00 is not explained by the offset.",
+   "board_effect": "We publish the official 8:00 p.m. ET start and note the OLBG figure.",
+   "sources": [
+    {
+     "label": "MLB.com - 2026 playoff and World Series schedule",
+     "url": "https://www.mlb.com/news/2026-mlb-playoff-and-world-series-schedule"
+    },
+    {
+     "label": "MLB.com - 2026 World Series FAQ",
+     "url": "https://www.mlb.com/news/2026-mlb-world-series-faq-schedule-times-teams-and-more"
+    }
+   ]
+  },
+  {
+   "id": "F11",
+   "severity": "MEDIUM",
+   "sport": "Basketball",
+   "title": "Prior-session rows: Dallas @ Miami point spread and two comment errors",
+   "detail": "Carried forward from the earlier board sweep. OLBG prints the Dallas @ Miami market at +7.50 while a tipster comment on the same row discusses +8.50. A separate comment credits Miami with Giannis Antetokounmpo, who plays for Milwaukee. A third calls the Kings 0-3-2 on the road where NHL.com shows 2-2-2.",
+   "board_effect": "Comments are not used as evidence anywhere on this board.",
+   "sources": [
+    {
+     "label": "NHL - official standings",
+     "url": "https://www.nhl.com/standings"
+    },
+    {
+     "label": "OLBG basketball tips board",
+     "url": "https://www.olbg.com/betting-tips/Basketball/3"
+    }
+   ]
+  },
+  {
+   "id": "F12",
+   "severity": "MEDIUM",
+   "sport": "Cricket",
+   "title": "Afghanistan v Zimbabwe start time conflicts with ESPNcricinfo",
+   "detail": "OLBG prints 10:30 for the 1st T20I at Sharjah Cricket Stadium; ESPNcricinfo prints 2:30 PM ET for the same fixture. The difference is not the four-hour Eastern offset.",
+   "board_effect": "Time left as OLBG prints it, with the conflict noted.",
+   "sources": [
+    {
+     "label": "ESPNcricinfo - Afghanistan v Zimbabwe fixtures",
+     "url": "https://www.cricinfo.com/series/afghanistan-v-zimbabwe-2026-27-1555105/match-schedule-fixtures-and-results"
+    }
+   ]
+  },
+  {
+   "id": "F13",
+   "severity": "MEDIUM",
+   "sport": "Cricket",
+   "title": "South Africa v Australia 3rd Test date conflicts with the official start",
+   "detail": "OLBG prints 31 Oct 04:30 ET for the third Test at Newlands. The official start is 10:30 local on Tuesday 27 October, running to 31 October. OLBG appears to be printing the scheduled end of play rather than the start.",
+   "board_effect": "Published with the official five-day window, not OLBG's single timestamp.",
+   "sources": [
+    {
+     "label": "Cricket Australia - third Test preview",
+     "url": "https://www.cricket.com.au/news/4597818"
+    },
+    {
+     "label": "ESPNcricinfo - Australia in South Africa 2026-27",
+     "url": "https://www.cricinfo.com/series/australia-in-south-africa-2026-27-1525634"
+    },
+    {
+     "label": "Sky Sports - third Test live centre",
+     "url": "https://www.skysports.com/cricket/australia-vs-south-africa-3rd-test-2026/live/13603987"
+    }
+   ]
+  },
+  {
+   "id": "F14",
+   "severity": "MEDIUM",
+   "sport": "Cricket",
+   "title": "Ford Trophy round 1 prints a day earlier than the official fixture",
+   "detail": "OLBG prints Auckland v Canterbury as 'Today 17:30'. The official New Zealand Cricket schedule has the match on Wednesday 28 October with a 10:00am NZT toss at Kennards Hire Community Oval. 10:30am NZT on 28 October is 5:30pm EDT on 27 October, so the two agree once the Eastern clock is applied - but the printed date is the day before the match.",
+   "board_effect": "Published with the official NZT date and time.",
+   "sources": [
+    {
+     "label": "New Zealand Cricket - official Ford Trophy schedule",
+     "url": "https://www.nzc.nz/media/w40g2zm4/print_2026_ford-trophy-schedule.pdf"
+    },
+    {
+     "label": "Auckland Cricket - 2026/27 50-over schedules",
+     "url": "https://www.aucklandcricket.co.nz/newsarticle/169108"
+    }
+   ]
+  },
+  {
+   "id": "F15",
+   "severity": "MEDIUM",
+   "sport": "Darts",
+   "title": "Listing page and event page disagree on the most popular Players Championship 31 selection",
+   "detail": "OLBG's Darts listing page names Nathan Aspinall as the most popular selection for Players Championship 31; the event page (event 32446) names Wessel Nijman. Both print at 2 of 8 tips, in a four-way tie with Kevin Doets and 'Other'.",
+   "board_effect": "Both players are published as separate picks with their own prose.",
+   "sources": [
+    {
+     "label": "OLBG Players Championship 31 event page",
+     "url": "https://www.olbg.com/betting-tips/Darts/30?event_id=32446"
+    },
+    {
+     "label": "OLBG darts tips board",
+     "url": "https://www.olbg.com/betting-tips/Darts/30"
+    }
+   ]
+  },
+  {
+   "id": "F16",
+   "severity": "MEDIUM",
+   "sport": "Gaelic Sports",
+   "title": "'Kanturk v Eire Og Cor' cannot be identified",
+   "detail": "No competition or fixture pairing Kanturk with any club matching 'Eire Og Cor' could be confirmed from an official source. Munster GAA's published 2026 club championship draw names Eire Og Inis of Clare and pairs them with The Nire or Rathgormack of Waterford in the quarter-final on 8 November, not with Kanturk. Kanturk beat Kilshannig 2-16 to 0-19 in the Cork Senior A quarter-final on 27 September at Fr Kelleher Park and does not appear in the provincial draw at all.",
+   "board_effect": "Competition and venue left blank. The pick is graded LOW despite 6 of 6 tips.",
+   "sources": [
+    {
+     "label": "Munster GAA - official club championship draw 2026",
+     "url": "https://munster.gaa.ie/fixtures/club-championships-2026/"
+    },
+    {
+     "label": "2026 Cork Senior A Football Championship",
+     "url": "https://en.wikipedia.org/wiki/2026_Cork_Senior_A_Football_Championship"
+    },
+    {
+     "label": "Full list of 2026 county champions",
+     "url": "https://www.sportsnewsireland.com/gaa/full-list-of-senior-football-and-hurling-county-champions-2026"
+    }
+   ]
+  },
+  {
+   "id": "F17",
+   "severity": "MEDIUM",
+   "sport": "Golf",
+   "title": "Maybank Championship filed under the DP World Tour although it is an LPGA event",
+   "detail": "OLBG's golf board files the Maybank Championship under DP World Tour. It is an LPGA Tour event: 29 October to 1 November 2026 at the Kuala Lumpur Golf & Country Club West Course, a $3,000,000 purse with $450,000 to the winner, 72-hole limited-field no-cut stroke play at par 72 over 6,246 yards. Defending champion Miyu Yamashita won in 2025 in a three-way playoff.",
+   "board_effect": "Our `data/v3/events.json` records the competition as LPGA Tour, not DP World Tour.",
+   "sources": [
+    {
+     "label": "LPGA - Maybank Championship overview",
+     "url": "https://www.lpga.com/tournaments/maybank-championship/overview"
+    },
+    {
+     "label": "LPGA - Maybank Championship results",
+     "url": "https://www.lpga.com/tournaments/maybank-championship/results"
+    }
+   ]
+  },
+  {
+   "id": "F18",
+   "severity": "MEDIUM",
+   "sport": "Ice Hockey",
+   "title": "Swiss NLA rows carry only a Puck Line tip",
+   "detail": "The Ice Hockey Swiss National League rows on OLBG carry only a 1/1 Puck Line tip and no money line at all, so there is no winner market to price from the tip flow.",
+   "board_effect": "Those rows are priced from official league tables where a table exists, otherwise left blank.",
+   "sources": [
+    {
+     "label": "OLBG ice hockey tips board",
+     "url": "https://www.olbg.com/betting-tips/Ice_Hockey/18"
+    }
+   ]
+  },
+  {
+   "id": "F19",
+   "severity": "MEDIUM",
+   "sport": "Ice Hockey",
+   "title": "BOS @ CAR and CBJ @ PHI print no Money Line split",
+   "detail": "Two NHL games on the OLBG board publish no Money Line tip split. Boston at Carolina carries only a 1/1 Puck Line; Columbus at Philadelphia carries a 2/3 tip on the Flyers with no corresponding money line split for the visitors.",
+   "board_effect": "Both rows are priced from the official NHL standings. For Columbus at Philadelphia our line favours Columbus -106 while OLBG tips Philadelphia, and we publish both.",
+   "sources": [
+    {
+     "label": "NHL - official standings",
+     "url": "https://www.nhl.com/standings"
+    },
+    {
+     "label": "OLBG ice hockey tips board",
+     "url": "https://www.olbg.com/betting-tips/Ice_Hockey/18"
+    }
+   ]
+  },
+  {
+   "id": "F20",
+   "severity": "MEDIUM",
+   "sport": "Ice Hockey",
+   "title": "Conflicting NHL records for Columbus and Philadelphia",
+   "detail": "A FOX Sports game page prints Columbus 4-5-0 and Philadelphia 3-7-3; an ESPN game page prints Columbus 3-5-0 and Philadelphia 3-6-3. Resolved in favour of the former: NHL.com, BBC Sport, hockey-reference and Wikipedia all print Columbus 4-5-0 on 8 points and Philadelphia 3-7-3 on 9 points. The stale ESPN snapshot is the outlier.",
+   "board_effect": "4-5-0 and 3-7-3 used throughout, with the conflicting figures noted here.",
+   "sources": [
+    {
+     "label": "NHL - official standings",
+     "url": "https://www.nhl.com/standings"
+    },
+    {
+     "label": "BBC Sport - NHL standings updated 26 October 2026",
+     "url": "https://www.bbc.co.uk/sport/ice-hockey/tables"
+    },
+    {
+     "label": "FOX Sports - NHL divisional standings",
+     "url": "https://www.foxsports.com/nhl/standings?type=division"
+    }
+   ]
+  },
+  {
+   "id": "F21",
+   "severity": "MEDIUM",
+   "sport": "Ice Hockey",
+   "title": "Malmo Redhawks v Linkoping: our two tracks disagree on the price",
+   "detail": "The official SHL table gives Malmo Redhawks -276 while the OLBG tip flow of 3 of 3 gives -200. Both point the same way but the numbers differ by more than a fifth, and a three-tip sample carries very little weight on its own.",
+   "board_effect": "Both numbers are printed on the row; the pick is graded MEDIUM.",
+   "sources": [
+    {
+     "label": "EliteProspects - SHL 2026-27 standings and games",
+     "url": "https://www.eliteprospects.com/league/shl"
+    },
+    {
+     "label": "tabellen.se - SHL table updated 24 October 2026",
+     "url": "https://tabellen.se/hockey/shl"
+    }
+   ]
+  },
+  {
+   "id": "F22",
+   "severity": "MEDIUM",
+   "sport": "Rugby League",
+   "title": "Rugby League, Darts and Hurling boards are outright-only",
+   "detail": "OLBG's Rugby League board publishes only three 2027 outrights - State of Origin, Super League and NRL - with no club-versus-club fixture anywhere on it. The Darts board publishes only the World Championship and Players Championship 31. The Hurling board publishes a single market, 'Win Hurling'.",
+   "board_effect": "Five picks are still published for each of those sports, drawn from the markets OLBG actually carries rather than from fixtures it does not.",
+   "sources": [
+    {
+     "label": "OLBG rugby league tips board",
+     "url": "https://www.olbg.com/betting-tips/Rugby_League/10"
+    },
+    {
+     "label": "OLBG darts tips board",
+     "url": "https://www.olbg.com/betting-tips/Darts/30"
+    },
+    {
+     "label": "OLBG gaelic football tips board",
+     "url": "https://www.olbg.com/betting-tips/Gaelic_Football/25"
+    }
+   ]
+  },
+  {
+   "id": "F23",
+   "severity": "LOW",
+   "sport": "All sports",
+   "title": "No bookmaker price appears anywhere on this board",
+   "detail": "OLBG renders bookmaker prices client-side, so they are absent from the HTML we can retrieve. Every number published as a price on this board is originated by us, either from the tip share OLBG prints (Track T) or from an official competition table, ranking or points record (Track R). Nothing is quoted as a bookmaker's number.",
+   "board_effect": "Stated in the header of every page and on the method page.",
+   "sources": [
+    {
+     "label": "OLBG event page, World Series Game 4",
+     "url": "https://www.olbg.com/betting-tips/Baseball/MLB/MLB/MIL_Brewers_@_TB_Rays/12?event_id=160799"
+    }
+   ]
+  },
+  {
+   "id": "F24",
+   "severity": "LOW",
+   "sport": "Baseball",
+   "title": "Only one baseball event is published anywhere on OLBG",
+   "detail": "The OLBG baseball board carries a single tip-able event on 27 October 2026 - World Series Game 4 - with three markets. Five picks are published for the sport by covering all three markets plus two lines we originated from the official game scores, rather than by inventing fixtures.",
+   "board_effect": "The three-game sample is stated in the prose of every baseball pick.",
+   "sources": [
+    {
+     "label": "OLBG baseball tips board",
+     "url": "https://www.olbg.com/betting-tips/Baseball/MLB/MLB/2"
+    },
+    {
+     "label": "MLB.com - 2026 playoff and World Series schedule",
+     "url": "https://www.mlb.com/news/2026-mlb-playoff-and-world-series-schedule"
+    }
+   ]
+  },
+  {
+   "id": "F25",
+   "severity": "LOW",
+   "sport": "Gaelic Sports",
+   "title": "Mayo's 2026 All-Ireland title is single-sourced to OLBG",
+   "detail": "OLBG's own Gaelic football editorial states that the reigning All-Ireland senior football champions are Mayo, who ended a 75-year wait in 2026 by beating Kerry in the final for their fourth title, and that Kerry hold 39 all-time titles against Dublin's 31. No independent official source for the Mayo result was found. It is consistent with Kerry winning Munster in May 2026 and then losing the All-Ireland final, which is separately sourced.",
+   "board_effect": "Used in the Kerry pick prose with the single-source status stated in the row.",
+   "sources": [
+    {
+     "label": "OLBG gaelic football tips board and editorial",
+     "url": "https://www.olbg.com/betting-tips/Gaelic_Football/25"
+    },
+    {
+     "label": "2026 Munster Senior Football Championship",
+     "url": "https://en.wikipedia.org/wiki/2026_Munster_Senior_Football_Championship"
+    }
+   ]
+  },
+  {
+   "id": "F26",
+   "severity": "LOW",
+   "sport": "Golf",
+   "title": "Ninety-nine unranked entrants carry a stated notional ranking of 150",
+   "detail": "The Mexico Open field is 120 players, reduced from the usual 132 because of autumn daylight. Only 21 of them appear in the official world-ranking list we could source. The remaining 99 are given a notional ranking of 150 so that the weights normalise over the whole confirmed field. That figure is an assumption we state, not an official ranking.",
+   "board_effect": "Stated on the Golf page and inside the method write-up.",
+   "sources": [
+    {
+     "label": "PGA TOUR - VidantaWorld Mexico Open overview",
+     "url": "https://www.pgatour.com/tournaments/2026/vidantaworld-mexico-open/R2026540/overview"
+    },
+    {
+     "label": "Mexico Open field and world rankings, 25 October 2026",
+     "url": "https://thegolfnewsnet.com/golfnewsnetteam/2026-10-25/2026-vidantaworld-mexico-open-field-pga-tour-players-rankings-145293/"
+    }
+   ]
+  },
+  {
+   "id": "F27",
+   "severity": "LOW",
+   "sport": "Golf",
+   "title": "Simmons Bank Championship venue, dates and field unconfirmed",
+   "detail": "The Simmons Bank Championship is a PGA TOUR Champions event. Its venue, dates and field could not be confirmed from an official source on this date, so all three are left blank and no price is originated for the Stewart Cink runner that carries one of the two OLBG tips.",
+   "board_effect": "Blank price, graded LOW.",
+   "sources": [
+    {
+     "label": "PGA TOUR Champions - schedule",
+     "url": "https://www.pgatour.com/champions/schedule"
+    },
+    {
+     "label": "Golf this week, 26 October - 1 November 2026",
+     "url": "https://golfblogger.com/golf-this-week-october-26-november-1-2026/"
+    }
+   ]
+  },
+  {
+   "id": "F28",
+   "severity": "LOW",
+   "sport": "Handball",
+   "title": "Fuchse Berlin v RK Partizan filed under the EHF European League",
+   "detail": "OLBG files this fixture under the EHF European League, although both clubs appear in the official EHF Champions League group A table - Fuchse Berlin second on 6 points with +12, RK Partizan fourth on 1 point with -36.",
+   "board_effect": "Priced from the Champions League group table; the OLBG label is not followed.",
+   "sources": [
+    {
+     "label": "EHF Champions League - official group A table",
+     "url": "https://ehfcl.eurohandball.com/men/2026-27/standings/"
+    },
+    {
+     "label": "2026-27 EHF Champions League group stage",
+     "url": "https://en.wikipedia.org/wiki/2026%E2%80%9327_EHF_Champions_League_group_stage"
+    }
+   ]
+  },
+  {
+   "id": "F29",
+   "severity": "LOW",
+   "sport": "Motor Racing",
+   "title": "Piastri and Hadjar excluded from the 'without Antonelli' price",
+   "detail": "Our weighting of the Drivers' Championship 'without Kimi Antonelli' market prices only contenders within two race wins - 50 points - of the best-placed eligible rival. Oscar Piastri on 144 points and Isack Hadjar on 105 are more than 120 points behind George Russell on 242 with 125 points still available, so an earlier attempt to price them produced a nonsense number of +2479913 for Piastri. Both are excluded.",
+   "board_effect": "The exclusion is stated on the Motor Racing page and in the Russell pick prose.",
+   "sources": [
+    {
+     "label": "Formula One - official 2026 Drivers' Standings",
+     "url": "https://www.formula1.com/en/results/2026/drivers"
+    },
+    {
+     "label": "BBC Sport - 2026 Formula 1 standings",
+     "url": "https://www.bbc.com/sport/formula1/standings"
+    }
+   ]
+  },
+  {
+   "id": "F30",
+   "severity": "LOW",
+   "sport": "Rugby League",
+   "title": "2027 outright field sizes not confirmed",
+   "detail": "The runner counts used for the Super League 2027, NRL 2027 and All-Ireland Senior Hurling 2027 outrights are carried over from the 2026 seasons and are not confirmed for 2027. The All-Ireland Senior Football Championship 2027 count of 33 counties is also a carry-over and is used for the Kerry price of +126.",
+   "board_effect": "Super League and Hurling prices left blank. The 33-county assumption is labelled as an assumption wherever it is used.",
+   "sources": [
+    {
+     "label": "2026 NRL season",
+     "url": "https://en.wikipedia.org/wiki/2026_NRL_season"
+    },
+    {
+     "label": "2026 Super League Grand Final",
+     "url": "https://en.wikipedia.org/wiki/2026_Super_League_Grand_Final"
+    },
+    {
+     "label": "OLBG rugby league tips board",
+     "url": "https://www.olbg.com/betting-tips/Rugby_League/10"
+    }
+   ]
+  },
+  {
+   "id": "F31",
+   "severity": "LOW",
+   "sport": "Rugby Union",
+   "title": "Six events with no priced line",
+   "detail": "Six of the 115 swept markets carry no line at all: Virtus Bologna v Zalgiris (0 of 0 tips), Cricket World Cup 2027, Maybank Championship, Simmons Bank Championship, All-Ireland Senior Hurling 2027 and Super League 2027 - every one of them for want of a confirmed field size. Oyonnax v Soyaux Angouleme also blanks, because the opponent's official points difference is unpublished.",
+   "board_effect": "Left blank and listed here rather than filled in.",
+   "sources": [
+    {
+     "label": "OLBG rugby union tips board",
+     "url": "https://www.olbg.com/betting-tips/Rugby_Union/9"
+    },
+    {
+     "label": "OLBG basketball tips board",
+     "url": "https://www.olbg.com/betting-tips/Basketball/3"
+    }
+   ]
+  }
+ ]
+}

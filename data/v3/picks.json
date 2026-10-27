@@ -1,0 +1,2141 @@
+{
+ "generated": "2026-10-27",
+ "board": "v3 - reverse-engineered OLBG slate",
+ "picks_per_sport": 5,
+ "sports_with_picks": [
+  "Baseball",
+  "Basketball",
+  "Cricket",
+  "Darts",
+  "Gaelic Sports",
+  "Golf",
+  "Handball",
+  "Ice Hockey",
+  "Motor Racing",
+  "Rugby League",
+  "Rugby Union",
+  "Tennis",
+  "Volleyball"
+ ],
+ "sports_flagged_empty": [
+  "Greyhounds",
+  "Snooker"
+ ],
+ "counts": {
+  "total": 65,
+  "HIGH": 19,
+  "MEDIUM": 36,
+  "LOW": 10,
+  "in_band": 44,
+  "price_blank": 5,
+  "track_T": 33,
+  "track_R": 32,
+  "flagged": 33,
+  "per_sport": {
+   "Cricket": 5,
+   "Basketball": 5,
+   "Ice Hockey": 5,
+   "Rugby Union": 5,
+   "Handball": 5,
+   "Tennis": 5,
+   "Volleyball": 5,
+   "Golf": 5,
+   "Darts": 5,
+   "Baseball": 5,
+   "Motor Racing": 5,
+   "Rugby League": 5,
+   "Gaelic Sports": 5
+  }
+ },
+ "picks": [
+  {
+   "sport": "Cricket",
+   "event": "New Zealand v India",
+   "competition": "India tour of New Zealand 2026-27, 3rd T20I",
+   "when": "Tuesday 27 October 2026, 7:00am UTC",
+   "venue": "Hnry Stadium, Wellington",
+   "market": "Win Match",
+   "selection": "India to win the match",
+   "line": "-224",
+   "probability": 0.691,
+   "track": "T",
+   "tier": "A",
+   "confidence": "HIGH",
+   "in_band": true,
+   "olbg": "35 of 49 tips (71%), 18 tipster comments",
+   "text": "India travel to Wellington holding a 2-0 lead in this five-match T20I series and needing one more win to take it with two games still to spare. They levelled the Christchurch double-header by four wickets on 24 October after the opening match at Hagley Oval, and the third T20I at Hnry Stadium is the last of three straight meetings before the tour moves to Eden Park on 30 October and Seddon Park on 1 November. New Zealand have lost both completed matches and have not been able to defend a total against India in this series. Thirty-five of the 49 tips posted on OLBG sit with the visitors, the deepest consensus anywhere on the cricket board, and we back India on the match-winner line.",
+   "sources": [
+    [
+     "BCCI official match centre - New Zealand v India, 3rd T20I",
+     "https://www.bcci.tv/matches/242110/new-zealand-vs-india/match-details"
+    ],
+    [
+     "ESPNcricinfo - T20I no. 4221, Hnry Stadium",
+     "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-3rd-t20i-1539434/live-cricket-score"
+    ],
+    [
+     "India tour of New Zealand 2026 - schedule and results",
+     "https://indianexpress.com/article/sports/cricket/india-vs-new-zealand-2026-schedule-timings-live-streaming-10929192/"
+    ],
+    [
+     "OLBG cricket tips board",
+     "https://www.olbg.com/betting-tips/Cricket/7"
+    ]
+   ],
+   "flag": null,
+   "word_count": 124
+  },
+  {
+   "sport": "Cricket",
+   "event": "Namibia v Ireland",
+   "competition": "Ireland tour of Namibia 2026-27, 3rd ODI",
+   "when": "Tuesday 27 October 2026",
+   "venue": "High Performance Oval, Windhoek",
+   "market": "Win Match",
+   "selection": "Ireland to win the match",
+   "line": "-192",
+   "probability": 0.658,
+   "track": "T",
+   "tier": "A",
+   "confidence": "HIGH",
+   "in_band": true,
+   "olbg": "22 of 32 tips (69%), 6 tipster comments",
+   "text": "This five-match series is level at one apiece and the third ODI decides who carries the lead into the back end of the tour. Ireland took the opener by 55 runs, bowling Namibia out for 174 in 37.5 overs after Harry Stirling's 56 from 71 balls and Josh Hoey's 3-29. Namibia hit back two days later with a 31-run win built on Gerhard Erasmus carrying his bat for an unbeaten 156 from 125 deliveries, a personal best that beat his previous 125, and Jan Frylinck's 76 from 90. Ireland's chase stalled at 290 in 47.3 overs despite Stirling's 77 from 71 and Hoey's second three-wicket haul of the series. Stirling has made 56 and 77 in the two completed games, so the Irish top order is in form even in defeat, and 22 of the 32 tips stay with them.",
+   "sources": [
+    [
+     "ESPNcricinfo - ODI no. 5049, High Performance Oval, Windhoek",
+     "https://www.cricinfo.com/series/ireland-in-namibia-2026-27-1558225/namibia-vs-ireland-3rd-odi-1558233/live-cricket-score"
+    ],
+    [
+     "BBC Sport - Ireland win the 1st ODI by 55 runs",
+     "https://www.bbc.co.uk/sport/cricket/articles/cxnv0e69ezrzo"
+    ],
+    [
+     "BBC Sport - Erasmus 156 not out, Namibia level the series",
+     "https://www.bbc.co.uk/sport/cricket/articles/cvx28ex38x7ko"
+    ]
+   ],
+   "flag": null,
+   "word_count": 140
+  },
+  {
+   "sport": "Cricket",
+   "event": "Pakistan v Sri Lanka",
+   "competition": "Pakistan ODI Tri-Series 2026-27, 5th match",
+   "when": "Tuesday 27 October 2026, 1:00pm local (8:00am GMT)",
+   "venue": "Gaddafi Stadium, Lahore",
+   "market": "Win Match",
+   "selection": "Pakistan to win the match",
+   "line": "-208",
+   "probability": 0.676,
+   "track": "T",
+   "tier": "A",
+   "confidence": "HIGH",
+   "in_band": true,
+   "olbg": "22 of 31 tips (71%)",
+   "text": "Pakistan are three wins from three in this tri-series and have already beaten Sri Lanka inside it. In the Rawalpindi opener on 18 October they posted 305 and won by 37 runs, Salman Agha making 107 from 90 balls for his fourth ODI hundred while Shaheen Shah Afridi took 3-55 to bowl Sri Lanka out for 268 in 48.1 overs. Sri Lanka's only win of the tournament came against England by two wickets on 22 October. Pakistan then beat England by 87 runs and, at this same ground on 25 October, chased 242 to win by one wicket with 17 balls remaining. A side winning that close a game at home is not one to fade, and 22 of the 31 tips are with the hosts.",
+   "sources": [
+    [
+     "Wikipedia - 2026-27 Pakistan ODI Tri-Series",
+     "https://en.wikipedia.org/wiki/2026%E2%80%9327_Pakistan_ODI_Tri-Series"
+    ],
+    [
+     "ESPNcricinfo - Pakistan v Sri Lanka, 1st match report",
+     "https://www.cricinfo.com/series/pakistan-odi-tri-series-2026-27-1550706/pakistan-vs-sri-lanka-1st-match-1550713/match-report"
+    ],
+    [
+     "ESPNcricinfo - Pakistan fixtures and results",
+     "https://www.cricinfo.com/team/pakistan-7/match-schedule-fixtures-and-results"
+    ],
+    [
+     "CricketWorld - tri-series results and fixtures",
+     "https://www.cricketworld.com/match-predictions-pakistan-odi-tri-series-2026-5th-match-pakistan-vs-sri-lanka-october-27th/114027.htm"
+    ]
+   ],
+   "flag": null,
+   "word_count": 126
+  },
+  {
+   "sport": "Cricket",
+   "event": "Afghanistan v Zimbabwe",
+   "competition": "Afghanistan v Zimbabwe 2026-27, 1st T20I",
+   "when": "Tuesday 27 October 2026",
+   "venue": "Sharjah Cricket Stadium, Sharjah",
+   "market": "Win Match",
+   "selection": "Afghanistan to win the match",
+   "line": "-450",
+   "probability": 0.818,
+   "track": "T",
+   "tier": "A",
+   "confidence": "MEDIUM",
+   "in_band": false,
+   "olbg": "15 of 16 tips (94%)",
+   "text": "Afghanistan have beaten Zimbabwe twice in eight days and won the UAE ODI Tri-Series doing it, so they arrive at Sharjah with the shortest form line in international cricket this week. They took the group match by 158 runs, 294 against 136 in 38.4 overs, then won the final at this ground on 23 October by seven wickets with 93 balls unused: Zimbabwe 169, Afghanistan 170-3 in 34.3 overs, Ibrahim Zadran 70 not out and Rahmat Shah 43. Rashid Khan took three wickets in that final and eleven across the tournament to be named player of the series, while Sikandar Raza's 68 was the only real Zimbabwe resistance. The tri-series table read Afghanistan two wins from two at +2.362 net run rate, Zimbabwe one and one at -0.590. We back Afghanistan, but at -450 the price sits outside the -250 to +10000 band we hold top-grade picks to, so this is one rung down.",
+   "sources": [
+    [
+     "ESPNcricinfo - Afghanistan v Zimbabwe fixtures and results",
+     "https://www.cricinfo.com/series/afghanistan-v-zimbabwe-2026-27-1555105/match-schedule-fixtures-and-results"
+    ],
+    [
+     "ESPNcricinfo - UAE ODI Tri-Series final scorecard",
+     "https://www.cricinfo.com/series/uae-odi-tri-series-2026-27-1555109/afghanistan-vs-zimbabwe-final-1556871/live-cricket-score"
+    ],
+    [
+     "Wikipedia - International cricket in 2026-27",
+     "https://en.wikipedia.org/wiki/International_cricket_in_2026%E2%80%9327"
+    ]
+   ],
+   "flag": null,
+   "word_count": 154
+  },
+  {
+   "sport": "Cricket",
+   "event": "Auckland v Canterbury",
+   "competition": "The Ford Trophy 2026-27, round 1",
+   "when": "Wednesday 28 October 2026, 10:30am local",
+   "venue": "Kennards Hire Community Oval, Auckland",
+   "market": "Win Match",
+   "selection": "Canterbury to win the match",
+   "line": "-200",
+   "probability": 0.667,
+   "track": "T",
+   "tier": "C",
+   "confidence": "MEDIUM",
+   "in_band": true,
+   "olbg": "3 of 4 tips (75%)",
+   "text": "The Ford Trophy opens New Zealand's domestic summer and Canterbury arrive as the competition's most recent runners-up, having topped the 2025-26 standings before losing the Grand Final to Central Stags by six wickets. Auckland have strengthened: Jimmy Neesham has taken a New Zealand Cricket contract for the first time since 2021-22 and is available for the one-day competition, which upgrades the Aces' middle order and their death bowling in one move. New Zealand Cricket has also introduced a new-ball trial across all three round-one venues, so the opening spell may not behave as it has in recent summers - a genuine unknown for both sides. Only four tips sit on this market, which is why we grade it down despite the price landing inside our band.",
+   "sources": [
+    [
+     "New Zealand Cricket - official Ford Trophy schedule",
+     "https://www.nzc.nz/media/w40g2zm4/print_2026_ford-trophy-schedule.pdf"
+    ],
+    [
+     "Auckland Cricket - 2026/27 50-over schedules released",
+     "https://www.aucklandcricket.co.nz/newsarticle/169108?newsfeedId=1784814"
+    ],
+    [
+     "Canterbury Cricket - Canterbury Kings fixtures",
+     "https://www.canterburycricket.org.nz/teams/canterbury-kings/"
+    ],
+    [
+     "ESPNcricinfo - New Zealand domestic season opens 28 October",
+     "https://www.espn.com/cricket/story/_/id/49635135/new-zealand-domestic-season-kick-october-28-ford-trophy-opener"
+    ],
+    [
+     "New Zealand Cricket - new ball trial for the Ford Trophy",
+     "https://www.nzc.nz/new-ball-trial-set-to-invigorate-ford-trophy"
+    ]
+   ],
+   "flag": null,
+   "word_count": 126
+  },
+  {
+   "sport": "Basketball",
+   "event": "Panathinaikos AKTOR v Armani Olimpia Milano",
+   "competition": "EuroLeague 2026-27, round 8",
+   "when": "Tuesday 27 October 2026",
+   "venue": "Telekom Center Athens",
+   "market": "Money Line",
+   "selection": "Panathinaikos to win the match",
+   "line": "-133",
+   "probability": 0.571,
+   "track": "T",
+   "tier": "B",
+   "confidence": "HIGH",
+   "in_band": true,
+   "olbg": "5 of 8 tips (63%)",
+   "text": "Panathinaikos sit top of the EuroLeague on six wins from seven with a points difference of +96, and are 5-1 at the Telekom Center. Their last five read 90-67 over Maccabi Rapyd Tel Aviv, 92-74 over Fenerbahce, 72-55 at Partizan, an 81-91 loss to Hapoel IBI Tel Aviv and 85-79 over Kosner Baskonia in round seven. Armani Olimpia Milano are nineteenth on one win from seven, 585 points for against 648, and lost 81-89 at home to Barcelona last time out. Between them that is a 159-point swing in scoring margin, the league leader against a club sitting nineteenth. Five of the eight tips on OLBG are with the Greeks and the official table agrees with them, so this is the strongest basketball position on the board.",
+   "sources": [
+    [
+     "L'Equipe - official EuroLeague standings 2026-27",
+     "https://www.lequipe.fr/Basket/CLA_EUH.html"
+    ],
+    [
+     "Basketnews - EuroLeague standings and last five results",
+     "https://basketnews.com/leagues/25-euroleague/standings.html"
+    ],
+    [
+     "EuroLeague Basketball - round 7 game centre",
+     "https://www.euroleaguebasketball.net/en/euroleague/news/game-center-round-7-el2627/"
+    ]
+   ],
+   "flag": null,
+   "word_count": 127
+  },
+  {
+   "sport": "Basketball",
+   "event": "FC Bayern Munich v FC Barcelona",
+   "competition": "EuroLeague 2026-27, round 8",
+   "when": "Tuesday 27 October 2026, 20:00 local",
+   "venue": "SAP Garden, Munich",
+   "market": "Money Line",
+   "selection": "Barcelona to win the match",
+   "line": "-168",
+   "probability": 0.627,
+   "track": "R",
+   "tier": "R",
+   "confidence": "HIGH",
+   "in_band": true,
+   "olbg": "3 of 5 tips on Bayern Munich (60%) - we are against the tip flow",
+   "text": "Barcelona are 4-3 in the EuroLeague with a +17 points difference and won 89-81 at Armani Olimpia Milano in round seven. Bayern Munich are 2-5 with a -47 points difference and were beaten 91-107 at this same SAP Garden by Dubai Basketball last week. Both clubs play in front of big houses - the SAP Garden holds 11,500 and the Palau Blaugrana 7,585 - but home court has not been Bayern's friend this season. Our own line, built from the official points difference per game with a 3.5-point home allowance, prices Barcelona at -168 and Bayern at +168. That puts us against OLBG's three of five tips on the home side, and we are flagging the disagreement rather than quietly following the crowd.",
+   "sources": [
+    [
+     "EuroLeague media centre - round 7 official standings",
+     "https://mediacentre.euroleague.net/uploads/EuroleagueCore/pastmatchups/game19234.pdf"
+    ],
+    [
+     "Betexplorer - EuroLeague round 7 results",
+     "https://www.betexplorer.com/basketball/europe/euroleague/"
+    ],
+    [
+     "Wikipedia - 2026-27 EuroLeague venues and league table",
+     "https://en.wikipedia.org/wiki/2026%E2%80%9327_EuroLeague"
+    ]
+   ],
+   "flag": "OLBG's tip flow (3/5 Bayern Munich) is against the official EuroLeague points difference, which has Barcelona +17 and Bayern -47.",
+   "word_count": 123
+  },
+  {
+   "sport": "Basketball",
+   "event": "Baskonia v Real Madrid",
+   "competition": "EuroLeague 2026-27, round 8",
+   "when": "Tuesday 27 October 2026, 21:00 local",
+   "venue": "Buesa Arena, Vitoria-Gasteiz",
+   "market": "Money Line",
+   "selection": "Real Madrid to win the match",
+   "line": "-281",
+   "probability": 0.738,
+   "track": "R",
+   "tier": "R",
+   "confidence": "MEDIUM",
+   "in_band": false,
+   "olbg": "3 of 6 tips on Baskonia (50%) - we are against the tip flow",
+   "text": "Kosner Baskonia are bottom of the EuroLeague on one win from seven, 583 points for against 649, and lost 79-85 at Panathinaikos in round seven. Real Madrid are 4-3 with a +37 points difference and a four-game winning streak, the latest a 113-99 demolition at Maccabi Rapyd Tel Aviv. Real Madrid's own club schedule lists this as game eight, away at Baskonia, at 9:00pm on 27 October. Our line prices Real Madrid -281 and Baskonia +281. The direction is not seriously in doubt - a club sitting last on scoring margin against one on a four-game run - but -281 sits outside the -250 to +10000 band, which is the only reason this is not top grade.",
+   "sources": [
+    [
+     "Real Madrid - official EuroLeague 2026/27 schedule",
+     "https://www.realmadrid.com/en-US/news/basket/first-team/latest-news/el-calendario-del-real-madrid-para-la-euroliga-2026-27-29-07-2026"
+    ],
+    [
+     "EuroLeague media centre - round 7 official standings",
+     "https://mediacentre.euroleague.net/uploads/EuroleagueCore/pastmatchups/game19234.pdf"
+    ],
+    [
+     "L'Equipe - official EuroLeague standings 2026-27",
+     "https://www.lequipe.fr/Basket/CLA_EUH.html"
+    ]
+   ],
+   "flag": "OLBG's tip flow (3/6 Baskonia) favours the club sitting 20th of 20 on the official table.",
+   "word_count": 117
+  },
+  {
+   "sport": "Basketball",
+   "event": "BC Dubai v Paris Basketball",
+   "competition": "EuroLeague 2026-27, round 8",
+   "when": "Tuesday 27 October 2026, 17:00 local",
+   "venue": "Coca-Cola Arena, Dubai",
+   "market": "Money Line",
+   "selection": "Dubai Basketball to win the match",
+   "line": "-325",
+   "probability": 0.765,
+   "track": "R",
+   "tier": "R",
+   "confidence": "MEDIUM",
+   "in_band": false,
+   "olbg": "4 of 7 tips (57%)",
+   "text": "Dubai Basketball are 5-2 and on a three-game winning streak, having taken Bayern Munich 107-91 in Munich, Armani Olimpia Milano 101-97 in Milan and Kosner Baskonia 93-79 in Vitoria-Gasteiz. Paris Basketball are 1-6, 597 points for against 649, and lost 93-104 at home to Valencia Basket in round seven. The Coca-Cola Arena holds 17,000, the largest building in the competition, and Dubai are 2-1 inside it. Our line prices Dubai -325 and Paris +325 from the official points difference per game. Four of seven tips agree with us; the price is simply too short for our top-grade band.",
+   "sources": [
+    [
+     "Basketnews - Dubai Basketball last five results",
+     "https://basketnews.com/leagues/25-euroleague/standings.html"
+    ],
+    [
+     "EuroLeague media centre - round 7 official standings",
+     "https://mediacentre.euroleague.net/uploads/EuroleagueCore/pastmatchups/game19234.pdf"
+    ],
+    [
+     "Flashscore - EuroLeague round 8 fixtures",
+     "https://www.flashscore.com/basketball/europe/euroleague/"
+    ]
+   ],
+   "flag": null,
+   "word_count": 98
+  },
+  {
+   "sport": "Basketball",
+   "event": "Crvena Zvezda Meridianbet v Maccabi Rapyd Tel Aviv",
+   "competition": "EuroLeague 2026-27, round 8",
+   "when": "Tuesday 27 October 2026",
+   "venue": "Belgrade",
+   "market": "Money Line",
+   "selection": "Crvena Zvezda to win the match",
+   "line": "-361",
+   "probability": 0.784,
+   "track": "R",
+   "tier": "R",
+   "confidence": "MEDIUM",
+   "in_band": false,
+   "olbg": "2 of 4 tips (50%)",
+   "text": "Crvena Zvezda Meridianbet are 4-3 in the EuroLeague with a +28 points difference and beat Dubai Basketball 77-58 in round six, though they lost the Belgrade derby 82-85 at Partizan Mozzart Bet in round seven. Maccabi Rapyd Tel Aviv are 2-5, 608 for against 653, with a 1-3 away record, and conceded 113 points at home to Real Madrid last time out after losing 67-90 at Panathinaikos the week before. Our line prices Crvena Zvezda -361 and Maccabi +361. Only two of four tips sit on this market, and the price is outside our band, so this grades one rung down despite the clear gap.",
+   "sources": [
+    [
+     "thebasketballscores.com - EuroLeague 2026-27 regular season standings",
+     "https://thebasketballscores.com/en/euroleague/standings"
+    ],
+    [
+     "L'Equipe - official EuroLeague standings 2026-27",
+     "https://www.lequipe.fr/Basket/CLA_EUH.html"
+    ],
+    [
+     "Basketnews - EuroLeague results and form",
+     "https://basketnews.com/leagues/25-euroleague/standings.html"
+    ]
+   ],
+   "flag": null,
+   "word_count": 105
+  },
+  {
+   "sport": "Ice Hockey",
+   "event": "KalPa v Sport",
+   "competition": "Liiga 2026-27",
+   "when": "Tuesday 27 October 2026",
+   "venue": "Kuopio",
+   "market": "Money Line",
+   "selection": "KalPa to win the match",
+   "line": "-224",
+   "probability": 0.691,
+   "track": "R",
+   "tier": "R",
+   "confidence": "HIGH",
+   "in_band": true,
+   "olbg": "5 of 5 tips (100%)",
+   "text": "KalPa and Sport are level on 19 points in the Liiga table, fourteenth and fifteenth, but the underlying numbers are nothing alike. KalPa have played 15 games for 37 goals for and 37 against, a clean zero differential, while Sport have played 16 for 30 against 46, sixteen goals underwater and the second-worst goal record in the league. KalPa also have a game in hand. Our own line, worked from official goals for and against per game with a 0.40-goal home allowance and settled including overtime and any shootout, prices KalPa -224 and Sport +224. All five tips on OLBG agree, and the price lands inside the band we hold top-grade picks to.",
+   "sources": [
+    [
+     "Liiga - official league table",
+     "https://www.liiga.fi/en"
+    ],
+    [
+     "Liiga - official team statistics, runkosarja",
+     "https://www.liiga.fi/en/stats/teamstats/gameday?sarja=runkosarja&tilasto=sarjataulukko&paivasta=2026-09-01&paivaan=2026-10-15"
+    ],
+    [
+     "EliteProspects - Liiga 2026-27 standings",
+     "https://www.eliteprospects.com/league/liiga"
+    ]
+   ],
+   "flag": null,
+   "word_count": 113
+  },
+  {
+   "sport": "Ice Hockey",
+   "event": "Frolunda HC v Rogle BK",
+   "competition": "SHL 2026-27",
+   "when": "Tuesday 27 October 2026, 19:00 local",
+   "venue": "Gothenburg",
+   "market": "Money Line",
+   "selection": "Frolunda HC to win the match",
+   "line": "-183",
+   "probability": 0.647,
+   "track": "R",
+   "tier": "R",
+   "confidence": "HIGH",
+   "in_band": true,
+   "olbg": "2 of 3 tips (67%)",
+   "text": "Frolunda HC are second in the SHL on 28 points from 13 games, 45 goals for and 30 against, and beat HV71 6-2 on 24 October. Rogle BK are fourth on 19 points from 12, 32 for and 26 against, and needed overtime - 61 minutes 45 seconds - to get past Brynas 5-4 in the same round. Nine points and fourteen goals of differential separate them. Our line prices Frolunda -183 and Rogle +183, comfortably inside our band, which makes this a top-grade pick even though only three tips sit on the OLBG market. The official table is doing the work here, not the tip count.",
+   "sources": [
+    [
+     "EliteProspects - SHL 2026-27 standings and games",
+     "https://www.eliteprospects.com/league/shl"
+    ],
+    [
+     "tabellen.se - SHL table updated 24 October 2026",
+     "https://tabellen.se/hockey/shl"
+    ],
+    [
+     "Wikipedia - 2025-26 SHL season, prior-season baseline",
+     "https://en.wikipedia.org/wiki/2025%E2%80%9326_SHL_season"
+    ]
+   ],
+   "flag": null,
+   "word_count": 107
+  },
+  {
+   "sport": "Ice Hockey",
+   "event": "IF Malmo Redhawks v Linkoping HC",
+   "competition": "SHL 2026-27",
+   "when": "Tuesday 27 October 2026, 19:00 local (18:00 UTC)",
+   "venue": "Malmo",
+   "market": "Money Line",
+   "selection": "Malmo Redhawks to win the match",
+   "line": "-276",
+   "probability": 0.734,
+   "track": "R",
+   "tier": "R",
+   "confidence": "MEDIUM",
+   "in_band": false,
+   "olbg": "3 of 3 tips (100%) on the tip line of -200",
+   "text": "Malmo Redhawks are fifth in the SHL on 17 points from 11 games with 31 goals for and 29 against; Linkoping HC are thirteenth on 12 points from the same 11 games with 23 for and 36 against, a thirteen-goal hole. The fixture is confirmed for 27 October at 18:00 UTC, which is 19:00 in Malmo. Our two tracks disagree on the number: the official table gives Malmo -276, while the tip flow of three from three gives -200. Both point the same way, but -276 is outside our band and a three-tip sample carries very little weight on its own, so this grades one rung down and the disagreement is printed rather than smoothed over.",
+   "sources": [
+    [
+     "EliteProspects - SHL 2026-27 standings and games",
+     "https://www.eliteprospects.com/league/shl"
+    ],
+    [
+     "tabellen.se - SHL table updated 24 October 2026",
+     "https://tabellen.se/hockey/shl"
+    ]
+   ],
+   "flag": "Our two tracks disagree on the price: -276 from the official SHL table, -200 from the OLBG tip flow.",
+   "word_count": 116
+  },
+  {
+   "sport": "Ice Hockey",
+   "event": "Boston Bruins @ Carolina Hurricanes",
+   "competition": "NHL 2026-27",
+   "when": "Tuesday 27 October 2026, 8:00pm ET",
+   "venue": "Lenovo Center, Raleigh",
+   "market": "Puck Line",
+   "selection": "Boston Bruins +1.50",
+   "line": "-167",
+   "probability": 0.625,
+   "track": "T",
+   "tier": "D",
+   "confidence": "MEDIUM",
+   "in_band": true,
+   "olbg": "2 of 2 tips (100%) - puck line only, no money line published",
+   "text": "Boston are 9-2-1 for 19 points and second in the Eastern Conference with 48 goals for and 26 against, a +22 differential that is the best of any team on this board, and they have won their last two. Carolina are 9-2-2 for 20 points and top of the Metropolitan with 51 for and 33 against, +18, and are 2-1-1 at the Lenovo Center against 7-1-1 on the road. Our own money line from those official numbers has Boston at -103 and Carolina at +103, effectively a pick'em, which is exactly why taking the Bruins with a goal and a half of cover is the more interesting position. OLBG prints no money line for this game at all, only the 1/1 puck line, and that omission is flagged.",
+   "sources": [
+    [
+     "NHL - official standings",
+     "https://www.nhl.com/standings"
+    ],
+    [
+     "BBC Sport - NHL standings, last updated 26 October 2026",
+     "https://www.bbc.co.uk/sport/ice-hockey/tables"
+    ],
+    [
+     "FOX Sports - NHL divisional standings",
+     "https://www.foxsports.com/nhl/standings?type=division"
+    ]
+   ],
+   "flag": "OLBG publishes only a 1/1 puck line tip for this match and no money line split at all.",
+   "word_count": 128
+  },
+  {
+   "sport": "Ice Hockey",
+   "event": "Columbus Blue Jackets @ Philadelphia Flyers",
+   "competition": "NHL 2026-27",
+   "when": "Tuesday 27 October 2026, 7:00pm ET",
+   "venue": "Xfinity Mobile Arena, Philadelphia",
+   "market": "Money Line",
+   "selection": "Philadelphia Flyers to win the match",
+   "line": "+106",
+   "probability": 0.485,
+   "track": "R",
+   "tier": "R",
+   "confidence": "LOW",
+   "in_band": true,
+   "olbg": "2 of 3 tips (67%)",
+   "text": "Two Metropolitan Division cellar-dwellers meet with almost nothing between them. Columbus are 4-5-0 for eight points from nine games, 22 for and 30 against, and have won their last one. Philadelphia are 3-7-3 for nine points from thirteen, 24 for and 42 against, an eighteen-goal hole, and have lost their last one; they are 2-3-2 at home. Our line from the official numbers prices Philadelphia +106 and Columbus -106, which means the tip flow and our own origination disagree on who wins. We publish Philadelphia because that is where OLBG's two of three tips sit, but we grade this low and flag the disagreement rather than pretend the numbers settle it.",
+   "sources": [
+    [
+     "NHL - official standings",
+     "https://www.nhl.com/standings"
+    ],
+    [
+     "Wikipedia - 2026-27 NHL season",
+     "https://en.wikipedia.org/wiki/2026%E2%80%9327_NHL_season"
+    ],
+    [
+     "FOX Sports - NHL conference standings",
+     "https://www.foxsports.com/nhl/standings"
+    ]
+   ],
+   "flag": "Our line from the official standings favours Columbus (-106) while OLBG's tips favour Philadelphia (2/3). An ESPN game page also prints Columbus 3-5-0 and Philadelphia 3-6-3, against 4-5-0 and 3-7-3 on every standings page we checked.",
+   "word_count": 111
+  },
+  {
+   "sport": "Rugby Union",
+   "event": "Connacht v Leinster",
+   "competition": "United Rugby Championship 2026-27, round 6",
+   "when": "Friday 30 October 2026",
+   "venue": "Galway",
+   "market": "Match Winner",
+   "selection": "Leinster to win the match",
+   "line": "-200",
+   "probability": 0.667,
+   "track": "R",
+   "tier": "R",
+   "confidence": "HIGH",
+   "in_band": true,
+   "olbg": "1 of 1 tips on the Connacht +3.50 handicap - no winner market published",
+   "text": "Leinster are sixth in the URC on 13 points from four games, two wins and two losses, with 99 points for and 76 against, a +23 differential that is the fourth best in the competition. Connacht are eighth on 10 points from four, also two and two, but 104 for against 111 - seven points adrift. Leinster lost 26-20 away to the Sharks in the opening round on 3 October, which is one of only two defeats they carry. Our line from the official table prices Leinster -200 and Connacht +200. OLBG publishes only a Connacht +3.50 handicap here with a single tip and no match-winner split at all, which we flag; our own reading of the table is that three and a half points is generous to the home side.",
+   "sources": [
+    [
+     "Sky Sports - United Rugby Championship table",
+     "https://www.skysports.com/rugby-union/united-rugby-championship/table"
+    ],
+    [
+     "BBC Sport - United Rugby Championship standings",
+     "https://www.bbc.co.uk/sport/rugby-union/tables/united-rugby-championship"
+    ],
+    [
+     "Wikipedia - 2026-27 United Rugby Championship",
+     "https://en.wikipedia.org/wiki/2026%E2%80%9327_United_Rugby_Championship"
+    ]
+   ],
+   "flag": "OLBG prints a Connacht +3.50 handicap selection with no market label and no match-winner tip split.",
+   "word_count": 131
+  },
+  {
+   "sport": "Rugby Union",
+   "event": "Colomiers v Agen",
+   "competition": "Pro D2 2026-27, round 9",
+   "when": "Thursday 29 October 2026",
+   "venue": "Colomiers",
+   "market": "Match Winner",
+   "selection": "Colomiers to win the match",
+   "line": "-237",
+   "probability": 0.703,
+   "track": "R",
+   "tier": "R",
+   "confidence": "HIGH",
+   "in_band": true,
+   "olbg": "2 of 2 tips (100%)",
+   "text": "This is the most interesting Pro D2 position on the board, because the league table and the points difference tell different stories. Agen sit ninth on 19 points from eight games while Colomiers are twelfth on 13, but Colomiers carry a +8 points difference against Agen's -13 - meaning Colomiers have lost tight games and collected losing bonuses while Agen have been beaten heavily. Agen lost 31-13 at Colomiers in round three before beating Nice 28-24 in round eight; Colomiers lost 28-23 away at Valence-Romans. Our line from the official points difference per game prices Colomiers -237 and Agen +237, and both tips on OLBG agree.",
+   "sources": [
+    [
+     "allrugby.com - official Pro D2 standings and home/away splits",
+     "https://www.allrugby.com/competitions/pro-d2/classement.html"
+    ],
+    [
+     "L'Equipe - official Pro D2 table",
+     "https://www.lequipe.fr/Rugby/pro-d2/page-classement-equipes/general"
+    ],
+    [
+     "French Wikipedia - 2026-27 Pro D2 season",
+     "https://fr.wikipedia.org/wiki/Championnat_de_France_de_rugby_%C3%A0_XV_de_2e_division_2026-2027"
+    ]
+   ],
+   "flag": null,
+   "word_count": 106
+  },
+  {
+   "sport": "Rugby Union",
+   "event": "Biarritz v Valence-Romans",
+   "competition": "Pro D2 2026-27, round 9",
+   "when": "Thursday 29 October 2026",
+   "venue": "Biarritz",
+   "market": "Match Winner",
+   "selection": "Biarritz to win the match",
+   "line": "-161",
+   "probability": 0.618,
+   "track": "R",
+   "tier": "R",
+   "confidence": "HIGH",
+   "in_band": true,
+   "olbg": "1 of 1 tips (100%)",
+   "text": "Biarritz are eighth in the Pro D2 on 20 points from eight games with 244 points for and 236 against, while Valence-Romans sit eleventh on 17 points with 250 for and 243 against. The gap is small on points but Biarritz are the side that has been collecting wins rather than bonuses, and Valence-Romans drew 28-28 with Agen in round eight before beating Soyaux-Angouleme 28-23 in round seven. Our line prices Biarritz -161 and Valence-Romans +161, inside our band and corroborated by the official table. Only a single tip sits on the OLBG market, which keeps the sample thin, but the origination is what carries the grade here.",
+   "sources": [
+    [
+     "L'Equipe - official Pro D2 table",
+     "https://www.lequipe.fr/Rugby/pro-d2/page-classement-equipes/general"
+    ],
+    [
+     "allrugby.com - official Pro D2 standings",
+     "https://www.allrugby.com/competitions/pro-d2/classement.html"
+    ],
+    [
+     "La Depeche - Pro D2 round 8 results and standings",
+     "https://www.ladepeche.fr/2026/10/27/pro-d2-8e-journee-classement-et-resultats-13194806.php"
+    ]
+   ],
+   "flag": null,
+   "word_count": 108
+  },
+  {
+   "sport": "Rugby Union",
+   "event": "Dax v Provence",
+   "competition": "Pro D2 2026-27, round 9",
+   "when": "Thursday 29 October 2026",
+   "venue": "Dax",
+   "market": "Match Winner",
+   "selection": "Provence Rugby to win the match",
+   "line": "-1166",
+   "probability": 0.921,
+   "track": "R",
+   "tier": "R",
+   "confidence": "MEDIUM",
+   "in_band": false,
+   "olbg": "2 of 3 tips on Dax (67%) - we are against the tip flow",
+   "text": "Provence Rugby are unbeaten in the Pro D2 - eight wins from eight, 34 points, 276 points for and 161 against, a +115 differential that is the best in the division by a wide margin, and they beat Beziers 54-3 in round eight. Dax are tenth on 19 points from eight, four wins and four losses, 276 for against 313, and were beaten 49-7 away at Soyaux-Angouleme in the previous round after winning 54-28 against Montauban. Our line prices Provence -1166 and Dax +1166. Two of the three OLBG tips sit with Dax at home, which we flag as a direct contradiction of the official record. The price is far outside our band, so this grades down regardless.",
+   "sources": [
+    [
+     "L'Equipe - official Pro D2 table",
+     "https://www.lequipe.fr/Rugby/pro-d2/page-classement-equipes/general"
+    ],
+    [
+     "allrugby.com - official Pro D2 standings",
+     "https://www.allrugby.com/competitions/pro-d2/classement.html"
+    ],
+    [
+     "French Wikipedia - 2026-27 Pro D2 season",
+     "https://fr.wikipedia.org/wiki/Championnat_de_France_de_rugby_%C3%A0_XV_de_2e_division_2026-2027"
+    ]
+   ],
+   "flag": "OLBG tips Dax 2/3 while the official Pro D2 table has Provence unbeaten at 8-0-0 with +115 and Dax tenth on -37.",
+   "word_count": 118
+  },
+  {
+   "sport": "Rugby Union",
+   "event": "Glasgow Warriors v Lions",
+   "competition": "United Rugby Championship 2026-27, round 6",
+   "when": "Friday 30 October 2026",
+   "venue": "Glasgow",
+   "market": "Match Winner",
+   "selection": "Glasgow Warriors to win the match",
+   "line": "-2610",
+   "probability": 0.963,
+   "track": "R",
+   "tier": "R",
+   "confidence": "MEDIUM",
+   "in_band": false,
+   "olbg": "1 of 1 tips (100%)",
+   "text": "Glasgow Warriors are second in the URC and unbeaten: three wins and a draw from four, 119 points for against 92, +27, 18 points on the board. Their draw came in a 33-33 shootout with Ulster on 3 October. Lions are eleventh on nine points from four, two wins and two losses, 87 for against 133 - a -46 differential, the worst of any side on this page. Our line prices Glasgow -2610 and Lions +2610. The direction is about as clear as rugby union gets, but the price is miles outside the -250 to +10000 band we hold top-grade picks to, so it grades down on price alone.",
+   "sources": [
+    [
+     "Sky Sports - United Rugby Championship table",
+     "https://www.skysports.com/rugby-union/united-rugby-championship/table"
+    ],
+    [
+     "BBC Sport - United Rugby Championship standings",
+     "https://www.bbc.co.uk/sport/rugby-union/tables/united-rugby-championship"
+    ],
+    [
+     "Wikipedia - 2026-27 United Rugby Championship",
+     "https://en.wikipedia.org/wiki/2026%E2%80%9327_United_Rugby_Championship"
+    ]
+   ],
+   "flag": null,
+   "word_count": 109
+  },
+  {
+   "sport": "Handball",
+   "event": "Paris Saint-Germain v Aalborg Handbold",
+   "competition": "EHF Champions League 2026-27, group C, round 6",
+   "when": "Wednesday 28 October 2026",
+   "venue": "Paris",
+   "market": "Money Line",
+   "selection": "Paris Saint-Germain to win the match",
+   "line": "-125",
+   "probability": 0.556,
+   "track": "R",
+   "tier": "R",
+   "confidence": "HIGH",
+   "in_band": true,
+   "olbg": "9 of 14 tips on 'Tie' (64%) - a selection that cannot be backed as a winner",
+   "text": "Aalborg Handbold top group C on nine points from five, four wins, no draws and a loss, with 170 goals for and 145 against. Paris Saint-Germain are second on seven points, three wins, a draw and a loss, with 182 for and 157 against. The two clubs have an identical +25 goal difference across five rounds, so the tiebreak is home court - and this game is in Paris. Our line prices PSG -125 and Aalborg +125 after allowing for the handball draw, which appeared twice in thirty group-phase games across groups A, C and F. This is the tightest handball game of round six and the only one where our price sits inside the band we hold top-grade picks to.",
+   "sources": [
+    [
+     "EHF Champions League - official group C table",
+     "https://www.eurohandball.com/en/ehfcl/men/2026-27/group-phase/group-c/"
+    ],
+    [
+     "EHF - Champions League match centre, round 6",
+     "https://www.eurohandball.com/en/ehfcl/men/2026-27/"
+    ]
+   ],
+   "flag": "OLBG prints 'Tie' as the most-tipped Money Line selection on this and ten other handball events, which cannot be backed on a money line.",
+   "word_count": 121
+  },
+  {
+   "sport": "Handball",
+   "event": "SC Magdeburg v HC Kriens-Luzern",
+   "competition": "EHF Champions League 2026-27, group F, round 6",
+   "when": "Wednesday 28 October 2026, 20:45 CET",
+   "venue": "GETEC Arena, Magdeburg",
+   "market": "Money Line",
+   "selection": "SC Magdeburg to win the match",
+   "line": "-586",
+   "probability": 0.854,
+   "track": "R",
+   "tier": "R",
+   "confidence": "MEDIUM",
+   "in_band": false,
+   "olbg": "9 of 14 tips on 'Tie' (64%)",
+   "text": "Magdeburg are top of group F and unbeaten: five wins from five, 176 goals for against 140, +36, ten points. Kriens-Luzern are third on four points, two wins and three losses, 158 for against 161. The two already met on 17 September in Switzerland, where Magdeburg won 39-29 after leading 20-11 at half-time, and the return leg is at the GETEC Arena in front of Magdeburg's own crowd. Our line prices Magdeburg -586 and Kriens-Luzern +586. The direction is not in question; the price is well outside the -250 to +10000 band, which is the only reason this is not top grade.",
+   "sources": [
+    [
+     "EHF Champions League - official group F table",
+     "https://www.eurohandball.com/en/ehfcl/men/2026-27/group-phase/group-f/"
+    ],
+    [
+     "handball-world.news - Magdeburg vs Kriens-Luzern, 17 September 2026",
+     "https://www.handball-world.news/o.red.r/news-3-2-265-165000.html"
+    ],
+    [
+     "EHF - Champions League match centre, round 6",
+     "https://www.eurohandball.com/en/ehfcl/men/2026-27/"
+    ]
+   ],
+   "flag": "OLBG prints 'Tie' as the most-tipped Money Line selection.",
+   "word_count": 102
+  },
+  {
+   "sport": "Handball",
+   "event": "KS Kielce v Kolstad Handball",
+   "competition": "EHF Champions League 2026-27, group F, round 6",
+   "when": "Wednesday 28 October 2026",
+   "venue": "Kielce",
+   "market": "Money Line",
+   "selection": "KS Kielce to win the match",
+   "line": "-551",
+   "probability": 0.847,
+   "track": "R",
+   "tier": "R",
+   "confidence": "MEDIUM",
+   "in_band": false,
+   "olbg": "7 of 11 tips on 'Tie' (64%)",
+   "text": "Kolstad Handball are bottom of group F and still without a point: five games, five losses, 143 goals for against 178, a -35 differential. KS Kielce are second on six points, three wins and two losses, 155 for against 153 - a +2 differential that is much thinner than their league position suggests, and they lost 27-30 at Magdeburg on 14 October. Our line prices Kielce -551 and Kolstad +551, so the gap we are backing is between a side that has never won in the group and one playing at home. The price is outside our band, so this grades one rung down.",
+   "sources": [
+    [
+     "EHF Champions League - official group F table",
+     "https://www.eurohandball.com/en/ehfcl/men/2026-27/group-phase/group-f/"
+    ],
+    [
+     "EHF - Champions League match centre, round 6",
+     "https://www.eurohandball.com/en/ehfcl/men/2026-27/"
+    ]
+   ],
+   "flag": "OLBG prints 'Tie' as the most-tipped Money Line selection.",
+   "word_count": 104
+  },
+  {
+   "sport": "Handball",
+   "event": "FC Porto v One Veszprém",
+   "competition": "EHF Champions League 2026-27, group A, round 6",
+   "when": "Wednesday 28 October 2026",
+   "venue": "Porto",
+   "market": "Money Line",
+   "selection": "One Veszprém to win the match",
+   "line": "-586",
+   "probability": 0.854,
+   "track": "R",
+   "tier": "R",
+   "confidence": "MEDIUM",
+   "in_band": false,
+   "olbg": "8 of 13 tips on 'Tie' (62%)",
+   "text": "One Veszprém are top of group A and unbeaten: five wins from five, 185 goals for against 146, +39, ten points. FC Porto are third on three points, a win, a draw and three losses, 158 for against 173. The two met a week ago on 21 October at the Veszprém Arena, where Veszprém won 36-28 in front of 5,090 spectators, and Porto's one draw in the group came against RK Partizan, who are bottom on a single point. Our line prices Veszprém -586 and Porto +586 as the away side. Backing a road team is rarely comfortable, but a +39 differential against -15 and an eight-goal win a week earlier is the strongest handball case on the board. The price keeps it out of the top grade.",
+   "sources": [
+    [
+     "EHF Champions League - official group A table",
+     "https://www.eurohandball.com/en/ehfcl/men/2026-27/group-phase/group-a/"
+    ],
+    [
+     "One Veszprém - official club, 21 October 2026 report",
+     "https://www.oneveszprem.hu/en/news/4034"
+    ]
+   ],
+   "flag": "OLBG prints 'Tie' as the most-tipped Money Line selection.",
+   "word_count": 128
+  },
+  {
+   "sport": "Handball",
+   "event": "Füchse Berlin v RK Partizan",
+   "competition": "EHF Champions League 2026-27, group A, round 6",
+   "when": "Wednesday 28 October 2026",
+   "venue": "Berlin",
+   "market": "Money Line",
+   "selection": "Füchse Berlin to win the match",
+   "line": "-746",
+   "probability": 0.882,
+   "track": "R",
+   "tier": "R",
+   "confidence": "MEDIUM",
+   "in_band": false,
+   "olbg": "6 of 14 tips on 'Tie' (43%)",
+   "text": "RK Partizan are bottom of group A with a single point from five games, 148 goals for against 184, a -36 differential, and that point came from a draw against FC Porto. Füchse Berlin are second on six points, three wins and two losses, 184 for against 172. Our line prices Füchse -746 and Partizan +746, which is the widest margin we originate anywhere on the handball board. Note that OLBG files this fixture under the EHF European League while both clubs appear in the official Champions League group tables - a filing error we flag rather than follow. The price is far outside our band, so this grades down.",
+   "sources": [
+    [
+     "EHF Champions League - official group A table",
+     "https://www.eurohandball.com/en/ehfcl/men/2026-27/group-phase/group-a/"
+    ],
+    [
+     "EHF - Champions League match centre",
+     "https://www.eurohandball.com/en/ehfcl/men/2026-27/"
+    ]
+   ],
+   "flag": "OLBG files this fixture under the EHF European League although both clubs appear in the official EHF Champions League group A table. OLBG also prints 'Tie' as the most-tipped Money Line selection.",
+   "word_count": 110
+  },
+  {
+   "sport": "Tennis",
+   "event": "Novak Djokovic v Ugo Humbert",
+   "competition": "ATP Basel (Swiss Indoors), ATP 500, round of 32",
+   "when": "Week of Monday 26 October 2026",
+   "venue": "Basel, Switzerland (indoor hard)",
+   "market": "Match Winner",
+   "selection": "Novak Djokovic to win the match",
+   "line": "-218",
+   "probability": 0.685,
+   "track": "R",
+   "tier": "R",
+   "confidence": "HIGH",
+   "in_band": true,
+   "olbg": "4 of 5 tips (80%)",
+   "text": "Djokovic is making his first appearance in Basel since 2011 and is seeded fourth in a field carrying a EUR 2,584,155 prize pot over a 32-draw. He sits world No. 12 on 3,090 ranking points; Ugo Humbert is No. 35 on 1,420. Djokovic is eleventh in the race to Turin and drops zero points this week, so a deep run in Switzerland is worth more to him than the seeding suggests. Our line is built directly from the official ATP points ratio and prices Djokovic -218 and Humbert +218, inside our band and corroborated by the published draw. Four of the five tips agree.",
+   "sources": [
+    [
+     "ATP Tour - Basel tournament profile",
+     "https://www.atptour.com/en/tournaments/basel/328/overview"
+    ],
+    [
+     "ATP Tour - official entry list and seeds, Basel 2026",
+     "https://www.atptour.com/en/tournaments/basel/328/2026/entry-lists"
+    ],
+    [
+     "ATP Tour - Djokovic scouting report, Basel return",
+     "https://www.atptour.com/en/news/basel-2026-scouting-report"
+    ]
+   ],
+   "flag": null,
+   "word_count": 104
+  },
+  {
+   "sport": "Tennis",
+   "event": "Carlos Alcaraz v Karen Khachanov",
+   "competition": "ATP Vienna (Erste Bank Open), ATP 500, round of 32",
+   "when": "Week of Monday 26 October 2026",
+   "venue": "Vienna, Austria (indoor hard)",
+   "market": "Match Winner",
+   "selection": "Carlos Alcaraz to win the match",
+   "line": "-282",
+   "probability": 0.738,
+   "track": "R",
+   "tier": "R",
+   "confidence": "MEDIUM",
+   "in_band": false,
+   "olbg": "2 of 2 tips on Khachanov (100%) - we are against the tip flow",
+   "text": "Alcaraz is world No. 3 on 5,610 ranking points and seeded second in Vienna, a EUR 2,797,985 event on indoor hard courts across a 32-draw, and he is chasing a fourth tour-level title of 2026 which would give him five consecutive seasons with at least four. Khachanov is No. 25 on 1,990 points and a recent US Open semi-finalist, so this is not a mismatch, but our line from the official points ratio prices Alcaraz -282 and Khachanov +282. OLBG's two tips are both on Khachanov against the world No. 3, which we flag rather than follow. The price is also just outside the band, so this grades down on both counts.",
+   "sources": [
+    [
+     "ATP Tour - Vienna tournament profile",
+     "https://www.atptour.com/en/tournaments/vienna/337/overview"
+    ],
+    [
+     "ATP Tour - official entry list and seeds, Vienna 2026",
+     "https://www.atptour.com/en/tournaments/vienna/337/2026/entry-lists"
+    ],
+    [
+     "BBC Sport - Vienna order of play",
+     "https://www.bbc.co.uk/sport/tennis/articles/c1jn8p8x8vgo"
+    ]
+   ],
+   "flag": "OLBG tips Khachanov 2/2 against the world No. 3 and No. 2 seed.",
+   "word_count": 112
+  },
+  {
+   "sport": "Tennis",
+   "event": "Naomi Osaka v Jasmine Paolini",
+   "competition": "WTA Tokyo (Toray Pan Pacific Open), WTA 500, round of 32",
+   "when": "Week of Monday 26 October 2026",
+   "venue": "Tokyo, Japan (outdoor hard)",
+   "market": "Match Winner",
+   "selection": "Naomi Osaka to win the match",
+   "line": "-233",
+   "probability": 0.7,
+   "track": "T",
+   "tier": "C",
+   "confidence": "MEDIUM",
+   "in_band": true,
+   "olbg": "4 of 4 tips (100%)",
+   "text": "Osaka is seeded seventh in the 28-player singles draw of the Toray Pan Pacific Open, a WTA 500 on outdoor hard courts running from 26 October to 1 November, and opens against Jasmine Paolini in the round of 32. The field around them includes Rybakina, Swiatek, Pegula, Svitolina, Bencic, Muchova, Eala and Leylah Fernandez, so this is a genuinely deep draw and Paolini is not a soft opening opponent. All four tips posted on the OLBG market are with Osaka, and our tip-derived line prices her -233 and Paolini +233. The sample is only four tips, which keeps it out of the top grade despite the price sitting inside our band.",
+   "sources": [
+    [
+     "WTA - Tokyo tournament profile",
+     "https://www.wtatennis.com/tournaments/tokyo"
+    ],
+    [
+     "BBC Sport - Tokyo order of play, women's singles round of 32",
+     "https://www.bbc.co.uk/sport/tennis/articles/c623j0zj8y3o"
+    ],
+    [
+     "Wikipedia - 2026 Toray Pan Pacific Open",
+     "https://en.wikipedia.org/wiki/2026_Toray_Pan_Pacific_Open"
+    ]
+   ],
+   "flag": null,
+   "word_count": 111
+  },
+  {
+   "sport": "Tennis",
+   "event": "Leylah Fernandez v Himeno Sakatsume",
+   "competition": "WTA Tokyo (Toray Pan Pacific Open), WTA 500, round of 32",
+   "when": "Week of Monday 26 October 2026",
+   "venue": "Tokyo, Japan (outdoor hard)",
+   "market": "Match Winner",
+   "selection": "Leylah Fernandez to win the match",
+   "line": "-260",
+   "probability": 0.722,
+   "track": "T",
+   "tier": "B",
+   "confidence": "MEDIUM",
+   "in_band": false,
+   "olbg": "10 of 12 tips (83%)",
+   "text": "Fernandez is one of the headline names in the official 28-player singles draw at the Toray Pan Pacific Open and meets Himeno Sakatsume in the round of 32. This is the deepest tennis sample on the OLBG board this week - twelve tips, of which ten sit with Fernandez - and our tip-derived line prices her -260 and Sakatsume +260. That is one tick outside the -250 to +10000 band we hold top-grade picks to, which is the only thing keeping this down; the twelve-tip sample would otherwise qualify it on its own.",
+   "sources": [
+    [
+     "WTA - Tokyo tournament profile",
+     "https://www.wtatennis.com/tournaments/tokyo"
+    ],
+    [
+     "BBC Sport - Tokyo order of play",
+     "https://www.bbc.co.uk/sport/tennis/articles/c623j0zj8y3o"
+    ],
+    [
+     "OLBG tennis tips board",
+     "https://www.olbg.com/betting-tips/Tennis/15"
+    ]
+   ],
+   "flag": null,
+   "word_count": 93
+  },
+  {
+   "sport": "Tennis",
+   "event": "Stan Wawrinka v Jiri Lehecka",
+   "competition": "ATP Basel (Swiss Indoors), ATP 500, round of 32",
+   "when": "Week of Monday 26 October 2026",
+   "venue": "Basel, Switzerland (indoor hard)",
+   "market": "Match Winner",
+   "selection": "Stan Wawrinka to win the match",
+   "line": "-100",
+   "probability": 0.5,
+   "track": "T",
+   "tier": "B",
+   "confidence": "MEDIUM",
+   "in_band": true,
+   "olbg": "4 of 8 tips (50%)",
+   "text": "This is Wawrinka's farewell appearance in Basel, the Swiss indoor ATP 500 that runs from 26 October to 1 November on a EUR 2,584,155 prize pot, and he meets Jiri Lehecka in the round of 32. The draw around them carries Shelton, Fritz, Fils, Auger-Aliassime, Bublik, Ruud, Fonseca, Hurkacz, Tsitsipas and Rune, so the field is strong even by Basel standards. Tips are split evenly, four of eight each way, and our line prices it at -100 against +100, a genuine pick'em. We publish Wawrinka because that is where half the tips sit and because the price is inside our band, but an even split on eight tips is not a position to grade highly.",
+   "sources": [
+    [
+     "ATP Tour - Basel tournament profile",
+     "https://www.atptour.com/en/tournaments/basel/328/overview"
+    ],
+    [
+     "ATP Tour - Wawrinka farewell Basel scouting report",
+     "https://www.atptour.com/en/news/basel-2026-scouting-report"
+    ],
+    [
+     "OLBG tennis tips board",
+     "https://www.olbg.com/betting-tips/Tennis/15"
+    ]
+   ],
+   "flag": null,
+   "word_count": 115
+  },
+  {
+   "sport": "Volleyball",
+   "event": "Conegliano W v Vallefoglia W",
+   "competition": "Serie A1 femminile 2026-27, round 5 make-up",
+   "when": "Wednesday 28 October 2026, 20:00 local",
+   "venue": "Palaverde, Villorba",
+   "market": "Win Match",
+   "selection": "Conegliano to win the match",
+   "line": "-209",
+   "probability": 0.677,
+   "track": "R",
+   "tier": "R",
+   "confidence": "HIGH",
+   "in_band": true,
+   "olbg": "6 of 10 tips on Vallefoglia (60%) - we are against the tip flow",
+   "text": "Conegliano are four wins from four in Serie A1 with twelve points and, remarkably, twelve sets won to zero: 3-0 over Cuneo on 4 October, 3-0 over Busto Arsizio on 10 October, 3-0 at Chieri on 14 October taking the sets 25-19, 25-14 and 25-22, and 3-0 over Talmassons on 18 October. On Saturday 24 October they added a ninth Supercoppa Italiana, beating Scandicci in the final in Bari. Vallefoglia are also four from four but on eleven points, having needed five sets at Scandicci on 10 October and beating Cuneo 3-0 with a 31-29 third set. Our line prices Conegliano -209 and Vallefoglia +209. OLBG's six of ten tips are on Vallefoglia at home to a side that has not dropped a set all season, which we flag rather than follow.",
+   "sources": [
+    [
+     "LegaVolley Femminile - official Serie A1 results",
+     "https://www.legavolleyfemminile.it/risultati/"
+    ],
+    [
+     "LegaVolley Femminile - official Serie A1 standings",
+     "https://www.legavolleyfemminile.it/classifiche/"
+    ],
+    [
+     "LegaVolley Femminile - Supercoppa Italiana 2026, Bari",
+     "https://www.legavolleyfemminile.it/supercoppa/"
+    ]
+   ],
+   "flag": "OLBG tips Vallefoglia 6/10 away at Conegliano, who are 4-0 and 12-0 in sets and won a ninth Supercoppa Italiana on 24 October 2026.",
+   "word_count": 132
+  },
+  {
+   "sport": "Volleyball",
+   "event": "Marignano W v Bergamo W",
+   "competition": "Serie A1 femminile 2026-27",
+   "when": "Tuesday 27 October 2026",
+   "venue": "San Giovanni in Marignano",
+   "market": "Win Match",
+   "selection": "Bergamo to win the match",
+   "line": "-160",
+   "probability": 0.615,
+   "track": "T",
+   "tier": "C",
+   "confidence": "MEDIUM",
+   "in_band": true,
+   "olbg": "5 of 7 tips (71%)",
+   "text": "Bergamo sit on eight points in the Serie A1 femminile table against San Giovanni in Marignano's three, and the two are meeting in a round where the rest of the league is still settling after the Supercoppa weekend. Bergamo have been competitive at the top end of the table this season, taking Milano to a full contest at home before losing, while Marignano's three points leave them in the bottom half. Five of the seven tips posted on OLBG are with Bergamo and our tip-derived line prices them -160 and Marignano +160. The seven-tip sample keeps it one rung below top grade.",
+   "sources": [
+    [
+     "LegaVolley Femminile - official Serie A1 standings",
+     "https://www.legavolleyfemminile.it/classifiche/"
+    ],
+    [
+     "LegaVolley Femminile - official Serie A1 results",
+     "https://www.legavolleyfemminile.it/risultati/"
+    ],
+    [
+     "OLBG volleyball tips board",
+     "https://www.olbg.com/betting-tips/Volleyball/31"
+    ]
+   ],
+   "flag": null,
+   "word_count": 102
+  },
+  {
+   "sport": "Volleyball",
+   "event": "Ziraat Bankasi v Gaziantep Genclik Spor",
+   "competition": "",
+   "when": "Tuesday 27 October 2026",
+   "venue": "",
+   "market": "Win Match",
+   "selection": "Ziraat Bankasi to win the match",
+   "line": "-233",
+   "probability": 0.7,
+   "track": "T",
+   "tier": "C",
+   "confidence": "LOW",
+   "in_band": true,
+   "olbg": "4 of 4 tips (100%)",
+   "text": "OLBG lists this fixture on the volleyball board with four of four tips behind Ziraat Bankasi, and our tip-derived line prices them -233 and Gaziantep Genclik Spor +233. We could not confirm the competition, the venue or either club's standing from an official source on this date, so those fields are left blank rather than filled in. That is why this pick is graded low: the tip flow is unanimous but there is no independent competitive record behind it to corroborate the direction, and we will not assert league positions we cannot source.",
+   "sources": [
+    [
+     "OLBG volleyball tips board",
+     "https://www.olbg.com/betting-tips/Volleyball/31"
+    ]
+   ],
+   "flag": "Competition and venue could not be confirmed from an official source; both left blank. No league table available to corroborate the tip flow.",
+   "word_count": 93
+  },
+  {
+   "sport": "Volleyball",
+   "event": "Halkbank Ankara v TFL Altekma",
+   "competition": "",
+   "when": "Tuesday 27 October 2026",
+   "venue": "",
+   "market": "Win Match",
+   "selection": "Halkbank Ankara to win the match",
+   "line": "-175",
+   "probability": 0.636,
+   "track": "T",
+   "tier": "C",
+   "confidence": "LOW",
+   "in_band": true,
+   "olbg": "4 of 5 tips (80%)",
+   "text": "Four of the five tips on this OLBG volleyball market sit with Halkbank Ankara, and our tip-derived line prices them -175 against +175 for TFL Altekma. As with several other rows on the volleyball board, we could not confirm the competition name, the venue or either club's current standing from an official source, so those fields stay blank and the pick is graded low. A four-tip sample is thin on its own and, without an independent table to check it against, we will not grade it higher or claim anything about the teams' form.",
+   "sources": [
+    [
+     "OLBG volleyball tips board",
+     "https://www.olbg.com/betting-tips/Volleyball/31"
+    ]
+   ],
+   "flag": "Competition and venue could not be confirmed from an official source; both left blank. No league table available to corroborate the tip flow.",
+   "word_count": 94
+  },
+  {
+   "sport": "Volleyball",
+   "event": "Uni Opole W v Palac Bydgoszcz W",
+   "competition": "",
+   "when": "Tuesday 27 October 2026",
+   "venue": "",
+   "market": "Win Match",
+   "selection": "Uni Opole to win the match",
+   "line": "-140",
+   "probability": 0.583,
+   "track": "T",
+   "tier": "C",
+   "confidence": "LOW",
+   "in_band": true,
+   "olbg": "4 of 6 tips (67%)",
+   "text": "Six tips sit on this volleyball market, four of them with Uni Opole, and our tip-derived line prices them -140 against +140 for Palac Bydgoszcz. We could not confirm the competition, the venue or either club's standing from an official source on this date, so those fields are blank and the pick is graded low. The line is inside our band and the price is the one the tip flow supports, but with no independent record to check the direction against, six tips are all this row has to stand on.",
+   "sources": [
+    [
+     "OLBG volleyball tips board",
+     "https://www.olbg.com/betting-tips/Volleyball/31"
+    ]
+   ],
+   "flag": "Competition and venue could not be confirmed from an official source; both left blank. No league table available to corroborate the tip flow.",
+   "word_count": 91
+  },
+  {
+   "sport": "Golf",
+   "event": "Mexico Open",
+   "competition": "VidantaWorld Mexico Open, PGA TOUR, 29 October - 1 November 2026",
+   "when": "Round 1 Thursday 29 October 2026",
+   "venue": "Vidanta Vallarta, Vallarta, Mexico",
+   "market": "Win Tournament",
+   "selection": "Wyndham Clark to win the tournament",
+   "line": "+481",
+   "probability": 0.172,
+   "track": "R",
+   "tier": "R",
+   "confidence": "HIGH",
+   "in_band": true,
+   "olbg": "1 of 2 tips (50%), joint-most-tipped with Max Homa",
+   "text": "Wyndham Clark is the highest-ranked player in the field at world No. 5 and a U.S. Open champion, and the VidantaWorld Mexico Open is the fifth event of the FedExCup Fall, carrying a $6,000,000 purse, $1,080,000 to the winner and 500 FedExCup Fall points. The field has been cut to 120 players from the usual 132 because of autumn daylight, over a Greg Norman design at par 71 measuring 7,456 yards. Defending champion Brian Campbell returns after winning in 2025 at 264, twenty under, in a playoff over Aldrich Potgieter, and both are in this week's field. Our line, originated from official world rankings across the confirmed 120-man field, prices Clark at +481 - about twenty times the chance an average entrant would carry - and he is the clear shortest price we originate.",
+   "sources": [
+    [
+     "PGA TOUR - VidantaWorld Mexico Open official tournament page",
+     "https://www.pgatour.com/tournament-info/vidanta-world-mexico-open"
+    ],
+    [
+     "PGA TOUR - Mexico Open past results",
+     "https://www.pgatour.com/tournament-info/vidanta-world-mexico-open/past-results"
+    ],
+    [
+     "The Golf News Net - Mexico Open field and world rankings, 25 October 2026",
+     "https://www.thegolfnewsnet.com/content/2026/10/25/2026-vidanta-world-mexico-open-field-world-rankings-entry-list-tee-times-purse-course-history-tv-streaming-info.html"
+    ]
+   ],
+   "flag": null,
+   "word_count": 134
+  },
+  {
+   "sport": "Golf",
+   "event": "Mexico Open",
+   "competition": "VidantaWorld Mexico Open, PGA TOUR, 29 October - 1 November 2026",
+   "when": "Round 1 Thursday 29 October 2026",
+   "venue": "Vidanta Vallarta, Vallarta, Mexico",
+   "market": "Win Tournament",
+   "selection": "Tom Kim to win the tournament",
+   "line": "+3504",
+   "probability": 0.028,
+   "track": "R",
+   "tier": "R",
+   "confidence": "MEDIUM",
+   "in_band": true,
+   "olbg": "no tips published for this runner",
+   "text": "Tom Kim is world No. 31, the third-highest ranked entrant in a 120-man field behind Wyndham Clark and Ben Griffin, and returns to PGA TOUR action for the first time since winning a gold medal at the Asian Games in Japan, a result that exempted him from South Korea's mandatory military service. The VidantaWorld Mexico Open offers $6,000,000 with $1,080,000 to the winner and 500 FedExCup Fall points, played over a par-71 Greg Norman course at 7,456 yards. Our line from the official world-ranking weights prices Kim at +3504, inside our band. We grade it down because the price implies a slim outright chance and because there is no OLBG tip flow on this runner to corroborate.",
+   "sources": [
+    [
+     "PGA TOUR - VidantaWorld Mexico Open official tournament page",
+     "https://www.pgatour.com/tournament-info/vidanta-world-mexico-open"
+    ],
+    [
+     "The Golf News Net - Mexico Open field and world rankings, 25 October 2026",
+     "https://www.thegolfnewsnet.com/content/2026-10-25/2026-vidanta-world-mexico-open-field-world-rankings-entry-list-tee-times-purse-course-history-tv-streaming-info.html"
+    ]
+   ],
+   "flag": null,
+   "word_count": 117
+  },
+  {
+   "sport": "Golf",
+   "event": "Mexico Open",
+   "competition": "VidantaWorld Mexico Open, PGA TOUR, 29 October - 1 November 2026",
+   "when": "Round 1 Thursday 29 October 2026",
+   "venue": "Vidanta Vallarta, Vallarta, Mexico",
+   "market": "Win Tournament",
+   "selection": "Max Homa to win the tournament",
+   "line": "+8734",
+   "probability": 0.011,
+   "track": "R",
+   "tier": "R",
+   "confidence": "MEDIUM",
+   "in_band": true,
+   "olbg": "1 of 2 tips (50%), joint-most-tipped with Wyndham Clark",
+   "text": "Max Homa is joint-most-tipped with Wyndham Clark on the OLBG golf board, one of two tips, but he is world No. 76 - the twelfth-highest ranked entrant in a field that includes Clark at No. 5, Ben Griffin at No. 28 and Tom Kim at No. 31. The VidantaWorld Mexico Open carries a $6,000,000 purse and 500 FedExCup Fall points over a par-71, 7,456-yard Greg Norman layout at Vidanta Vallarta. Our line from official world rankings prices Homa at +8734, which is inside the band but nearly eighteen times longer than the price we originate for Clark. We publish both because OLBG's tip flow does, but the ranking gap is why this grades down.",
+   "sources": [
+    [
+     "PGA TOUR - VidantaWorld Mexico Open official tournament page",
+     "https://www.pgatour.com/tournament-info/vidanta-world-mexico-open"
+    ],
+    [
+     "The Golf News Net - Mexico Open field and world rankings, 25 October 2026",
+     "https://www.thegolfnewsnet.com/content/2026-10-25/2026-vidanta-world-mexico-open-field-world-rankings-entry-list-tee-times-purse-course-history-tv-streaming-info.html"
+    ]
+   ],
+   "flag": null,
+   "word_count": 114
+  },
+  {
+   "sport": "Golf",
+   "event": "Maybank Championship",
+   "competition": "Maybank Championship, LPGA Tour, 29 October - 1 November 2026",
+   "when": "Round 1 Thursday 29 October 2026",
+   "venue": "Kuala Lumpur Golf & Country Club (West Course), Malaysia",
+   "market": "Win Tournament",
+   "selection": "Lottie Woad to win the tournament",
+   "line": "",
+   "probability": null,
+   "track": "T",
+   "tier": "D",
+   "confidence": "LOW",
+   "in_band": false,
+   "olbg": "1 of 2 tips (50%)",
+   "text": "The Maybank Championship is an LPGA Tour event, not a men's DP World Tour event as OLBG files it, and runs from 29 October to 1 November at the Kuala Lumpur Golf & Country Club West Course with a $3,000,000 purse and $450,000 to the winner. It is a 72-hole, limited-field, no-cut tournament over a par-72 layout measuring 6,246 yards. Defending champion Miyu Yamashita returns after winning in 2025 in a three-way playoff for her second career title, and the confirmed entries include Lottie Woad, Charley Hull, Jeeno Thitikul, Ruoning Yin, Celine Boutier, Akie Iwai and Chisato Iwai. We leave our own price blank because the field size is not confirmed from an official source and there is no fair number to originate one from.",
+   "sources": [
+    [
+     "LPGA - Maybank Championship official tournament page",
+     "https://www.lpga.com/tournaments/2026-maybank-championship"
+    ],
+    [
+     "LPGA - Maybank Championship past results",
+     "https://www.lpga.com/tournaments/2026-maybank-championship/past-results"
+    ]
+   ],
+   "flag": "OLBG files the Maybank Championship under the DP World Tour although it is an LPGA Tour event. Field size not confirmed from an official source, so our price is left blank.",
+   "word_count": 125
+  },
+  {
+   "sport": "Golf",
+   "event": "Simmons Bank Championship",
+   "competition": "Simmons Bank Championship, PGA TOUR Champions, 2026",
+   "when": "",
+   "venue": "",
+   "market": "Win Tournament",
+   "selection": "Stewart Cink to win the tournament",
+   "line": "",
+   "probability": null,
+   "track": "T",
+   "tier": "D",
+   "confidence": "LOW",
+   "in_band": false,
+   "olbg": "1 of 2 tips (50%)",
+   "text": "Stewart Cink carries one of the two tips on this OLBG golf outright, but we could not confirm the tournament venue, the dates or the field from an official source on this date, so those fields are left blank rather than guessed at. The Simmons Bank Championship is a PGA TOUR Champions event and the tip flow is the only thing behind this row. Without a confirmed field size there is no honest way to originate a fair price, so we publish no price at all and grade the pick low. We will not assert a venue, a date or a chance for a tournament we cannot source.",
+   "sources": [
+    [
+     "PGA TOUR Champions - official tournament schedule",
+     "https://www.pgatour.com/champions/schedule"
+    ],
+    [
+     "OLBG golf tips board",
+     "https://www.olbg.com/betting-tips/Golf/4"
+    ]
+   ],
+   "flag": "Venue, dates and field could not be confirmed from an official source; all left blank and no price originated.",
+   "word_count": 108
+  },
+  {
+   "sport": "Darts",
+   "event": "PDC World Championship 2027",
+   "competition": "PDC World Darts Championship 2027, Alexandra Palace",
+   "when": "Settles January 2027",
+   "venue": "Alexandra Palace, London",
+   "market": "Win Tournament",
+   "selection": "Luke Littler to win the tournament",
+   "line": "-111",
+   "probability": 0.525,
+   "track": "T",
+   "tier": "A",
+   "confidence": "HIGH",
+   "in_band": true,
+   "olbg": "22 of 36 tips (61%)",
+   "text": "Littler is PDC world No. 1 on £3,141,000 of ranking money, roughly three times the £1,058,250 carried by second-placed Gian van Veen, and he is the two-time defending champion. In the 2026 final at Alexandra Palace he beat van Veen 7-1 in just over 43 minutes, averaging 106.02 against 99.94 with 16 maximums and 46 per cent of his attempts at double, becoming the first million-pound world champion and only the fourth man to retain the Sid Waddell Trophy after Phil Taylor, Adrian Lewis and Gary Anderson. He has since collected six major ranking titles in a calendar year - the World Championship, World Masters, UK Open, World Matchplay, Premier League and Grand Slam - plus the World Cup with England. In the provisional qualifying race for 2027 seeding he holds £2,859.5k against van Veen's £941.25k, a lead approaching two million pounds. Twenty-two of the 36 tips on OLBG sit with him and our price is -111, the deepest outright sample on the board.",
+   "sources": [
+    [
+     "PDC - official Order of Merit and world rankings",
+     "https://www.pdc.tv/rankings"
+    ],
+    [
+     "PDC - Littler retains the World Darts Championship title",
+     "https://www.pdc.tv/news/2026-01-03/astounding-littler-retains-paddy-power-world-darts-championship-title"
+    ],
+    [
+     "BBC Sport - Littler beats van Veen 7-1 in the 2026 final",
+     "https://www.bbc.com/sport/darts/articles/cq5y28xg5z7o"
+    ],
+    [
+     "2027 World Championship qualifying race",
+     "https://dartsnews.com/pdc/2027-world-darts-championship-qualifying-race-littler-firmly-on-top-concerns-for-van-gerwen-and-van-barneveld"
+    ]
+   ],
+   "flag": null,
+   "word_count": 164
+  },
+  {
+   "sport": "Darts",
+   "event": "Players Championship 31",
+   "competition": "PDC Pro Tour 2026, Players Championship 31 of 34",
+   "when": "Wednesday 28 October 2026",
+   "venue": "Maaspoort, Den Bosch, Netherlands",
+   "market": "Win Tournament",
+   "selection": "Wessel Nijman to win the event",
+   "line": "+550",
+   "probability": 0.154,
+   "track": "T",
+   "tier": "B",
+   "confidence": "MEDIUM",
+   "in_band": true,
+   "olbg": "2 of 8 tips (25%) - four-way tie for most-tipped",
+   "text": "Nijman tops the Players Championship Order of Merit on £150,250 after 29 events and is thirteenth on the main PDC Order of Merit at £577,250. He has won six Players Championship titles this year - beating Gerwyn Price 8-7 in event two, Joe Cullen 8-4 in event eight, Scott Waites 8-2 in event ten, Jermaine Wattimena 8-5 in event twelve, Max Hopp 8-1 in event fourteen and Ryan Searle 8-6 in event twenty-one - the first player to six floor titles in a calendar year since Michael van Gerwen managed it in 2012. This week's event is the 31st of 34, carrying a £150,000 prize fund with £15,000 to the winner, played best of 11 legs through to the semi-finals, 13 in the semis and 15 in the final. Our tip-derived price is +550, well inside the band, but only two of eight tips sit with him and OLBG's own listing page disagrees with its event page about which player is most tipped.",
+   "sources": [
+    [
+     "2026 PDC Players Championship series",
+     "https://en.wikipedia.org/wiki/2026_PDC_Pro_Tour"
+    ],
+    [
+     "Wessel Nijman - 2026 titles",
+     "https://en.wikipedia.org/wiki/Wessel_Nijman"
+    ],
+    [
+     "Nijman's sixth strike, Den Bosch",
+     "https://www.dartn.de/news/players-championship-nijman-mit-dem-sechsten-streich/"
+    ],
+    [
+     "Players Championship Order of Merit after event 29",
+     "https://dartsnews.com/pdc/nathan-aspinall-still-faces-minehead-fight-despite-den-bosch-run-as-gary-anderson-hangs-on-in-players-championship-order-of-merit"
+    ]
+   ],
+   "flag": "OLBG's Darts listing page names Nathan Aspinall as the most popular Players Championship 31 selection; the event page names Wessel Nijman. Both print at 2/8, a four-way tie.",
+   "word_count": 163
+  },
+  {
+   "sport": "Darts",
+   "event": "Players Championship 31",
+   "competition": "PDC Pro Tour 2026, Players Championship 31 of 34",
+   "when": "Wednesday 28 October 2026",
+   "venue": "Maaspoort, Den Bosch, Netherlands",
+   "market": "Win Tournament",
+   "selection": "Kevin Doets to win the event",
+   "line": "+550",
+   "probability": 0.154,
+   "track": "T",
+   "tier": "B",
+   "confidence": "MEDIUM",
+   "in_band": true,
+   "olbg": "2 of 8 tips (25%) - four-way tie for most-tipped",
+   "text": "Doets is second on the Players Championship Order of Merit on £106,250, behind only Wessel Nijman, and ahead of Chris Dobey on £102,500, Luke Woodhouse on £88,000, Andrew Gilding on £79,500 and Jermaine Wattimena on £79,250 - all of whom are in this week's field at Maaspoort. The top 64 on that Order of Merit qualify for the Players Championship Finals in November, so Den Bosch is a points-and-money week for a player already comfortably inside the cut. Michael van Gerwen sits 34th on £43,750 and is one of the names he will pass through. Our tip-derived price is +550 against a field we count at 40 qualifiers, with two of eight tips behind him.",
+   "sources": [
+    [
+     "2026 PDC Players Championship series",
+     "https://en.wikipedia.org/wiki/2026_PDC_Pro_Tour"
+    ],
+    [
+     "Players Championship Order of Merit after event 29",
+     "https://dartsnews.com/pdc/nathan-aspinall-still-faces-minehead-fight-despite-den-bosch-run-as-gary-anderson-hangs-on-in-players-championship-order-of-merit"
+    ],
+    [
+     "Nijman's sixth strike, Den Bosch - prize fund and format",
+     "https://www.dartn.de/news/players-championship-nijman-mit-dem-sechsten-streich/"
+    ]
+   ],
+   "flag": null,
+   "word_count": 115
+  },
+  {
+   "sport": "Darts",
+   "event": "Players Championship 31",
+   "competition": "PDC Pro Tour 2026, Players Championship 31 of 34",
+   "when": "Wednesday 28 October 2026",
+   "venue": "Maaspoort, Den Bosch, Netherlands",
+   "market": "Win Tournament",
+   "selection": "Gian van Veen to win the event",
+   "line": "+1118",
+   "probability": 0.082,
+   "track": "T",
+   "tier": "B",
+   "confidence": "MEDIUM",
+   "in_band": true,
+   "olbg": "1 of 8 tips (13%)",
+   "text": "Van Veen is PDC world No. 2 on £1,058,250, the closest man to Luke Littler in the rankings and the runner-up in the 2026 World Championship final that Littler took 7-1 at Alexandra Palace. That final is the reason we treat him as the strongest outsider in this week's field: a player who reaches the final of the biggest event on the calendar is not one to dismiss on the floor, and the £15,000 first prize at Den Bosch is worth having in the provisional race for 2027 seeding, where van Veen sits on £941.25k behind Littler's £2,859.5k. Only one of eight tips is with him, so our tip-derived price of +1118 is long - but it is inside the band and the ranking behind it is official.",
+   "sources": [
+    [
+     "PDC - official Order of Merit and world rankings",
+     "https://www.pdc.tv/rankings"
+    ],
+    [
+     "PDC - Littler beats van Veen in the 2026 final",
+     "https://www.pdc.tv/news/2026-01-03/astounding-littler-retains-paddy-power-world-darts-championship-title"
+    ],
+    [
+     "2027 World Championship qualifying race",
+     "https://dartsnews.com/pdc/2027-world-darts-championship-qualifying-race-littler-firmly-on-top-concerns-for-van-gerwen-and-van-barneveld"
+    ]
+   ],
+   "flag": null,
+   "word_count": 128
+  },
+  {
+   "sport": "Darts",
+   "event": "Players Championship 31",
+   "competition": "PDC Pro Tour 2026, Players Championship 31 of 34",
+   "when": "Wednesday 28 October 2026",
+   "venue": "Maaspoort, Den Bosch, Netherlands",
+   "market": "Win Tournament",
+   "selection": "Nathan Aspinall to win the event",
+   "line": "+550",
+   "probability": 0.154,
+   "track": "T",
+   "tier": "B",
+   "confidence": "MEDIUM",
+   "in_band": true,
+   "olbg": "2 of 8 tips (25%) - named most popular on the OLBG listing page",
+   "text": "Aspinall carries two of the eight tips on this event and is the player OLBG's Darts listing page names as the most popular selection, although the event page itself prints Nijman in that slot - a contradiction we flag rather than resolve. The competitive context is that Aspinall is still working to secure his place at the Players Championship Finals in Minehead, where the top 64 on the floor Order of Merit qualify, and a run in Den Bosch is worth a great deal to him for exactly that reason. The event carries a £150,000 prize fund with £15,000 to the winner. Our tip-derived price is +550, inside the band.",
+   "sources": [
+    [
+     "Aspinall still faces a Minehead fight despite his Den Bosch run",
+     "https://dartsnews.com/pdc/nathan-aspinall-still-faces-minehead-fight-despite-den-bosch-run-as-gary-anderson-hangs-on-in-players-championship-order-of-merit"
+    ],
+    [
+     "2026 PDC Players Championship series",
+     "https://en.wikipedia.org/wiki/2026_PDC_Pro_Tour"
+    ]
+   ],
+   "flag": "OLBG's Darts listing page names Aspinall as the most popular Players Championship 31 selection; the event page names Nijman.",
+   "word_count": 110
+  },
+  {
+   "sport": "Baseball",
+   "event": "Milwaukee Brewers @ Tampa Bay Rays",
+   "competition": "2026 World Series, Game 4",
+   "when": "Tuesday 27 October 2026, 8:00pm ET",
+   "venue": "Tropicana Field, St Petersburg",
+   "market": "Money Line",
+   "selection": "Milwaukee Brewers to win the game",
+   "line": "-167",
+   "probability": 0.625,
+   "track": "T",
+   "tier": "D",
+   "confidence": "MEDIUM",
+   "in_band": true,
+   "olbg": "2 of 2 tips (100%)",
+   "text": "Milwaukee lead the best-of-seven 3-0 and are one win from the title: Game 1 on Friday 23 October 3-2, Game 2 on Saturday 24 October 5-4, Game 3 on Monday 26 October 10-1. The Brewers finished the regular season 103-59 against Tampa Bay's 98-64 and hold home-field advantage, although the Rays host Games 3, 4 and 5 at Tropicana Field. Tampa won the American League pennant by beating the Cleveland Guardians in ALCS Game 6 behind a Junior Caminero home run, and this is their first World Series since 2020 and only their third in franchise history after losing the 2008 final to Philadelphia. Both tips on the OLBG money line are with Milwaukee and our tip-derived price is -167. The sample is only two tips, which is what keeps this out of the top grade.",
+   "sources": [
+    [
+     "MLB.com - 2026 playoff and World Series schedule and scores",
+     "https://www.mlb.com/news/2026-mlb-playoff-and-world-series-schedule"
+    ],
+    [
+     "MLB.com - 2026 World Series FAQ",
+     "https://www.mlb.com/news/2026-mlb-world-series-faq-schedule-times-teams-and-more"
+    ],
+    [
+     "CBS Sports - Rays win the AL pennant",
+     "https://www.cbssports.com/mlb/news/2026-mlb-playoff-bracket-schedule-scores-results-how-to-watch/"
+    ]
+   ],
+   "flag": "OLBG prints this game at 'Today 21:00' while MLB.com and FOX both print 8:00 p.m. ET.",
+   "word_count": 136
+  },
+  {
+   "sport": "Baseball",
+   "event": "Milwaukee Brewers @ Tampa Bay Rays",
+   "competition": "2026 World Series, Game 4",
+   "when": "Tuesday 27 October 2026, 8:00pm ET",
+   "venue": "Tropicana Field, St Petersburg",
+   "market": "Run Line",
+   "selection": "Milwaukee Brewers -1.50",
+   "line": "-133",
+   "probability": 0.571,
+   "track": "T",
+   "tier": "D",
+   "confidence": "MEDIUM",
+   "in_band": true,
+   "olbg": "1 of 1 tips (100%)",
+   "text": "Milwaukee need to win by two or more runs for the -1.50 run line to land, and the official scores of this series show how narrow that ask has been. Game 1 finished 3-2, Game 2 5-4 - both one-run games that would have lost on this line - and only Game 3, 10-1, covered it comfortably. So the run line has cashed once in three while the money line has cashed three times. We still publish the Brewers at -1.50 because that is the only tip on the OLBG run line market and our tip-derived price is -133, but the three-game pattern is a real warning and we say so rather than hide it.",
+   "sources": [
+    [
+     "MLB.com - 2026 playoff and World Series schedule and scores",
+     "https://www.mlb.com/news/2026-mlb-playoff-and-world-series-schedule"
+    ],
+    [
+     "ESPN - 2026 MLB playoff schedule and results",
+     "https://www.espn.com/mlb/story/_/id/50022544/2026-mlb-playoffs-schedule-how-watch-postseason-world-series-bracket-standings"
+    ]
+   ],
+   "flag": null,
+   "word_count": 115
+  },
+  {
+   "sport": "Baseball",
+   "event": "Milwaukee Brewers @ Tampa Bay Rays",
+   "competition": "2026 World Series, Game 4",
+   "when": "Tuesday 27 October 2026, 8:00pm ET",
+   "venue": "Tropicana Field, St Petersburg",
+   "market": "Run Line",
+   "selection": "Tampa Bay Rays +1.50",
+   "line": "+167",
+   "probability": 0.375,
+   "track": "T",
+   "tier": "D",
+   "confidence": "MEDIUM",
+   "in_band": true,
+   "olbg": "0 of 1 tips (0%) - we are against the single tip posted",
+   "text": "The Rays are 3-0 down but two of the three games they have lost went to the final margin: 3-2 on Friday and 5-4 on Saturday, both of which would have paid out on a +1.50 run line, with only Monday's 10-1 defeat losing on it. Tampa have been inside every game they have played except the third, and Game 4 is at Tropicana Field where they host Games 3, 4 and 5. Our tip-derived price from the single tip posted on the OLBG market is +167 - the one baseball line on this board that goes against the tip flow, because that flow has no tips on the Rays at all. Two of three games covering is a thin sample and we grade accordingly.",
+   "sources": [
+    [
+     "MLB.com - 2026 playoff and World Series schedule and scores",
+     "https://www.mlb.com/news/2026-mlb-playoff-and-world-series-schedule"
+    ],
+    [
+     "MLB.com - 2026 World Series FAQ",
+     "https://www.mlb.com/news/2026-mlb-world-series-faq-schedule-times-teams-and-more"
+    ]
+   ],
+   "flag": null,
+   "word_count": 125
+  },
+  {
+   "sport": "Baseball",
+   "event": "Milwaukee Brewers @ Tampa Bay Rays",
+   "competition": "2026 World Series, Game 4",
+   "when": "Tuesday 27 October 2026, 8:00pm ET",
+   "venue": "Tropicana Field, St Petersburg",
+   "market": "Game Totals",
+   "selection": "Over 7.50 runs",
+   "line": "-137",
+   "probability": 0.578,
+   "track": "R",
+   "tier": "R",
+   "confidence": "MEDIUM",
+   "in_band": true,
+   "olbg": "0 of 0 tips - the line is printed but nobody has tipped either side",
+   "text": "OLBG prints a 7.50 game total for this match with no tips on either side, so we originated the number ourselves from the official scores of the three games already played. Those totals were 5 runs, 9 runs and 11 runs, an average of 8.33, and two of the three cleared 7.50. Treating the run total as Poisson at the observed series mean puts the chance of eight or more runs at about 0.578, which prices Over 7.50 at -137 and Under at +137. Three games is a very small sample and Monday's 10-1 blowout does a lot of the work, so this is graded down - but it is a number we can show the working for, rather than a price taken on faith.",
+   "sources": [
+    [
+     "MLB.com - 2026 playoff and World Series schedule and scores",
+     "https://www.mlb.com/news/2026-mlb-playoff-and-world-series-schedule"
+    ],
+    [
+     "ESPN - 2026 MLB playoff schedule and results",
+     "https://www.espn.com/mlb/story/_/id/50022544/2026-mlb-playoffs-schedule-how-watch-postseason-world-series-bracket-standings"
+    ]
+   ],
+   "flag": null,
+   "word_count": 125
+  },
+  {
+   "sport": "Baseball",
+   "event": "Milwaukee Brewers to win the 2026 World Series",
+   "competition": "2026 World Series, series outcome",
+   "when": "Series concludes no later than Saturday 1 November 2026",
+   "venue": "Tropicana Field / American Family Field",
+   "market": "Win Series",
+   "selection": "Milwaukee Brewers to win the World Series",
+   "line": "-4900",
+   "probability": 0.98,
+   "track": "R",
+   "tier": "R",
+   "confidence": "MEDIUM",
+   "in_band": false,
+   "olbg": "no market published on OLBG for the series outcome",
+   "text": "This is a line we originated ourselves because OLBG publishes no market for the series outcome, only for Game 4. Milwaukee lead 3-0 and need one more win from up to four remaining games, while Tampa Bay need to win all four. Taking our own Game 4 money line of -167, which implies a 0.625 chance for Milwaukee, the chance of Tampa winning four in a row is 0.375 to the power of four, or about 0.020 - leaving Milwaukee at 0.980 and -4900. The Brewers finished 103-59 to Tampa's 98-64 and have outscored them 18-7 across the three games played. The price is far outside the band we hold top-grade picks to, which is why this grades down despite the series being all but decided.",
+   "sources": [
+    [
+     "MLB.com - 2026 World Series FAQ",
+     "https://www.mlb.com/news/2026-mlb-world-series-faq-schedule-times-teams-and-more"
+    ],
+    [
+     "MLB.com - 2026 playoff and World Series schedule and scores",
+     "https://www.mlb.com/news/2026-mlb-playoff-and-world-series-schedule"
+    ]
+   ],
+   "flag": "OLBG publishes no series-outcome market for the World Series; this line is originated from our own Game 4 money line.",
+   "word_count": 126
+  },
+  {
+   "sport": "Motor Racing",
+   "event": "Mexico City Grand Prix",
+   "competition": "2026 FIA Formula One World Championship, round of Sunday 1 November 2026",
+   "when": "Sunday 1 November 2026",
+   "venue": "Autodromo Hermanos Rodriguez, Mexico City",
+   "market": "Podium Finish",
+   "selection": "Max Verstappen - Podium Finish: Yes",
+   "line": "-125",
+   "probability": 0.556,
+   "track": "R",
+   "tier": "R",
+   "confidence": "HIGH",
+   "in_band": true,
+   "olbg": "1 of 2 tips (50%)",
+   "text": "Verstappen has taken ten podiums across the eighteen rounds of the 2026 season completed so far, and at the United States Grand Prix in Austin on 25 October he finished third, 17.485 seconds behind winner Kimi Antonelli, to take 15 points and sit fourth in the championship on 236. Ten podiums from eighteen starts is 0.556, which is exactly the base rate our line is built on, and it prices Verstappen to finish on the podium in Mexico City at -125 and No at +125. The race is a 71-lap event around a 4.3-kilometre circuit. This is the only motor-racing market on the board where our price, our base rate and OLBG's tip all point the same way and sit inside the band.",
+   "sources": [
+    [
+     "Formula One - official 2026 Drivers' Standings",
+     "https://www.formula1.com/en/results/2026/drivers"
+    ],
+    [
+     "Formula One - official United States Grand Prix result, Austin, 25 October 2026",
+     "https://www.formula1.com/en/latest/article/antonelli-surges-to-dominant-victory-in-united-states-grand-prix-ahead-of-leclerc-and-verstappen.6kmBQv9FNTW7LzkDj8S34j"
+    ],
+    [
+     "BBC Sport - 2026 Formula 1 standings",
+     "https://www.bbc.com/sport/formula1/standings"
+    ]
+   ],
+   "flag": null,
+   "word_count": 123
+  },
+  {
+   "sport": "Motor Racing",
+   "event": "2026 Drivers' Championship without Kimi Antonelli",
+   "competition": "2026 FIA Formula One World Championship",
+   "when": "Season concludes 6 December 2026",
+   "venue": "Five rounds remaining",
+   "market": "Win Tournament",
+   "selection": "George Russell to win the Drivers' Championship without Kimi Antonelli",
+   "line": "+198",
+   "probability": 0.336,
+   "track": "R",
+   "tier": "R",
+   "confidence": "HIGH",
+   "in_band": true,
+   "olbg": "4 of 7 tips on Max Verstappen (57%) - we are against the tip flow",
+   "text": "Antonelli leads the championship on 365 points with nine wins, and a finish of ninth or better at the Autodromo Hermanos Rodriguez takes the title. Behind him the race is tight: George Russell is second on 242, Lewis Hamilton third on 241, Max Verstappen fourth on 236, Charles Leclerc fifth on 233 and Lando Norris sixth on 211. With 125 points still available across the final five rounds, Russell leads the non-Antonelli contenders by a single point and we weight each of them by the gap he has to close, treating 25 points - one Grand Prix win - as the unit. That prices Russell +198, Hamilton +227, Verstappen +418, Leclerc +583 and Norris +5081. OLBG has four of seven tips on Verstappen, who is six points behind Russell, which we flag rather than follow. Oscar Piastri on 144 and Isack Hadjar on 105 are more than two wins back and are left out of the price.",
+   "sources": [
+    [
+     "Formula One - official 2026 Drivers' Standings",
+     "https://www.formula1.com/en/results/2026/drivers"
+    ],
+    [
+     "BBC Sport - Antonelli needs ninth or better to take the title",
+     "https://www.bbc.com/sport/formula1/live/c87w8r725y8t"
+    ],
+    [
+     "BBC Sport - 2026 Formula 1 standings",
+     "https://www.bbc.com/sport/formula1/standings"
+    ]
+   ],
+   "flag": "OLBG tips Verstappen 4/7 to win without Antonelli, although the official standings put him six points behind Russell. Piastri and Hadjar are excluded as more than two race wins adrift.",
+   "word_count": 157
+  },
+  {
+   "sport": "Motor Racing",
+   "event": "Mexico City Grand Prix",
+   "competition": "2026 FIA Formula One World Championship, round of Sunday 1 November 2026",
+   "when": "Sunday 1 November 2026",
+   "venue": "Autodromo Hermanos Rodriguez, Mexico City",
+   "market": "Podium Finish",
+   "selection": "Kimi Antonelli - Podium Finish: Yes",
+   "line": "-500",
+   "probability": 0.833,
+   "track": "R",
+   "tier": "R",
+   "confidence": "MEDIUM",
+   "in_band": false,
+   "olbg": "0 of 2 tips (0%) - nobody has tipped the championship leader",
+   "text": "Antonelli has fifteen podiums from eighteen rounds, nine wins, and leads the championship on 365 points, and he won at Austin on 25 October in 1:35:16.650. Fifteen out of eighteen is 0.833, which prices him to finish on the podium again at -500 - a number outside the band we hold top-grade picks to, and the only reason this grades down. The striking thing is that both tips posted on OLBG's podium market are against him: Antonelli Yes carries zero of two, while Verstappen and Leclerc each carry one of two. The championship leader, who would clinch the title with a ninth place here, is the one runner nobody on the site has tipped, and that is flagged.",
+   "sources": [
+    [
+     "Formula One - official 2026 Drivers' Standings",
+     "https://www.formula1.com/en/results/2026/drivers"
+    ],
+    [
+     "Formula One - official United States Grand Prix result, Austin",
+     "https://www.formula1.com/en/latest/article/antonelli-surges-to-dominant-victory-in-united-states-grand-prix-ahead-of-leclerc-and-verstappen.6kmBQv9FNTW7LzkDj8S34j"
+    ],
+    [
+     "BBC Sport - 2026 Formula 1 standings",
+     "https://www.bbc.com/sport/formula1/standings"
+    ]
+   ],
+   "flag": "OLBG's podium market carries 0/2 tips on Antonelli Yes although he leads the championship with 15 podiums in 18 rounds.",
+   "word_count": 118
+  },
+  {
+   "sport": "Motor Racing",
+   "event": "Mexico City Grand Prix",
+   "competition": "2026 FIA Formula One World Championship, round of Sunday 1 November 2026",
+   "when": "Sunday 1 November 2026",
+   "venue": "Autodromo Hermanos Rodriguez, Mexico City",
+   "market": "Podium Finish",
+   "selection": "Charles Leclerc - Podium Finish: Yes",
+   "line": "+200",
+   "probability": 0.333,
+   "track": "R",
+   "tier": "R",
+   "confidence": "MEDIUM",
+   "in_band": true,
+   "olbg": "1 of 2 tips (50%)",
+   "text": "Leclerc has six podiums from the eighteen rounds completed this season and sits fifth in the championship on 233 points. He took one of them at Austin on 25 October, finishing second, 13.078 seconds behind Antonelli and ahead of Verstappen and Hamilton, so he arrives in Mexico City off a genuine front-row result rather than a distant points finish. Six from eighteen is 0.333, which prices him at +200 to finish on the podium again and -100 not to. Our price is inside the band and one of the two tips OLBG carries on this market is with him, but a third-of-the-time base rate is not enough to grade highly.",
+   "sources": [
+    [
+     "Formula One - official United States Grand Prix result, Austin",
+     "https://www.formula1.com/en/latest/article/antonelli-surges-to-dominant-victory-in-united-states-grand-prix-ahead-of-leclerc-and-verstappen.6kmBQv9FNTW7LzkDj8S34j"
+    ],
+    [
+     "Formula One - official 2026 Drivers' Standings",
+     "https://www.formula1.com/en/results/2026/drivers"
+    ],
+    [
+     "BBC Sport - 2026 Formula 1 standings",
+     "https://www.bbc.com/sport/formula1/standings"
+    ]
+   ],
+   "flag": null,
+   "word_count": 110
+  },
+  {
+   "sport": "Motor Racing",
+   "event": "2026 Drivers' Championship without Kimi Antonelli",
+   "competition": "2026 FIA Formula One World Championship",
+   "when": "Season concludes 6 December 2026",
+   "venue": "Five rounds remaining",
+   "market": "Win Tournament",
+   "selection": "Lewis Hamilton to win the Drivers' Championship without Kimi Antonelli",
+   "line": "+227",
+   "probability": 0.306,
+   "track": "R",
+   "tier": "R",
+   "confidence": "MEDIUM",
+   "in_band": true,
+   "olbg": "no tips published for this runner",
+   "text": "Hamilton is third in the championship on 241 points, a single point behind team-mate George Russell and six clear of Max Verstappen, and he has taken six podiums this season. At Austin on 25 October he finished fourth, 18.515 seconds behind winner Kimi Antonelli and half a second adrift of Verstappen, which is the sort of margin that keeps a title race alive with five rounds and 125 points still to play for. Our own weighting of the gap each contender has to close prices Hamilton at +227 to take the title without Antonelli, inside the band, against Russell's +198. No tips are posted on him, and a one-point deficit to his team-mate is why this grades down rather than up.",
+   "sources": [
+    [
+     "Formula One - official 2026 Drivers' Standings",
+     "https://www.formula1.com/en/results/2026/drivers"
+    ],
+    [
+     "Formula One - official United States Grand Prix result, Austin",
+     "https://www.formula1.com/en/latest/article/antonelli-surges-to-dominant-victory-in-united-states-grand-prix-ahead-of-leclerc-and-verstappen.6kmBQv9FNTW7LzkDj8S34j"
+    ],
+    [
+     "BBC Sport - Russell one point clear of Hamilton",
+     "https://www.bbc.com/sport/formula1/live/c87w8r725y8t"
+    ]
+   ],
+   "flag": null,
+   "word_count": 121
+  },
+  {
+   "sport": "Rugby League",
+   "event": "State of Origin 2027",
+   "competition": "2027 State of Origin series, New South Wales v Queensland",
+   "when": "Series played May-July 2027",
+   "venue": "Three venues, to be confirmed",
+   "market": "Win Tournament",
+   "selection": "New South Wales to win the 2027 series",
+   "line": "-171",
+   "probability": 0.632,
+   "track": "T",
+   "tier": "B",
+   "confidence": "HIGH",
+   "in_band": true,
+   "olbg": "9 of 13 tips (69%)",
+   "text": "New South Wales won the 2026 series 2-1 to claim their eighteenth shield, and they did it the hard way: 22-20 over Queensland at Accor Stadium on 27 May, a 44-24 loss at the MCG on 17 June, then 30-12 at Suncorp Stadium on 8 July to take the decider on the road. Nathan Cleary won the Wally Lewis Medal as player of the series and finished top points scorer on 36, going two tries, four conversions and a penalty in Game 3, with Selwyn Cobbo the leading try scorer on four. Total attendance across the three games was 223,309. It was New South Wales' first series win since 2024 and it ended Queensland's bid for a fourth series in five years under Billy Slater. Nine of the thirteen tips on OLBG's 2027 outright are with the Blues and our price is -171.",
+   "sources": [
+    [
+     "2026 State of Origin series",
+     "https://en.wikipedia.org/wiki/2026_State_of_Origin_series"
+    ],
+    [
+     "Sky Sports - Game 3 report",
+     "https://www.skysports.com/rugby-league/news/13561516/state-of-origin-2026-queensland-12-30-new-south-wales-blues-claim-famous-victory-to-win-series"
+    ],
+    [
+     "The Guardian - Game 3 match report",
+     "https://www.theguardian.com/sport/2026/jul/08/state-of-origin-2026-game-3-result-nsw-blues-vs-qld-queensland-maroons-score-winner-match-report"
+    ],
+    [
+     "OLBG rugby league tips board",
+     "https://www.olbg.com/betting-tips/Rugby_League/10"
+    ]
+   ],
+   "flag": null,
+   "word_count": 143
+  },
+  {
+   "sport": "Rugby League",
+   "event": "State of Origin 2027",
+   "competition": "2027 State of Origin series, New South Wales v Queensland",
+   "when": "Series played May-July 2027",
+   "venue": "Three venues, to be confirmed",
+   "market": "Win Tournament",
+   "selection": "Queensland to win the 2027 series",
+   "line": "+172",
+   "probability": 0.368,
+   "track": "T",
+   "tier": "B",
+   "confidence": "MEDIUM",
+   "in_band": true,
+   "olbg": "4 of 13 tips (31%)",
+   "text": "Queensland lost the 2026 series 2-1 but took the middle game at the Melbourne Cricket Ground on 17 June by 44-24, the widest margin of the three, and they have won three of the last five series under Billy Slater. Four of the thirteen tips on OLBG's 2027 outright sit with the Maroons, and because this is a two-horse market our price is simply the complement of the New South Wales number: +172 against -171. The series is played across three venues in May, June and July 2027, with a combined attendance of 223,309 in 2026 and an average crowd of 74,436. Queensland are the value side of the market on paper, but New South Wales are the ones holding the shield.",
+   "sources": [
+    [
+     "2026 State of Origin series",
+     "https://en.wikipedia.org/wiki/2026_State_of_Origin_series"
+    ],
+    [
+     "The Guardian - Game 3 match report",
+     "https://www.theguardian.com/sport/2026/jul/08/state-of-origin-2026-game-3-result-nsw-blues-vs-qld-queensland-maroons-score-winner-match-report"
+    ]
+   ],
+   "flag": null,
+   "word_count": 122
+  },
+  {
+   "sport": "Rugby League",
+   "event": "NRL 2027",
+   "competition": "2027 National Rugby League premiership",
+   "when": "Season runs March-October 2027",
+   "venue": "17 clubs",
+   "market": "Win Tournament",
+   "selection": "Penrith Panthers to win the 2027 premiership",
+   "line": "+565",
+   "probability": 0.15,
+   "track": "T",
+   "tier": "D",
+   "confidence": "MEDIUM",
+   "in_band": true,
+   "olbg": "1 of 3 tips (33%)",
+   "text": "Penrith were the 2026 minor premiers, their sixth, finishing top of the regular season in a competition of 17 teams, 213 matches and 10,167 points scored, with an average attendance of 21,858. They did not convert it: the Sydney Roosters beat the Newcastle Knights 19-18 in the Grand Final at Accor Stadium on 4 October in front of 80,814, with James Tedesco taking the Clive Churchill Medal and Daly Cherry-Evans kicking the winning field goal after the Roosters had trailed 12-0 just before half-time. Only one of the three tips on OLBG's NRL 2027 outright sits with Penrith, and our tip-derived price across the confirmed 17-team field is +565. Three tips is a thin sample, which is what keeps this out of the top grade.",
+   "sources": [
+    [
+     "2026 NRL season",
+     "https://en.wikipedia.org/wiki/2026_NRL_season"
+    ],
+    [
+     "2026 NRL Grand Final",
+     "https://en.wikipedia.org/wiki/2026_NRL_Grand_Final"
+    ],
+    [
+     "National Rugby League - official finals",
+     "https://nationalrugbyleague.com.au/nrl-finals/"
+    ],
+    [
+     "BBC Sport - NRL Grand Final report",
+     "https://www.bbc.com/sport/rugby-league/articles/cwdd849rr9j4o"
+    ]
+   ],
+   "flag": "The 2027 NRL field is carried over from the 17-team 2026 season; a 2027 field has not been confirmed from an official source.",
+   "word_count": 125
+  },
+  {
+   "sport": "Rugby League",
+   "event": "Super League 2027",
+   "competition": "2027 Super League",
+   "when": "Season runs 2027",
+   "venue": "To be confirmed",
+   "market": "Win Tournament",
+   "selection": "Wigan Warriors to win Super League 2027",
+   "line": "",
+   "probability": null,
+   "track": "T",
+   "tier": "D",
+   "confidence": "LOW",
+   "in_band": false,
+   "olbg": "2 of 4 tips (50%)",
+   "text": "Wigan Warriors were the 2026 league leaders and reached the Challenge Cup final, but their season ended in the play-off semi-final with a 33-6 home defeat by Wakefield Trinity, who then beat Warrington Wolves 23-10 in the Grand Final at Old Trafford on 3 October in front of 71,728 to take their first Super League title and first championship since 1968. Two of the four tips on OLBG's Super League 2027 outright sit with Wigan. We publish no price for this runner because the 2027 Super League field has not been confirmed from an official source and there is no honest way to work out how many clubs the tip share should be spread across. The pick is directional only.",
+   "sources": [
+    [
+     "2026 Super League Grand Final",
+     "https://en.wikipedia.org/wiki/2026_Super_League_Grand_Final"
+    ],
+    [
+     "Super League Grand Final - all past results",
+     "https://en.wikipedia.org/wiki/Super_League_Grand_Final"
+    ],
+    [
+     "OLBG rugby league tips board",
+     "https://www.olbg.com/betting-tips/Rugby_League/10"
+    ]
+   ],
+   "flag": "The 2027 Super League field size is not confirmed from an official source, so no fair price is originated and the line is left blank.",
+   "word_count": 120
+  },
+  {
+   "sport": "Rugby League",
+   "event": "Super League 2027",
+   "competition": "2027 Super League",
+   "when": "Season runs 2027",
+   "venue": "To be confirmed",
+   "market": "Win Tournament",
+   "selection": "Wakefield Trinity to win Super League 2027",
+   "line": "",
+   "probability": null,
+   "track": "R",
+   "tier": "R",
+   "confidence": "LOW",
+   "in_band": false,
+   "olbg": "no tips published for this runner",
+   "text": "Wakefield Trinity are the defending champions. They finished the 2026 regular season fourth, beat Leigh Leopards 26-16 in the Eliminator, then travelled to Wigan and won the semi-final 33-6 before beating Warrington Wolves 23-10 in the Grand Final at Old Trafford on 3 October, in front of 71,728 and refereed by Liam Moore - their first Super League title and their first championship of any kind since 1968. Tom Johnstone won the Rob Burrow Award. OLBG publishes no tips on Wakefield for the 2027 outright, only on Wigan, and the 2027 field is not confirmed from an official source, so we originate no price and grade this low. The champions are absent from the tip flow entirely.",
+   "sources": [
+    [
+     "2026 Super League Grand Final",
+     "https://en.wikipedia.org/wiki/2026_Super_League_Grand_Final"
+    ],
+    [
+     "Super League Grand Final - all past results",
+     "https://en.wikipedia.org/wiki/Super_League_Grand_Final"
+    ]
+   ],
+   "flag": "OLBG publishes no tip split for the reigning champions. The 2027 Super League field size is not confirmed from an official source, so no fair price is originated.",
+   "word_count": 117
+  },
+  {
+   "sport": "Gaelic Sports",
+   "event": "Kerry, All-Ireland Senior Football Championship 2027",
+   "competition": "2027 All-Ireland Senior Football Championship",
+   "when": "Final 25 July 2027",
+   "venue": "Croke Park, Dublin",
+   "market": "Win Tournament",
+   "selection": "Kerry to win the 2027 All-Ireland SFC",
+   "line": "+126",
+   "probability": 0.442,
+   "track": "T",
+   "tier": "B",
+   "confidence": "HIGH",
+   "in_band": true,
+   "olbg": "6 of 8 tips (75%)",
+   "text": "Kerry retained the Munster Senior Football Championship in 2026 for a sixth consecutive year, beating Clare 2-19 to 1-14 in the semi-final and then Cork 1-23 to 1-15 in the final for their 87th Munster title, played for the new Corn Phaidi Ui She trophy introduced this year. OLBG's own Gaelic football editorial has the reigning All-Ireland champions as Mayo, who ended a 75-year wait in 2026 by beating Kerry in the final for their fourth title, with Kerry holding 39 all-time titles against Dublin's 31 - so Kerry go into 2027 as Munster champions and All-Ireland runners-up. Six of the eight tips on OLBG's outright sit with Kerry and our tip-derived price across a 33-county field is +126, comfortably inside the band.",
+   "sources": [
+    [
+     "2026 Munster Senior Football Championship",
+     "https://en.wikipedia.org/wiki/2026_Munster_Senior_Football_Championship"
+    ],
+    [
+     "Munster GAA - 2026 senior football final",
+     "https://munster.gaa.ie/event/2026-munster-senior-football-championship-final/"
+    ],
+    [
+     "OLBG gaelic football tips board and editorial",
+     "https://www.olbg.com/betting-tips/Gaelic_Football/25"
+    ]
+   ],
+   "flag": "The Mayo 2026 All-Ireland title is single-sourced to OLBG's own editorial page and could not be corroborated elsewhere. The 33-county field for 2027 is carried over from 2026.",
+   "word_count": 123
+  },
+  {
+   "sport": "Gaelic Sports",
+   "event": "Fr Caseys v Kildimo Pallaskenry",
+   "competition": "Limerick Senior Football Championship Final 2026",
+   "when": "Sunday 1 November 2026, 15:30 local",
+   "venue": "Mick Neville Park, Rathkeale (referee Jonathan Hayes, Limerick)",
+   "market": "Handicap",
+   "selection": "Kildimo-Pallaskenry +3.50",
+   "line": "-160",
+   "probability": 0.615,
+   "track": "T",
+   "tier": "C",
+   "confidence": "MEDIUM",
+   "in_band": true,
+   "olbg": "5 of 7 tips (71%)",
+   "text": "This is the Limerick county final and it is Kildimo-Pallaskenry's first ever appearance in one. They got there by beating the defending champions Mungret/St Pauls 2-16 to 0-20 after extra time at Clarina, where Conor Staff's goal in the first half of extra time proved decisive - Mungret's Jack Dervan had pointed them ahead before Kildimo-Pallaskenry cleared a Peter Nash effort off the line and Staff converted the rebound. Nash finished with 0-8 for the champions and Declan Nash manages the winners. Fr Casey's beat Monaleen in the other semi-final at Sean Finn Park and were described as the only unbeaten team left in Limerick. Five of the seven tips on OLBG sit with Kildimo-Pallaskenry taking three and a half points, and our price is -160.",
+   "sources": [
+    [
+     "Munster GAA - official match centre, Limerick SFC Final",
+     "https://munster.gaa.ie/"
+    ],
+    [
+     "Hogan Stand - Kildimo-Pallaskenry beat the defending champions after extra time",
+     "https://hoganstand.com/County/National/Article/Index/342139"
+    ],
+    [
+     "Limerick GAA - semi-final details",
+     "https://limerickgaa.ie/kildimo-pallaskenry-mungret-st-pauls-fr-caseys-monaleen-all-fighting-for-a-county-senior-football-final-place-today/"
+    ],
+    [
+     "The Irish Times - club football championships, state of play",
+     "https://www.irishtimes.com/sport/gaelic-games/2026-10-14/club-football-championships-who-are-county-champions-and-what-is-the-state-of-play-around-ireland/"
+    ]
+   ],
+   "flag": "OLBG prints this as a handicap selection with no market label attached to the row.",
+   "word_count": 126
+  },
+  {
+   "sport": "Gaelic Sports",
+   "event": "Fr Caseys v Kildimo Pallaskenry",
+   "competition": "Limerick Senior Football Championship Final 2026",
+   "when": "Sunday 1 November 2026, 15:30 local",
+   "venue": "Mick Neville Park, Rathkeale (referee Jonathan Hayes, Limerick)",
+   "market": "Handicap",
+   "selection": "Fr Caseys -3.50",
+   "line": "+160",
+   "probability": 0.385,
+   "track": "T",
+   "tier": "C",
+   "confidence": "MEDIUM",
+   "in_band": true,
+   "olbg": "2 of 7 tips (29%)",
+   "text": "Fr Casey's go into the Limerick final as the only unbeaten team left in the county, having reached it by beating Monaleen in the semi-final at Sean Finn Park, Rathkeale on the same weekend that Kildimo-Pallaskenry needed extra time to get past the defending champions Mungret/St Pauls. That difference in how the two sides arrived matters: a side that has gone through the championship unbeaten is giving three and a half points to a first-time finalist who needed an extra period and a goal in the first half of that extra period to get through. Two of the seven tips on OLBG sit with Fr Casey's covering the handicap, and our price is +160, the complement of the other side of this market.",
+   "sources": [
+    [
+     "The Irish Times - Fr Casey's the only unbeaten team left in Limerick",
+     "https://www.irishtimes.com/sport/gaelic-games/2026-10-14/club-football-championships-who-are-county-champions-and-what-is-the-state-of-play-around-ireland/"
+    ],
+    [
+     "Munster GAA - official match centre, Limerick SFC Final",
+     "https://munster.gaa.ie/"
+    ],
+    [
+     "Hogan Stand - Limerick semi-final report",
+     "https://hoganstand.com/County/National/Article/Index/342139"
+    ]
+   ],
+   "flag": "OLBG prints only the Kildimo-Pallaskenry side of this handicap with no market label; the Fr Casey's number is our own complement of that tip share.",
+   "word_count": 123
+  },
+  {
+   "sport": "Gaelic Sports",
+   "event": "Kanturk v Eire Og Cor",
+   "competition": "",
+   "when": "01 November 2026, 10:30",
+   "venue": "",
+   "market": "Handicap",
+   "selection": "Eire Og Cor +0.50",
+   "line": "-300",
+   "probability": 0.75,
+   "track": "T",
+   "tier": "C",
+   "confidence": "LOW",
+   "in_band": false,
+   "olbg": "6 of 6 tips (100%)",
+   "text": "All six tips posted on this OLBG market sit with the half-point handicap, and our tip-derived price is -300. We cannot identify the fixture. Munster GAA's published 2026 club championship draw names Eire Og Inis of Clare as the Clare champions and pairs them with The Nire or Rathgormack of Waterford in the quarter-final on 8 November, not with Kanturk; Kanturk beat Kilshannig 2-16 to 0-19 in the Cork Senior A quarter-final on 27 September at Fr Kelleher Park and do not appear in the provincial draw at all. With no competition and no venue confirmable from an official source, both fields are left blank and this pick is graded low - six unanimous tips on a fixture we cannot place is not a position to back.",
+   "sources": [
+    [
+     "Munster GAA - official club championship draw 2026",
+     "https://munster.gaa.ie/fixtures/club-championships-2026/"
+    ],
+    [
+     "2026 Cork Senior A Football Championship",
+     "https://en.wikipedia.org/wiki/2026_Cork_Senior_A_Football_Championship"
+    ],
+    [
+     "Full list of 2026 county champions",
+     "https://www.sportsnewsireland.com/gaa/full-list-of-senior-football-and-hurling-county-champions-2026"
+    ]
+   ],
+   "flag": "The competition could not be identified. Munster GAA's official 2026 club draw does not pair Kanturk with any club matching 'Eire Og Cor'. Competition and venue left blank.",
+   "word_count": 127
+  },
+  {
+   "sport": "Gaelic Sports",
+   "event": "Galway, All-Ireland Senior Hurling Championship 2027",
+   "competition": "2027 All-Ireland Senior Hurling Championship",
+   "when": "Season runs 2027",
+   "venue": "To be confirmed",
+   "market": "Win Hurling",
+   "selection": "Galway to win the 2027 Liam MacCarthy Cup",
+   "line": "",
+   "probability": null,
+   "track": "T",
+   "tier": "A",
+   "confidence": "LOW",
+   "in_band": false,
+   "olbg": "7 of 18 tips (39%)",
+   "text": "Galway carry seven of the eighteen tips on OLBG's All-Ireland Senior Hurling outright, the deepest tip sample anywhere on the Gaelic board and more than any other runner. OLBG publishes a single market for hurling, labelled 'Win Hurling', with no handicap, no totals and no group-stage markets at all. We publish no price for Galway because the number of counties competing for the Liam MacCarthy Cup in 2027 has not been confirmed from an official source, and without that field size there is no honest denominator to spread 7 of 18 across. The pick is directional only, and the missing field size is flagged rather than assumed.",
+   "sources": [
+    [
+     "GAA - official All-Ireland Senior Hurling Championship",
+     "https://www.gaa.ie/"
+    ],
+    [
+     "OLBG gaelic football tips board",
+     "https://www.olbg.com/betting-tips/Gaelic_Football/25"
+    ]
+   ],
+   "flag": "The number of counties competing in the 2027 All-Ireland SHC is not confirmed from an official source, so no fair price is originated and the line is left blank.",
+   "word_count": 107
+  }
+ ]
+}

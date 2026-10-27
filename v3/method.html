@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Method</title>
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/v3.css">
+</head><body>
+<header><div class="wrap"><div>
+<h1>OLBG reverse-engineered &mdash; 27 October 2026</h1>
+<div class="sub">How every line was originated &nbsp;&middot;&nbsp; 15 sports &middot; 115 markets swept &middot; 65 written picks &middot; every price originated by us</div>
+</div></div></header>
+<nav><div class="wrap"><a href="../index.html">Main dashboard</a><a href="index.html">This board</a><a href="picks.html">The picks</a><a href="lines.html">Every line</a><a href="sports/cricket.html">Cricket</a><a href="sports/basketball.html">Basketball</a><a href="sports/ice-hockey.html">Ice Hockey</a><a href="sports/rugby-union.html">Rugby Union</a><a href="sports/handball.html">Handball</a><a href="sports/tennis.html">Tennis</a><a href="sports/volleyball.html">Volleyball</a><a href="sports/golf.html">Golf</a><a href="sports/darts.html">Darts</a><a href="sports/baseball.html">Baseball</a><a href="sports/motor-racing.html">Motor Racing</a><a href="sports/rugby-league.html">Rugby League</a><a href="sports/gaelic-sports.html">Gaelic Sports</a><a href="sports/snooker.html">Snooker</a><a href="sports/greyhounds.html">Greyhounds</a><a href="flagged.html">Flagged for review</a><a href="method.html" class="on">Method</a><a href="sources.html">Sources</a><a href="archive.html">Archive</a></div></nav>
+<main>
+
+<p class="lede">Two tracks, applied line by line. Nothing on this board is a bookmaker price,
+because OLBG renders those client-side and they are absent from the HTML we can retrieve. Every
+number below is originated by us, and every one of them can be reproduced from
+<span class="tag">scripts/v3_pricing.py</span>.</p>
+
+<h2>Track T &mdash; the tip share OLBG prints</h2>
+<p>Where OLBG publishes a tip count for a selection, the implied chance is that count shrunk
+towards a uniform prior worth six tips:</p>
+<div class="origbox"><code>p = (k + A/m) / (n + A)</code>
+<div class="small muted" style="margin-top:6px">
+<code>k</code> tips on this selection &middot; <code>n</code> tips on the market &middot;
+<code>m</code> outcomes OLBG lists &middot; <code>A = 6.0</code> prior strength.</div></div>
+<p class="tnote">Fair American price: if <code>p &ge; 0.5</code> then <code>-round(100p/(1-p))</code>,
+otherwise <code>+round(100(1-p)/p)</code>. The shrink stops a single tip on a two-horse market
+reading as a near-certainty, and it keeps a 94% tip share on a sixteen-tip market from printing as
+an unbackable -1500.</p>
+<p class="tnote">Tiering by sample size &mdash; <b>A</b> n&ge;20 (4 markets) &middot;
+<b>B</b> 8&le;n&lt;20 (12) &middot; <b>C</b> 4&le;n&lt;8 (29) &middot; <b>D</b> n&lt;4 (56) &middot;
+<b>R</b> our own origination (14).</p>
+
+<h2>Track R &mdash; our own origination</h2>
+<p>Where an official competition table, ranking or points record exists, we build the price from
+that instead. For a two-sided match:</p>
+<div class="origbox"><code>d = margin_home - margin_away + HFA</code><br>
+<code>p_home = 1 / (1 + 10^(-d/s))</code>
+<div class="small muted" style="margin-top:6px"><code>margin</code> is the official points (or
+goals, or runs) difference per game &middot; <code>HFA</code> is the home-field allowance &middot;
+<code>s</code> is the sport's spread, chosen so that one game's worth of scoring margin maps to a
+realistic change of chance.</div></div>
+<table><thead><tr><th>Sport family</th><th>Parameters as used</th></tr></thead><tbody><tr><td><b>Rugby union</b></td><td class="small">s 15.0; hfa 3.0</td></tr><tr><td><b>Basketball</b></td><td class="small">s 25.0; hfa 3.5; table: 13 entries; table_source &quot;https://www.euroleaguebasketball.net/en/euroleague/standings/&quot;</td></tr><tr><td><b>Tennis</b></td><td class="small">formula &quot;p = r/(1+r), r = higher ranking points / lower&quot;; points {&quot;Carlos Alcaraz&quot;: 5610, &quot;Novak Djokovic&quot;: 3090, &quot;Karen Khachanov&quot;: 1990, &quot;Ugo Humbert&quot;: 1420}; source &quot;https://www.atptour.com/en/rankings/singles&quot;</td></tr><tr><td><b>F1 podium finish</b></td><td class="small">counts: 8 entries; rounds_completed 18.0</td></tr><tr><td><b>Ice hockey</b></td><td class="small">s 4.0; hfa 0.4; settlement &quot;two-way, overtime and shootout included&quot;; tables: 10 entries</td></tr><tr><td><b>Handball</b></td><td class="small">s 9.0; hfa 1.5; draw_rate 0.0667; table_source &quot;https://ehfcl.eurohandball.com/men/2026-27/standings/&quot;</td></tr><tr><td><b>Volleyball</b></td><td class="small">s 2.5; hfa 0.3; table {&quot;Conegliano W&quot;: [4, 12, 0], &quot;Vallefoglia W&quot;: [4, 12, 2]}; source [&quot;https://www.sofascore.com/volleyball/tournament/italy/serie-a1-women/567&quot;, &quot;https://www.volleynews.it/vallefoglia-si-prepara-a-una-sfida-di-alta-quota-con-conegliano/&quot;]</td></tr><tr><td><b>Golf outrights</b></td><td class="small">field: 21 entries; field_size 120; unranked_notional 150; source [&quot;https://www.pgatour.com/tournaments/2026/vidantaworld-mexico-open/R2026540/overview&quot;, &quot;https://thegolfnewsnet.com/golfnewsnetteam/2026-10-25/2026-vidantaworld-mexico-open-field-pga-tour-players-rankings-145293/&quot;]; outright: 21 entries</td></tr><tr><td><b>F1 Drivers&#x27; Championship outright</b></td><td class="small">gap_scale 25.0; excluded [&quot;Kimi Antonelli&quot;]; points_source &quot;https://www.formula1.com/en/results/2026/drivers&quot;</td></tr></tbody></table>
+<p class="tnote">Handball adds an explicit draw share of 0.0667, because the official EHF group tables
+record two draws across the thirty group-phase games played in groups A, C and F. Tennis is priced
+straight off the official ATP points ratio, <code>p = r/(1+r)</code>. F1 podium finishes are the
+official season podium count divided by the 18 rounds completed &mdash; the podium counts across the
+top eight drivers sum to 54, which is exactly 3 &times; 18, so that denominator is not guessed.
+Golf outrights weight each entrant by one over their official world ranking, normalised across the
+confirmed field, with the 99 unranked entrants carrying a stated notional ranking of 150.</p>
+<p class="tnote">Where OLBG tips exist we keep the Track&nbsp;T price as the headline and attach the
+Track&nbsp;R line alongside it in the <span class="tag">lines</span> column of every row. Where a
+row is Track&nbsp;R primary &mdash; the Mexico Open outright &mdash; the tip-derived number is
+superseded and the row says so.</p>
+
+<h2>The confidence gates</h2>
+<p class="tnote"><b>HIGH</b> requires all five:</p>
+<ol class="tnote">
+<li>our fair price sits between fair price between -250 and +10000 inclusive inclusive;</li>
+<li>at least one official source corroborates the direction of the pick;</li>
+<li>the row is not hit by a known OLBG display defect;</li>
+<li>sample &mdash; match markets need eight or more tips, or a Track&nbsp;R line built from an
+official competition table; outrights need (joint-)most-tipped status and to be an officially
+leading contender;</li>
+<li>probability &mdash; match markets p&nbsp;&ge;&nbsp;0.55; outrights
+p&nbsp;&ge;&nbsp;min(0.40,&nbsp;2.5/m), or, where five or fewer live contenders are priced from an
+official points table, the leader of that table.</li>
+</ol>
+<p class="tnote"><b>MEDIUM</b> is the same direction with a price outside the band or a sample below
+the threshold. <b>LOW</b> is a pick whose argument is sound but where a value it depends on could
+not be confirmed from an official source, so that value is left blank. Result across the slate:
+19 high, 36 medium, 10 low.</p>
+
+<h2>What we refuse to do</h2>
+<ul class="tnote">
+<li><b>No inference.</b> If a venue, a competition, a field size or an injury cannot be sourced, the
+cell is blank and the gap appears on <a href="flagged.html">Flagged for Review</a>. Five picks on
+this board carry no price at all for exactly that reason.</li>
+<li><b>No padding.</b> Snooker and Greyhounds carry zero picks because OLBG carries zero events for
+either on this date. We do not invent fixtures to hit a target count.</li>
+<li><b>No borrowed language.</b> The words &ldquo;model&rdquo; and &ldquo;verified&rdquo; do not
+appear anywhere in prediction prose; the machinery is internal and is described on this page
+instead. <span class="tag">scripts/v3_picks.py</span> rejects any pick that uses them.</li>
+<li><b>No over-fitting.</b> The baseball money line is deliberately not originated from the
+three-game World Series sample: a logistic fit to those three results returned 0.982, or -4200,
+which describes the past rather than the next game. We publish OLBG's tip-derived line and flag it.
+The three-game totals are still usable for the run total, because a mean is a mean.</li>
+<li><b>No nonsense prices.</b> An earlier attempt to price every F1 title contender on the gap to
+the leader emitted +2479913 for Oscar Piastri. Contenders more than two race wins &mdash; 50 points
+&mdash; behind the best-placed eligible rival are excluded, and the exclusion is stated on the page.</li>
+<li><b>No borrowed labels.</b> Where OLBG misfiles a competition &mdash; the Maybank Championship
+under the DP World Tour although it is an LPGA event, or Fuchse Berlin v RK Partizan under the EHF
+European League although both clubs sit in the official Champions League group A table &mdash; we
+record the correct competition and flag the difference rather than repeat it.</li>
+</ul>
+
+<h2>Coverage</h2>
+<div class="grid"><div class="kpi"><div class="n">115</div><div class="l">markets swept</div></div><div class="kpi"><div class="n">95</div><div class="l">priced</div></div><div class="kpi"><div class="n">32</div><div class="l">picks on Track R</div></div><div class="kpi"><div class="n">31</div><div class="l">flags</div></div><div class="kpi"><div class="n">138</div><div class="l">distinct sources</div></div></div>
+<h3>The OLBG clock</h3>
+<p class="tnote">OLBG prints times in US Eastern. Four independent fixtures confirm it on the same
+day: Auckland v Canterbury prints 17:30 against an official 10:30am NZT start on 28 October, which
+is 5:30pm EDT on the 27th; Fr Caseys v Kildimo-Pallaskenry prints 10:30 against an official 15:30
+Irish start; the URC round-6 fixtures align on the same shift; and all 115 swept rows shift by the
+same offset from their official local times. Three rows still conflict after the offset is applied
+&mdash; Brewers at Rays, Afghanistan v Zimbabwe and South Africa v Australia &mdash; and those stay
+on the flagged page.</p>
+<h3>Reproducing this board</h3>
+<p class="tnote"><code>python3 scripts/v3_events.py</code> writes the 115-row sweep;
+<code>scripts/v3_pricing.py</code> writes every line; <code>scripts/v3_picks.py</code> validates and
+writes the slate; <code>scripts/v3_flags.py</code> writes the irregularities;
+<code>scripts/v3_build.py</code> writes this site. The raw findings behind every factual claim are
+in <span class="tag">data/v3/raw/verified-facts-part1.md</span>,
+<span class="tag">part2.md</span> and <span class="tag">part3.md</span>.</p>
+
+</main>
+<footer>
+<p>Swept from <a href="https://www.olbg.com/betting-tips/">olbg.com/betting-tips</a> on 27 October 2026.
+No price on this site is a bookmaker price: OLBG renders those client-side and they are absent from
+retrievable HTML, so every number here is originated by us, either from the tip share OLBG prints
+(Track&nbsp;T) or from an official competition table, ranking or points record (Track&nbsp;R).
+Values that could not be confirmed from an official source are left blank and listed on the
+<a href="flagged.html">Flagged for Review</a> page &mdash; they are never inferred.
+See <a href="method.html">Method</a> and <a href="sources.html">Sources</a>.</p>
+</footer></body></html>
