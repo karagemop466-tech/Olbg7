@@ -58,6 +58,10 @@ def conf_for(p, sample, nfacts, method):
 MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
 
 
+def olbg(url_path):
+    return "https://www.olbg.com" + url_path
+
+
 def clock(start):
     """OLBG prefixes 'Today'/'Tomorrow', otherwise it repeats the date in front of the time."""
     m = re.search(r"(\d{1,2}:\d{2})", start)
@@ -256,7 +260,8 @@ Rows with no price are shown with the reason, never filled in.</p>
 <p class="small muted">Methods: <strong>CAL-4C</strong> consensus from OLBG's printed tip split &middot;
 <strong>CAL-4R</strong> rating from official goals/points for and against &middot;
 <strong>CAL-4P</strong> league-average prior where no club baseline exists (never used for a pick).
-Full explanation on <a href="method.html">the method page</a>.</p>
+Full explanation on <a href="method.html">the method page</a>. Every event name links to the OLBG
+row it was read from, so any line here can be checked against its source in one click.</p>
 <div class="toc">{''.join(f'<a href="#{SLUG[s]}">{esc(s)}</a>' for s in SPORTS)}</div>"""]
     for s in SPORTS:
         evs = [r for r in lines if r["sport"] == s]
@@ -268,15 +273,14 @@ Full explanation on <a href="method.html">the method page</a>.</p>
         for r in evs:
             if not r["markets"]:
                 rows.append(f"""<tr class="dim"><td class="nowrap">{esc(r['start'])}</td>
-<td>{esc(r['event'])}<div class="small muted">{esc(r['comp'])}</div></td>
-<td colspan="6" class="small">Not priced &mdash; {esc(r['unpriced'])}</td></tr>""")
+<td><a href="{esc(olbg(r['path']))}" rel="nofollow noopener">{esc(r['event'])}</a><div class="small muted">{esc(r['comp'])}</div></td>
+<td colspan="6" class="small">Not priced &mdash; {esc(r['unpriced'])} &middot; <a href="{esc(olbg(r['path']))}" rel="nofollow noopener">OLBG row</a></td></tr>""")
                 continue
             first = True
             for m in r["markets"]:
-                link = f'<a href="{esc(r["olbg_url"])}" rel="nofollow noopener">OLBG</a>' if False else ""
                 rows.append(f"""<tr>
 <td class="nowrap">{esc(r['start']) if first else ''}</td>
-<td>{esc(r['event']) + ('<div class="small muted">' + esc(r['comp']) + '</div>' if first else '') if first else ''}</td>
+<td>{(('<a href="' + esc(olbg(r['path'])) + '" rel="nofollow noopener">' + esc(r['event']) + '</a><div class="small muted">' + esc(r['comp']) + '</div>') if first else '')}</td>
 <td>{esc(MARKET_LABEL.get(m['market'], m['market']))}</td>
 <td>{esc(m['selection'])}</td>
 <td class="num">{pct(m['p'])}</td>
@@ -323,13 +327,13 @@ def build_sport(s, lines, picks, official, summary):
         rows = []
         for r in evs:
             if not r["markets"]:
-                rows.append(f"""<tr class="dim"><td class="nowrap">{esc(r['start'])}</td><td>{esc(r['event'])}</td>
+                rows.append(f"""<tr class="dim"><td class="nowrap">{esc(r['start'])}</td><td><a href="{esc(olbg(r['path']))}" rel="nofollow noopener">{esc(r['event'])}</a></td>
 <td colspan="4" class="small">Not priced &mdash; {esc(r['unpriced'])}</td></tr>""")
                 continue
             for i, m in enumerate(r["markets"]):
                 rows.append(f"""<tr>
 <td class="nowrap">{esc(r['start']) if i == 0 else ''}</td>
-<td>{esc(r['event']) if i == 0 else ''}{('<div class="small muted">' + esc(r['comp']) + '</div>') if i == 0 else ''}</td>
+<td>{('<a href="' + esc(olbg(r['path'])) + '" rel="nofollow noopener">' + esc(r['event']) + '</a>') if i == 0 else ''}{('<div class="small muted">' + esc(r['comp']) + '</div>') if i == 0 else ''}</td>
 <td>{esc(MARKET_LABEL.get(m['market'], m['market']))}: <strong>{esc(m['selection'])}</strong></td>
 <td class="num">{m['price']:.2f} <span class="muted">({esc(m['american'])})</span></td>
 <td class="num">{pct(m['p'])}</td>
