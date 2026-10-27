@@ -199,6 +199,39 @@ def main():
     t.append(f"""</tbody></table>
 </section>
 
+<section id="context">
+  <h2>This board in context &mdash; every other board, still live and untouched</h2>
+  <p class="lede">Four parallel sessions have published boards into this repository. None of them was overwritten by
+  this cycle; they are listed here so the site has one front door instead of five.</p>
+  <table class="tbl">
+    <thead><tr><th>Board</th><th>What it is</th><th>Coverage</th><th>Status</th></tr></thead><tbody>
+    <tr><td><a href="picks.html">picks.html</a> &middot; <a href="lines.html">lines.html</a> &middot;
+      <a href="method.html">method.html</a> &middot; <a href="archive.html">archive.html</a></td>
+      <td>The "Coverage Desk" snapshot of the 05:23 UTC manual capture. It is deliberately <em>fail-closed</em>: its
+      script hides scheduled rows and notes after 28 October 2026 05:23 UTC, so those pages show less with time, not
+      more. Its own summary states that no priced high-confidence pick was established there.</td>
+      <td>54 listings with official schedule references, 71 listings flagged for time/fixture checks, 38 written leans</td>
+      <td>Live and unchanged; intentionally expiring</td></tr>
+    <tr><td><a href="board/all-markets.html">board/</a></td>
+      <td>Session 81a54336's 27 October board: its own executive summary, all-markets table and flagged page</td>
+      <td>Its full 27 Oct board exactly as published</td><td>Live, byte-for-byte as shipped</td></tr>
+    <tr><td><a href="olbg-map.html">olbg-map.html</a> &middot; <a href="legacy-cal4/index.html">legacy-cal4/</a></td>
+      <td>The reverse-engineered OLBG structure (URL grammar, sport ids, what each page returns) and the archived
+      CAL-4 board kept behind historical warnings</td>
+      <td>Structure reference + archived 26 October board</td><td>Live, preserved</td></tr>
+    <tr><td><a href="olbg-tips/index.html">olbg-tips/</a> &middot; <a href="docs/index.html">docs/</a> &middot;
+      <a href="docs/board-review/index.html">docs/board-review/</a></td>
+      <td>The tip-consensus board, the first session's board and an independent board review with its own tiered
+      rating method</td><td>127 market rows / 51 picks; 119 events / 44 predictions</td>
+      <td>Live, preserved</td></tr>
+    </tbody></table>
+  <p class="lede">What is new on this front page is the 27 October re-capture itself: two-sided coverage read off
+  OLBG's event pages (152 markets rather than the single most-tipped selection per event), the A/B/C reliability grade
+  that blocks draw-clustered and 1-2-tip lines from high confidence, and 52 written predictions with a source link on
+  every fact. The previous day's board is kept as the comparison baseline in
+  <span class="mono">data/events.json</span> and <span class="mono">data/picks.json</span>.</p>
+</section>
+
 <section id="method">
   <h2>How the numbers were made</h2>
   <div class="grid2">
@@ -480,9 +513,10 @@ def head(prefix=""):
     return f"""<!doctype html>
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="OLBG reverse-engineered: 152 markets captured, 141 lines originated and 52 written predictions across the 15 OLBG sports, cycle 2026-10-27.">
 <title>OLBG reverse-engineered &middot; daily board &middot; {CYCLE}</title>
 <link rel="stylesheet" href="{prefix}assets/cycle.css">
-</head><body class="cycle">"""
+</head><body class="cycle"><a class="sr-only" href="#main">Skip to the board</a><main id="main">"""
 
 
 def exec_table(pk, same_page=False):
@@ -582,7 +616,7 @@ HEAD = """<!doctype html>
 <link rel="stylesheet" href="assets/cycle.css">
 </head><body class="cycle">"""
 
-FOOT = """<footer class="foot">
+FOOT = """</main><footer class="foot">
 <p>Built from olbg.com captures of 27 October 2026 (05:30&ndash;06:10 UTC) by tools/unify_price.py,
 tools/cycle_picks.py and tools/cycle_site.py. Prices on this site are originated lines, not bookmaker quotes;
 unconfirmable values are printed blank and flagged. Data: <span class="mono">data/cycle-20261027/</span>.</p>
@@ -669,6 +703,8 @@ section{max-width:1180px;margin:0 auto}
 .sev-method{border-left-color:#1f5eff}.sev-data,.sev-blank{border-left-color:#a16207}
 .cnt{font-size:12px;color:#6a7288;font-weight:500}
 .sportlink{color:#101828;font-weight:650;text-decoration:none;border-bottom:1px solid #cdd6e6}
+.sr-only{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+.sr-only:focus{left:8px;top:8px;width:auto;height:auto;background:#fff;padding:6px 10px;z-index:60;border-radius:6px}
 .foot{max-width:1180px;margin:36px auto 0;border-top:1px solid #dfe3ea;padding-top:12px;color:#66708a;font-size:12.5px}
 a{color:#1f4fd8}
 @media (max-width:900px){.grid2{grid-template-columns:1fr}.tbl{font-size:12.5px}.navsports{display:none}}

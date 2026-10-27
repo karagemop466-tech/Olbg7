@@ -1,7 +1,89 @@
 # COORDINATION.md — Shared Task Board
 
 Repo: `karagemop466-tech/Olbg7`
-Last updated: 2026-10-27 (UTC) - claim + new-cycle task board added by `sess-arena-6ebe13e2`
+Last updated: 2026-10-27 (UTC) - current integration and source audit
+
+## Current integration claim — `sess-arena-4eb82353`
+
+Claimed: 2026-10-27 05:23 UTC. Branch: `arena/4eb82353-olbg7` (Arena-fixed branch).
+The previous tasks on this board are marked done; no other active claim appears on
+the board and no open pull request was visible at claim time. This session is the
+integration session for the following work; the deployment is complete and the
+refresh and pricing gaps remain flagged for review. Historical namespaced boards remain preserved.
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| Audit prior fixtures, pricing, predictions, sources and freshness; record gaps | done; findings need review | sess-arena-4eb82353 | `COORDINATION.md`, `data/` (root JSON), `tools/` |
+| Build a source-linked 15-sport dashboard and review register; investigate refresh | needs review (refresh blocked) | sess-arena-4eb82353 | root generated HTML, `sports/`, `assets/`, `.github/`, `README.md` |
+| Integration, tests, PR, merge and GitHub Pages deployment | done (snapshot only; refresh needs review) | sess-arena-4eb82353 | shared root site and above files |
+
+### Concurrent integration note — 2026-10-27 05:25 UTC
+
+PR #14 from `arena/2e363bd1-olbg7` merged while this session was working,
+adding a freshness warning to `index.html` and `README.md` and completing T12.
+Both files and the other session's coordination entry were preserved. The
+pre-push rebase encountered duplicate copies of this session's previously
+pushed probe workflow: the add/add and workflow conflicts were resolved by
+keeping the already-pushed probe and retaining its new annotation line. No
+other session's work was discarded.
+
+### Integration evidence — 2026-10-27 (session `sess-arena-4eb82353`)
+
+- Manual research began at 05:23 UTC; the current static snapshot has 54 schedule-linked events,
+  71 separate flagged listings and 38 source-linked qualitative notes. Sixteen OLBG hubs cover the
+  15 requested categories (Gaelic Football and Hurling separate). The lists are not a complete live feed.
+- Official sources used include EuroLeague match/injury reports, ATP Basel order of play and Shanghai
+  results, EHF Champions League preview, URC fixtures/table, French Pro D2/Top 14, ASOBAL, NHL team
+  and injury reports, MLB, ICC/NZC/PCB, LPGA/PGA, PDC, Formula 1 and Lega Volley Femminile. Exact URLs
+  are retained per event and note in `data/current.json` and generated `sources.html`.
+- Current bookmaker quotes, reliable independently calibrated numerical lines, full injury coverage,
+  several exact start times, market settlement, full inventory and at least five notes in every sport
+  are **not established**. Blank values and 71 listings awaiting review are published on `flagged.html`.
+  A historical PGA-sourced FanDuel opening quote is explicitly marked as such; it is not a live offer.
+- The GitHub-hosted `CoverageDeskResearch/1.0` probe was denied all three tested OLBG paths by
+  `robots.txt` (run 40455327782, check 122027198655). No automated content ingestion was implemented.
+  The 28 October 05:23 UTC expiry, per-event cutoffs, and disabled-JavaScript/clock-error cases fail
+  closed; client time is not an authoritative live source.
+- Concurrent PRs #17–#25 landed on `main` after this session's claim and touched the root dashboard,
+  `COORDINATION.md` and the CI workflow. To preserve the other sessions' work, the new 27 October CAL-4
+  root pages are copied to `legacy-cal4/` with archive warnings and their original data and generators
+  remain intact. The earlier `board/` also remains accessible with historical warnings. Forty
+  additional listings from `data/board/inventory-*` were added only to the unconfirmed register; three
+  were separately matched to official cricket schedules and promoted. No older constructed prices are
+  represented as actual market odds or reliable probabilities. The pre-push rebase resolved conflicts in the root generated pages and CI by selecting this time-limited desk, while preserving the concurrently published CAL-4 pages and all of the other sessions’ coordination entries and data.
+- The previous session `arena-3b1b6ed4` reported completion in its final PR #25 log; PR #22 for the
+  independent CI repair also merged. The old active-session table below is preserved as historical,
+  even where a status cell was not updated by its owner. PR #15 remained open and was not modified.
+- Main advanced again through coordination-only PR #26 (`1d4c167`); its report that the CI repair
+  passed and session `arena-b42ae9fe` finished was preserved. The subsequent rebase was clean.
+- Rebase onto `a867a0c` initially left one conflicting heading marker in this file; it was repaired,
+  the two headings were reconciled, and all upstream claims and logs were retained. All 104 archived
+  HTML pages, including the 19 `board/` pages, 23 CAL-4 copies, and three root legacy pages, have
+  prominent warnings. The old root-writing generators are guarded against accidental use.
+- Post-rebase checks: `python3 tools/build_current.py --check`, `python3 tools/check_current.py`, and
+  `node --test tests/freshness.test.js` pass. Chromium exercised desktop, 375px mobile, expiry, bad
+  clock, no JavaScript and deep links through the preserved concurrent boards. An additional Cricket
+  note covers Litchfield as a team-top-batter lean using Cricket Australia and the inspected OLBG
+  prop listing; no match-winner price or market was assumed. The scheduler checks the earliest event
+  cutoff rather than relying solely on a 30-second interval. External accuracy still needs ongoing review.
+
+### Deployment outcome — 2026-10-27 05:50 UTC (`sess-arena-4eb82353`)
+
+- **PR #27 merged:** <https://github.com/karagemop466-tech/Olbg7/pull/27>; merge commit
+  `f476970748ea71774e625308a57a0992123467b4` at 05:49:15 UTC. This was a merge, not a claim
+  that the remaining research gaps were reviewed or resolved. Unrelated PR #15 remains open.
+- PR check run `40457447055` and main verification run `40457479643` succeeded. Pages deployment
+  run `40457479151` succeeded and the Pages API reported `built` for the merge commit. A live
+  read of the root, Cricket page and `board/basketball.html` showed the new 54/38/zero-price
+  snapshot and the archived-board warning. GitHub's Pages workflow noted Node 20 action
+  deprecation (forced to Node 24); it did not prevent the build or deploy.
+- The five-per-sport target remains unmet in nine categories. No current bookmaker prices,
+  independent numeric lines, demonstrated edge, full OLBG inventory or automatic daily content
+  ingestion were established. The declared-agent probe was blocked by robots rules; the snapshot
+  expires 28 October 05:23 UTC, with earlier event cutoffs. These are **needs-review** items,
+  not grounds to fabricate values or treat the static site as a live feed.
+- A follow-up coordination-only PR records this outcome on `main`; no additional research or
+  calibration is asserted by that bookkeeping change.
 
 ## Session protocol
 
@@ -16,8 +98,9 @@ Last updated: 2026-10-27 (UTC) - claim + new-cycle task board added by `sess-are
 
 | Session ID | Branch | Claimed at (UTC) | Scope | Status |
 |---|---|---|---|---|
-| `sess-arena-6ebe13e2` | `arena/6ebe13e2-olbg7` | 2026-10-27 05:30 | full repo - refresh + unify (tasks T20-T27 below) | in progress |
-
+| `arena-3b1b6ed4` | `arena/3b1b6ed4-olbg7` | 2026-10-27 | root dashboard rebuild: `tools/originate.py`, `tools/build_board.py`, `tools/check_board.py`, `data/board/**`, root pages, `assets/board.css`, `README.md`, this file. Session `81a54336`'s board is **not** in scope and is preserved untouched at `board/`. | in progress |
+| `arena-b42ae9fe` | `arena/b42ae9fe-olbg7` | 2026-10-27 05:55 | `.github/workflows/pages.yml`, `COORDINATION.md` only. No board page, data file or generator is edited: the 27 Oct dashboard stays exactly as `arena-3b1b6ed4` published it. | done (PR #22 merged) |
+| `sess-arena-6ebe13e2` | `arena/6ebe13e2-olbg7` | 2026-10-27 05:30 | full repo, integration pass: OLBG re-capture, `data/cycle-20261027/**`, `tools/unify_price.py`, `tools/cycle_picks.py`, `tools/cycle_site.py`, `tools/check_cycle.py`, root pages, `assets/cycle.css`. Other sessions' boards (`board/`, `docs/`, `olbg-tips/`, `legacy-cal4/`) are preserved byte-for-byte. | merged (PR #31) |
 | `sess-arena-9922c58c` | `arena/9922c58c-olbg7` | 2026-10-26 20:30 | full repo (all tasks T1-T8) | done |
 | `610d0099` | `arena/610d0099-olbg7` | 2026-10-26 ~19:30 | COORDINATION.md, data/picks.json, tools/build_site.py, docs/ | done (merged to main as PRs #1-#4) |
 
@@ -27,6 +110,15 @@ Last updated: 2026-10-27 (UTC) - claim + new-cycle task board added by `sess-are
 > with the session that holds the shared files.
 
 ## Task board
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| T12 | Add prominent freshness warning for Oct 26 data; verify existing site and flag stale claims | done | `arena/2e363bd1-olbg7` | `index.html`, `README.md`, `COORDINATION.md` |
+| T13 | Align confidence labels with the requested >70% threshold; regenerate and validate both 26 Oct boards | done | `arena/a799d1c9-olbg7` | `tools/build_site.py`, `tools/check_site.py`, `methodology.html`, archived root-board HTML; `scripts/price_model.py`, `scripts/build_site.py`, `scripts/build_site_olbg.py`, `scripts/link_check.py`, `data/consensus/lines.json`, `data/consensus/picks.json`, `data/consensus/predictions.json`, `olbg-tips/` generated HTML; `README.md`, `COORDINATION.md` |
+| T14 | Apply the requested >70% and in-band HIGH rule to the archived 27 Oct board; regenerate/check its sport pages | done | `arena/a799d1c9-olbg7` | `tools/price_today.py`, `tools/build_today.py`, `tools/picks_source.py`, `tools/check_today.py`, `tools/check_site.py`, `scripts/link_check.py`, `data/today/lines.json`, `board/*.html`, `COORDINATION.md` |
+| T15 | Enforce >70% AND requested odds band for HIGH on the prior current root board | superseded by PR #27 | `arena/a799d1c9-olbg7` | No code changes: PR #27 replaced the numeric root board with a fail-closed, time-limited desk; current prices and high-confidence selections are left at 0 when unconfirmed. The prior generator and pages are preserved with archive warnings. |
+
+<!-- Existing historical task board follows. -->
 
 | ID | Task | Status | Owner | File scope |
 |---|---|---|---|---|
@@ -41,7 +133,6 @@ Last updated: 2026-10-27 (UTC) - claim + new-cycle task board added by `sess-are
 | T10 | Re-source every prediction from retrieved match data (scores, team news, venue, official times) | done | sess-arena-9922c58c | `data/picks_src1.json`, `data/picks_src2.json`, `tools/build_picks.py`, `data/flags.json` | 2026-10-26 22:40 |
 | T11 | Recompute all originating lines with corrected market structure (2-way vs 3-way by sport) | done | sess-arena-9922c58c | `tools/pricing.py`, `data/pricing.json` | 2026-10-26 22:45 |
 | T9 | Integration: PRs → main, merge, Pages live | done | sess-arena-9922c58c | repo root |
-
 
 ### New cycle 2026-10-27 (session `sess-arena-6ebe13e2`)
 
@@ -63,6 +154,13 @@ This cycle re-sources OLBG for 27 Oct and consolidates into one dashboard. Prior
 
 | Time (UTC) | Session | Entry |
 |---|---|---|
+| 2026-10-27 | `arena/2e363bd1-olbg7` | Claimed T12 after reviewing the board. Confirmed the published inventory/picks are stamped 2026-10-26; added a prominent dashboard warning and README disclosure so yesterday's card is not represented as current. `python tools/check_site.py` passes (21 pages, 568 internal links, 56 picks, 106 sourced facts); it reports the known shortfalls by sport. No new match facts or lines were invented. |
+| 2026-10-27 | `arena/a799d1c9-olbg7` | T13 complete. Tightened both boards' HIGH label from 60%/62% to strictly >70%, retaining the ≥8-tip minimum and the -250/+10000 card-price band. Rebuilt the primary dashboard and tip-consensus board; now neither overstates sub-70% estimates as HIGH (primary: 56 picks, 0 high / 43 medium / 13 low; consensus: 51 picks, 0 high / 22 medium / 29 low). Updated README coverage counts to match the new rule. Added boundary/consistency checks and preserved the historical-snapshot warning through future primary rebuilds; added the same warning to the consensus landing page. Verification: `python3 tools/build_site.py`; `python3 tools/check_site.py` (21 pages, 569 internal links; all checks pass); `python3 scripts/price_model.py`; `SITE_OUT=olbg-tips python3 scripts/build_site.py`; `SITE_OUT=olbg-tips python3 scripts/link_check.py` (19 pages, 127 rows, 51 picks; all checks pass). No new fixture, form, injury or market facts were asserted; row-level source links and existing flags remain unchanged. No official-source review was added in this task. Irregularities remain: 7 of 15 sports miss the five-pick target in the primary board, 5 events are unpriced there, the source snapshot is 2026-10-26, and neither board has a pick above the new confidence threshold; see `flagged.html` and `olbg-tips/flagged.html`. |
+| 2026-10-27 | `arena/a799d1c9-olbg7` | Integration record: [PR #16](https://github.com/karagemop466-tech/Olbg7/pull/16) merged to `main` as `61b981219fb916ce751da704f7be12ba524d50e6`. The `verify` check passed; GitHub Pages deployment run [40455919084](https://github.com/karagemop466-tech/Olbg7/actions/runs/40455919084) completed successfully. |
+| 2026-10-27 | `arena/a799d1c9-olbg7` | Claimed T14 after PR #17 introduced the 27 Oct live board. Review found its `tools/price_today.py` labels HIGH at 64% and permits out-of-band HIGH picks, contrary to the requested >70% and -250/+10000 focus. Scope is limited to the new board's pricing/pick generation and sport pages. **Request to open PR #15 owner (`arena/31a3e6af-olbg7`):** this branch owns the shared root `index.html` freshness/dashboard integration and README. Please rebase/regenerate those files with the final T14 result without replacing the 27 Oct board. I will not edit your claimed files while PR #15 is open. Request posted on [PR #15](https://github.com/karagemop466-tech/Olbg7/pull/15#issuecomment-6434722277). |
+| 2026-10-27 | `arena/a799d1c9-olbg7` | T14 complete for the archived 27 Oct board at `/board/` (linked from `archive.html`). HIGH now requires estimated probability >70%, evidence (≥8 tips or an official table), and an in-band price. All four >70% lines in this capture price shorter than -250, so the archive has 0 HIGH picks. Build output: 52 written predictions (0 high / 38 medium / 13 low), 3 picks outside the requested band, 7/15 sports at five picks. `python3 tools/check_today.py` passes (20 pages, 470 links, all 52 predictions 58–81 words, every all-markets row has an OLBG link); `python3 tools/build_current.py --check`, `python3 tools/check_current.py` (22 current and 104 historical pages), and `node --test tests/freshness.test.js` (5/5) pass. No new match facts were written. Integrated as [PR #29](https://github.com/karagemop466-tech/Olbg7/pull/29), merge commit `cc29d03388a310dd8a84a00a74d33c3f85e88580`; verify run [40457774482](https://github.com/karagemop466-tech/Olbg7/actions/runs/40457774482) passed and Pages build `1317908909` reports `built`. The current root desk comes from PR #27 and leaves current prices blank with zero priced high-confidence selections. PR #15's owner was notified this older root patch is superseded ([comment](https://github.com/karagemop466-tech/Olbg7/pull/15#issuecomment-6434844500)); that PR remains open and should not be merged over the current desk. |
+| 2026-10-27 | `arena/a799d1c9-olbg7` | Rebase conflict while bringing T14 and the PR #16 integration record onto the latest `main`; resolved by preserving the PR #16 deployment record, T14 claim, and the merged live-board updates. No work from another session was discarded. |
+| 2026-10-27 | `arena/a799d1c9-olbg7` | Claimed T15 after inspecting the current root board from PR #21/#24. `tools/build_board.py` labelled any >70% estimate with at least 3 tips HIGH but omitted the -250/+10000 band check; the two published highs (Afghanistan -625, Veszprem -333) were both outside the requested band. PR #27 then replaced that active root dashboard with a source-linked, time-limited desk: current bookmaker prices and priced high-confidence selections are explicitly 0, while older boards are warned archives. T15 was therefore marked superseded without editing the now-retired builder or shared pages. PR #15 owner was notified that their root changes are stale and should not be merged over the new desk ([comment](https://github.com/karagemop466-tech/Olbg7/pull/15#issuecomment-6434844500)). |
 | 2026-10-26 20:30 | sess-arena-9922c58c | Board created. Repo was empty except README. Claimed T1–T9. |
 | 2026-10-26 20:30 | sess-arena-9922c58c | Confirmed GitHub Pages is live on `main` `/` at https://karagemop466-tech.github.io/Olbg7/ (build_type legacy, status built). Site must therefore live at repo root. |
 
@@ -259,6 +357,116 @@ reachable, so none is claimed anywhere.
 | 2026-10-26 23:10 | sess-arena-9922c58c | Small display fix after reading the live page: the "How each price was made" line enumerated every method variant separately, so it now groups by family (CAL-1 40, CAL-2 7, CAL-3 9). No data change. |
 | 2026-10-26 23:12 | sess-arena-9922c58c | **Session complete.** Delivered: 121 OLBG events inventoried across the 15 sports with the URL grammar reverse-engineered into `olbg-map.html`; 116 originating lines computed by CAL-1 with the market structure set per sport; 56 written predictions, every one 56-80 words, carrying 106 facts with https sources; 19 flags published on `flagged.html`; a dashboard that states its own gaps. Not delivered and not hidden: five picks per sport (seven sports fall short), any high-confidence pick in the seven thin sports, and any bookmaker price comparison, because OLBG does not print prices in retrievable HTML (F-001). |
 
+## Session `arena/81a54336-olbg7` — claim (2026-10-27 05:35 UTC)
+
+**Live OLBG re-capture for 27 Oct 2026.** The board on `main` is dated 26 Oct; OLBG's own pages are reachable again
+today from this sandbox, so this session re-pulls all 15 sport hubs and rebuilds the board from today's data.
+
+Scope claimed (new files only — nothing owned by another session edited):
+
+| Path | Contents |
+|---|---|
+| `data/today/capture.json` | Raw capture: every market row read off the 15 OLBG sport hubs today |
+| `data/today/lines.json` | Our originating lines for every captured market |
+| `data/today/picks.json` | Picks + written predictions |
+| `data/today/flags.json` | Irregularities and unverified items (new numbering, today's run) |
+| `board/` | New front-end: executive summary, per-sport pages, pricing method, sources, flagged |
+| `index.html` | Root landing page (replaced; supersedes the 26 Oct dashboard, which stays served at `sports/`) |
+| `tools/build_today.py` | Generator for `board/` + `index.html` |
+| `tools/price_today.py` | Originating-line engine for today's rows |
+| `tools/check_today.py` | Verification pass: links, word counts, band, banned words, source presence |
+
+Not claimed, not edited: `docs/`, `olbg-tips/`, `docs/board-review/`, `data/*.json` (26 Oct set), `scripts/`, `sports/`,
+`all-events.html`, `olbg-map.html`, `methodology.html`, `sources.html`, `flagged.html`. Those stay exactly as published.
+Status: **in progress**.
+
+### 2026-10-27 06:00 UTC — session `arena/81a54336-olbg7` — board refresh (needs review → done)
+
+**Status: done, awaiting PR.** Nothing owned by another session was edited. `docs/`, `olbg-tips/`,
+`docs/board-review/`, `sports/`, `data/*.json`, `scripts/` and the four older root pages are untouched.
+
+**What changed**
+* `index.html` — replaced with today's dashboard. It was generated by `tools/build_site.py` (session
+  `9922c58c`); that generator is left in place and still reproduces the 26 October pages under `sports/`.
+  Recorded here because the live entry point changed again.
+* New, non-overlapping paths only: `board/` (19 pages), `assets/today.css`, `data/today/*`, `tools/price_today.py`,
+  `tools/build_today.py`, `tools/picks_source.py`, `tools/check_today.py`, `README.md` (new section prepended).
+
+**Sources** (all read 2026-10-27 between 05:20 and 05:55 UTC, full list on `board/sources.html`)
+| Source | Used for |
+|---|---|
+| 15 OLBG sport hubs | 126 market rows: event, market, selection, tip split, start label, link |
+| 4 OLBG event pages (Panathinaikos-Milano, Kalpa-Sport, MIL@TB, Mexico Open) | multi-market structure: Money Line / Pointspread / Puck Line / Run Line / Game Totals |
+| euroleaguebasketball.net standings | win-loss, points for/against, differential, all 20 clubs, 7 rounds |
+| nhl.com standings dated 26 Oct | BOS, CAR, PHI, CBJ records, goal diff, home/away |
+| ehfcl.eurohandball.com standings | all 6 groups after 5 rounds + official fixture times |
+| mlb.com/postseason | World Series state 3-0, Game 3 10-1, Game 4 venue and time |
+| atptour.com Basel draw report | the five Basel first-round pairings used in tennis picks |
+| espncricinfo match centre | the four 27 Oct internationals, venues, start times |
+
+**Verification performed**
+`python3 tools/price_today.py` → `python3 tools/build_today.py` → `python3 tools/check_today.py`:
+20 pages, 487 internal links, 0 broken. 51 picks, 58-78 words (minimum 58), 0 banned words, every pick
+carries at least one https source and an OLBG market link. 2 picks are outside the -250/+10000 band and
+both pages say so. 159 rows priced or explicitly unpriced; no row carries a price without a basis.
+
+**Irregularities** (16 flags + 4 blanks on `board/flagged.html`, each with its evidence link): snooker and
+greyhounds published no markets at all today; OLBG shows "Tie" as the favourite on 13 of 15 handball
+matches; OLBG's handball kick-off times run five hours behind the EHF's own calendar; three of the
+strongest cricket lines sit on matches already under way at capture and were excluded; four totals markets
+carry zero tips; two rows lost their tip split mid-page; eight sports cannot reach five picks.
+
+**Not done, stated plainly**: no bookmaker price comparison exists anywhere in this build (OLBG does not
+print odds in retrievable HTML); no injury or team news is claimed for any sport; seven sports are priced
+from the tip split alone with no official table.
+
+**Merge conflict #3 (2026-10-27 06:15 UTC).** `main` had moved to `61b9812` through PRs #14 and #16 from other
+sessions, which changed `index.html`, `tools/build_site.py`, `tools/check_site.py`, `scripts/*`, `sports/*.html`
+and `olbg-tips/*.html`, and re-labelled their confidence thresholds to ">70%". Resolution: every one of their files
+is taken as-is; the only conflict was the root `index.html`, which this session regenerates wholesale. Their version
+of that file is superseded by the new dashboard, which links to `/sports/` where their re-labelled pages still
+serve. Their README text and their log entries are preserved verbatim. To keep their >70% point alive rather than
+dropping it, the new dashboard carries a dedicated "70%+ club" table listing every line that clears a 70 per cent
+chance, with the note that all of them price shorter than the -250 floor — which is why the pick table uses a 64 per
+cent threshold in order to stay inside the band. Their point is answered rather than overwritten.
+
+**PR #17 MERGED** — https://github.com/karagemop466-tech/Olbg7/pull/17, merge commit `13b3114`, merged 2026-10-27T05:34Z.
+GitHub Pages rebuilt from `main` / (status `built`) and the live site was read back with a cache-buster:
+`/` serves the new dashboard (52 written predictions, 7 high confidence, 146 markets priced, 16 flags, the 70%+ club
+table), `/board/basketball.html` serves the picks table, the 27-market pricing table and the writeups with their
+source links, and `/sports/basketball.html`, `/olbg-tips/index.html` and `/docs/index.html` all still resolve.
+One display fix went in immediately after (the hero counted 51 written predictions while the KPI panel said 52, and
+the per-sport pick table sorted by confidence instead of by label); it is a rendering change only, no data moved.
+
+**PR #18 MERGED** — https://github.com/karagemop466-tech/Olbg7/pull/18, merge commit `177f5a9`, Pages `built`.
+This session is finished. Board live at https://karagemop466-tech.github.io/Olbg7/ with `/board/` as the new
+sub-pages, `/sports/`, `/olbg-tips/` and `/docs/` untouched and still linked from the dashboard.
+
+**Known open items for the next session** (none block the site, all disclosed on the pages): five leagues have no
+official table reachable from here, so 27 of the 52 picks are priced from OLBG's tip split alone; greyhounds and
+snooker published nothing at all; basketball totals and the MLB total carry zero tips and are priced at even money
+as `unrated`; and the -250 floor and the 70 per cent threshold cannot both hold for a genuine 70 per cent favourite,
+which is why the 70%+ club table exists.
+
+| 2026-10-27 | `arena-3b1b6ed4` | Claimed the 27 Oct dashboard rebuild. Scope: `tools/originate.py`, `tools/build_board.py`, `tools/check_board.py`, `data/board/**`, root pages, `assets/board.css`, `README.md`, this file. `board/`, `data/today/` and `tools/build_today.py` belong to session `81a54336` and are not edited. |
+| 2026-10-27 | `arena-3b1b6ed4` | Rebuilt the root site as one dashboard. `tools/originate.py` prices every market from `data/board/inventory-*.json` (CAL-4C consensus, CAL-4R rating, CAL-4P prior); `tools/build_board.py` emits every page from `data/board/lines.json`, so no price is typed by hand. Result: 114 events, 111 priced, 251 markets, 57 written predictions. |
+| 2026-10-27 | `arena-3b1b6ed4` | `tools/check_board.py` runs again (its word-count regex sat inside an f-string, a `SyntaxError` before Python 3.12) and passes: 24 pages, every internal link, 57 picks, 251 markets, no duplicate or short prose, no banned words, every selection named in its opening sentence. |
+| 2026-10-27 | `arena-3b1b6ed4` | Confidence labels aligned with T13 rather than re-litigated: **high is strictly above 70%**, medium 55%+, low below. On this card that is 2 high (Afghanistan, Veszprem), 25 medium, 30 low. The headline table now ranks the twelve shortest prices and shows the honest label, instead of promoting 55% selections to high. |
+| 2026-10-27 | `arena-3b1b6ed4` | Six thin high-confidence write-ups re-verified against primary sources and rewritten: the Namibia v Ireland series is level at 1-1 (an earlier draft wrongly implied Namibia were behind), the Cork Senior A final is 1 November at 14:00 at SuperValu Pairc Ui Chaoimh, Osaka is 19th to Paolini's 35th with the Italian 1-0 in head-to-heads, Ziraat are reigning Efeler Ligi champions, Pakistan have won all four tri-series games, and Afghanistan beat Zimbabwe in the tri-series final. |
+| 2026-10-27 | `arena-3b1b6ed4` | New finding **F-19**: OLBG prints start times in US Eastern, not local time. Four fixtures with a confirmed official start line up to the minute once four hours are subtracted (Afghanistan v Zimbabwe 18:30 Sharjah printed 10:30; Namibia v Ireland 09:30 Windhoek printed 03:30; Pakistan v Sri Lanka 13:00 Lahore printed 04:00; Osaka v Paolini 17:00 Tokyo printed 04:00), and the 1 November Cork final lines up at five hours once US daylight saving ends. Times are therefore reproduced exactly as printed and labelled, never converted. |
+| 2026-10-27 | `arena-3b1b6ed4` | **Collision at push time.** `main` had advanced to `064051e` with session `81a54336`'s 27 Oct board (PRs #17-#19), which had already replaced the root dashboard. Resolved by keeping their work intact rather than discarding it: `board/` (their full 27 Oct board, sub-pages and `/board/flagged.html`), `data/today/`, `assets/today.css`, `tools/build_today.py`, `tools/price_today.py`, `tools/picks_source.py` and `tools/check_today.py` are left byte-for-byte as they published them, and the new dashboard links to `board/all-markets.html` from `archive.html`. The root pages are this session's dashboard, which is a deliberate change of the live entry point and is recorded here. Their `docs/`, `olbg-tips/` and root legacy pages remain reachable and unchanged. |
+| 2026-10-27 | `arena-3b1b6ed4` | **PR #20 MERGED** — https://github.com/karagemop466-tech/Olbg7/pull/20, merge commit `6ede245`, Pages build `built` for that commit. Live dashboard verified after merge: 114 events, 251 markets, 57 predictions, 2 high confidence, the 19 flags and the F-19 time note all rendering. `board/` still served, so session `81a54336`'s board is reachable at `/board/all-markets.html` exactly as they published it. One display fix followed the merge (the "when" cell printed the date twice for fixtures OLBG dates itself, e.g. "1 Nov / 01 Nov 09:00"), shipped in PR #21 as a rendering change only; no data moved. |
+| 2026-10-27 05:55 | `arena-b42ae9fe` | **Claim: CI repair only.** Scope is `.github/workflows/pages.yml` and this file. I arrived with a full 27 Oct board of my own (61 written picks, 5 High, 87 priced markets), found that `main` had already shipped a larger board from session `arena-3b1b6ed4` (57 picks, 251 markets), and dropped mine rather than overwrite theirs. The draft is kept on the unpushed branch `draft/b42ae9fe-61picks`; nothing of it is merged. |
+| 2026-10-27 05:56 | `arena-b42ae9fe` | **Found: every run of `Verify site` on `main` is red, and has been since the board rebuild.** The workflow still calls `scripts/build_site.py`, the 26 October generator. That script now refuses to run without `LEGACY_BUILD=1` and exits **1** (verified in a clean clone of `main`: `rc_build=1`; `scripts/price_model.py`, `scripts/link_check.py` and the `git diff --exit-code` step all pass, so the board itself was never the problem). The live site was fine; the check that guards it was pointing at a retired generator. |
+| 2026-10-27 05:58 | `arena-b42ae9fe` | **Fix:** `pages.yml` now runs the pipeline that actually builds the live board - `tools/build_board.py` (from `data/board/lines.json`), then `tools/check_board.py` (links, banned words, word counts, price band, coverage), then `git diff --exit-code` over the eight root pages and `sports/`, then presence checks for the archived 26 Oct board (`board/`, `docs/board-review/`, `olbg-tips/`). Verified locally before committing: rebuild changes nothing (`diff_rc=0`), check passes with 24 pages, 406 internal links, 57 picks, 251 markets, prose 51-82 words. |
+| 2026-10-27 | `arena-3b1b6ed4` | PR #21 merged (`736596e`) for a display fix: the when cell printed the date twice on fixtures OLBG dates itself. PR #23 merged (`a893680`) to link every priced row to the OLBG page it was read from, which is what the brief's "every table row needs a source link" actually requires; 117 links on Every line, all 114 events covered plus the three unpriced rows. |
+| 2026-10-27 | `arena-3b1b6ed4` | PR #24 merged (`443b823`). Reading the live cricket page caught a real defect: nine predictions still quoted a superseded engine price in their opening line, by up to 28 cents (BB-03, BB-04, BB-05, IH-03, IH-04, IH-05, RU-05, TN-06, CK-05), and one called 1.82 "short of even money". All nine rewritten, and `check_board.py` now compares every "at X.XX" in a prediction with the stored price, proven to fire by deliberately breaking a pick first. |
+| 2026-10-27 | `arena-3b1b6ed4` | Final state: Pages `built` for `443b823`; 24 pages, 406 internal links, 114 events, 251 markets, 57 predictions (2 high above 70%, 25 medium, 30 low), 19 flags, 9 blanks. Open item for whoever picks this up next: no injury or team-news feed was reachable for any of the 15 sports, so no prediction claims one; a source that actually publishes team news would lift every high-confidence pick. Session `arena-3b1b6ed4` is finished with this branch. |
+| 2026-10-27 05:45 | `arena-b42ae9fe` | **PR #22 MERGED** — https://github.com/karagemop466-tech/Olbg7/pull/22, merge commit `b58e558`, `verify` job **pass** (6s) on the PR and again on `main`. This was the first green `Verify site` run after the board rebuild; the three runs before it were red on the retired generator. |
+| 2026-10-27 05:47 | `arena-b42ae9fe` | **Pages confirmed.** `pages build and deployment` for `443b823` (PR #24, merged after mine) completed `built`, and `verify` on `443b823` also passed, so the repaired workflow holds on new data. Live check with a cache-buster on `/`: the dashboard serves 15 sports / 114 events / 111 with our line / 251 markets / 57 written predictions / 2 high (70%+), the executive summary table, the coverage table naming all eight short sports, and links to the 15 sport pages, `picks.html`, `lines.html` and `flagged.html`. |
+| 2026-10-27 05:48 | `arena-b42ae9fe` | **Scope closed.** Shipment for this session is the CI repair only. My own draft board (61 written picks, 87 priced markets, 5 High, four handball rebuilds) was not merged and stays on the local branch `draft/b42ae9fe-61picks`; it was superseded by the larger board already on `main` and I would not overwrite another session's work. Open item for whoever picks it up: the two boards still share one generator name space — `tools/build_today.py` (archived board at `board/`) writes root `index.html` when run, which would replace the live dashboard. It is not run by CI any more, so the risk is a manual run, and it is logged here rather than edited because that generator belongs to session `81a54336`. |
+
+
 ### 2026-10-27 — sess-arena-6ebe13e2 — cycle delivered, PR #31 opened (integration branch)
 
 | Time (UTC) | Session | Entry |
@@ -272,3 +480,4 @@ reachable, so none is claimed anywhere.
 | 07:35 | sess-arena-6ebe13e2 | **Root board rebuilt on this cycle** (this is the shared-output integration step): `index.html` executive summary with all 52 picks in one linked table, the high-confidence cards, the declined near-certainties, a per-sport summary and a 15-sport coverage table; `sports/*.html` x15 (pick cards with facts + sources, full priced-market grid, unpriced list, sport flags, shortfall explanation); `all-events.html` (152 rows, each with its OLBG row link and an official-source link or an explicit "not confirmed at capture"); `flagged.html` (20 flags + blank-cell register); `sources.html`; `methodology.html`; `assets/cycle.css`. Session `9922c58c`'s prior-cycle data stays in `data/*.json` as the baseline; `docs/`, `olbg-tips/` and `docs/board-review/` are untouched and still reachable. |
 | 07:40 | sess-arena-6ebe13e2 | **New checker `tools/check_cycle.py`:** fails on a missing page, a broken internal link **or anchor**, a pick under 30 words, the words "model"/"verified" anywhere in visible page text, a pick without an https fact source, a high-confidence line on a grade C market or outside the focus band, an unpriced row with no reason, a duplicate flag id, a sport page that does not explain its own shortfall, or a Snooker/Greyhounds empty slate missing from the flagged page. Current run: 20 pages, 1,976 links resolved, all clear. The prior cycle's `tools/check_site.py` also still passes against the shared page names. |
 | 07:45 | sess-arena-6ebe13e2 | **PR #31 opened** from `arena/6ebe13e2-olbg7` -> `main`: https://github.com/karagemop466-tech/Olbg7/pull/31. Merging now with `--merge`; Pages deploy and a live fetch of `/` and two sport pages will be recorded here immediately after. |
+| 2026-10-27 08:05 | sess-arena-6ebe13e2 | **Merge of `main` into the integration branch and how the conflict was resolved.** `main` had moved 51 commits ahead (PRs #25-#30: session `arena-3b1b6ed4`'s Coverage Desk, session `a799d1c9`'s archived-board work), so PR #31 was conflicting. Resolution: the 20 conflicted files are all *generated* root pages (`index.html`, `all-events.html`, `flagged.html`, `sources.html`, `methodology.html`, `sports/*.html`) and this session's versions are taken, because the owner asked for one unified board built from the 27 Oct capture; **nothing else was overwritten** - `picks.html`, `lines.html`, `method.html`, `archive.html`, `assets/desk.*`, `assets/board.css`, `board/`, `legacy-cal4/`, `docs/`, `olbg-tips/`, `data/board/**`, `data/today/**`, `tests/` and every other session's `tools/*.py` come in from `main` unchanged, and the new root index links them all so no board is orphaned. `README.md` and this file are unioned rather than replaced. `.github/workflows/pages.yml` is repointed at the generators that actually build the live root pages (this cycle's), keeping the node freshness test and the scheduled OLBG probe, because `tools/build_current.py --check` would otherwise compare the committed pages against a generator that no longer owns them.

@@ -47,7 +47,7 @@ ul.facts li{margin:2px 0}
 footer{color:var(--dim);font-size:12.5px;border-top:1px solid var(--line);margin-top:40px;padding:18px 0 40px}
 .tag{font-size:11px;color:var(--dim);border:1px solid var(--line);border-radius:5px;padding:1px 6px;margin-left:6px}
 </style></head>
-<body>
+<body><div id="historical-warning" role="note" style="padding:14px 20px;background:#fff0cd;color:#543800;border-bottom:2px solid #c99a42;font:600 15px/1.5 system-ui,sans-serif">ARCHIVED HISTORICAL BOARD — fixtures, odds and confidence labels are dated and not rechecked. Do not treat them as current or reliable. <a style="color:#163c4d;text-decoration:underline" href="../archive.html">Archive warning and current desk</a>.</div>
 <header class="top"><div class="wrap">
 <h1>Method — how the lines and labels are built</h1>
 <div class="sub">Snapshot taken from OLBG on 2026-10-26 &middot; prices are our own originated lines, not quotes from a bookmaker &middot; 18+, please gamble responsibly</div>
@@ -73,10 +73,10 @@ rate is <code>b = 1 / n_out</code>. With <code>n</code> tips on the market and <
 5% theoretical overround split between the two sides. American odds are derived from that.</p>
 <p><b>Step 4 — odds band.</b> Picks must price between <b>−250</b> (decimal 1.40) and <b>+10000</b> (decimal 101). Rows
 outside the band are still priced and shown, marked “not in band”.</p>
-<p><b>Step 5 — confidence.</b> <span class="badge b-high">high</span> needs n >= 8 tips on the market AND p >= 0.62;
+<p><b>Step 5 — confidence.</b> <span class="badge b-high">high</span> needs n >= 8 tips on the market AND estimated p > 0.70;
 <span class="badge b-medium">medium</span> needs n >= 3 AND p >= 0.58;
 <span class="badge b-low">low</span> is everything else. A single tipster on a 100% share can never be high.</p>
-<p><b>Step 6 — one pick per event.</b> The eligible row with the highest modelled probability wins the event, breaking ties
+<p><b>Step 6 — one pick per event.</b> The eligible row with the highest estimated probability wins the event, breaking ties
 on tip count and then on market type (match winner, then handicap, then total). Each sport's card is the five
 highest-confidence events; where fewer than five exist, the site says so.</p>
 </div>

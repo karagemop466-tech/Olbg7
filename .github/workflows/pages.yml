@@ -1,14 +1,11 @@
-name: Verify site
-
-# GitHub Pages for this repository is pinned to the repo root of `main`
-# (build_type: legacy, source main:/), so there is no deploy job here - the
-# committed HTML is what gets served. This workflow only proves that the
-# committed pages still match the data and that every link resolves.
+name: Verify coverage desk
 
 on:
   push:
-    branches: [main]
+    branches: [main, arena/4eb82353-olbg7]
   pull_request:
+  schedule:
+    - cron: '17 5 * * *'
   workflow_dispatch:
 
 permissions:
@@ -21,16 +18,49 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
-      - name: Re-price every market (tip-consensus board)
-        run: python scripts/price_model.py
-      - name: Rebuild the tip-consensus board
-        run: python scripts/build_site.py
-        env:
-          SITE_OUT: olbg-tips
-      - name: Check sources, word counts, odds band and internal links
-        run: python scripts/link_check.py
-        env:
-          SITE_OUT: olbg-tips
-      - name: Fail if the committed tip-consensus board is out of date with the data
-        run: git diff --exit-code --stat -- olbg-tips data/consensus
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      # The root pages (index.html, all-events.html, flagged.html, sources.html,
+      # methodology.html, sports/*.html) are the 2026-10-27 unified cycle board, built
+      # from data/cycle-20261027/*.json by the three generators below. The build is
+      # deterministic, so a clean rebuild must produce no diff.
+      #
+      # tools/build_current.py used to own these pages from data/current.json; it is no
+      # longer run here because its output would replace the live board with the expired
+      # 05:23 UTC snapshot (its pages picks.html/lines.html/method.html/archive.html are
+      # still committed and still linked from the dashboard). Run it only in a scratch
+      # copy - see README.
+      - name: Rebuild the cycle board and check the committed HTML matches
+        run: |
+          python3 tools/unify_price.py
+          python3 tools/cycle_picks.py
+          python3 tools/cycle_site.py
+          git diff --exit-code data/cycle-20261027 index.html all-events.html flagged.html sources.html methodology.html sports assets/cycle.css
+      - name: Check cycle data, links, anchors, prose and grading
+        run: python3 tools/check_cycle.py
+      - name: Check the preserved CAL-4 board data
+        run: python3 tools/check_board.py
+      - name: Test fail-closed freshness behavior
+        run: node --test tests/freshness.test.js
+
+  olbg-access-probe:
+    # This is an access check only. It never updates content or bypasses robots.txt.
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check declared-agent access under robots.txt
+        run: python3 tools/probe_olbg.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: olbg-access-probe
+          path: probe-output/
+          retention-days: 1
+          if-no-files-found: warn

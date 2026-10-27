@@ -7,7 +7,7 @@
    101.0
   ],
   "confidence_rules": {
-   "high": "n >= 8 tips on the market AND p >= 0.62",
+   "high": "n >= 8 tips on the market AND estimated p > 0.70",
    "medium": "n >= 3 AND p >= 0.58",
    "low": "otherwise"
   }
@@ -56,7 +56,7 @@
    "shrink_weight": 0.5455,
    "price_decimal": 1.53,
    "price_american": "-189",
-   "confidence": "high",
+   "confidence": "medium",
    "in_band": true,
    "excluded": null
   },
@@ -744,7 +744,7 @@
    "shrink_weight": 0.6154,
    "price_decimal": 1.41,
    "price_american": "-244",
-   "confidence": "high",
+   "confidence": "medium",
    "in_band": true,
    "excluded": null
   },
@@ -882,7 +882,7 @@
    "shrink_weight": 0.5238,
    "price_decimal": 1.46,
    "price_american": "-217",
-   "confidence": "high",
+   "confidence": "medium",
    "in_band": true,
    "excluded": null
   },
@@ -1112,7 +1112,7 @@
    "shrink_weight": 0.5455,
    "price_decimal": 1.53,
    "price_american": "-189",
-   "confidence": "high",
+   "confidence": "medium",
    "in_band": true,
    "excluded": null
   },
@@ -1779,7 +1779,7 @@
    "shrink_weight": 0.8,
    "price_decimal": 1.52,
    "price_american": "-192",
-   "confidence": "high",
+   "confidence": "medium",
    "in_band": true,
    "excluded": null
   },
@@ -1802,7 +1802,7 @@
    "shrink_weight": 0.7297,
    "price_decimal": 1.5,
    "price_american": "-200",
-   "confidence": "high",
+   "confidence": "medium",
    "in_band": true,
    "excluded": null
   },
@@ -1848,7 +1848,7 @@
    "shrink_weight": 0.4737,
    "price_decimal": 1.42,
    "price_american": "-238",
-   "confidence": "high",
+   "confidence": "medium",
    "in_band": true,
    "excluded": null
   },

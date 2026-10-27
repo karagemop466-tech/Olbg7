@@ -7,6 +7,7 @@ inventory row without an OLBG link.
 """
 import json, os, re, sys
 from html.parser import HTMLParser
+from build_site import confidence_of
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
@@ -36,6 +37,17 @@ def main():
     events = json.load(open(os.path.join(DATA, "events.json")))["events"]
     picks = json.load(open(os.path.join(DATA, "picks.json")))["picks"]
     pricing = json.load(open(os.path.join(DATA, "pricing.json")))
+
+    # Guard the published high-confidence rule: estimated chance >70%, sample >=8,
+    # and requested American-odds band. These boundary checks catch regressions.
+    if confidence_of(0.699, 1.50, 10) == "high":
+        errors.append("confidence rule regression: 69.9% was labelled high")
+    if confidence_of(0.70, 1.50, 8) == "high":
+        errors.append("confidence rule regression: exactly 70% was labelled high")
+    if confidence_of(0.701, 1.50, 8) != "high":
+        errors.append("confidence rule regression: above 70% with 8 tips should be high")
+    if confidence_of(0.70, 1.39, 8) == "high":
+        errors.append("confidence rule regression: odds shorter than -250 were labelled high")
 
     # --- data checks -------------------------------------------------------
     ids = {}
@@ -102,6 +114,8 @@ def main():
             errors.append(f"missing page {page}")
             continue
         html_src = open(path, encoding="utf-8").read()
+        if page == "methodology.html" and "needs fair probability &gt; 70%" not in html_src:
+            errors.append("methodology.html: high-confidence threshold is not documented as 70%")
         lp = Links()
         lp.feed(html_src)
         base = os.path.dirname(path)

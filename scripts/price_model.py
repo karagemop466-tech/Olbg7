@@ -23,7 +23,7 @@ Method (deliberately simple, fully documented, no hidden inputs)
    American odds are derived from the decimal price.
 
 4. Confidence label
-       HIGH   : n >= 8 and p >= 0.62
+       HIGH   : n >= 8 and p > 0.70
        MEDIUM : n >= 3 and p >= 0.58
        LOW    : everything else
    A HIGH label therefore requires both a large sample of tips and a genuinely
@@ -82,7 +82,7 @@ def probability(tips, total, outcomes):
 def confidence(p, total):
     if p is None or not total:
         return "none"
-    if total >= 8 and p >= 0.62:
+    if total >= 8 and p > 0.70:
         return "high"
     if total >= 3 and p >= 0.58:
         return "medium"
@@ -170,7 +170,7 @@ def main():
             "overround": OVERROUND,
             "band_decimal": [BAND_MIN, BAND_MAX],
             "confidence_rules": {
-                "high": "n >= 8 tips on the market AND p >= 0.62",
+                "high": "n >= 8 tips on the market AND estimated p > 0.70",
                 "medium": "n >= 3 AND p >= 0.58",
                 "low": "otherwise",
             },

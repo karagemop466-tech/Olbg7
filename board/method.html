@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en-GB"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How we price - 27 October 2026</title>
+<link rel="stylesheet" href="../assets/today.css"></head>
+<body><div id="historical-warning" role="note" style="padding:14px 20px;background:#fff0cd;color:#543800;border-bottom:2px solid #c99a42;font:600 15px/1.5 system-ui,sans-serif">ARCHIVED HISTORICAL BOARD — fixtures, odds and confidence labels are dated and not rechecked. Do not treat them as current or reliable. <a style="color:#163c4d;text-decoration:underline" href="../archive.html">Archive warning and current desk</a>.</div>
+<nav class="nav">
+<a class="brand" href="../index.html">OLBG Coverage Desk<span>27 October 2026</span></a>
+<div class="links">
+<a href="../index.html">Today&rsquo;s picks</a>
+<a href="../board/all-markets.html">All markets</a>
+<a href="../board/method.html">How we price</a>
+<a href="../board/sources.html">Sources</a>
+<a href="../board/flagged.html">Flagged (16)</a>
+<a href="../sports/basketball.html">26 Oct board</a>
+</div></nav>
+<main>
+
+
+<p class="crumb"><a href="../index.html">Today&rsquo;s picks</a> / How we price</p>
+<h1>How every line on this board is made</h1>
+<p class="lede">Two inputs, one blend, one margin. The same rule is applied to a EuroLeague game, a Pro D2 match,
+a greyhound race and a golf tournament, and where an input is missing the line says so rather than guessing.</p>
+
+<section class="panel">
+<h2>1. The market input</h2>
+<p>OLBG prints, for every selection, how many tips it has and how many tips the whole market has. That is the only
+crowd signal available, and it is thin: the median market on today's card has four tips in it. So the observed
+share is pulled towards a prior that depends on the shape of the market:</p>
+<table class="grid small">
+<thead><tr><th>Market shape</th><th>Prior</th><th>Why</th></tr></thead>
+<tbody>
+<tr><td>Two-way (win match, money line, handicap, totals, puck line, run line)</td><td>0.50</td><td>A named side in a two-outcome market</td></tr>
+<tr><td>Three-way (handball, rugby union, ice hockey money line)</td><td>0.42</td><td>Room for a draw</td></tr>
+<tr><td>Outright / tournament</td><td>0.10</td><td>A field of many runners</td></tr>
+</tbody></table>
+<p>The blend is <code>chance = (tips for the selection + K &times; prior) / (tips in the market + K)</code>, with
+K = 6. K is the number of pseudo-tips that have to be overcome before the crowd moves a price far from the prior,
+which is what stops a 2-of-2 split being read as a 100 per cent certainty.</p>
+</section>
+
+<section class="panel">
+<h2>2. The form input</h2>
+<p>Where an official competition table was read, each side gets a strength figure (win percentage in basketball and
+handball, points percentage in the NHL, series state in the World Series). The home side gets a 0.05 edge and the
+difference is put through a logistic with scale 0.7:</p>
+<p><code>chance(home) = 1 / (1 + exp(-((strength home - strength away + 0.05) / 0.7)))</code></p>
+<p>For handicap, puck-line, run-line and spread markets the expected margin is derived from that same chance
+(<code>margin = sigma &times; inverse-normal(chance)</code>) and the line is then covered or not against a normal
+distribution with the sport's own spread: basketball 11.5 points, ice hockey 1.9 goals, baseball 3.2 runs, handball 6.5 goals.</p>
+</section>
+
+<section class="panel">
+<h2>3. The blend, the margin and the band</h2>
+<p>Where both inputs exist the line is 50 per cent market and 50 per cent form. Where only one exists the other is
+absent rather than zero. Then <code>price = 1 / chance / 1.02</code>, a 2 per cent margin, converted to American odds.
+A 2 per cent margin means a 70 per cent chance lands on -250, which is the floor of the band the brief asks for, so
+anything the table makes a stronger favourite than that is published but labelled <em>outside band</em>.</p>
+<p>The band is -250 to +10000. 142 of 159 lines fall inside it; 4 are shorter than the floor.</p>
+</section>
+
+<section class="panel">
+<h2>4. The confidence rule</h2>
+<table class="grid small">
+<thead><tr><th>Label</th><th>Rule</th><th>Count today</th></tr></thead>
+<tbody>
+<tr><td><span class="b b-high">High</span></td><td>chance strictly above 70 per cent, price inside -250 to +10000, and either eight or more tips in the market or an official table behind it</td><td>0</td></tr>
+<tr><td><span class="b b-medium">Medium</span></td><td>chance of 54.5 per cent or better</td><td>79</td></tr>
+<tr><td><span class="b b-low">Low</span></td><td>everything else that has a line</td><td>63</td></tr>
+<tr><td><span class="b b-unrated">Unrated</span></td><td>no tips on the market at all, so the line is the bare prior</td><td>4</td></tr>
+</tbody></table>
+<p>The rule is deliberately hard to satisfy. A 70 per cent chance from four tips is not evidence, and a 55 per cent
+chance from forty tips is not either. High needs both a number and a reason to believe the number.</p>
+</section>
+
+<section class="panel">
+<h2>5. What is not in any line</h2>
+<ul class="plain">
+<li><strong>Bookmaker prices.</strong> OLBG renders odds client-side and they were absent from every page retrieved,
+so no line here can be compared with the market. That is the single biggest limitation of this board.</li>
+<li><strong>Injuries and team news.</strong> No feed was readable for any of the fifteen sports.</li>
+<li><strong>Weather, referee appointments, travel.</strong> None was read, so none is priced.</li>
+<li><strong>Snooker and greyhounds.</strong> OLBG published no markets, so those two sports have no lines at all.</li>
+</ul>
+</section>
+
+</main>
+<footer>
+<p><strong>How to read this page.</strong> Every price here is <em>ours</em>, originated from the OLBG tip split and,
+where an official table was read, from that table. The OLBG link on each row is the market it came from.
+Anything we could not confirm is blank and listed on the <a href="../board/flagged.html">Flagged for review</a> page.</p>
+<p>18+. No assurance of profit. Support: GamCare, GambleAware.</p>
+</footer>
+</body></html>

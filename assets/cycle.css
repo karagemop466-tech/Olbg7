@@ -79,6 +79,8 @@ section{max-width:1180px;margin:0 auto}
 .sev-method{border-left-color:#1f5eff}.sev-data,.sev-blank{border-left-color:#a16207}
 .cnt{font-size:12px;color:#6a7288;font-weight:500}
 .sportlink{color:#101828;font-weight:650;text-decoration:none;border-bottom:1px solid #cdd6e6}
+.sr-only{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+.sr-only:focus{left:8px;top:8px;width:auto;height:auto;background:#fff;padding:6px 10px;z-index:60;border-radius:6px}
 .foot{max-width:1180px;margin:36px auto 0;border-top:1px solid #dfe3ea;padding-top:12px;color:#66708a;font-size:12.5px}
 a{color:#1f4fd8}
 @media (max-width:900px){.grid2{grid-template-columns:1fr}.tbl{font-size:12.5px}.navsports{display:none}}
