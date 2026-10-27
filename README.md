@@ -7,76 +7,91 @@ Rugby League.
 
 Live site: **https://karagemop466-tech.github.io/Olbg7/**
 
-Retrieval date for everything in this repository: **2026-10-26**.
+**Current cycle: retrieved and priced on 2026-10-27 (05:30-06:10 UTC).** The previous cycle
+(2026-10-26, 121 events / 56 picks) is still in `data/*.json` and is kept for comparison, not as the live board.
+
+## What this cycle produced
+
+| Measure | Result |
+|---|---|
+| OLBG pages read | 12 sport pages + 6 event pages (both sides of each market) |
+| Unique markets | **152** across 13 sports; Snooker and Greyhounds returned "No tips found." |
+| Lines originated by us | **141 priced**, 11 left unpriced with the reason on the row |
+| Written predictions | **52**, 63-115 words each, 13 of 15 sports at 1-5 picks |
+| Confidence split | 2 high / 29 medium / 21 low |
+| Reliability grades | 22 grade A, 60 grade B, 59 grade C markets |
+| Flags raised | **20** (structural defects, source conflicts, deliberate blanks) |
+| Distinct sources | 61, every fact in every write-up links to the page it came from |
+
+The two high-confidence picks are both in cricket - Pakistan over Sri Lanka at 1.41 and Ireland over
+Namibia at 1.45 - because the brief asks for high-confidence work inside the &minus;250 to +10,000
+band, and near-unanimous favourites (Afghanistan 15/16, Fernandez 10/12, KalPa 5/5) price at 1.15-1.36,
+which is outside it. Those are published in their own "strong, but outside the band" table so the
+decision is auditable instead of hidden.
 
 ## What is in here
 
 | Path | What it is |
 |---|---|
-| `index.html` | Dashboard: executive summary, ranked picks, coverage by sport |
-| `sports/*.html` | One page per sport: picks table, written predictions with source links, every inventoried event |
-| `all-events.html` | All 121 inventoried events with our originating line |
+| `index.html` | Executive summary: the picks table for all 52 picks, the high-confidence cards, the declined near-certainties, per-sport summary, coverage of all 15 sports |
+| `sports/<sport>.html` | One page per sport: written pick cards (prediction, price, why it is a lean, how it misses, sourced facts), a pick table, every market priced, every market not priced, and the flags touching that sport |
+| `all-events.html` | All 152 captured markets with our line, grade and an OLBG row link plus an official-source link |
+| `flagged.html` | The 20 flags plus the register of every cell deliberately left blank |
+| `sources.html` | Source register grouped by domain, with what each page was used for and which picks cite it |
+| `methodology.html` | Capture, the pricing formula, the grade rules, where we intervened in the data, and how to rebuild |
 | `olbg-map.html` | The reverse-engineered OLBG structure: URL grammar, sport ids, what each page returned |
-| `methodology.html` | How a line is originated (CAL-1 / CAL-2 / CAL-3), the confidence rules, the &minus;250 to +10000 band |
-| `sources.html` | Source register, grouped by sport |
-| `flagged.html` | Everything unconfirmed, contradictory or missing |
-| `data/events.json` | Event inventory: 121 events, each with the OLBG path it came from |
-| `data/pricing.json` | Every originating line produced by the engine |
-| `data/picks.json` | 56 written predictions (built output), each with facts and source links |
-| `data/picks_src1.json` | Hand-written predictions for the eight sports with a full OLBG card |
-| `data/picks_src2.json` | Hand-written predictions for the outright and single-market sports |
-| `tools/build_picks.py` | Merges the two source files into `data/picks.json` and validates word counts, sources and banned words |
-| `data/pricing.json` | CAL-1 output: 121 events inventoried, 116 priced, 5 unpriced |
-| `data/sources.json` | Source register as data + the OLBG URL grammar |
-| `data/flags.json` | Irregularity register (F-001 to F-016) and the list of deliberate blanks |
-| `tools/pricing.py` | The pricing engine |
-| `tools/build_site.py` | Static site generator (no dependencies) |
-| `tools/check_site.py` | Verification pass: links, word counts, banned words, source presence |
-| `docs/` | Earlier 75-row board from session `610d0099`, preserved unchanged (different method) |
-| `data/picks_610d0099.json` | That board's data, kept as-is |
-| `tools/build_site_docs.py` | That board's generator, write path repointed so it cannot overwrite `data/picks.json` |
-| `COORDINATION.md` | Shared task board, integration record and log |
+| `data/cycle-20261027/events_raw.json` | The 155 captured market rows exactly as OLBG printed them |
+| `data/cycle-20261027/lines.json` | CAL-1R output: every market with structure, prior, probability, our price, confidence, grade and notes |
+| `data/cycle-20261027/predictions.json` | The 52 written picks with facts, per-fact sources, angle and risk |
+| `data/cycle-20261027/sources.json`, `flags.json` | The same registers the pages are built from |
+| `tools/unify_price.py` | The pricing engine (CAL-1R) |
+| `tools/cycle_picks.py` | Attaches the written picks to priced markets; validates length, banned words and https sources |
+| `tools/cycle_site.py` | Generates every page above |
+| `tools/check_cycle.py` | Fails on a broken link or anchor, a short or unsourced pick, a high-confidence line on a grade C market, or an unexplained shortfall |
+| `data/events.json`, `data/pricing.json`, `data/picks.json`, `data/flags.json` | The 2026-10-26 cycle, kept unchanged as the comparison baseline |
 
-## How a line is originated
+## How a line is originated (CAL-1R)
 
-OLBG prints a tip split for each selection ("9/16 Win Tips", 56%) but not bookmaker prices - those are
-rendered client-side and were absent from every page retrieved. So the board is priced from the split:
+OLBG prints a tip split for each selection ("9 / 16 Win Tips", 56%) but no bookmaker price - the odds
+widget is rendered client-side and was absent from every page retrieved (flag U-001). So each line is
+built from the split:
 
-1. prior from market structure (0.50 two-way, 0.3333 three-way, 0.125 outright);
-2. shrink the split toward that prior with 6 pseudo-tips: `p = (wins + 6 x prior) / (total + 6)`;
-3. fair price `1/p`, card price `1/(p x 1.05)`;
-4. American conversion;
-5. confidence from `p`, the sample size and the price band.
+1. **prior** from market structure - 1/2 two-way, 1/3 where OLBG prints a draw or tie as a listed outcome
+   (every EHF handball money line, and the cricket Test, whose "Win Match" market carries a Draw row;
+   limited-overs cricket does **not**, because it cannot be drawn), 1/8 for outrights because OLBG does not
+   print field sizes (U-004);
+2. **shrink** the split toward that prior with K = 6 pseudo-tips: `p = (wins + 6 x prior) / (total + 6)`;
+3. **price** it: fair = `1/p`, our line = `1/(p x 1.05)`, then the standard American conversion;
+4. **grade** the market: A = 8+ tips and no structural anomaly, B = 3-7, C = under 3 tips, a degenerate
+   0%/100% split, or a 3-way draw cluster. High confidence is blocked on grade C and requires a price
+   inside &minus;250 to +10,000 with a post-shrink probability of at least 60%.
 
-Full detail, including the two fallbacks used where OLBG has no usable market (handball's "Tie"
-display defect, and one unpriced motor-racing market), is on `methodology.html`.
+## What we refused to do
 
-## Verification
-
-- Every factual claim in a prediction carries a link to the page it came from, on the same card.
-- `python3 tools/check_site.py` fails the build on a broken internal link, a pick with no source, a
-  prediction under 30 words, or the words "model"/"verified" inside a prediction.
-- Where a value could not be confirmed it is left blank and listed in `data/flags.json`.
+- No handball "Tie" line is sold as a prediction even though 11 of 15 handball markets vote for it: the
+  EHF's own group tables show one drawn match in thirty played, so those selections are graded C, capped at
+  low confidence, and the team-side prices are published instead (U-002).
+- No market with a 0/0 split is filled in: 11 rows (handball handicaps and totals, one WNBA-style cricket
+  batsman market, an unprinted World Series total) are listed as "not priced" with the reason.
+- No time comes from the OLBG card: its printed clock is wrong for North American fixtures on this capture
+  (Game 4 printed 21:00 for an 8:00 pm ET first pitch; NHL printed 20:07 for a 20:00 puck drop) while
+  matching the governing bodies for European fixtures - U-010. Every time in the copy is the league's.
+- No inference where a source disagreed: the third-Test start time (U-005), Taylor Hall's availability
+  (U-009), the Pro D2 table (U-008), the stale F1 points quoted inside OLBG's own comments (U-007) and the
+  Maybank defending-champion line (GOLF-001) are all recorded as conflicts with both readings shown.
+- The words "model" and "verified" do not appear in any published prediction; `tools/check_cycle.py`
+  fails the build if they do.
 
 ## Rebuild
 
 ```bash
-python3 tools/pricing.py      # data/events.json -> data/pricing.json
-python3 tools/build_site.py   # data/*.json      -> *.html
-python3 tools/check_site.py   # verification pass
+python3 tools/unify_price.py    # events_raw.json -> lines.json (prices every captured market)
+python3 tools/cycle_picks.py    # lines.json      -> predictions/sources/flags for this cycle
+python3 tools/cycle_site.py     #                  -> index, 15 sport pages, all-events, flagged, sources, methodology
+python3 tools/check_cycle.py    # verification pass on the built board
 ```
 
-No third-party packages are required.
-
-## Scope limits, stated up front
-
-Snooker returned "No tips found" from OLBG on the retrieval date; Golf carried three outright markets
-of two tips each; Baseball had a single live game; Rugby League offered only season ante-post; Gaelic
-Sports produced four selections. Those five sports are published at 0-4 picks instead of 5, and the
-reason is recorded on the flagged page rather than papered over.
-
-18+. No assurance of profit. Support: GamCare, GambleAware.
-
+No third-party packages are required. 18+. No assurance of profit. Support: GamCare, GambleAware.
 
 ---
 

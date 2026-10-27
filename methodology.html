@@ -1,65 +1,68 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Pricing method</title><link rel="stylesheet" href="assets/style.css"></head>
-<body><header><div class="wrap"><div><h1>OLBG Coverage Desk</h1>
-<div class="sub">15 sports &middot; our own lines &middot; written predictions &middot; retrieved 2026-10-26</div></div></div></header>
-<nav><div class="wrap"><a href="index.html">Dashboard</a><a href="all-events.html">All events &amp; lines</a><a href="olbg-map.html">OLBG site map</a><a href="methodology.html" class="on">Pricing method</a><a href="sources.html">Sources</a><a href="flagged.html">Flagged for review</a><a href="olbg-tips/index.html">Tip-consensus board</a></div></nav>
-<nav style="border-top:1px solid var(--line)"><div class="wrap"><a href="sports/golf.html">Golf</a><a href="sports/volleyball.html">Volleyball</a><a href="sports/rugby-union.html">Rugby Union</a><a href="sports/cricket.html">Cricket</a><a href="sports/snooker.html">Snooker</a><a href="sports/darts.html">Darts</a><a href="sports/baseball.html">Baseball</a><a href="sports/gaelic-sports.html">Gaelic Sports</a><a href="sports/greyhounds.html">Greyhounds</a><a href="sports/tennis.html">Tennis</a><a href="sports/motor-racing.html">Motor Racing</a><a href="sports/handball.html">Handball</a><a href="sports/ice-hockey.html">Ice Hockey</a><a href="sports/basketball.html">Basketball</a><a href="sports/rugby-league.html">Rugby League</a></div></nav>
-<main><h2>How we originate a line</h2>
-<p class="lede">We cannot read bookmaker prices off OLBG - they are rendered client-side and were missing from every
-page we retrieved (see <a href="flagged.html">Flagged for review</a>). So the board is priced by us, from the one
-numeric market signal OLBG does print: the tip split for each selection.</p>
-
-<h3>CAL-1, the engine behind 116 lines</h3>
-<table><thead><tr><th>Step</th><th>What happens</th></tr></thead><tbody>
-<tr><td>1. Prior</td><td>The market structure sets the starting point: 0.50 for a two-way market, 0.3333 for a
-three-way money line, 0.125 for an outright (assumed eight runners, which is an assumption and is labelled).</td></tr>
-<tr><td>2. Shrinkage</td><td>The printed split is pulled toward that prior with 6.0 pseudo-tips:
-<code>p = (wins + K &times; prior) / (total + K)</code>. This stops a 1/1 tip from becoming a 100% certainty and a
-6/6 from becoming a 1.00 shot.</td></tr>
-<tr><td>3. Fair price</td><td><code>1 / p</code>.</td></tr>
-<tr><td>4. Our card price</td><td><code>1 / (p &times; (1 + 0.05))</code> - a 5% margin,
-so every price we publish is shorter than our fair number.</td></tr>
-<tr><td>5. American</td><td>Standard conversion: <code>(dec &minus; 1) &times; 100</code> at 2.00 and above,
-<code>&minus;100 / (dec &minus; 1)</code> below 2.00.</td></tr>
-<tr><td>6. Confidence</td><td><span class="pill high">high</span> needs fair probability &ge; 60%, a sample of at least
-8 tips and a price inside 1.4 to 101.0. <span class="pill medium">medium</span>
-is fair probability &ge; 50%. Everything else is <span class="pill low">low</span>. The label is computed, never
-typed.</td></tr>
-</tbody></table>
-
-<h3>CAL-2, used for Handball only</h3>
-<p class="small">OLBG's handball listing prints "Tie" as the most-popular selection for nearly every Champions League
-match, which makes the printed split unusable (flag F-002). For those five matches we price from the
-competition base rate OLBG itself publishes - EHF Champions League men, favourites won 446 of 654 games (68.2%) -
-shrunk 15% toward 50% to allow for what we do not know about the specific tie. The results and standings we cite are
-official EHF data.</p>
-
-<h3>CAL-3, used where there is no market at all</h3>
-<p class="small">One pick (Antonelli, top-six finish in Mexico City) sits in a market with zero tips. It is priced by
-us from the championship arithmetic and is labelled CAL-3 so it can never be mistaken for a market-derived number.</p>
-
-<h3>The &minus;250 to +10000 band</h3>
-<p class="small">&minus;250 American is 1.4 decimal; +10000 is 101.0. The band is
-applied to our card price. A strong favourite priced under 1.40 is a real pick but is excluded from the high-confidence
-tier, because beating a 1.20 shot is not the part of the market the brief wants us working. Recorded constants:
-margin 0.05, pseudo-count 6.0, band 1.4-101.0.</p>
-
-<h3>Known limits of this approach</h3>
-<ul class="small">
-<li>A tip split is a crowd signal, not a probability. Shrinkage reduces the damage from small samples; it does not
-manufacture information.</li>
-<li>Only 116 of 121 inventoried events printed a split. Events with no split are
-left unpriced rather than guessed.</li>
-<li>The engine prices the selection OLBG highlights. Other outcomes in the same market stay unpriced unless the event
-page was read.</li>
-<li>Confidence describes the strength of our number. It says nothing about whether the bet wins.</li>
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OLBG reverse-engineered &middot; daily board &middot; 2026-10-27</title>
+<link rel="stylesheet" href="assets/cycle.css">
+</head><body class="cycle">
+<nav class="topnav"><div class="navin">
+<span class="brand"><a href="index.html">OLBG&nbsp;Board</a> <em>2026-10-27</em></span>
+<span class="navlinks"><a href="index.html" class=on>Executive summary</a><a href="all-events.html">All markets</a><a href="flagged.html">Flagged</a><a href="sources.html">Sources</a><a href="methodology.html">Methodology</a></span>
+</div><div class="navsports"><a href="sports/golf.html">Golf</a><a href="sports/volleyball.html">Volleyball</a><a href="sports/rugby-union.html">Rugby Union</a><a href="sports/cricket.html">Cricket</a><a href="sports/snooker.html">Snooker</a><a href="sports/darts.html">Darts</a><a href="sports/baseball.html">Baseball</a><a href="sports/gaelic-sports.html">Gaelic Sports</a><a href="sports/greyhounds.html">Greyhounds</a><a href="sports/tennis.html">Tennis</a><a href="sports/motor-racing.html">Motor Racing</a><a href="sports/handball.html">Handball</a><a href="sports/ice-hockey.html">Ice Hockey</a><a href="sports/basketball.html">Basketball</a><a href="sports/rugby-league.html">Rugby League</a></div></nav>
+<div class="hero hero-sm"><div class="hero-kicker"><a href="index.html">&larr; Executive summary</a></div>
+<h1>Methodology, and the rules we did not bend</h1></div>
+<h2>1. What was captured</h2>
+<p>Twelve OLBG tip pages were fetched on 2026-10-27 between 05:30 and 05:50 UTC (Basketball 4, Ice Hockey 13, Tennis 3,
+Rugby Union 9, Cricket 7, Volleyball 21, Baseball 12, Handball 20, Greyhounds 28, Snooker 8, Golf 5, plus Gaelic,
+Motor Racing and Rugby League listings), and six OLBG event pages were then opened to read the <em>other</em> side of
+each market: MIL @ TB (160799), BOS @ CAR (200104), PSG v Aalborg (12134), Wisla Plock v Nantes (12138),
+South Africa v Australia (188835) and the F1 outright (912). That produced 152 unique market rows
+after de-duplication, of which 141 carry a tip split we can price.</p>
+<p>OLBG prints, for each market: the selection, "X / Y Win Tips", the share, a comment count and an event link. It does
+<strong>not</strong> print a bookmaker price in the retrievable HTML &mdash; the odds widget is rendered client-side.
+So the tip split is the only numeric market signal available, and every price on this board is derived from it
+(flag U-001).</p>
+<h2>2. How a line is originated</h2>
+<p class="mono big">p_fair = (tips_on_pick + K &times; prior) / (tips_total + K) &nbsp;&nbsp;&nbsp; K = 6.0<br>
+decimal line = 1 / (p_fair &times; (1 + 0.05)) &nbsp;&nbsp;&nbsp; margin = 5%<br>
+American = (d&minus;1)&times;100 if d&ge;2 else &minus;100/(d&minus;1)</p>
+<p>The K pseudo-tips are the whole trick: a market with 2 tips and 2 tips on one side would otherwise read as a 100%
+probability, so it is pulled back to 0.625 with a 2-way prior and capped at medium confidence. Priors are
+1/2 for two-way markets, 1/3 where OLBG lists a draw or tie as an outcome (all EHF handball money lines, and the
+cricket Test, where a "Win Match" market and a "Draw" row both appear &mdash; a limited-overs match does not get a
+1/3 prior because it cannot be drawn), and 1/8 for outrights because OLBG does not print the field size (U-004).</p>
+<h2>3. Grades, confidence and the focus band</h2>
+<table class="tbl"><thead><tr><th>Grade</th><th>Meaning</th><th>Effect</th></tr></thead><tbody>
+<tr><td><span class="pill pill-gradea">A</span></td><td>8+ tips counted on the market and no structural anomaly</td><td>eligible for high confidence</td></tr>
+<tr><td><span class="pill pill-gradeb">B</span></td><td>3 to 7 tips</td><td>eligible for medium only</td></tr>
+<tr><td><span class="pill pill-gradec">C</span></td><td>under 3 tips, a degenerate 0%/100% split, or a 3-way draw cluster</td>
+<td>high confidence blocked; shown with the defect named</td></tr></tbody></table>
+<p>High confidence additionally requires a price inside the brief's &minus;250 to +10,000
+focus band (1.4&ndash;101.0 decimal) and a post-shrinkage probability of at least
+60%. That is why the one-sided favourites are not the headline: a 94% vote prices at 1.16, which is outside the band by
+construction, and the brief asks for high-confidence work <em>inside</em> the band rather than a list of 1.10s.</p>
+<h2>4. Where we intervened in the data</h2>
+<ul>
+<li><strong>Handball.</strong> Eleven of fifteen priced handball markets are voted onto the "Tie" selection
+(PSG v Aalborg 7/9, Plock v Nantes 8/11, Magdeburg 9/14&hellip;). The EHF's own group tables show a single drawn match
+in thirty played in these groups, so those selections are graded C, capped at low confidence, and the team-side prices
+are published instead. Flag U-002.</li>
+<li><strong>Cricket.</strong> The Test match market is priced 3-way because OLBG prints a Draw row alongside it; the
+Draw is quoted at 2.67 rather than being folded into a coin flip.</li>
+<li><strong>Motor racing.</strong> The Antonelli "Top 6 finish" split is carried forward from the 26 October capture
+and labelled as such; the OLBG comment thread on the outright quotes points totals that contradict the official
+Formula&nbsp;1 timing sheet, and we used the official one. Flags U-006, U-007.</li>
+<li><strong>Times.</strong> OLBG's printed card times are on a US-Eastern clock and are wrong for North American
+fixtures in this capture (Game 4 printed 21:00 for an 8:00pm ET first pitch; NHL printed 20:07 for a 20:00 puck drop).
+Every time in the copy comes from the governing body instead. Flag U-010.</li>
 </ul>
-</main><footer>
-<p><strong>Method.</strong> Lines are originated by this desk from OLBG's published tip splits using the CAL-1
-engine described on the <a href="methodology.html">pricing method</a> page; they are not bookmaker prices.
-Predictions are editorial. Every factual claim carries a source link on the row or card it appears in.</p>
-<p>Earlier board from the first session: <a href="docs/index.html">docs/</a>.</p>
-<p>18+. Betting involves risk. If gambling is causing you concern, support is available from GamCare and GambleAware.
-This site republishes no paid tipster content and gives no assurance of profit.</p>
+<h2>5. Reproducing this cycle</h2>
+<p class="mono big">python3 tools/unify_price.py &nbsp;# prices all 152 captured markets<br>
+python3 tools/cycle_picks.py &nbsp;# attaches the 52 written picks, validates 30+ words, banned words, https sources<br>
+python3 tools/cycle_site.py &nbsp;&nbsp;# rebuilds every page in this board<br>
+python3 tools/check_cycle.py &nbsp;# link, coverage and field checks on the built site</p>
+<p>Data files: <span class="mono">data/cycle-20261027/{events_raw,lines,predictions,sources,flags}.json</span></p>
+<footer class="foot">
+<p>Built from olbg.com captures of 27 October 2026 (05:30&ndash;06:10 UTC) by tools/unify_price.py,
+tools/cycle_picks.py and tools/cycle_site.py. Prices on this site are originated lines, not bookmaker quotes;
+unconfirmable values are printed blank and flagged. Data: <span class="mono">data/cycle-20261027/</span>.</p>
 </footer></body></html>
