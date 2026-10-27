@@ -1,0 +1,201 @@
+{
+ "retrieved_at": "2026-10-27",
+ "flags": [
+  {
+   "id": "F-01",
+   "sport": "Handball",
+   "title": "OLBG prints the draw as the most-tipped pick on 11 of 15 handball matches",
+   "detail": "On 11 rows the listed selection is literally 'Tie', at 43% to 78% of tips. That is not a plausible match-winner split, so no pick is priced from it. Handball match markets are priced from the EHF group tables instead, and the OLBG row is shown exactly as printed.",
+   "urls": [
+    "https://www.olbg.com/betting-tips/Handball/20"
+   ]
+  },
+  {
+   "id": "F-02",
+   "sport": "Snooker",
+   "title": "No snooker market exists on OLBG today, so there are no snooker picks",
+   "detail": "The sport page and the All Events page both return 'No tips found.' and the page's own sport filter renders as 'All Sports'. With no fixture on OLBG there is nothing to price and no prediction is published.",
+   "urls": [
+    "https://www.olbg.com/betting-tips/Snooker/8",
+    "https://www.olbg.com/betting-tips/Snooker/All_Snooker/All_Events/8"
+   ]
+  },
+  {
+   "id": "F-03",
+   "sport": "Greyhounds",
+   "title": "Greyhounds returned 'No tips found' on 2026-10-27",
+   "detail": "The greyhound page carried no races at the time of retrieval, although the same page carried eight races on 2026-10-26. Racecards and trap draws were therefore not available and no runner can be priced.",
+   "urls": [
+    "https://www.olbg.com/betting-tips/Greyhounds/28"
+   ]
+  },
+  {
+   "id": "F-04",
+   "sport": "All",
+   "title": "Eight sports cannot reach five picks because OLBG publishes fewer than five markets",
+   "detail": "Baseball 1 game, Gaelic Sports 3 events, Golf 3 outrights, Darts 2 outrights, Motor Racing 2 markets, Rugby League 3 ante-post markets, Snooker 0, Greyhounds 0. The gap is on OLBG's side: no match-level market is published in those sports today, and no fixture has been invented to fill it.",
+   "urls": [
+    "https://www.olbg.com/betting-tips/Baseball/12",
+    "https://www.olbg.com/betting-tips/Golf/5",
+    "https://www.olbg.com/betting-tips/Darts/15",
+    "https://www.olbg.com/betting-tips/Motor_Racing/14",
+    "https://www.olbg.com/betting-tips/Rugby_League/10",
+    "https://www.olbg.com/betting-tips/Gaelic_Football/25"
+   ]
+  },
+  {
+   "id": "F-05",
+   "sport": "Baseball",
+   "title": "Start time disagrees: OLBG prints 21:00, MLB prints 8:00 PM EDT",
+   "detail": "OLBG shows 'Today 21:00' with no timezone. MLB's game page shows 8:00 PM EDT at Tropicana Field. Those are not the same instant under any UK/US offset, so one of the two is wrong or OLBG's label is stale. The official time is used in the write-up.",
+   "urls": [
+    "https://www.olbg.com/betting-tips/Baseball/MLB/MLB/MIL_Brewers_@_TB_Rays/12?event_id=160799",
+    "https://www.mlb.com/gameday/brewers-vs-rays/2026/10/27/849803/preview"
+   ]
+  },
+  {
+   "id": "F-06",
+   "sport": "Ice Hockey",
+   "title": "OLBG does not print whether its hockey money line includes overtime",
+   "detail": "A two-way NHL money line including overtime and a three-way 60-minute market are different bets, and the listing does not say which is being tipped. The board treats the printed hockey money line as two-way, which is stated on every affected row. No hockey money-line pick is made from a single tip.",
+   "urls": [
+    "https://www.olbg.com/betting-tips/Ice_Hockey/13"
+   ]
+  },
+  {
+   "id": "F-07",
+   "sport": "Darts",
+   "title": "PDC Order of Merit: Nathan Aspinall is 11th in one report and 10th in another",
+   "detail": "A 20 October update has Aspinall 11th on £584.5k; a 25 October report has him 10th on £597k. Both are reported and the pick states 11th with the conflict noted, rather than choosing silently.",
+   "urls": [
+    "https://dartsnews.com/pdc/pdc-order-of-merit-update-michael-van-gerwen-on-brink-of-dropping-out-of-worlds-top-10-as-gary-anderson-overtakes-three-time-world-champion",
+    "https://www.sportingnews.com/us/darts/news/updated-pdc-darts-order-merit-world-rankings/d7b82f3bcfa0f8365c9a39cf"
+   ]
+  },
+  {
+   "id": "F-08",
+   "sport": "Tennis",
+   "title": "The official ATP rankings page rendered no table; ranks come from published reports",
+   "detail": "atptour.com/en/rankings/singles returned navigation and a date selector but no ranking table in the retrieved HTML. The 26 October ranks used here are taken from a published report of the ATP list and cross-checked where possible. One conflict exists: Ruud's points are reported as 2,095 and 1,995 on different dates, and no rank is claimed for him here.",
+   "urls": [
+    "https://www.atptour.com/en/rankings/singles",
+    "https://www.tennisworlditalia.com/en/tennis/news/Ranking_Atp_Wta/108226/atp-rankings-oct-26-2026-musetti-and-cobolli-make-no-gains-fils-rises-fonseca-falls/"
+   ]
+  },
+  {
+   "id": "F-09",
+   "sport": "Baseball",
+   "title": "Milwaukee's starting pitcher for game four is listed as TBD",
+   "detail": "MLB's game page names Jax (0-1, 6.00 ERA) for Tampa Bay and 'TBD' for Milwaukee. The run-line and total picks therefore carry an unmatched risk that is stated in both write-ups.",
+   "urls": [
+    "https://www.mlb.com/gameday/brewers-vs-rays/2026/10/27/849803/preview"
+   ]
+  },
+  {
+   "id": "F-10",
+   "sport": "Gaelic Sports",
+   "title": "OLBG prints no market label on the two club football rows",
+   "detail": "The rows show only a selection with a handicap start (Eire Og Cor +0.50, Kildimo Pallaskenry +3.50). They are recorded as handicap markets on the evidence of the printed line, and that inference is stated here rather than hidden.",
+   "urls": [
+    "https://www.olbg.com/betting-tips/Gaelic_Football/25"
+   ]
+  },
+  {
+   "id": "F-11",
+   "sport": "Cricket",
+   "title": "Third T20I venue is printed inconsistently",
+   "detail": "The series schedule names the 27 October match in Wellington at 12:30 pm IST, but the venue is printed as 'Hnry Stadium', which is not a ground name. The city is used in the write-up and the ground name is not asserted.",
+   "urls": [
+    "https://www.sportingnews.com/in/cricket/news/india-tour-new-zealand-schedule-results-squads-live-stream-tv-channel/02c82d8dd12da8a7016ecfaf"
+   ]
+  },
+  {
+   "id": "F-12",
+   "sport": "All",
+   "title": "No official injury or team-news feed was reachable for any covered fixture",
+   "detail": "The brief asks for injuries that can be confirmed. None could be, for any of the 114 events, so no prediction makes an injury claim. This is a gap in this pass, not a claim that nobody is injured.",
+   "urls": [
+    "https://www.olbg.com/betting-tips"
+   ]
+  },
+  {
+   "id": "F-13",
+   "sport": "All",
+   "title": "Three high-confidence selections are shorter than the -250 floor",
+   "detail": "India at 1.38, Afghanistan at 1.16 and Veszprem at 1.30 are all stronger than the band the brief asks us to work in. They are published and labelled 'outside band' rather than dropped or repriced.",
+   "urls": [
+    "https://www.olbg.com/betting-tips/Cricket/7",
+    "https://www.olbg.com/betting-tips/Handball/20"
+   ]
+  },
+  {
+   "id": "F-14",
+   "sport": "Golf",
+   "title": "No world ranking retrieved for Stewart Cink, and OLBG does not name the tour",
+   "detail": "The 20 October men's top 50 lists Scheffler, McIlroy, Fitzpatrick, Young, Clark and others, but not Cink. His event (Simmons Bank Championship) is not labelled with a tour by OLBG, so no tour is claimed on this site.",
+   "urls": [
+    "https://www.olbg.com/betting-tips/Golf/All_Golf/All_Events/Simmons_Bank_Championship/5?event_id=101914",
+    "https://golfweek.usatoday.com/story/sports/golf/2026/10/20/robert-macintyre-tom-kim-jump-in-new-official-world-golf-ranking/92341766007/"
+   ]
+  },
+  {
+   "id": "F-15",
+   "sport": "Basketball",
+   "title": "Only three EuroLeague clubs' table rows were transcribed, so most EuroLeague games have no derived spread or total",
+   "detail": "Panathinaikos, Fenerbahce and Valencia were transcribed because they were needed for picks. Milano, Bayern, Barcelona and the rest have no line in the dataset, so those fixtures carry a match-winner price only. A full table would extend the book.",
+   "urls": [
+    "https://www.basketball-reference.com/international/euroleague/2027.html"
+   ]
+  },
+  {
+   "id": "F-16",
+   "sport": "Handball",
+   "title": "Five handball fixtures are priced from a league-average prior, not from a club baseline",
+   "detail": "Vardar v Melsungen, Wisla Plock v Nantes, PSG v Aalborg, Celje v Zagreb, Montpellier v Dinamo and Skanderborg v Barcelona have no club row in the EHF table used here. They carry CAL-4P prices, which are a prior, and no pick is built on any of them.",
+   "urls": [
+    "https://ehfcl.eurohandball.com/men/2026-27/standings/"
+   ]
+  },
+  {
+   "id": "F-17",
+   "sport": "All",
+   "title": "Bookmaker odds are not present in the retrieved OLBG pages",
+   "detail": "OLBG renders prices client-side. No odds field appeared in any of the fifteen sport pages retrieved, so no bookmaker comparison is claimed anywhere and every number on this site is described as ours.",
+   "urls": [
+    "https://www.olbg.com/betting-tips"
+   ]
+  },
+  {
+   "id": "F-18",
+   "sport": "All",
+   "title": "Three earlier boards remain in the repository under /docs and /olbg-tips",
+   "detail": "They used different methods and are superseded. They are kept unchanged and linked from the Archive page so nothing is lost, but they are not merged into today's totals and their rows have not been re-checked in this pass.",
+   "urls": [
+    "https://www.olbg.com/betting-tips"
+   ]
+  },
+  {
+   "id": "F-19",
+   "sport": "All",
+   "title": "OLBG prints start times in US Eastern, not local time",
+   "detail": "The printed start time is not the local kick-off. Four fixtures with a confirmed official start line up exactly when four hours are subtracted in October (US Eastern Daylight Time): Afghanistan v Zimbabwe is 18:30 Gulf time, printed 10:30; Namibia v Ireland is 09:30 in Windhoek, printed 03:30; Pakistan v Sri Lanka is 13:00 in Lahore, printed 04:00; Osaka v Paolini is 17:00 in Tokyo, printed 04:00. The Cork Senior A final on 1 November is 14:00 local and printed 09:00, five hours earlier, which matches the switch to Eastern Standard Time that day. US fixtures are close to Eastern but not always exact (Brewers at Rays is 20:00 Eastern and printed 21:00). Every time on this site is therefore copied exactly as OLBG prints it and labelled as such; no conversion is applied anywhere.",
+   "urls": [
+    "https://www.cricinfo.com/series/afghanistan-v-zimbabwe-2026-27-1555105/afghanistan-vs-zimbabwe-1st-t20i-1555120/live-cricket-score",
+    "https://www.cricinfo.com/series/ireland-in-namibia-2026-27-1558225/match-schedule-fixtures-and-results",
+    "https://www.cricinfo.com/series/pakistan-odi-tri-series-2026-27-1550706/match-schedule-fixtures-and-results",
+    "https://gaacork.ie/county-championships-2026/"
+   ]
+  }
+ ],
+ "blanks": [
+  "Milwaukee's game-four starting pitcher - MLB prints TBD.",
+  "Snooker fixtures for 2026-10-27 - OLBG returns 'No tips found'.",
+  "Greyhound racecards, runners and trap draws for 2026-10-27 - OLBG returns 'No tips found'.",
+  "Injury and team news for every fixture - no official report was retrievable.",
+  "Bookmaker prices for every selection - OLBG prints none in the retrieved HTML.",
+  "The venue name for the third T20I in Wellington - the schedule prints 'Hnry Stadium'.",
+  "World ranking for Stewart Cink - not present in the retrieved top-50 list.",
+  "Official Formula 1 championship points - the results page rendered no points table.",
+  "Timezones for every OLBG start label - OLBG prints none."
+ ]
+}
