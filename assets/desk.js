@@ -44,11 +44,23 @@
       }).length);
     });
   }
-  if (typeof module !== 'undefined' && module.exports) module.exports = { state: state, update: update };
+  function nextDelay(doc, now) {
+    if (!Number.isFinite(now)) return 30000;
+    const times = [asTime(doc.body.dataset.snapshot), asTime(doc.body.dataset.expiry)];
+    doc.querySelectorAll('[data-fresh]').forEach(function (item) { times.push(asTime(item.dataset.until)); });
+    const future = times.filter(function (time) { return Number.isFinite(time) && time > now; });
+    return future.length ? Math.max(1, Math.min(30000, Math.min.apply(null, future) - now)) : 30000;
+  }
+  if (typeof module !== 'undefined' && module.exports) module.exports = { state: state, update: update, nextDelay: nextDelay };
   if (root && root.document) {
-    const run = function () { update(root.document, Date.now()); };
+    let timer;
+    const run = function () {
+      if (timer !== undefined) root.clearTimeout(timer);
+      const now = Date.now();
+      update(root.document, now);
+      timer = root.setTimeout(run, nextDelay(root.document, now));
+    };
     if (root.document.readyState === 'loading') root.document.addEventListener('DOMContentLoaded', run); else run();
-    root.setInterval(run, 30000);
     root.addEventListener('pageshow', run);
     root.document.addEventListener('visibilitychange', run);
   }

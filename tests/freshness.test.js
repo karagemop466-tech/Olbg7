@@ -1,7 +1,7 @@
 'use strict';
 const { test } = require('node:test');
 const assert = require('node:assert/strict');
-const { state, update } = require('../assets/desk.js');
+const { state, update, nextDelay } = require('../assets/desk.js');
 
 const SNAPSHOT = '2026-10-27T05:23:00Z';
 const EXPIRY = '2026-10-28T05:23:00Z';
@@ -95,4 +95,22 @@ test('messages use the actual snapshot metadata rather than hard-coded dates', (
   assert.match(doc.message.textContent, /2026-11-03 10:00 UTC/);
   update(doc, Date.parse('2026-11-04T10:00:00Z'));
   assert.match(doc.message.textContent, /2026-11-04 10:00 UTC/);
+});
+
+
+test('the next update is scheduled for the earliest event or snapshot boundary', () => {
+  const start = Date.parse('2026-10-27T05:23:00Z');
+  const doc = {
+    body: {dataset: {snapshot: '2026-10-27T05:23:00Z', expiry: '2026-10-27T05:24:00Z'}},
+    querySelectorAll: () => [
+      {dataset: {until: '2026-10-27T05:23:10Z'}},
+      {dataset: {until: '2026-10-27T05:23:15Z'}},
+      {dataset: {until: 'invalid'}}
+    ]
+  };
+  assert.equal(nextDelay(doc, start), 10000);
+  assert.equal(nextDelay(doc, start + 10000), 5000);
+  assert.equal(nextDelay(doc, start + 20000), 30000);
+  assert.equal(nextDelay(doc, start + 59000), 1000);
+  assert.equal(nextDelay(doc, NaN), 30000);
 });

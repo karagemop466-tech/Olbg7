@@ -2,7 +2,7 @@
 
 A source-linked **manual research snapshot** covering the 15 requested OLBG sport categories. It is published at <https://karagemop466-tech.github.io/Olbg7/>. The site is a static GitHub Pages site, not a live odds feed or a complete OLBG inventory.
 
-The current research began **27 October 2026 at 05:23 UTC**. The snapshot contains 54 event or tournament listings with official schedule references, 71 separately flagged listings needing fixture/time checks (some captured on 26 October; others reported in a concurrent 27 October capture and not independently rechecked), and 37 distinct-event written leans. The five-per-sport target is unmet in most categories. Snapshot totals are historical, not a claim that everything is still upcoming.
+The current research began **27 October 2026 at 05:23 UTC**. The snapshot contains 54 event or tournament listings with official schedule references, 71 separately flagged listings needing fixture/time checks (some captured on 26 October; others reported in a concurrent 27 October capture and not independently rechecked), and 38 distinct-event written leans. The five-per-sport target is unmet in most categories. Snapshot totals are historical, not a claim that everything is still upcoming.
 
 No current bookmaker quote, calibrated independent numeric price, or priced high-confidence pick was established. One FanDuel opening quote reported by the PGA Tour on 26 October is labelled historical; it is not represented as current or available. Selection confidence is qualitative, not a win probability, and no betting edge is claimed. Sources for each prediction and every event-table row are linked on the site.
 
@@ -38,6 +38,8 @@ python3 tools/build_current.py --check
 python3 tools/check_current.py
 node --test tests/freshness.test.js
 ```
+
+The old `tools/build_board.py` and `tools/build_today.py` generators are guarded by `LEGACY_BUILD=1` because they overwrite root pages or archive warnings; use them only in an isolated copy. `tools/warn_historical.py` can restore warnings to preserved archive pages.
 
 Checks validate shape, source presence, word count, internal links, generated files and freshness logic. They do **not** independently verify external claims or current odds. Adding a new snapshot requires a responsible operator or an explicitly authorized, rate-limited source, event-by-event official corroboration, new capture and expiration times, and a fresh build; the probe alone cannot do this.
 

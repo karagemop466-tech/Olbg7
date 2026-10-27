@@ -2675,6 +2675,25 @@
         }
       ],
       "reported_quote": null
+    },
+    {
+      "id": "p188863",
+      "event_id": "188863",
+      "selection": "Phoebe Litchfield",
+      "confidence": "low",
+      "text": "Phoebe Litchfield is a tentative choice to top-score for Sydney Thunder. Cricket Australia reports she led the team with 271 runs at a strike rate of 150 last season, but Georgia Voll and Heather Knight add competition. Georgia Wareham dismissed her for 12 in their previous meeting; check the starting XI and batting order.",
+      "market": "Top Team2 Batsman",
+      "sources": [
+        {
+          "label": "Cricket Australia Thunder preview",
+          "url": "https://www.cricket.com.au/news/4594921/sydney-thunder-womens-big-bash-wbbl12-season-preview-schedule-recruits-squad-internationals-overseas-players-litchfield-voll-bell-knight-darlington-learoyd"
+        },
+        {
+          "label": "Cricket Australia previous meeting",
+          "url": "https://www.cricket.com.au/news/4399980/wbbl-match-report-melbourne-renegades-sydney-thunder-voll-harris-illingworth-wareham"
+        }
+      ],
+      "reported_quote": null
     }
   ]
 }

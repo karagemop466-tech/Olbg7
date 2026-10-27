@@ -110,7 +110,8 @@ class Parse(HTMLParser):
 
 published = [ROOT/x for x in ('index.html','all-events.html','flagged.html','methodology.html','sources.html','archive.html','olbg-map.html')]
 published += sorted((ROOT/'sports').glob('*.html'))
-historical = sorted((ROOT/'docs').rglob('*.html')) + sorted((ROOT/'olbg-tips').rglob('*.html'))
+historical = [p for base in ('docs', 'olbg-tips', 'board', 'legacy-cal4') for p in sorted((ROOT/base).rglob('*.html'))]
+historical += [ROOT/name for name in ('picks.html','lines.html','method.html')]
 parsed = {}
 for path in published + historical:
     require(path.is_file(), f'missing HTML: {path.relative_to(ROOT)}')
@@ -136,6 +137,11 @@ for path, parser in parsed.items():
         require(target.exists(), f'{path.relative_to(ROOT)}: broken internal link: {raw}')
         if target in parsed and ref.fragment:
             require(unquote(ref.fragment) in parsed[target].ids, f'{path.relative_to(ROOT)}: missing anchor {raw}')
+
+coordination = (ROOT/'COORDINATION.md').read_text(encoding='utf-8')
+require(not re.search(r'^(<<<<<<< |=======|>>>>>>> )', coordination, re.M), 'unresolved coordination conflict markers')
+for old in ('tools/build_board.py', 'tools/build_today.py'):
+    require('LEGACY_BUILD' in (ROOT/old).read_text(encoding='utf-8'), f'{old}: missing archive rebuild guard')
 
 css = (ROOT/'assets/desk.css').read_text(encoding='utf-8')
 require('[data-fresh]' in css and '.is-visible' in css, 'fail-closed visibility CSS is missing')
