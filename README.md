@@ -91,16 +91,25 @@ python3 tools/cycle_site.py     #                  -> index, 15 sport pages, all
 python3 tools/check_cycle.py    # verification pass on the built board
 ```
 
-No third-party packages are required. ## The Coverage Desk snapshot pages (`picks.html`, `lines.html`, `method.html`, `archive.html`)
+No third-party packages are required. ## The other 27 October boards at the root, and the relocated Coverage Desk
 
-Those four root pages are session `a799d1c9`'s board and are **not** rebuilt by this cycle. They are generated from
-`data/current.json` by `tools/build_current.py`, and they are fail-closed by design: `assets/desk.js` hides scheduled
-rows and research notes at the earlier of a fixture's cutoff and 28 October 2026 05:23 UTC. Their own disclosures are
-reproduced below so nothing they flagged quietly is lost in the merge.
+`picks.html`, `lines.html`, `method.html` and `archive.html` are session `arena-3b1b6ed4`'s 27 October board (114
+events, 251 market rows, 57 written predictions priced from OLBG tip splits) with the historical-archive banner that
+`arena/a799d1c9` added to it later. They are **not** rebuilt by this cycle and were not edited by the merge.
+
+`arena/a799d1c9`'s own board was the root **Coverage Desk** (`index.html`, `sports/*.html`, `all-events.html`,
+`flagged.html`, `methodology.html`, `sources.html`), generated from `data/current.json` by `tools/build_current.py`
+and fail-closed by design: `assets/desk.js` hides scheduled rows and research notes at the earlier of a fixture's
+cutoff and 28 October 2026 05:23 UTC. Because this cycle took exactly those page names, that board was copied
+verbatim into **`desk/`** (21 pages + `assets/desk.css`/`desk.js`) with a notice at the top of every page and its
+relative links re-pointed - relocated, not replaced, and checked for broken links. Its data and generator in the
+repository root are unchanged, so it stays reproducible. Their own disclosures are reproduced below.
 
 **Caution for the next session:** `python3 tools/build_current.py` (no `--check`) regenerates the root `index.html`,
-`all-events.html`, `flagged.html`, `methodology.html`, `sources.html` and `sports/*.html` from `data/current.json` -
-that would overwrite this cycle's unified board. Build this board with the four commands in the "Rebuild" section
+`all-events.html`, `flagged.html`, `methodology.html`, `sources.html` and `sports/*.html` from `data/current.json`,
+overwriting this cycle's unified board - and it will *not* write into `desk/`, so the relocated copy and the root
+versions would then disagree. To rebuild the Coverage Desk into `desk/`, use the relocation pattern recorded in
+`COORDINATION.md` (copy `661dea1`'s pages, add the banner, re-point links). Build this board with the four commands in the "Rebuild" section
 above instead, and if you take the root, record it in `COORDINATION.md`.
 
 ## Freshness and source access (Coverage Desk snapshot pages)
@@ -118,11 +127,12 @@ above instead, and if you take the root, record it in `COORDINATION.md`.
 | `data/current.json` | Canonical research snapshot, official links, explicit unknowns, conservative cutoffs and written notes |
 | `tools/build_current.py` | Generator for the Coverage Desk snapshot data. **It also writes the root page names, and CI no longer runs it** - see the caution above; use it only in a scratch copy |
 | `tools/check_current.py` | Checks the `data/current.json` snapshot and its own page template; it asserts an official link on every table row, so it does not pass against the root board (which prints blanks by policy) and is not in CI |
-| `assets/desk.css`, `assets/desk.js` | Dashboard styling and fail-closed freshness behavior |
+| `desk/` | The Coverage Desk board as it was committed at `661dea1`, relocated one level down by this cycle, with its own `assets/desk.css`/`assets/desk.js` copies |
+| `assets/desk.css`, `assets/desk.js` | The same styling and fail-closed behavior, still used by root `archive.html` |
 | `tests/freshness.test.js` | Boundary and clock-error tests for freshness behavior |
 | `tools/probe_olbg.py` | Identified, robots-aware access probe only |
 | `index.html`, `sports/*.html`, `all-events.html`, `flagged.html`, `methodology.html`, `sources.html` | Published Pages site - now built from `data/cycle-20261027/` (see "What is in here" above), not by `build_current.py` |
-| `picks.html`, `lines.html`, `method.html`, `archive.html` | The Coverage Desk snapshot pages kept from session `a799d1c9`; fail-closed via `assets/desk.js`, linked from the dashboard's "This board in context" section |
+| `picks.html`, `lines.html`, `method.html`, `archive.html` | Session `arena-3b1b6ed4`'s 27 October board (57 predictions, 251 market rows) and its archive index, kept at the root and linked from the dashboard's "This board in context" section |
 | `legacy-cal4/`, `board/`, `docs/`, `olbg-tips/`, older `data/` and generators | Preserved historical work, not the current dashboard |
 | `COORDINATION.md` | Session claims, integration, evidence and deployment log |
 
