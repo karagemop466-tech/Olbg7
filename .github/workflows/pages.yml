@@ -2,8 +2,14 @@ name: Verify site
 
 # GitHub Pages for this repository is pinned to the repo root of `main`
 # (build_type: legacy, source main:/), so there is no deploy job here - the
-# committed HTML is what gets served. This workflow only proves that the
-# committed pages still match the data and that every link resolves.
+# committed HTML is what gets served. This workflow proves that the committed
+# pages still match the data and that every link resolves.
+#
+# It used to run scripts/build_site.py, the generator for the 26 October
+# tip-consensus board. That script is now a guard: without LEGACY_BUILD=1 it
+# prints "Superseded by tools/build_board.py" and exits 1, so every run on main
+# was red even though the site was fine. The live board is built by
+# tools/build_board.py from data/board/lines.json, so that is what runs here.
 
 on:
   push:
@@ -22,15 +28,22 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Re-price every market (tip-consensus board)
-        run: python scripts/price_model.py
-      - name: Rebuild the tip-consensus board
-        run: python scripts/build_site.py
-        env:
-          SITE_OUT: olbg-tips
-      - name: Check sources, word counts, odds band and internal links
-        run: python scripts/link_check.py
-        env:
-          SITE_OUT: olbg-tips
-      - name: Fail if the committed tip-consensus board is out of date with the data
-        run: git diff --exit-code --stat -- olbg-tips data/consensus
+
+      - name: Rebuild the board from data/board/lines.json
+        run: python tools/build_board.py
+
+      - name: Check links, prose, prices, confidence labels and coverage
+        run: python tools/check_board.py
+
+      - name: Fail if the committed board is out of date with the data
+        run: >
+          git diff --exit-code --stat --
+          index.html picks.html lines.html method.html olbg-map.html
+          sources.html flagged.html archive.html sports
+
+      - name: The archived 26 October board must still resolve
+        run: |
+          test -f board/all-markets.html
+          test -f board/flagged.html
+          test -f docs/board-review/index.html
+          test -f olbg-tips/index.html
