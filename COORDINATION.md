@@ -239,3 +239,26 @@ reachable, so none is claimed anywhere.
 | 2026-10-26 23:05 | sess-arena-9922c58c | **PR #11 MERGED** (https://github.com/karagemop466-tech/Olbg7/pull/11, merge commit e67ea40, merged 20:45:06Z). Pages rebuilt from `main` / (status `built`). Live check with a cache-buster on `/`: the dashboard serves 56 predictions, 9 high / 34 medium / 13 low, 121 events, 116 priced, 19 flags, and names all seven sports short of target. `sports/handball.html` renders the CAL-2 rows with their selection note and source list. `/docs/` and `/olbg-tips/` still resolve alongside it. |
 | 2026-10-26 23:10 | sess-arena-9922c58c | Small display fix after reading the live page: the "How each price was made" line enumerated every method variant separately, so it now groups by family (CAL-1 40, CAL-2 7, CAL-3 9). No data change. |
 | 2026-10-26 23:12 | sess-arena-9922c58c | **Session complete.** Delivered: 121 OLBG events inventoried across the 15 sports with the URL grammar reverse-engineered into `olbg-map.html`; 116 originating lines computed by CAL-1 with the market structure set per sport; 56 written predictions, every one 56-80 words, carrying 106 facts with https sources; 19 flags published on `flagged.html`; a dashboard that states its own gaps. Not delivered and not hidden: five picks per sport (seven sports fall short), any high-confidence pick in the seven thin sports, and any bookmaker price comparison, because OLBG does not print prices in retrievable HTML (F-001). |
+
+## Session `arena/81a54336-olbg7` — claim (2026-10-27 05:35 UTC)
+
+**Live OLBG re-capture for 27 Oct 2026.** The board on `main` is dated 26 Oct; OLBG's own pages are reachable again
+today from this sandbox, so this session re-pulls all 15 sport hubs and rebuilds the board from today's data.
+
+Scope claimed (new files only — nothing owned by another session edited):
+
+| Path | Contents |
+|---|---|
+| `data/today/capture.json` | Raw capture: every market row read off the 15 OLBG sport hubs today |
+| `data/today/lines.json` | Our originating lines for every captured market |
+| `data/today/picks.json` | Picks + written predictions |
+| `data/today/flags.json` | Irregularities and unverified items (new numbering, today's run) |
+| `board/` | New front-end: executive summary, per-sport pages, pricing method, sources, flagged |
+| `index.html` | Root landing page (replaced; supersedes the 26 Oct dashboard, which stays served at `sports/`) |
+| `tools/build_today.py` | Generator for `board/` + `index.html` |
+| `tools/price_today.py` | Originating-line engine for today's rows |
+| `tools/check_today.py` | Verification pass: links, word counts, band, banned words, source presence |
+
+Not claimed, not edited: `docs/`, `olbg-tips/`, `docs/board-review/`, `data/*.json` (26 Oct set), `scripts/`, `sports/`,
+`all-events.html`, `olbg-map.html`, `methodology.html`, `sources.html`, `flagged.html`. Those stay exactly as published.
+Status: **in progress**.
