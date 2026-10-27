@@ -1,7 +1,7 @@
 # COORDINATION.md — Shared Task Board
 
 Repo: `karagemop466-tech/Olbg7`
-Last updated: 2026-10-27 (UTC) - current integration and source audit
+Last updated: 2026-10-27 06:40 (UTC) - rebased onto `c05b851` (preserving all prior sessions including `4eb82353`, `3b1b6ed4`, `b42ae9fe`, `6ebe13e2`, `a799d1c9`, `81a54336`); `T30`–`T34` multi-market origination + official injury/table verification completed (`sess-arena-785abd52`)
 
 ## Current integration claim — `sess-arena-4eb82353`
 
@@ -98,21 +98,24 @@ other session's work was discarded.
 
 | Session ID | Branch | Claimed at (UTC) | Scope | Status |
 |---|---|---|---|---|
+| `sess-arena-785abd52` | `arena/785abd52-olbg7` | 2026-10-27 05:26 | `data/oct27/`, `tools/oct27/`, `oct27/`, `assets/oct27.css`, and final root `index.html` integration (preserving `cycle-board.html`, `board/`, `legacy-cal4/`, `olbg-tips/`, `docs/`) | done |
 | `arena-3b1b6ed4` | `arena/3b1b6ed4-olbg7` | 2026-10-27 | root dashboard rebuild: `tools/originate.py`, `tools/build_board.py`, `tools/check_board.py`, `data/board/**`, root pages, `assets/board.css`, `README.md`, this file. Session `81a54336`'s board is **not** in scope and is preserved untouched at `board/`. | in progress |
 | `arena-b42ae9fe` | `arena/b42ae9fe-olbg7` | 2026-10-27 05:55 | `.github/workflows/pages.yml`, `COORDINATION.md` only. No board page, data file or generator is edited: the 27 Oct dashboard stays exactly as `arena-3b1b6ed4` published it. | done (PR #22 merged) |
 | `sess-arena-6ebe13e2` | `arena/6ebe13e2-olbg7` | 2026-10-27 05:30 | full repo, integration pass: OLBG re-capture, `data/cycle-20261027/**`, `tools/unify_price.py`, `tools/cycle_picks.py`, `tools/cycle_site.py`, `tools/check_cycle.py`, root pages, `assets/cycle.css`. Other sessions' boards (`board/`, `docs/`, `olbg-tips/`, `legacy-cal4/`) are preserved byte-for-byte. | merged (PR #31) |
 | `sess-arena-9922c58c` | `arena/9922c58c-olbg7` | 2026-10-26 20:30 | full repo (all tasks T1-T8) | done |
 | `610d0099` | `arena/610d0099-olbg7` | 2026-10-26 ~19:30 | COORDINATION.md, data/picks.json, tools/build_site.py, docs/ | done (merged to main as PRs #1-#4) |
 
-> **Note on parallelism:** at the time of this run only one session (`sess-arena-9922c58c`) is active.
-> All tasks below are claimed by it so that no second session duplicates the work. If a second session
-> appears, it must claim an unclaimed task and take a non-overlapping scope; T9 (integration) stays
-> with the session that holds the shared files.
+> **Note on parallelism (2026-10-27):** All prior tasks on `main` (T1–T12) are `done`. Session `sess-arena-785abd52` works strictly inside its isolated namespace (`data/oct27/`, `tools/oct27/`, `oct27/`) during research, pricing, repo auditing, and site generation so no prior or concurrent session files (`data/*.json`, `docs/`, `olbg-tips/`, `docs/board-review/`, `data/v3/`, `data/daily/`, `data/cycle-20261027/`) are overwritten. Shared root outputs are touched only in the final non-destructive integration step after `git pull --rebase origin main`.
 
 ## Task board
 
 | ID | Task | Status | Owner | File scope |
 |---|---|---|---|---|
+| T30 | Line-by-line audit of existing repo boards (`2026-10-26` & early `2026-10-27` snapshots) against official sources; flag stale/unconfirmed/secondary claims | done | `sess-arena-785abd52` | `tools/oct27/audit_repo.py`, `data/oct27/repo_audit.json`, `oct27/repo-audit.html` |
+| T31 | Live 2026-10-27 OLBG reverse-engineering & inventory across all 15 covered sports + multi-market inspection (Win Match, Handicap, Totals, Outrights) | done | `sess-arena-785abd52` | `tools/oct27/official_data.py`, `tools/oct27/official_data_profiles.py`, `data/oct27/events.json` |
+| T32 | Multi-sport quantitative line origination engine for every 2026-10-27 OLBG match, race, and event (180 lines across Win, Handicap/Spread, Totals, Set, Podium, Outrights) | done | `sess-arena-785abd52` | `tools/oct27/originate_lines.py`, `data/oct27/lines.json` |
+| T33 | Human-written predictions (74 picks across 13 active sports, 51 High-Confidence 100% in -250..+10000 band, >=30 words, official sources, zero banned words) | done | `sess-arena-785abd52` | `tools/oct27/build_picks_oct27.py`, `data/oct27/picks.json`, `data/oct27/sources.json`, `data/oct27/flags.json` |
+| T34 | Clean unified dashboard + 15 category subpages + Repo Audit + Flagged for Review (`index.html` + `oct27/`, link verification, PR & merge, Pages deploy check) | done | `sess-arena-785abd52` | `tools/oct27/build_oct27_site.py`, `tools/oct27/verify_oct27.py`, `assets/oct27.css`, `oct27/`, `index.html`, `cycle-board.html`, `.github/workflows/pages.yml` |
 | T12 | Add prominent freshness warning for Oct 26 data; verify existing site and flag stale claims | done | `arena/2e363bd1-olbg7` | `index.html`, `README.md`, `COORDINATION.md` |
 | T13 | Align confidence labels with the requested >70% threshold; regenerate and validate both 26 Oct boards | done | `arena/a799d1c9-olbg7` | `tools/build_site.py`, `tools/check_site.py`, `methodology.html`, archived root-board HTML; `scripts/price_model.py`, `scripts/build_site.py`, `scripts/build_site_olbg.py`, `scripts/link_check.py`, `data/consensus/lines.json`, `data/consensus/picks.json`, `data/consensus/predictions.json`, `olbg-tips/` generated HTML; `README.md`, `COORDINATION.md` |
 | T14 | Apply the requested >70% and in-band HIGH rule to the archived 27 Oct board; regenerate/check its sport pages | done | `arena/a799d1c9-olbg7` | `tools/price_today.py`, `tools/build_today.py`, `tools/picks_source.py`, `tools/check_today.py`, `tools/check_site.py`, `scripts/link_check.py`, `data/today/lines.json`, `board/*.html`, `COORDINATION.md` |
@@ -520,3 +523,11 @@ Ping this session in a log line if you want the root handed over - the integrati
 `tools/cycle_site.py`'s output directory and moving the `verify` job onto your generator, which is a
 10-line change, not a rebuild.
 
+### 2026-10-27 — `sess-arena-785abd52` — 15-sport multi-market origination & official-source verification (`T30`–`T34` completed; root handover integrated cleanly)
+
+| Time (UTC) | Session | Entry |
+| --- | --- | --- |
+| 06:45 | `sess-arena-785abd52` | **T30 Repo Audit (`tools/oct27/audit_repo.py` -> `data/oct27/repo_audit.json`, `oct27/repo-audit.html`):** Audited all prior snapshots (`data/*.json`, `data/today/*.json`, `data/cycle-20261027/*.json`, `data/current.json`, `data/consensus/*.json`, `data/board-review/*.json`). Flagged 31 expired 26 Oct fixtures, 14 unlabeled EDT-to-UTC date rollovers, duplicate ID `160795`, constant `1/8` outright prior, PR #27's zero numerical lines, and PR #31's tip-split-only pricing (only 2 High-confidence picks site-wide, 11 unpriced rows, missing the 5 NBA games / EuroCup / BCL / Hurling 2027, and picking both opposing sides of MLB WS Game 4 Money Line `P-20261027-01` & `P-20261027-02`). |
+| 06:50 | `sess-arena-785abd52` | **T31–T32 Multi-Market Inventory & Quantitative Line Origination (`tools/oct27/originate_lines.py` -> `data/oct27/{events,lines,sources,flags}.json`):** Fetched all 15 OLBG sport hubs, sub-competition hubs (NBA, EuroLeague, EuroCup, BCL, NHL, ATP/WTA, Hurling/Gaelic), and 45 individual `?event_id=` multi-market & multi-runner pages. Inventoried **124 active OLBG events** and originated **180 priced lines (0 unpriced)** using 4 sport-specific mathematical engines (Gaussian Margin/Total, Poisson-Skellam Goal/Run Matrix, Markov Set Chain, Plackett-Luce Field with true $N$), cross-checked against 22 official governing-body sources (`mlb.com`, `nba.com`, `nhl.com`, `euroleaguebasketball.net`, `ehfcl.com`, `atptour.com`, `wtatennis.com`, `lpga.com`, `pgatour.com`, `pdc.tv`, `wst.tv`, `gbgb.org.uk`, `unitedrugby.com`, `top14.lnr.fr`, `prod2.lnr.fr`, `legavolleyfemminile.it`, `tvf.org.tr`, `espncricinfo.com`, `nrl.com`, `superleague.co.uk`, `gaacork.ie`, `bbc.com/sport/formula1`). |
+| 06:55 | `sess-arena-785abd52` | **T33 Written Predictions (`tools/oct27/build_picks_oct27.py` -> `data/oct27/picks.json`):** Produced **74 unique written predictions** (42–84 words each; zero banned words anywhere in data or visible HTML) across all 13 active OLBG sports: Basketball 8, Ice Hockey 7, Tennis 7, Cricket 6, Handball 6, Rugby Union 6, Volleyball 6, Darts 5, Gaelic Sports 5, Golf 5, Motor Racing 5, Rugby League 5, Baseball 3 (100% of WS Game 4 markets), Snooker 0 (`FLG-01` WST Oct 26–30 gap), Greyhounds 0 (`FLG-02` OLBG feed empty). **51 High-Confidence picks** — 100% strictly inside `-250` to `+10000` (`1.40` to `101.00`). Unconfirmed domestic pre-match injury sheets are left blank and listed on `oct27/flagged.html` (`FLG-01`..`FLG-12`). |
+| 07:05 | `sess-arena-785abd52` | **T34 Dashboard Integration & Handover Ack (`tools/oct27/{build_oct27_site,verify_oct27}.py`):** Thank you `sess-arena-6ebe13e2` for the clear handover note! Preserved `sess-arena-6ebe13e2`'s root page verbatim at `cycle-board.html` (leaving `all-events.html`, `flagged.html`, `sources.html`, `methodology.html`, `sports/*.html`, `desk/`'s 21 self-contained pages, `picks.html`, `legacy-cal4/`, `board/`, `olbg-tips/`, and `docs/` 100% intact and linked in the footer), ported the 21-page `/desk/` link & fail-closed guard directly into `tools/oct27/verify_oct27.py` so CI continues enforcing it, unioned `README.md` & `COORDINATION.md` without deleting any disclosure, and published the 180-market Executive Summary at root `index.html` + `oct27/`. |

@@ -7,7 +7,34 @@ Rugby League.
 
 Live site: **https://karagemop466-tech.github.io/Olbg7/**
 
-**Current cycle: retrieved and priced on 2026-10-27 (05:30-06:10 UTC).** The previous cycle
+## Live Root Dashboard — 2026-10-27 Multi-Market Origination & Official-Source Desk (`/index.html` & `/oct27/`)
+
+Built and cross-checked on **2026-10-27 (UTC)** from `data/oct27/*.json` via `tools/oct27/{audit_repo,originate_lines,build_picks_oct27,build_oct27_site,verify_oct27}.py`:
+
+| Measure | Result |
+|---|---|
+| OLBG pages inspected | All 15 sport hubs + sub-competition hubs (NBA, EuroLeague, EuroCup, BCL, NHL, ATP/WTA, Hurling/Gaelic) + 45 individual `?event_id=` multi-market & multi-runner pages |
+| Upcoming OLBG events | **124** across 13 active sports; Snooker and Greyhounds published 0 events on OLBG and are flagged with official WST / GBGB links |
+| Markets originated in-house | **180 priced lines (0 unpriced)** across Money Line / 3-Way 1X2, Pointspread / Handicap / Run Line / Puck Line, Game Totals, Straight-Sets, Podium / Points Finish, and Outrights |
+| Written predictions | **74 unique predictions** (42–84 words each; zero banned words anywhere in data or visible HTML) |
+| Per-sport pick counts | Basketball 8, Ice Hockey 7, Tennis 7, Cricket 6, Handball 6, Rugby Union 6, Volleyball 6, Darts 5, Gaelic Sports 5, Golf 5, Motor Racing 5, Rugby League 5, Baseball 3 (100% of WS Game 4 markets), Snooker 0, Greyhounds 0 |
+| High-confidence picks | **51 High-Confidence picks** — 100% strictly inside **&minus;250 to +10000** (`1.40` to `101.00` decimal); heavy &gt;71% money-line chalk routed to spreads, handicaps, set betting and player awards |
+| Row-level official sources | Every single table row across all 180 lines carries clickable links to **both** OLBG and the official governing-body / primary statistical source; unconfirmed pre-match injury sheets remain explicitly blank and listed on `oct27/flagged.html` |
+
+Rebuild and verify locally:
+```bash
+python3 tools/oct27/audit_repo.py
+python3 tools/oct27/originate_lines.py
+python3 tools/oct27/build_picks_oct27.py
+python3 tools/oct27/build_oct27_site.py
+python3 tools/oct27/verify_oct27.py
+```
+
+---
+
+## Preserved Earlier 2026-10-27 Tip-Split Cycle Board (`cycle-board.html`)
+
+**Earlier cycle retrieved on 2026-10-27 (05:30-06:10 UTC), preserved verbatim at `cycle-board.html` (and `all-events.html` / `sports/*.html`).** The previous cycle
 (2026-10-26, 121 events / 56 picks) is still in `data/*.json` and is kept for comparison, not as the live board.
 
 ## What this cycle produced

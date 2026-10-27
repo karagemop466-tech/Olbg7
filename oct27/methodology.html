@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How We Price — OLBG 15-Sport Origination Desk (27 Oct 2026)</title>
+  <link rel="stylesheet" href="../assets/oct27.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../index.html">
+        OLBG 15-Sport Origination Desk
+        <span class="brand-badge">27 Oct 2026 · UTC</span>
+      </a>
+      <nav class="primary-nav"><a href="../index.html" class="">Executive Summary</a><a href="../oct27/all-markets.html" class="">All 180 Markets</a><a href="../oct27/flagged.html" class="">Flagged for Review (12)</a><a href="../oct27/repo-audit.html" class="">Repo Audit</a><a href="../oct27/methodology.html" class="active">How We Price</a><a href="../oct27/sources.html" class="">Official Sources</a></nav>
+    </div>
+  </header>
+  <div class="sportbar">
+    <div class="sportbar-inner"><a href="../oct27/sports/golf.html" class="sport-pill ">Golf <span class="cnt">(5)</span></a><a href="../oct27/sports/volleyball.html" class="sport-pill ">Volleyball <span class="cnt">(6)</span></a><a href="../oct27/sports/rugby-union.html" class="sport-pill ">Rugby Union <span class="cnt">(6)</span></a><a href="../oct27/sports/cricket.html" class="sport-pill ">Cricket <span class="cnt">(6)</span></a><a href="../oct27/sports/snooker.html" class="sport-pill ">Snooker <span class="cnt">(0)</span></a><a href="../oct27/sports/darts.html" class="sport-pill ">Darts <span class="cnt">(5)</span></a><a href="../oct27/sports/baseball.html" class="sport-pill ">Baseball <span class="cnt">(3)</span></a><a href="../oct27/sports/gaelic-sports.html" class="sport-pill ">Gaelic Sports <span class="cnt">(5)</span></a><a href="../oct27/sports/greyhounds.html" class="sport-pill ">Greyhounds <span class="cnt">(0)</span></a><a href="../oct27/sports/tennis.html" class="sport-pill ">Tennis <span class="cnt">(7)</span></a><a href="../oct27/sports/motor-racing.html" class="sport-pill ">Motor Racing <span class="cnt">(5)</span></a><a href="../oct27/sports/handball.html" class="sport-pill ">Handball <span class="cnt">(6)</span></a><a href="../oct27/sports/ice-hockey.html" class="sport-pill ">Ice Hockey <span class="cnt">(7)</span></a><a href="../oct27/sports/basketball.html" class="sport-pill ">Basketball <span class="cnt">(8)</span></a><a href="../oct27/sports/rugby-league.html" class="sport-pill ">Rugby League <span class="cnt">(5)</span></a></div>
+  </div>
+  <main>
+
+<section class="hero">
+  <h1>How We Originate Betting Lines Across All 15 Sports</h1>
+  <p>OLBG&rsquo;s server-rendered HTML exposes event IDs, market types, handicap/total lines and community tip counts,
+  but omits bookmaker odds. Every price on this site is computed by our own four-family mathematical origination suite.</p>
+</section>
+<section class="panel">
+  <h2>1. Four Sport-Specific Probability Engines</h2>
+  <div class="table-wrap">
+    <table class="data">
+      <thead><tr><th>Engine Family</th><th>Sports Covered</th><th>Inputs &amp; Distribution</th><th>Markets Consistent Simultaneously</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>Gaussian Margin &amp; Total</strong></td>
+          <td>Basketball (NBA, EuroLeague, EuroCup, BCL), Rugby Union, Gaelic Handicap</td>
+          <td>Official net rating / points differential + home-court edge + confirmed absentee adjustment &rarr; Normal CDF <code>&Phi;((&mu; + h)/&sigma;)</code> and <code>&Phi;((&tau; &minus; T)/&sigma;_T)</code>.</td>
+          <td>Money Line, Pointspread / Handicap, and Game Totals</td>
+        </tr>
+        <tr>
+          <td><strong>Poisson &ndash; Skellam Goal/Run Matrix</strong></td>
+          <td>Baseball (MLB), Ice Hockey (NHL, Liiga, DEL, SHL), Handball (EHF CL)</td>
+          <td>Attack/defense scoring rates <code>(&lambda;_H, &lambda;_A)</code> from official goals/runs per game + goalie/starter/IR adjustments &rarr; exact bivariate goal grid.</td>
+          <td>Regulation 3-Way 1X2 (curing OLBG&rsquo;s Handball Tie bug), OT Money Line, Run/Puck Line (&plusmn;1.5), and Over/Under Totals</td>
+        </tr>
+        <tr>
+          <td><strong>Markov Set &amp; Game Chain</strong></td>
+          <td>Tennis (ATP/WTA), Volleyball (Best-of-5)</td>
+          <td>Per-set win probability <code>p_s</code> from live ATP/WTA ranking, surface hold/break profile, and league set ratios &rarr; exact <code>2-0</code>, <code>2-1</code>, <code>3-0..3-2</code> chains.</td>
+          <td>Win Match, Straight-Sets (2-0), and Games Handicap</td>
+        </tr>
+        <tr>
+          <td><strong>Plackett&ndash;Luce Field Engine</strong></td>
+          <td>Golf (N=54, 78, 132), Darts (N=96, 128), Motor Racing (N=6, 22), Rugby League (N=2, 14, 18), GAA &amp; Cricket Outrights</td>
+          <td>True entrant count <code>N</code> (replacing the legacy 1/8 constant prior), official World Ranking / Order of Merit / post-Austin WDC points, with confirmed absentees zeroed out.</td>
+          <td>Win Tournament, Grand Final Winner, Podium Finish, Points Finish</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section class="panel">
+  <h2>2. Origination Margin &amp; Objective Confidence Rules (&minus;250 to +10000)</h2>
+  <div class="callout">
+    <strong>Why heavy &gt;71% chalk is never labelled High Confidence here:</strong> A raw win chance above 71.4% converts
+    to fair odds shorter than &minus;250 (<code>1.40</code> decimal). Rather than listing &minus;500 to &minus;2000 money-line
+    favourites as High Confidence, our engine caps out-of-band chalk and routes conviction plays through pointspreads,
+    handicaps, set betting, or tournament markets priced strictly inside <strong>&minus;250 to +10000</strong>
+    (<code>1.40 &le; price_dec &le; 101.00</code>).
+  </div>
+  <ul>
+    <li><strong>Origination Overround:</strong> <code>4.5%</code> on 2-way match/spread/total lines, <code>5.5%</code> on 3-way 1X2 lines, and <code>8.0%</code> on multi-runner outrights: <code>price_dec = round(1 / (p_fair &times; overround), 2)</code>.</li>
+    <li><strong>High Confidence:</strong> Requires price strictly inside <code>[1.40, 101.00]</code> (<code>&minus;250..+10000</code>), official governing-body form/table/entry support, and either <code>p_fair &ge; 61.5%</code> (<code>&ge;59.5%</code> with confirmed injury/standings edge) on match/spread/total markets or <code>&ge;3.5&times;</code> uniform field share with <code>p_fair &ge; 14.5%</code> on outrights/podiums.</li>
+    <li><strong>Medium Confidence:</strong> <code>p_fair &ge; 53.5%</code> on head-to-head/spread/total markets or <code>&ge;1.7&times;</code> uniform field share on outrights (plus heavy chalk shorter than &minus;250).</li>
+    <li><strong>Low Confidence:</strong> Marginal edges (<code>p_fair &lt; 53.5%</code>), tip-shrinkage-only domestic lines without official league differentials, or earlier-morning in-play exclusions.</li>
+  </ul>
+</section>
+
+  </main>
+  <footer>
+    <strong>OLBG 15-Sport Origination Desk (27 October 2026 UTC)</strong> · Every betting price on this site is originated in-house and every table row links to both its OLBG market page and an official governing-body or primary statistical source. Unconfirmed fields remain blank and appear on <a href="../oct27/flagged.html">Flagged for Review</a>.<br>
+    Preserved repository snapshots:
+    <a href="../cycle-board.html">27 Oct Tip-Split Cycle Board</a> ·
+    <a href="../desk/index.html">27 Oct Coverage Desk</a> ·
+    <a href="../picks.html">27 Oct CAL-4 Picks</a> ·
+    <a href="../legacy-cal4/index.html">27 Oct CAL-4 Archive</a> ·
+    <a href="../board/all-markets.html">Early 27 Oct Hub Board</a> ·
+    <a href="../olbg-tips/index.html">26 Oct Tip-Consensus Board</a> ·
+    <a href="../docs/index.html">26 Oct Docs Snapshot</a> ·
+    <a href="../docs/board-review/index.html">26 Oct Board Review</a>
+  </footer>
+</body>
+</html>
