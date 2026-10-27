@@ -7,7 +7,7 @@ Rugby League.
 
 Live site: **https://karagemop466-tech.github.io/Olbg7/**
 
-Retrieval date for everything in this repository: **2026-10-26**.
+Retrieval date for the published event inventory, prices and predictions: **2026-10-26**. This is a historical snapshot, not a current 2026-10-27 betting card; event status, markets, start times and team news have not been refreshed. See the dashboard freshness warning before using any entry.
 
 ## What is in here
 
