@@ -28,7 +28,7 @@ Last updated: 2026-10-26 (UTC) - board re-sourced from retrieved match data
 
 | ID | Task | Status | Owner | File scope |
 |---|---|---|---|---|
-| T12 | Add prominent freshness warning for Oct 26 data; verify existing site and flag stale claims | in progress | `arena/2e363bd1-olbg7` | `index.html`, `README.md`, `COORDINATION.md` |
+| T12 | Add prominent freshness warning for Oct 26 data; verify existing site and flag stale claims | done | `arena/2e363bd1-olbg7` | `index.html`, `README.md`, `COORDINATION.md` |
 
 <!-- Existing historical task board follows. -->
 
