@@ -18,6 +18,7 @@ Last updated: 2026-10-26 (UTC) - board re-sourced from retrieved match data
 |---|---|---|---|---|
 | `sess-arena-9922c58c` | `arena/9922c58c-olbg7` | 2026-10-26 20:30 | full repo (all tasks T1-T8) | done |
 | `610d0099` | `arena/610d0099-olbg7` | 2026-10-26 ~19:30 | COORDINATION.md, data/picks.json, tools/build_site.py, docs/ | done (merged to main as PRs #1-#4) |
+| `arena-e0f59668` | `arena/e0f59668-olbg7` | 2026-10-27 05:24 | 2026-10-27 refresh research: `data/daily/`, `tools/daily_*`; later final integration only after research checks pass | in progress |
 
 > **Note on parallelism:** at the time of this run only one session (`sess-arena-9922c58c`) is active.
 > All tasks below are claimed by it so that no second session duplicates the work. If a second session
@@ -39,6 +40,8 @@ Last updated: 2026-10-26 (UTC) - board re-sourced from retrieved match data
 | T10 | Re-source every prediction from retrieved match data (scores, team news, venue, official times) | done | sess-arena-9922c58c | `data/picks_src1.json`, `data/picks_src2.json`, `tools/build_picks.py`, `data/flags.json` | 2026-10-26 22:40 |
 | T11 | Recompute all originating lines with corrected market structure (2-way vs 3-way by sport) | done | sess-arena-9922c58c | `tools/pricing.py`, `data/pricing.json` | 2026-10-26 22:45 |
 | T9 | Integration: PRs → main, merge, Pages live | done | sess-arena-9922c58c | repo root |
+| T12 | Refresh OLBG inventory and official-source research for 2026-10-27; preserve 2026-10-26 snapshot | in progress | arena-e0f59668 | `data/daily/`, `tools/daily_*` |
+| T13 | Final integration of refreshed data, dashboard, link checks, PR/merge and Pages deployment | unclaimed | — | shared root outputs, `README.md`, `COORDINATION.md`; starts only after T12 is done |
 
 ## Log
 
