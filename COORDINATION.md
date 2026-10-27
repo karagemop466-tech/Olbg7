@@ -17,6 +17,16 @@ is in progress. Historical namespaced boards remain preserved.
 | Build a trustworthy, automatically refreshable 15-sport dashboard and review register | in progress | sess-arena-4eb82353 | root generated HTML, `sports/`, `assets/`, `.github/`, `README.md` |
 | Integration, tests, PR, merge and GitHub Pages deployment | in progress | sess-arena-4eb82353 | shared root site and above files |
 
+### Concurrent integration note — 2026-10-27 05:25 UTC
+
+PR #14 from `arena/2e363bd1-olbg7` merged while this session was working,
+adding a freshness warning to `index.html` and `README.md` and completing T12.
+Both files and the other session's coordination entry were preserved. The
+pre-push rebase encountered duplicate copies of this session's previously
+pushed probe workflow: the add/add and workflow conflicts were resolved by
+keeping the already-pushed probe and retaining its new annotation line. No
+other session's work was discarded.
+
 ## Session protocol
 
 - Each session works only on its own branch and only inside the file scope it claimed.
