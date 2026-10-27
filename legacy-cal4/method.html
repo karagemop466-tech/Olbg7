@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Method &middot; OLBG 15-sport desk</title>
+<link rel="stylesheet" href="../assets/board.css">
+</head><body><div id="historical-warning" role="note" style="padding:14px 20px;background:#fff0cd;color:#543800;border-bottom:2px solid #c99a42;font:600 15px/1.5 system-ui,sans-serif">ARCHIVED 27 OCTOBER BOARD — not live; prices are historical, uncalibrated estimates, not bookmaker quotes. Claims have not been rechecked. Do not use as current betting advice. <a style="color:#163c4d;text-decoration:underline" href="../archive.html">Archive warning and current desk</a>.</div>
+<header><div class="wrap">
+  <div class="brand"><a href="index.html">OLBG 15-sport desk</a>
+  <span class="snap">snapshot 2026-10-27</span></div>
+  <nav>
+    <a href="index.html">Dashboard</a>
+    <a href="picks.html">Picks</a>
+    <a href="lines.html">Every line</a>
+    <a href="olbg-map.html">OLBG map</a>
+    <a href="method.html">Method</a>
+    <a href="sources.html">Sources</a>
+    <a href="flagged.html">Flagged</a>
+    <a href="archive.html">Archive</a>
+  </nav>
+</div></header>
+<main class="wrap">
+<div class="crumb"><a href="index.html">Dashboard</a> / Method</div>
+<h1>How every number on this site is made</h1>
+<p class="lede">Two questions decide the whole board: what is the chance, and is the price worth taking.
+Neither is typed by hand. This page states the arithmetic so you can check it.</p>
+
+<h2>1. Where the data comes from</h2>
+<table><thead><tr><th>Input</th><th>Source</th><th>What we take from it</th></tr></thead><tbody>
+<tr><td>Fixtures, times, markets, tip counts</td><td><a href="https://www.olbg.com/betting-tips" rel="nofollow noopener">OLBG sport listings</a></td>
+<td>The event, the printed start label, the most-tipped selection, tips/total and the percentage. Copied as printed.</td></tr>
+<tr><td>League tables and standings</td><td>Governing bodies and reference databases (MLB, NHL, EHF, BBC Sport rugby, Basketball-Reference)</td>
+<td>Wins, losses, points/goals/runs for and against, used both as the evidence in a write-up and as the input to a derived market.</td></tr>
+<tr><td>Rankings</td><td>ATP ranking reports, PDC Order of Merit, Official World Golf Ranking</td><td>Player rank and points, as published on the date shown with the fact.</td></tr>
+</tbody></table>
+
+<h2>2. CAL-4C &mdash; the consensus price</h2>
+<p>OLBG prints, for each market, how many tips each selection received. That is a small, biased sample of
+opinion, so it is shrunk towards the market-structure prior before it becomes a price:</p>
+<pre>prior    = 1 / number of outcomes           (two-way 0.500, three-way 0.333, outright 0.125)
+K        = 6 pseudo-tips for 8+ real tips, 12 for 4-7, 20 for 0-3
+p_fair   = (tips_on_selection + K * prior) / (total_tips + K)
+our price= 1 / (p_fair * 1.05)              (5% book margin)</pre>
+<p>The sample taper matters: a single tip on a three-way market prices near 0.36, not near 0.70. A two-way
+market is priced on both sides, so the other outcome is the complement of the printed split.</p>
+
+<h2>3. CAL-4R &mdash; the rating price</h2>
+<p>Used where the tip split cannot price the market we care about: handball (OLBG prints the draw as the
+most-tipped selection on 11 of 15 matches, so the split is not a match-winner split) and every handicap or
+total. Expected scoring comes from official goals/points for and against per game:</p>
+<pre>expected_home = (home_scored_per_game + away_conceded_per_game) / 2
+expected_away = (away_scored_per_game + home_conceded_per_game) / 2
+margin        = expected_home - expected_away,  normal with a sport-specific sigma
+total line    = expected_home + expected_away
+cover / over  = normal tail from the same mean and sigma</pre>
+<table><thead><tr><th>Sport</th><th>Margin sigma</th><th>Total sigma</th><th>Derived markets published</th></tr></thead><tbody>
+<tr><td>Basketball</td><td>11.0 points</td><td>17.0 points</td><td>Point spread, total (EuroLeague only where both clubs have a table line)</td></tr>
+<tr><td>Ice hockey</td><td>1.9 goals</td><td>1.9 goals</td><td>Puck line at 1.5, total (NHL only)</td></tr>
+<tr><td>Baseball</td><td>2.4 runs</td><td>4.2 runs</td><td>Run line at 1.5, total (MLB; starting pitcher not in the baseline)</td></tr>
+<tr><td>Handball</td><td>8.0 goals</td><td>7.0 goals</td><td>Match winner including the draw, goal handicap, total</td></tr>
+<tr><td>Rugby union</td><td>13.0 points</td><td>12.0 points</td><td>Handicap and total where both clubs have a URC line</td></tr>
+</tbody></table>
+
+<h2>4. CAL-4P &mdash; the league-average prior</h2>
+<p>Five handball fixtures have no club-specific table line retrieved. Rather than leave them blank or invent a
+rating, they are priced from the group-phase average goals per side, flagged as a prior, and <strong>no pick is
+ever built on one</strong>. They appear on <a href="lines.html">Every line</a> marked CAL-4P.</p>
+
+<h2>5. Confidence</h2>
+<table><thead><tr><th>Label</th><th>Rule</th></tr></thead><tbody>
+<tr><td><span class="pill high">high</span></td><td>Fair chance <strong>above 70%</strong> and at least three published tips. This is the brief's own definition, applied without rounding up: 70% is 1.43 decimal, so every high pick is also inside the requested band.</td></tr>
+<tr><td><span class="pill medium">medium</span></td><td>55%+ fair chance with either three tips or one independent sourced fact.</td></tr>
+<tr><td><span class="pill low">low</span></td><td>Everything else, including any row built on the league-average prior.</td></tr>
+</tbody></table>
+<p>Confidence is not a claim of certainty and it is not a tipster track record. It is a statement about how
+much evidence sits behind a price.</p>
+
+<h2>6. The price band</h2>
+<p>The brief asks for selections between &minus;250 and +10000 American odds, which is 1.40 to 101.00 decimal,
+or a fair chance between about 1% and 71%. Every price carries an <em>in band</em> or <em>outside band</em> label.
+Short favourites still appear when they are the honest answer, but they are never counted among the
+high-confidence headline picks.</p>
+
+<h2>7. What is deliberately absent</h2>
+<ul>
+<li><strong>Bookmaker prices.</strong> OLBG renders its odds client-side; no odds were present in the retrieved
+pages, so no comparison is claimed and every price here is ours.</li>
+<li><strong>Injuries and team news.</strong> No official injury report was retrievable for these fixtures in this
+pass, so no prediction makes an injury claim.</li>
+<li><strong>Timezones.</strong> OLBG prints none. Times are copied verbatim and the conflicts are listed on
+<a href="flagged.html">Flagged for review</a>.</li>
+</ul>
+</main>
+<footer><div class="wrap">
+  <p>Our own originating prices, not bookmaker odds. 18+. If gambling is causing you harm, support is
+  available from <a href="https://www.gamcare.org.uk/" rel="nofollow noopener">GamCare</a> and
+  <a href="https://www.gambleaware.org/" rel="nofollow noopener">GambleAware</a>.</p>
+  <p class="small muted">Data snapshot 2026-10-27. Fixtures, tip counts and start labels as published by OLBG;
+  tables and rankings as published by the sources on <a href="sources.html">Sources</a>.</p>
+</div></footer>
+</body></html>

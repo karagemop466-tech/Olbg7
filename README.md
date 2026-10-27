@@ -1,93 +1,46 @@
 # OLBG Coverage Desk
 
-Our own betting lines and written predictions for the 15 sports covered on
-[OLBG](https://www.olbg.com/betting-tips): Golf, Volleyball, Rugby Union, Cricket, Snooker, Darts,
-Baseball, Gaelic Sports, Greyhounds, Tennis, Motor Racing, Handball, Ice Hockey, Basketball and
-Rugby League.
+A source-linked **manual research snapshot** covering the 15 requested OLBG sport categories. It is published at <https://karagemop466-tech.github.io/Olbg7/>. The site is a static GitHub Pages site, not a live odds feed or a complete OLBG inventory.
 
-Live site: **https://karagemop466-tech.github.io/Olbg7/**
+The current research began **27 October 2026 at 05:23 UTC**. The snapshot contains 54 event or tournament listings with official schedule references, 71 separately flagged listings needing fixture/time checks (some captured on 26 October; others reported in a concurrent 27 October capture and not independently rechecked), and 38 distinct-event written leans. The five-per-sport target is unmet in most categories. Snapshot totals are historical, not a claim that everything is still upcoming.
 
-Snapshot for everything in this dashboard: **2026-10-27**. Every price is ours; none is a bookmaker price.
+No current bookmaker quote, calibrated independent numeric price, or priced high-confidence pick was established. One FanDuel opening quote reported by the PGA Tour on 26 October is labelled historical; it is not represented as current or available. Selection confidence is qualitative, not a win probability, and no betting edge is claimed. Sources for each prediction and every event-table row are linked on the site.
 
-## Read the site in this order
+## Freshness and source access
 
-| Page | What it answers |
-|---|---|
-| `index.html` | What is on today, the strongest picks, and how much of each sport we could price |
-| `picks.html` | Every written prediction, grouped by sport, strongest first, with the evidence for each |
-| `lines.html` | Every OLBG event and every market we priced, with the method on each row |
-| `olbg-map.html` | How OLBG's site is structured: URL grammar, sport ids, what each listing really contains |
-| `method.html` | The arithmetic behind every number, and what is deliberately not done |
-| `sources.html` | The source tiers used, page by page |
-| `flagged.html` | The 19 things that could not be resolved, and the values deliberately left blank |
-| `sports/<sport>.html` | One page per sport: picks first, then the full priced market table |
-| `archive.html` | The other boards in this repository, kept and linked, including `/board/` |
+- No automatic content ingestion or refresh is working. A GitHub-hosted probe checked OLBG's `robots.txt` with its declared `CoverageDeskResearch/1.0` identity and was denied the three tested paths. It did not evade the denial. A scheduled probe checks access only; it **does not update the site**.
+- The display is intentionally fail-closed: the browser hides scheduled rows and research notes at the earlier of the event's start/conservative cutoff and **28 October 2026 at 05:23 UTC**. It uses the visitor's device clock; if JavaScript is disabled or the clock predates the snapshot, those items remain hidden. Source links and the review register remain available.
+- Exact start times come from official sources where established. Unknown sequential tennis or tournament times are blank, with an earlier safety cutoff that is not presented as an event time. OLBG's ambiguous displayed timezone was not inferred.
+- Team news, prices, settlement rules, event availability and complete market coverage need further checking. [Flagged for review](flagged.html) records the gaps; a flag is not proof a fixture is false.
+- Older boards are preserved under `legacy-cal4/`, `board/`, `docs/` and `olbg-tips/` with prominent warnings. Their dated fixtures, tip-share-derived prices and confidence labels have not been rechecked and should not be used as current picks. The concurrent 26 October freshness disclosure from PR #14 remains preserved in the coordination history.
 
-## Numbers
+## Layout
 
-- 114 OLBG events inventoried, 111 priced, **251 markets**, **57 written predictions**.
-- Confidence follows the brief literally: **high is above 70%** (2 picks: Afghanistan, Veszprem),
-  25 medium, 30 low. Nothing is promoted to high to fill a quota.
-- Snooker and greyhounds have no market at all on OLBG today ("No tips found"), so they carry no picks.
-  Six sports carry fewer than five picks because OLBG lists fewer than five events for them
-  (Golf 3, Baseball 3, Gaelic 3, Rugby League 3, Darts 2, Motor Racing 2). Stated on the site, not padded.
+| Path | Purpose |
+| --- | --- |
+| `data/current.json` | Canonical research snapshot, official links, explicit unknowns, conservative cutoffs and written notes |
+| `tools/build_current.py` | Dependency-free static page generator; `--check` compares generated output |
+| `tools/check_current.py` | Structural, citation, cutoff, historic-warning and internal-link checks; not factual verification |
+| `assets/desk.css`, `assets/desk.js` | Dashboard styling and fail-closed freshness behavior |
+| `tests/freshness.test.js` | Boundary and clock-error tests for freshness behavior |
+| `tools/probe_olbg.py` | Identified, robots-aware access probe only |
+| `index.html`, `sports/*.html`, `all-events.html`, `flagged.html`, `methodology.html`, `sources.html` | Published Pages site |
+| `legacy-cal4/`, `board/`, `docs/`, `olbg-tips/`, older `data/` and generators | Preserved historical work, not the current dashboard |
+| `COORDINATION.md` | Session claims, integration, evidence and deployment log |
 
-## How it is built
+## Build and test
 
-Three scripts, no dependencies, and no number typed by hand:
+Python 3 and Node.js are sufficient; no third-party packages are required.
 
-```bash
-python3 tools/originate.py     # data/board/inventory-*.json + official.json -> data/board/lines.json
-python3 tools/build_board.py   # lines.json + picks + official + flags      -> *.html, sports/*.html
-python3 tools/check_board.py   # links, word counts, banned words, selection named, band checks
+```sh
+python3 tools/build_current.py
+python3 tools/build_current.py --check
+python3 tools/check_current.py
+node --test tests/freshness.test.js
 ```
 
-| Path | What it is |
-|---|---|
-| `data/board/inventory-*.json` | Verbatim OLBG listings retrieved 2026-10-27, one record per row |
-| `data/board/official.json` | Curated official tables (MLB, NHL, EuroLeague, EHF, URC, ATP, OWGR, PDC) with source and tier |
-| `data/board/lines.json` | Generated: per-market chance, price, American odds, method, basis, band flag |
-| `data/board/picks-team.json`, `picks-individual.json` | The 57 predictions: event id, market, selection, prose, sourced facts |
-| `data/board/flags.json` | 19 irregularities plus the list of values deliberately left blank |
-| `tools/originate.py` | CAL-4 engine: consensus, rating, league-average prior (never pick-eligible) |
-| `tools/build_board.py` | Builds every page, the executive summary and the per-sport tables |
-| `tools/check_board.py` | Fails on a broken link, short or duplicated prose, an unnamed selection, a bad price |
+The old `tools/build_board.py` and `tools/build_today.py` generators are guarded by `LEGACY_BUILD=1` because they overwrite root pages or archive warnings; use them only in an isolated copy. `tools/warn_historical.py` can restore warnings to preserved archive pages.
 
-Pricing in one line: `p = (tips + K × prior) / (total + K)` with `K` tapered 20/12/6 to the sample size,
-5% margin on the price, band 1.40–101.00 decimal. Full detail on `method.html`.
+Checks validate shape, source presence, word count, internal links, generated files and freshness logic. They do **not** independently verify external claims or current odds. Adding a new snapshot requires a responsible operator or an explicitly authorized, rate-limited source, event-by-event official corroboration, new capture and expiration times, and a fresh build; the probe alone cannot do this.
 
-## Verification
-
-- Every row on `lines.html` comes from an OLBG page that was retrieved, and every pick links to the OLBG
-  row it is priced from plus the official table or report behind its claims.
-- Official bodies are preferred (MLB.com, NHL.com, EHF, TVF, GAA, ATP, ESPNcricinfo); secondary sources
-  are labelled `media`; OLBG itself is labelled `olbg`.
-- Where a value could not be confirmed it is left blank and listed on `flagged.html` — never inferred.
-- `check_board.py` passes: 24 pages, every internal link resolves, 57 picks, 251 markets.
-
-## Other boards in this repository, kept unchanged
-
-The repository has been rebuilt several times by different sessions. Nothing has been deleted: each
-earlier board is preserved in place and reachable from `archive.html`.
-
-| Path | Board |
-|---|---|
-| `board/` | Session `81a54336`'s 27 Oct board: 52 predictions, 146 priced markets, its own `/board/method.html`, `/board/sources.html` and `/board/flagged.html` |
-| `data/today/`, `tools/build_today.py`, `tools/price_today.py`, `tools/picks_source.py`, `tools/check_today.py` | That board's data and generator, untouched |
-| `all-events.html`, `methodology.html` | Session `9922c58c`'s 121-event board (CAL-1 engine, `data/events.json`, `data/pricing.json`) |
-| `olbg-tips/` | Session `dfa8f20c`'s 127-row tip-consensus board (`data/consensus/`, `scripts/`) |
-| `docs/board-review/` | Session `arena-88221c1f`'s 119-event board (`data/board-review/`) |
-| `docs/` | The original 75-row board from session `610d0099` |
-
-The older root generators (`tools/build_site.py`, `scripts/build_site.py`, `scripts/build_site_olbg.py`)
-now refuse to run unless `LEGACY_BUILD=1` is set, so an old build cannot silently overwrite the live pages.
-
-## Scope limits, stated up front
-
-No injury feed could be retrieved for any of the 15 sports, so no pick claims a fitness doubt; the gap is
-recorded as a blank on `flagged.html` instead of being filled with speculation. Only content that appeared
-in the retrieved OLBG HTML is priced. Snooker and greyhounds returned nothing at all. OLBG also prints no
-timezone, and its times turn out to be US Eastern rather than local kick-off — proved against four
-confirmed official starts and recorded as F-19; the site labels the times and never converts them.
-
-18+. No assurance of profit. Support: GamCare, GambleAware.
+18+. Gambling carries risk. Support: [GamCare](https://www.gamcare.org.uk/) and [GambleAware](https://www.gambleaware.org/).

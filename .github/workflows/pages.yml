@@ -1,20 +1,13 @@
-name: Verify site
+name: Verify coverage desk
 
-# GitHub Pages for this repository is pinned to the repo root of `main`
-# (build_type: legacy, source main:/), so there is no deploy job here - the
-# committed HTML is what gets served. This workflow proves that the committed
-# pages still match the data and that every link resolves.
-#
-# It used to run scripts/build_site.py, the generator for the 26 October
-# tip-consensus board. That script is now a guard: without LEGACY_BUILD=1 it
-# prints "Superseded by tools/build_board.py" and exits 1, so every run on main
-# was red even though the site was fine. The live board is built by
-# tools/build_board.py from data/board/lines.json, so that is what runs here.
-
+# GitHub Pages serves committed HTML from main:/ (legacy Pages build).
+# Nothing here regenerates or overwrites the preserved historical boards.
 on:
   push:
-    branches: [main]
+    branches: [main, arena/4eb82353-olbg7]
   pull_request:
+  schedule:
+    - cron: '17 5 * * *'
   workflow_dispatch:
 
 permissions:
@@ -27,23 +20,32 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check committed pages match the snapshot
+        run: python tools/build_current.py --check
+      - name: Check data, internal links and archive warnings
+        run: python tools/check_current.py
+      - name: Test fail-closed freshness behavior
+        run: node --test tests/freshness.test.js
 
-      - name: Rebuild the board from data/board/lines.json
-        run: python tools/build_board.py
-
-      - name: Check links, prose, prices, confidence labels and coverage
-        run: python tools/check_board.py
-
-      - name: Fail if the committed board is out of date with the data
-        run: >
-          git diff --exit-code --stat --
-          index.html picks.html lines.html method.html olbg-map.html
-          sources.html flagged.html archive.html sports
-
-      - name: The archived 26 October board must still resolve
-        run: |
-          test -f board/all-markets.html
-          test -f board/flagged.html
-          test -f docs/board-review/index.html
-          test -f olbg-tips/index.html
+  olbg-access-probe:
+    # This is an access check only. It never updates content or bypasses robots.txt.
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check declared-agent access under robots.txt
+        run: python tools/probe_olbg.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: olbg-access-probe
+          path: probe-output/
+          retention-days: 1
+          if-no-files-found: warn

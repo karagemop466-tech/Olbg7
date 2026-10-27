@@ -21,6 +21,9 @@ import re
 import sys
 from datetime import date
 
+if os.environ.get("LEGACY_BUILD") != "1":
+    raise SystemExit("Historical generator: set LEGACY_BUILD=1 only for an isolated archive rebuild; it can overwrite the current desk and warnings.")
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
 from picks_source import PICKS  # noqa: E402

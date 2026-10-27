@@ -15,6 +15,9 @@ import os
 import html
 import collections
 
+if os.environ.get("LEGACY_BUILD") != "1":
+    raise SystemExit("Historical generator: set LEGACY_BUILD=1 only for an isolated archive rebuild; it can overwrite the current desk and warnings.")
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 B = os.path.join(ROOT, "data", "board")
 

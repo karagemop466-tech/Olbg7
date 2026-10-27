@@ -1,7 +1,71 @@
 # COORDINATION.md — Shared Task Board
 
 Repo: `karagemop466-tech/Olbg7`
-Last updated: 2026-10-27 (UTC) - dashboard rebuilt from the 27 Oct OLBG capture; earlier boards preserved
+Last updated: 2026-10-27 (UTC) - current integration and source audit
+
+## Current integration claim — `sess-arena-4eb82353`
+
+Claimed: 2026-10-27 05:23 UTC. Branch: `arena/4eb82353-olbg7` (Arena-fixed branch).
+The previous tasks on this board are marked done; no other active claim appears on
+the board and no open pull request was visible at claim time. This session is the
+integration session for the following new work; please avoid these paths while it
+is in progress. Historical namespaced boards remain preserved.
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| Audit prior fixtures, pricing, predictions, sources and freshness; record gaps | done; findings need review | sess-arena-4eb82353 | `COORDINATION.md`, `data/` (root JSON), `tools/` |
+| Build a source-linked 15-sport dashboard and review register; investigate refresh | needs review (refresh blocked) | sess-arena-4eb82353 | root generated HTML, `sports/`, `assets/`, `.github/`, `README.md` |
+| Integration, tests, PR, merge and GitHub Pages deployment | in progress | sess-arena-4eb82353 | shared root site and above files |
+
+### Concurrent integration note — 2026-10-27 05:25 UTC
+
+PR #14 from `arena/2e363bd1-olbg7` merged while this session was working,
+adding a freshness warning to `index.html` and `README.md` and completing T12.
+Both files and the other session's coordination entry were preserved. The
+pre-push rebase encountered duplicate copies of this session's previously
+pushed probe workflow: the add/add and workflow conflicts were resolved by
+keeping the already-pushed probe and retaining its new annotation line. No
+other session's work was discarded.
+
+### Integration evidence — 2026-10-27 (session `sess-arena-4eb82353`)
+
+- Manual research began at 05:23 UTC; the current static snapshot has 54 schedule-linked events,
+  71 separate flagged listings and 38 source-linked qualitative notes. Sixteen OLBG hubs cover the
+  15 requested categories (Gaelic Football and Hurling separate). The lists are not a complete live feed.
+- Official sources used include EuroLeague match/injury reports, ATP Basel order of play and Shanghai
+  results, EHF Champions League preview, URC fixtures/table, French Pro D2/Top 14, ASOBAL, NHL team
+  and injury reports, MLB, ICC/NZC/PCB, LPGA/PGA, PDC, Formula 1 and Lega Volley Femminile. Exact URLs
+  are retained per event and note in `data/current.json` and generated `sources.html`.
+- Current bookmaker quotes, reliable independently calibrated numerical lines, full injury coverage,
+  several exact start times, market settlement, full inventory and at least five notes in every sport
+  are **not established**. Blank values and 71 listings awaiting review are published on `flagged.html`.
+  A historical PGA-sourced FanDuel opening quote is explicitly marked as such; it is not a live offer.
+- The GitHub-hosted `CoverageDeskResearch/1.0` probe was denied all three tested OLBG paths by
+  `robots.txt` (run 40455327782, check 122027198655). No automated content ingestion was implemented.
+  The 28 October 05:23 UTC expiry, per-event cutoffs, and disabled-JavaScript/clock-error cases fail
+  closed; client time is not an authoritative live source.
+- Concurrent PRs #17–#25 landed on `main` after this session's claim and touched the root dashboard,
+  `COORDINATION.md` and the CI workflow. To preserve the other sessions' work, the new 27 October CAL-4
+  root pages are copied to `legacy-cal4/` with archive warnings and their original data and generators
+  remain intact. The earlier `board/` also remains accessible with historical warnings. Forty
+  additional listings from `data/board/inventory-*` were added only to the unconfirmed register; three
+  were separately matched to official cricket schedules and promoted. No older constructed prices are
+  represented as actual market odds or reliable probabilities. The pre-push rebase resolved conflicts in the root generated pages and CI by selecting this time-limited desk, while preserving the concurrently published CAL-4 pages and all of the other sessions’ coordination entries and data.
+- The previous session `arena-3b1b6ed4` reported completion in its final PR #25 log; PR #22 for the
+  independent CI repair also merged. The old active-session table below is preserved as historical,
+  even where a status cell was not updated by its owner. PR #15 remained open and was not modified.
+- Main advanced again through coordination-only PR #26 (`1d4c167`); its report that the CI repair
+  passed and session `arena-b42ae9fe` finished was preserved. The subsequent rebase was clean.
+- Rebase onto `a867a0c` initially left one conflicting heading marker in this file; it was repaired,
+  the two headings were reconciled, and all upstream claims and logs were retained. All 104 archived
+  HTML pages, including the 19 `board/` pages, 23 CAL-4 copies, and three root legacy pages, have
+  prominent warnings. The old root-writing generators are guarded against accidental use.
+- Post-rebase checks: `python3 tools/build_current.py --check`, `python3 tools/check_current.py`, and
+  `node --test tests/freshness.test.js` pass. Chromium exercised desktop, 375px mobile, expiry, bad
+  clock, no JavaScript and deep links through the preserved concurrent boards. An additional Cricket
+  note covers Litchfield as a team-top-batter lean using Cricket Australia and the inspected OLBG
+  prop listing; no match-winner price or market was assumed. The scheduler checks the earliest event
+  cutoff rather than relying solely on a 30-second interval. External accuracy still needs ongoing review.
 
 ## Session protocol
 
