@@ -45,9 +45,9 @@ SPORT_NOTE = {
                    "found.' The sweep was repeated and the empty state is what OLBG serves. No "
                    "picks are published for this sport."),
 }
-TIER_LABEL = {"A": "A &middot; 20+ tips", "B": "B &middot; 8-19 tips",
-              "C": "C &middot; 4-7 tips", "D": "D &middot; under 4 tips",
-              "R": "R &middot; our own origination"}
+TIER_LABEL = {"A": "A \u00b7 20+ tips", "B": "B \u00b7 8-19 tips",
+              "C": "C \u00b7 4-7 tips", "D": "D \u00b7 under 4 tips",
+              "R": "R \u00b7 our own origination"}
 
 
 def e(x):
@@ -78,9 +78,10 @@ def counts(lines):
     tier = collections.Counter(r.get("tier") or "?" for r in L)
     return {
         "total": len(L),
-        "priced": sum(1 for r in L if r.get("fair_american")),
-        "blank": sum(1 for r in L if not r.get("fair_american")),
-        "in_band": sum(1 for r in L if r.get("in_band")),
+        "priced": sum(1 for r in L if r.get("fair_american") or rlines(r)),
+        "blank": sum(1 for r in L if not (r.get("fair_american") or rlines(r))),
+        "in_band": sum(1 for r in L if r.get("in_band") or (
+            rlines(r) and -250 <= min(abs(int(v[1])) for v in rlines(r).values()) <= 10000)),
         "track_T": sum(1 for r in L if r.get("track") == "T"),
         "track_R": sum(1 for r in L if r.get("track") == "R"),
         "defective": sum(1 for r in L if r.get("olbg_defect")),
@@ -228,7 +229,7 @@ def jumpbar(picks, depth=0):
 
 def orig_box(r):
     """Render a Track R row's own line map, which is where the real story lives."""
-    lm = r.get("lines")
+    lm = rlines(r)
     if not lm:
         return ""
     bits = []
@@ -331,12 +332,40 @@ def build_picks(picks):
 
 
 # --------------------------------------------------------------- page: per sport
+def rlines(r):
+    """The Track R line map. The engine writes it as orig_lines; lines is the older key."""
+    return r.get("orig_lines") or r.get("lines") or {}
+
+
+def priced(r):
+    """A row counts as priced if it carries a headline price or a Track R line map.
+
+    Golf and the F1 outrights publish Track R as primary, so fair_american is
+    blank even though we originated a real price. Counting only fair_american
+    made the Golf page claim '0 priced by us' while showing +481 for Clark.
+    """
+    return bool(r.get("fair_american")) or bool(rlines(r))
+
+
+def headline(r):
+    """The price to show in the Our-line column, Track R included."""
+    if r.get("fair_american"):
+        return r["fair_american"], bool(r.get("in_band"))
+    lm = rlines(r)
+    if lm:
+        # the shortest price we originate is the side we are actually pointing at
+        best = min(lm.items(), key=lambda kv: abs(int(kv[1][1])))
+        v = int(best[1][1])
+        return best[1][1], (-250 <= v <= 10000)
+    return "", False
+
+
 def line_row(r, sport_link=None):
     tips = e(r.get("tips", ""))
     pct = r.get("olbg_pct")
     pct = ("%.0f%%" % pct) if isinstance(pct, (int, float)) else ""
-    price = r.get("fair_american") or ""
-    band = ('<span class="pill band">in</span>' if r.get("in_band")
+    price, inb = headline(r)
+    band = ('<span class="pill band">in</span>' if inb
             else '<span class="pill noband">out</span>') if price else '<span class="pill blank">blank</span>'
     note = r.get("note") or ""
     return ("<tr><td><b>%s</b><div class=\"small muted\">%s</div><div class=\"small muted\">%s</div>"
@@ -362,7 +391,7 @@ def build_sport(sport, picks, lines):
     out = ['<h2>%s</h2>' % e(sport)]
     out.append('<div class="grid">%s%s%s%s</div>' % (
         kpi(len(evs), "markets swept from OLBG"),
-        kpi(sum(1 for r in evs if r.get("fair_american")), "priced by us"),
+        kpi(sum(1 for r in evs if priced(r)), "priced by us"),
         kpi(len(rows), "written picks"),
         kpi(sum(1 for p in rows if p["confidence"] == "HIGH"), "high confidence")))
     if sport in SPORT_NOTE:
@@ -390,7 +419,7 @@ def build_sport(sport, picks, lines):
     trs = []
     for r in evs:
         trs.append(line_row(r))
-        if r.get("lines"):
+        if rlines(r):
             trs.append('<tr><td colspan="6" style="padding-top:0">%s</td></tr>' % orig_box(r))
     out.append('<table><thead><tr><th>Match / event</th><th>Market</th><th>OLBG most-tipped</th>'
                '<th>Our line</th><th>Track / tier</th><th>Note</th></tr></thead><tbody>%s</tbody></table>'
@@ -428,7 +457,7 @@ def build_lines(lines, picks, C):
             pk = ('<a href="sports/%s.html" class="pill high">picked</a>' % SLUG[s]
                   if (s, r["event"]) in picked else "")
             trs.append(line_row(r, pk))
-            if r.get("lines"):
+            if rlines(r):
                 trs.append('<tr><td colspan="6" style="padding-top:0">%s</td></tr>' % orig_box(r))
         out.append('<table><thead><tr><th>Match / event</th><th>Market</th><th>OLBG most-tipped</th>'
                    '<th>Our line</th><th>Track / tier</th><th>Note</th></tr></thead><tbody>%s'
