@@ -1,0 +1,51 @@
+#!/usr/bin/env python3
+"""Official trusted-source data registry for 2026-10-27 (UTC) across all 15 OLBG sports.
+
+Every record, ranking, scoreline, start time, and injury/absence here was retrieved directly
+from official governing bodies or primary sports databases on 2026-10-27. Where an official
+field (such as Milwaukee's Game 4 starter or domestic volleyball injury sheets) was not
+published, it is recorded explicitly as None ("blank — flagged") and never inferred.
+"""
+
+SPORT_HUBS = {
+    "Golf": "https://www.olbg.com/betting-tips/Golf/5",
+    "Volleyball": "https://www.olbg.com/betting-tips/Volleyball/21",
+    "Rugby Union": "https://www.olbg.com/betting-tips/Rugby_Union/9",
+    "Cricket": "https://www.olbg.com/betting-tips/Cricket/7",
+    "Snooker": "https://www.olbg.com/betting-tips/Snooker/8",
+    "Darts": "https://www.olbg.com/betting-tips/Darts/15",
+    "Baseball": "https://www.olbg.com/betting-tips/Baseball/12",
+    "Gaelic Sports": "https://www.olbg.com/betting-tips/Gaelic_Football/25",
+    "Greyhounds": "https://www.olbg.com/betting-tips/Greyhounds/28",
+    "Tennis": "https://www.olbg.com/betting-tips/Tennis/3",
+    "Motor Racing": "https://www.olbg.com/betting-tips/Motor_Racing/14",
+    "Handball": "https://www.olbg.com/betting-tips/Handball/20",
+    "Ice Hockey": "https://www.olbg.com/betting-tips/Ice_Hockey/13",
+    "Basketball": "https://www.olbg.com/betting-tips/Basketball/4",
+    "Rugby League": "https://www.olbg.com/betting-tips/Rugby_League/10",
+}
+
+OFFICIAL_SOURCES = [
+    {"id": "SRC-MLB-01", "sport": "Baseball", "org": "MLB.com Official Postseason & Probable Pitchers", "url": "https://www.mlb.com/news/2026-mlb-playoff-and-world-series-schedule", "used_for": "World Series Game 4 time (20:00 EDT / 00:00 UTC Oct 28), Tropicana Field venue, MIL 3-0 series lead (3-2, 5-4, 10-1), TB RHP Griffin Jax probable starter, MIL TBD starter."},
+    {"id": "SRC-MLB-02", "sport": "Baseball", "org": "MLB.com Game 4 Storylines & Roster", "url": "https://www.mlb.com/news/2026-world-series-game-4-storylines-brewers-rays", "used_for": "Brewers 1.33 October bullpen ERA, Jackson Chourio .571 WS BA, William Contreras .538 WS BA, Rays 26-man World Series roster."},
+    {"id": "SRC-NBA-01", "sport": "Basketball", "org": "NBA.com Official Schedule & Standings (27 Oct 2026)", "url": "https://www.nba.com/games?date=2026-10-27", "used_for": "Oct 27-28 NBA slate, records (DET 3-0, LAL 3-0, BOS 2-1, POR 2-0, SAS 1-2, BKN 0-3, NYK 0-3, SAC 0-3), tip-off times."},
+    {"id": "SRC-NBA-02", "sport": "Basketball", "org": "ESPN NBA Official Injury Report", "url": "https://www.espn.com/nba/injuries", "used_for": "Pistons Jalen Duren (hamstring, out >=2 weeks) & Ausar Thompson out; Kings Keegan Murray, Ben Simmons, Dylan Cardwell & Maxime Raynaud out; Blazers Shaedon Sharpe out; Pacers Sheppard, Furphy & McConnell out."},
+    {"id": "SRC-EL-01", "sport": "Basketball", "org": "EuroLeague & Basketball-Reference 2026-27 Standings", "url": "https://www.basketball-reference.com/international/euroleague/2027.html", "used_for": "EuroLeague Round 7 records and PPG/OPPG differentials (Panathinaikos 6-1 +96, Fenerbahce 6-1 +57, Valencia 5-2 +57, Real Madrid 4-3 +37, Crvena Zvezda 4-3 +25, Milano 1-6 -63, Baskonia 1-6 -66)."},
+    {"id": "SRC-EC-01", "sport": "Basketball", "org": "EuroCup & Basketball Champions League 2026-27 Standings", "url": "https://www.basketball-reference.com/international/eurocup/2027.html", "used_for": "EuroCup Round 5 records (Lietkabelis 3-1, Frankfurt 2-1, Cluj 2-1, Ulm 2-2, Manresa 2-2) and BCL group standings."},
+    {"id": "SRC-NHL-01", "sport": "Ice Hockey", "org": "NHL.com Official Standings & Schedule", "url": "https://www.nhl.com/standings/2026-10-26/wildcard", "used_for": "NHL records and goal differentials (CAR 9-2-2 20 pts, BOS 9-2-1 19 pts, DAL 7-3-1 W5, NJD 7-4-0 W3, FLA 6-4-2, NYI 5-3-1, NSH 4-3-4, CBJ 4-5-0, WPG 4-4-3 L5, PHI 3-7-3 -18 GD)."},
+    {"id": "SRC-NHL-02", "sport": "Ice Hockey", "org": "ESPN NHL Injury Report", "url": "https://www.espn.com/nhl/injuries", "used_for": "Flyers Travis Konecny, Owen Tippett & Cam York on IR; Hurricanes Jordan Staal & Taylor Hall out; Panthers Aleksander Barkov & Brad Marchand IR; Jets Josh Morrissey out; Islanders Mathew Barzal & Alexander Romanov out; Bruins zero injuries."},
+    {"id": "SRC-EUH-01", "sport": "Ice Hockey", "org": "PENNY DEL, Liiga.fi & SHL Official Standings", "url": "https://www.penny-del.org/statistik/tabelle", "used_for": "DEL Adler Mannheim (23 pts, 40:29) at Kolner Haie (19 pts, 45:45); Liiga KalPa (19 pts, 0 GD) vs Vaasan Sport (19 pts, -16 GD); SHL Frolunda (2nd, +9) vs Rogle (6th, +3) and Malmo (7th, +2) vs Linkoping (14th, -14)."},
+    {"id": "SRC-TEN-01", "sport": "Tennis", "org": "ATP Tour Official Draws (Swiss Indoors Basel & Erste Bank Open Vienna)", "url": "https://www.atptour.com/en/scores/current/basel/328/draws", "used_for": "ATP 500 Basel (Djokovic vs Humbert, Wawrinka vs Lehecka, Hurkacz vs Bergs, Tabilo vs Jodar, Michelsen vs van de Zandschulp) and ATP 500 Vienna (Khachanov vs Alcaraz, Paul vs Rublev, Borges vs Ruud, Norrie vs Cerundolo)."},
+    {"id": "SRC-TEN-02", "sport": "Tennis", "org": "WTA Tennis Official Draws (Toray Pan Pacific Tokyo & Guangzhou Open)", "url": "https://www.wtatennis.com/tournaments/1056/tokyo/2026/draws", "used_for": "WTA 500 Tokyo (Fernandez #23 vs WC Sakatsume #114, Osaka #18 vs Paolini #35) and WTA 250 Guangzhou (Tagger vs Venus Williams, P. Kudermetova vs Tjen, Ruzic vs Liu)."},
+    {"id": "SRC-CRI-01", "sport": "Cricket", "org": "ESPNcricinfo Live Schedule & Series Results (27 Oct 2026)", "url": "https://www.espncricinfo.com/live-cricket-score", "used_for": "Afghanistan vs Zimbabwe 1st T20I Sharjah (14:30 UTC; AFG won ODIs by 158 runs & 7 wkts), WBBL|12 opening fixtures (holder Hobart Hurricanes), NZ Ford Trophy Round 2, SA vs AUS Test."},
+    {"id": "SRC-RUG-01", "sport": "Rugby Union", "org": "United Rugby Championship, LNR Top 14 & Pro D2 Official Tables", "url": "https://www.unitedrugby.com/statistics/standings", "used_for": "URC R4 standings (Glasgow 2nd 18 pts, Stormers 4th 16, Sharks 5th 15, Leinster 6th 13, Connacht 8th 10, Munster 9th 10, Lions 11th 9, Ulster 12th 9), Top 14 (Toulouse 1st 28 pts +78 at Pau 2nd 22 pts), Pro D2 (Oyonnax 1st 34 pts +158, Provence 2nd 34 pts 8-0)."},
+    {"id": "SRC-HB-01", "sport": "Handball", "org": "EHF Champions League Men 2026-27 Official Standings", "url": "https://ehfcl.eurohandball.com/men/2026-27/standings/", "used_for": "EHF CL Round 6 group standings, goal differentials, and official 18:45/20:45 CET throw-off times (Magdeburg 5-0 +36, Barcelona 4-1 +29, Veszprem 4-1 +22, Fuchse Berlin 3-2, Kielce 3-2, Plock 3-2, Partizan 0-1-4 -36)."},
+    {"id": "SRC-VB-01", "sport": "Volleyball", "org": "Lega Pallavolo Serie A1, TVF Efeler Ligi & Tauron Liga Tables", "url": "https://www.legavolleyfemminile.it/classifica/", "used_for": "Serie A1 Women (Conegliano, Vallefoglia, Bergamo, Marignano), Turkish Efeler Ligi (Ziraat Bankasi 3-0 sweep of Fenerbahce, Halkbank 3-1 over Galatasaray, IBB 2-0 vs 14th Istanbul Genclik L5), Tauron Liga (champion Budowlani Lodz 2-0)."},
+    {"id": "SRC-GLF-01", "sport": "Golf", "org": "LPGA Tour, PGA Tour & PGA Tour Champions Official Field Lists", "url": "https://www.pgatour.com/tournaments/2026/vidantaworld-mexico-open/R2026540/field", "used_for": "Mexico Open field (132 players: Wyndham Clark, Max Homa, Ben Griffin, Tom Kim, Harry Hall), LPGA Maybank Championship (78 players at KLGCC; #1 Korda & #2 Thitikul absent; #5 Ruoning Yin, #7 Lottie Woad, #8 Charley Hull, Hye-Jin Choi, Miyu Yamashita), Champions Simmons Bank (54 players; defending champ Steven Alker, Stewart Cink, Ernie Els)."},
+    {"id": "SRC-DRT-01", "sport": "Darts", "org": "PDC Official PC31 Entry List & Werner Rankings Ladder (26 Oct 2026)", "url": "https://www.pdc.tv/news/2026/10/26/2026-players-championship-31-32-player-entries-confirmed", "used_for": "Confirmed PC31 absences of Littler, Humphries, Price, Clayton, Bunting, Cross, Rock, G. Anderson & Ross Smith; confirmed entries of #1 PC seed Wessel Nijman (£150.25k, 6 PC titles), World #3 Gian van Veen (£1.036M), Kevin Doets (#2 PC OoM), Chris Dobey, Michael van Gerwen & Nathan Aspinall; World #1 Luke Littler £3.124M OoM."},
+    {"id": "SRC-F1-01", "sport": "Motor Racing", "org": "Formula 1 / BBC Sport 2026 Drivers' Standings (Post-US GP, 25 Oct 2026)", "url": "https://www.bbc.com/sport/formula1/standings", "used_for": "Official WDC standings with 5 races left entering Mexico City GP (Nov 1): 1. Antonelli 365 (9W), 2. Russell 242 (3W), 3. Hamilton 241 (1W), 4. Verstappen 236 (2W, 5x Mexico winner), 5. Leclerc 233, 6. Norris 211 (2025 Mexico winner)."},
+    {"id": "SRC-GAA-01", "sport": "Gaelic Sports", "org": "Cork GAA, Munster GAA & GAA.ie Official Championship Records", "url": "https://gaacork.ie/2026/10/19/county-final-pairings-confirmed/", "used_for": "Cork SAFC Final Nov 1 (Kanturk vs Eire Og at Pairc Ui Chaoimh), Limerick SFC Final Nov 1 (unbeaten 6-0 Fr. Casey's vs Kildimo-Pallaskenry after extra-time semi-final win over Mungret), 2026 All-Ireland winners Mayo (1-20 to 1-17 vs Kerry) and Limerick (1-29 to 1-18 vs Galway)."},
+    {"id": "SRC-RL-01", "sport": "Rugby League", "org": "NRL.com & SuperLeague.co.uk Official 2026 Results", "url": "https://www.nrl.com/draw/?competition=111&season=2026", "used_for": "2026 State of Origin (NSW 2-1 over QLD, Nathan Cleary Wally Lewis Medal), 2026 NRL (Penrith 42-pt minor premiers; Sydney Roosters 19-18 Grand Final win over Newcastle; Perth Bears 18th club in 2027), 2026 Super League (Wigan League Leaders' Shield; Wakefield Trinity 23-10 Grand Final win over Warrington)."},
+    {"id": "SRC-SNK-01", "sport": "Snooker", "org": "World Snooker Tour (WST.tv) 2026-27 Official Calendar", "url": "https://www.wst.tv/tournaments/", "used_for": "Confirms zero WST ranking matches between Northern Ireland Open final (25 Oct) and International Championship in Nanjing (starts 31 Oct)."},
+    {"id": "SRC-GRY-01", "sport": "Greyhounds", "org": "Greyhound Board of Great Britain (GBGB) Racecard Schedule", "url": "https://www.gbgb.org.uk/", "used_for": "Confirms UK Tuesday fixtures at Romford, Newcastle, Central Park, Sunderland and Oxford while OLBG /Greyhounds/28 published zero racecards at capture."}
+]

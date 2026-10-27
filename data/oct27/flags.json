@@ -1,0 +1,114 @@
+{
+  "generated_at": "2026-10-27T06:30:00Z",
+  "count": 12,
+  "flags": [
+    {
+      "id": "FLG-01",
+      "sport": "Snooker",
+      "severity": "empty-feed",
+      "title": "Zero Snooker events on OLBG (/Snooker/8) \u2014 confirmed WST calendar gap (26\u201330 Oct)",
+      "detail": "OLBG's Snooker hub returns 'No tips found.' Cross-checking WST.tv confirms the Northern Ireland Open ended in Belfast on 25 October and the International Championship in Nanjing does not start until 31 October. Zero fixtures or lines were invented.",
+      "olbg_url": "https://www.olbg.com/betting-tips/Snooker/8",
+      "official_url": "https://www.wst.tv/tournaments/"
+    },
+    {
+      "id": "FLG-02",
+      "sport": "Greyhounds",
+      "severity": "empty-feed",
+      "title": "Zero Greyhound racecards on OLBG (/Greyhounds/28) after Monday cards settled",
+      "detail": "All 8 races in the repo's 26 Oct snapshot (event_ids 690271\u2013690288 at Towcester, Nottingham and Harlow) settled Monday evening and now redirect to an empty All_Events/28 hub ('No tips found.'). Although GBGB lists Tuesday UK meetings at Romford, Newcastle, Central Park, Sunderland and Oxford, OLBG published no runner or trap markets today, so zero races were fabricated.",
+      "olbg_url": "https://www.olbg.com/betting-tips/Greyhounds/28",
+      "official_url": "https://www.gbgb.org.uk/"
+    },
+    {
+      "id": "FLG-03",
+      "sport": "Motor Racing",
+      "severity": "stale-data",
+      "title": "OLBG F1 Championship tipster text cites stale pre-US GP points (off by up to 15 pts)",
+      "detail": "On event_id=912 ('F1 Drivers Championship 2026 Without Kimi Antonelli'), OLBG's featured tip claims 'six races remaining' with Russell on 238, Hamilton 229 and Verstappen 221. Official standings after Sunday's US Grand Prix in Austin (25 Oct) leave FIVE Grands Prix remaining with Russell on 242, Hamilton 241 (1 point back, not 9!), Verstappen 236 and Leclerc 233.",
+      "olbg_url": "https://www.olbg.com/betting-tips/Motor_Racing/All_Motor_Racing/All_Events/Formula_1_Drivers_Championship_2026_Without_Kimi_Antonelli/14?event_id=912",
+      "official_url": "https://www.bbc.com/sport/formula1/standings"
+    },
+    {
+      "id": "FLG-04",
+      "sport": "Darts",
+      "severity": "non-runners",
+      "title": "Nine elite PDC Tour Card Holders absent from Players Championship 31 (Den Bosch)",
+      "detail": "PDC.tv's official 26 October entry confirmation for PC31/32 lists Luke Littler, Luke Humphries, Gerwyn Price, Jonny Clayton, Stephen Bunting, Rob Cross, Josh Rock, Gary Anderson and Ross Smith as ABSENT. Any pricing that assumes a full-strength top-16 floor draw misstates the field; our PC31 probabilities zero out all nine absentees.",
+      "olbg_url": "https://www.olbg.com/betting-tips/Darts/All_Darts/All_Events/Players_Championship_31/15?event_id=32446",
+      "official_url": "https://www.pdc.tv/news/2026/10/26/2026-players-championship-31-32-player-entries-confirmed"
+    },
+    {
+      "id": "FLG-05",
+      "sport": "Golf",
+      "severity": "non-runners",
+      "title": "World #1 Nelly Korda and #2 Jeeno Thitikul absent from LPGA Maybank Championship",
+      "detail": "Cross-checking the official 78-player KLGCC field confirms neither World #1 Nelly Korda nor #2 Jeeno Thitikul is competing in Kuala Lumpur, elevating World #5 Ruoning Yin and #7 Lottie Woad at the top of the field.",
+      "olbg_url": "https://www.olbg.com/betting-tips/Golf/All_Golf/All_Events/Maybank_Championship/5?event_id=101913",
+      "official_url": "https://www.lpga.com/tournaments/maybank-championship/overview"
+    },
+    {
+      "id": "FLG-06",
+      "sport": "Handball",
+      "severity": "defect",
+      "title": "OLBG displays 'Tie' as Most Popular Tip on 13 of 15 Handball matches (43%\u201378% share)",
+      "detail": "Handball draws occur in roughly 8%\u201310% of EHF Champions League matches, yet OLBG's hub surfaces 'Tie' with 9/14 tips on unbeaten Magdeburg vs Kriens-Luzern and 7/9 on PSG vs Aalborg. We discard OLBG's Tie crowd split and originate 3-way 1X2, Handicap and Total lines directly from official EHF group goal differentials.",
+      "olbg_url": "https://www.olbg.com/betting-tips/Handball/20",
+      "official_url": "https://ehfcl.eurohandball.com/men/2026-27/standings/"
+    },
+    {
+      "id": "FLG-07",
+      "sport": "All Sports",
+      "severity": "timezone",
+      "title": "OLBG prints unlabeled UTC-4 (EDT) timestamps across global fixtures",
+      "detail": "OLBG displays EHF Champions League 18:45 CET games as 13:45 (5-hour gap, since CET = UTC+1 and EDT = UTC-4), MLB Game 4 (20:00 EDT) as 'Today 21:00' (1-hour discrepancy), and caused 14 late-night EDT rows in data/events.json to be misdated by 1 UTC day.",
+      "olbg_url": "https://www.olbg.com/betting-tips/Baseball/MLB/MLB/MIL_Brewers_@_TB_Rays/12?event_id=160799",
+      "official_url": "https://www.mlb.com/news/2026-mlb-playoff-and-world-series-schedule"
+    },
+    {
+      "id": "FLG-08",
+      "sport": "Baseball",
+      "severity": "unverified-blank",
+      "title": "Milwaukee Brewers Game 4 starting pitcher unannounced (left blank)",
+      "detail": "MLB.com probable pitchers confirms RHP Griffin Jax (0-1, 6.00 ERA) for Tampa Bay in World Series Game 4, while Milwaukee's starter remains officially listed as TBD. We leave Milwaukee's starter blank rather than speculating.",
+      "olbg_url": "https://www.olbg.com/betting-tips/Baseball/MLB/MLB/MIL_Brewers_@_TB_Rays/12?event_id=160799",
+      "official_url": "https://www.mlb.com/probable-pitchers"
+    },
+    {
+      "id": "FLG-09",
+      "sport": "Cricket",
+      "severity": "in-play-exclusion",
+      "title": "Three morning 27 Oct internationals started at 07:00\u201308:00 UTC and are excluded from pre-match picks",
+      "detail": "NZ vs India 3rd T20I, Namibia vs Ireland 3rd ODI, and Pakistan vs Sri Lanka ODI remained listed on OLBG's hub after play began. Their originated lines are preserved in the full market inventory with an 'in-play / started earlier' flag, while written picks use only upcoming matches.",
+      "olbg_url": "https://www.olbg.com/betting-tips/Cricket/7",
+      "official_url": "https://www.espncricinfo.com/live-cricket-score"
+    },
+    {
+      "id": "FLG-10",
+      "sport": "Basketball, Ice Hockey, Volleyball",
+      "severity": "unverified-blank",
+      "title": "European/domestic league official injury sheets not centrally published \u2014 left blank",
+      "detail": "Unlike the NBA and NHL (where official injury/IR reports are published daily and integrated into every game row), EuroLeague, EuroCup, Pro D2, domestic volleyball and domestic cricket clubs do not publish centralized pre-match injury lists 24\u201372 hours out. Those injury cells are intentionally left blank rather than guessed.",
+      "olbg_url": "https://www.olbg.com/betting-tips/Basketball/4",
+      "official_url": "https://www.basketball-reference.com/international/euroleague/2027.html"
+    },
+    {
+      "id": "FLG-11",
+      "sport": "Baseball",
+      "severity": "thin-slate",
+      "title": "Baseball has only 1 active event worldwide on OLBG (World Series Game 4)",
+      "detail": "On 27 October 2026, MLB World Series Game 4 (MIL @ TB) is the sole baseball fixture on OLBG, offering 3 distinct markets (Money Line, Run Line, Game Totals). All 3 markets are priced and written up; no phantom fixtures were added to pad Baseball to five picks.",
+      "olbg_url": "https://www.olbg.com/betting-tips/Baseball/12",
+      "official_url": "https://www.mlb.com/postseason"
+    },
+    {
+      "id": "FLG-12",
+      "sport": "All Sports",
+      "severity": "bookmaker-odds",
+      "title": "OLBG server HTML omits live bookmaker fractional/decimal odds",
+      "detail": "Unauthenticated OLBG HTML exposes event IDs, market structures, handicap/total lines and win-tip counts, but injects bookmaker prices client-side. Every price on this dashboard is our own originated price.",
+      "olbg_url": "https://www.olbg.com/betting-tips",
+      "official_url": "https://www.olbg.com/betting-tips"
+    }
+  ]
+}

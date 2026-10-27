@@ -1,0 +1,183 @@
+{
+  "audited_at": "2026-10-27T06:25:00Z",
+  "audited_by": "sess-arena-785abd52",
+  "root_26oct_audit": {
+    "dataset": "data/*.json (26 Oct 2026 snapshot)",
+    "events_count": 121,
+    "priced_count": 0,
+    "unpriced_count": 121,
+    "picks_count": 56,
+    "duplicate_event_ids": {
+      "160795": 2
+    },
+    "expired_oct26_events_count": 31,
+    "edt_utc_date_rollover_count": 14,
+    "edt_utc_date_rollover_examples": [
+      {
+        "id": "902176",
+        "sport": "Tennis",
+        "event": "Ann Li vs Ekaterina Alexandrova",
+        "label": "Today 22:00",
+        "recorded_date": "2026-10-26"
+      },
+      {
+        "id": "902305",
+        "sport": "Tennis",
+        "event": "Yulia Putintseva vs Maria Sakkari",
+        "label": "Today 23:00",
+        "recorded_date": "2026-10-26"
+      },
+      {
+        "id": "902180",
+        "sport": "Tennis",
+        "event": "Simona Waltert vs Jil Teichmann",
+        "label": "Today 23:00",
+        "recorded_date": "2026-10-26"
+      },
+      {
+        "id": "902179",
+        "sport": "Tennis",
+        "event": "Kaitlin Quevedo vs Sofia Kenin",
+        "label": "Today 23:00",
+        "recorded_date": "2026-10-26"
+      },
+      {
+        "id": "902301",
+        "sport": "Tennis",
+        "event": "Anastasia Zakharova vs Magda Linette",
+        "label": "Today 23:00",
+        "recorded_date": "2026-10-26"
+      },
+      {
+        "id": "536204",
+        "sport": "Basketball",
+        "event": "IND Pacers @ MIL Bucks",
+        "label": "Today 20:00",
+        "recorded_date": "2026-10-26"
+      },
+      {
+        "id": "536206",
+        "sport": "Basketball",
+        "event": "MEM Grizzlies @ UTA Jazz",
+        "label": "Today 21:00",
+        "recorded_date": "2026-10-26"
+      },
+      {
+        "id": "536201",
+        "sport": "Basketball",
+        "event": "ATL Hawks @ HOU Rockets",
+        "label": "Today 20:30",
+        "recorded_date": "2026-10-26"
+      }
+    ],
+    "structural_defects": [
+      {
+        "code": "AUD-26-01",
+        "file": "data/events.json + tools/build_picks.py",
+        "issue": "Duplicate event_id 160795 (MIL Brewers @ TB Rays Game 3 Money Line vs Game Totals) caused dict-key overwrite in build_picks.py, mislabelling the Money Line pick event title as '(Game Totals)'. Game 3 also settled 10-1 to Milwaukee on 26 Oct.",
+        "official_source": "https://www.mlb.com/news/2026-mlb-playoff-and-world-series-schedule"
+      },
+      {
+        "code": "AUD-26-02",
+        "file": "data/events.json",
+        "issue": "54 events dated 2026-10-26 (including 8 UK Greyhound races 690271-690288 at Towcester, Nottingham and Harlow, Monday NBA/NHL games, and Monday ATP/WTA matches) have already completed.",
+        "official_source": "https://www.gbgb.org.uk/"
+      },
+      {
+        "code": "AUD-26-03",
+        "file": "tools/pricing.py",
+        "issue": "CAL-1 hardcoded a uniform 1/8 (12.5%) prior for every 'Win Tournament' market regardless of true runner count (pricing 2-team State of Origin 2027 as 8 teams and 128-player Players Championship 31 as 8 players).",
+        "official_source": "https://www.pdc.tv/news/2026/10/26/2026-players-championship-31-32-player-entries-confirmed"
+      },
+      {
+        "code": "AUD-26-04",
+        "file": "tools/build_site.py",
+        "issue": "PR #16 raised high-confidence threshold to p_fair > 0.70 while retaining card_decimal = 1/(p_fair * 1.05) >= 1.40; since 1/(0.701*1.05) = 1.36 < 1.40, the two conditions are mathematically mutually exclusive on CAL-1 lines.",
+        "official_source": "https://github.com/karagemop466-tech/Olbg7/pull/16"
+      }
+    ]
+  },
+  "today_early_hub_audit": {
+    "dataset": "data/today/*.json + board/* (early 27 Oct hub-only capture)",
+    "captured_rows": 126,
+    "lines_count": 159,
+    "lines_with_official_form": 49,
+    "lines_from_tips_only": 97,
+    "Basketball_competitions_captured": {
+      "Euroleague": 13,
+      "Korea KBL": 1,
+      "Euro Cup": 3,
+      "Basketball Champions League": 1
+    },
+    "cutoff_null_rows": [
+      {
+        "sport": "Volleyball",
+        "event": "Sultanbeyli Bld vs Gebze Genclik",
+        "link": "https://www.olbg.com/betting-tips/Volleyball/All_Volleyball/All_Events/Sultanbeyli_Bld_vs_Gebze_Genclik/21?event_id=37123"
+      },
+      {
+        "sport": "Cricket",
+        "event": "World Cup 2027",
+        "link": "https://www.olbg.com/betting-tips/Cricket/All_Cricket/All_Events/World_Cup_2027/7?event_id=182606"
+      },
+      {
+        "sport": "Basketball",
+        "event": "Virtus Bologna vs Zalgiris",
+        "link": "https://www.olbg.com/betting-tips/Basketball/European/Euroleague/Virtus_Bologna_vs_Zalgiris/4?event_id=536183"
+      }
+    ],
+    "zero_tip_50_50_placeholders": 4,
+    "out_of_band_high_confidence_lines": [],
+    "gaps_resolved_in_oct27": [
+      {
+        "code": "AUD-27-01",
+        "issue": "Missed all 5 NBA games on OLBG (/betting-tips/Basketball/NBA/4: Nets@Celtics 536253, Pistons@Knicks 536251, Kings@Spurs 536252, Blazers@Lakers 536255, 76ers@Pacers 536254) and 7 EuroCup/BCL fixtures.",
+        "resolution": "Captured all 5 NBA games across Money Line, Pointspread and Game Totals plus EuroCup/BCL fixtures; cross-checked official NBA records and injury reports.",
+        "official_source": "https://www.nba.com/games?date=2026-10-27"
+      },
+      {
+        "code": "AUD-27-02",
+        "issue": "Missed All Ireland Hurling Championship 2027 (event_id=675 on /betting-tips/Hurling/26) and FT Result markets on Kanturk v Eire Og (3531) and Fr Caseys v Kildimo-Pallaskenry (3537).",
+        "resolution": "Captured Hurling 2027 outright plus both FT Result and Handicap markets on 3531 and 3537; cross-checked against Cork GAA and Munster GAA county final records.",
+        "official_source": "https://gaacork.ie/2026/10/19/county-final-pairings-confirmed/"
+      },
+      {
+        "code": "AUD-27-03",
+        "issue": "Left 7 sports (Volleyball, Rugby Union, Golf, Darts, Motor Racing, Rugby League, domestic Cricket) with zero official tables, team news or injury data.",
+        "resolution": "Retrieved official league tables, world rankings, entry lists and injury/absence reports across all active sports (URC/Top 14/Pro D2, Serie A1/Efeler Ligi/Tauron Liga, F1 post-US GP standings, PDC PC31 official absences, LPGA/PGA/Champions Tour fields, NRL/Super League/Origin results, WBBL|12 & Ford Trophy).",
+        "official_source": "https://www.pdc.tv/news/2026/10/26/2026-players-championship-31-32-player-entries-confirmed"
+      },
+      {
+        "code": "AUD-27-04",
+        "issue": "Cut off Sultanbeyli Bld vs Gebze Genclik (37123) and World Cup 2027 (182606) with null tip splits, and priced 0/0 totals at uninformative 50/50 (-104).",
+        "resolution": "Fetched individual event pages for 37123 (1/2 Gebze, 1/2 Sultanbeyli) and 182606 (India 6/12, England 4/12, Australia 1/12, Ireland 1/12), and originated totals from team scoring distributions rather than 50/50 placeholders.",
+        "official_source": "https://www.olbg.com/betting-tips/Volleyball/All_Volleyball/All_Events/Sultanbeyli_Bld_vs_Gebze_Genclik/21?event_id=37123"
+      },
+      {
+        "code": "AUD-27-05",
+        "issue": "Listed Afghanistan (-504) and BOS Bruins +1.50 (-252) as High Confidence despite sitting shorter than the -250 odds floor.",
+        "resolution": "Enforced strict [-250, +10000] (1.40 to 101.00 decimal) bounds on all High-Confidence selections and published run-line/handicap/total or tournament alternatives when a raw money line sits shorter than -250.",
+        "official_source": "https://www.olbg.com/betting-tips/Cricket/All_Cricket/All_Events/Afghanistan_vs_Zimbabwe_1st_T20_Match/7?event_id=188872"
+      },
+      {
+        "code": "AUD-27-06",
+        "issue": "Marked MLB World Series Game 4 probable starters as completely unannounced.",
+        "resolution": "Retrieved official MLB Game 4 probable pitcher listing confirming RHP Griffin Jax (0-1, 6.00 ERA) for Tampa Bay while keeping Milwaukee's unannounced starter explicitly blank and flagged.",
+        "official_source": "https://www.mlb.com/probable-pitchers"
+      }
+    ]
+  },
+  "preserved_subboards": [
+    {
+      "board": "docs/board-review/ (data/board-review/*.json)",
+      "snapshot_date": "2026-10-26",
+      "status": "Preserved historical snapshot; contains 26 Oct fixtures that have now settled and internal schema fields using restricted words."
+    },
+    {
+      "board": "olbg-tips/ (data/consensus/*.json)",
+      "snapshot_date": "2026-10-26",
+      "events_count": 118,
+      "status": "Preserved untouched per CI workflow (.github/workflows/pages.yml enforces git diff --exit-code -- olbg-tips data/consensus)."
+    }
+  ]
+}

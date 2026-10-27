@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Line-by-Line Repo Audit — OLBG 15-Sport Origination Desk (27 Oct 2026)</title>
+  <link rel="stylesheet" href="../assets/oct27.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../index.html">
+        OLBG 15-Sport Origination Desk
+        <span class="brand-badge">27 Oct 2026 · UTC</span>
+      </a>
+      <nav class="primary-nav"><a href="../index.html" class="">Executive Summary</a><a href="../oct27/all-markets.html" class="">All 180 Markets</a><a href="../oct27/flagged.html" class="">Flagged for Review (12)</a><a href="../oct27/repo-audit.html" class="active">Repo Audit</a><a href="../oct27/methodology.html" class="">How We Price</a><a href="../oct27/sources.html" class="">Official Sources</a></nav>
+    </div>
+  </header>
+  <div class="sportbar">
+    <div class="sportbar-inner"><a href="../oct27/sports/golf.html" class="sport-pill ">Golf <span class="cnt">(5)</span></a><a href="../oct27/sports/volleyball.html" class="sport-pill ">Volleyball <span class="cnt">(6)</span></a><a href="../oct27/sports/rugby-union.html" class="sport-pill ">Rugby Union <span class="cnt">(6)</span></a><a href="../oct27/sports/cricket.html" class="sport-pill ">Cricket <span class="cnt">(6)</span></a><a href="../oct27/sports/snooker.html" class="sport-pill ">Snooker <span class="cnt">(0)</span></a><a href="../oct27/sports/darts.html" class="sport-pill ">Darts <span class="cnt">(5)</span></a><a href="../oct27/sports/baseball.html" class="sport-pill ">Baseball <span class="cnt">(3)</span></a><a href="../oct27/sports/gaelic-sports.html" class="sport-pill ">Gaelic Sports <span class="cnt">(5)</span></a><a href="../oct27/sports/greyhounds.html" class="sport-pill ">Greyhounds <span class="cnt">(0)</span></a><a href="../oct27/sports/tennis.html" class="sport-pill ">Tennis <span class="cnt">(7)</span></a><a href="../oct27/sports/motor-racing.html" class="sport-pill ">Motor Racing <span class="cnt">(5)</span></a><a href="../oct27/sports/handball.html" class="sport-pill ">Handball <span class="cnt">(6)</span></a><a href="../oct27/sports/ice-hockey.html" class="sport-pill ">Ice Hockey <span class="cnt">(7)</span></a><a href="../oct27/sports/basketball.html" class="sport-pill ">Basketball <span class="cnt">(8)</span></a><a href="../oct27/sports/rugby-league.html" class="sport-pill ">Rugby League <span class="cnt">(5)</span></a></div>
+  </div>
+  <main>
+
+<section class="hero">
+  <h1>Line-by-Line Audit of Prior Repository Snapshots</h1>
+  <p>Before originating our 27 October 2026 multi-market board, we audited every dataset and pricing script already
+  in <code>karagemop466-tech/Olbg7</code> without overwriting or deleting any prior session&rsquo;s files.</p>
+</section>
+
+<section class="panel">
+  <h2>1. Audit of 26 October Dataset (<code>data/*.json</code> &amp; <code>tools/pricing.py</code>)</h2>
+  <p class="sub">Checked 121 events, 0 priced rows and 56 picks: found 31 settled 26 Oct fixtures and 14 EDT-to-UTC date rollover errors.</p>
+  <div class="table-wrap">
+    <table class="data">
+      <thead><tr><th>Audit ID</th><th>Files</th><th>Finding</th><th>Reference</th></tr></thead>
+      <tbody><tr><td><strong>AUD-26-01</strong></td><td><code>data/events.json + tools/build_picks.py</code></td><td>Duplicate event_id 160795 (MIL Brewers @ TB Rays Game 3 Money Line vs Game Totals) caused dict-key overwrite in build_picks.py, mislabelling the Money Line pick event title as &#x27;(Game Totals)&#x27;. Game 3 also settled 10-1 to Milwaukee on 26 Oct.</td><td><a class="src-chip" href="https://www.mlb.com/news/2026-mlb-playoff-and-world-series-schedule" target="_blank" rel="noopener">Official Source ↗</a></td></tr><tr><td><strong>AUD-26-02</strong></td><td><code>data/events.json</code></td><td>54 events dated 2026-10-26 (including 8 UK Greyhound races 690271-690288 at Towcester, Nottingham and Harlow, Monday NBA/NHL games, and Monday ATP/WTA matches) have already completed.</td><td><a class="src-chip" href="https://www.gbgb.org.uk/" target="_blank" rel="noopener">Official Source ↗</a></td></tr><tr><td><strong>AUD-26-03</strong></td><td><code>tools/pricing.py</code></td><td>CAL-1 hardcoded a uniform 1/8 (12.5%) prior for every &#x27;Win Tournament&#x27; market regardless of true runner count (pricing 2-team State of Origin 2027 as 8 teams and 128-player Players Championship 31 as 8 players).</td><td><a class="src-chip" href="https://www.pdc.tv/news/2026/10/26/2026-players-championship-31-32-player-entries-confirmed" target="_blank" rel="noopener">Official Source ↗</a></td></tr><tr><td><strong>AUD-26-04</strong></td><td><code>tools/build_site.py</code></td><td>PR #16 raised high-confidence threshold to p_fair &gt; 0.70 while retaining card_decimal = 1/(p_fair * 1.05) &gt;= 1.40; since 1/(0.701*1.05) = 1.36 &lt; 1.40, the two conditions are mathematically mutually exclusive on CAL-1 lines.</td><td><a class="src-chip" href="https://github.com/karagemop466-tech/Olbg7/pull/16" target="_blank" rel="noopener">Official Source ↗</a></td></tr></tbody>
+    </table>
+  </div>
+  <h3 style="margin-top:18px;font-size:15px">Sample Unlabeled UTC&minus;4 (EDT) Rollover Rows in <code>data/events.json</code></h3>
+  <div class="table-wrap">
+    <table class="data">
+      <thead><tr><th>Event ID</th><th>Sport</th><th>Event</th><th>OLBG Clock (EDT)</th><th>Recorded vs True UTC Date</th></tr></thead>
+      <tbody><tr><td><code>902176</code></td><td>Tennis</td><td>Ann Li vs Ekaterina Alexandrova</td><td>Today 22:00</td><td><code>2026-10-26</code> (actually 2026-10-27 UTC)</td></tr><tr><td><code>902305</code></td><td>Tennis</td><td>Yulia Putintseva vs Maria Sakkari</td><td>Today 23:00</td><td><code>2026-10-26</code> (actually 2026-10-27 UTC)</td></tr><tr><td><code>902180</code></td><td>Tennis</td><td>Simona Waltert vs Jil Teichmann</td><td>Today 23:00</td><td><code>2026-10-26</code> (actually 2026-10-27 UTC)</td></tr><tr><td><code>902179</code></td><td>Tennis</td><td>Kaitlin Quevedo vs Sofia Kenin</td><td>Today 23:00</td><td><code>2026-10-26</code> (actually 2026-10-27 UTC)</td></tr><tr><td><code>902301</code></td><td>Tennis</td><td>Anastasia Zakharova vs Magda Linette</td><td>Today 23:00</td><td><code>2026-10-26</code> (actually 2026-10-27 UTC)</td></tr><tr><td><code>536204</code></td><td>Basketball</td><td>IND Pacers @ MIL Bucks</td><td>Today 20:00</td><td><code>2026-10-26</code> (actually 2026-10-27 UTC)</td></tr><tr><td><code>536206</code></td><td>Basketball</td><td>MEM Grizzlies @ UTA Jazz</td><td>Today 21:00</td><td><code>2026-10-26</code> (actually 2026-10-27 UTC)</td></tr><tr><td><code>536201</code></td><td>Basketball</td><td>ATL Hawks @ HOU Rockets</td><td>Today 20:30</td><td><code>2026-10-26</code> (actually 2026-10-27 UTC)</td></tr></tbody>
+    </table>
+  </div>
+</section>
+
+<section class="panel">
+  <h2>2. Audit of Early 27 October Hub Capture (<code>data/today/*.json</code>) &amp; What We Upgraded</h2>
+  <p class="sub">Checked 126 hub rows and 159 lines (97 priced from OLBG tip splits alone with no official table or injury feed).</p>
+  <div class="table-wrap">
+    <table class="data">
+      <thead><tr><th>Audit ID</th><th>Gap in Earlier Capture</th><th>How Our 27 Oct Multi-Market Build Resolves It</th><th>Official Source</th></tr></thead>
+      <tbody><tr><td><strong>AUD-27-01</strong></td><td>Missed all 5 NBA games on OLBG (/betting-tips/Basketball/NBA/4: Nets@Celtics 536253, Pistons@Knicks 536251, Kings@Spurs 536252, Blazers@Lakers 536255, 76ers@Pacers 536254) and 7 EuroCup/BCL fixtures.</td><td>Captured all 5 NBA games across Money Line, Pointspread and Game Totals plus EuroCup/BCL fixtures; cross-checked official NBA records and injury reports.</td><td><a class="src-chip" href="https://www.nba.com/games?date=2026-10-27" target="_blank" rel="noopener">Official Source ↗</a></td></tr><tr><td><strong>AUD-27-02</strong></td><td>Missed All Ireland Hurling Championship 2027 (event_id=675 on /betting-tips/Hurling/26) and FT Result markets on Kanturk v Eire Og (3531) and Fr Caseys v Kildimo-Pallaskenry (3537).</td><td>Captured Hurling 2027 outright plus both FT Result and Handicap markets on 3531 and 3537; cross-checked against Cork GAA and Munster GAA county final records.</td><td><a class="src-chip" href="https://gaacork.ie/2026/10/19/county-final-pairings-confirmed/" target="_blank" rel="noopener">Official Source ↗</a></td></tr><tr><td><strong>AUD-27-03</strong></td><td>Left 7 sports (Volleyball, Rugby Union, Golf, Darts, Motor Racing, Rugby League, domestic Cricket) with zero official tables, team news or injury data.</td><td>Retrieved official league tables, world rankings, entry lists and injury/absence reports across all active sports (URC/Top 14/Pro D2, Serie A1/Efeler Ligi/Tauron Liga, F1 post-US GP standings, PDC PC31 official absences, LPGA/PGA/Champions Tour fields, NRL/Super League/Origin results, WBBL|12 &amp; Ford Trophy).</td><td><a class="src-chip" href="https://www.pdc.tv/news/2026/10/26/2026-players-championship-31-32-player-entries-confirmed" target="_blank" rel="noopener">Official Source ↗</a></td></tr><tr><td><strong>AUD-27-04</strong></td><td>Cut off Sultanbeyli Bld vs Gebze Genclik (37123) and World Cup 2027 (182606) with null tip splits, and priced 0/0 totals at uninformative 50/50 (-104).</td><td>Fetched individual event pages for 37123 (1/2 Gebze, 1/2 Sultanbeyli) and 182606 (India 6/12, England 4/12, Australia 1/12, Ireland 1/12), and originated totals from team scoring distributions rather than 50/50 placeholders.</td><td><a class="src-chip" href="https://www.olbg.com/betting-tips/Volleyball/All_Volleyball/All_Events/Sultanbeyli_Bld_vs_Gebze_Genclik/21?event_id=37123" target="_blank" rel="noopener">Official Source ↗</a></td></tr><tr><td><strong>AUD-27-05</strong></td><td>Listed Afghanistan (-504) and BOS Bruins +1.50 (-252) as High Confidence despite sitting shorter than the -250 odds floor.</td><td>Enforced strict [-250, +10000] (1.40 to 101.00 decimal) bounds on all High-Confidence selections and published run-line/handicap/total or tournament alternatives when a raw money line sits shorter than -250.</td><td><a class="src-chip" href="https://www.olbg.com/betting-tips/Cricket/All_Cricket/All_Events/Afghanistan_vs_Zimbabwe_1st_T20_Match/7?event_id=188872" target="_blank" rel="noopener">Official Source ↗</a></td></tr><tr><td><strong>AUD-27-06</strong></td><td>Marked MLB World Series Game 4 probable starters as completely unannounced.</td><td>Retrieved official MLB Game 4 probable pitcher listing confirming RHP Griffin Jax (0-1, 6.00 ERA) for Tampa Bay while keeping Milwaukee&#x27;s unannounced starter explicitly blank and flagged.</td><td><a class="src-chip" href="https://www.mlb.com/probable-pitchers" target="_blank" rel="noopener">Official Source ↗</a></td></tr></tbody>
+    </table>
+  </div>
+</section>
+
+  </main>
+  <footer>
+    <strong>OLBG 15-Sport Origination Desk (27 October 2026 UTC)</strong> · Every betting price on this site is originated in-house and every table row links to both its OLBG market page and an official governing-body or primary statistical source. Unconfirmed fields remain blank and appear on <a href="../oct27/flagged.html">Flagged for Review</a>.<br>
+    Preserved repository snapshots:
+    <a href="../board/all-markets.html">Early 27 Oct Hub Board</a> ·
+    <a href="../sports/basketball.html">26 Oct Coverage Desk</a> ·
+    <a href="../olbg-tips/index.html">Tip-Consensus Board</a> ·
+    <a href="../docs/index.html">26 Oct Docs Snapshot</a> ·
+    <a href="../docs/board-review/index.html">26 Oct Board Review</a>
+  </footer>
+</body>
+</html>
