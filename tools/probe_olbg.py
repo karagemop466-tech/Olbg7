@@ -53,6 +53,7 @@ def main():
         report.append({'url': ROOT + '/robots.txt', 'error': str(exc)})
     (output / 'report.json').write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8')
     print(json.dumps(report, indent=2))
+    print("::notice title=OLBG access probe::" + json.dumps(report, separators=(",", ":")))
 
 
 if __name__ == '__main__':
