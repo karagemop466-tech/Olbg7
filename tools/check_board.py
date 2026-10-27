@@ -7,6 +7,10 @@ import re
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+LINES_BY_ID = {}
+for _r in json.load(open(os.path.join(ROOT, "data/board/lines.json")))["lines"]:
+    LINES_BY_ID[str(_r["id"])] = {(m["market"], m["selection"]): m["price"] for m in _r["markets"]}
+
 ROOT_PAGES = [p for p in sorted(os.listdir(ROOT)) if p.endswith(".html") and p != "all-events.html"]
 PAGES = ROOT_PAGES + ["sports/" + p for p in sorted(os.listdir(os.path.join(ROOT, "sports")))
                       if p.endswith(".html")]
@@ -64,6 +68,12 @@ for p in picks:
     tokens = [t.lower() for t in re.findall(r"[A-Za-z]{4,}", p["sel"])]
     if p["sel"].lower() not in p["pred"].lower() and not any(t in first_sentence for t in tokens):
         fails.append(f"{p['id']}: selection '{p['sel']}' not named in the opening sentence")
+    # any price quoted in the prose must be the price the engine actually produced
+    line = LINES_BY_ID.get(str(p["ev"]), {}).get((p["market"], p["sel"]))
+    if line:
+        for quoted in re.findall(r"\bat (\d+\.\d{2})\b", p["pred"]):
+            if abs(float(quoted) - line) > 0.005:
+                fails.append(f"{p['id']}: prose quotes {quoted}, engine price is {line:.2f}")
 
 for r in lines:
     for m in r["markets"]:
