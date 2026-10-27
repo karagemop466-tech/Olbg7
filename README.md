@@ -12,7 +12,7 @@ No current bookmaker quote, calibrated independent numeric price, or priced high
 - The display is intentionally fail-closed: the browser hides scheduled rows and research notes at the earlier of the event's start/conservative cutoff and **28 October 2026 at 05:23 UTC**. It uses the visitor's device clock; if JavaScript is disabled or the clock predates the snapshot, those items remain hidden. Source links and the review register remain available.
 - Exact start times come from official sources where established. Unknown sequential tennis or tournament times are blank, with an earlier safety cutoff that is not presented as an event time. OLBG's ambiguous displayed timezone was not inferred.
 - Team news, prices, settlement rules, event availability and complete market coverage need further checking. [Flagged for review](flagged.html) records the gaps; a flag is not proof a fixture is false.
-- Older boards are preserved under `legacy-cal4/`, `board/`, `docs/` and `olbg-tips/` with prominent warnings. Their dated fixtures, tip-share-derived prices and confidence labels have not been rechecked and should not be used as current picks. The concurrent 26 October freshness disclosure from PR #14 remains preserved in the coordination history.
+- Older boards are preserved under `legacy-cal4/`, `board/`, `docs/` and `olbg-tips/` with prominent warnings. Their dated fixtures, tip-share-derived prices and confidence labels have not been rechecked and should not be used as current picks. See the [26 October legacy snapshot audit](freshness.html) for the archived data inventory and recorded OLBG hub links; those links are historical pointers, not evidence of a live check.
 
 ## Layout
 
@@ -25,6 +25,7 @@ No current bookmaker quote, calibrated independent numeric price, or priced high
 | `tests/freshness.test.js` | Boundary and clock-error tests for freshness behavior |
 | `tools/probe_olbg.py` | Identified, robots-aware access probe only |
 | `index.html`, `sports/*.html`, `all-events.html`, `flagged.html`, `methodology.html`, `sources.html` | Published Pages site |
+| `freshness.html` | Historical audit of the 26 October legacy inventory and its recorded source links |
 | `legacy-cal4/`, `board/`, `docs/`, `olbg-tips/`, older `data/` and generators | Preserved historical work, not the current dashboard |
 | `COORDINATION.md` | Session claims, integration, evidence and deployment log |
 
