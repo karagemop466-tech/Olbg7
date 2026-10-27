@@ -410,8 +410,8 @@ def main():
         },
         "flags": FLAGS,
     }
-    dest = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
-                        "data", "v3", "flags.json")
+    root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    dest = os.path.join(root, "data", "v3", "flags.json")
     os.makedirs(os.path.dirname(dest), exist_ok=True)
     with open(dest, "w", encoding="utf-8") as fh:
         json.dump(out, fh, indent=1, ensure_ascii=False)
@@ -432,7 +432,7 @@ def main():
         for e in errs:
             print("  x " + e)
         return 1
-    print("all flags carry sources -> " + os.path.relpath(dest, os.path.dirname(os.path.dirname(dest))))
+    print("all flags carry sources -> " + os.path.relpath(dest, root))
     return 0
 
 
