@@ -10,6 +10,7 @@ Outputs  index.html, picks.html, lines.html, method.html, sources.html, flagged.
 Every price on the site comes from data/board/lines.json. Nothing numeric is typed into the HTML.
 """
 import json
+import re
 import os
 import html
 import collections
@@ -57,6 +58,12 @@ def conf_for(p, sample, nfacts, method):
 MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
 
 
+def clock(start):
+    """OLBG prefixes 'Today'/'Tomorrow', otherwise it repeats the date in front of the time."""
+    m = re.search(r"(\d{1,2}:\d{2})", start)
+    return m.group(1) if m else start
+
+
 def shortdate(d):
     y, m, dd = d.split("-")
     return f"{int(dd)} {MONTHS[int(m)-1]}" + ("" if y == "2026" else f" {y}")
@@ -80,7 +87,7 @@ def build_index(lines, picks, flags, summary):
     for p in ranked[:12]:
         rows.append(f"""<tr>
 <td><a href="sports/{SLUG[p['sport']]}.html">{esc(p['sport'])}</a></td>
-<td class="nowrap">{esc(shortdate(p['event_date']))}<div class="small muted">{esc(p['start'])}</div></td>
+<td class="nowrap">{esc(shortdate(p['event_date']))}<div class="small muted">{esc(clock(p['start']))}</div></td>
 <td><strong>{esc(p['sel'])}</strong><div class="small muted">{esc(p['event'])}</div></td>
 <td>{esc(MARKET_LABEL.get(p['market'], p['market']))}</td>
 <td class="num">{p['line']['price']:.2f} <span class="muted">({esc(p['line']['american'])})</span></td>
