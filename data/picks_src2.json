@@ -1,65 +1,82 @@
 [
-{"s":"Baseball","ev":160795,"market":"Money Line","sel":"TB Rays",
- "pred":"Tampa Bay Rays to win Game 3 of the World Series at Tropicana Field. Milwaukee lead 2-0 but both games were decided by a single run, 3-2 and 5-4, and the Rays scored four in the first inning of Game 2 before the bullpen gave it back. Freddy Peralta, traded away by Milwaukee at the deadline, starts against his former club with a 4.42 ERA and a point to prove; 21 of 27 tips are on the home side.",
- "facts":[["Game 3: Brewers at Rays, Tropicana Field, 26 October, 8 p.m. ET; Milwaukee lead 2-0 after 3-2 and 5-4","https://www.mlb.com/news/2026-world-series-game-3-storylines-brewers-vs-rays"],["Robert Gasser (5-5, 3.87 ERA) for Milwaukee against Freddy Peralta (10-11, 4.42 ERA, 156 strikeouts) for Tampa Bay; Peralta was acquired by the Rays at the deadline","https://www.usatoday.com/story/sports/mlb/2026/10/26/brewers-rays-world-series-watch-live-score-highlights-game-3--live/92444297007/"],["Rays scored all four of their Game 2 runs in the first inning and lost 5-4","https://www.tampabay28.com/sports/rays-vs-brewers-world-series-game-3-preview-start-time-pitching-matchup-and-keys-to-win"],["OLBG: TB Rays most-tipped, 21 of 27 tips, 78%","https://www.olbg.com/betting-tips/Baseball/12"]]},
-
-{"s":"Baseball","ev":160795,"market":"Game Totals","sel":"Over 7.50",
- "pred":"Over seven and a half runs in Game 3. The total is set at 7.5 with ten of eighteen tips on the over, and the pitching matchup argues the same way: Gasser has a 3.87 ERA but has not gone deep into games, and Peralta's 1.33 WHIP means traffic on the bases. Both bullpens have already been used heavily in two one-run games.",
- "facts":[["Peralta 1.33 WHIP, 169 innings, 156 strikeouts in 2026","https://www.usatoday.com/story/sports/mlb/2026/10/26/brewers-rays-world-series-watch-live-score-highlights-game-3--live/92444297007/"],["OLBG game totals market: Over 7.50 with 10 of 18 tips, 56%","https://www.olbg.com/betting-tips/Baseball/MLB/12"]]},
-
-{"s":"Golf","ev":101913,"market":"Win Tournament","sel":"Lottie Woad","p_override":0.035,"method":"CAL-3 (outright, two-tip market)",
- "pred":"Lottie Woad to win the Maybank Championship. This is a deliberately small-stakes outright: the market carries two tips, one for and one against, which is not a sample that can support a strong view. Woad's price here is the longest of our three golf selections because a winner market with this little liquidity should be treated as a lottery ticket rather than a position.",
- "facts":[["OLBG lists the Maybank Championship outright with Lottie Woad most-tipped, 1 of 2 tips","https://www.olbg.com/betting-tips/Golf/5"],["Only three golf tournaments carried any tips at retrieval - recorded as flag F-009","https://www.olbg.com/betting-tips/Golf/All_Golf/All_Events/Maybank_Championship/5?event_id=101913"]]},
-
-{"s":"Golf","ev":101915,"market":"Win Tournament","sel":"Wyndham Clark","p_override":0.05,"method":"CAL-3 (outright, two-tip market)",
- "pred":"Wyndham Clark to win the Mexico Open. A single tip in a two-tip market is the entire case, so the stake should be nominal and the price long. What makes it worth publishing at all is that Clark is a proven tour winner teeing it up in a limited-field event, which is the profile that produces the odd double-figure winner.",
- "facts":[["OLBG lists the Mexico Open outright with Wyndham Clark most-tipped, 1 of 2 tips","https://www.olbg.com/betting-tips/Golf/5"]]},
-
-{"s":"Golf","ev":101914,"market":"Win Tournament","sel":"Stewart Cink","p_override":0.05,"method":"CAL-3 (outright, two-tip market)",
- "pred":"Stewart Cink to win the Simmons Bank Championship. Same shape as the other two golf selections: one tip, one counter-tip, a long price and no independent form source retrieved. Cink is in the field and the market has him as the pick; we publish it for completeness at a price that reflects how little the split can tell us.",
- "facts":[["OLBG lists the Simmons Bank Championship outright with Stewart Cink most-tipped, 1 of 2 tips","https://www.olbg.com/betting-tips/Golf/5"]]},
-
-{"s":"Darts","ev":26023,"market":"Win Tournament","sel":"Luke Littler","p_override":0.20,"method":"CAL-3 (outright, 36-tip market)",
- "pred":"Luke Littler to win the PDC World Championship in January. Twenty-two of thirty-six tips is the strongest outright consensus anywhere on the board, and at Alexandra Palace a 61% share of opinion behind one player is unusual even for a defending champion. The price is still a double-figure-free 5.00 because a 128-player knockout can end anyone's week in a single set.",
- "facts":[["OLBG: PDC World Championship 2027, Luke Littler most-tipped, 22 of 36 tips, 61%","https://www.olbg.com/betting-tips/Darts/15"],["Tournament starts 3 January 2027","https://www.olbg.com/betting-tips/Darts/All_Darts/All_Events/PDC_World_Championship_2027/15?event_id=26023"]]},
-
-{"s":"Darts","ev":32446,"market":"Win Tournament","sel":"Nathan Aspinall","p_override":0.06,"method":"CAL-3 (single-day event, four-tip market)",
- "pred":"Nathan Aspinall to win Players Championship 31. The market carries four tips split across four names, one of them Other, so there is no consensus to follow and this is a price estimate rather than a read on the field. Aspinall is the highest-profile name in the four and the price reflects how little the split supports him.",
- "facts":[["OLBG event page: Players Championship 31, 28 October, four tips split across van Veen, Aspinall, Doets and Other","https://www.olbg.com/betting-tips/Darts/All_Darts/All_Events/Players_Championship_31/15?event_id=32446"],["The sport listing shows Aspinall at 1 of 3 tips while the event page shows 1 of 4 - recorded as flag F-003","https://www.olbg.com/betting-tips/Darts/15"]]},
-
+{"s":"Handball","ev":12197,"market":"Money Line","sel":"VasterasIrsta HF (W)",
+ "pred":"VasterasIrsta to beat Skuru IK in the Swedish women's meeting that starts at 14:00. The market is evenly split, with two of the four OLBG win tips on the home side at 50%, and one comment attached. With no dominant consensus either way, this is a low-stakes home selection: VasterasIrsta get the nod at a fair 2.50 price rather than any strong conviction call.",
+ "facts":[
+  ["OLBG lists the 14:00 women's match with 2/4 win tips (50%) for VasterasIrsta HF and 1 comment","https://www.olbg.com/betting-tips/Handball/All_Handball/All_Events/VasterasIrsta_HF_W_vs_Skuru_IK_W/20?event_id=12197"]]},
+{"s":"Handball","ev":12196,"market":"Money Line","sel":"Skovde HF (W)",
+ "pred":"Skovde HF to win away at OV Helsingborg in the second Swedish women's game starting at 14:00. Two of the four OLBG win tips favour Skovde at 50%, mirroring the split market in the other Swedish fixture, with a comment attached. The slight edge in tipster support makes the travelling Skovde side the money-line pick in an undecided-looking market.",
+ "facts":[
+  ["OLBG lists the 14:00 women's match with 2/4 win tips (50%) for Skovde HF and 1 comment","https://www.olbg.com/betting-tips/Handball/All_Handball/All_Events/OV_Helsingborg_HK_W_vs_Skovde_HF_W/20?event_id=12196"]]},
+{"s":"Handball","ev":12180,"market":"Money Line","sel":"HBW Balingen-Weilstetten",
+ "pred":"HBW Balingen-Weilstetten to cause a shock at SG Flensburg-Handewitt when the Bundesliga pair meet on 29 October. The single OLBG win tip lodged backs the underdogs, and while a one-tip sample is thin, no support appears for the home side. Balingen are a speculative money-line selection at 2.22, a low-confidence call flagged for review.",
+ "facts":[
+  ["OLBG lists the 29 October Bundesliga match with 1/1 win tip (100%) for HBW Balingen-Weilstetten","https://www.olbg.com/betting-tips/Handball/All_Handball/All_Events/SG_Flensburg_Handewitt_vs_HBW_Balingen_Weilstetten/20?event_id=12180"]]},
+{"s":"Handball","ev":12137,"market":"Money Line","sel":"Skanderborg Handbold",
+ "pred":"Skanderborg Handbold to host FC Barcelona on 29 October knowing they are the underdogs of the round. One of the three OLBG win tips backs the Danish side at 33%, so this is an underdog selection rather than a favoured one. The long 2.86 card price reflects the size of the task, and the pick is published at low confidence with the fixture flagged for review.",
+ "facts":[
+  ["OLBG lists the 29 October match with 1/3 win tips (33%) for Skanderborg Handbold against FC Barcelona","https://www.olbg.com/betting-tips/Handball/All_Handball/All_Events/Skanderborg_Handbold_vs_FC_Barcelona/20?event_id=12137"]]},
+{"s":"Baseball","ev":160799,"market":"Money Line","sel":"MIL Brewers",
+ "pred":"Milwaukee Brewers to close out the World Series against the Tampa Bay Rays at Tropicana Field. ESPN confirms the Brewers lead 3-0 after a 103-59 regular season, while the Rays sit at 98-64, and lists Milwaukee as -141 favourites with Tampa's starter Garrett Jax at 0-1 with a 6.00 ERA. Both OLBG tips back Milwaukee, making the Brewers the money-line selection for the 21:00 first pitch on Fox.",
+ "facts":[
+  ["ESPN scoreboard: MIL leads WS 3-0; records 103-59 vs 98-64; DraftKings ML MIL -141 / TB +117; TB probable Garrett Jax 0-1, 6.00 ERA","https://www.espn.com/mlb/scoreboard/_/date/20261027"],
+  ["OLBG prints 2/2 win tips (100%) for MIL Brewers","https://www.olbg.com/betting-tips/Baseball/MLB/MLB/MIL_Brewers_@_TB_Rays/12?event_id=160799"]]},
 {"s":"Gaelic Sports","ev":3531,"market":"Handicap","sel":"Eire Og Cor +0.50",
- "pred":"Eire Og Cor plus a half point against Kanturk. All six tips on this handicap are on the away side, the only unanimous split in the Gaelic markets, and a half-point start in a club championship match is effectively a bet on not losing by a point. Cork club football is tight enough that the handicap is the value rather than the outright.",
- "facts":[["OLBG: Eire Og Cor +0.50, 6 of 6 tips, 100%","https://www.olbg.com/betting-tips/Gaelic_Football/25"],["Fixture listed as Kanturk v Eire Og Cor, 1 November 2026","https://www.olbg.com/betting-tips/Gaelic_Football/All_Gaelic_Football/All_Events/Kanturk_v_Eire_Og_Cor/25?event_id=3531"]]},
-
+ "pred":"Eire Og Cor +0.50 against Kanturk in the club championship fixture on 1 November. All six OLBG win tips back the handicap selection, a unanimous 100% consensus with a comment attached, making this the strongest-supported Gaelic pick of the round. Eire Og needing only to avoid defeat by a point or more is the selection at a short 1.27 price, though it falls outside the high-confidence odds band.",
+ "facts":[
+  ["OLBG prints 6/6 handicap tips (100%) for Eire Og Cor +0.50, with 1 comment","https://www.olbg.com/betting-tips/Gaelic_Football/All_Gaelic_Football/All_Events/Kanturk_v_Eire_Og_Cor/25?event_id=3531"]]},
 {"s":"Gaelic Sports","ev":3537,"market":"Handicap","sel":"Kildimo Pallaskenry +3.50",
- "pred":"Kildimo Pallaskenry plus three and a half against Fr Caseys. Five of seven tips take the start, which in a Limerick senior football match is a meaningful cushion: three and a half points is roughly the value of a single goal chance. Fr Caseys are the stronger side but the handicap is set for a comfortable home win that may not arrive.",
- "facts":[["OLBG: Kildimo Pallaskenry +3.50, 5 of 7 tips, 71%","https://www.olbg.com/betting-tips/Gaelic_Football/25"]]},
-
-{"s":"Gaelic Sports","ev":3327,"market":"Win Tournament","sel":"Kerry","p_override":0.175,"method":"CAL-3 (outright, 32-county field)",
- "pred":"Kerry to win the 2027 All-Ireland senior football championship. Six of eight tips on the 2027 outright is a real consensus and Kerry are the standard-bearer of the competition, but an All-Ireland is a 32-county knockout with a long winter in between, so the price is long rather than short. This is a position to hold, not to chase.",
- "facts":[["OLBG: All Ireland Football Championship 2027, Kerry most-tipped, 6 of 8 tips, 75%","https://www.olbg.com/betting-tips/Gaelic_Football/25"],["Final scheduled 25 July 2027 per the OLBG listing","https://www.olbg.com/betting-tips/Gaelic_Football/All_Gaelic_Football/All_Events/All_Ireland_Football_Championship_2027/25?event_id=3327"]]},
-
-{"s":"Gaelic Sports","ev":675,"market":"Win Hurling","sel":"Galway","p_override":0.267,"method":"CAL-3 (outright, 12-county field)",
- "pred":"Galway to win the 2027 All-Ireland hurling championship. Seven of eighteen tips is only 39%, so the market is genuinely split and the price reflects that. Galway's Leinster campaign gives them a route that avoids the qualifiers, and in a competition where Limerick's dominance has finally broken, a team with Galway's physical profile is worth a small position.",
- "facts":[["OLBG: All Ireland Hurling Championship 2027, Galway most-tipped, 7 of 18 tips, 39%","https://www.olbg.com/betting-tips/Hurling/26"],["Gaelic football and hurling are separate OLBG sports (ids 25 and 26) - recorded as flag F-014","https://www.olbg.com/betting-tips/Hurling/26"]]},
-
-{"s":"Motor Racing","ev":914,"market":"Top 6 Finish","sel":"Kimi Antonelli - Yes","p_override":0.70,"method":"CAL-2 (no tip split printed)",
- "pred":"Kimi Antonelli to finish in the top six at the Mexico City Grand Prix. The market carries no published tips at all, so this price is built from the driver rather than from a split: a front-running car at a circuit where overtaking is possible but track position dominates. The stake should reflect that the number is our estimate and nothing more.",
- "facts":[["OLBG Mexico City Grand Prix: Top 6 Finish market listed with no tips printed (0/0)","https://www.olbg.com/betting-tips/Motor_Racing/14"],["Race scheduled 1 November, 15:00 per the OLBG listing; the meet runs 30 October to 1 November","https://www.olbg.com/betting-tips/Motor_Racing/All_Motor_Racing/All_Events/Mexico_City_Grand_Prix/14?event_id=914"]]},
-
-{"s":"Motor Racing","ev":912,"market":"Win Tournament","sel":"Max Verstappen","p_override":0.455,"method":"CAL-2 (four-runner field, seven tips)",
- "pred":"Max Verstappen to win the 2026 drivers' championship in the market that excludes Kimi Antonelli. Four of seven tips take Verstappen in a four-man race, and a 57% share in a market with a clear favourite is a stronger signal than the same share in a wide-open one. The championship runs to the final round in December.",
- "facts":[["OLBG: Formula 1 Drivers Championship 2026 Without Kimi Antonelli, Max Verstappen most-tipped, 4 of 7 tips, 57%","https://www.olbg.com/betting-tips/Motor_Racing/14"],["Season finale listed 6 December 2026","https://www.olbg.com/betting-tips/Motor_Racing/All_Motor_Racing/All_Events/Formula_1_Drivers_Championship_2026_Without_Kimi_Antonelli/14?event_id=912"]]},
-
+ "pred":"Kildimo Pallaskenry +3.50 against Fr Caseys on 1 November. Five of the seven OLBG win tips favour the handicap side at 71%, a strong majority for a club fixture where independent form is thin. The 3.5-point cushion gives the selection room, and the consensus makes Kildimo the handicap pick at 1.55 for the 10:30 throw-in.",
+ "facts":[
+  ["OLBG prints 5/7 handicap tips (71%) for Kildimo Pallaskenry +3.50","https://www.olbg.com/betting-tips/Gaelic_Football/All_Gaelic_Football/All_Events/Fr_Caseys_v_Kildimo_Pallaskenry/25?event_id=3537"]]},
+{"s":"Gaelic Sports","ev":3327,"market":"Win Tournament","sel":"Kerry",
+ "pred":"Kerry to win the 2027 All-Ireland Football Championship. OLBG's own guide records Kerry as the all-time record holders with 39 titles, ahead of Dublin on 31, with Mayo the reigning champions after 2026. Six of eight OLBG outright tips back Kerry at 75%, so the Kingdom are the ante-post selection ahead of the summer series at a card price of 1.98.",
+ "facts":[
+  ["OLBG Gaelic football guide: Kerry 39 all-time titles, Dublin 31; Mayo are reigning 2026 champions","https://www.olbg.com/betting-tips/Gaelic_Football/25"],
+  ["OLBG prints 6/8 outright tips (75%) for Kerry in the 2027 championship market","https://www.olbg.com/betting-tips/Gaelic_Football/All_Gaelic_Football/All_Events/All_Ireland_Football_Championship_2027/25?event_id=3327"]]},
+{"s":"Gaelic Sports","ev":675,"market":"Win Hurling","sel":"Galway",
+ "pred":"Galway to win the 2027 All-Ireland Hurling Championship. The market is fragmented: Galway lead the OLBG outright tipping with seven of 18 selections, only 39%, indicating an open ante-post book rather than a dominant favourite. At 2.95 the price reflects that uncertainty, but Galway are still the selection in the win-hurling market, flagged as a low-confidence futures call.",
+ "facts":[
+  ["OLBG prints 7/18 outright tips (39%) for Galway in the 2027 hurling championship market","https://www.olbg.com/betting-tips/Hurling/All_Hurling/All_Events/All_Ireland_Hurling_Championship_2027/26?event_id=675"]]},
+{"s":"Darts","ev":26023,"market":"Win Tournament","sel":"Luke Littler",
+ "pred":"Luke Littler to win the 2027 PDC World Championship, whose final is listed on OLBG for 3 January. Littler already holds 22 of 36 outright tips, a 61% consensus in a market still months from settling. The depth of support makes him the ante-post pick at a card price of 1.76, though the championship remains a long-dated futures position rather than a week-of selection.",
+ "facts":[
+  ["OLBG lists the PDC World Championship 2027 final for 3 January 2027 with 22/36 outright tips (61%) for Luke Littler","https://www.olbg.com/betting-tips/Darts/All_Darts/All_Events/PDC_World_Championship_2027/15?event_id=26023"]]},
+{"s":"Darts","ev":32446,"market":"Win Tournament","sel":"Nathan Aspinall",
+ "pred":"Nathan Aspinall to win Players Championship 31 when the floor event begins tomorrow at 08:00. Only two of eight OLBG outright tips back Aspinall, a 25% share, so this is a speculative selection in a wide-open one-day field rather than a confident call. The long 4.85 price reflects that, and the pick is published at low confidence and flagged for review.",
+ "facts":[
+  ["OLBG lists Players Championship 31 for 28 October 08:00 with 2/8 outright tips (25%) for Nathan Aspinall","https://www.olbg.com/betting-tips/Darts/All_Darts/All_Events/Players_Championship_31/15?event_id=32446"]]},
+{"s":"Golf","ev":101915,"market":"Win Tournament","sel":"Wyndham Clark",
+ "pred":"Wyndham Clark to win the Mexico Open at Vidanta Vallarta. ESPN's PGA Tour schedule lists the event for 29 October to 1 November with a $6,000,000 purse and Brian Campbell as defending champion. OLBG shows one of two outright tips on Clark at 50%, so he is the selection in a thin early market at a card price of 4.35, low confidence.",
+ "facts":[
+  ["ESPN PGA Tour schedule: Mexico Open, Vidanta Vallarta, 29 Oct - 1 Nov 2026, purse $6.0M, defending champion Brian Campbell","https://www.espn.com/golf/schedule"],
+  ["OLBG prints 1/2 outright tips (50%) for Wyndham Clark","https://www.olbg.com/betting-tips/Golf/All_Golf/All_Events/Mexico_Open/5?event_id=101915"]]},
+{"s":"Golf","ev":101913,"market":"Win Tournament","sel":"Lottie Woad",
+ "pred":"Lottie Woad to win the Maybank Championship, which tees off on 1 November. One of the two OLBG outright tips lodged backs the English golfer at 50%, but no independent source had published a confirmable field at the time of writing, so this remains a thin-market pick flagged for review. Woad is the tentative selection at a card price of 4.35.",
+ "facts":[
+  ["OLBG lists the Maybank Championship for 1 November with 1/2 outright tips (50%) for Lottie Woad; no independent field confirmable at retrieval","https://www.olbg.com/betting-tips/Golf/All_Golf/All_Events/Maybank_Championship/5?event_id=101913"]]},
+{"s":"Golf","ev":101914,"market":"Win Tournament","sel":"Stewart Cink",
+ "pred":"Stewart Cink to win the Simmons Bank Championship on 1 November. As with the other early golf markets, only two OLBG tips exist and one names Cink, giving a 50% split with no confirmable field available from an independent source. The American is a low-confidence outright pick at a card price of 4.35 and is flagged for review rather than presented as a strong call.",
+ "facts":[
+  ["OLBG lists the Simmons Bank Championship for 1 November with 1/2 outright tips (50%) for Stewart Cink; no independent field confirmable at retrieval","https://www.olbg.com/betting-tips/Golf/All_Golf/All_Events/Simmons_Bank_Championship/5?event_id=101914"]]},
+{"s":"Motor Racing","ev":914,"market":"Podium Finish","sel":"Max Verstappen - Yes",
+ "pred":"Max Verstappen to finish on the podium at the Mexico City Grand Prix. Formula 1's official site schedules the race for 1 November at 15:00 at the Autodromo Hermanos Rodriguez, a 71-lap, 305.354 km contest held more than two kilometres above sea level. One of two OLBG tips backs the podium-yes, making Verstappen the selection at 1.90 in a two-way market.",
+ "facts":[
+  ["Formula1.com: Mexico City GP race 1 Nov 2026 15:00, Autodromo Hermanos Rodriguez, 71 laps, 305.354 km","https://www.formula1.com/en/racing/2026/mexico"],
+  ["OLBG prints 1/2 podium-finish tips (50%) for Max Verstappen - Yes","https://www.olbg.com/betting-tips/Motor_Racing/All_Motor_Racing/All_Events/Mexico_City_Grand_Prix/14?event_id=914"]]},
+{"s":"Motor Racing","ev":912,"market":"Win Tournament","sel":"Max Verstappen",
+ "pred":"Max Verstappen to win the 2026 Drivers' Championship in the without-Kimi-Antonelli market, which OLBG dates to 6 December. Four of seven OLBG tips back Verstappen at 57%, though the line is explicitly a reduced-field market and the season still has rounds to run. He is the ante-post selection at a card price of 2.61, low confidence given how long the book stays open.",
+ "facts":[
+  ["OLBG lists the without-Antonelli drivers' championship market settling 6 December 2026 with 4/7 tips (57%) for Max Verstappen","https://www.olbg.com/betting-tips/Motor_Racing/All_Motor_Racing/All_Events/Formula_1_Drivers_Championship_2026_Without_Kimi_Antonelli/14?event_id=912"]]},
 {"s":"Rugby League","ev":2695857,"market":"Win Tournament","sel":"New South Wales",
- "pred":"New South Wales to win State of Origin 2027. Nine of thirteen tips take the Blues, a 69% share in a two-team series, which is about as strong a consensus as a three-match series can produce. Origin is decided by margins that a squad list cannot predict, so the price stays near 1.60 rather than shortening further.",
- "facts":[["OLBG: State of Origin 2027, New South Wales most-tipped, 9 of 13 tips, 69%","https://www.olbg.com/betting-tips/Rugby_League/10"],["Series listed 27 May 2027","https://www.olbg.com/betting-tips/Rugby_League/All_Rugby_League/All_Events/State_of_Origin_2027/10?event_id=2695857"]]},
-
-{"s":"Rugby League","ev":2801554,"market":"Grand Final Winner","sel":"Wigan Warriors","p_override":0.1875,"method":"CAL-3 (outright, 12-team field)",
- "pred":"Wigan Warriors to win the 2027 Super League grand final. Two of four tips is half the market on one club in a twelve-team competition, which is a genuine signal even at this sample size. Old Trafford in October is a long way off and a season of injuries can undo any squad, hence the price.",
- "facts":[["OLBG: Super League 2027 grand final winner, Wigan Warriors most-tipped, 2 of 4 tips, 50%","https://www.olbg.com/betting-tips/Rugby_League/10"],["Final listed 2 October 2027","https://www.olbg.com/betting-tips/Rugby_League/All_Rugby_League/All_Events/Super_League_2027/10?event_id=2801554"]]},
-
-{"s":"Rugby League","ev":2801600,"market":"Grand Final Winner","sel":"Penrith Panthers","p_override":0.10,"method":"CAL-3 (outright, 17-team field)",
- "pred":"Penrith Panthers to win the 2027 NRL grand final. One tip out of three is not a market view and the price says so. Penrith's ceiling is higher than almost anyone's over a full season, which is the reason to hold a small position at a double-figure price rather than the reason to back it heavily.",
- "facts":[["OLBG: NRL 2027 grand final winner, Penrith Panthers most-tipped, 1 of 3 tips, 33%","https://www.olbg.com/betting-tips/Rugby_League/10"],["Final listed 3 October 2027","https://www.olbg.com/betting-tips/Rugby_League/All_Rugby_League/All_Events/NRL_2027/10?event_id=2801600"]]}
+ "pred":"New South Wales to win the 2027 State of Origin series. The ante-post market is the strongest on the rugby league card, with nine of 13 OLBG tips backing the Blues at 69% and three comments attached. The series does not begin until 27 May, so this is a long-dated futures pick, but NSW are the clear selection at a card price of 1.86.",
+ "facts":[
+  ["OLBG lists State of Origin 2027 beginning 27 May with 9/13 outright tips (69%) for New South Wales and 3 comments","https://www.olbg.com/betting-tips/Rugby_League/All_Rugby_League/All_Events/State_of_Origin_2027/10?event_id=2695857"]]},
+{"s":"Rugby League","ev":2801554,"market":"Grand Final Winner","sel":"Wigan Warriors",
+ "pred":"Wigan Warriors to win the 2027 Super League Grand Final. Two of four OLBG outright tips favour the Warriors at 50%, with two comments, in a market that will not settle until 2 October next year. It is an even split at the top of the book, so Wigan are a measured futures selection at 3.46 rather than a confident one, and the pick is flagged for review.",
+ "facts":[
+  ["OLBG lists Super League 2027 settling 2 October with 2/4 Grand Final tips (50%) for Wigan Warriors and 2 comments","https://www.olbg.com/betting-tips/Rugby_League/All_Rugby_League/All_Events/Super_League_2027/10?event_id=2801554"]]},
+{"s":"Rugby League","ev":2801600,"market":"Grand Final Winner","sel":"Penrith Panthers",
+ "pred":"Penrith Panthers to win the 2027 NRL Grand Final. Only one of three OLBG tips backs Penrith, a 33% share, and the market does not settle until 3 October 2027, so this is a long-range, low-confidence pick priced at 4.90. With the new season months away and no independent season form to cite, the call rests on the OLBG consensus alone and is flagged for review.",
+ "facts":[
+  ["OLBG lists NRL 2027 settling 3 October with 1/3 Grand Final tips (33%) for Penrith Panthers","https://www.olbg.com/betting-tips/Rugby_League/All_Rugby_League/All_Events/NRL_2027/10?event_id=2801600"]]}
 ]

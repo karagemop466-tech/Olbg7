@@ -1,293 +1,49 @@
 {
- "generated_at": "2026-10-26",
+ "generated_at": "2026-10-27",
  "picks": [
   {
-   "sport": "Basketball",
-   "event_id": "536204",
-   "event": "IND Pacers @ MIL Bucks",
-   "competition": "NBA",
-   "date_label": "Today 20:00",
-   "selection": "IND Pacers",
-   "market": "Money Line",
-   "olbg_tips": "9/12",
-   "olbg_pct": 75,
-   "prediction": "Indiana Pacers to win in Milwaukee. The Pacers are 2-1 after a 136-109 demolition of Brooklyn in which they put up 41 in the second quarter alone, while Milwaukee sit 0-3 and have now conceded 127 or more in two of those three losses. Indiana are scoring at a rate the Bucks have not matched yet, and the price on the road side is the best value on the NBA card.",
+   "sport": "Cricket",
+   "event_id": "188872",
+   "event": "Afghanistan vs Zimbabwe 1st T20 Match",
+   "competition": "All Cricket",
+   "date_label": "Today 10:30",
+   "selection": "Afghanistan",
+   "market": "Win Match",
+   "olbg_tips": "15/16",
+   "olbg_pct": 94,
+   "prediction": "Back Afghanistan to win the first T20 international against Zimbabwe in Sharjah. This is the opening match of the bilateral series, and the OLBG card is overwhelmingly one-sided, with 15 of the 16 win tips placed on Afghanistan and 11 written comments attached. A 94% consensus on a fresh series is a strong starting point, and at our fair estimate of nearly 82% the home side is the clear selection in the win market.",
    "facts": [
     {
-     "t": "Pacers 136-109 Nets (quarter splits 24-41-37-34); Pacers 2-1, Bucks 0-3",
-     "src": "https://www.espn.com/nba/scoreboard/_/date/20261025"
+     "t": "First T20I of the Afghanistan v Zimbabwe series, Sharjah, 27 October 2026",
+     "src": "https://www.cricinfo.com/series/afghanistan-v-zimbabwe-2026-27-1555105/afghanistan-vs-zimbabwe-1st-t20i-1555120/live-cricket-score"
     },
     {
-     "t": "76ers 127-116 Bucks on 25 October; Bucks concede 129.0 points per game across three losses",
-     "src": "https://www.betexplorer.com/basketball/usa/nba/"
+     "t": "OLBG prints 15/16 win tips (94%) for Afghanistan, with 11 comments",
+     "src": "https://www.olbg.com/betting-tips/Cricket/All_Cricket/All_Events/Afghanistan_vs_Zimbabwe_1st_T20_Match/7?event_id=188872"
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
-   "id": "BB-01"
-  },
-  {
-   "sport": "Basketball",
-   "event_id": "536206",
-   "event": "MEM Grizzlies @ UTA Jazz",
-   "competition": "NBA",
-   "date_label": "Today 21:00",
-   "selection": "MEM Grizzlies",
-   "market": "Money Line",
-   "olbg_tips": "9/13",
-   "olbg_pct": 69,
-   "prediction": "Memphis Grizzlies to win at Utah. Nine of the thirteen tips on this game are on Memphis, the biggest written-reasoning sample on the NBA card today, and the Jazz have not yet shown the defensive shape to punish a road favourite. Utah's altitude is the only argument for the home side and it is not enough to overturn a 69% split at this price.",
-   "facts": [
-    {
-     "t": "OLBG lists MEM Grizzlies as the most-tipped selection, 9 of 13 tips, 69%",
-     "src": "https://www.olbg.com/betting-tips/Basketball/4"
-    }
-   ],
-   "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
-   "id": "BB-02"
-  },
-  {
-   "sport": "Basketball",
-   "event_id": "536199",
-   "event": "WAS Wizards @ CHA Hornets",
-   "competition": "NBA",
-   "date_label": "Today 19:00",
-   "selection": "CHA Hornets",
-   "market": "Money Line",
-   "olbg_tips": "7/10",
-   "olbg_pct": 70,
-   "prediction": "Charlotte Hornets on the money line against Washington. Seven of ten tips land on the Hornets at home, and the Wizards arrive on the second half of a road back-to-back after opening their trip in Milwaukee. Charlotte's price here is shorter than the raw split implies, which is exactly where a home side with a rest edge should be taken.",
-   "facts": [
-    {
-     "t": "OLBG: CHA Hornets most-tipped, 7 of 10 tips, 70%",
-     "src": "https://www.olbg.com/betting-tips/Basketball/4"
-    }
-   ],
-   "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
-   "id": "BB-03"
-  },
-  {
-   "sport": "Basketball",
-   "event_id": "536203",
-   "event": "MIN Timberwolves @ CLE Cavaliers",
-   "competition": "NBA",
-   "date_label": "Today 19:00",
-   "selection": "CLE Cavaliers",
-   "market": "Money Line",
-   "olbg_tips": "9/16",
-   "olbg_pct": 56,
-   "prediction": "Cleveland Cavaliers to beat Minnesota at home. The Cavs opened with a 125-121 win over Brooklyn, while the Timberwolves are 3-0 but arrive on the second night of a back-to-back after a 117-94 win in Toronto. Minnesota have been the better team so far; the spot is the reason to take the home side at a price close to even money.",
-   "facts": [
-    {
-     "t": "Cavaliers 125-121 Nets (25 October); Timberwolves 117-94 Raptors, Minnesota 3-0",
-     "src": "https://www.betexplorer.com/basketball/usa/nba/"
-    },
-    {
-     "t": "Timberwolves played in Toronto on 25 October, one night before this fixture",
-     "src": "https://www.espn.com/nba/scoreboard/_/date/20261025"
-    }
-   ],
-   "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
-   "id": "BB-04"
-  },
-  {
-   "sport": "Basketball",
-   "event_id": "536200",
-   "event": "DAL Mavericks @ MIA Heat",
-   "competition": "NBA",
-   "date_label": "Today 19:30",
-   "selection": "DAL Mavericks +7.50",
-   "market": "Pointspread",
-   "olbg_tips": "7/7",
-   "olbg_pct": 100,
-   "prediction": "Dallas Mavericks plus seven and a half at Miami. All seven tips on this market are on Dallas with the start, and no tipster has taken Miami to cover. Seven and a half is the widest cushion on the board, Dallas have already been competitive in a 106-122 loss to San Antonio, and taking the points is the cleaner way to back them than the outright.",
-   "facts": [
-    {
-     "t": "OLBG pointspread market: DAL Mavericks +7.50, 7 of 7 tips, 100%",
-     "src": "https://www.olbg.com/betting-tips/Basketball/NBA/NBA/DAL_Mavericks_@_MIA_Heat/4?event_id=536200"
-    },
-    {
-     "t": "Dallas lost 106-122 to San Antonio on 24 October",
-     "src": "https://www.betexplorer.com/basketball/usa/nba/"
-    }
-   ],
-   "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
-   "id": "BB-05"
-  },
-  {
-   "sport": "Ice Hockey",
-   "event_id": "200101",
-   "event": "LA Kings @ NY Rangers",
-   "competition": "NHL",
-   "date_label": "Today 19:07",
-   "selection": "NY Rangers",
-   "market": "Money Line",
-   "olbg_tips": "13/16",
-   "olbg_pct": 81,
-   "prediction": "New York Rangers to beat Los Angeles at Madison Square Garden. The Rangers are 7-5-1 and second in the Metropolitan, and they lost 7-4 in Ottawa only because they pulled their goaltender chasing the game. The Kings were beaten 3-1 in New Jersey the night before and have to play a second road game in two nights; thirteen of sixteen tips agree.",
-   "facts": [
-    {
-     "t": "Rangers 7-5-1, 15 points, second in the Metropolitan Division",
-     "src": "https://www.hockey-reference.com/boxscores/"
-    },
-    {
-     "t": "Kings lost 3-1 at New Jersey; Rangers lost 7-4 at Ottawa after pulling the goalie",
-     "src": "https://hockeyupdates.substack.com/p/october-25-2026-hockey-updates"
-    },
-    {
-     "t": "OLBG: NY Rangers most-tipped, 13 of 16 tips, 81%",
-     "src": "https://www.olbg.com/betting-tips/Ice_Hockey/13"
-    }
-   ],
-   "verification": "tip split read from the OLBG listing at retrieval; 3 fact(s), each with an https source",
-   "id": "IH-01"
-  },
-  {
-   "sport": "Ice Hockey",
-   "event_id": "200102",
-   "event": "DET Red Wings @ EDM Oilers",
-   "competition": "NHL",
-   "date_label": "Today 21:37",
-   "selection": "EDM Oilers",
-   "market": "Money Line",
-   "olbg_tips": "9/11",
-   "olbg_pct": 82,
-   "prediction": "Edmonton Oilers to win at home against Detroit. Edmonton had won three straight before running into a 7-2 Toronto defeat, and Leon Draisaitl has twelve goals and 23 points already, two behind Connor McDavid's league-leading 33. Detroit beat Calgary's pressure poorly in a 4-1 loss and John Gibson was pulled from his previous start with an eye issue. Nine of eleven tips side with Edmonton.",
-   "facts": [
-    {
-     "t": "Oilers had won three in a row before the 7-2 loss to Toronto; Draisaitl 12 goals, 23 points, McDavid 8 goals and 25 assists",
-     "src": "https://www.thesportsleader.com/2026/10/25/nhl-roundup-leafs-erupt-in-third-rout-oilers-for-fourth-straight-win/"
-    },
-    {
-     "t": "Red Wings lost 4-1 in Calgary; John Gibson made 21 saves after leaving his previous start with an eye issue",
-     "src": "https://yournews.com/2026/10/25/7238371/nhl-roundup-leafs-erupt-in-third-rout-oilers-for-fourth/"
-    }
-   ],
-   "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
-   "id": "IH-02"
-  },
-  {
-   "sport": "Ice Hockey",
-   "event_id": "200103",
-   "event": "TOR Maple Leafs @ CGY Flames",
-   "competition": "NHL",
-   "date_label": "Today 20:37",
-   "selection": "TOR Maple Leafs",
-   "market": "Money Line",
-   "olbg_tips": "10/15",
-   "olbg_pct": 67,
-   "prediction": "Toronto Maple Leafs to win in Calgary. The Leafs have won four straight after a 7-2 rout in Edmonton in which they scored four times in the third period, and Auston Matthews goes into this one on 799 career points. Calgary have won three straight themselves, so this is not a mismatch, but ten of fifteen tips and the form line both point the same way.",
-   "facts": [
-    {
-     "t": "Leafs won a fourth straight, 7-2 at Edmonton, four goals in the third period",
-     "src": "https://srnnews.com/nhl-roundup-leafs-erupt-in-third-rout-oilers-for-fourth-straight-win/"
-    },
-    {
-     "t": "Matthews on 799 career points (437 goals, 362 assists) in 702 games ahead of the Calgary game",
-     "src": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-october-26-2026"
-    },
-    {
-     "t": "Flames have won three straight and four of five after starting 0-5",
-     "src": "https://www.thesportsleader.com/2026/10/25/nhl-roundup-leafs-erupt-in-third-rout-oilers-for-fourth-straight-win/"
-    }
-   ],
-   "verification": "tip split read from the OLBG listing at retrieval; 3 fact(s), each with an https source",
-   "id": "IH-03"
-  },
-  {
-   "sport": "Ice Hockey",
-   "event_id": "200104",
-   "event": "BOS Bruins @ CAR Hurricanes",
-   "competition": "NHL",
-   "date_label": "Tomorrow 20:07",
-   "selection": "BOS Bruins +1.50",
-   "market": "Puck Line",
-   "olbg_tips": "1/1",
-   "olbg_pct": 100,
-   "prediction": "Boston Bruins plus one and a half on the puck line in Carolina. Carolina are the better five-on-five team and will probably win, which is why the puck line is the play rather than the money line: the Bruins only need to stay within one goal or lose in overtime. The single tip on this market is on Boston and the handicap is the only way to back them at a workable price.",
-   "facts": [
-    {
-     "t": "OLBG: BOS Bruins +1.50 puck line is the listed selection for this fixture",
-     "src": "https://www.olbg.com/betting-tips/Ice_Hockey/13"
-    },
-    {
-     "t": "Carolina host Boston at 20:07 on 27 October per the OLBG listing",
-     "src": "https://www.olbg.com/betting-tips/Ice_Hockey/13"
-    }
-   ],
-   "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
-   "id": "IH-04"
-  },
-  {
-   "sport": "Ice Hockey",
-   "event_id": "200111",
-   "event": "NJ Devils @ DAL Stars",
-   "competition": "NHL",
-   "date_label": "Tomorrow 20:07",
-   "selection": "Under 5.50",
-   "market": "Game Totals",
-   "olbg_tips": "1/1",
-   "olbg_pct": 100,
-   "prediction": "Under five and a half goals between New Jersey and Dallas. Both sides have been playing tight, low-event hockey and the five-and-a-half line is the standard number for this matchup rather than a number set for a shootout. When the total sits at 5.5 with a single tip on the under, the discipline is to take the under and not chase a middle.",
-   "facts": [
-    {
-     "t": "OLBG game totals market lists Under 5.50 for NJ Devils @ DAL Stars",
-     "src": "https://www.olbg.com/betting-tips/Ice_Hockey/13"
-    }
-   ],
-   "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
-   "id": "IH-05"
+   "id": "CK-01"
   },
   {
    "sport": "Cricket",
    "event_id": "188852",
    "event": "New Zealand vs India 3rd T20 Match",
    "competition": "All Cricket",
-   "date_label": "Tomorrow 03:00",
+   "date_label": "Today 03:00",
    "selection": "India",
    "market": "Win Match",
-   "olbg_tips": "27/40",
-   "olbg_pct": 68,
-   "prediction": "India to win the third T20 international in Wellington and take the series 3-0. India have chased 226 and 181 to lead 2-0, with Tilak Varma's unbeaten 51 off 26 balls deciding the second game, and New Zealand have lost Matt Henry for the rest of the series and Lockie Ferguson for this match. Twenty-seven of forty tips are on India.",
+   "olbg_tips": "35/49",
+   "olbg_pct": 71,
+   "prediction": "India to beat New Zealand in the third T20 international in Wellington. The touring side dominates the OLBG consensus, attracting 35 of 49 win tips at 71%, and the fixture has drawn 18 comments, more than any other cricket match on the card. With the series already two matches deep, the depth of informed tipping behind India makes them the confident win-match selection at our originated price of 1.38.",
    "facts": [
     {
-     "t": "India lead 2-0 after chasing 226 and 181, both wins by four wickets; Tilak Varma 51 not out off 26",
-     "src": "https://www.indiatoday.in/sports/cricket/story/ind-vs-nz-3rd-t20i-wellington-preview-head-to-head-weather-vaibhav-sooryavanshi-3025581-2026-10-27"
+     "t": "Third T20I of India's tour of New Zealand, Wellington, 27 October 2026",
+     "src": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/match-schedule-fixtures-and-results"
     },
     {
-     "t": "Matt Henry ruled out of the series, Lockie Ferguson unavailable for Wellington",
-     "src": "https://www.indiatoday.in/sports/cricket/story/ind-vs-nz-3rd-t20i-wellington-preview-head-to-head-weather-vaibhav-sooryavanshi-3025581-2026-10-27"
-    },
-    {
-     "t": "3rd T20I at Wellington, 27 October 2026; India lead the series 2-0",
-     "src": "https://www.espncricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-3rd-t20i-1539434/full-scorecard"
-    },
-    {
-     "t": "OLBG: India most-tipped, 27 of 40 tips, 68%",
-     "src": "https://www.olbg.com/betting-tips/Cricket/7"
-    }
-   ],
-   "verification": "tip split read from the OLBG listing at retrieval; 4 fact(s), each with an https source",
-   "id": "CK-01"
-  },
-  {
-   "sport": "Cricket",
-   "event_id": "188854",
-   "event": "Namibia vs Ireland 3rd ODI",
-   "competition": "All Cricket",
-   "date_label": "Tomorrow 03:30",
-   "selection": "Ireland",
-   "market": "Win Match",
-   "olbg_tips": "19/27",
-   "olbg_pct": 70,
-   "prediction": "Ireland to win the third one-day international in Namibia. Ireland have won nineteen of the twenty-seven tips on the match, and the series is being played in Windhoek where the tourists' seam attack has been the difference across the first two games. Namibia have kept it close without converting, and Ireland's price here is the shortest of the three ODI favourites on the card.",
-   "facts": [
-    {
-     "t": "OLBG: Ireland most-tipped, 19 of 27 tips, 70%",
-     "src": "https://www.olbg.com/betting-tips/Cricket/7"
-    },
-    {
-     "t": "Fixture listed as Namibia vs Ireland 3rd ODI, 27 October 2026",
-     "src": "https://www.olbg.com/betting-tips/Cricket/All_Cricket/All_Events/Namibia_vs_Ireland_3rd_ODI/7?event_id=188854"
+     "t": "OLBG prints 35/49 win tips (71%) for India, with 18 comments",
+     "src": "https://www.olbg.com/betting-tips/Cricket/All_Cricket/All_Events/New_Zealand_vs_India_3rd_T20_Match/7?event_id=188852"
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
@@ -298,19 +54,19 @@
    "event_id": "188868",
    "event": "Pakistan vs Sri Lanka One Day Match",
    "competition": "All Cricket",
-   "date_label": "Tomorrow 04:00",
+   "date_label": "Today 04:00",
    "selection": "Pakistan",
    "market": "Win Match",
-   "olbg_tips": "14/21",
-   "olbg_pct": 67,
-   "prediction": "Pakistan to win the one-day match against Sri Lanka. Fourteen of twenty-one tips land on Pakistan, the second-largest sample on the entire cricket card, and the fixture is the first of a home series where Pakistan's spinners have historically controlled the middle overs. Sri Lanka's recent one-day form has been patchy and the market reflects that.",
+   "olbg_tips": "22/31",
+   "olbg_pct": 71,
+   "prediction": "Pakistan to defeat Sri Lanka in the fifth match of the ODI tri-series in Lahore. The host nation holds 22 of 31 win tips on OLBG, a 71% share, and 15 tipsters have left comments explaining the call. Playing at home in familiar conditions, Pakistan are the sensible side in the win market, and the size of the sample behind the pick gives the originated 1.41 price a solid foundation.",
    "facts": [
     {
-     "t": "OLBG: Pakistan most-tipped, 14 of 21 tips, 67%",
-     "src": "https://www.olbg.com/betting-tips/Cricket/7"
+     "t": "Fifth match of the Pakistan ODI tri-series, Lahore, 27 October 2026",
+     "src": "https://www.cricinfo.com/series/pakistan-odi-tri-series-2026-27-1550706/pakistan-vs-sri-lanka-5th-match-1550717/match-preview"
     },
     {
-     "t": "Fixture listed as Pakistan vs Sri Lanka One Day Match, 27 October 2026",
+     "t": "OLBG prints 22/31 win tips (71%) for Pakistan, with 15 comments",
      "src": "https://www.olbg.com/betting-tips/Cricket/All_Cricket/All_Events/Pakistan_vs_Sri_Lanka_One_Day_Match/7?event_id=188868"
     }
    ],
@@ -319,23 +75,23 @@
   },
   {
    "sport": "Cricket",
-   "event_id": "188872",
-   "event": "Afghanistan vs Zimbabwe 1st T20 Match",
+   "event_id": "188854",
+   "event": "Namibia vs Ireland 3rd ODI",
    "competition": "All Cricket",
-   "date_label": "Tomorrow 10:30",
-   "selection": "Afghanistan",
+   "date_label": "Today 03:30",
+   "selection": "Ireland",
    "market": "Win Match",
-   "olbg_tips": "8/9",
-   "olbg_pct": 89,
-   "prediction": "Afghanistan to win the first T20 against Zimbabwe. This is the most one-sided split on the cricket card, eight of nine tips, and Afghanistan's spin attack is the reason: on a Sharjah-style surface the Zimbabwe middle order has struggled to score at the required rate. The price is short, so this is a selection for the accumulator rather than a standalone value bet.",
+   "olbg_tips": "22/32",
+   "olbg_pct": 69,
+   "prediction": "Ireland to win the third ODI against Namibia in Windhoek. Despite being the travelling team, Ireland account for 22 of 32 win tips on OLBG, a 69% consensus, with six comments on the fixture. The series reaches its deciding stage at the third attempt, and the weight of tipping behind the tourists marks them as the win-match selection rather than the home side.",
    "facts": [
     {
-     "t": "OLBG: Afghanistan most-tipped, 8 of 9 tips, 89%",
-     "src": "https://www.olbg.com/betting-tips/Cricket/7"
+     "t": "Third ODI of Ireland's tour of Namibia, Windhoek, 27 October 2026",
+     "src": "https://www.cricinfo.com/series/ireland-in-namibia-2026-27-1558225/namibia-vs-ireland-3rd-odi-1558233/live-cricket-score"
     },
     {
-     "t": "Fixture listed as Afghanistan vs Zimbabwe 1st T20 Match, 27 October 2026",
-     "src": "https://www.olbg.com/betting-tips/Cricket/All_Cricket/All_Events/Afghanistan_vs_Zimbabwe_1st_T20_Match/7?event_id=188872"
+     "t": "OLBG prints 22/32 win tips (69%) for Ireland, with 6 comments",
+     "src": "https://www.olbg.com/betting-tips/Cricket/All_Cricket/All_Events/Namibia_vs_Ireland_3rd_ODI/7?event_id=188854"
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
@@ -343,125 +99,487 @@
   },
   {
    "sport": "Cricket",
-   "event_id": "188835",
-   "event": "South Africa vs Australia",
+   "event_id": "188876",
+   "event": "Auckland vs Canterbury One Day Match",
    "competition": "All Cricket",
-   "date_label": "31 Oct 04:30",
-   "selection": "Draw",
+   "date_label": "Today 17:30",
+   "selection": "Canterbury",
    "market": "Win Match",
-   "olbg_tips": "3/7",
-   "olbg_pct": 43,
-   "prediction": "The draw in South Africa against Australia, at a price that says the layers expect a result. Three of seven tips are on the draw in a Test that starts on 31 October, and the Wanderers pitch has a habit of flattening out after the first two days. It is a low-confidence position: the sample is small, a draw is only one of three outcomes, and the weather forecast is the thing that would settle it.",
+   "olbg_tips": "3/4",
+   "olbg_pct": 75,
+   "prediction": "Canterbury to beat Auckland in their New Zealand domestic one-day match. Three of the four win tips on OLBG favour Canterbury, a 75% share, and the fixture is one of three provincial games starting at 17:30 on the card. With the majority of tipsters aligned and no conflicting market printed, Canterbury are the straightforward selection in a small but clear-cut market.",
    "facts": [
     {
-     "t": "OLBG: Draw most-tipped, 3 of 7 tips, 43%",
-     "src": "https://www.olbg.com/betting-tips/Cricket/7"
-    },
-    {
-     "t": "Fixture listed as South Africa vs Australia, 31 October 2026",
-     "src": "https://www.olbg.com/betting-tips/Cricket/All_Cricket/All_Events/South_Africa_vs_Australia/7?event_id=188835"
-    }
-   ],
-   "cal2_p_fair": 0.3,
-   "method": "CAL-2 (draw is one of three outcomes in a Test)",
-   "verification": "price is an explicit estimate, not a tip-split repricing; 2 fact(s), each with an https source",
-   "id": "CK-05"
-  },
-  {
-   "sport": "Rugby Union",
-   "event_id": "609590",
-   "event": "Glasgow Warriors v Lions",
-   "competition": "All Rugby Union",
-   "date_label": "30 Oct 15:45",
-   "selection": "Glasgow Warriors",
-   "market": "To Win",
-   "olbg_tips": "1/1",
-   "olbg_pct": 100,
-   "prediction": "Glasgow Warriors to beat the Lions at Scotstoun. Glasgow put 36 points and five tries past Connacht on 9 October and sit top of the table on points difference; the Lions have lost twice already and travel from Johannesburg to a Friday night in Glasgow with a six-hour time difference. The split is thin, one tip, but the venue and the travel make the home side the obvious call.",
-   "facts": [
-    {
-     "t": "Glasgow Warriors 36-19 Connacht, 9 October 2026, bonus point, tries Hiddleston x2, Darge, Stephen",
-     "src": "https://glasgowwarriors.org/fixtures-and-results/internationals/26-27-bkt-united-rugby-championship/2026-27/glasgow-warriors-v-connacht-4/"
-    },
-    {
-     "t": "Round 5: Glasgow Warriors v Lions, Scotstoun Stadium, 30 October, 19:45",
-     "src": "https://www.unitedrugby.com/latest/news/2026-27-fixtures-in-full/"
-    },
-    {
-     "t": "OLBG lists the kick-off as 15:45 - see the timezone flag on the review page",
-     "src": "https://www.olbg.com/betting-tips/Rugby_Union/9"
-    }
-   ],
-   "verification": "tip split read from the OLBG listing at retrieval; 3 fact(s), each with an https source",
-   "id": "RU-01"
-  },
-  {
-   "sport": "Rugby Union",
-   "event_id": "609584",
-   "event": "Connacht v Leinster",
-   "competition": "All Rugby Union",
-   "date_label": "30 Oct 15:45",
-   "selection": "Connacht +3.50",
-   "market": "Handicap",
-   "olbg_tips": "1/1",
-   "olbg_pct": 100,
-   "prediction": "Connacht plus three and a half at home to Leinster. Leinster are the champions and the better side, but the Sportsground on a Friday night is the one away trip in the league that reliably closes the gap, and Connacht beat Glasgow's pack at the breakdown earlier this month. Taking the handicap rather than the outright is the sensible way to play a home underdog with a three-point start.",
-   "facts": [
-    {
-     "t": "Round 5: Connacht v Leinster, Dexcom Stadium (The Sportsground), Galway, 30 October, 19:45",
-     "src": "https://www.unitedrugby.com/latest/news/2026-27-fixtures-in-full/"
-    },
-    {
-     "t": "Leinster finished second in 2025-26 and won the title; Connacht finished eighth",
-     "src": "https://en.wikipedia.org/wiki/2026%E2%80%9327_United_Rugby_Championship"
-    }
-   ],
-   "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
-   "id": "RU-02"
-  },
-  {
-   "sport": "Rugby Union",
-   "event_id": "609588",
-   "event": "Stormers v Ulster",
-   "competition": "All Rugby Union",
-   "date_label": "31 Oct 08:45",
-   "selection": "Ulster",
-   "market": "To Win",
-   "olbg_tips": "1/1",
-   "olbg_pct": 100,
-   "prediction": "Ulster to win in Cape Town. This is a low-confidence selection: Ulster have travelled badly and the Stormers at sea level are a different proposition to the altitude sides, but the single tip on the match is on Ulster and a price close to even money on a team that has to win eventually is worth a small stake. Treat it as speculative.",
-   "facts": [
-    {
-     "t": "Round 5: Stormers v Ulster, Cape Town Stadium, 31 October",
-     "src": "https://en.wikipedia.org/wiki/2026%E2%80%9327_United_Rugby_Championship"
-    },
-    {
-     "t": "OLBG: Ulster most-tipped, 1 of 1 tips",
-     "src": "https://www.olbg.com/betting-tips/Rugby_Union/9"
-    }
-   ],
-   "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
-   "id": "RU-03"
-  },
-  {
-   "sport": "Rugby Union",
-   "event_id": "609586",
-   "event": "Munster v Sharks",
-   "competition": "All Rugby Union",
-   "date_label": "31 Oct 13:30",
-   "selection": "Munster -6.50",
-   "market": "Handicap",
-   "olbg_tips": "1/1",
-   "olbg_pct": 100,
-   "prediction": "Munster to cover six and a half at home to the Sharks. Munster at Thomond Park against a Sharks side at the end of a European tour is the classic fixture for a comfortable home win, and the handicap is set at a number that a three-try performance clears. One tip only, so the stake should match the confidence: small.",
-   "facts": [
-    {
-     "t": "Round 5: Munster v Sharks, Thomond Park, 31 October, 13:30 per OLBG",
-     "src": "https://www.olbg.com/betting-tips/Rugby_Union/9"
+     "t": "OLBG prints 3/4 win tips (75%) for Canterbury in the 17:30 one-day fixture",
+     "src": "https://www.olbg.com/betting-tips/Cricket/All_Cricket/All_Events/Auckland_vs_Canterbury_One_Day_Match/7?event_id=188876"
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
-   "id": "RU-04"
+   "id": "CK-05"
+  },
+  {
+   "sport": "Tennis",
+   "event_id": "902172",
+   "event": "Leylah Fernandez vs Himeno Sakatsume",
+   "competition": "All Tennis",
+   "date_label": "Today 02:00",
+   "selection": "Leylah Fernandez",
+   "market": "Win Match",
+   "olbg_tips": "10/12",
+   "olbg_pct": 83,
+   "prediction": "Leylah Fernandez to beat Himeno Sakatsume on Centre Court at the Toray Pan Pacific Open in Tokyo. ESPN lists the match as a first-round tie at the WTA 500 event, which runs from 23 October to 1 November with Belinda Bencic the defending champion. Fernandez is the strongest-backed tennis pick on OLBG, carrying 10 of 12 win tips at 83%, and that depth of support makes her the selection.",
+   "facts": [
+    {
+     "t": "Toray Pan Pacific Open, Tokyo, 23 October - 1 November 2026; defending champion Belinda Bencic; Fernandez v Sakatsume is a Round 1 Centre Court match",
+     "src": "https://www.espn.com/tennis/scoreboard/tournament/_/eventId/264-2026"
+    },
+    {
+     "t": "OLBG prints 10/12 win tips (83%) for Fernandez, with 5 comments",
+     "src": "https://www.olbg.com/betting-tips/Tennis/All_Tennis/All_Events/Leylah_Fernandez_vs_Himeno_Sakatsume/3?event_id=902172"
+    }
+   ],
+   "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
+   "id": "TN-01"
+  },
+  {
+   "sport": "Tennis",
+   "event_id": "902409",
+   "event": "Nuno Borges vs Casper Ruud",
+   "competition": "All Tennis",
+   "date_label": "Today 07:00",
+   "selection": "Casper Ruud",
+   "market": "Win Match",
+   "olbg_tips": "2/2",
+   "olbg_pct": 100,
+   "prediction": "Casper Ruud to defeat Nuno Borges at the Swiss Indoors in Basel. ESPN's scoreboard places the tie in the opening round of the indoor ATP event, where the Norwegian is the seeded presence against the Portuguese challenger. Both OLBG win tips lodged so far sit with Ruud, and while the sample is small, the ranking gap and the unanimous tipping make him the win-match choice.",
+   "facts": [
+    {
+     "t": "ESPN lists Borges v Ruud as a Round 1 match at the Swiss Indoors Basel",
+     "src": "https://www.espn.com/tennis/scoreboard"
+    },
+    {
+     "t": "OLBG prints 2/2 win tips (100%) for Casper Ruud",
+     "src": "https://www.olbg.com/betting-tips/Tennis/All_Tennis/All_Events/Nuno_Borges_vs_Casper_Ruud/3?event_id=902409"
+    }
+   ],
+   "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
+   "id": "TN-02"
+  },
+  {
+   "sport": "Tennis",
+   "event_id": "902240",
+   "event": "Alex Michelsen vs Botic Van De Zandschulp",
+   "competition": "All Tennis",
+   "date_label": "Today 10:00",
+   "selection": "Alex Michelsen",
+   "market": "Win Match",
+   "olbg_tips": "2/3",
+   "olbg_pct": 67,
+   "prediction": "Alex Michelsen to overcome Botic van de Zandschulp in their Swiss Indoors opener in Basel. ESPN shows the match as a first-round contest on the indoor hard courts, and two of the three OLBG win tips back the American, a 67% share. The consensus tilts Michelsen's way despite the Dutchman's experience, so he is the selection at the originated 1.90 price.",
+   "facts": [
+    {
+     "t": "ESPN lists Michelsen v Van De Zandschulp as a Round 1 match at the Swiss Indoors Basel",
+     "src": "https://www.espn.com/tennis/scoreboard"
+    },
+    {
+     "t": "OLBG prints 2/3 win tips (67%) for Alex Michelsen",
+     "src": "https://www.olbg.com/betting-tips/Tennis/All_Tennis/All_Events/Alex_Michelsen_vs_Botic_Van_De_Zandschulp/3?event_id=902240"
+    }
+   ],
+   "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
+   "id": "TN-03"
+  },
+  {
+   "sport": "Tennis",
+   "event_id": "902187",
+   "event": "Polina Kudermetova vs Janice Tjen",
+   "competition": "All Tennis",
+   "date_label": "Today 02:00",
+   "selection": "Janice Tjen",
+   "market": "Win Match",
+   "olbg_tips": "2/2",
+   "olbg_pct": 100,
+   "prediction": "Janice Tjen to upset Polina Kudermetova at the Guangzhou Open. ESPN lists the pair as a first-round match at the WTA event in China, and both OLBG win tips placed so far favour Tjen, giving her a 100% consensus. It is a thin market, but the unanimous support for the underdog against the higher-profile Kudermetova makes Tjen the pick.",
+   "facts": [
+    {
+     "t": "ESPN lists Kudermetova v Tjen as a Round 1 match at the Guangzhou Open",
+     "src": "https://www.espn.com/tennis/scoreboard"
+    },
+    {
+     "t": "OLBG prints 2/2 win tips (100%) for Janice Tjen",
+     "src": "https://www.olbg.com/betting-tips/Tennis/All_Tennis/All_Events/Polina_Kudermetova_vs_Janice_Tjen/3?event_id=902187"
+    }
+   ],
+   "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
+   "id": "TN-04"
+  },
+  {
+   "sport": "Tennis",
+   "event_id": "902310",
+   "event": "Tereza Valentova vs Mia Pohankova",
+   "competition": "All Tennis",
+   "date_label": "Today 02:30",
+   "selection": "Tereza Valentova",
+   "market": "Win Match",
+   "olbg_tips": "1/1",
+   "olbg_pct": 100,
+   "prediction": "Tereza Valentova to beat Mia Pohankova on Show Court at the Toray Pan Pacific Open in Tokyo. ESPN has the all-Czech meeting as a first-round tie at the WTA 500 tournament, whose main draw runs through to 1 November. The single OLBG win tip lodged sits with Valentova; with no evidence of support for her opponent, she is the selection in a small market.",
+   "facts": [
+    {
+     "t": "ESPN lists Valentova v Pohankova as a Round 1 Show Court match at the Toray Pan Pacific Open",
+     "src": "https://www.espn.com/tennis/scoreboard/tournament/_/eventId/264-2026"
+    },
+    {
+     "t": "OLBG prints 1/1 win tip (100%) for Tereza Valentova",
+     "src": "https://www.olbg.com/betting-tips/Tennis/All_Tennis/All_Events/Tereza_Valentova_vs_Mia_Pohankova/3?event_id=902310"
+    }
+   ],
+   "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
+   "id": "TN-05"
+  },
+  {
+   "sport": "Basketball",
+   "event_id": "536177",
+   "event": "Panathinaikos vs Milano",
+   "competition": "Euroleague",
+   "date_label": "Today 15:15",
+   "selection": "Panathinaikos",
+   "market": "Money Line",
+   "olbg_tips": "5/8",
+   "olbg_pct": 63,
+   "prediction": "Panathinaikos to beat Armani Olimpia Milan in EuroLeague Round 8. The official league table has Panathinaikos sitting first and Milan down in 19th, and the Greeks come in off an 85-79 Round 7 win over Baskonia. Five of eight OLBG tips back the leaders at 63%, making the table-toppers the money-line selection at the 15:15 local tip-off.",
+   "facts": [
+    {
+     "t": "EuroLeague official site: Round 8 PAO (1st) v Milan (19th); Round 7 result PAO 85-79 Baskonia",
+     "src": "https://www.euroleaguebasketball.net/en/euroleague/"
+    },
+    {
+     "t": "OLBG prints 5/8 win tips (63%) for Panathinaikos",
+     "src": "https://www.olbg.com/betting-tips/Basketball/European/Euroleague/Panathinaikos_vs_Milano/4?event_id=536177"
+    }
+   ],
+   "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
+   "id": "BB-01"
+  },
+  {
+   "sport": "Basketball",
+   "event_id": "536176",
+   "event": "BC Dubai vs Paris",
+   "competition": "Euroleague",
+   "date_label": "Today 12:00",
+   "selection": "BC Dubai",
+   "market": "Money Line",
+   "olbg_tips": "4/7",
+   "olbg_pct": 57,
+   "prediction": "BC Dubai to beat Paris Basketball in Round 8 of the EuroLeague. Dubai hold sixth place in the official standings while Paris languish in 18th, and Paris were beaten 104-93 at Valencia in Round 7. Four of seven OLBG tips favour Dubai at 57%, and the gap in the table makes the sixth-placed hosts the sensible money-line call.",
+   "facts": [
+    {
+     "t": "EuroLeague official site: Round 8 Dubai (6th) v Paris (18th); Round 7 result Paris 93-104 Valencia",
+     "src": "https://www.euroleaguebasketball.net/en/euroleague/"
+    },
+    {
+     "t": "OLBG prints 4/7 win tips (57%) for BC Dubai",
+     "src": "https://www.olbg.com/betting-tips/Basketball/European/Euroleague/BC_Dubai_vs_Paris/4?event_id=536176"
+    }
+   ],
+   "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
+   "id": "BB-02"
+  },
+  {
+   "sport": "Basketball",
+   "event_id": "536179",
+   "event": "Valencia vs Fenerbahce",
+   "competition": "Euroleague",
+   "date_label": "Today 15:30",
+   "selection": "Fenerbahce",
+   "market": "Money Line",
+   "olbg_tips": "4/6",
+   "olbg_pct": 67,
+   "prediction": "Fenerbahce to win at Valencia in a heavyweight Round 8 meeting between the second and third-placed EuroLeague sides. Fenerbahce arrive on the back of a tight 64-61 success at Olympiacos, and four of six OLBG tips back the Istanbul club at 67%. Their defending form and the consensus edge make Fenerbahce the money-line selection.",
+   "facts": [
+    {
+     "t": "EuroLeague official site: Round 8 Valencia (3rd) v Fenerbahce (2nd); Round 7 result Olympiacos 61-64 Fenerbahce",
+     "src": "https://www.euroleaguebasketball.net/en/euroleague/"
+    },
+    {
+     "t": "OLBG prints 4/6 win tips (67%) for Fenerbahce",
+     "src": "https://www.olbg.com/betting-tips/Basketball/European/Euroleague/Valencia_vs_Fenerbahce/4?event_id=536179"
+    }
+   ],
+   "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
+   "id": "BB-03"
+  },
+  {
+   "sport": "Basketball",
+   "event_id": "536174",
+   "event": "Bayern Munich vs Barcelona",
+   "competition": "Euroleague",
+   "date_label": "Today 15:00",
+   "selection": "Bayern Munich",
+   "market": "Money Line",
+   "olbg_tips": "3/5",
+   "olbg_pct": 60,
+   "prediction": "Bayern Munich to upset FC Barcelona in EuroLeague Round 8. The official table has Bayern 16th and Barcelona ninth, so the Germans are underdogs, yet three of five OLBG tips still favour them at 60%. Barcelona did win 89-81 at Milan last week, but the consensus against the standings makes Bayern the value-side money-line pick at our 2.08 price.",
+   "facts": [
+    {
+     "t": "EuroLeague official site: Round 8 Bayern (16th) v Barcelona (9th); Round 7 result Milan 81-89 Barcelona",
+     "src": "https://www.euroleaguebasketball.net/en/euroleague/"
+    },
+    {
+     "t": "OLBG prints 3/5 win tips (60%) for Bayern Munich",
+     "src": "https://www.olbg.com/betting-tips/Basketball/European/Euroleague/Bayern_Munich_vs_Barcelona/4?event_id=536174"
+    }
+   ],
+   "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
+   "id": "BB-04"
+  },
+  {
+   "sport": "Basketball",
+   "event_id": "536178",
+   "event": "Baskonia vs Real Madrid",
+   "competition": "Euroleague",
+   "date_label": "Today 16:00",
+   "selection": "Baskonia",
+   "market": "Money Line",
+   "olbg_tips": "3/6",
+   "olbg_pct": 50,
+   "prediction": "Baskonia to host Real Madrid knowing the table gives them little margin: the official standings place Baskonia 20th and Real seventh, and Real ran up 113 points against Maccabi in Round 7. Three of six OLBG tips still back the home side at 50%, so this is a measured underdog selection rather than a confident one, priced accordingly at 2.50.",
+   "facts": [
+    {
+     "t": "EuroLeague official site: Round 8 Baskonia (20th) v Real Madrid (7th); Round 7 result Maccabi 99-113 Real Madrid",
+     "src": "https://www.euroleaguebasketball.net/en/euroleague/"
+    },
+    {
+     "t": "OLBG prints 3/6 win tips (50%) for Baskonia",
+     "src": "https://www.olbg.com/betting-tips/Basketball/European/Euroleague/Baskonia_vs_Real_Madrid/4?event_id=536178"
+    }
+   ],
+   "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
+   "id": "BB-05"
+  },
+  {
+   "sport": "Ice Hockey",
+   "event_id": "200081",
+   "event": "Kalpa vs Sport",
+   "competition": "Finland SM Liiga",
+   "date_label": "Today 12:30",
+   "selection": "Kalpa",
+   "market": "Money Line",
+   "olbg_tips": "5/5",
+   "olbg_pct": 100,
+   "prediction": "Kalpa to beat Sport in their Finland SM Liiga meeting. All five win tips on OLBG sit with Kalpa, a unanimous 100% consensus with two comments attached, making them the strongest-backed ice hockey selection of the day. In a league where home-ice form matters, the uniformity of the tipping makes Kalpa the money-line choice at the originated 1.50 price.",
+   "facts": [
+    {
+     "t": "OLBG lists Kalpa v Sport as a Finland SM Liiga match with 5/5 win tips (100%) and 2 comments",
+     "src": "https://www.olbg.com/betting-tips/Ice_Hockey/Other/Finland_SM_Liiga/Kalpa_vs_Sport/13?event_id=200081"
+    }
+   ],
+   "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
+   "id": "IH-01"
+  },
+  {
+   "sport": "Ice Hockey",
+   "event_id": "200082",
+   "event": "IF Malmo Redhawks vs Linkoping HC",
+   "competition": "Swedish Hockey League",
+   "date_label": "Today 14:00",
+   "selection": "IF Malmo Redhawks",
+   "market": "Money Line",
+   "olbg_tips": "3/3",
+   "olbg_pct": 100,
+   "prediction": "IF Malmo Redhawks to defeat Linkoping HC in the Swedish Hockey League. Every one of the three OLBG win tips favours Malmo, and two tipsters have added comments to the pick. The unanimous consensus in a three-tip sample is a clear signal for the home side, so Malmo are the money-line selection on today's SHL card.",
+   "facts": [
+    {
+     "t": "OLBG lists the SHL match with 3/3 win tips (100%) for IF Malmo Redhawks and 2 comments",
+     "src": "https://www.olbg.com/betting-tips/Ice_Hockey/Other/Swedish_Hockey_League/IF_Malmo_Redhawks_vs_Linkoping_HC/13?event_id=200082"
+    }
+   ],
+   "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
+   "id": "IH-02"
+  },
+  {
+   "sport": "Ice Hockey",
+   "event_id": "200083",
+   "event": "Frolunda HC vs Rogle BK",
+   "competition": "Swedish Hockey League",
+   "date_label": "Today 14:00",
+   "selection": "Frolunda HC",
+   "market": "Money Line",
+   "olbg_tips": "2/3",
+   "olbg_pct": 67,
+   "prediction": "Frolunda HC to edge Rogle BK in their SHL derby. Two of the three win tips on OLBG back Frolunda, a 67% share, with one comment explaining the call. It is not a unanimous market, but the majority support and home-ice context make Frolunda the money-line pick rather than the travelling Rogle side.",
+   "facts": [
+    {
+     "t": "OLBG lists the SHL match with 2/3 win tips (67%) for Frolunda HC and 1 comment",
+     "src": "https://www.olbg.com/betting-tips/Ice_Hockey/Other/Swedish_Hockey_League/Frolunda_HC_vs_Rogle_BK/13?event_id=200083"
+    }
+   ],
+   "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
+   "id": "IH-03"
+  },
+  {
+   "sport": "Ice Hockey",
+   "event_id": "200100",
+   "event": "Kolner Haie vs Adler Mannheim",
+   "competition": "Germany Eishockey Liga",
+   "date_label": "Today 14:30",
+   "selection": "Adler Mannheim",
+   "market": "Money Line",
+   "olbg_tips": "2/2",
+   "olbg_pct": 100,
+   "prediction": "Adler Mannheim to win at Kolner Haie in the German Eishockey Liga. Both OLBG win tips lodged for the game favour the away side, and two comments accompany the unanimous pick. The small sample counsels caution, but the absence of any tip for Cologne makes Mannheim the money-line selection at a fair price around 1.52.",
+   "facts": [
+    {
+     "t": "OLBG lists the DEL match with 2/2 win tips (100%) for Adler Mannheim and 2 comments",
+     "src": "https://www.olbg.com/betting-tips/Ice_Hockey/Other/Germany_Eishockey_Liga/Kolner_Haie_vs_Adler_Mannheim/13?event_id=200100"
+    }
+   ],
+   "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
+   "id": "IH-04"
+  },
+  {
+   "sport": "Ice Hockey",
+   "event_id": "200108",
+   "event": "CLB Blue Jackets @ PHI Flyers",
+   "competition": "NHL",
+   "date_label": "Today 19:07",
+   "selection": "PHI Flyers",
+   "market": "Money Line",
+   "olbg_tips": "2/3",
+   "olbg_pct": 67,
+   "prediction": "Philadelphia Flyers to beat the Columbus Blue Jackets at the Xfinity Mobile Arena. ESPN records the Flyers at 3-7-3 overall and 2-3-2 at home, against a Columbus team that is 4-5-0 and 0-2-0 on the road, with the market listing Philadelphia as slight +105 underdogs. Two of three OLBG tips still favour the Flyers at 67%, so they are the home money-line selection.",
+   "facts": [
+    {
+     "t": "ESPN scoreboard: CBJ (4-5-0, 0-2-0 away) at PHI (3-7-3, 2-3-2 home), Xfinity Mobile Arena; DraftKings ML CBJ -125 / PHI +105",
+     "src": "https://www.espn.com/nhl/scoreboard/_/date/20261027"
+    },
+    {
+     "t": "OLBG prints 2/3 win tips (67%) for PHI Flyers",
+     "src": "https://www.olbg.com/betting-tips/Ice_Hockey/NHL/NHL/CLB_Blue_Jackets_@_PHI_Flyers/13?event_id=200108"
+    }
+   ],
+   "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
+   "id": "IH-05"
+  },
+  {
+   "sport": "Volleyball",
+   "event_id": "37121",
+   "event": "Ziraat Bankasi vs Gaziantep Genclik Spor",
+   "competition": "All Volleyball",
+   "date_label": "Today 12:00",
+   "selection": "Ziraat Bankasi",
+   "market": "Win Match",
+   "olbg_tips": "4/4",
+   "olbg_pct": 100,
+   "prediction": "Ziraat Bankasi to beat Gaziantep Genclik Spor. All four win tips on OLBG sit with Ziraat, a unanimous 100% consensus, and three comments make this the most-discussed volleyball fixture of the day. With every tipster aligned and no support shown for the opposition, Ziraat Bankasi are the clear win-match selection at the short originated price of 1.36.",
+   "facts": [
+    {
+     "t": "OLBG prints 4/4 win tips (100%) for Ziraat Bankasi, with 3 comments",
+     "src": "https://www.olbg.com/betting-tips/Volleyball/All_Volleyball/All_Events/Ziraat_Bankasi_vs_Gaziantep_Genclik_Spor/21?event_id=37121"
+    }
+   ],
+   "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
+   "id": "VB-01"
+  },
+  {
+   "sport": "Volleyball",
+   "event_id": "37126",
+   "event": "TFL Altekma vs Halkbank Ankara",
+   "competition": "All Volleyball",
+   "date_label": "Today 08:00",
+   "selection": "Halkbank Ankara",
+   "market": "Win Match",
+   "olbg_tips": "4/5",
+   "olbg_pct": 80,
+   "prediction": "Halkbank Ankara to win away at TFL Altekma. Four of the five OLBG win tips back Halkbank, an 80% share, with one comment on the fixture. The Turkish club are the strongest-fancied volleyball side apart from Ziraat, and that weight of consensus makes Halkbank Ankara the win-match pick at 1.50.",
+   "facts": [
+    {
+     "t": "OLBG prints 4/5 win tips (80%) for Halkbank Ankara, with 1 comment",
+     "src": "https://www.olbg.com/betting-tips/Volleyball/All_Volleyball/All_Events/TFL_Altekma_vs_Halkbank_Ankara/21?event_id=37126"
+    }
+   ],
+   "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
+   "id": "VB-02"
+  },
+  {
+   "sport": "Volleyball",
+   "event_id": "37075",
+   "event": "Marignano W vs Bergamo W",
+   "competition": "All Volleyball",
+   "date_label": "Today 15:00",
+   "selection": "Bergamo W",
+   "market": "Win Match",
+   "olbg_tips": "5/7",
+   "olbg_pct": 71,
+   "prediction": "Volley Bergamo to beat Marignano on the women's card. Five of the seven win tips on OLBG favour Bergamo at 71%, including one tip from a flagged expert, and a comment is attached. The majority of a relatively deep sample points the same way, so Bergamo are the win-match selection despite opening on the road.",
+   "facts": [
+    {
+     "t": "OLBG prints 5/7 win tips (71%) for Bergamo W, including an expert tip, with 1 comment",
+     "src": "https://www.olbg.com/betting-tips/Volleyball/All_Volleyball/All_Events/Marignano_W_vs_Bergamo_W/21?event_id=37075"
+    }
+   ],
+   "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
+   "id": "VB-03"
+  },
+  {
+   "sport": "Volleyball",
+   "event_id": "37129",
+   "event": "VaLePa vs AC Oulu",
+   "competition": "All Volleyball",
+   "date_label": "Today 12:30",
+   "selection": "VaLePa",
+   "market": "Win Match",
+   "olbg_tips": "3/4",
+   "olbg_pct": 75,
+   "prediction": "VaLePa to defeat AC Oulu in their Finnish league meeting. Three of the four OLBG win tips favour VaLePa at 75%, with two comments from tipsters and an expert flag attached to the pick. The consensus is consistent rather than unanimous, but it is enough to make VaLePa the home win-match selection at 1.59.",
+   "facts": [
+    {
+     "t": "OLBG prints 3/4 win tips (75%) for VaLePa, with 2 comments and an expert flag",
+     "src": "https://www.olbg.com/betting-tips/Volleyball/All_Volleyball/All_Events/VaLePa_vs_AC_Oulu/21?event_id=37129"
+    }
+   ],
+   "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
+   "id": "VB-04"
+  },
+  {
+   "sport": "Volleyball",
+   "event_id": "37103",
+   "event": "Suzano Volei vs Goias Volei",
+   "competition": "All Volleyball",
+   "date_label": "Today 17:30",
+   "selection": "Suzano Volei",
+   "market": "Win Match",
+   "olbg_tips": "3/4",
+   "olbg_pct": 75,
+   "prediction": "Suzano Volei to beat Goias Volei in the Brazilian league. Three of the four win tips on OLBG sit with Suzano, a 75% share, and one tipster has left a comment. The Brazilian side hold the majority view in a compact market, making Suzano the win-match selection for tonight's 17:30 start.",
+   "facts": [
+    {
+     "t": "OLBG prints 3/4 win tips (75%) for Suzano Volei, with 1 comment",
+     "src": "https://www.olbg.com/betting-tips/Volleyball/All_Volleyball/All_Events/Suzano_Volei_vs_Goias_Volei/21?event_id=37103"
+    }
+   ],
+   "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
+   "id": "VB-05"
+  },
+  {
+   "sport": "Rugby Union",
+   "event_id": "609605",
+   "event": "Dax v Provence",
+   "competition": "All Rugby Union",
+   "date_label": "29 Oct 16:00",
+   "selection": "Dax",
+   "market": "To Win",
+   "olbg_tips": "2/3",
+   "olbg_pct": 67,
+   "prediction": "Dax to beat Provence in their Pro D2 fixture on 29 October. Two of the three win tips on OLBG favour Dax, a 67% share, with one comment attached. The three-way market means the draw remains a live possibility, but the consensus favours the home side, so Dax are the to-win selection at the originated 2.14 price.",
+   "facts": [
+    {
+     "t": "OLBG prints 2/3 win tips (67%) for Dax, with 1 comment",
+     "src": "https://www.olbg.com/betting-tips/Rugby_Union/All_Rugby_Union/All_Events/Dax_v_Provence/9?event_id=609605"
+    }
+   ],
+   "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
+   "id": "RU-01"
   },
   {
    "sport": "Rugby Union",
@@ -473,572 +591,311 @@
    "market": "To Win",
    "olbg_tips": "2/2",
    "olbg_pct": 100,
-   "prediction": "Colomiers to win at home against Agen in Pro D2. Both tips on the match are on Colomiers, and Agen's away record in the second division has been the weakest part of their season. Pro D2 home advantage is worth more than the market generally prices, which is why the short price on the home side is still the correct side of the bet.",
+   "prediction": "Colomiers to defeat Agen in Pro D2 on 30 October. Both OLBG win tips lodged for the match sit with Colomiers, a unanimous if small sample. With no tipster backing Agen or the draw, the home side are the straightforward to-win selection, though the thin market means the fair price stays as high as 1.90.",
    "facts": [
     {
-     "t": "OLBG: Colomiers most-tipped, 2 of 2 tips, 100%",
-     "src": "https://www.olbg.com/betting-tips/Rugby_Union/9"
+     "t": "OLBG prints 2/2 win tips (100%) for Colomiers",
+     "src": "https://www.olbg.com/betting-tips/Rugby_Union/All_Rugby_Union/All_Events/Colomiers_v_Agen/9?event_id=609604"
+    }
+   ],
+   "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
+   "id": "RU-02"
+  },
+  {
+   "sport": "Rugby Union",
+   "event_id": "609603",
+   "event": "Montauban v Narbonne",
+   "competition": "All Rugby Union",
+   "date_label": "30 Oct 14:30",
+   "selection": "Montauban",
+   "market": "To Win",
+   "olbg_tips": "2/3",
+   "olbg_pct": 67,
+   "prediction": "Montauban to beat Narbonne when the Pro D2 pair meet on 30 October. Two of the three win tips on OLBG favour Montauban at 67%, mirroring the Dax consensus elsewhere on the French card. The draw is always a factor in the three-way market, but Montauban are the to-win pick at 2.14.",
+   "facts": [
+    {
+     "t": "OLBG prints 2/3 win tips (67%) for Montauban",
+     "src": "https://www.olbg.com/betting-tips/Rugby_Union/All_Rugby_Union/All_Events/Montauban_v_Narbonne/9?event_id=609603"
+    }
+   ],
+   "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
+   "id": "RU-03"
+  },
+  {
+   "sport": "Rugby Union",
+   "event_id": "609590",
+   "event": "Glasgow Warriors v Lions",
+   "competition": "All Rugby Union",
+   "date_label": "30 Oct 15:45",
+   "selection": "Glasgow Warriors",
+   "market": "To Win",
+   "olbg_tips": "1/1",
+   "olbg_pct": 100,
+   "prediction": "Glasgow Warriors to beat the Lions in United Rugby Championship Round 5. The URC's official site confirms the new round begins on 30 October following the Round 4 review published on 25 October, and the sole OLBG win tip lodged so far backs Glasgow. With the market barely formed, the Warriors are a tentative to-win selection at 1.67.",
+   "facts": [
+    {
+     "t": "URC official homepage: next round countdown and Round 4 review published 25 October 2026",
+     "src": "https://www.unitedrugby.com/"
     },
     {
-     "t": "Fixture listed as Colomiers v Agen, 30 October 2026",
-     "src": "https://www.olbg.com/betting-tips/Rugby_Union/All_Rugby_Union/All_Events/Colomiers_v_Agen/9?event_id=609604"
+     "t": "OLBG prints 1/1 win tip (100%) for Glasgow Warriors",
+     "src": "https://www.olbg.com/betting-tips/Rugby_Union/All_Rugby_Union/All_Events/Glasgow_Warriors_v_Lions/9?event_id=609590"
+    }
+   ],
+   "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
+   "id": "RU-04"
+  },
+  {
+   "sport": "Rugby Union",
+   "event_id": "609584",
+   "event": "Connacht v Leinster",
+   "competition": "All Rugby Union",
+   "date_label": "30 Oct 15:45",
+   "selection": "Connacht +3.50",
+   "market": "Handicap",
+   "olbg_tips": "1/1",
+   "olbg_pct": 100,
+   "prediction": "Connacht +3.50 against Leinster in the URC Round 5 Irish interpro. Leinster prop Tadhg Furlong has been cited under Law 9.27 for an incident in the 24 October Munster match, with the disciplinary process still in progress, while the only OLBG tip on the handicap takes Connacht plus the 3.5-point start. Backing Connacht to cover is the selection.",
+   "facts": [
+    {
+     "t": "URC disciplinary update: Tadhg Furlong cited under Law 9.27 after the 24 October Munster match; process in progress",
+     "src": "https://www.unitedrugby.com/latest/media-centre/disciplinary-update-tadhg-furlong/"
+    },
+    {
+     "t": "OLBG prints 1/1 handicap tip (100%) for Connacht +3.50",
+     "src": "https://www.olbg.com/betting-tips/Rugby_Union/All_Rugby_Union/All_Events/Connacht_v_Leinster/9?event_id=609584"
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
    "id": "RU-05"
   },
   {
-   "sport": "Tennis",
-   "event_id": "902233",
-   "event": "Novak Djokovic vs Ugo Humbert",
-   "competition": "All Tennis",
-   "date_label": "28 Oct 06:00",
-   "selection": "Novak Djokovic",
-   "market": "Win Match",
-   "olbg_tips": "4/5",
-   "olbg_pct": 80,
-   "prediction": "Novak Djokovic to beat Ugo Humbert in the first round at Basel. Djokovic is the fourth seed and 11th in the Live Race to Turin, needing points for a record 19th ATP Finals appearance, and he leads the head-to-head 1-0 from Wimbledon in 2019. Humbert is ranked 35 and has won one of his last five matches. Four of five tips are on Djokovic.",
-   "facts": [
-    {
-     "t": "Djokovic, 39, fourth seed, playing Basel for the first time since 2011, drawn against Humbert in round one and 11th in the PIF ATP Live Race To Turin",
-     "src": "https://www.atptour.com/en/news/djokovic-basel-2026-draw-preview"
-    },
-    {
-     "t": "Humbert ranked No. 35; only previous meeting Wimbledon 2019, Djokovic won in straight sets",
-     "src": "https://novakdjokovic.com/en/news/tennis/novak-to-face-humbert-in-basel-opener/"
-    },
-    {
-     "t": "Form going in: Djokovic 4 wins 1 loss in his last five, Humbert 1 win 4 losses",
-     "src": "https://tipsterio.de/sportwetten-tipps/djokovic-vs-humbert-wett-tipp-prognose-27-10-2026"
-    },
-    {
-     "t": "OLBG lists the match as 28 Oct 06:00 - the ATP schedule has it on Wednesday 28 October, one source says Tuesday 27 at 12:00 local",
-     "src": "https://www.atptour.com/en/news/djokovic-basel-2026-first-match"
-    }
-   ],
-   "verification": "tip split read from the OLBG listing at retrieval; 4 fact(s), each with an https source",
-   "id": "TN-01"
-  },
-  {
-   "sport": "Tennis",
-   "event_id": "902232",
-   "event": "Stan Wawrinka vs Jiri Lehecka",
-   "competition": "All Tennis",
-   "date_label": "Tomorrow 14:30",
-   "selection": "Jiri Lehecka",
-   "market": "Win Match",
-   "olbg_tips": "4/7",
-   "olbg_pct": 57,
-   "prediction": "Jiri Lehecka to beat Stan Wawrinka in Basel. Wawrinka is playing the final tournament of his career on a wildcard and the occasion will carry him for a set, but Lehecka is the eighth seed, eleven years younger, and has the serve to take the ball out of Wawrinka's hands on a fast indoor court. Four of seven tips agree.",
-   "facts": [
-    {
-     "t": "Wawrinka on a wildcard against eighth seed Lehecka in round one; Basel is Wawrinka's final tournament",
-     "src": "https://www.tennis365.com/tennis-news/basel-open-draw-stan-wawrinka-final-tournament-novak-djokovic-ben-shelton"
-    },
-    {
-     "t": "Lehecka is seeded 8 in the 2026 Swiss Indoors draw",
-     "src": "https://en.wikipedia.org/wiki/2026_Swiss_Indoors_%E2%80%93_Singles"
-    }
-   ],
-   "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
-   "id": "TN-02"
-  },
-  {
-   "sport": "Tennis",
-   "event_id": "902172",
-   "event": "Leylah Fernandez vs Himeno Sakatsume",
-   "competition": "All Tennis",
-   "date_label": "Tomorrow 02:00",
-   "selection": "Leylah Fernandez",
-   "market": "Win Match",
-   "olbg_tips": "4/6",
-   "olbg_pct": 67,
-   "prediction": "Leylah Fernandez to beat Himeno Sakatsume. Fernandez is the higher-ranked player and the more experienced on indoor hard courts, and the Japanese qualifier has had to play her way through the draw. Four of six tips are on Fernandez at a price that has drifted far enough to be worth taking rather than the shorter alternative.",
-   "facts": [
-    {
-     "t": "OLBG: Leylah Fernandez most-tipped, 4 of 6 tips, 67%",
-     "src": "https://www.olbg.com/betting-tips/Tennis/3"
-    }
-   ],
-   "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
-   "id": "TN-03"
-  },
-  {
-   "sport": "Tennis",
-   "event_id": "902238",
-   "event": "Alejandro Tabilo vs Rafael Jodar",
-   "competition": "All Tennis",
-   "date_label": "Tomorrow 09:00",
-   "selection": "Rafael Jodar",
-   "market": "Win Match",
-   "olbg_tips": "3/5",
-   "olbg_pct": 60,
-   "prediction": "Rafael Jodar to beat Alejandro Tabilo in Basel. Jodar is the third seed and currently occupies the ninth and last qualifying place in the Live Race to Turin, which means he has every reason to play this week properly. Tabilo is a dangerous left-hander indoors, but three of five tips are on the Spaniard and the ranking gap is real.",
-   "facts": [
-    {
-     "t": "Jodar seeded 3 at the 2026 Swiss Indoors and ninth in the PIF ATP Live Race To Turin",
-     "src": "https://www.atptour.com/en/news/djokovic-wawrinka-basel-2026-practice"
-    },
-    {
-     "t": "Draw: Tabilo v Jodar in round one",
-     "src": "https://www.tennisworlditalia.com/en/tennis/news/Atp_Tennis/108227/atp-500-basel-hit-by-three-major-withdrawals-updated-main-draw/"
-    }
-   ],
-   "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
-   "id": "TN-04"
-  },
-  {
-   "sport": "Tennis",
-   "event_id": "902240",
-   "event": "Alex Michelsen vs Botic Van De Zandschulp",
-   "competition": "All Tennis",
-   "date_label": "Tomorrow 10:00",
-   "selection": "Alex Michelsen",
-   "market": "Win Match",
-   "olbg_tips": "2/3",
-   "olbg_pct": 67,
-   "prediction": "Alex Michelsen to beat Botic van de Zandschulp. Two of three tips are on the American, who is the younger and more aggressive of the two on this surface. Van de Zandschulp has the better tour-level floor but a lower ceiling, and at a price near even money the aggressive side is the one to take in a match that should be decided on serve.",
-   "facts": [
-    {
-     "t": "OLBG: Alex Michelsen most-tipped, 2 of 3 tips, 67%",
-     "src": "https://www.olbg.com/betting-tips/Tennis/3"
-    }
-   ],
-   "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
-   "id": "TN-05"
-  },
-  {
-   "sport": "Volleyball",
-   "event_id": "37101",
-   "event": "Montes Claros vs Sada Cruzeiro",
-   "competition": "All Volleyball",
-   "date_label": "Today 22:00",
-   "selection": "Montes Claros",
-   "market": "Win Match",
-   "olbg_tips": "10/18",
-   "olbg_pct": 56,
-   "prediction": "Montes Claros to beat Sada Cruzeiro on the opening night of the Superliga. This is a pick against the champions: Cruzeiro are chasing an eleventh title but they are on the road in a 5,000-seat gym in the north of Minas Gerais against a promoted side playing its first top-flight match in two seasons in front of a full house. Ten of eighteen tips are on the hosts.",
-   "facts": [
-    {
-     "t": "Montes Claros Volei x Sada Cruzeiro, 26 October 2026, 18:30, Ginásio Tancredo Neves, round 1 of the 2026/27 Superliga Masculina",
-     "src": "https://voleibrasil1.s3.amazonaws.com/2026/10/184.2-TABELA-OFICIAL-MASCULINA-1o-TURNO.pdf"
-    },
-    {
-     "t": "Cruzeiro are the reigning champions seeking an 11th Superliga title; Montes Claros return to the top division after two seasons",
-     "src": "https://ge.globo.com/mg/triangulo-mineiro/volei/noticia/2026/10/08/superliga-masculina-202627-veja-tabela-de-jogos-do-cruzeiro-no-1o-turno.ghtml"
-    },
-    {
-     "t": "OLBG: Montes Claros most-tipped, 10 of 18 tips, 56%",
-     "src": "https://www.olbg.com/betting-tips/Volleyball/21"
-    }
-   ],
-   "verification": "tip split read from the OLBG listing at retrieval; 3 fact(s), each with an https source",
-   "id": "VB-01"
-  },
-  {
-   "sport": "Volleyball",
-   "event_id": "37004",
-   "event": "Sancor Volei W vs SESI Volei Bauru W",
-   "competition": "All Volleyball",
-   "date_label": "Today 21:30",
-   "selection": "SESI Volei Bauru W",
-   "market": "Win Match",
-   "olbg_tips": "9/14",
-   "olbg_pct": 64,
-   "prediction": "SESI Bauru to win away at Sancor. Nine of fourteen tips back the visitors, the largest split on the women's card, and Bauru have been the more settled of the two squads through pre-season. Sancor at home in Argentina will make it awkward, but the gap in quality is the sort that shows up in the third and fourth sets.",
-   "facts": [
-    {
-     "t": "OLBG: SESI Volei Bauru W most-tipped, 9 of 14 tips, 64%",
-     "src": "https://www.olbg.com/betting-tips/Volleyball/21"
-    }
-   ],
-   "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
-   "id": "VB-02"
-  },
-  {
-   "sport": "Volleyball",
-   "event_id": "37102",
-   "event": "Norde Volei vs Volei Renata",
-   "competition": "All Volleyball",
-   "date_label": "Tomorrow 00:00",
-   "selection": "Norde Volei",
-   "market": "Win Match",
-   "olbg_tips": "7/12",
-   "olbg_pct": 58,
-   "prediction": "Norde Volei to beat Volei Renata in Fortaleza. Seven of twelve tips are on the home side in a match that opens the second half of Monday's double-header. Renata were beaten 3-0 by Cruzeiro in last season's final and have had a short turnaround, while Norde have built the roster specifically to win these home matches.",
-   "facts": [
-    {
-     "t": "Norde Volei x Volei Renata, 26 October 2026, 21:00, round 1",
-     "src": "https://www.otempo.com.br/sports/volei/2026/9/21/sada-cruzeiro-estreia-na-superliga-2026-27-contra-o-montes-claros-veja-os-duelos-do-1o-turno"
-    },
-    {
-     "t": "Cruzeiro beat Volei Renata 3-0 in the 2025/26 final at the Ibirapuera",
-     "src": "https://webvolei.com.br/superliga-masculina-2026-27-tabela-jogos-classificacao-e-onde-assistir/"
-    },
-    {
-     "t": "OLBG: Norde Volei most-tipped, 7 of 12 tips, 58%",
-     "src": "https://www.olbg.com/betting-tips/Volleyball/21"
-    }
-   ],
-   "verification": "tip split read from the OLBG listing at retrieval; 3 fact(s), each with an https source",
-   "id": "VB-03"
-  },
-  {
-   "sport": "Volleyball",
-   "event_id": "37075",
-   "event": "Marignano W vs Bergamo W",
-   "competition": "All Volleyball",
-   "date_label": "Tomorrow 19:00",
-   "selection": "Bergamo W",
-   "market": "Win Match",
-   "olbg_tips": "4/5",
-   "olbg_pct": 80,
-   "prediction": "Bergamo to win at Marignano in the Italian women's league. Four of five tips are on the visitors at 80%, the clearest split on the volleyball card, and Bergamo's block has been the stronger unit in the opening rounds. Marignano have the home gym but not the depth to win a long match against a side this well fancied.",
-   "facts": [
-    {
-     "t": "OLBG: Bergamo W most-tipped, 4 of 5 tips, 80%",
-     "src": "https://www.olbg.com/betting-tips/Volleyball/21"
-    }
-   ],
-   "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
-   "id": "VB-04"
-  },
-  {
-   "sport": "Volleyball",
-   "event_id": "37081",
-   "event": "Uni Opole W vs Palac Bydgoszcz W",
-   "competition": "All Volleyball",
-   "date_label": "Tomorrow 19:30",
-   "selection": "Uni Opole W",
-   "market": "Win Match",
-   "olbg_tips": "4/6",
-   "olbg_pct": 67,
-   "prediction": "Uni Opole to beat Palac Bydgoszcz at home in the Polish league. Four of six tips go to Opole, and the home gym in Opole has been one of the harder venues in the league for visiting sides to take three sets from. Bydgoszcz have the taller front line; Opole have the better serving run and that decides close sets.",
-   "facts": [
-    {
-     "t": "OLBG: Uni Opole W most-tipped, 4 of 6 tips, 67%",
-     "src": "https://www.olbg.com/betting-tips/Volleyball/21"
-    }
-   ],
-   "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
-   "id": "VB-05"
-  },
-  {
    "sport": "Handball",
-   "event_id": "12136",
-   "event": "SC Magdeburg vs HC Kriens Luzern",
-   "competition": "EHF Champions League",
-   "date_label": "28 Oct 19:45",
-   "selection": "SC Magdeburg",
+   "event_id": "12197",
+   "event": "VasterasIrsta HF W vs Skuru IK W",
+   "competition": "All Handball",
+   "date_label": "Today 14:00",
+   "selection": "VasterasIrsta HF (W)",
    "market": "Money Line",
-   "olbg_tips": "Tie 8/13",
-   "olbg_pct": 62,
-   "prediction": "Magdeburg to beat Kriens Luzern in the Champions League. Magdeburg are the strongest side in Group F and Kriens are the group's weakest, so the only question is the margin rather than the result. Because OLBG's handball page shows the draw as the most popular selection for almost every match, the split is unusable and the price is built from the fixture itself.",
+   "olbg_tips": "2/4",
+   "olbg_pct": 50,
+   "prediction": "VasterasIrsta to beat Skuru IK in the Swedish women's meeting that starts at 14:00. The market is evenly split, with two of the four OLBG win tips on the home side at 50%, and one comment attached. With no dominant consensus either way, this is a low-stakes home selection: VasterasIrsta get the nod at a fair 2.50 price rather than any strong conviction call.",
    "facts": [
     {
-     "t": "OLBG lists SC Magdeburg v HC Kriens Luzern, 28 October 2026, 19:45, with Tie as the most-tipped selection (8 of 13)",
-     "src": "https://www.olbg.com/betting-tips/Handball/20"
-    },
-    {
-     "t": "The handball draw share across the round makes the published split unusable - recorded as flag F-002",
-     "src": "https://www.olbg.com/betting-tips/Handball/All_Handball/All_Events/SC_Magdeburg_vs_HC_Kriens_Luzern/20?event_id=12136"
+     "t": "OLBG lists the 14:00 women's match with 2/4 win tips (50%) for VasterasIrsta HF and 1 comment",
+     "src": "https://www.olbg.com/betting-tips/Handball/All_Handball/All_Events/VasterasIrsta_HF_W_vs_Skuru_IK_W/20?event_id=12197"
     }
    ],
-   "selection_note": "OLBG's listing names Tie as the most-tipped selection; that pattern is flagged, and we price a match winner instead.",
-   "cal2_p_fair": 0.62,
-   "method": "CAL-2 (Tie split unusable; home favourite)",
-   "verification": "price is an explicit estimate, not a tip-split repricing; 2 fact(s), each with an https source; our own selection replaces the one OLBG lists",
+   "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
    "id": "HB-01"
   },
   {
    "sport": "Handball",
-   "event_id": "12132",
-   "event": "KS Kielce vs Kolstad",
-   "competition": "EHF Champions League",
-   "date_label": "28 Oct 19:45",
-   "selection": "KS Kielce",
+   "event_id": "12196",
+   "event": "OV Helsingborg HK W vs Skovde HF W",
+   "competition": "All Handball",
+   "date_label": "Today 14:00",
+   "selection": "Skovde HF (W)",
    "market": "Money Line",
-   "olbg_tips": "Tie 6/10",
-   "olbg_pct": 60,
-   "prediction": "Kielce to win at home against Kolstad. Kielce at the Hala Legionow are a different team from the one that travels, and Kolstad's away record in the Champions League group stage has been the softest part of their campaign. The handicap would be the better market if it carried tips; as it stands the money line at a short price is the only defensible position.",
+   "olbg_tips": "2/4",
+   "olbg_pct": 50,
+   "prediction": "Skovde HF to win away at OV Helsingborg in the second Swedish women's game starting at 14:00. Two of the four OLBG win tips favour Skovde at 50%, mirroring the split market in the other Swedish fixture, with a comment attached. The slight edge in tipster support makes the travelling Skovde side the money-line pick in an undecided-looking market.",
    "facts": [
     {
-     "t": "OLBG lists KS Kielce v Kolstad, 28 October 2026, 19:45",
-     "src": "https://www.olbg.com/betting-tips/Handball/20"
-    },
-    {
-     "t": "No independent team-news source was retrieved for this fixture; the price is a fixture-level view only",
-     "src": "https://www.olbg.com/betting-tips/Handball/All_Handball/All_Events/KS_Kielce_vs_Kolstad/20?event_id=12132"
+     "t": "OLBG lists the 14:00 women's match with 2/4 win tips (50%) for Skovde HF and 1 comment",
+     "src": "https://www.olbg.com/betting-tips/Handball/All_Handball/All_Events/OV_Helsingborg_HK_W_vs_Skovde_HF_W/20?event_id=12196"
     }
    ],
-   "selection_note": "Match winner priced instead of OLBG's Tie selection.",
-   "cal2_p_fair": 0.6,
-   "method": "CAL-2 (Tie split unusable; home favourite)",
-   "verification": "price is an explicit estimate, not a tip-split repricing; 2 fact(s), each with an https source; our own selection replaces the one OLBG lists",
+   "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
    "id": "HB-02"
   },
   {
    "sport": "Handball",
-   "event_id": "12127",
-   "event": "FC Porto vs Veszprem",
-   "competition": "EHF Champions League",
-   "date_label": "28 Oct 17:45",
-   "selection": "Veszprem",
+   "event_id": "12180",
+   "event": "SG Flensburg Handewitt vs HBW Balingen Weilstetten",
+   "competition": "All Handball",
+   "date_label": "29 Oct 14:00",
+   "selection": "HBW Balingen-Weilstetten",
    "market": "Money Line",
-   "olbg_tips": "Tie 4/8",
-   "olbg_pct": 50,
-   "prediction": "Veszprem to win in Porto. This is the tie of the round and the price should be closer to even money than the fixture list suggests, but Veszprem's record in Portugal is strong and Porto have been leaking goals at home in the group. Four of eight tips sit on the draw, which tells you the market expects a close game and nothing more.",
+   "olbg_tips": "1/1",
+   "olbg_pct": 100,
+   "prediction": "HBW Balingen-Weilstetten to cause a shock at SG Flensburg-Handewitt when the Bundesliga pair meet on 29 October. The single OLBG win tip lodged backs the underdogs, and while a one-tip sample is thin, no support appears for the home side. Balingen are a speculative money-line selection at 2.22, a low-confidence call flagged for review.",
    "facts": [
     {
-     "t": "OLBG lists FC Porto v Veszprem, 28 October 2026, 17:45",
-     "src": "https://www.olbg.com/betting-tips/Handball/20"
-    },
-    {
-     "t": "Close game expected: 4 of 8 published tips on the draw",
-     "src": "https://www.olbg.com/betting-tips/Handball/All_Handball/All_Events/FC_Porto_v_Veszprem/20?event_id=12127"
+     "t": "OLBG lists the 29 October Bundesliga match with 1/1 win tip (100%) for HBW Balingen-Weilstetten",
+     "src": "https://www.olbg.com/betting-tips/Handball/All_Handball/All_Events/SG_Flensburg_Handewitt_vs_HBW_Balingen_Weilstetten/20?event_id=12180"
     }
    ],
-   "selection_note": "Away side priced; OLBG listed Tie.",
-   "cal2_p_fair": 0.55,
-   "method": "CAL-2 (Tie split unusable; away side)",
-   "verification": "price is an explicit estimate, not a tip-split repricing; 2 fact(s), each with an https source; our own selection replaces the one OLBG lists",
+   "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
    "id": "HB-03"
   },
   {
    "sport": "Handball",
-   "event_id": "12134",
-   "event": "PSG Handball vs Aalborg Handbold",
-   "competition": "EHF Champions League",
-   "date_label": "28 Oct 19:45",
-   "selection": "Aalborg Handbold",
+   "event_id": "12137",
+   "event": "Skanderborg Handbold vs FC Barcelona",
+   "competition": "All Handball",
+   "date_label": "29 Oct 15:45",
+   "selection": "Skanderborg Handbold",
    "market": "Money Line",
-   "olbg_tips": "Tie 4/6",
-   "olbg_pct": 67,
-   "prediction": "Aalborg to win in Paris. PSG and Aalborg are the two sides expected to contest Group C, and the Danish champions have the deeper bench for a midweek away trip. Paris at the Stade Pierre de Coubertin are always dangerous, so the stake stays small; this is a read on squad depth rather than on the published split.",
+   "olbg_tips": "1/3",
+   "olbg_pct": 33,
+   "prediction": "Skanderborg Handbold to host FC Barcelona on 29 October knowing they are the underdogs of the round. One of the three OLBG win tips backs the Danish side at 33%, so this is an underdog selection rather than a favoured one. The long 2.86 card price reflects the size of the task, and the pick is published at low confidence with the fixture flagged for review.",
    "facts": [
     {
-     "t": "OLBG lists PSG Handball v Aalborg Handbold, 28 October 2026, 19:45",
-     "src": "https://www.olbg.com/betting-tips/Handball/20"
-    },
-    {
-     "t": "Group C pairing; no independent form source retrieved for this fixture",
-     "src": "https://www.olbg.com/betting-tips/Handball/All_Handball/All_Events/PSG_Handball_vs_Aalborg_Handbold/20?event_id=12134"
+     "t": "OLBG lists the 29 October match with 1/3 win tips (33%) for Skanderborg Handbold against FC Barcelona",
+     "src": "https://www.olbg.com/betting-tips/Handball/All_Handball/All_Events/Skanderborg_Handbold_vs_FC_Barcelona/20?event_id=12137"
     }
    ],
-   "selection_note": "Away side priced; OLBG listed Tie.",
-   "cal2_p_fair": 0.55,
-   "method": "CAL-2 (Tie split unusable; away side)",
-   "verification": "price is an explicit estimate, not a tip-split repricing; 2 fact(s), each with an https source; our own selection replaces the one OLBG lists",
+   "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
    "id": "HB-04"
   },
   {
-   "sport": "Handball",
-   "event_id": "12135",
-   "event": "RK Celje vs RK Zagreb",
-   "competition": "EHF Champions League",
-   "date_label": "28 Oct 19:45",
-   "selection": "RK Zagreb",
-   "market": "Money Line",
-   "olbg_tips": "Tie 4/6",
-   "olbg_pct": 67,
-   "prediction": "Zagreb to win at Celje in the Slovenian derby. Celje have started the group badly and Zagreb have the better defensive record of the two, which is usually what decides these close Adriatic fixtures. The four published tips are split evenly enough that the market itself has no strong view, so this is a modest-stake opinion.",
-   "facts": [
-    {
-     "t": "OLBG lists RK Celje v RK Zagreb, 28 October 2026, 19:45",
-     "src": "https://www.olbg.com/betting-tips/Handball/20"
-    },
-    {
-     "t": "No independent form source retrieved; fixture-level view only",
-     "src": "https://www.olbg.com/betting-tips/Handball/All_Handball/All_Events/RK_Celje_vs_RK_Zagreb/20?event_id=12135"
-    }
-   ],
-   "selection_note": "Away side priced; OLBG listed Tie.",
-   "cal2_p_fair": 0.58,
-   "method": "CAL-2 (Tie split unusable; away side)",
-   "verification": "price is an explicit estimate, not a tip-split repricing; 2 fact(s), each with an https source; our own selection replaces the one OLBG lists",
-   "id": "HB-05"
-  },
-  {
-   "sport": "Greyhounds",
-   "event_id": "690271",
-   "event": "8:24 Towcester",
-   "competition": "UK meetings",
-   "date_label": "Today 16:24",
-   "selection": "Melbury Rocket",
-   "market": "Daily Races",
-   "olbg_tips": "2/3",
-   "olbg_pct": 67,
-   "prediction": "Melbury Rocket in the 20:24 at Towcester. Two of the three tips on the race are on this runner and Towcester's trap draw favours the inside paths on a normal going, which is where this dog wants to be. Six-bend racing at Towcester rewards early pace and this is the only runner in the field with a sub-30 sectional over course and distance.",
-   "facts": [
-    {
-     "t": "OLBG lists 8:24 Towcester with Melbury Rocket as the most-tipped selection, 2 of 3 tips",
-     "src": "https://www.olbg.com/betting-tips/Greyhounds/28"
-    }
-   ],
-   "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
-   "id": "GY-01"
-  },
-  {
-   "sport": "Greyhounds",
-   "event_id": "690274",
-   "event": "8:36 Nottingham",
-   "competition": "UK meetings",
-   "date_label": "Today 16:36",
-   "selection": "Corleones Lady",
-   "market": "Daily Races",
-   "olbg_tips": "2/3",
-   "olbg_pct": 67,
-   "prediction": "Corleones Lady in the 20:36 at Nottingham. Two of three tips are on her, and Nottingham's 500-metre trip suits a bitch with early dash rather than a strong finisher. The race is a graded affair with no standout, which is exactly the sort of contest where a two-from-three split is worth following rather than opposing.",
-   "facts": [
-    {
-     "t": "OLBG lists 8:36 Nottingham with Corleones Lady as the most-tipped selection, 2 of 3 tips",
-     "src": "https://www.olbg.com/betting-tips/Greyhounds/28"
-    }
-   ],
-   "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
-   "id": "GY-02"
-  },
-  {
-   "sport": "Greyhounds",
-   "event_id": "690275",
-   "event": "8:34 Harlow",
-   "competition": "UK meetings",
-   "date_label": "Today 16:34",
-   "selection": "Townsend Margo",
-   "market": "Daily Races",
-   "olbg_tips": "1/1",
-   "olbg_pct": 100,
-   "prediction": "Townsend Margo in the 20:34 at Harlow. The single tip on the race is on this runner at a track where the inside traps carry a genuine advantage over the 415-metre trip. Harlow is a sharp circuit and front-runners hold on more often than the raw form figures suggest, so the pick is for early pace rather than for the fastest recent time.",
-   "facts": [
-    {
-     "t": "OLBG lists 8:34 Harlow with Townsend Margo as the most-tipped selection, 1 of 1 tips",
-     "src": "https://www.olbg.com/betting-tips/Greyhounds/28"
-    }
-   ],
-   "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
-   "id": "GY-03"
-  },
-  {
-   "sport": "Greyhounds",
-   "event_id": "690284",
-   "event": "9:16 Towcester",
-   "competition": "UK meetings",
-   "date_label": "Today 17:16",
-   "selection": "Ballygogue Jet",
-   "market": "Daily Races",
-   "olbg_tips": "1/1",
-   "olbg_pct": 100,
-   "prediction": "Ballygogue Jet in the 21:16 at Towcester. One tip only, so treat this as a watching brief rather than a conviction bet. The dog has the early pace to lead the inside line at a track that rewards it, and the 21:16 is the weaker half of Towcester's card, which is where a fast starter can steal a race.",
-   "facts": [
-    {
-     "t": "OLBG lists 8:16 Towcester with Ballygogue Jet as the most-tipped selection, 1 of 1 tips",
-     "src": "https://www.olbg.com/betting-tips/Greyhounds/28"
-    }
-   ],
-   "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
-   "id": "GY-04"
-  },
-  {
-   "sport": "Greyhounds",
-   "event_id": "690288",
-   "event": "9:46 Nottingham",
-   "competition": "UK meetings",
-   "date_label": "Today 17:46",
-   "selection": "Salacres Lanark",
-   "market": "Daily Races",
-   "olbg_tips": "1/1",
-   "olbg_pct": 100,
-   "prediction": "Salacres Lanark in the 21:46 at Nottingham. The Salacres kennel knows this track better than most and the 21:46 is a low-grade race where a dog with course experience has an edge over the raiders. A single tip is not a signal, so this goes out as a low-confidence interest at a price that should be shorter than the form line implies.",
-   "facts": [
-    {
-     "t": "OLBG lists 9:46 Nottingham with Salacres Lanark as the most-tipped selection, 1 of 1 tips",
-     "src": "https://www.olbg.com/betting-tips/Greyhounds/28"
-    }
-   ],
-   "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
-   "id": "GY-05"
-  },
-  {
    "sport": "Baseball",
-   "event_id": "160795",
-   "event": "MIL Brewers @ TB Rays (Game Totals)",
+   "event_id": "160799",
+   "event": "MIL Brewers @ TB Rays",
    "competition": "MLB",
-   "date_label": "Tomorrow 00:00",
-   "selection": "TB Rays",
+   "date_label": "Today 21:00",
+   "selection": "MIL Brewers",
    "market": "Money Line",
-   "olbg_tips": "10/18",
-   "olbg_pct": 56,
-   "prediction": "Tampa Bay Rays to win Game 3 of the World Series at Tropicana Field. Milwaukee lead 2-0 but both games were decided by a single run, 3-2 and 5-4, and the Rays scored four in the first inning of Game 2 before the bullpen gave it back. Freddy Peralta, traded away by Milwaukee at the deadline, starts against his former club with a 4.42 ERA and a point to prove; 21 of 27 tips are on the home side.",
+   "olbg_tips": "2/2",
+   "olbg_pct": 100,
+   "prediction": "Milwaukee Brewers to close out the World Series against the Tampa Bay Rays at Tropicana Field. ESPN confirms the Brewers lead 3-0 after a 103-59 regular season, while the Rays sit at 98-64, and lists Milwaukee as -141 favourites with Tampa's starter Garrett Jax at 0-1 with a 6.00 ERA. Both OLBG tips back Milwaukee, making the Brewers the money-line selection for the 21:00 first pitch on Fox.",
    "facts": [
     {
-     "t": "Game 3: Brewers at Rays, Tropicana Field, 26 October, 8 p.m. ET; Milwaukee lead 2-0 after 3-2 and 5-4",
-     "src": "https://www.mlb.com/news/2026-world-series-game-3-storylines-brewers-vs-rays"
+     "t": "ESPN scoreboard: MIL leads WS 3-0; records 103-59 vs 98-64; DraftKings ML MIL -141 / TB +117; TB probable Garrett Jax 0-1, 6.00 ERA",
+     "src": "https://www.espn.com/mlb/scoreboard/_/date/20261027"
     },
     {
-     "t": "Robert Gasser (5-5, 3.87 ERA) for Milwaukee against Freddy Peralta (10-11, 4.42 ERA, 156 strikeouts) for Tampa Bay; Peralta was acquired by the Rays at the deadline",
-     "src": "https://www.usatoday.com/story/sports/mlb/2026/10/26/brewers-rays-world-series-watch-live-score-highlights-game-3--live/92444297007/"
-    },
-    {
-     "t": "Rays scored all four of their Game 2 runs in the first inning and lost 5-4",
-     "src": "https://www.tampabay28.com/sports/rays-vs-brewers-world-series-game-3-preview-start-time-pitching-matchup-and-keys-to-win"
-    },
-    {
-     "t": "OLBG: TB Rays most-tipped, 21 of 27 tips, 78%",
-     "src": "https://www.olbg.com/betting-tips/Baseball/12"
-    }
-   ],
-   "verification": "tip split read from the OLBG listing at retrieval; 4 fact(s), each with an https source",
-   "id": "BL-01"
-  },
-  {
-   "sport": "Baseball",
-   "event_id": "160795",
-   "event": "MIL Brewers @ TB Rays (Game Totals)",
-   "competition": "MLB",
-   "date_label": "Tomorrow 00:00",
-   "selection": "Over 7.50",
-   "market": "Game Totals",
-   "olbg_tips": "10/18",
-   "olbg_pct": 56,
-   "prediction": "Over seven and a half runs in Game 3. The total is set at 7.5 with ten of eighteen tips on the over, and the pitching matchup argues the same way: Gasser has a 3.87 ERA but has not gone deep into games, and Peralta's 1.33 WHIP means traffic on the bases. Both bullpens have already been used heavily in two one-run games.",
-   "facts": [
-    {
-     "t": "Peralta 1.33 WHIP, 169 innings, 156 strikeouts in 2026",
-     "src": "https://www.usatoday.com/story/sports/mlb/2026/10/26/brewers-rays-world-series-watch-live-score-highlights-game-3--live/92444297007/"
-    },
-    {
-     "t": "OLBG game totals market: Over 7.50 with 10 of 18 tips, 56%",
-     "src": "https://www.olbg.com/betting-tips/Baseball/MLB/12"
+     "t": "OLBG prints 2/2 win tips (100%) for MIL Brewers",
+     "src": "https://www.olbg.com/betting-tips/Baseball/MLB/MLB/MIL_Brewers_@_TB_Rays/12?event_id=160799"
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
-   "id": "BL-02"
+   "id": "BL-01"
   },
   {
-   "sport": "Golf",
-   "event_id": "101913",
-   "event": "Maybank Championship",
-   "competition": "All Golf",
-   "date_label": "01 Nov 06:45",
-   "selection": "Lottie Woad",
-   "market": "Win Tournament",
-   "olbg_tips": "1/2",
-   "olbg_pct": 50,
-   "prediction": "Lottie Woad to win the Maybank Championship. This is a deliberately small-stakes outright: the market carries two tips, one for and one against, which is not a sample that can support a strong view. Woad's price here is the longest of our three golf selections because a winner market with this little liquidity should be treated as a lottery ticket rather than a position.",
+   "sport": "Gaelic Sports",
+   "event_id": "3531",
+   "event": "Kanturk v Eire Og Cor",
+   "competition": "All Gaelic Football",
+   "date_label": "01 Nov 09:00",
+   "selection": "Eire Og Cor +0.50",
+   "market": "Handicap",
+   "olbg_tips": "6/6",
+   "olbg_pct": 100,
+   "prediction": "Eire Og Cor +0.50 against Kanturk in the club championship fixture on 1 November. All six OLBG win tips back the handicap selection, a unanimous 100% consensus with a comment attached, making this the strongest-supported Gaelic pick of the round. Eire Og needing only to avoid defeat by a point or more is the selection at a short 1.27 price, though it falls outside the high-confidence odds band.",
    "facts": [
     {
-     "t": "OLBG lists the Maybank Championship outright with Lottie Woad most-tipped, 1 of 2 tips",
-     "src": "https://www.olbg.com/betting-tips/Golf/5"
-    },
-    {
-     "t": "Only three golf tournaments carried any tips at retrieval - recorded as flag F-009",
-     "src": "https://www.olbg.com/betting-tips/Golf/All_Golf/All_Events/Maybank_Championship/5?event_id=101913"
+     "t": "OLBG prints 6/6 handicap tips (100%) for Eire Og Cor +0.50, with 1 comment",
+     "src": "https://www.olbg.com/betting-tips/Gaelic_Football/All_Gaelic_Football/All_Events/Kanturk_v_Eire_Og_Cor/25?event_id=3531"
     }
    ],
-   "cal2_p_fair": 0.035,
-   "method": "CAL-3 (outright, two-tip market)",
-   "verification": "price is an explicit estimate, not a tip-split repricing; 2 fact(s), each with an https source",
-   "id": "GF-01"
+   "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
+   "id": "GS-01"
+  },
+  {
+   "sport": "Gaelic Sports",
+   "event_id": "3537",
+   "event": "Fr Caseys v Kildimo Pallaskenry",
+   "competition": "All Gaelic Football",
+   "date_label": "01 Nov 10:30",
+   "selection": "Kildimo Pallaskenry +3.50",
+   "market": "Handicap",
+   "olbg_tips": "5/7",
+   "olbg_pct": 71,
+   "prediction": "Kildimo Pallaskenry +3.50 against Fr Caseys on 1 November. Five of the seven OLBG win tips favour the handicap side at 71%, a strong majority for a club fixture where independent form is thin. The 3.5-point cushion gives the selection room, and the consensus makes Kildimo the handicap pick at 1.55 for the 10:30 throw-in.",
+   "facts": [
+    {
+     "t": "OLBG prints 5/7 handicap tips (71%) for Kildimo Pallaskenry +3.50",
+     "src": "https://www.olbg.com/betting-tips/Gaelic_Football/All_Gaelic_Football/All_Events/Fr_Caseys_v_Kildimo_Pallaskenry/25?event_id=3537"
+    }
+   ],
+   "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
+   "id": "GS-02"
+  },
+  {
+   "sport": "Gaelic Sports",
+   "event_id": "3327",
+   "event": "All Ireland Football Championship 2027",
+   "competition": "All Gaelic Football",
+   "date_label": "25 Jul 2027 10:30",
+   "selection": "Kerry",
+   "market": "Win Tournament",
+   "olbg_tips": "6/8",
+   "olbg_pct": 75,
+   "prediction": "Kerry to win the 2027 All-Ireland Football Championship. OLBG's own guide records Kerry as the all-time record holders with 39 titles, ahead of Dublin on 31, with Mayo the reigning champions after 2026. Six of eight OLBG outright tips back Kerry at 75%, so the Kingdom are the ante-post selection ahead of the summer series at a card price of 1.98.",
+   "facts": [
+    {
+     "t": "OLBG Gaelic football guide: Kerry 39 all-time titles, Dublin 31; Mayo are reigning 2026 champions",
+     "src": "https://www.olbg.com/betting-tips/Gaelic_Football/25"
+    },
+    {
+     "t": "OLBG prints 6/8 outright tips (75%) for Kerry in the 2027 championship market",
+     "src": "https://www.olbg.com/betting-tips/Gaelic_Football/All_Gaelic_Football/All_Events/All_Ireland_Football_Championship_2027/25?event_id=3327"
+    }
+   ],
+   "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
+   "id": "GS-03"
+  },
+  {
+   "sport": "Gaelic Sports",
+   "event_id": "675",
+   "event": "All Ireland Hurling Championship 2027",
+   "competition": "All Hurling",
+   "date_label": "18 Jul 2027 10:30",
+   "selection": "Galway",
+   "market": "Win Hurling",
+   "olbg_tips": "7/18",
+   "olbg_pct": 39,
+   "prediction": "Galway to win the 2027 All-Ireland Hurling Championship. The market is fragmented: Galway lead the OLBG outright tipping with seven of 18 selections, only 39%, indicating an open ante-post book rather than a dominant favourite. At 2.95 the price reflects that uncertainty, but Galway are still the selection in the win-hurling market, flagged as a low-confidence futures call.",
+   "facts": [
+    {
+     "t": "OLBG prints 7/18 outright tips (39%) for Galway in the 2027 hurling championship market",
+     "src": "https://www.olbg.com/betting-tips/Hurling/All_Hurling/All_Events/All_Ireland_Hurling_Championship_2027/26?event_id=675"
+    }
+   ],
+   "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
+   "id": "GS-04"
+  },
+  {
+   "sport": "Darts",
+   "event_id": "26023",
+   "event": "PDC World Championship 2027",
+   "competition": "All Darts",
+   "date_label": "03 Jan 2027 12:00",
+   "selection": "Luke Littler",
+   "market": "Win Tournament",
+   "olbg_tips": "22/36",
+   "olbg_pct": 61,
+   "prediction": "Luke Littler to win the 2027 PDC World Championship, whose final is listed on OLBG for 3 January. Littler already holds 22 of 36 outright tips, a 61% consensus in a market still months from settling. The depth of support makes him the ante-post pick at a card price of 1.76, though the championship remains a long-dated futures position rather than a week-of selection.",
+   "facts": [
+    {
+     "t": "OLBG lists the PDC World Championship 2027 final for 3 January 2027 with 22/36 outright tips (61%) for Luke Littler",
+     "src": "https://www.olbg.com/betting-tips/Darts/All_Darts/All_Events/PDC_World_Championship_2027/15?event_id=26023"
+    }
+   ],
+   "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
+   "id": "DA-01"
+  },
+  {
+   "sport": "Darts",
+   "event_id": "32446",
+   "event": "Players Championship 31",
+   "competition": "All Darts",
+   "date_label": "Tomorrow 08:00",
+   "selection": "Nathan Aspinall",
+   "market": "Win Tournament",
+   "olbg_tips": "2/8",
+   "olbg_pct": 25,
+   "prediction": "Nathan Aspinall to win Players Championship 31 when the floor event begins tomorrow at 08:00. Only two of eight OLBG outright tips back Aspinall, a 25% share, so this is a speculative selection in a wide-open one-day field rather than a confident call. The long 4.85 price reflects that, and the pick is published at low confidence and flagged for review.",
+   "facts": [
+    {
+     "t": "OLBG lists Players Championship 31 for 28 October 08:00 with 2/8 outright tips (25%) for Nathan Aspinall",
+     "src": "https://www.olbg.com/betting-tips/Darts/All_Darts/All_Events/Players_Championship_31/15?event_id=32446"
+    }
+   ],
+   "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
+   "id": "DA-02"
   },
   {
    "sport": "Golf",
@@ -1050,16 +907,38 @@
    "market": "Win Tournament",
    "olbg_tips": "1/2",
    "olbg_pct": 50,
-   "prediction": "Wyndham Clark to win the Mexico Open. A single tip in a two-tip market is the entire case, so the stake should be nominal and the price long. What makes it worth publishing at all is that Clark is a proven tour winner teeing it up in a limited-field event, which is the profile that produces the odd double-figure winner.",
+   "prediction": "Wyndham Clark to win the Mexico Open at Vidanta Vallarta. ESPN's PGA Tour schedule lists the event for 29 October to 1 November with a $6,000,000 purse and Brian Campbell as defending champion. OLBG shows one of two outright tips on Clark at 50%, so he is the selection in a thin early market at a card price of 4.35, low confidence.",
    "facts": [
     {
-     "t": "OLBG lists the Mexico Open outright with Wyndham Clark most-tipped, 1 of 2 tips",
-     "src": "https://www.olbg.com/betting-tips/Golf/5"
+     "t": "ESPN PGA Tour schedule: Mexico Open, Vidanta Vallarta, 29 Oct - 1 Nov 2026, purse $6.0M, defending champion Brian Campbell",
+     "src": "https://www.espn.com/golf/schedule"
+    },
+    {
+     "t": "OLBG prints 1/2 outright tips (50%) for Wyndham Clark",
+     "src": "https://www.olbg.com/betting-tips/Golf/All_Golf/All_Events/Mexico_Open/5?event_id=101915"
     }
    ],
-   "cal2_p_fair": 0.05,
-   "method": "CAL-3 (outright, two-tip market)",
-   "verification": "price is an explicit estimate, not a tip-split repricing; 1 fact(s), each with an https source",
+   "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
+   "id": "GF-01"
+  },
+  {
+   "sport": "Golf",
+   "event_id": "101913",
+   "event": "Maybank Championship",
+   "competition": "All Golf",
+   "date_label": "01 Nov 06:45",
+   "selection": "Lottie Woad",
+   "market": "Win Tournament",
+   "olbg_tips": "1/2",
+   "olbg_pct": 50,
+   "prediction": "Lottie Woad to win the Maybank Championship, which tees off on 1 November. One of the two OLBG outright tips lodged backs the English golfer at 50%, but no independent source had published a confirmable field at the time of writing, so this remains a thin-market pick flagged for review. Woad is the tentative selection at a card price of 4.35.",
+   "facts": [
+    {
+     "t": "OLBG lists the Maybank Championship for 1 November with 1/2 outright tips (50%) for Lottie Woad; no independent field confirmable at retrieval",
+     "src": "https://www.olbg.com/betting-tips/Golf/All_Golf/All_Events/Maybank_Championship/5?event_id=101913"
+    }
+   ],
+   "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
    "id": "GF-02"
   },
   {
@@ -1072,292 +951,118 @@
    "market": "Win Tournament",
    "olbg_tips": "1/2",
    "olbg_pct": 50,
-   "prediction": "Stewart Cink to win the Simmons Bank Championship. Same shape as the other two golf selections: one tip, one counter-tip, a long price and no independent form source retrieved. Cink is in the field and the market has him as the pick; we publish it for completeness at a price that reflects how little the split can tell us.",
+   "prediction": "Stewart Cink to win the Simmons Bank Championship on 1 November. As with the other early golf markets, only two OLBG tips exist and one names Cink, giving a 50% split with no confirmable field available from an independent source. The American is a low-confidence outright pick at a card price of 4.35 and is flagged for review rather than presented as a strong call.",
    "facts": [
     {
-     "t": "OLBG lists the Simmons Bank Championship outright with Stewart Cink most-tipped, 1 of 2 tips",
-     "src": "https://www.olbg.com/betting-tips/Golf/5"
-    }
-   ],
-   "cal2_p_fair": 0.05,
-   "method": "CAL-3 (outright, two-tip market)",
-   "verification": "price is an explicit estimate, not a tip-split repricing; 1 fact(s), each with an https source",
-   "id": "GF-03"
-  },
-  {
-   "sport": "Darts",
-   "event_id": "26023",
-   "event": "PDC World Championship 2027",
-   "competition": "All Darts",
-   "date_label": "03 Jan 2027 12:00",
-   "selection": "Luke Littler",
-   "market": "Win Tournament",
-   "olbg_tips": "22/36",
-   "olbg_pct": 61,
-   "prediction": "Luke Littler to win the PDC World Championship in January. Twenty-two of thirty-six tips is the strongest outright consensus anywhere on the board, and at Alexandra Palace a 61% share of opinion behind one player is unusual even for a defending champion. The price is still a double-figure-free 5.00 because a 128-player knockout can end anyone's week in a single set.",
-   "facts": [
-    {
-     "t": "OLBG: PDC World Championship 2027, Luke Littler most-tipped, 22 of 36 tips, 61%",
-     "src": "https://www.olbg.com/betting-tips/Darts/15"
-    },
-    {
-     "t": "Tournament starts 3 January 2027",
-     "src": "https://www.olbg.com/betting-tips/Darts/All_Darts/All_Events/PDC_World_Championship_2027/15?event_id=26023"
-    }
-   ],
-   "cal2_p_fair": 0.2,
-   "method": "CAL-3 (outright, 36-tip market)",
-   "verification": "price is an explicit estimate, not a tip-split repricing; 2 fact(s), each with an https source",
-   "id": "DA-01"
-  },
-  {
-   "sport": "Darts",
-   "event_id": "32446",
-   "event": "Players Championship 31",
-   "competition": "All Darts",
-   "date_label": "28 Oct 08:00",
-   "selection": "Nathan Aspinall",
-   "market": "Win Tournament",
-   "olbg_tips": "1/3",
-   "olbg_pct": 33,
-   "prediction": "Nathan Aspinall to win Players Championship 31. The market carries four tips split across four names, one of them Other, so there is no consensus to follow and this is a price estimate rather than a read on the field. Aspinall is the highest-profile name in the four and the price reflects how little the split supports him.",
-   "facts": [
-    {
-     "t": "OLBG event page: Players Championship 31, 28 October, four tips split across van Veen, Aspinall, Doets and Other",
-     "src": "https://www.olbg.com/betting-tips/Darts/All_Darts/All_Events/Players_Championship_31/15?event_id=32446"
-    },
-    {
-     "t": "The sport listing shows Aspinall at 1 of 3 tips while the event page shows 1 of 4 - recorded as flag F-003",
-     "src": "https://www.olbg.com/betting-tips/Darts/15"
-    }
-   ],
-   "cal2_p_fair": 0.06,
-   "method": "CAL-3 (single-day event, four-tip market)",
-   "verification": "price is an explicit estimate, not a tip-split repricing; 2 fact(s), each with an https source",
-   "id": "DA-02"
-  },
-  {
-   "sport": "Gaelic Sports",
-   "event_id": "3531",
-   "event": "Kanturk v Eire Og Cor",
-   "competition": "Gaelic Football",
-   "date_label": "01 Nov 09:00",
-   "selection": "Eire Og Cor +0.50",
-   "market": "Handicap",
-   "olbg_tips": "6/6",
-   "olbg_pct": 100,
-   "prediction": "Eire Og Cor plus a half point against Kanturk. All six tips on this handicap are on the away side, the only unanimous split in the Gaelic markets, and a half-point start in a club championship match is effectively a bet on not losing by a point. Cork club football is tight enough that the handicap is the value rather than the outright.",
-   "facts": [
-    {
-     "t": "OLBG: Eire Og Cor +0.50, 6 of 6 tips, 100%",
-     "src": "https://www.olbg.com/betting-tips/Gaelic_Football/25"
-    },
-    {
-     "t": "Fixture listed as Kanturk v Eire Og Cor, 1 November 2026",
-     "src": "https://www.olbg.com/betting-tips/Gaelic_Football/All_Gaelic_Football/All_Events/Kanturk_v_Eire_Og_Cor/25?event_id=3531"
-    }
-   ],
-   "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
-   "id": "GS-01"
-  },
-  {
-   "sport": "Gaelic Sports",
-   "event_id": "3537",
-   "event": "Fr Caseys v Kildimo Pallaskenry",
-   "competition": "Gaelic Football",
-   "date_label": "01 Nov 10:30",
-   "selection": "Kildimo Pallaskenry +3.50",
-   "market": "Handicap",
-   "olbg_tips": "5/7",
-   "olbg_pct": 71,
-   "prediction": "Kildimo Pallaskenry plus three and a half against Fr Caseys. Five of seven tips take the start, which in a Limerick senior football match is a meaningful cushion: three and a half points is roughly the value of a single goal chance. Fr Caseys are the stronger side but the handicap is set for a comfortable home win that may not arrive.",
-   "facts": [
-    {
-     "t": "OLBG: Kildimo Pallaskenry +3.50, 5 of 7 tips, 71%",
-     "src": "https://www.olbg.com/betting-tips/Gaelic_Football/25"
+     "t": "OLBG lists the Simmons Bank Championship for 1 November with 1/2 outright tips (50%) for Stewart Cink; no independent field confirmable at retrieval",
+     "src": "https://www.olbg.com/betting-tips/Golf/All_Golf/All_Events/Simmons_Bank_Championship/5?event_id=101914"
     }
    ],
    "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
-   "id": "GS-02"
-  },
-  {
-   "sport": "Gaelic Sports",
-   "event_id": "3327",
-   "event": "All Ireland Football Championship 2027",
-   "competition": "Gaelic Football",
-   "date_label": "25 Jul 2027 10:30",
-   "selection": "Kerry",
-   "market": "Win Tournament",
-   "olbg_tips": "6/8",
-   "olbg_pct": 75,
-   "prediction": "Kerry to win the 2027 All-Ireland senior football championship. Six of eight tips on the 2027 outright is a real consensus and Kerry are the standard-bearer of the competition, but an All-Ireland is a 32-county knockout with a long winter in between, so the price is long rather than short. This is a position to hold, not to chase.",
-   "facts": [
-    {
-     "t": "OLBG: All Ireland Football Championship 2027, Kerry most-tipped, 6 of 8 tips, 75%",
-     "src": "https://www.olbg.com/betting-tips/Gaelic_Football/25"
-    },
-    {
-     "t": "Final scheduled 25 July 2027 per the OLBG listing",
-     "src": "https://www.olbg.com/betting-tips/Gaelic_Football/All_Gaelic_Football/All_Events/All_Ireland_Football_Championship_2027/25?event_id=3327"
-    }
-   ],
-   "cal2_p_fair": 0.175,
-   "method": "CAL-3 (outright, 32-county field)",
-   "verification": "price is an explicit estimate, not a tip-split repricing; 2 fact(s), each with an https source",
-   "id": "GS-03"
-  },
-  {
-   "sport": "Gaelic Sports",
-   "event_id": "675",
-   "event": "All Ireland Hurling Championship 2027",
-   "competition": "Hurling",
-   "date_label": "18 Jul 2027 10:30",
-   "selection": "Galway",
-   "market": "Win Hurling",
-   "olbg_tips": "7/18",
-   "olbg_pct": 39,
-   "prediction": "Galway to win the 2027 All-Ireland hurling championship. Seven of eighteen tips is only 39%, so the market is genuinely split and the price reflects that. Galway's Leinster campaign gives them a route that avoids the qualifiers, and in a competition where Limerick's dominance has finally broken, a team with Galway's physical profile is worth a small position.",
-   "facts": [
-    {
-     "t": "OLBG: All Ireland Hurling Championship 2027, Galway most-tipped, 7 of 18 tips, 39%",
-     "src": "https://www.olbg.com/betting-tips/Hurling/26"
-    },
-    {
-     "t": "Gaelic football and hurling are separate OLBG sports (ids 25 and 26) - recorded as flag F-014",
-     "src": "https://www.olbg.com/betting-tips/Hurling/26"
-    }
-   ],
-   "cal2_p_fair": 0.267,
-   "method": "CAL-3 (outright, 12-county field)",
-   "verification": "price is an explicit estimate, not a tip-split repricing; 2 fact(s), each with an https source",
-   "id": "GS-04"
+   "id": "GF-03"
   },
   {
    "sport": "Motor Racing",
    "event_id": "914",
    "event": "Mexico City Grand Prix",
-   "competition": "Formula 1",
+   "competition": "All Motor Racing",
    "date_label": "01 Nov 15:00",
-   "selection": "Kimi Antonelli - Yes",
-   "market": "Top 6 Finish",
-   "olbg_tips": null,
-   "olbg_pct": null,
-   "prediction": "Kimi Antonelli to finish in the top six at the Mexico City Grand Prix. The market carries no published tips at all, so this price is built from the driver rather than from a split: a front-running car at a circuit where overtaking is possible but track position dominates. The stake should reflect that the number is our estimate and nothing more.",
+   "selection": "Max Verstappen - Yes",
+   "market": "Podium Finish",
+   "olbg_tips": "1/2",
+   "olbg_pct": 50,
+   "prediction": "Max Verstappen to finish on the podium at the Mexico City Grand Prix. Formula 1's official site schedules the race for 1 November at 15:00 at the Autodromo Hermanos Rodriguez, a 71-lap, 305.354 km contest held more than two kilometres above sea level. One of two OLBG tips backs the podium-yes, making Verstappen the selection at 1.90 in a two-way market.",
    "facts": [
     {
-     "t": "OLBG Mexico City Grand Prix: Top 6 Finish market listed with no tips printed (0/0)",
-     "src": "https://www.olbg.com/betting-tips/Motor_Racing/14"
+     "t": "Formula1.com: Mexico City GP race 1 Nov 2026 15:00, Autodromo Hermanos Rodriguez, 71 laps, 305.354 km",
+     "src": "https://www.formula1.com/en/racing/2026/mexico"
     },
     {
-     "t": "Race scheduled 1 November, 15:00 per the OLBG listing; the meet runs 30 October to 1 November",
+     "t": "OLBG prints 1/2 podium-finish tips (50%) for Max Verstappen - Yes",
      "src": "https://www.olbg.com/betting-tips/Motor_Racing/All_Motor_Racing/All_Events/Mexico_City_Grand_Prix/14?event_id=914"
     }
    ],
-   "cal2_p_fair": 0.7,
-   "method": "CAL-2 (no tip split printed)",
-   "verification": "price is an explicit estimate, not a tip-split repricing; 2 fact(s), each with an https source",
+   "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
    "id": "MR-01"
   },
   {
    "sport": "Motor Racing",
    "event_id": "912",
    "event": "Formula 1 Drivers Championship 2026 Without Kimi Antonelli",
-   "competition": "Formula 1",
+   "competition": "All Motor Racing",
    "date_label": "06 Dec 08:00",
    "selection": "Max Verstappen",
    "market": "Win Tournament",
    "olbg_tips": "4/7",
    "olbg_pct": 57,
-   "prediction": "Max Verstappen to win the 2026 drivers' championship in the market that excludes Kimi Antonelli. Four of seven tips take Verstappen in a four-man race, and a 57% share in a market with a clear favourite is a stronger signal than the same share in a wide-open one. The championship runs to the final round in December.",
+   "prediction": "Max Verstappen to win the 2026 Drivers' Championship in the without-Kimi-Antonelli market, which OLBG dates to 6 December. Four of seven OLBG tips back Verstappen at 57%, though the line is explicitly a reduced-field market and the season still has rounds to run. He is the ante-post selection at a card price of 2.61, low confidence given how long the book stays open.",
    "facts": [
     {
-     "t": "OLBG: Formula 1 Drivers Championship 2026 Without Kimi Antonelli, Max Verstappen most-tipped, 4 of 7 tips, 57%",
-     "src": "https://www.olbg.com/betting-tips/Motor_Racing/14"
-    },
-    {
-     "t": "Season finale listed 6 December 2026",
+     "t": "OLBG lists the without-Antonelli drivers' championship market settling 6 December 2026 with 4/7 tips (57%) for Max Verstappen",
      "src": "https://www.olbg.com/betting-tips/Motor_Racing/All_Motor_Racing/All_Events/Formula_1_Drivers_Championship_2026_Without_Kimi_Antonelli/14?event_id=912"
     }
    ],
-   "cal2_p_fair": 0.455,
-   "method": "CAL-2 (four-runner field, seven tips)",
-   "verification": "price is an explicit estimate, not a tip-split repricing; 2 fact(s), each with an https source",
+   "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
    "id": "MR-02"
   },
   {
    "sport": "Rugby League",
    "event_id": "2695857",
    "event": "State of Origin 2027",
-   "competition": "International",
+   "competition": "All Rugby League",
    "date_label": "27 May 2027 06:00",
    "selection": "New South Wales",
    "market": "Win Tournament",
    "olbg_tips": "9/13",
    "olbg_pct": 69,
-   "prediction": "New South Wales to win State of Origin 2027. Nine of thirteen tips take the Blues, a 69% share in a two-team series, which is about as strong a consensus as a three-match series can produce. Origin is decided by margins that a squad list cannot predict, so the price stays near 1.60 rather than shortening further.",
+   "prediction": "New South Wales to win the 2027 State of Origin series. The ante-post market is the strongest on the rugby league card, with nine of 13 OLBG tips backing the Blues at 69% and three comments attached. The series does not begin until 27 May, so this is a long-dated futures pick, but NSW are the clear selection at a card price of 1.86.",
    "facts": [
     {
-     "t": "OLBG: State of Origin 2027, New South Wales most-tipped, 9 of 13 tips, 69%",
-     "src": "https://www.olbg.com/betting-tips/Rugby_League/10"
-    },
-    {
-     "t": "Series listed 27 May 2027",
+     "t": "OLBG lists State of Origin 2027 beginning 27 May with 9/13 outright tips (69%) for New South Wales and 3 comments",
      "src": "https://www.olbg.com/betting-tips/Rugby_League/All_Rugby_League/All_Events/State_of_Origin_2027/10?event_id=2695857"
     }
    ],
-   "verification": "tip split read from the OLBG listing at retrieval; 2 fact(s), each with an https source",
+   "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
    "id": "RL-01"
   },
   {
    "sport": "Rugby League",
    "event_id": "2801554",
    "event": "Super League 2027",
-   "competition": "Super League",
+   "competition": "All Rugby League",
    "date_label": "02 Oct 2027 13:00",
    "selection": "Wigan Warriors",
    "market": "Grand Final Winner",
    "olbg_tips": "2/4",
    "olbg_pct": 50,
-   "prediction": "Wigan Warriors to win the 2027 Super League grand final. Two of four tips is half the market on one club in a twelve-team competition, which is a genuine signal even at this sample size. Old Trafford in October is a long way off and a season of injuries can undo any squad, hence the price.",
+   "prediction": "Wigan Warriors to win the 2027 Super League Grand Final. Two of four OLBG outright tips favour the Warriors at 50%, with two comments, in a market that will not settle until 2 October next year. It is an even split at the top of the book, so Wigan are a measured futures selection at 3.46 rather than a confident one, and the pick is flagged for review.",
    "facts": [
     {
-     "t": "OLBG: Super League 2027 grand final winner, Wigan Warriors most-tipped, 2 of 4 tips, 50%",
-     "src": "https://www.olbg.com/betting-tips/Rugby_League/10"
-    },
-    {
-     "t": "Final listed 2 October 2027",
+     "t": "OLBG lists Super League 2027 settling 2 October with 2/4 Grand Final tips (50%) for Wigan Warriors and 2 comments",
      "src": "https://www.olbg.com/betting-tips/Rugby_League/All_Rugby_League/All_Events/Super_League_2027/10?event_id=2801554"
     }
    ],
-   "cal2_p_fair": 0.1875,
-   "method": "CAL-3 (outright, 12-team field)",
-   "verification": "price is an explicit estimate, not a tip-split repricing; 2 fact(s), each with an https source",
+   "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
    "id": "RL-02"
   },
   {
    "sport": "Rugby League",
    "event_id": "2801600",
    "event": "NRL 2027",
-   "competition": "NRL",
+   "competition": "All Rugby League",
    "date_label": "03 Oct 2027 04:30",
    "selection": "Penrith Panthers",
    "market": "Grand Final Winner",
    "olbg_tips": "1/3",
    "olbg_pct": 33,
-   "prediction": "Penrith Panthers to win the 2027 NRL grand final. One tip out of three is not a market view and the price says so. Penrith's ceiling is higher than almost anyone's over a full season, which is the reason to hold a small position at a double-figure price rather than the reason to back it heavily.",
+   "prediction": "Penrith Panthers to win the 2027 NRL Grand Final. Only one of three OLBG tips backs Penrith, a 33% share, and the market does not settle until 3 October 2027, so this is a long-range, low-confidence pick priced at 4.90. With the new season months away and no independent season form to cite, the call rests on the OLBG consensus alone and is flagged for review.",
    "facts": [
     {
-     "t": "OLBG: NRL 2027 grand final winner, Penrith Panthers most-tipped, 1 of 3 tips, 33%",
-     "src": "https://www.olbg.com/betting-tips/Rugby_League/10"
-    },
-    {
-     "t": "Final listed 3 October 2027",
+     "t": "OLBG lists NRL 2027 settling 3 October with 1/3 Grand Final tips (33%) for Penrith Panthers",
      "src": "https://www.olbg.com/betting-tips/Rugby_League/All_Rugby_League/All_Events/NRL_2027/10?event_id=2801600"
     }
    ],
-   "cal2_p_fair": 0.1,
-   "method": "CAL-3 (outright, 17-team field)",
-   "verification": "price is an explicit estimate, not a tip-split repricing; 2 fact(s), each with an https source",
+   "verification": "tip split read from the OLBG listing at retrieval; 1 fact(s), each with an https source",
    "id": "RL-03"
   }
  ]

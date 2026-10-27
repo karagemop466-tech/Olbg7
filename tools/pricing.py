@@ -27,9 +27,18 @@ Model
 Band rule (from the brief)
 --------------------------
 The brief asks for high-confidence selections priced between -250 and +10000 American.
--250 American = 1.40 decimal. +10000 American = 101.00 decimal. So a selection only qualifies
-for the "focus band" if its price is >= 1.40 and <= 101.00. A heavy odds-on favourite at 1.20 is
-IN the probability sense a strong pick but OUTSIDE the band, and is labelled accordingly.
+-250 American = 1.40 decimal. +10000 American = 101.00 decimal. The confidence gate applies the
+band to the FAIR decimal price (1 / p_fair), because the band describes market odds. The published
+card price still carries the 5% margin, so its own band flag is kept separately as in_focus_band.
+A heavy odds-on favourite at a 1.22 fair price is IN the probability sense a strong pick but
+OUTSIDE the band, and is labelled accordingly (medium, never high).
+
+High-confidence rule (2026-10-27, per owner)
+---------------------------------------------
+p_fair > 0.70 AND sample >= 8 tips AND fair decimal inside 1.40..101.00. The threshold is
+strictly greater than 70%, matching the owner's wording and the boundary tests in
+tools/check_site.py. On the 2026-10-27 capture zero rows satisfy all three conditions; the
+near-misses are listed on flagged.html.
 
 Nothing in this file invents a team rating, a score or an injury. It only reprices the tip split.
 """
@@ -53,8 +62,11 @@ TWO_WAY_MARKETS = {
 THREE_WAY_SPORTS = {"Handball", "Rugby Union", "Football", "Ice Hockey"}
 # Two-way / outright markets. Outrights are treated as "many-way" with prior 1/8 when the
 # number of runners is not printed on OLBG; that is an assumption and is flagged.
+# 2026-10-27 refresh: "Win Hurling" is a season outright, and "Top Team1 Batsman" /
+# "Man Of The Match" are multi-runner player markets, so all three use the 1/8 many-way prior.
 OUTRIGHT_MARKETS = {
     "Win Tournament", "Outright Winner", "Grand Final Winner",
+    "Win Hurling", "Top Team1 Batsman", "Man Of The Match",
 }
 
 
@@ -66,12 +78,7 @@ def n_outcomes(market: str, total: int, sport: str = "") -> tuple[float, str]:
     if market == "Money Line" and sport in THREE_WAY_SPORTS:
         return 1.0 / 3.0, "3-way"
     if market in THREE_WAY_MARKETS:
-        return 1.0 / 3.0, "3-way"
-    return 0.5, "2-way"
-    if market in OUTRIGHT_MARKETS:
-        return 1.0 / 8.0, "outright assumed 8 runners"
-    if market in THREE_WAY_MARKETS:
-        # Handball money line is explicitly 3-way on OLBG (home / tie / away).
+        # Handball / rugby union money line is explicitly 3-way on OLBG (home / tie / away).
         return 1.0 / 3.0, "3-way"
     return 0.5, "2-way"
 
@@ -93,9 +100,17 @@ def price(market: str, wins, total, pct=None, sport=""):
     fair_dec = round(1.0 / p_fair, 2)
     card_dec = round(1.0 / (p_fair * (1.0 + MARGIN)), 2)
     in_band = BAND_MIN_DEC <= card_dec <= BAND_MAX_DEC
-    if p_fair >= 0.60 and total >= 8 and in_band:
+    # The owner's band (-250..+10000 = 1.40..101.00) is a statement about market odds, so the
+    # confidence gate tests it against the FAIR price. Testing the margined card would make the
+    # two rules mutually exclusive: a 70% shot carries a 1.43 fair price but a 1.36 card once the
+    # 5% margin is applied, so no >70% pick could ever sit at or above 1.40 on the card.
+    fair_in_band = BAND_MIN_DEC <= fair_dec <= BAND_MAX_DEC
+    # 2026-10-27: high bar moved from 60% to a strictly greater-than-70% fair chance to
+    # match the owner's wording ("greater than 70% chance to win"); the >=8-tip sample and
+    # focus-band rules stand. Exactly 0.70 stays medium, never high.
+    if p_fair > 0.70 and total >= 8 and fair_in_band:
         conf = "high"
-    elif p_fair >= 0.60 and not in_band:
+    elif p_fair > 0.70 and not fair_in_band:
         conf = "medium"          # strong but priced outside the focus band
     elif p_fair >= 0.50:
         conf = "medium"
@@ -111,6 +126,7 @@ def price(market: str, wins, total, pct=None, sport=""):
         "implied_pct": round(100 * (1.0 / card_dec), 1),
         "overround": MARGIN,
         "in_focus_band": in_band,
+        "fair_in_focus_band": fair_in_band,
         "confidence": conf,
         "sample_tips": total,
         "pseudo_count_K": K,
@@ -151,7 +167,7 @@ def main():
 
     doc = {
         "engine": "CAL-1 (Consensus-Anchored Line)",
-        "generated_at": "2026-10-26",
+        "generated_at": "2026-10-27",
         "constants": {"K_pseudo_tips": K, "margin": MARGIN,
                       "band_min_decimal": BAND_MIN_DEC, "band_max_decimal": BAND_MAX_DEC,
                       "band_american": [-250, 10000]},

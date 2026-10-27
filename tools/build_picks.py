@@ -18,22 +18,14 @@ import re
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
 
-# Handball: OLBG prints "Tie" as the most-tipped selection on 11 of 15 matches, which is a
-# page-level artefact (flag F-002), so we publish a match winner and price it from a stated
-# view of the fixture instead of from the split.
+# 2026-10-27 refresh: OLBG still prints "Tie" as the most-tipped selection on 15 of 19
+# handball rows (flag F-002). This board publishes no "Tie" picks; the four handball picks
+# below are all rows where OLBG printed a real club selection, so no CAL-2 overrides are needed.
 CODES = {
     "Basketball": "BB", "Baseball": "BL", "Ice Hockey": "IH", "Cricket": "CK",
     "Rugby Union": "RU", "Rugby League": "RL", "Tennis": "TN", "Volleyball": "VB",
     "Handball": "HB", "Golf": "GF", "Darts": "DA", "Motor Racing": "MR",
     "Gaelic Sports": "GS", "Greyhounds": "GY", "Snooker": "SN",
-}
-
-HANDBALL_P = {
-    "12136": (0.62, "CAL-2 (Tie split unusable; home favourite)"),
-    "12132": (0.60, "CAL-2 (Tie split unusable; home favourite)"),
-    "12127": (0.55, "CAL-2 (Tie split unusable; away side)"),
-    "12134": (0.55, "CAL-2 (Tie split unusable; away side)"),
-    "12135": (0.58, "CAL-2 (Tie split unusable; away side)"),
 }
 
 
@@ -71,12 +63,9 @@ def main():
         }
         if p.get("sel_note"):
             rec["selection_note"] = p["sel_note"]
-            rec["olbg_tips"] = f"Tie {ev.get('tips')}" if ev.get("tips") else None
         if p.get("p_override"):
             rec["cal2_p_fair"] = p["p_override"]
             rec["method"] = p.get("method", "CAL-2")
-        if str(p["ev"]) in HANDBALL_P and p["s"] == "Handball":
-            rec["cal2_p_fair"], rec["method"] = HANDBALL_P[str(p["ev"])]
 
         checks = []
         if rec.get("cal2_p_fair"):
@@ -105,7 +94,7 @@ def main():
         rec["id"] = f"{code}-{seen[code]:02d}"
 
     with open(os.path.join(DATA, "picks.json"), "w") as fh:
-        json.dump({"generated_at": "2026-10-26", "picks": out}, fh, indent=1, ensure_ascii=False)
+        json.dump({"generated_at": "2026-10-27", "picks": out}, fh, indent=1, ensure_ascii=False)
 
     print(f"picks written: {len(out)}")
     for pr in problems:

@@ -110,7 +110,7 @@ class Parse(HTMLParser):
 
 published = [ROOT/x for x in ('index.html','all-events.html','flagged.html','methodology.html','sources.html','archive.html','olbg-map.html')]
 published += sorted((ROOT/'sports').glob('*.html'))
-historical = [p for base in ('docs', 'olbg-tips', 'board', 'legacy-cal4') for p in sorted((ROOT/base).rglob('*.html'))]
+historical = [p for base in ('docs', 'olbg-tips', 'board', 'legacy-cal4', 'legacy-calc1') for p in sorted((ROOT/base).rglob('*.html'))]
 historical += [ROOT/name for name in ('picks.html','lines.html','method.html')]
 parsed = {}
 for path in published + historical:

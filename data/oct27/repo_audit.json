@@ -3,73 +3,14 @@
   "audited_by": "sess-arena-785abd52",
   "root_26oct_audit": {
     "dataset": "data/*.json (26 Oct 2026 snapshot)",
-    "events_count": 121,
+    "events_count": 143,
     "priced_count": 0,
-    "unpriced_count": 121,
-    "picks_count": 56,
-    "duplicate_event_ids": {
-      "160795": 2
-    },
-    "expired_oct26_events_count": 31,
-    "edt_utc_date_rollover_count": 14,
-    "edt_utc_date_rollover_examples": [
-      {
-        "id": "902176",
-        "sport": "Tennis",
-        "event": "Ann Li vs Ekaterina Alexandrova",
-        "label": "Today 22:00",
-        "recorded_date": "2026-10-26"
-      },
-      {
-        "id": "902305",
-        "sport": "Tennis",
-        "event": "Yulia Putintseva vs Maria Sakkari",
-        "label": "Today 23:00",
-        "recorded_date": "2026-10-26"
-      },
-      {
-        "id": "902180",
-        "sport": "Tennis",
-        "event": "Simona Waltert vs Jil Teichmann",
-        "label": "Today 23:00",
-        "recorded_date": "2026-10-26"
-      },
-      {
-        "id": "902179",
-        "sport": "Tennis",
-        "event": "Kaitlin Quevedo vs Sofia Kenin",
-        "label": "Today 23:00",
-        "recorded_date": "2026-10-26"
-      },
-      {
-        "id": "902301",
-        "sport": "Tennis",
-        "event": "Anastasia Zakharova vs Magda Linette",
-        "label": "Today 23:00",
-        "recorded_date": "2026-10-26"
-      },
-      {
-        "id": "536204",
-        "sport": "Basketball",
-        "event": "IND Pacers @ MIL Bucks",
-        "label": "Today 20:00",
-        "recorded_date": "2026-10-26"
-      },
-      {
-        "id": "536206",
-        "sport": "Basketball",
-        "event": "MEM Grizzlies @ UTA Jazz",
-        "label": "Today 21:00",
-        "recorded_date": "2026-10-26"
-      },
-      {
-        "id": "536201",
-        "sport": "Basketball",
-        "event": "ATL Hawks @ HOU Rockets",
-        "label": "Today 20:30",
-        "recorded_date": "2026-10-26"
-      }
-    ],
+    "unpriced_count": 143,
+    "picks_count": 49,
+    "duplicate_event_ids": {},
+    "expired_oct26_events_count": 0,
+    "edt_utc_date_rollover_count": 0,
+    "edt_utc_date_rollover_examples": [],
     "structural_defects": [
       {
         "code": "AUD-26-01",

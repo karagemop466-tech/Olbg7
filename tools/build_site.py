@@ -1,15 +1,29 @@
 #!/usr/bin/env python3
+"""Historical CAL-1 board generator (2026-10-27 snapshot).
+
+Superseded on the live site by tools/build_current.py (the fail-closed snapshot desk driven
+by data/current.json). It is kept to rebuild the archived CAL-1 board under a namespaced
+directory and cannot write to the repo root:
+
+    LEGACY_BUILD=1 SITE_OUT=legacy-calc1 python3 tools/build_site.py
+"""
 import os as _os
 if _os.environ.get("LEGACY_BUILD") != "1":
-    raise SystemExit("Superseded by tools/build_board.py (2026-10-27 board). "
-                     "Set LEGACY_BUILD=1 and SITE_OUT=<dir> to run this historical generator.")
-"""Build the static GitHub Pages site at the repo root from data/*.json."""
+    raise SystemExit("Superseded by tools/build_current.py (live snapshot board). "
+                     "Set LEGACY_BUILD=1 and SITE_OUT=<dir> to rebuild this historical CAL-1 board.")
 import json, os, re, html
 from datetime import date
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
-TODAY = "2026-10-26"
+TODAY = "2026-10-27"
+
+# Historical output namespace (relative to ROOT). Required: an unguarded run must never
+# overwrite the live snapshot pages at the repo root.
+SITE_OUT = os.environ.get("SITE_OUT", "").strip("/")
+if not SITE_OUT:
+    raise SystemExit("SITE_OUT=<dir> is required; the legacy CAL-1 generator cannot write to the repo root.")
+OUT = os.path.join(ROOT, SITE_OUT)
 
 SPORTS = [
     ("golf", "Golf"),
@@ -85,10 +99,14 @@ def price_for(pick, pricing_index):
 
 
 def confidence_of(p_fair, card, tips_total):
+    # Mirrors tools/pricing.py and the boundary tests in tools/check_site.py: the owner rule
+    # is STRICTLY greater than 70% fair chance, >=8 tips, and the focus band tested on the
+    # FAIR decimal (1/p_fair), not the margined card. Exactly 0.70 stays medium.
     if p_fair is None or card is None:
         return "low"
-    in_band = 1.40 <= card <= 101.0
-    if p_fair > 0.70 and (tips_total or 0) >= 8 and in_band:
+    fair_dec = 1.0 / p_fair
+    fair_in_band = 1.40 <= fair_dec <= 101.0
+    if p_fair > 0.70 and (tips_total or 0) >= 8 and fair_in_band:
         return "high"
     if p_fair >= 0.50:
         return "medium"
@@ -152,20 +170,32 @@ footer{max-width:1180px;margin:0 auto;padding:24px 20px 50px;color:var(--muted);
 
 
 def head(title, nav_on=""):
-    prefix = "../" if nav_on.startswith("sports/") else ""
+    in_sports = nav_on.startswith("sports/")
+    prefix = "../" if in_sports else ""           # inside the legacy namespace
+    up = "../../" if in_sports else "../"          # escape namespace -> live repo root
     navs = [("index.html", "Dashboard"), ("all-events.html", "All events &amp; lines"),
             ("olbg-map.html", "OLBG site map"), ("methodology.html", "Pricing method"),
             ("sources.html", "Sources"), ("flagged.html", "Flagged for review"),
-            ("olbg-tips/index.html", "Tip-consensus board")]
+            (f"{up}olbg-tips/index.html", "Tip-consensus board")]
     on_cls = ' class="on"'
     links = "".join(
-        f'<a href="{prefix}{h}"{on_cls if nav_on == h else ""}>{t}</a>' for h, t in navs
+        f'<a href="{h if h.startswith(("http", "../")) else prefix + h}"'
+        f'{on_cls if nav_on == h else ""}>{t}</a>' for h, t in navs
     )
     sport_links = "".join(f'<a href="{prefix}sports/{s}.html">{t}</a>' for s, t in SPORTS)
+    warning = (
+        '<div id="historical-warning" role="note" style="padding:14px 20px;background:#fff0cd;'
+        'color:#543800;border-bottom:2px solid #c99a42;font:600 15px/1.5 system-ui,sans-serif">'
+        'ARCHIVED 27 OCTOBER 2026 CAL-1 BOARD &mdash; not live; these lines are historical, '
+        'uncalibrated tip-split estimates, not bookmaker quotes, and the claims have not been '
+        'rechecked since capture. Do not use as current betting advice. '
+        f'<a style="color:#163c4d;text-decoration:underline" href="{up}archive.html">'
+        'Archive warning and current desk</a>.</div>'
+    )
     return f"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{esc(title)}</title><link rel="stylesheet" href="{prefix}assets/style.css"></head>
-<body><header><div class="wrap"><div><h1>OLBG Coverage Desk</h1>
+<body>{warning}<header><div class="wrap"><div><h1>OLBG Coverage Desk</h1>
 <div class="sub">15 sports &middot; our own lines &middot; written predictions &middot; retrieved {TODAY}</div></div></div></header>
 <nav><div class="wrap">{links}</div></nav>
 <nav style="border-top:1px solid var(--line)"><div class="wrap">{sport_links}</div></nav>
@@ -173,11 +203,13 @@ def head(title, nav_on=""):
 
 
 def foot(prefix=""):
+    up = "../../" if prefix else "../"
     return f"""</main><footer>
 <p><strong>Method.</strong> Lines are originated by this desk from OLBG's published tip splits using the CAL-1
 engine described on the <a href="{prefix}methodology.html">pricing method</a> page; they are not bookmaker prices.
 Predictions are editorial. Every factual claim carries a source link on the row or card it appears in.</p>
-<p>Earlier board from the first session: <a href="{prefix}docs/index.html">docs/</a>.</p>
+<p>This is a namespaced historical board. The current snapshot desk is at <a href="{up}index.html">the live dashboard</a>;
+the earlier first-session board remains at <a href="{up}docs/index.html">docs/</a>.</p>
 <p>18+. Betting involves risk. If gambling is causing you concern, support is available from GamCare and GambleAware.
 This site republishes no paid tipster content and gives no assurance of profit.</p>
 </footer></body></html>"""
@@ -213,9 +245,9 @@ def main():
         p["_slug"] = NAME_TO_SLUG.get(p["sport"], "index")
         enriched.append(p)
 
-    os.makedirs(os.path.join(ROOT, "assets"), exist_ok=True)
-    os.makedirs(os.path.join(ROOT, "sports"), exist_ok=True)
-    with open(os.path.join(ROOT, "assets", "style.css"), "w") as fh:
+    os.makedirs(os.path.join(OUT, "assets"), exist_ok=True)
+    os.makedirs(os.path.join(OUT, "sports"), exist_ok=True)
+    with open(os.path.join(OUT, "assets", "style.css"), "w") as fh:
         fh.write(CSS)
 
     # ---------- index ----------
@@ -261,22 +293,12 @@ def main():
     method_line = ", ".join(f"{k}: {v}" for k, v in sorted(methods.items()))
 
     doc = head("OLBG Coverage Desk - dashboard", "index.html")
-    snapshot_day = date.fromisoformat(TODAY)
-    build_day = date.today()
-    freshness_note = (
-        f'<div class="note" style="border-left:4px solid #b45309;background:#fff7ed">'
-        f'<strong>Data freshness warning — {build_day:%d %B %Y}.</strong> This board uses a snapshot retrieved '
-        f'{snapshot_day:%d %B %Y} and has not been refreshed for today. Do not treat its selections as current or '
-        'actionable; event status, start times, team news and markets may have changed or expired. '
-        'Review the <a href="flagged.html">Flagged for review</a> page for known uncertainties.</div>'
-    ) if build_day > snapshot_day else ''
-    doc += freshness_note
     doc += f"""
 <h2>Executive summary</h2>
 <p class="lede">We inventoried every OLBG event we could reach across the 15 sports in scope, originated a price for
 each one that carries a printed tip split, and wrote {n_picks} full predictions. {len(highs)} selections clear our
 high-confidence bar, {len(meds)} are medium and {len(lows)} are low. {short_n} sports cannot reach the five-pick
-the five-pick target in this snapshot because OLBG carries too little priced market data in them ({short_list}); those are named below
+target today because OLBG itself carries too little priced market data in them ({short_list}); those are named below
 and on the <a href="flagged.html">Flagged for review</a> page rather than padded out with fixtures and prices that no
 source supports.</p>
 <div class="grid">
@@ -284,32 +306,37 @@ source supports.</p>
 <div class="kpi"><div class="n">{len(events)}</div><div class="l">OLBG events inventoried</div></div>
 <div class="kpi"><div class="n">{pricing['totals']['priced']}</div><div class="l">events with our own line</div></div>
 <div class="kpi"><div class="n">{n_picks}</div><div class="l">written predictions</div></div>
-<div class="kpi"><div class="n">{len(todays)}</div><div class="l">picks marked Today in snapshot</div></div>
+<div class="kpi"><div class="n">{len(todays)}</div><div class="l">picks on today's card</div></div>
 <div class="kpi"><div class="n">{len(flags['flags'])}</div><div class="l">irregularities flagged</div></div>
 </div>
 <div class="note"><strong>How to read the picks.</strong> Confidence is computed from our fair probability, the size of
 the tip sample and the price band, not typed in by hand. A pick only earns <span class="pill high">high</span> if the
-fair probability is greater than 70%, the market has at least 8 tips, and our price sits inside the requested
-&minus;250 to +10000 band (1.40 to 101.00 decimal). Selection prices shown are <em>our</em> originating prices, not
+fair probability is above 70%, the market has at least 8 tips, and the fair decimal price sits inside the requested
+&minus;250 to +10000 band (1.40 to 101.00). The band is tested on the fair price rather than the margined card, so the
+5% margin cannot disqualify a qualifying pick. Selection prices shown are <em>our</em> originating prices, not
 bookmaker prices - see the <a href="methodology.html">pricing method</a>.</div>
 
 <h2>Picks ranked by confidence, then by our fair chance</h2>
 <table><thead><tr><th>Sport</th><th>Selection &amp; event</th><th>Market</th><th>Our price</th>
 <th>Fair chance</th><th>Confidence</th></tr></thead><tbody>{''.join(rows)}</tbody></table>
-<p class="small muted">The high-confidence tier is {', '.join(f"{esc(x['selection'])} ({esc(x['sport'])})" for x in sorted(highs, key=lambda y: -(y['_p_fair'] or 0))) or 'empty in this snapshot'}.
+<p class="small muted">The high-confidence tier is {', '.join(f"{esc(x['selection'])} ({esc(x['sport'])})" for x in sorted(highs, key=lambda y: -(y['_p_fair'] or 0))) or 'empty today'}.
 Full written reasoning for every pick is on each sport page; all {n_picks} picks run to at least 30 words and none
 reuse a template.</p>
 
 <h2>Coverage by sport</h2>
 <table><thead><tr><th>Sport</th><th>Events found</th><th>Events priced</th><th>Picks written</th>
 <th>High confidence</th><th>5-pick target</th></tr></thead><tbody>{''.join(cov_rows)}</tbody></table>
-<div class="note flag"><strong>Gaps, stated plainly.</strong> In this snapshot, Snooker returned no tips at all from OLBG, Golf
-carried only three tournament markets with two tips each, Baseball had a single live game, Rugby League offered only
-season ante-post markets, Darts and Motor Racing two markets each, and Gaelic Sports four selections. We publish what
-the data supports and flag the rest instead of inventing fixtures, prices or form lines.</div>
-<div class="note"><strong>How each price was made.</strong> {method_line}. CAL-1 reprices the tip split OLBG prints.
-CAL-2 is used where the printed split is unusable (the handball draw artefact) and CAL-3 where a tournament market has
-too few runners and tips to reprice at all. Every row on this site carries its method on the pick card.</div>
+<div class="note flag"><strong>Gaps, stated plainly.</strong> Snooker and Greyhounds both returned 'No tips found' from
+OLBG today. Handball shows 'Tie' as the most-tipped selection on 15 of its 19 rows, a display defect we do not price,
+leaving four usable handball picks. Golf carried only three tournament markets with two tips each, Baseball had a
+single live game, Rugby League offered only 2027 season ante-post markets, Darts and Motor Racing two markets each, and
+Gaelic Sports four selections. We publish what the data supports and flag the rest instead of inventing fixtures,
+prices or form lines.</div>
+<div class="note"><strong>How each price was made.</strong> {method_line}. Every published pick is CAL-1, a reprice of
+the tip split OLBG printed at retrieval. The CAL-2 and CAL-3 fallback methods remain documented on the
+<a href="methodology.html">pricing method</a> page but produce no rows on today's board: the unusable handball 'Tie'
+splits are excluded rather than estimated, and no zero-tip market is picked. Outright rows carry an explicit
+eight-runner assumption, also labelled on each card.</div>
 
 <h3>What is where</h3>
 <ul class="small">
@@ -319,14 +346,14 @@ too few runners and tips to reprice at all. Every row on this site carries its m
 <li><strong>How prices are made</strong> is on <a href="methodology.html">Pricing method</a>.</li>
 <li><strong>Everything we could not confirm</strong> is on <a href="flagged.html">Flagged for review</a>.</li>
 <li><strong>Tip-consensus board.</strong> A third session's 127-row market capture, with its own method and its
-own flagged list, is published at <a href="olbg-tips/index.html">olbg-tips/</a> (requested in COORDINATION.md).</li>
+own flagged list, is published at <a href="../olbg-tips/index.html">olbg-tips/</a> (requested in COORDINATION.md).</li>
 <li><strong>Earlier board.</strong> A separate 75-row board produced earlier the same day in another session is
-preserved untouched at <a href="docs/index.html">docs/</a>. It uses a different method (hand-set probabilities) and
+preserved untouched at <a href="../docs/index.html">docs/</a>. It uses a different method (hand-set probabilities) and
 is kept for comparison, not merged into these totals.</li>
 </ul>
 """
     doc += foot()
-    with open(os.path.join(ROOT, "index.html"), "w") as fh:
+    with open(os.path.join(OUT, "index.html"), "w") as fh:
         fh.write(doc)
 
     # ---------- sport pages ----------
@@ -388,7 +415,7 @@ carries no picks. The reason and the supporting evidence are on the
 <td class="num">{line}</td><td class="small"><a href="https://www.olbg.com{esc(e['path'])}" target="_blank" rel="noopener">OLBG</a></td></tr>"""
         doc += "</tbody></table>"
         doc += foot("../")
-        with open(os.path.join(ROOT, "sports", f"{slug}.html"), "w") as fh:
+        with open(os.path.join(OUT, "sports", f"{slug}.html"), "w") as fh:
             fh.write(doc)
 
     # ---------- all events ----------
@@ -415,7 +442,7 @@ of {pricing['totals']['priced']} priced selections fall inside that band.</div>
 <td class="small"><a href="https://www.olbg.com{esc(r['path'])}" target="_blank" rel="noopener">OLBG</a></td></tr>"""
     doc += "</tbody></table>"
     doc += foot()
-    with open(os.path.join(ROOT, "all-events.html"), "w") as fh:
+    with open(os.path.join(OUT, "all-events.html"), "w") as fh:
         fh.write(doc)
 
     # ---------- olbg map ----------
@@ -451,7 +478,7 @@ favourite. Bookmaker prices are rendered client-side and were absent from every 
 project originates its own lines instead of quoting OLBG's.</p>
 """
     doc += foot()
-    with open(os.path.join(ROOT, "olbg-map.html"), "w") as fh:
+    with open(os.path.join(OUT, "olbg-map.html"), "w") as fh:
         fh.write(doc)
 
     # ---------- methodology ----------
@@ -474,28 +501,32 @@ three-way money line, 0.125 for an outright (assumed eight runners, which is an 
 so every price we publish is shorter than our fair number.</td></tr>
 <tr><td>5. American</td><td>Standard conversion: <code>(dec &minus; 1) &times; 100</code> at 2.00 and above,
 <code>&minus;100 / (dec &minus; 1)</code> below 2.00.</td></tr>
-<tr><td>6. Confidence</td><td><span class="pill high">high</span> needs fair probability &gt; 70%, a sample of at least
-8 tips and a price inside {m['band_min_decimal']} to {m['band_max_decimal']}. <span class="pill medium">medium</span>
-is fair probability &ge; 50%. Everything else is <span class="pill low">low</span>. The label is computed, never
-typed.</td></tr>
+<tr><td>6. Confidence</td><td><span class="pill high">high</span> needs fair probability &gt; 70% (strictly greater;
+exactly 70% stays medium), a sample of at least
+8 tips and a <em>fair</em> decimal price inside {m['band_min_decimal']} to {m['band_max_decimal']}.
+<span class="pill medium">medium</span> is fair probability &ge; 50% (including 70%+ shots whose price falls outside
+the band). Everything else is <span class="pill low">low</span>. The label is computed, never typed.</td></tr>
 </tbody></table>
 
-<h3>CAL-2, used for Handball only</h3>
-<p class="small">OLBG's handball listing prints "Tie" as the most-popular selection for nearly every Champions League
-match, which makes the printed split unusable (flag F-002). For those five matches we price from the
-competition base rate OLBG itself publishes - EHF Champions League men, favourites won 446 of 654 games (68.2%) -
-shrunk 15% toward 50% to allow for what we do not know about the specific tie. The results and standings we cite are
-official EHF data.</p>
+<h3>CAL-2, the fallback for unusable splits (no rows on this board)</h3>
+<p class="small">OLBG's handball listing prints "Tie" as the most-popular selection for 15 of the 19 rows on today's
+card, which makes those splits unusable (flag F-002). The CAL-2 fallback exists for exactly this situation: price from
+an independently sourced competition base rate rather than from the defective split, and label the estimate. On this
+board no CAL-2 rows are published at all - the 15 "Tie" rows are excluded, and only the four rows with a real club
+selection are priced through CAL-1.</p>
 
-<h3>CAL-3, used where there is no market at all</h3>
-<p class="small">One pick (Antonelli, top-six finish in Mexico City) sits in a market with zero tips. It is priced by
-us from the championship arithmetic and is labelled CAL-3 so it can never be mistaken for a market-derived number.</p>
+<h3>CAL-3, the fallback for markets with no split (no rows on this board)</h3>
+<p class="small">CAL-3 covers a market that prints zero tips, where no reprice is possible. It would price from explicit
+championship or event arithmetic and carry a visible estimate label. Today's board contains no such pick; the one
+inventory row without a split (T20 Blast 2027 outright) is left unpriced and flagged instead.</p>
 
 <h3>The &minus;250 to +10000 band</h3>
-<p class="small">&minus;250 American is {m['band_min_decimal']} decimal; +10000 is {m['band_max_decimal']}. The band is
-applied to our card price. A strong favourite priced under 1.40 is a real pick but is excluded from the high-confidence
-tier, because beating a 1.20 shot is not the part of the market the brief wants us working. Recorded constants:
-margin {m['margin']}, pseudo-count {m['K_pseudo_tips']}, band {m['band_min_decimal']}-{m['band_max_decimal']}.</p>
+<p class="small">&minus;250 American is {m['band_min_decimal']} decimal; +10000 is {m['band_max_decimal']}. The
+confidence gate applies the band to the <em>fair</em> decimal (1 / p_fair), because it describes market odds: a 70%
+shot has a 1.43 fair price but a 1.36 card once the 5% margin is applied, so testing the margined card would make the
+70% rule and the band mutually exclusive. The card price keeps its own separate in-band flag on the data table. A
+strong favourite under 1.40 remains a real, published pick but is excluded from the high-confidence tier. Recorded
+constants: margin {m['margin']}, pseudo-count {m['K_pseudo_tips']}, band {m['band_min_decimal']}-{m['band_max_decimal']}.</p>
 
 <h3>Known limits of this approach</h3>
 <ul class="small">
@@ -509,7 +540,7 @@ page was read.</li>
 </ul>
 """
     doc += foot()
-    with open(os.path.join(ROOT, "methodology.html"), "w") as fh:
+    with open(os.path.join(OUT, "methodology.html"), "w") as fh:
         fh.write(doc)
 
     # ---------- sources ----------
@@ -525,7 +556,7 @@ Retrieved {TODAY}.</p>"""
 <td class="small">{esc(it['use'])}</td></tr>"""
         doc += "</tbody></table>"
     doc += foot()
-    with open(os.path.join(ROOT, "sources.html"), "w") as fh:
+    with open(os.path.join(OUT, "sources.html"), "w") as fh:
         fh.write(doc)
 
     # ---------- flagged ----------
@@ -545,7 +576,7 @@ pages disagree with each other. Nothing here blocks publication; it marks what n
         doc += f"<li>{esc(b)}</li>"
     doc += "</ul>"
     doc += foot()
-    with open(os.path.join(ROOT, "flagged.html"), "w") as fh:
+    with open(os.path.join(OUT, "flagged.html"), "w") as fh:
         fh.write(doc)
 
     print(f"wrote index.html, {len(SPORTS)} sport pages, all-events.html, olbg-map.html, "
