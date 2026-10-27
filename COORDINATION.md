@@ -54,6 +54,8 @@ other session's work was discarded.
 - The previous session `arena-3b1b6ed4` reported completion in its final PR #25 log; PR #22 for the
   independent CI repair also merged. The old active-session table below is preserved as historical,
   even where a status cell was not updated by its owner. PR #15 remained open and was not modified.
+- Main advanced again through coordination-only PR #26 (`1d4c167`); its report that the CI repair
+  passed and session `arena-b42ae9fe` finished was preserved. The subsequent rebase was clean.
 - Rebase onto `a867a0c` initially left one conflicting heading marker in this file; it was repaired,
   the two headings were reconciled, and all upstream claims and logs were retained. All 104 archived
   HTML pages, including the 19 `board/` pages, 23 CAL-4 copies, and three root legacy pages, have
