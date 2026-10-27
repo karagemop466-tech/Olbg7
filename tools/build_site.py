@@ -152,6 +152,7 @@ def head(title, nav_on=""):
     navs = [("index.html", "Dashboard"), ("all-events.html", "All events &amp; lines"),
             ("olbg-map.html", "OLBG site map"), ("methodology.html", "Pricing method"),
             ("sources.html", "Sources"), ("flagged.html", "Flagged for review"),
+            ("freshness.html", "Data freshness"),
             ("olbg-tips/index.html", "Tip-consensus board")]
     on_cls = ' class="on"'
     links = "".join(
@@ -165,7 +166,7 @@ def head(title, nav_on=""):
 <div class="sub">15 sports &middot; our own lines &middot; written predictions &middot; retrieved {TODAY}</div></div></div></header>
 <nav><div class="wrap">{links}</div></nav>
 <nav style="border-top:1px solid var(--line)"><div class="wrap">{sport_links}</div></nav>
-<main>"""
+<main><div class="note flag"><strong>Data freshness warning — 27 October 2026. Archived snapshot, not a live betting card.</strong> Event and prediction data were captured on {TODAY}; “Today” and “Tomorrow” refer to that capture date. Fixture status, start times, markets, prices and team news may have changed or expired. Re-check OLBG and official sources before relying on any entry. See <a href="{prefix}freshness.html">Data freshness and snapshot audit</a> and <a href="{prefix}flagged.html">Flagged for review</a>.</div>"""
 
 
 def foot(prefix=""):
@@ -258,11 +259,11 @@ def main():
 
     doc = head("OLBG Coverage Desk - dashboard", "index.html")
     doc += f"""
-<h2>Executive summary</h2>
+<h2>Executive summary (2026-10-26 snapshot)</h2>
 <p class="lede">We inventoried every OLBG event we could reach across the 15 sports in scope, originated a price for
 each one that carries a printed tip split, and wrote {n_picks} full predictions. {len(highs)} selections clear our
 high-confidence bar, {len(meds)} are medium and {len(lows)} are low. {short_n} sports cannot reach the five-pick
-target today because OLBG itself carries too little priced market data in them ({short_list}); those are named below
+target in this snapshot because OLBG itself carried too little priced market data in them ({short_list}); those are named below
 and on the <a href="flagged.html">Flagged for review</a> page rather than padded out with fixtures and prices that no
 source supports.</p>
 <div class="grid">
@@ -270,7 +271,7 @@ source supports.</p>
 <div class="kpi"><div class="n">{len(events)}</div><div class="l">OLBG events inventoried</div></div>
 <div class="kpi"><div class="n">{pricing['totals']['priced']}</div><div class="l">events with our own line</div></div>
 <div class="kpi"><div class="n">{n_picks}</div><div class="l">written predictions</div></div>
-<div class="kpi"><div class="n">{len(todays)}</div><div class="l">picks on today's card</div></div>
+<div class="kpi"><div class="n">{len(todays)}</div><div class="l">picks in 26 Oct snapshot</div></div>
 <div class="kpi"><div class="n">{len(flags['flags'])}</div><div class="l">irregularities flagged</div></div>
 </div>
 <div class="note"><strong>How to read the picks.</strong> Confidence is computed from our fair probability, the size of
@@ -282,14 +283,14 @@ bookmaker prices - see the <a href="methodology.html">pricing method</a>.</div>
 <h2>Picks ranked by confidence, then by our fair chance</h2>
 <table><thead><tr><th>Sport</th><th>Selection &amp; event</th><th>Market</th><th>Our price</th>
 <th>Fair chance</th><th>Confidence</th></tr></thead><tbody>{''.join(rows)}</tbody></table>
-<p class="small muted">The high-confidence tier is {', '.join(f"{esc(x['selection'])} ({esc(x['sport'])})" for x in sorted(highs, key=lambda y: -(y['_p_fair'] or 0))) or 'empty today'}.
+<p class="small muted">The high-confidence tier is {', '.join(f"{esc(x['selection'])} ({esc(x['sport'])})" for x in sorted(highs, key=lambda y: -(y['_p_fair'] or 0))) or 'empty in this snapshot'}.
 Full written reasoning for every pick is on each sport page; all {n_picks} picks run to at least 30 words and none
 reuse a template.</p>
 
 <h2>Coverage by sport</h2>
 <table><thead><tr><th>Sport</th><th>Events found</th><th>Events priced</th><th>Picks written</th>
 <th>High confidence</th><th>5-pick target</th></tr></thead><tbody>{''.join(cov_rows)}</tbody></table>
-<div class="note flag"><strong>Gaps, stated plainly.</strong> Snooker returned no tips at all from OLBG today, Golf
+<div class="note flag"><strong>Gaps, stated plainly.</strong> Snooker returned no tips at all from OLBG in the 2026-10-26 capture, Golf
 carried only three tournament markets with two tips each, Baseball had a single live game, Rugby League offered only
 season ante-post markets, Darts and Motor Racing two markets each, and Gaelic Sports four selections. We publish what
 the data supports and flag the rest instead of inventing fixtures, prices or form lines.</div>

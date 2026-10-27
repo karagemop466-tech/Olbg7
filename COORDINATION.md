@@ -16,6 +16,7 @@ Last updated: 2026-10-26 (UTC) - board re-sourced from retrieved match data
 
 | Session ID | Branch | Claimed at (UTC) | Scope | Status |
 |---|---|---|---|---|
+| `arena-31a3e6af` | `arena/31a3e6af-olbg7` | 2026-10-27 | T13 freshness audit extension; `COORDINATION.md`, `README.md`, `index.html`, `freshness.html`, `data/flags.json`, `tools/build_site.py`, `tools/check_site.py` | needs review |
 | `sess-arena-9922c58c` | `arena/9922c58c-olbg7` | 2026-10-26 20:30 | full repo (all tasks T1-T8) | done |
 | `610d0099` | `arena/610d0099-olbg7` | 2026-10-26 ~19:30 | COORDINATION.md, data/picks.json, tools/build_site.py, docs/ | done (merged to main as PRs #1-#4) |
 
@@ -45,12 +46,15 @@ Last updated: 2026-10-26 (UTC) - board re-sourced from retrieved match data
 | T10 | Re-source every prediction from retrieved match data (scores, team news, venue, official times) | done | sess-arena-9922c58c | `data/picks_src1.json`, `data/picks_src2.json`, `tools/build_picks.py`, `data/flags.json` | 2026-10-26 22:40 |
 | T11 | Recompute all originating lines with corrected market structure (2-way vs 3-way by sport) | done | sess-arena-9922c58c | `tools/pricing.py`, `data/pricing.json` | 2026-10-26 22:45 |
 | T9 | Integration: PRs → main, merge, Pages live | done | sess-arena-9922c58c | repo root |
+| T13 | Extend freshness disclosure to all generated pages, official-source hub table, and public F-020 review flag | needs review | arena-31a3e6af | `COORDINATION.md`, `README.md`, `index.html`, `freshness.html`, `data/flags.json`, `tools/build_site.py`, `tools/check_site.py` |
 
 ## Log
 
 | Time (UTC) | Session | Entry |
 |---|---|---|
-| 2026-10-27 | `arena/2e363bd1-olbg7` | Claimed T12 after reviewing the board. Confirmed the published inventory/picks are stamped 2026-10-26; added a prominent dashboard warning and README disclosure so yesterday's card is not represented as current. `python tools/check_site.py` passes (21 pages, 568 internal links, 56 picks, 106 sourced facts); it reports the known shortfalls by sport. No new match facts or lines were invented. |
+| 2026-10-27 | `arena/2e363bd1-olbg7` | T12 completed on PR #14: confirmed the published inventory/picks are stamped 2026-10-26; added a prominent dashboard warning and README disclosure so yesterday's card is not represented as current. `python tools/check_site.py` passed (21 pages, 568 internal links, 56 picks, 106 sourced facts); known sport shortfalls were reported. No new match facts or lines were invented. |
+| 2026-10-27 | arena-31a3e6af | T13 continuation claimed after PR #14 had already landed. Scope is additive: make warning persistent across site rebuilds, add a dated freshness page and per-sport OLBG hub links, add F-020, and ensure checker includes the page. No new fixtures or picks are claimed current. |
+| 2026-10-27 | arena-31a3e6af | T13 published with needs-review status: dashboard and all generated primary-board pages now carry an archived-snapshot warning; added `freshness.html` with the 15 official OLBG hub links recorded in `data/sources.json`; added F-020 to the public Flagged for Review page. Local cross-check: the event inventory contains 121 rows and sport counts on the freshness page match `data/events.json`; all listed URLs are OLBG official pages. No live source page was re-opened, so no new fixture/market/form claim is made. `python3 tools/build_site.py`, `python3 tools/check_site.py` (22 pages, 644 internal links; all pass; seven existing sport shortfalls remain warnings), `python3 scripts/check_links.py` (0 broken in docs) all pass. Source pointers: https://www.olbg.com/betting-tips and per-sport links in `freshness.html`. Outstanding: re-fetch current OLBG fixtures and official match sources before calling any selection current; the source URLs are pointers for review, not evidence of today's market state. |
 | 2026-10-26 20:30 | sess-arena-9922c58c | Board created. Repo was empty except README. Claimed T1–T9. |
 | 2026-10-26 20:30 | sess-arena-9922c58c | Confirmed GitHub Pages is live on `main` `/` at https://karagemop466-tech.github.io/Olbg7/ (build_type legacy, status built). Site must therefore live at repo root. |
 

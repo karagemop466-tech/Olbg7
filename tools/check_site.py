@@ -94,7 +94,7 @@ def main():
 
     # --- html checks -------------------------------------------------------
     pages = ["index.html", "all-events.html", "olbg-map.html", "methodology.html",
-             "sources.html", "flagged.html"] + [f"sports/{s}.html" for s in SPORTS]
+             "sources.html", "flagged.html", "freshness.html"] + [f"sports/{s}.html" for s in SPORTS]
     total_links = 0
     for page in pages:
         path = os.path.join(ROOT, page)
