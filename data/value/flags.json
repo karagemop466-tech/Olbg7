@@ -1,0 +1,2842 @@
+{
+ "schema_version": 1,
+ "date": "2026-10-27",
+ "flags": [
+  {
+   "id": "F01",
+   "scope": "repo",
+   "severity": "high",
+   "sport": "All",
+   "title": "Prior published card was a 26 October snapshot",
+   "detail": "data/events.json and the root dashboard carry retrieved_at 2026-10-26. This desk uses a fresh 27 October transcription (143 OLBG rows) plus 50 rows read from OLBG event pages and official fixtures. Tip splits changed substantially: India moved from 27/40 to 35/49, Afghanistan from 8/9 to 15/16, Pakistan from 14/21 to 22/31.",
+   "sources": [
+    "https://www.olbg.com/betting-tips",
+    "data/value/capture.json"
+   ]
+  },
+  {
+   "id": "F02",
+   "scope": "repo",
+   "severity": "high",
+   "sport": "Baseball",
+   "title": "Earlier board contains stale, contradictory World Series claims",
+   "detail": "data/picks_610d0099.json says Milwaukee led 2-0 before Game 3 on 26 October and describes Freddy Peralta as a Rays pitcher with a 2-0 record and 1.08 playoff ERA. MLB.com's official schedule now shows Milwaukee winning Game 3 10-1 to lead 3-0, and its report says Peralta was charged with the eight-run fifth inning. Those earlier rows must not be republished as current.",
+   "sources": [
+    "https://www.mlb.com/news/2026-mlb-playoff-and-world-series-schedule",
+    "data/picks_610d0099.json"
+   ]
+  },
+  {
+   "id": "F03",
+   "scope": "repo",
+   "severity": "medium",
+   "sport": "Handball",
+   "title": "OLBG handball hub shows 'Tie' as the most-tipped selection",
+   "detail": "Thirteen of the 27 October handball rows list 'Tie' as the selected outcome with tip shares up to 78%. This is a rendering artefact of the hub's most-tipped-outcome display, not a usable market consensus. Here those matches are priced as three-way contests and the straight win is picked using EHF's official group table.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Handball/20",
+    "https://ehfcl.eurohandball.com/men/2026-27/standings/"
+   ]
+  },
+  {
+   "id": "F04",
+   "scope": "repo",
+   "severity": "high",
+   "sport": "Snooker, Greyhounds",
+   "title": "OLBG has no snooker or greyhound tips today",
+   "detail": "Both hubs returned 'No tips found.' on 27 October. The picks on this desk for those sports come from WST's official match centre/rankings and Romford Stadium's official advance card, not from OLBG markets. They are labelled and must not be described as OLBG community picks.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Snooker/8",
+    "https://www.olbg.com/betting-tips/Greyhounds/28",
+    "https://www.wst.tv/rankings/",
+    "https://romfordgreyhoundstadium.co.uk/racing/advance/races"
+   ]
+  },
+  {
+   "id": "F05",
+   "scope": "repo",
+   "severity": "medium",
+   "sport": "Darts",
+   "title": "PDC sources conflict on Players Championship event numbering",
+   "detail": "A PDC article dated 26 October announces Players Championships 31-32 for 28-29 October, but another PDC article dated the same day lists 2026 PC event winners through event 32 (Jeffrey de Graaf 31, Gabriel Clemens 32). An OLBG tipster comment also credits Wessel Nijman with six 2026 PC titles, which does not match PDC's own winner list. All darts form claims are flagged where they come from community comments.",
+   "sources": [
+    "https://www.pdc.tv/news/2026/october/26/2026-players-championships-31-32-entries-confirmed",
+    "https://www.pdc.tv/news/2026/october/26/schindler---coates-secure-grand-slam-qualification",
+    "https://www.olbg.com/betting-tips/Darts/All_Darts/All_Events/Players_Championship_31/15?event_id=32446"
+   ]
+  },
+  {
+   "id": "F06",
+   "scope": "repo",
+   "severity": "medium",
+   "sport": "Motor Racing",
+   "title": "Market label for the Verstappen Mexico row differs between captures",
+   "detail": "The 27 October hub row 007 names the market 'Podium Finish' with selection 'Max Verstappen - Yes' at 1/2 tips, while the earlier root inventory called this event's market 'Top 6 Finish'. The market name is left exactly as captured on 27 October and the discrepancy is recorded here.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Motor_Racing/14",
+    "data/value/capture.json"
+   ]
+  },
+  {
+   "id": "F07",
+   "scope": "repo",
+   "severity": "medium",
+   "sport": "Golf, Darts, Cricket",
+   "title": "Earlier outright lines used a 1/8 prior for large fields",
+   "detail": "Earlier boards priced outright markets with a 1/8 structural prior even for fields of 100+ runners, which produced unrealistically short prices on longshots. This desk uses official field sizes where published (120 for the Mexico Open, 54 for the Simmons Bank Championship, 128 for Players Championship 31) and a documented shrinkage constant. Where a field size was not published it is left blank and flagged.",
+   "sources": [
+    "https://www.pgatour.com/article/news/betting-dfs/2026/10/26/odds-outlook-vidantaworld-mexico-open-betting-fantasy-picks-advice-fedexcup-fall",
+    "https://www.pdc.tv/news/2026/october/26/2026-players-championships-31-32-entries-confirmed",
+    "https://simmonsbankchampionship.com/"
+   ]
+  },
+  {
+   "id": "F08",
+   "scope": "repo",
+   "severity": "medium",
+   "sport": "All",
+   "title": "No bookmaker odds in retrievable OLBG HTML",
+   "detail": "OLBG's rendered pages show tip counts and percentages but no bookmaker price in the HTML we can retrieve, so the bookmaker_odds column is blank throughout and no price-comparison claim is made. One exception: the PGA TOUR's own betting article publishes FanDuel prices for the Mexico Open, which are quoted on the golf rows as a published benchmark, not as an OLBG price.",
+   "sources": [
+    "https://www.olbg.com/betting-tips",
+    "https://www.pgatour.com/article/news/betting-dfs/2026/10/26/odds-outlook-vidantaworld-mexico-open-betting-fantasy-picks-advice-fedexcup-fall"
+   ]
+  },
+  {
+   "id": "F09",
+   "scope": "repo",
+   "severity": "medium",
+   "sport": "All",
+   "title": "Injury and team-news fields are blank",
+   "detail": "No official injury report or confirmed team sheet was retrieved for the majority of events. Injury and team-news cells are intentionally blank rather than filled with speculation; each affected pick carries the injury-news-blank flag. Where an official source did name a starter (MLB Game 4, WST draw, PDC entries), that fact is stated with its link.",
+   "sources": [
+    "data/value/lines.json",
+    "data/value/picks.json",
+    "https://www.olbg.com/betting-tips"
+   ]
+  },
+  {
+   "id": "F10",
+   "scope": "repo",
+   "severity": "medium",
+   "sport": "All",
+   "title": "Start times have no published timezone",
+   "detail": "OLBG prints 'Today 21:00', 'Tomorrow 08:00' and similar labels without a timezone. The timezone field is blank on all captured rows. WST's match centre shows round-two snooker at 21:30 on 30 October while a specialist draw lists 01:30Z on 31 October, so exact start times are left as displayed and not converted.",
+   "sources": [
+    "data/value/capture.json",
+    "https://www.wst.tv/match-centre/bb4f8b36-42f0-490f-b97b-b8f8799f693b",
+    "https://www.snooker.org/res/index.asp?event=2762"
+   ]
+  },
+  {
+   "id": "F11",
+   "scope": "repo",
+   "severity": "low",
+   "sport": "Golf",
+   "title": "Hub shows one tipped name per golf tournament; event pages show two",
+   "detail": "The OLBG golf hub lists one 1/2 selection per tournament, but the three event pages each show two players on one tip apiece (Woad/Choi, Clark/Homa, Cink/Els). Both tipped names are priced here with the event-page URL attached, because the hub's single-name display hides half the market.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Golf/5",
+    "https://www.olbg.com/betting-tips/Golf/All_Golf/All_Events/Mexico_Open/5?event_id=101915"
+   ]
+  },
+  {
+   "id": "F12",
+   "scope": "repo",
+   "severity": "low",
+   "sport": "Snooker",
+   "title": "Opponent world rankings come from a specialist draw list",
+   "detail": "WST publishes the official top rankings (Selby 4, Murphy 7, Wu 2, Wilson 9), but rankings for players outside the top eleven such as Mitchell Mann, Liam Davies and Liu Hongyu were only available on snooker.org's draw page. Those numbers are labelled secondary and are not presented as official WST figures.",
+   "sources": [
+    "https://www.wst.tv/rankings/",
+    "https://www.snooker.org/res/index.asp?event=2762"
+   ]
+  },
+  {
+   "id": "F13",
+   "scope": "repo",
+   "severity": "low",
+   "sport": "Greyhounds",
+   "title": "Advance racecard has no form figures",
+   "detail": "Romford's official advance card publishes trap draws, trainers, grades and race times but no recent form, sectional times or injury notes. Greyhound selections are therefore made from the trap draw plus OLBG's own Romford trap-1 statistic, and every such pick is low confidence.",
+   "sources": [
+    "https://imminent-otter.files.svdcdn.com/production/assets/results/Romford/race-advances/TUESDAY-ADVANCED_2026-10-26-121153_lbhn.pdf",
+    "https://www.olbg.com/betting-tips/Greyhounds/28"
+   ]
+  },
+  {
+   "id": "F14",
+   "scope": "repo",
+   "severity": "low",
+   "sport": "All",
+   "title": "Several earlier rows cite Wikipedia or aggregator pages",
+   "detail": "The first board's snooker, Gaelic and golf rows cite Wikipedia, Golf News Net and similar secondary pages. Where this desk reuses a fact of that type it is labelled secondary in the sources table and flagged on the row; official governing-body links were substituted wherever one was available.",
+   "sources": [
+    "data/picks_610d0099.json",
+    "data/value/sources.json",
+    "https://www.wst.tv/rankings/",
+    "https://munster.gaa.ie/fixtures/club-championships-2026/"
+   ]
+  },
+  {
+   "id": "F15",
+   "scope": "repo",
+   "severity": "low",
+   "sport": "All",
+   "title": "Four separate boards exist in this repository",
+   "detail": "The root dashboard, /docs/, /olbg-tips/ and /docs/board-review/ each publish their own version of the card, which is the source of the confusion reported by the user. This desk is a single self-contained board with one pick table, one lines table, one sources page and one flagged page. A link from the root dashboard is requested in COORDINATION.md rather than editing another session's page.",
+   "sources": [
+    "index.html",
+    "docs/index.html",
+    "olbg-tips/index.html",
+    "docs/board-review/index.html",
+    "value-desk/index.html",
+    "https://github.com/karagemop466-tech/Olbg7"
+   ]
+  },
+  {
+   "id": "F16",
+   "scope": "repo",
+   "severity": "low",
+   "sport": "Cricket, Rugby League, Handball",
+   "title": "Ante-post markets extend into 2027",
+   "detail": "Rows such as the 2027 World Cup, State of Origin 2027, NRL 2027 and the 2027 All-Ireland championships are long-dated. They are kept because OLBG lists them, but their confidence is capped at medium and they are excluded from the today-only executive summary.",
+   "sources": [
+    "data/value/capture.json",
+    "https://www.olbg.com/betting-tips/Rugby_League/10"
+   ]
+  },
+  {
+   "id": "F17",
+   "scope": "repo",
+   "severity": "low",
+   "sport": "All",
+   "title": "Prices shorter than -250 or longer than +10000 are floored or capped",
+   "detail": "The coverage brief asks for high-confidence picks between -250 and +10000. Where our fair price falls outside that range the published line is floored at 1.40 or capped at 101.00, the fair price is retained in the data, and the row is flagged band-floor-applied or band-cap-applied. Nothing is silently rounded into the band.",
+   "sources": [
+    "data/value/lines.json",
+    "value-desk/method.html",
+    "https://www.olbg.com/betting-tips"
+   ]
+  },
+  {
+   "id": "ROW-GF-01-field-size-default-32",
+   "scope": "row",
+   "severity": "low",
+   "title": "field-size-default-32",
+   "sport": "Golf",
+   "pick_id": "GF-01",
+   "detail": "Pick GF-01 (Golf - Lottie Woad) carries the flag 'field-size-default-32'.",
+   "sources": [
+    "https://www.lpga.com/tournaments/maybank-championship",
+    "https://www.espn.com/golf/schedule/_/tour/lpga",
+    "https://www.olbg.com/betting-tips/Golf/All_Golf/All_Events/Maybank_Championship/5?event_id=101913"
+   ]
+  },
+  {
+   "id": "ROW-GF-01-tie-selection-irregularity",
+   "scope": "row",
+   "severity": "low",
+   "title": "tie-selection-irregularity",
+   "sport": "Golf",
+   "pick_id": "GF-01",
+   "detail": "Pick GF-01 (Golf - Lottie Woad) carries the flag 'tie-selection-irregularity'.",
+   "sources": [
+    "https://www.lpga.com/tournaments/maybank-championship",
+    "https://www.espn.com/golf/schedule/_/tour/lpga",
+    "https://www.olbg.com/betting-tips/Golf/All_Golf/All_Events/Maybank_Championship/5?event_id=101913"
+   ]
+  },
+  {
+   "id": "ROW-GF-02-field-size-default-32",
+   "scope": "row",
+   "severity": "low",
+   "title": "field-size-default-32",
+   "sport": "Golf",
+   "pick_id": "GF-02",
+   "detail": "Pick GF-02 (Golf - Hye Jin Choi) carries the flag 'field-size-default-32'.",
+   "sources": [
+    "https://www.lpga.com/tournaments/maybank-championship",
+    "https://thegolfnewsnet.com/golfnewsnetteam/2026/10/25/2026-maybank-championship-field-lpga-tour-players-rankings-145290/",
+    "https://www.olbg.com/betting-tips/Golf/All_Golf/All_Events/Maybank_Championship/5?event_id=101913"
+   ]
+  },
+  {
+   "id": "ROW-GF-02-ranking-from-secondary-source",
+   "scope": "row",
+   "severity": "low",
+   "title": "ranking-from-secondary-source",
+   "sport": "Golf",
+   "pick_id": "GF-02",
+   "detail": "Pick GF-02 (Golf - Hye Jin Choi) carries the flag 'ranking-from-secondary-source'.",
+   "sources": [
+    "https://www.lpga.com/tournaments/maybank-championship",
+    "https://thegolfnewsnet.com/golfnewsnetteam/2026/10/25/2026-maybank-championship-field-lpga-tour-players-rankings-145290/",
+    "https://www.olbg.com/betting-tips/Golf/All_Golf/All_Events/Maybank_Championship/5?event_id=101913"
+   ]
+  },
+  {
+   "id": "ROW-GF-04-form-from-tipster-comment",
+   "scope": "row",
+   "severity": "low",
+   "title": "form-from-tipster-comment",
+   "sport": "Golf",
+   "pick_id": "GF-04",
+   "detail": "Pick GF-04 (Golf - Max Homa) carries the flag 'form-from-tipster-comment'.",
+   "sources": [
+    "https://www.pgatour.com/article/news/the-first-look/2026/10/26/vidantaworld-mexico-open-preview-storylines-fedexcup-fall-2027-pga-tour-cards",
+    "https://www.olbg.com/betting-tips/Golf/All_Golf/All_Events/Mexico_Open/5?event_id=101915"
+   ]
+  },
+  {
+   "id": "ROW-GF-06-form-from-tipster-comment",
+   "scope": "row",
+   "severity": "low",
+   "title": "form-from-tipster-comment",
+   "sport": "Golf",
+   "pick_id": "GF-06",
+   "detail": "Pick GF-06 (Golf - Ernie Els) carries the flag 'form-from-tipster-comment'.",
+   "sources": [
+    "https://simmonsbankchampionship.com/",
+    "https://www.olbg.com/betting-tips/Golf/All_Golf/All_Events/Simmons_Bank_Championship/5?event_id=101914"
+   ]
+  },
+  {
+   "id": "ROW-VB-01-schedule-not-independently-checked",
+   "scope": "row",
+   "severity": "low",
+   "title": "schedule-not-independently-checked",
+   "sport": "Volleyball",
+   "pick_id": "VB-01",
+   "detail": "Pick VB-01 (Volleyball - Suzano Volei) carries the flag 'schedule-not-independently-checked'.",
+   "sources": [
+    "https://cbv.com.br/volei-de-quadra/superliga-a-masculina",
+    "https://www.otempo.com.br/sports/volei/2026/9/21/superliga-masculina-de-volei-2026-27-tabela-com-jogos-e-horarios-do-1-turno"
+   ]
+  },
+  {
+   "id": "ROW-VB-02-no-official-form-data",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-form-data",
+   "sport": "Volleyball",
+   "pick_id": "VB-02",
+   "detail": "Pick VB-02 (Volleyball - Praia Clube) carries the flag 'no-official-form-data'.",
+   "sources": [
+    "https://cbv.com.br/volei-de-quadra/superliga-a-masculina",
+    "https://www.olbg.com/betting-tips/Volleyball/21"
+   ]
+  },
+  {
+   "id": "ROW-VB-02-schedule-not-independently-checked",
+   "scope": "row",
+   "severity": "low",
+   "title": "schedule-not-independently-checked",
+   "sport": "Volleyball",
+   "pick_id": "VB-02",
+   "detail": "Pick VB-02 (Volleyball - Praia Clube) carries the flag 'schedule-not-independently-checked'.",
+   "sources": [
+    "https://cbv.com.br/volei-de-quadra/superliga-a-masculina",
+    "https://www.olbg.com/betting-tips/Volleyball/21"
+   ]
+  },
+  {
+   "id": "ROW-VB-03-band-floor-applied",
+   "scope": "row",
+   "severity": "low",
+   "title": "band-floor-applied",
+   "sport": "Volleyball",
+   "pick_id": "VB-03",
+   "detail": "Pick VB-03 (Volleyball - Ziraat Bankasi) carries the flag 'band-floor-applied'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Volleyball/21"
+   ]
+  },
+  {
+   "id": "ROW-VB-03-no-official-form-data",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-form-data",
+   "sport": "Volleyball",
+   "pick_id": "VB-03",
+   "detail": "Pick VB-03 (Volleyball - Ziraat Bankasi) carries the flag 'no-official-form-data'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Volleyball/21"
+   ]
+  },
+  {
+   "id": "ROW-VB-03-no-official-source",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-source",
+   "sport": "Volleyball",
+   "pick_id": "VB-03",
+   "detail": "Pick VB-03 (Volleyball - Ziraat Bankasi) carries the flag 'no-official-source'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Volleyball/21"
+   ]
+  },
+  {
+   "id": "ROW-VB-03-schedule-not-independently-checked",
+   "scope": "row",
+   "severity": "low",
+   "title": "schedule-not-independently-checked",
+   "sport": "Volleyball",
+   "pick_id": "VB-03",
+   "detail": "Pick VB-03 (Volleyball - Ziraat Bankasi) carries the flag 'schedule-not-independently-checked'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Volleyball/21"
+   ]
+  },
+  {
+   "id": "ROW-VB-04-no-official-form-data",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-form-data",
+   "sport": "Volleyball",
+   "pick_id": "VB-04",
+   "detail": "Pick VB-04 (Volleyball - Bergamo W) carries the flag 'no-official-form-data'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Volleyball/21"
+   ]
+  },
+  {
+   "id": "ROW-VB-04-no-official-source",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-source",
+   "sport": "Volleyball",
+   "pick_id": "VB-04",
+   "detail": "Pick VB-04 (Volleyball - Bergamo W) carries the flag 'no-official-source'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Volleyball/21"
+   ]
+  },
+  {
+   "id": "ROW-VB-04-schedule-not-independently-checked",
+   "scope": "row",
+   "severity": "low",
+   "title": "schedule-not-independently-checked",
+   "sport": "Volleyball",
+   "pick_id": "VB-04",
+   "detail": "Pick VB-04 (Volleyball - Bergamo W) carries the flag 'schedule-not-independently-checked'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Volleyball/21"
+   ]
+  },
+  {
+   "id": "ROW-VB-05-no-official-form-data",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-form-data",
+   "sport": "Volleyball",
+   "pick_id": "VB-05",
+   "detail": "Pick VB-05 (Volleyball - Uni Opole W) carries the flag 'no-official-form-data'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Volleyball/21"
+   ]
+  },
+  {
+   "id": "ROW-VB-05-no-official-source",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-source",
+   "sport": "Volleyball",
+   "pick_id": "VB-05",
+   "detail": "Pick VB-05 (Volleyball - Uni Opole W) carries the flag 'no-official-source'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Volleyball/21"
+   ]
+  },
+  {
+   "id": "ROW-VB-05-schedule-not-independently-checked",
+   "scope": "row",
+   "severity": "low",
+   "title": "schedule-not-independently-checked",
+   "sport": "Volleyball",
+   "pick_id": "VB-05",
+   "detail": "Pick VB-05 (Volleyball - Uni Opole W) carries the flag 'schedule-not-independently-checked'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Volleyball/21"
+   ]
+  },
+  {
+   "id": "ROW-RU-01-no-official-form-data",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-form-data",
+   "sport": "Rugby Union",
+   "pick_id": "RU-01",
+   "detail": "Pick RU-01 (Rugby Union - Colomiers) carries the flag 'no-official-form-data'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Rugby_Union/9"
+   ]
+  },
+  {
+   "id": "ROW-RU-01-no-official-source",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-source",
+   "sport": "Rugby Union",
+   "pick_id": "RU-01",
+   "detail": "Pick RU-01 (Rugby Union - Colomiers) carries the flag 'no-official-source'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Rugby_Union/9"
+   ]
+  },
+  {
+   "id": "ROW-RU-01-schedule-not-independently-checked",
+   "scope": "row",
+   "severity": "low",
+   "title": "schedule-not-independently-checked",
+   "sport": "Rugby Union",
+   "pick_id": "RU-01",
+   "detail": "Pick RU-01 (Rugby Union - Colomiers) carries the flag 'schedule-not-independently-checked'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Rugby_Union/9"
+   ]
+  },
+  {
+   "id": "ROW-RU-02-no-official-team-news",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-team-news",
+   "sport": "Rugby Union",
+   "pick_id": "RU-02",
+   "detail": "Pick RU-02 (Rugby Union - Glasgow Warriors) carries the flag 'no-official-team-news'.",
+   "sources": [
+    "https://www.unitedrugby.com/latest/news/2026-27-fixtures-in-full/",
+    "https://www.olbg.com/betting-tips/Rugby_Union/9"
+   ]
+  },
+  {
+   "id": "ROW-RU-02-schedule-not-independently-checked",
+   "scope": "row",
+   "severity": "low",
+   "title": "schedule-not-independently-checked",
+   "sport": "Rugby Union",
+   "pick_id": "RU-02",
+   "detail": "Pick RU-02 (Rugby Union - Glasgow Warriors) carries the flag 'schedule-not-independently-checked'.",
+   "sources": [
+    "https://www.unitedrugby.com/latest/news/2026-27-fixtures-in-full/",
+    "https://www.olbg.com/betting-tips/Rugby_Union/9"
+   ]
+  },
+  {
+   "id": "ROW-RU-03-no-official-team-news",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-team-news",
+   "sport": "Rugby Union",
+   "pick_id": "RU-03",
+   "detail": "Pick RU-03 (Rugby Union - Connacht +3.50) carries the flag 'no-official-team-news'.",
+   "sources": [
+    "https://www.unitedrugby.com/latest/news/2026-27-fixtures-in-full/",
+    "https://www.olbg.com/betting-tips/Rugby_Union/9"
+   ]
+  },
+  {
+   "id": "ROW-RU-03-schedule-not-independently-checked",
+   "scope": "row",
+   "severity": "low",
+   "title": "schedule-not-independently-checked",
+   "sport": "Rugby Union",
+   "pick_id": "RU-03",
+   "detail": "Pick RU-03 (Rugby Union - Connacht +3.50) carries the flag 'schedule-not-independently-checked'.",
+   "sources": [
+    "https://www.unitedrugby.com/latest/news/2026-27-fixtures-in-full/",
+    "https://www.olbg.com/betting-tips/Rugby_Union/9"
+   ]
+  },
+  {
+   "id": "ROW-RU-04-no-official-team-news",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-team-news",
+   "sport": "Rugby Union",
+   "pick_id": "RU-04",
+   "detail": "Pick RU-04 (Rugby Union - Ulster +12.50) carries the flag 'no-official-team-news'.",
+   "sources": [
+    "https://www.unitedrugby.com/latest/news/2026-27-fixtures-in-full/",
+    "https://www.olbg.com/betting-tips/Rugby_Union/9"
+   ]
+  },
+  {
+   "id": "ROW-RU-04-schedule-not-independently-checked",
+   "scope": "row",
+   "severity": "low",
+   "title": "schedule-not-independently-checked",
+   "sport": "Rugby Union",
+   "pick_id": "RU-04",
+   "detail": "Pick RU-04 (Rugby Union - Ulster +12.50) carries the flag 'schedule-not-independently-checked'.",
+   "sources": [
+    "https://www.unitedrugby.com/latest/news/2026-27-fixtures-in-full/",
+    "https://www.olbg.com/betting-tips/Rugby_Union/9"
+   ]
+  },
+  {
+   "id": "ROW-RU-05-no-official-team-news",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-team-news",
+   "sport": "Rugby Union",
+   "pick_id": "RU-05",
+   "detail": "Pick RU-05 (Rugby Union - Munster -6.50) carries the flag 'no-official-team-news'.",
+   "sources": [
+    "https://www.unitedrugby.com/latest/news/2026-27-fixtures-in-full/",
+    "https://www.olbg.com/betting-tips/Rugby_Union/9"
+   ]
+  },
+  {
+   "id": "ROW-RU-05-schedule-not-independently-checked",
+   "scope": "row",
+   "severity": "low",
+   "title": "schedule-not-independently-checked",
+   "sport": "Rugby Union",
+   "pick_id": "RU-05",
+   "detail": "Pick RU-05 (Rugby Union - Munster -6.50) carries the flag 'schedule-not-independently-checked'.",
+   "sources": [
+    "https://www.unitedrugby.com/latest/news/2026-27-fixtures-in-full/",
+    "https://www.olbg.com/betting-tips/Rugby_Union/9"
+   ]
+  },
+  {
+   "id": "ROW-CK-01-band-floor-applied",
+   "scope": "row",
+   "severity": "low",
+   "title": "band-floor-applied",
+   "sport": "Cricket",
+   "pick_id": "CK-01",
+   "detail": "Pick CK-01 (Cricket - India) carries the flag 'band-floor-applied'.",
+   "sources": [
+    "https://www.espncricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-3rd-t20i-1539434/full-scorecard",
+    "https://www.olbg.com/betting-tips/Cricket/7"
+   ]
+  },
+  {
+   "id": "ROW-CK-01-no-official-source",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-source",
+   "sport": "Cricket",
+   "pick_id": "CK-01",
+   "detail": "Pick CK-01 (Cricket - India) carries the flag 'no-official-source'.",
+   "sources": [
+    "https://www.espncricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-3rd-t20i-1539434/full-scorecard",
+    "https://www.olbg.com/betting-tips/Cricket/7"
+   ]
+  },
+  {
+   "id": "ROW-CK-01-schedule-not-independently-checked",
+   "scope": "row",
+   "severity": "low",
+   "title": "schedule-not-independently-checked",
+   "sport": "Cricket",
+   "pick_id": "CK-01",
+   "detail": "Pick CK-01 (Cricket - India) carries the flag 'schedule-not-independently-checked'.",
+   "sources": [
+    "https://www.espncricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-3rd-t20i-1539434/full-scorecard",
+    "https://www.olbg.com/betting-tips/Cricket/7"
+   ]
+  },
+  {
+   "id": "ROW-CK-02-no-official-source",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-source",
+   "sport": "Cricket",
+   "pick_id": "CK-02",
+   "detail": "Pick CK-02 (Cricket - New Zealand) carries the flag 'no-official-source'.",
+   "sources": [
+    "https://www.espncricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-3rd-t20i-1539434/full-scorecard",
+    "https://sports.yahoo.com/articles/zealand-vs-india-3rd-t20i-050525124.html",
+    "https://www.olbg.com/betting-tips/Cricket/7"
+   ]
+  },
+  {
+   "id": "ROW-CK-02-no-tip-split",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-tip-split",
+   "sport": "Cricket",
+   "pick_id": "CK-02",
+   "detail": "Pick CK-02 (Cricket - New Zealand) carries the flag 'no-tip-split'.",
+   "sources": [
+    "https://www.espncricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-3rd-t20i-1539434/full-scorecard",
+    "https://sports.yahoo.com/articles/zealand-vs-india-3rd-t20i-050525124.html",
+    "https://www.olbg.com/betting-tips/Cricket/7"
+   ]
+  },
+  {
+   "id": "ROW-CK-03-no-official-source",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-source",
+   "sport": "Cricket",
+   "pick_id": "CK-03",
+   "detail": "Pick CK-03 (Cricket - Ireland) carries the flag 'no-official-source'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Cricket/7"
+   ]
+  },
+  {
+   "id": "ROW-CK-03-no-official-team-news",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-team-news",
+   "sport": "Cricket",
+   "pick_id": "CK-03",
+   "detail": "Pick CK-03 (Cricket - Ireland) carries the flag 'no-official-team-news'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Cricket/7"
+   ]
+  },
+  {
+   "id": "ROW-CK-03-schedule-not-independently-checked",
+   "scope": "row",
+   "severity": "low",
+   "title": "schedule-not-independently-checked",
+   "sport": "Cricket",
+   "pick_id": "CK-03",
+   "detail": "Pick CK-03 (Cricket - Ireland) carries the flag 'schedule-not-independently-checked'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Cricket/7"
+   ]
+  },
+  {
+   "id": "ROW-CK-04-no-official-source",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-source",
+   "sport": "Cricket",
+   "pick_id": "CK-04",
+   "detail": "Pick CK-04 (Cricket - Pakistan) carries the flag 'no-official-source'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Cricket/7"
+   ]
+  },
+  {
+   "id": "ROW-CK-04-no-official-team-news",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-team-news",
+   "sport": "Cricket",
+   "pick_id": "CK-04",
+   "detail": "Pick CK-04 (Cricket - Pakistan) carries the flag 'no-official-team-news'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Cricket/7"
+   ]
+  },
+  {
+   "id": "ROW-CK-04-schedule-not-independently-checked",
+   "scope": "row",
+   "severity": "low",
+   "title": "schedule-not-independently-checked",
+   "sport": "Cricket",
+   "pick_id": "CK-04",
+   "detail": "Pick CK-04 (Cricket - Pakistan) carries the flag 'schedule-not-independently-checked'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Cricket/7"
+   ]
+  },
+  {
+   "id": "ROW-CK-05-band-floor-applied",
+   "scope": "row",
+   "severity": "low",
+   "title": "band-floor-applied",
+   "sport": "Cricket",
+   "pick_id": "CK-05",
+   "detail": "Pick CK-05 (Cricket - Afghanistan) carries the flag 'band-floor-applied'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Cricket/7"
+   ]
+  },
+  {
+   "id": "ROW-CK-05-no-official-source",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-source",
+   "sport": "Cricket",
+   "pick_id": "CK-05",
+   "detail": "Pick CK-05 (Cricket - Afghanistan) carries the flag 'no-official-source'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Cricket/7"
+   ]
+  },
+  {
+   "id": "ROW-CK-05-no-official-team-news",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-team-news",
+   "sport": "Cricket",
+   "pick_id": "CK-05",
+   "detail": "Pick CK-05 (Cricket - Afghanistan) carries the flag 'no-official-team-news'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Cricket/7"
+   ]
+  },
+  {
+   "id": "ROW-CK-05-schedule-not-independently-checked",
+   "scope": "row",
+   "severity": "low",
+   "title": "schedule-not-independently-checked",
+   "sport": "Cricket",
+   "pick_id": "CK-05",
+   "detail": "Pick CK-05 (Cricket - Afghanistan) carries the flag 'schedule-not-independently-checked'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Cricket/7"
+   ]
+  },
+  {
+   "id": "ROW-CK-06-field-size-default-32",
+   "scope": "row",
+   "severity": "low",
+   "title": "field-size-default-32",
+   "sport": "Cricket",
+   "pick_id": "CK-06",
+   "detail": "Pick CK-06 (Cricket - India) carries the flag 'field-size-default-32'.",
+   "sources": [
+    "https://www.espncricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-3rd-t20i-1539434/full-scorecard",
+    "https://www.olbg.com/betting-tips/Cricket/7"
+   ]
+  },
+  {
+   "id": "ROW-CK-06-long-dated-ante-post",
+   "scope": "row",
+   "severity": "low",
+   "title": "long-dated-ante-post",
+   "sport": "Cricket",
+   "pick_id": "CK-06",
+   "detail": "Pick CK-06 (Cricket - India) carries the flag 'long-dated-ante-post'.",
+   "sources": [
+    "https://www.espncricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-3rd-t20i-1539434/full-scorecard",
+    "https://www.olbg.com/betting-tips/Cricket/7"
+   ]
+  },
+  {
+   "id": "ROW-CK-06-no-official-source",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-source",
+   "sport": "Cricket",
+   "pick_id": "CK-06",
+   "detail": "Pick CK-06 (Cricket - India) carries the flag 'no-official-source'.",
+   "sources": [
+    "https://www.espncricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-3rd-t20i-1539434/full-scorecard",
+    "https://www.olbg.com/betting-tips/Cricket/7"
+   ]
+  },
+  {
+   "id": "ROW-CK-06-schedule-not-independently-checked",
+   "scope": "row",
+   "severity": "low",
+   "title": "schedule-not-independently-checked",
+   "sport": "Cricket",
+   "pick_id": "CK-06",
+   "detail": "Pick CK-06 (Cricket - India) carries the flag 'schedule-not-independently-checked'.",
+   "sources": [
+    "https://www.espncricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-3rd-t20i-1539434/full-scorecard",
+    "https://www.olbg.com/betting-tips/Cricket/7"
+   ]
+  },
+  {
+   "id": "ROW-SK-01-no-olbg-market-today",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-olbg-market-today",
+   "sport": "Snooker",
+   "pick_id": "SK-01",
+   "detail": "Pick SK-01 (Snooker - Mark Selby) carries the flag 'no-olbg-market-today'.",
+   "sources": [
+    "https://www.wst.tv/match-centre/bb4f8b36-42f0-490f-b97b-b8f8799f693b",
+    "https://www.wst.tv/rankings/",
+    "https://www.olbg.com/betting-tips/Snooker/8"
+   ]
+  },
+  {
+   "id": "ROW-SK-01-no-tip-split",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-tip-split",
+   "sport": "Snooker",
+   "pick_id": "SK-01",
+   "detail": "Pick SK-01 (Snooker - Mark Selby) carries the flag 'no-tip-split'.",
+   "sources": [
+    "https://www.wst.tv/match-centre/bb4f8b36-42f0-490f-b97b-b8f8799f693b",
+    "https://www.wst.tv/rankings/",
+    "https://www.olbg.com/betting-tips/Snooker/8"
+   ]
+  },
+  {
+   "id": "ROW-SK-02-no-olbg-market-today",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-olbg-market-today",
+   "sport": "Snooker",
+   "pick_id": "SK-02",
+   "detail": "Pick SK-02 (Snooker - Shaun Murphy) carries the flag 'no-olbg-market-today'.",
+   "sources": [
+    "https://www.wst.tv/match-centre/bb4f8b36-42f0-490f-b97b-b8f8799f693b",
+    "https://www.wst.tv/rankings/",
+    "https://www.olbg.com/betting-tips/Snooker/8"
+   ]
+  },
+  {
+   "id": "ROW-SK-02-no-tip-split",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-tip-split",
+   "sport": "Snooker",
+   "pick_id": "SK-02",
+   "detail": "Pick SK-02 (Snooker - Shaun Murphy) carries the flag 'no-tip-split'.",
+   "sources": [
+    "https://www.wst.tv/match-centre/bb4f8b36-42f0-490f-b97b-b8f8799f693b",
+    "https://www.wst.tv/rankings/",
+    "https://www.olbg.com/betting-tips/Snooker/8"
+   ]
+  },
+  {
+   "id": "ROW-SK-02-opponent-rank-from-secondary-source",
+   "scope": "row",
+   "severity": "low",
+   "title": "opponent-rank-from-secondary-source",
+   "sport": "Snooker",
+   "pick_id": "SK-02",
+   "detail": "Pick SK-02 (Snooker - Shaun Murphy) carries the flag 'opponent-rank-from-secondary-source'.",
+   "sources": [
+    "https://www.wst.tv/match-centre/bb4f8b36-42f0-490f-b97b-b8f8799f693b",
+    "https://www.wst.tv/rankings/",
+    "https://www.olbg.com/betting-tips/Snooker/8"
+   ]
+  },
+  {
+   "id": "ROW-SK-03-no-olbg-market-today",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-olbg-market-today",
+   "sport": "Snooker",
+   "pick_id": "SK-03",
+   "detail": "Pick SK-03 (Snooker - Zhou Yuelong) carries the flag 'no-olbg-market-today'.",
+   "sources": [
+    "https://www.wst.tv/match-centre/bb4f8b36-42f0-490f-b97b-b8f8799f693b",
+    "https://www.wst.tv/rankings/",
+    "https://www.olbg.com/betting-tips/Snooker/8"
+   ]
+  },
+  {
+   "id": "ROW-SK-03-no-tip-split",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-tip-split",
+   "sport": "Snooker",
+   "pick_id": "SK-03",
+   "detail": "Pick SK-03 (Snooker - Zhou Yuelong) carries the flag 'no-tip-split'.",
+   "sources": [
+    "https://www.wst.tv/match-centre/bb4f8b36-42f0-490f-b97b-b8f8799f693b",
+    "https://www.wst.tv/rankings/",
+    "https://www.olbg.com/betting-tips/Snooker/8"
+   ]
+  },
+  {
+   "id": "ROW-SK-04-fixture-from-secondary-source",
+   "scope": "row",
+   "severity": "low",
+   "title": "fixture-from-secondary-source",
+   "sport": "Snooker",
+   "pick_id": "SK-04",
+   "detail": "Pick SK-04 (Snooker - Kyren Wilson) carries the flag 'fixture-from-secondary-source'.",
+   "sources": [
+    "https://www.wst.tv/news/2026/october/25/Wilson-Reigns-Supreme-In-Belfast/",
+    "https://www.wst.tv/rankings/",
+    "https://www.snooker.org/res/index.asp?event=2762"
+   ]
+  },
+  {
+   "id": "ROW-SK-04-no-olbg-market-today",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-olbg-market-today",
+   "sport": "Snooker",
+   "pick_id": "SK-04",
+   "detail": "Pick SK-04 (Snooker - Kyren Wilson) carries the flag 'no-olbg-market-today'.",
+   "sources": [
+    "https://www.wst.tv/news/2026/october/25/Wilson-Reigns-Supreme-In-Belfast/",
+    "https://www.wst.tv/rankings/",
+    "https://www.snooker.org/res/index.asp?event=2762"
+   ]
+  },
+  {
+   "id": "ROW-SK-04-no-tip-split",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-tip-split",
+   "sport": "Snooker",
+   "pick_id": "SK-04",
+   "detail": "Pick SK-04 (Snooker - Kyren Wilson) carries the flag 'no-tip-split'.",
+   "sources": [
+    "https://www.wst.tv/news/2026/october/25/Wilson-Reigns-Supreme-In-Belfast/",
+    "https://www.wst.tv/rankings/",
+    "https://www.snooker.org/res/index.asp?event=2762"
+   ]
+  },
+  {
+   "id": "ROW-SK-05-no-olbg-market-today",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-olbg-market-today",
+   "sport": "Snooker",
+   "pick_id": "SK-05",
+   "detail": "Pick SK-05 (Snooker - Mitchell Mann) carries the flag 'no-olbg-market-today'.",
+   "sources": [
+    "https://www.wst.tv/match-centre/bb4f8b36-42f0-490f-b97b-b8f8799f693b",
+    "https://www.wst.tv/rankings/",
+    "https://www.olbg.com/betting-tips/Snooker/8"
+   ]
+  },
+  {
+   "id": "ROW-SK-05-no-tip-split",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-tip-split",
+   "sport": "Snooker",
+   "pick_id": "SK-05",
+   "detail": "Pick SK-05 (Snooker - Mitchell Mann) carries the flag 'no-tip-split'.",
+   "sources": [
+    "https://www.wst.tv/match-centre/bb4f8b36-42f0-490f-b97b-b8f8799f693b",
+    "https://www.wst.tv/rankings/",
+    "https://www.olbg.com/betting-tips/Snooker/8"
+   ]
+  },
+  {
+   "id": "ROW-SK-05-value-longshot",
+   "scope": "row",
+   "severity": "low",
+   "title": "value-longshot",
+   "sport": "Snooker",
+   "pick_id": "SK-05",
+   "detail": "Pick SK-05 (Snooker - Mitchell Mann) carries the flag 'value-longshot'.",
+   "sources": [
+    "https://www.wst.tv/match-centre/bb4f8b36-42f0-490f-b97b-b8f8799f693b",
+    "https://www.wst.tv/rankings/",
+    "https://www.olbg.com/betting-tips/Snooker/8"
+   ]
+  },
+  {
+   "id": "ROW-SK-06-no-olbg-market-today",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-olbg-market-today",
+   "sport": "Snooker",
+   "pick_id": "SK-06",
+   "detail": "Pick SK-06 (Snooker - Liu Hongyu) carries the flag 'no-olbg-market-today'.",
+   "sources": [
+    "https://www.wst.tv/match-centre/bb4f8b36-42f0-490f-b97b-b8f8799f693b",
+    "https://www.wst.tv/rankings/",
+    "https://www.olbg.com/betting-tips/Snooker/8"
+   ]
+  },
+  {
+   "id": "ROW-SK-06-no-tip-split",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-tip-split",
+   "sport": "Snooker",
+   "pick_id": "SK-06",
+   "detail": "Pick SK-06 (Snooker - Liu Hongyu) carries the flag 'no-tip-split'.",
+   "sources": [
+    "https://www.wst.tv/match-centre/bb4f8b36-42f0-490f-b97b-b8f8799f693b",
+    "https://www.wst.tv/rankings/",
+    "https://www.olbg.com/betting-tips/Snooker/8"
+   ]
+  },
+  {
+   "id": "ROW-SK-06-rankings-from-secondary-source",
+   "scope": "row",
+   "severity": "low",
+   "title": "rankings-from-secondary-source",
+   "sport": "Snooker",
+   "pick_id": "SK-06",
+   "detail": "Pick SK-06 (Snooker - Liu Hongyu) carries the flag 'rankings-from-secondary-source'.",
+   "sources": [
+    "https://www.wst.tv/match-centre/bb4f8b36-42f0-490f-b97b-b8f8799f693b",
+    "https://www.wst.tv/rankings/",
+    "https://www.olbg.com/betting-tips/Snooker/8"
+   ]
+  },
+  {
+   "id": "ROW-DT-01-field-size-default-32",
+   "scope": "row",
+   "severity": "low",
+   "title": "field-size-default-32",
+   "sport": "Darts",
+   "pick_id": "DT-01",
+   "detail": "Pick DT-01 (Darts - Luke Littler) carries the flag 'field-size-default-32'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Darts/15",
+    "https://www.pdc.tv/news/2026/october/26/schindler---coates-secure-grand-slam-qualification"
+   ]
+  },
+  {
+   "id": "ROW-DT-01-long-dated-ante-post",
+   "scope": "row",
+   "severity": "low",
+   "title": "long-dated-ante-post",
+   "sport": "Darts",
+   "pick_id": "DT-01",
+   "detail": "Pick DT-01 (Darts - Luke Littler) carries the flag 'long-dated-ante-post'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Darts/15",
+    "https://www.pdc.tv/news/2026/october/26/schindler---coates-secure-grand-slam-qualification"
+   ]
+  },
+  {
+   "id": "ROW-DT-02-form-from-tipster-comment",
+   "scope": "row",
+   "severity": "low",
+   "title": "form-from-tipster-comment",
+   "sport": "Darts",
+   "pick_id": "DT-02",
+   "detail": "Pick DT-02 (Darts - Wessel Nijman) carries the flag 'form-from-tipster-comment'.",
+   "sources": [
+    "https://www.pdc.tv/news/2026/october/26/2026-players-championships-31-32-entries-confirmed",
+    "https://www.olbg.com/betting-tips/Darts/All_Darts/All_Events/Players_Championship_31/15?event_id=32446"
+   ]
+  },
+  {
+   "id": "ROW-DT-02-pdc-winner-list-conflict",
+   "scope": "row",
+   "severity": "low",
+   "title": "pdc-winner-list-conflict",
+   "sport": "Darts",
+   "pick_id": "DT-02",
+   "detail": "Pick DT-02 (Darts - Wessel Nijman) carries the flag 'pdc-winner-list-conflict'.",
+   "sources": [
+    "https://www.pdc.tv/news/2026/october/26/2026-players-championships-31-32-entries-confirmed",
+    "https://www.olbg.com/betting-tips/Darts/All_Darts/All_Events/Players_Championship_31/15?event_id=32446"
+   ]
+  },
+  {
+   "id": "ROW-DT-04-pdc-winner-list-conflict",
+   "scope": "row",
+   "severity": "low",
+   "title": "pdc-winner-list-conflict",
+   "sport": "Darts",
+   "pick_id": "DT-04",
+   "detail": "Pick DT-04 (Darts - Kevin Doets) carries the flag 'pdc-winner-list-conflict'.",
+   "sources": [
+    "https://www.pdc.tv/news/2026/october/26/2026-players-championships-31-32-entries-confirmed",
+    "https://www.pdc.tv/news/2026/october/26/schindler---coates-secure-grand-slam-qualification"
+   ]
+  },
+  {
+   "id": "ROW-DT-05-value-longshot",
+   "scope": "row",
+   "severity": "low",
+   "title": "value-longshot",
+   "sport": "Darts",
+   "pick_id": "DT-05",
+   "detail": "Pick DT-05 (Darts - Gian van Veen) carries the flag 'value-longshot'.",
+   "sources": [
+    "https://www.pdc.tv/news/2026/october/26/2026-players-championships-31-32-entries-confirmed",
+    "https://www.olbg.com/betting-tips/Darts/All_Darts/All_Events/Players_Championship_31/15?event_id=32446"
+   ]
+  },
+  {
+   "id": "ROW-DT-06-band-cap-applied",
+   "scope": "row",
+   "severity": "low",
+   "title": "band-cap-applied",
+   "sport": "Darts",
+   "pick_id": "DT-06",
+   "detail": "Pick DT-06 (Darts - James Wade) carries the flag 'band-cap-applied'.",
+   "sources": [
+    "https://www.pdc.tv/news/2026/october/26/2026-players-championships-31-32-entries-confirmed",
+    "https://www.olbg.com/betting-tips/Darts/All_Darts/All_Events/Players_Championship_31/15?event_id=32446"
+   ]
+  },
+  {
+   "id": "ROW-DT-06-value-longshot",
+   "scope": "row",
+   "severity": "low",
+   "title": "value-longshot",
+   "sport": "Darts",
+   "pick_id": "DT-06",
+   "detail": "Pick DT-06 (Darts - James Wade) carries the flag 'value-longshot'.",
+   "sources": [
+    "https://www.pdc.tv/news/2026/october/26/2026-players-championships-31-32-entries-confirmed",
+    "https://www.olbg.com/betting-tips/Darts/All_Darts/All_Events/Players_Championship_31/15?event_id=32446"
+   ]
+  },
+  {
+   "id": "ROW-BS-02-starting-pitcher-unconfirmed",
+   "scope": "row",
+   "severity": "low",
+   "title": "starting-pitcher-unconfirmed",
+   "sport": "Baseball",
+   "pick_id": "BS-02",
+   "detail": "Pick BS-02 (Baseball - MIL Brewers -1.50) carries the flag 'starting-pitcher-unconfirmed'.",
+   "sources": [
+    "https://www.mlb.com/news/2026-mlb-playoff-and-world-series-schedule",
+    "https://www.mlb.com/news/2026-world-series-game-4-storylines-brewers-rays",
+    "https://www.olbg.com/betting-tips/Baseball/MLB/MLB/MIL_Brewers_@_TB_Rays/12?event_id=160799"
+   ]
+  },
+  {
+   "id": "ROW-BS-03-no-tip-split",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-tip-split",
+   "sport": "Baseball",
+   "pick_id": "BS-03",
+   "detail": "Pick BS-03 (Baseball - Under 7.50) carries the flag 'no-tip-split'.",
+   "sources": [
+    "https://www.mlb.com/news/2026-mlb-playoff-and-world-series-schedule",
+    "https://www.mlb.com/news/2026-world-series-game-4-storylines-brewers-rays",
+    "https://www.olbg.com/betting-tips/Baseball/MLB/MLB/MIL_Brewers_@_TB_Rays/12?event_id=160799"
+   ]
+  },
+  {
+   "id": "ROW-BS-03-starting-pitcher-unconfirmed",
+   "scope": "row",
+   "severity": "low",
+   "title": "starting-pitcher-unconfirmed",
+   "sport": "Baseball",
+   "pick_id": "BS-03",
+   "detail": "Pick BS-03 (Baseball - Under 7.50) carries the flag 'starting-pitcher-unconfirmed'.",
+   "sources": [
+    "https://www.mlb.com/news/2026-mlb-playoff-and-world-series-schedule",
+    "https://www.mlb.com/news/2026-world-series-game-4-storylines-brewers-rays",
+    "https://www.olbg.com/betting-tips/Baseball/MLB/MLB/MIL_Brewers_@_TB_Rays/12?event_id=160799"
+   ]
+  },
+  {
+   "id": "ROW-BS-04-no-olbg-market",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-olbg-market",
+   "sport": "Baseball",
+   "pick_id": "BS-04",
+   "detail": "Pick BS-04 (Baseball - MIL Brewers) carries the flag 'no-olbg-market'.",
+   "sources": [
+    "https://www.mlb.com/news/2026-mlb-playoff-and-world-series-schedule"
+   ]
+  },
+  {
+   "id": "ROW-BS-04-no-tip-split",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-tip-split",
+   "sport": "Baseball",
+   "pick_id": "BS-04",
+   "detail": "Pick BS-04 (Baseball - MIL Brewers) carries the flag 'no-tip-split'.",
+   "sources": [
+    "https://www.mlb.com/news/2026-mlb-playoff-and-world-series-schedule"
+   ]
+  },
+  {
+   "id": "ROW-BS-04-price-floored-at-band-top",
+   "scope": "row",
+   "severity": "low",
+   "title": "price-floored-at-band-top",
+   "sport": "Baseball",
+   "pick_id": "BS-04",
+   "detail": "Pick BS-04 (Baseball - MIL Brewers) carries the flag 'price-floored-at-band-top'.",
+   "sources": [
+    "https://www.mlb.com/news/2026-mlb-playoff-and-world-series-schedule"
+   ]
+  },
+  {
+   "id": "ROW-BS-05-no-olbg-market",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-olbg-market",
+   "sport": "Baseball",
+   "pick_id": "BS-05",
+   "detail": "Pick BS-05 (Baseball - Under 4.5 (Brewers sweep)) carries the flag 'no-olbg-market'.",
+   "sources": [
+    "https://www.mlb.com/news/2026-mlb-playoff-and-world-series-schedule",
+    "https://www.mlb.com/news/2026-world-series-game-4-storylines-brewers-rays",
+    "https://www.espn.com/mlb/game/_/gameId/401908045/brewers-rays"
+   ]
+  },
+  {
+   "id": "ROW-BS-05-no-tip-split",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-tip-split",
+   "sport": "Baseball",
+   "pick_id": "BS-05",
+   "detail": "Pick BS-05 (Baseball - Under 4.5 (Brewers sweep)) carries the flag 'no-tip-split'.",
+   "sources": [
+    "https://www.mlb.com/news/2026-mlb-playoff-and-world-series-schedule",
+    "https://www.mlb.com/news/2026-world-series-game-4-storylines-brewers-rays",
+    "https://www.espn.com/mlb/game/_/gameId/401908045/brewers-rays"
+   ]
+  },
+  {
+   "id": "ROW-BS-05-value-longshot",
+   "scope": "row",
+   "severity": "low",
+   "title": "value-longshot",
+   "sport": "Baseball",
+   "pick_id": "BS-05",
+   "detail": "Pick BS-05 (Baseball - Under 4.5 (Brewers sweep)) carries the flag 'value-longshot'.",
+   "sources": [
+    "https://www.mlb.com/news/2026-mlb-playoff-and-world-series-schedule",
+    "https://www.mlb.com/news/2026-world-series-game-4-storylines-brewers-rays",
+    "https://www.espn.com/mlb/game/_/gameId/401908045/brewers-rays"
+   ]
+  },
+  {
+   "id": "ROW-GA-01-band-floor-applied",
+   "scope": "row",
+   "severity": "low",
+   "title": "band-floor-applied",
+   "sport": "Gaelic Sports",
+   "pick_id": "GA-01",
+   "detail": "Pick GA-01 (Gaelic Sports - Eire Og Cor +0.50) carries the flag 'band-floor-applied'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Gaelic_Football/25",
+    "https://munster.gaa.ie/fixtures/club-championships-2026/"
+   ]
+  },
+  {
+   "id": "ROW-GA-01-no-official-form-data",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-form-data",
+   "sport": "Gaelic Sports",
+   "pick_id": "GA-01",
+   "detail": "Pick GA-01 (Gaelic Sports - Eire Og Cor +0.50) carries the flag 'no-official-form-data'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Gaelic_Football/25",
+    "https://munster.gaa.ie/fixtures/club-championships-2026/"
+   ]
+  },
+  {
+   "id": "ROW-GA-01-schedule-not-independently-checked",
+   "scope": "row",
+   "severity": "low",
+   "title": "schedule-not-independently-checked",
+   "sport": "Gaelic Sports",
+   "pick_id": "GA-01",
+   "detail": "Pick GA-01 (Gaelic Sports - Eire Og Cor +0.50) carries the flag 'schedule-not-independently-checked'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Gaelic_Football/25",
+    "https://munster.gaa.ie/fixtures/club-championships-2026/"
+   ]
+  },
+  {
+   "id": "ROW-GA-02-no-official-form-data",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-form-data",
+   "sport": "Gaelic Sports",
+   "pick_id": "GA-02",
+   "detail": "Pick GA-02 (Gaelic Sports - Kildimo Pallaskenry +3.50) carries the flag 'no-official-form-data'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Gaelic_Football/25"
+   ]
+  },
+  {
+   "id": "ROW-GA-02-no-official-source",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-source",
+   "sport": "Gaelic Sports",
+   "pick_id": "GA-02",
+   "detail": "Pick GA-02 (Gaelic Sports - Kildimo Pallaskenry +3.50) carries the flag 'no-official-source'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Gaelic_Football/25"
+   ]
+  },
+  {
+   "id": "ROW-GA-02-schedule-not-independently-checked",
+   "scope": "row",
+   "severity": "low",
+   "title": "schedule-not-independently-checked",
+   "sport": "Gaelic Sports",
+   "pick_id": "GA-02",
+   "detail": "Pick GA-02 (Gaelic Sports - Kildimo Pallaskenry +3.50) carries the flag 'schedule-not-independently-checked'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Gaelic_Football/25"
+   ]
+  },
+  {
+   "id": "ROW-GA-03-field-size-default-32",
+   "scope": "row",
+   "severity": "low",
+   "title": "field-size-default-32",
+   "sport": "Gaelic Sports",
+   "pick_id": "GA-03",
+   "detail": "Pick GA-03 (Gaelic Sports - Kerry) carries the flag 'field-size-default-32'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Gaelic_Football/25"
+   ]
+  },
+  {
+   "id": "ROW-GA-03-long-dated-ante-post",
+   "scope": "row",
+   "severity": "low",
+   "title": "long-dated-ante-post",
+   "sport": "Gaelic Sports",
+   "pick_id": "GA-03",
+   "detail": "Pick GA-03 (Gaelic Sports - Kerry) carries the flag 'long-dated-ante-post'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Gaelic_Football/25"
+   ]
+  },
+  {
+   "id": "ROW-GA-03-no-official-source",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-source",
+   "sport": "Gaelic Sports",
+   "pick_id": "GA-03",
+   "detail": "Pick GA-03 (Gaelic Sports - Kerry) carries the flag 'no-official-source'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Gaelic_Football/25"
+   ]
+  },
+  {
+   "id": "ROW-GA-03-no-official-team-news",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-team-news",
+   "sport": "Gaelic Sports",
+   "pick_id": "GA-03",
+   "detail": "Pick GA-03 (Gaelic Sports - Kerry) carries the flag 'no-official-team-news'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Gaelic_Football/25"
+   ]
+  },
+  {
+   "id": "ROW-GA-03-schedule-not-independently-checked",
+   "scope": "row",
+   "severity": "low",
+   "title": "schedule-not-independently-checked",
+   "sport": "Gaelic Sports",
+   "pick_id": "GA-03",
+   "detail": "Pick GA-03 (Gaelic Sports - Kerry) carries the flag 'schedule-not-independently-checked'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Gaelic_Football/25"
+   ]
+  },
+  {
+   "id": "ROW-GA-04-field-size-default-32",
+   "scope": "row",
+   "severity": "low",
+   "title": "field-size-default-32",
+   "sport": "Gaelic Sports",
+   "pick_id": "GA-04",
+   "detail": "Pick GA-04 (Gaelic Sports - Galway) carries the flag 'field-size-default-32'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Hurling/26"
+   ]
+  },
+  {
+   "id": "ROW-GA-04-long-dated-ante-post",
+   "scope": "row",
+   "severity": "low",
+   "title": "long-dated-ante-post",
+   "sport": "Gaelic Sports",
+   "pick_id": "GA-04",
+   "detail": "Pick GA-04 (Gaelic Sports - Galway) carries the flag 'long-dated-ante-post'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Hurling/26"
+   ]
+  },
+  {
+   "id": "ROW-GA-04-no-official-source",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-source",
+   "sport": "Gaelic Sports",
+   "pick_id": "GA-04",
+   "detail": "Pick GA-04 (Gaelic Sports - Galway) carries the flag 'no-official-source'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Hurling/26"
+   ]
+  },
+  {
+   "id": "ROW-GA-04-schedule-not-independently-checked",
+   "scope": "row",
+   "severity": "low",
+   "title": "schedule-not-independently-checked",
+   "sport": "Gaelic Sports",
+   "pick_id": "GA-04",
+   "detail": "Pick GA-04 (Gaelic Sports - Galway) carries the flag 'schedule-not-independently-checked'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Hurling/26"
+   ]
+  },
+  {
+   "id": "ROW-GA-05-no-official-form-data",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-form-data",
+   "sport": "Gaelic Sports",
+   "pick_id": "GA-05",
+   "detail": "Pick GA-05 (Gaelic Sports - Glen Rovers) carries the flag 'no-official-form-data'.",
+   "sources": [
+    "https://munster.gaa.ie/fixtures/club-championships-2026/"
+   ]
+  },
+  {
+   "id": "ROW-GA-05-no-olbg-market",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-olbg-market",
+   "sport": "Gaelic Sports",
+   "pick_id": "GA-05",
+   "detail": "Pick GA-05 (Gaelic Sports - Glen Rovers) carries the flag 'no-olbg-market'.",
+   "sources": [
+    "https://munster.gaa.ie/fixtures/club-championships-2026/"
+   ]
+  },
+  {
+   "id": "ROW-GA-05-no-tip-split",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-tip-split",
+   "sport": "Gaelic Sports",
+   "pick_id": "GA-05",
+   "detail": "Pick GA-05 (Gaelic Sports - Glen Rovers) carries the flag 'no-tip-split'.",
+   "sources": [
+    "https://munster.gaa.ie/fixtures/club-championships-2026/"
+   ]
+  },
+  {
+   "id": "ROW-GA-06-fixture-conditional-on-earlier-results",
+   "scope": "row",
+   "severity": "low",
+   "title": "fixture-conditional-on-earlier-results",
+   "sport": "Gaelic Sports",
+   "pick_id": "GA-06",
+   "detail": "Pick GA-06 (Gaelic Sports - Ballygunner) carries the flag 'fixture-conditional-on-earlier-results'.",
+   "sources": [
+    "https://munster.gaa.ie/fixtures/club-championships-2026/"
+   ]
+  },
+  {
+   "id": "ROW-GA-06-no-olbg-market",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-olbg-market",
+   "sport": "Gaelic Sports",
+   "pick_id": "GA-06",
+   "detail": "Pick GA-06 (Gaelic Sports - Ballygunner) carries the flag 'no-olbg-market'.",
+   "sources": [
+    "https://munster.gaa.ie/fixtures/club-championships-2026/"
+   ]
+  },
+  {
+   "id": "ROW-GA-06-no-tip-split",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-tip-split",
+   "sport": "Gaelic Sports",
+   "pick_id": "GA-06",
+   "detail": "Pick GA-06 (Gaelic Sports - Ballygunner) carries the flag 'no-tip-split'.",
+   "sources": [
+    "https://munster.gaa.ie/fixtures/club-championships-2026/"
+   ]
+  },
+  {
+   "id": "ROW-GH-01-no-form-figures",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-form-figures",
+   "sport": "Greyhounds",
+   "pick_id": "GH-01",
+   "detail": "Pick GH-01 (Greyhounds - Trap 1 Scooby Dior) carries the flag 'no-form-figures'.",
+   "sources": [
+    "https://imminent-otter.files.svdcdn.com/production/assets/results/Romford/race-advances/TUESDAY-ADVANCED_2026-10-26-121153_lbhn.pdf",
+    "https://www.olbg.com/betting-tips/Greyhounds/28"
+   ]
+  },
+  {
+   "id": "ROW-GH-01-no-olbg-market-today",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-olbg-market-today",
+   "sport": "Greyhounds",
+   "pick_id": "GH-01",
+   "detail": "Pick GH-01 (Greyhounds - Trap 1 Scooby Dior) carries the flag 'no-olbg-market-today'.",
+   "sources": [
+    "https://imminent-otter.files.svdcdn.com/production/assets/results/Romford/race-advances/TUESDAY-ADVANCED_2026-10-26-121153_lbhn.pdf",
+    "https://www.olbg.com/betting-tips/Greyhounds/28"
+   ]
+  },
+  {
+   "id": "ROW-GH-01-no-tip-split",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-tip-split",
+   "sport": "Greyhounds",
+   "pick_id": "GH-01",
+   "detail": "Pick GH-01 (Greyhounds - Trap 1 Scooby Dior) carries the flag 'no-tip-split'.",
+   "sources": [
+    "https://imminent-otter.files.svdcdn.com/production/assets/results/Romford/race-advances/TUESDAY-ADVANCED_2026-10-26-121153_lbhn.pdf",
+    "https://www.olbg.com/betting-tips/Greyhounds/28"
+   ]
+  },
+  {
+   "id": "ROW-GH-02-no-form-figures",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-form-figures",
+   "sport": "Greyhounds",
+   "pick_id": "GH-02",
+   "detail": "Pick GH-02 (Greyhounds - Trap 1 Blackrose Ruth) carries the flag 'no-form-figures'.",
+   "sources": [
+    "https://imminent-otter.files.svdcdn.com/production/assets/results/Romford/race-advances/TUESDAY-ADVANCED_2026-10-26-121153_lbhn.pdf",
+    "https://www.olbg.com/betting-tips/Greyhounds/28"
+   ]
+  },
+  {
+   "id": "ROW-GH-02-no-olbg-market-today",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-olbg-market-today",
+   "sport": "Greyhounds",
+   "pick_id": "GH-02",
+   "detail": "Pick GH-02 (Greyhounds - Trap 1 Blackrose Ruth) carries the flag 'no-olbg-market-today'.",
+   "sources": [
+    "https://imminent-otter.files.svdcdn.com/production/assets/results/Romford/race-advances/TUESDAY-ADVANCED_2026-10-26-121153_lbhn.pdf",
+    "https://www.olbg.com/betting-tips/Greyhounds/28"
+   ]
+  },
+  {
+   "id": "ROW-GH-02-no-tip-split",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-tip-split",
+   "sport": "Greyhounds",
+   "pick_id": "GH-02",
+   "detail": "Pick GH-02 (Greyhounds - Trap 1 Blackrose Ruth) carries the flag 'no-tip-split'.",
+   "sources": [
+    "https://imminent-otter.files.svdcdn.com/production/assets/results/Romford/race-advances/TUESDAY-ADVANCED_2026-10-26-121153_lbhn.pdf",
+    "https://www.olbg.com/betting-tips/Greyhounds/28"
+   ]
+  },
+  {
+   "id": "ROW-GH-03-no-form-figures",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-form-figures",
+   "sport": "Greyhounds",
+   "pick_id": "GH-03",
+   "detail": "Pick GH-03 (Greyhounds - Trap 1 Hasty Halley) carries the flag 'no-form-figures'.",
+   "sources": [
+    "https://imminent-otter.files.svdcdn.com/production/assets/results/Romford/race-advances/TUESDAY-ADVANCED_2026-10-26-121153_lbhn.pdf",
+    "https://www.olbg.com/betting-tips/Greyhounds/28"
+   ]
+  },
+  {
+   "id": "ROW-GH-03-no-olbg-market-today",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-olbg-market-today",
+   "sport": "Greyhounds",
+   "pick_id": "GH-03",
+   "detail": "Pick GH-03 (Greyhounds - Trap 1 Hasty Halley) carries the flag 'no-olbg-market-today'.",
+   "sources": [
+    "https://imminent-otter.files.svdcdn.com/production/assets/results/Romford/race-advances/TUESDAY-ADVANCED_2026-10-26-121153_lbhn.pdf",
+    "https://www.olbg.com/betting-tips/Greyhounds/28"
+   ]
+  },
+  {
+   "id": "ROW-GH-03-no-tip-split",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-tip-split",
+   "sport": "Greyhounds",
+   "pick_id": "GH-03",
+   "detail": "Pick GH-03 (Greyhounds - Trap 1 Hasty Halley) carries the flag 'no-tip-split'.",
+   "sources": [
+    "https://imminent-otter.files.svdcdn.com/production/assets/results/Romford/race-advances/TUESDAY-ADVANCED_2026-10-26-121153_lbhn.pdf",
+    "https://www.olbg.com/betting-tips/Greyhounds/28"
+   ]
+  },
+  {
+   "id": "ROW-GH-04-no-form-figures",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-form-figures",
+   "sport": "Greyhounds",
+   "pick_id": "GH-04",
+   "detail": "Pick GH-04 (Greyhounds - Trap 1 Gothic Doll) carries the flag 'no-form-figures'.",
+   "sources": [
+    "https://imminent-otter.files.svdcdn.com/production/assets/results/Romford/race-advances/TUESDAY-ADVANCED_2026-10-26-121153_lbhn.pdf",
+    "https://www.olbg.com/betting-tips/Greyhounds/28"
+   ]
+  },
+  {
+   "id": "ROW-GH-04-no-olbg-market-today",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-olbg-market-today",
+   "sport": "Greyhounds",
+   "pick_id": "GH-04",
+   "detail": "Pick GH-04 (Greyhounds - Trap 1 Gothic Doll) carries the flag 'no-olbg-market-today'.",
+   "sources": [
+    "https://imminent-otter.files.svdcdn.com/production/assets/results/Romford/race-advances/TUESDAY-ADVANCED_2026-10-26-121153_lbhn.pdf",
+    "https://www.olbg.com/betting-tips/Greyhounds/28"
+   ]
+  },
+  {
+   "id": "ROW-GH-04-no-tip-split",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-tip-split",
+   "sport": "Greyhounds",
+   "pick_id": "GH-04",
+   "detail": "Pick GH-04 (Greyhounds - Trap 1 Gothic Doll) carries the flag 'no-tip-split'.",
+   "sources": [
+    "https://imminent-otter.files.svdcdn.com/production/assets/results/Romford/race-advances/TUESDAY-ADVANCED_2026-10-26-121153_lbhn.pdf",
+    "https://www.olbg.com/betting-tips/Greyhounds/28"
+   ]
+  },
+  {
+   "id": "ROW-GH-05-no-form-figures",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-form-figures",
+   "sport": "Greyhounds",
+   "pick_id": "GH-05",
+   "detail": "Pick GH-05 (Greyhounds - Trap 1 Velvet Rolo) carries the flag 'no-form-figures'.",
+   "sources": [
+    "https://imminent-otter.files.svdcdn.com/production/assets/results/Romford/race-advances/TUESDAY-ADVANCED_2026-10-26-121153_lbhn.pdf",
+    "https://www.olbg.com/betting-tips/Greyhounds/28"
+   ]
+  },
+  {
+   "id": "ROW-GH-05-no-olbg-market-today",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-olbg-market-today",
+   "sport": "Greyhounds",
+   "pick_id": "GH-05",
+   "detail": "Pick GH-05 (Greyhounds - Trap 1 Velvet Rolo) carries the flag 'no-olbg-market-today'.",
+   "sources": [
+    "https://imminent-otter.files.svdcdn.com/production/assets/results/Romford/race-advances/TUESDAY-ADVANCED_2026-10-26-121153_lbhn.pdf",
+    "https://www.olbg.com/betting-tips/Greyhounds/28"
+   ]
+  },
+  {
+   "id": "ROW-GH-05-no-tip-split",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-tip-split",
+   "sport": "Greyhounds",
+   "pick_id": "GH-05",
+   "detail": "Pick GH-05 (Greyhounds - Trap 1 Velvet Rolo) carries the flag 'no-tip-split'.",
+   "sources": [
+    "https://imminent-otter.files.svdcdn.com/production/assets/results/Romford/race-advances/TUESDAY-ADVANCED_2026-10-26-121153_lbhn.pdf",
+    "https://www.olbg.com/betting-tips/Greyhounds/28"
+   ]
+  },
+  {
+   "id": "ROW-TN-01-band-floor-applied",
+   "scope": "row",
+   "severity": "low",
+   "title": "band-floor-applied",
+   "sport": "Tennis",
+   "pick_id": "TN-01",
+   "detail": "Pick TN-01 (Tennis - Leylah Fernandez) carries the flag 'band-floor-applied'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Tennis/3"
+   ]
+  },
+  {
+   "id": "ROW-TN-01-no-official-form-data",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-form-data",
+   "sport": "Tennis",
+   "pick_id": "TN-01",
+   "detail": "Pick TN-01 (Tennis - Leylah Fernandez) carries the flag 'no-official-form-data'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Tennis/3"
+   ]
+  },
+  {
+   "id": "ROW-TN-01-no-official-source",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-source",
+   "sport": "Tennis",
+   "pick_id": "TN-01",
+   "detail": "Pick TN-01 (Tennis - Leylah Fernandez) carries the flag 'no-official-source'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Tennis/3"
+   ]
+  },
+  {
+   "id": "ROW-TN-01-schedule-not-independently-checked",
+   "scope": "row",
+   "severity": "low",
+   "title": "schedule-not-independently-checked",
+   "sport": "Tennis",
+   "pick_id": "TN-01",
+   "detail": "Pick TN-01 (Tennis - Leylah Fernandez) carries the flag 'schedule-not-independently-checked'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Tennis/3"
+   ]
+  },
+  {
+   "id": "ROW-TN-02-band-floor-applied",
+   "scope": "row",
+   "severity": "low",
+   "title": "band-floor-applied",
+   "sport": "Tennis",
+   "pick_id": "TN-02",
+   "detail": "Pick TN-02 (Tennis - Naomi Osaka) carries the flag 'band-floor-applied'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Tennis/3"
+   ]
+  },
+  {
+   "id": "ROW-TN-02-no-official-form-data",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-form-data",
+   "sport": "Tennis",
+   "pick_id": "TN-02",
+   "detail": "Pick TN-02 (Tennis - Naomi Osaka) carries the flag 'no-official-form-data'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Tennis/3"
+   ]
+  },
+  {
+   "id": "ROW-TN-02-no-official-source",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-source",
+   "sport": "Tennis",
+   "pick_id": "TN-02",
+   "detail": "Pick TN-02 (Tennis - Naomi Osaka) carries the flag 'no-official-source'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Tennis/3"
+   ]
+  },
+  {
+   "id": "ROW-TN-02-schedule-not-independently-checked",
+   "scope": "row",
+   "severity": "low",
+   "title": "schedule-not-independently-checked",
+   "sport": "Tennis",
+   "pick_id": "TN-02",
+   "detail": "Pick TN-02 (Tennis - Naomi Osaka) carries the flag 'schedule-not-independently-checked'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Tennis/3"
+   ]
+  },
+  {
+   "id": "ROW-TN-03-schedule-not-independently-checked",
+   "scope": "row",
+   "severity": "low",
+   "title": "schedule-not-independently-checked",
+   "sport": "Tennis",
+   "pick_id": "TN-03",
+   "detail": "Pick TN-03 (Tennis - Rafael Jodar) carries the flag 'schedule-not-independently-checked'.",
+   "sources": [
+    "https://www.atptour.com/en/news/basel-atp-500-2026-history-draw-schedule",
+    "https://tennisuptodate.com/atp/swiss-indoors-basel-2026-results-draw-entry-list-prize-money-and-history",
+    "https://www.olbg.com/betting-tips/Tennis/3"
+   ]
+  },
+  {
+   "id": "ROW-TN-03-seed-from-secondary-source",
+   "scope": "row",
+   "severity": "low",
+   "title": "seed-from-secondary-source",
+   "sport": "Tennis",
+   "pick_id": "TN-03",
+   "detail": "Pick TN-03 (Tennis - Rafael Jodar) carries the flag 'seed-from-secondary-source'.",
+   "sources": [
+    "https://www.atptour.com/en/news/basel-atp-500-2026-history-draw-schedule",
+    "https://tennisuptodate.com/atp/swiss-indoors-basel-2026-results-draw-entry-list-prize-money-and-history",
+    "https://www.olbg.com/betting-tips/Tennis/3"
+   ]
+  },
+  {
+   "id": "ROW-MR-01-field-size-default-32",
+   "scope": "row",
+   "severity": "low",
+   "title": "field-size-default-32",
+   "sport": "Motor Racing",
+   "pick_id": "MR-01",
+   "detail": "Pick MR-01 (Motor Racing - Kimi Antonelli) carries the flag 'field-size-default-32'.",
+   "sources": [
+    "https://www.formula1.com/en/latest/article/antonelli-surges-to-dominant-victory-in-united-states-grand-prix-ahead-of-leclerc-and-verstappen.6kmBQv9FNTW7LzkDj8S34j",
+    "https://www.formula1.com/",
+    "https://www.formula1.com/en/racing/2026/mexico"
+   ]
+  },
+  {
+   "id": "ROW-MR-01-no-tip-split",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-tip-split",
+   "sport": "Motor Racing",
+   "pick_id": "MR-01",
+   "detail": "Pick MR-01 (Motor Racing - Kimi Antonelli) carries the flag 'no-tip-split'.",
+   "sources": [
+    "https://www.formula1.com/en/latest/article/antonelli-surges-to-dominant-victory-in-united-states-grand-prix-ahead-of-leclerc-and-verstappen.6kmBQv9FNTW7LzkDj8S34j",
+    "https://www.formula1.com/",
+    "https://www.formula1.com/en/racing/2026/mexico"
+   ]
+  },
+  {
+   "id": "ROW-MR-02-no-tip-split",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-tip-split",
+   "sport": "Motor Racing",
+   "pick_id": "MR-02",
+   "detail": "Pick MR-02 (Motor Racing - Kimi Antonelli - Yes) carries the flag 'no-tip-split'.",
+   "sources": [
+    "https://www.formula1.com/en/latest/article/antonelli-surges-to-dominant-victory-in-united-states-grand-prix-ahead-of-leclerc-and-verstappen.6kmBQv9FNTW7LzkDj8S34j",
+    "https://www.formula1.com/",
+    "https://www.olbg.com/betting-tips/Motor_Racing/14"
+   ]
+  },
+  {
+   "id": "ROW-MR-03-no-tip-split",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-tip-split",
+   "sport": "Motor Racing",
+   "pick_id": "MR-03",
+   "detail": "Pick MR-03 (Motor Racing - Charles Leclerc - Yes) carries the flag 'no-tip-split'.",
+   "sources": [
+    "https://www.formula1.com/en/latest/article/antonelli-surges-to-dominant-victory-in-united-states-grand-prix-ahead-of-leclerc-and-verstappen.6kmBQv9FNTW7LzkDj8S34j",
+    "https://www.formula1.com/",
+    "https://www.bbc.com/sport/formula1/articles/c6wyrgejp0w8o"
+   ]
+  },
+  {
+   "id": "ROW-MR-05-field-size-default-32",
+   "scope": "row",
+   "severity": "low",
+   "title": "field-size-default-32",
+   "sport": "Motor Racing",
+   "pick_id": "MR-05",
+   "detail": "Pick MR-05 (Motor Racing - Lando Norris) carries the flag 'field-size-default-32'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Motor_Racing/All_Motor_Racing/All_Events/Mexico_City_Grand_Prix/14?event_id=914",
+    "https://www.formula1.com/en/racing/2026/mexico"
+   ]
+  },
+  {
+   "id": "ROW-MR-06-field-size-default-32",
+   "scope": "row",
+   "severity": "low",
+   "title": "field-size-default-32",
+   "sport": "Motor Racing",
+   "pick_id": "MR-06",
+   "detail": "Pick MR-06 (Motor Racing - Oscar Piastri) carries the flag 'field-size-default-32'.",
+   "sources": [
+    "https://www.formula1.com/",
+    "https://www.formula1.com/en/racing/2026/mexico",
+    "https://www.olbg.com/betting-tips/Motor_Racing/All_Motor_Racing/All_Events/Mexico_City_Grand_Prix/14?event_id=914"
+   ]
+  },
+  {
+   "id": "ROW-MR-06-value-longshot",
+   "scope": "row",
+   "severity": "low",
+   "title": "value-longshot",
+   "sport": "Motor Racing",
+   "pick_id": "MR-06",
+   "detail": "Pick MR-06 (Motor Racing - Oscar Piastri) carries the flag 'value-longshot'.",
+   "sources": [
+    "https://www.formula1.com/",
+    "https://www.formula1.com/en/racing/2026/mexico",
+    "https://www.olbg.com/betting-tips/Motor_Racing/All_Motor_Racing/All_Events/Mexico_City_Grand_Prix/14?event_id=914"
+   ]
+  },
+  {
+   "id": "ROW-HB-01-no-tip-split",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-tip-split",
+   "sport": "Handball",
+   "pick_id": "HB-01",
+   "detail": "Pick HB-01 (Handball - SC Magdeburg) carries the flag 'no-tip-split'.",
+   "sources": [
+    "https://ehfcl.eurohandball.com/men/2026-27/standings/",
+    "https://www.olbg.com/betting-tips/Handball/20"
+   ]
+  },
+  {
+   "id": "ROW-HB-01-tie-capture-irregularity",
+   "scope": "row",
+   "severity": "low",
+   "title": "tie-capture-irregularity",
+   "sport": "Handball",
+   "pick_id": "HB-01",
+   "detail": "Pick HB-01 (Handball - SC Magdeburg) carries the flag 'tie-capture-irregularity'.",
+   "sources": [
+    "https://ehfcl.eurohandball.com/men/2026-27/standings/",
+    "https://www.olbg.com/betting-tips/Handball/20"
+   ]
+  },
+  {
+   "id": "ROW-HB-02-no-tip-split",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-tip-split",
+   "sport": "Handball",
+   "pick_id": "HB-02",
+   "detail": "Pick HB-02 (Handball - Industria Kielce) carries the flag 'no-tip-split'.",
+   "sources": [
+    "https://ehfcl.eurohandball.com/men/2026-27/standings/",
+    "https://www.olbg.com/betting-tips/Handball/20"
+   ]
+  },
+  {
+   "id": "ROW-HB-02-tie-capture-irregularity",
+   "scope": "row",
+   "severity": "low",
+   "title": "tie-capture-irregularity",
+   "sport": "Handball",
+   "pick_id": "HB-02",
+   "detail": "Pick HB-02 (Handball - Industria Kielce) carries the flag 'tie-capture-irregularity'.",
+   "sources": [
+    "https://ehfcl.eurohandball.com/men/2026-27/standings/",
+    "https://www.olbg.com/betting-tips/Handball/20"
+   ]
+  },
+  {
+   "id": "ROW-HB-03-no-tip-split",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-tip-split",
+   "sport": "Handball",
+   "pick_id": "HB-03",
+   "detail": "Pick HB-03 (Handball - Aalborg Handbold) carries the flag 'no-tip-split'.",
+   "sources": [
+    "https://ehfcl.eurohandball.com/men/2026-27/standings/",
+    "https://www.olbg.com/betting-tips/Handball/20"
+   ]
+  },
+  {
+   "id": "ROW-HB-03-tie-capture-irregularity",
+   "scope": "row",
+   "severity": "low",
+   "title": "tie-capture-irregularity",
+   "sport": "Handball",
+   "pick_id": "HB-03",
+   "detail": "Pick HB-03 (Handball - Aalborg Handbold) carries the flag 'tie-capture-irregularity'.",
+   "sources": [
+    "https://ehfcl.eurohandball.com/men/2026-27/standings/",
+    "https://www.olbg.com/betting-tips/Handball/20"
+   ]
+  },
+  {
+   "id": "ROW-HB-03-value-longshot",
+   "scope": "row",
+   "severity": "low",
+   "title": "value-longshot",
+   "sport": "Handball",
+   "pick_id": "HB-03",
+   "detail": "Pick HB-03 (Handball - Aalborg Handbold) carries the flag 'value-longshot'.",
+   "sources": [
+    "https://ehfcl.eurohandball.com/men/2026-27/standings/",
+    "https://www.olbg.com/betting-tips/Handball/20"
+   ]
+  },
+  {
+   "id": "ROW-HB-04-no-tip-split",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-tip-split",
+   "sport": "Handball",
+   "pick_id": "HB-04",
+   "detail": "Pick HB-04 (Handball - RK Zagreb) carries the flag 'no-tip-split'.",
+   "sources": [
+    "https://ehfcl.eurohandball.com/men/2026-27/standings/",
+    "https://www.olbg.com/betting-tips/Handball/20"
+   ]
+  },
+  {
+   "id": "ROW-HB-04-tie-capture-irregularity",
+   "scope": "row",
+   "severity": "low",
+   "title": "tie-capture-irregularity",
+   "sport": "Handball",
+   "pick_id": "HB-04",
+   "detail": "Pick HB-04 (Handball - RK Zagreb) carries the flag 'tie-capture-irregularity'.",
+   "sources": [
+    "https://ehfcl.eurohandball.com/men/2026-27/standings/",
+    "https://www.olbg.com/betting-tips/Handball/20"
+   ]
+  },
+  {
+   "id": "ROW-HB-05-no-tip-split",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-tip-split",
+   "sport": "Handball",
+   "pick_id": "HB-05",
+   "detail": "Pick HB-05 (Handball - One Veszprem HC) carries the flag 'no-tip-split'.",
+   "sources": [
+    "https://ehfcl.eurohandball.com/men/2026-27/standings/",
+    "https://www.olbg.com/betting-tips/Handball/20"
+   ]
+  },
+  {
+   "id": "ROW-HB-05-tie-capture-irregularity",
+   "scope": "row",
+   "severity": "low",
+   "title": "tie-capture-irregularity",
+   "sport": "Handball",
+   "pick_id": "HB-05",
+   "detail": "Pick HB-05 (Handball - One Veszprem HC) carries the flag 'tie-capture-irregularity'.",
+   "sources": [
+    "https://ehfcl.eurohandball.com/men/2026-27/standings/",
+    "https://www.olbg.com/betting-tips/Handball/20"
+   ]
+  },
+  {
+   "id": "ROW-IH-01-band-floor-applied",
+   "scope": "row",
+   "severity": "low",
+   "title": "band-floor-applied",
+   "sport": "Ice Hockey",
+   "pick_id": "IH-01",
+   "detail": "Pick IH-01 (Ice Hockey - Kalpa) carries the flag 'band-floor-applied'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Ice_Hockey/13"
+   ]
+  },
+  {
+   "id": "ROW-IH-01-no-official-form-data",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-form-data",
+   "sport": "Ice Hockey",
+   "pick_id": "IH-01",
+   "detail": "Pick IH-01 (Ice Hockey - Kalpa) carries the flag 'no-official-form-data'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Ice_Hockey/13"
+   ]
+  },
+  {
+   "id": "ROW-IH-01-no-official-source",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-source",
+   "sport": "Ice Hockey",
+   "pick_id": "IH-01",
+   "detail": "Pick IH-01 (Ice Hockey - Kalpa) carries the flag 'no-official-source'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Ice_Hockey/13"
+   ]
+  },
+  {
+   "id": "ROW-IH-01-schedule-not-independently-checked",
+   "scope": "row",
+   "severity": "low",
+   "title": "schedule-not-independently-checked",
+   "sport": "Ice Hockey",
+   "pick_id": "IH-01",
+   "detail": "Pick IH-01 (Ice Hockey - Kalpa) carries the flag 'schedule-not-independently-checked'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Ice_Hockey/13"
+   ]
+  },
+  {
+   "id": "ROW-IH-02-no-official-source",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-source",
+   "sport": "Ice Hockey",
+   "pick_id": "IH-02",
+   "detail": "Pick IH-02 (Ice Hockey - BOS Bruins +1.50) carries the flag 'no-official-source'.",
+   "sources": [
+    "https://www.bbc.com/sport/ice-hockey/tables",
+    "https://www.olbg.com/betting-tips/Ice_Hockey/13"
+   ]
+  },
+  {
+   "id": "ROW-IH-02-schedule-not-independently-checked",
+   "scope": "row",
+   "severity": "low",
+   "title": "schedule-not-independently-checked",
+   "sport": "Ice Hockey",
+   "pick_id": "IH-02",
+   "detail": "Pick IH-02 (Ice Hockey - BOS Bruins +1.50) carries the flag 'schedule-not-independently-checked'.",
+   "sources": [
+    "https://www.bbc.com/sport/ice-hockey/tables",
+    "https://www.olbg.com/betting-tips/Ice_Hockey/13"
+   ]
+  },
+  {
+   "id": "ROW-IH-02-value-longshot",
+   "scope": "row",
+   "severity": "low",
+   "title": "value-longshot",
+   "sport": "Ice Hockey",
+   "pick_id": "IH-02",
+   "detail": "Pick IH-02 (Ice Hockey - BOS Bruins +1.50) carries the flag 'value-longshot'.",
+   "sources": [
+    "https://www.bbc.com/sport/ice-hockey/tables",
+    "https://www.olbg.com/betting-tips/Ice_Hockey/13"
+   ]
+  },
+  {
+   "id": "ROW-IH-03-no-official-source",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-source",
+   "sport": "Ice Hockey",
+   "pick_id": "IH-03",
+   "detail": "Pick IH-03 (Ice Hockey - Under 5.50) carries the flag 'no-official-source'.",
+   "sources": [
+    "https://www.bbc.com/sport/ice-hockey/tables",
+    "https://www.olbg.com/betting-tips/Ice_Hockey/13"
+   ]
+  },
+  {
+   "id": "ROW-IH-03-one-tip-sample",
+   "scope": "row",
+   "severity": "low",
+   "title": "one-tip-sample",
+   "sport": "Ice Hockey",
+   "pick_id": "IH-03",
+   "detail": "Pick IH-03 (Ice Hockey - Under 5.50) carries the flag 'one-tip-sample'.",
+   "sources": [
+    "https://www.bbc.com/sport/ice-hockey/tables",
+    "https://www.olbg.com/betting-tips/Ice_Hockey/13"
+   ]
+  },
+  {
+   "id": "ROW-IH-03-schedule-not-independently-checked",
+   "scope": "row",
+   "severity": "low",
+   "title": "schedule-not-independently-checked",
+   "sport": "Ice Hockey",
+   "pick_id": "IH-03",
+   "detail": "Pick IH-03 (Ice Hockey - Under 5.50) carries the flag 'schedule-not-independently-checked'.",
+   "sources": [
+    "https://www.bbc.com/sport/ice-hockey/tables",
+    "https://www.olbg.com/betting-tips/Ice_Hockey/13"
+   ]
+  },
+  {
+   "id": "ROW-IH-04-no-official-source",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-source",
+   "sport": "Ice Hockey",
+   "pick_id": "IH-04",
+   "detail": "Pick IH-04 (Ice Hockey - Under 5.50) carries the flag 'no-official-source'.",
+   "sources": [
+    "https://www.bbc.com/sport/ice-hockey/tables",
+    "https://www.olbg.com/betting-tips/Ice_Hockey/13"
+   ]
+  },
+  {
+   "id": "ROW-IH-04-no-official-team-news",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-team-news",
+   "sport": "Ice Hockey",
+   "pick_id": "IH-04",
+   "detail": "Pick IH-04 (Ice Hockey - Under 5.50) carries the flag 'no-official-team-news'.",
+   "sources": [
+    "https://www.bbc.com/sport/ice-hockey/tables",
+    "https://www.olbg.com/betting-tips/Ice_Hockey/13"
+   ]
+  },
+  {
+   "id": "ROW-IH-04-one-tip-sample",
+   "scope": "row",
+   "severity": "low",
+   "title": "one-tip-sample",
+   "sport": "Ice Hockey",
+   "pick_id": "IH-04",
+   "detail": "Pick IH-04 (Ice Hockey - Under 5.50) carries the flag 'one-tip-sample'.",
+   "sources": [
+    "https://www.bbc.com/sport/ice-hockey/tables",
+    "https://www.olbg.com/betting-tips/Ice_Hockey/13"
+   ]
+  },
+  {
+   "id": "ROW-IH-04-schedule-not-independently-checked",
+   "scope": "row",
+   "severity": "low",
+   "title": "schedule-not-independently-checked",
+   "sport": "Ice Hockey",
+   "pick_id": "IH-04",
+   "detail": "Pick IH-04 (Ice Hockey - Under 5.50) carries the flag 'schedule-not-independently-checked'.",
+   "sources": [
+    "https://www.bbc.com/sport/ice-hockey/tables",
+    "https://www.olbg.com/betting-tips/Ice_Hockey/13"
+   ]
+  },
+  {
+   "id": "ROW-IH-05-no-official-source",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-source",
+   "sport": "Ice Hockey",
+   "pick_id": "IH-05",
+   "detail": "Pick IH-05 (Ice Hockey - PHI Flyers) carries the flag 'no-official-source'.",
+   "sources": [
+    "https://www.bbc.com/sport/ice-hockey/tables",
+    "https://www.olbg.com/betting-tips/Ice_Hockey/13"
+   ]
+  },
+  {
+   "id": "ROW-IH-05-schedule-not-independently-checked",
+   "scope": "row",
+   "severity": "low",
+   "title": "schedule-not-independently-checked",
+   "sport": "Ice Hockey",
+   "pick_id": "IH-05",
+   "detail": "Pick IH-05 (Ice Hockey - PHI Flyers) carries the flag 'schedule-not-independently-checked'.",
+   "sources": [
+    "https://www.bbc.com/sport/ice-hockey/tables",
+    "https://www.olbg.com/betting-tips/Ice_Hockey/13"
+   ]
+  },
+  {
+   "id": "ROW-IH-05-value-against-tips",
+   "scope": "row",
+   "severity": "low",
+   "title": "value-against-tips",
+   "sport": "Ice Hockey",
+   "pick_id": "IH-05",
+   "detail": "Pick IH-05 (Ice Hockey - PHI Flyers) carries the flag 'value-against-tips'.",
+   "sources": [
+    "https://www.bbc.com/sport/ice-hockey/tables",
+    "https://www.olbg.com/betting-tips/Ice_Hockey/13"
+   ]
+  },
+  {
+   "id": "ROW-IH-06-no-official-source",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-source",
+   "sport": "Ice Hockey",
+   "pick_id": "IH-06",
+   "detail": "Pick IH-06 (Ice Hockey - CLB Blue Jackets) carries the flag 'no-official-source'.",
+   "sources": [
+    "https://www.bbc.com/sport/ice-hockey/tables",
+    "https://www.olbg.com/betting-tips/Ice_Hockey/13"
+   ]
+  },
+  {
+   "id": "ROW-IH-06-no-official-team-news",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-team-news",
+   "sport": "Ice Hockey",
+   "pick_id": "IH-06",
+   "detail": "Pick IH-06 (Ice Hockey - CLB Blue Jackets) carries the flag 'no-official-team-news'.",
+   "sources": [
+    "https://www.bbc.com/sport/ice-hockey/tables",
+    "https://www.olbg.com/betting-tips/Ice_Hockey/13"
+   ]
+  },
+  {
+   "id": "ROW-IH-06-no-tip-split",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-tip-split",
+   "sport": "Ice Hockey",
+   "pick_id": "IH-06",
+   "detail": "Pick IH-06 (Ice Hockey - CLB Blue Jackets) carries the flag 'no-tip-split'.",
+   "sources": [
+    "https://www.bbc.com/sport/ice-hockey/tables",
+    "https://www.olbg.com/betting-tips/Ice_Hockey/13"
+   ]
+  },
+  {
+   "id": "ROW-IH-06-value-against-tips",
+   "scope": "row",
+   "severity": "low",
+   "title": "value-against-tips",
+   "sport": "Ice Hockey",
+   "pick_id": "IH-06",
+   "detail": "Pick IH-06 (Ice Hockey - CLB Blue Jackets) carries the flag 'value-against-tips'.",
+   "sources": [
+    "https://www.bbc.com/sport/ice-hockey/tables",
+    "https://www.olbg.com/betting-tips/Ice_Hockey/13"
+   ]
+  },
+  {
+   "id": "ROW-BB-01-no-official-source",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-source",
+   "sport": "Basketball",
+   "pick_id": "BB-01",
+   "detail": "Pick BB-01 (Basketball - Panathinaikos) carries the flag 'no-official-source'.",
+   "sources": [
+    "https://basketnews.com/leagues/25-euroleague/standings.html",
+    "https://www.olbg.com/betting-tips/Basketball/4"
+   ]
+  },
+  {
+   "id": "ROW-BB-01-schedule-not-independently-checked",
+   "scope": "row",
+   "severity": "low",
+   "title": "schedule-not-independently-checked",
+   "sport": "Basketball",
+   "pick_id": "BB-01",
+   "detail": "Pick BB-01 (Basketball - Panathinaikos) carries the flag 'schedule-not-independently-checked'.",
+   "sources": [
+    "https://basketnews.com/leagues/25-euroleague/standings.html",
+    "https://www.olbg.com/betting-tips/Basketball/4"
+   ]
+  },
+  {
+   "id": "ROW-BB-01-standings-from-secondary-source",
+   "scope": "row",
+   "severity": "low",
+   "title": "standings-from-secondary-source",
+   "sport": "Basketball",
+   "pick_id": "BB-01",
+   "detail": "Pick BB-01 (Basketball - Panathinaikos) carries the flag 'standings-from-secondary-source'.",
+   "sources": [
+    "https://basketnews.com/leagues/25-euroleague/standings.html",
+    "https://www.olbg.com/betting-tips/Basketball/4"
+   ]
+  },
+  {
+   "id": "ROW-BB-02-no-official-source",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-source",
+   "sport": "Basketball",
+   "pick_id": "BB-02",
+   "detail": "Pick BB-02 (Basketball - Fenerbahce) carries the flag 'no-official-source'.",
+   "sources": [
+    "https://basketnews.com/leagues/25-euroleague/standings.html",
+    "https://www.olbg.com/betting-tips/Basketball/4"
+   ]
+  },
+  {
+   "id": "ROW-BB-02-schedule-not-independently-checked",
+   "scope": "row",
+   "severity": "low",
+   "title": "schedule-not-independently-checked",
+   "sport": "Basketball",
+   "pick_id": "BB-02",
+   "detail": "Pick BB-02 (Basketball - Fenerbahce) carries the flag 'schedule-not-independently-checked'.",
+   "sources": [
+    "https://basketnews.com/leagues/25-euroleague/standings.html",
+    "https://www.olbg.com/betting-tips/Basketball/4"
+   ]
+  },
+  {
+   "id": "ROW-BB-02-standings-from-secondary-source",
+   "scope": "row",
+   "severity": "low",
+   "title": "standings-from-secondary-source",
+   "sport": "Basketball",
+   "pick_id": "BB-02",
+   "detail": "Pick BB-02 (Basketball - Fenerbahce) carries the flag 'standings-from-secondary-source'.",
+   "sources": [
+    "https://basketnews.com/leagues/25-euroleague/standings.html",
+    "https://www.olbg.com/betting-tips/Basketball/4"
+   ]
+  },
+  {
+   "id": "ROW-BB-03-no-official-injury-report",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-injury-report",
+   "sport": "Basketball",
+   "pick_id": "BB-03",
+   "detail": "Pick BB-03 (Basketball - BOS Celtics) carries the flag 'no-official-injury-report'.",
+   "sources": [
+    "https://www.nba.com/team/1610612751/nets",
+    "https://www.olbg.com/betting-tips/Basketball/4"
+   ]
+  },
+  {
+   "id": "ROW-BB-03-schedule-not-independently-checked",
+   "scope": "row",
+   "severity": "low",
+   "title": "schedule-not-independently-checked",
+   "sport": "Basketball",
+   "pick_id": "BB-03",
+   "detail": "Pick BB-03 (Basketball - BOS Celtics) carries the flag 'schedule-not-independently-checked'.",
+   "sources": [
+    "https://www.nba.com/team/1610612751/nets",
+    "https://www.olbg.com/betting-tips/Basketball/4"
+   ]
+  },
+  {
+   "id": "ROW-BB-04-no-official-injury-report",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-injury-report",
+   "sport": "Basketball",
+   "pick_id": "BB-04",
+   "detail": "Pick BB-04 (Basketball - NY Knicks) carries the flag 'no-official-injury-report'.",
+   "sources": [
+    "https://www.nba.com/team/1610612751/nets",
+    "https://www.olbg.com/betting-tips/Basketball/4",
+    "https://www.nba.com/news/power-rankings-2026-27-week-1"
+   ]
+  },
+  {
+   "id": "ROW-BB-04-schedule-not-independently-checked",
+   "scope": "row",
+   "severity": "low",
+   "title": "schedule-not-independently-checked",
+   "sport": "Basketball",
+   "pick_id": "BB-04",
+   "detail": "Pick BB-04 (Basketball - NY Knicks) carries the flag 'schedule-not-independently-checked'.",
+   "sources": [
+    "https://www.nba.com/team/1610612751/nets",
+    "https://www.olbg.com/betting-tips/Basketball/4",
+    "https://www.nba.com/news/power-rankings-2026-27-week-1"
+   ]
+  },
+  {
+   "id": "ROW-BB-04-value-against-tips",
+   "scope": "row",
+   "severity": "low",
+   "title": "value-against-tips",
+   "sport": "Basketball",
+   "pick_id": "BB-04",
+   "detail": "Pick BB-04 (Basketball - NY Knicks) carries the flag 'value-against-tips'.",
+   "sources": [
+    "https://www.nba.com/team/1610612751/nets",
+    "https://www.olbg.com/betting-tips/Basketball/4",
+    "https://www.nba.com/news/power-rankings-2026-27-week-1"
+   ]
+  },
+  {
+   "id": "ROW-BB-05-no-official-form-data",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-form-data",
+   "sport": "Basketball",
+   "pick_id": "BB-05",
+   "detail": "Pick BB-05 (Basketball - Frankfurt Skyliners +1.50) carries the flag 'no-official-form-data'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Basketball/4"
+   ]
+  },
+  {
+   "id": "ROW-BB-05-no-official-source",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-source",
+   "sport": "Basketball",
+   "pick_id": "BB-05",
+   "detail": "Pick BB-05 (Basketball - Frankfurt Skyliners +1.50) carries the flag 'no-official-source'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Basketball/4"
+   ]
+  },
+  {
+   "id": "ROW-BB-05-schedule-not-independently-checked",
+   "scope": "row",
+   "severity": "low",
+   "title": "schedule-not-independently-checked",
+   "sport": "Basketball",
+   "pick_id": "BB-05",
+   "detail": "Pick BB-05 (Basketball - Frankfurt Skyliners +1.50) carries the flag 'schedule-not-independently-checked'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Basketball/4"
+   ]
+  },
+  {
+   "id": "ROW-BB-06-no-official-injury-report",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-injury-report",
+   "sport": "Basketball",
+   "pick_id": "BB-06",
+   "detail": "Pick BB-06 (Basketball - BKN Nets) carries the flag 'no-official-injury-report'.",
+   "sources": [
+    "https://www.nba.com/team/1610612751/nets",
+    "https://www.nba.com/news/power-rankings-2026-27-week-1"
+   ]
+  },
+  {
+   "id": "ROW-BB-06-no-tip-split",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-tip-split",
+   "sport": "Basketball",
+   "pick_id": "BB-06",
+   "detail": "Pick BB-06 (Basketball - BKN Nets) carries the flag 'no-tip-split'.",
+   "sources": [
+    "https://www.nba.com/team/1610612751/nets",
+    "https://www.nba.com/news/power-rankings-2026-27-week-1"
+   ]
+  },
+  {
+   "id": "ROW-BB-06-value-longshot",
+   "scope": "row",
+   "severity": "low",
+   "title": "value-longshot",
+   "sport": "Basketball",
+   "pick_id": "BB-06",
+   "detail": "Pick BB-06 (Basketball - BKN Nets) carries the flag 'value-longshot'.",
+   "sources": [
+    "https://www.nba.com/team/1610612751/nets",
+    "https://www.nba.com/news/power-rankings-2026-27-week-1"
+   ]
+  },
+  {
+   "id": "ROW-RL-01-field-size-default-32",
+   "scope": "row",
+   "severity": "low",
+   "title": "field-size-default-32",
+   "sport": "Rugby League",
+   "pick_id": "RL-01",
+   "detail": "Pick RL-01 (Rugby League - New South Wales) carries the flag 'field-size-default-32'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Rugby_League/10"
+   ]
+  },
+  {
+   "id": "ROW-RL-01-long-dated-ante-post",
+   "scope": "row",
+   "severity": "low",
+   "title": "long-dated-ante-post",
+   "sport": "Rugby League",
+   "pick_id": "RL-01",
+   "detail": "Pick RL-01 (Rugby League - New South Wales) carries the flag 'long-dated-ante-post'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Rugby_League/10"
+   ]
+  },
+  {
+   "id": "ROW-RL-01-no-official-source",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-source",
+   "sport": "Rugby League",
+   "pick_id": "RL-01",
+   "detail": "Pick RL-01 (Rugby League - New South Wales) carries the flag 'no-official-source'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Rugby_League/10"
+   ]
+  },
+  {
+   "id": "ROW-RL-01-schedule-not-independently-checked",
+   "scope": "row",
+   "severity": "low",
+   "title": "schedule-not-independently-checked",
+   "sport": "Rugby League",
+   "pick_id": "RL-01",
+   "detail": "Pick RL-01 (Rugby League - New South Wales) carries the flag 'schedule-not-independently-checked'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Rugby_League/10"
+   ]
+  },
+  {
+   "id": "ROW-RL-02-field-size-default-32",
+   "scope": "row",
+   "severity": "low",
+   "title": "field-size-default-32",
+   "sport": "Rugby League",
+   "pick_id": "RL-02",
+   "detail": "Pick RL-02 (Rugby League - Wigan Warriors) carries the flag 'field-size-default-32'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Rugby_League/10"
+   ]
+  },
+  {
+   "id": "ROW-RL-02-long-dated-ante-post",
+   "scope": "row",
+   "severity": "low",
+   "title": "long-dated-ante-post",
+   "sport": "Rugby League",
+   "pick_id": "RL-02",
+   "detail": "Pick RL-02 (Rugby League - Wigan Warriors) carries the flag 'long-dated-ante-post'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Rugby_League/10"
+   ]
+  },
+  {
+   "id": "ROW-RL-02-no-official-source",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-source",
+   "sport": "Rugby League",
+   "pick_id": "RL-02",
+   "detail": "Pick RL-02 (Rugby League - Wigan Warriors) carries the flag 'no-official-source'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Rugby_League/10"
+   ]
+  },
+  {
+   "id": "ROW-RL-02-schedule-not-independently-checked",
+   "scope": "row",
+   "severity": "low",
+   "title": "schedule-not-independently-checked",
+   "sport": "Rugby League",
+   "pick_id": "RL-02",
+   "detail": "Pick RL-02 (Rugby League - Wigan Warriors) carries the flag 'schedule-not-independently-checked'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Rugby_League/10"
+   ]
+  },
+  {
+   "id": "ROW-RL-03-field-size-default-32",
+   "scope": "row",
+   "severity": "low",
+   "title": "field-size-default-32",
+   "sport": "Rugby League",
+   "pick_id": "RL-03",
+   "detail": "Pick RL-03 (Rugby League - Penrith Panthers) carries the flag 'field-size-default-32'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Rugby_League/10"
+   ]
+  },
+  {
+   "id": "ROW-RL-03-long-dated-ante-post",
+   "scope": "row",
+   "severity": "low",
+   "title": "long-dated-ante-post",
+   "sport": "Rugby League",
+   "pick_id": "RL-03",
+   "detail": "Pick RL-03 (Rugby League - Penrith Panthers) carries the flag 'long-dated-ante-post'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Rugby_League/10"
+   ]
+  },
+  {
+   "id": "ROW-RL-03-no-official-source",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-official-source",
+   "sport": "Rugby League",
+   "pick_id": "RL-03",
+   "detail": "Pick RL-03 (Rugby League - Penrith Panthers) carries the flag 'no-official-source'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Rugby_League/10"
+   ]
+  },
+  {
+   "id": "ROW-RL-03-schedule-not-independently-checked",
+   "scope": "row",
+   "severity": "low",
+   "title": "schedule-not-independently-checked",
+   "sport": "Rugby League",
+   "pick_id": "RL-03",
+   "detail": "Pick RL-03 (Rugby League - Penrith Panthers) carries the flag 'schedule-not-independently-checked'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Rugby_League/10"
+   ]
+  },
+  {
+   "id": "ROW-RL-03-value-longshot",
+   "scope": "row",
+   "severity": "low",
+   "title": "value-longshot",
+   "sport": "Rugby League",
+   "pick_id": "RL-03",
+   "detail": "Pick RL-03 (Rugby League - Penrith Panthers) carries the flag 'value-longshot'.",
+   "sources": [
+    "https://www.olbg.com/betting-tips/Rugby_League/10"
+   ]
+  },
+  {
+   "id": "ROW-RL-04-no-olbg-market",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-olbg-market",
+   "sport": "Rugby League",
+   "pick_id": "RL-04",
+   "detail": "Pick RL-04 (Rugby League - England) carries the flag 'no-olbg-market'.",
+   "sources": [
+    "https://leagueworldcup2026.com/schedule/",
+    "https://www.skysports.com/rugby-league/news/13598071/rugby-league-world-cup-2026-schedule-dates-format-results-from-mens-women-s-and-wheelchair-tournaments"
+   ]
+  },
+  {
+   "id": "ROW-RL-04-no-tip-split",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-tip-split",
+   "sport": "Rugby League",
+   "pick_id": "RL-04",
+   "detail": "Pick RL-04 (Rugby League - England) carries the flag 'no-tip-split'.",
+   "sources": [
+    "https://leagueworldcup2026.com/schedule/",
+    "https://www.skysports.com/rugby-league/news/13598071/rugby-league-world-cup-2026-schedule-dates-format-results-from-mens-women-s-and-wheelchair-tournaments"
+   ]
+  },
+  {
+   "id": "ROW-RL-05-no-olbg-market",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-olbg-market",
+   "sport": "Rugby League",
+   "pick_id": "RL-05",
+   "detail": "Pick RL-05 (Rugby League - New Zealand) carries the flag 'no-olbg-market'.",
+   "sources": [
+    "https://leagueworldcup2026.com/schedule/",
+    "https://www.skysports.com/rugby-league/news/13598071/rugby-league-world-cup-2026-schedule-dates-format-results-from-mens-women-s-and-wheelchair-tournaments"
+   ]
+  },
+  {
+   "id": "ROW-RL-05-no-tip-split",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-tip-split",
+   "sport": "Rugby League",
+   "pick_id": "RL-05",
+   "detail": "Pick RL-05 (Rugby League - New Zealand) carries the flag 'no-tip-split'.",
+   "sources": [
+    "https://leagueworldcup2026.com/schedule/",
+    "https://www.skysports.com/rugby-league/news/13598071/rugby-league-world-cup-2026-schedule-dates-format-results-from-mens-women-s-and-wheelchair-tournaments"
+   ]
+  },
+  {
+   "id": "ROW-RL-06-no-olbg-market",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-olbg-market",
+   "sport": "Rugby League",
+   "pick_id": "RL-06",
+   "detail": "Pick RL-06 (Rugby League - Australia) carries the flag 'no-olbg-market'.",
+   "sources": [
+    "https://leagueworldcup2026.com/schedule/",
+    "https://www.skysports.com/rugby-league/news/13598071/rugby-league-world-cup-2026-schedule-dates-format-results-from-mens-women-s-and-wheelchair-tournaments"
+   ]
+  },
+  {
+   "id": "ROW-RL-06-no-tip-split",
+   "scope": "row",
+   "severity": "low",
+   "title": "no-tip-split",
+   "sport": "Rugby League",
+   "pick_id": "RL-06",
+   "detail": "Pick RL-06 (Rugby League - Australia) carries the flag 'no-tip-split'.",
+   "sources": [
+    "https://leagueworldcup2026.com/schedule/",
+    "https://www.skysports.com/rugby-league/news/13598071/rugby-league-world-cup-2026-schedule-dates-format-results-from-mens-women-s-and-wheelchair-tournaments"
+   ]
+  },
+  {
+   "id": "ROW-RL-06-price-floored-at-band-top",
+   "scope": "row",
+   "severity": "low",
+   "title": "price-floored-at-band-top",
+   "sport": "Rugby League",
+   "pick_id": "RL-06",
+   "detail": "Pick RL-06 (Rugby League - Australia) carries the flag 'price-floored-at-band-top'.",
+   "sources": [
+    "https://leagueworldcup2026.com/schedule/",
+    "https://www.skysports.com/rugby-league/news/13598071/rugby-league-world-cup-2026-schedule-dates-format-results-from-mens-women-s-and-wheelchair-tournaments"
+   ]
+  }
+ ]
+}

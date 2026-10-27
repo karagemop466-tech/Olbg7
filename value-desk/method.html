@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How lines are made — OLBG Value Desk</title>
+<meta name="description" content="Independently priced lines and written picks for 15 sports on the 27 October 2026 OLBG card.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-inner">
+    <a class="brand" href="index.html"><span class="mark">VD</span> OLBG <b>Value Desk</b></a>
+    <nav><a href="index.html">Today's picks</a>
+<a href="value.html">Value band</a>
+<a href="lines.html">All our lines</a>
+<a href="sports.html">Sports</a>
+<a href="sources.html">Sources</a>
+<a href="flagged.html">Flagged for review</a>
+<a class="active" href="method.html">How lines are made</a>
+<a href="../index.html">Main board ↗</a></nav>
+  </div>
+</header>
+<main class="wrap">
+<section class="pagehead"><div class="eyebrow">Reproducible</div>
+<h1>How every line was made</h1>
+<p class="lede">No bookmaker price is copied, no probability is invented to fill a gap, and no
+external handicap is quoted. These are our own originating lines. The scripts that produce them are
+<code>tools/value_build.py</code> and <code>tools/value_site.py</code>; the raw inputs are
+<code>data/value/capture.json</code> and <code>data/value/extra_markets.json</code>.</p></section>
+
+<section class="section method">
+<h2>1. Capture</h2>
+<p>OLBG publishes a public hub per sport at
+<code>https://www.olbg.com/betting-tips/{Sport}/{id}</code> and an event page at
+<code>.../All_Events/{Event}/{id}?event_id={id}</code>. The 143 hub rows for 27 October were
+transcribed line by line by session <code>arena-e0f59668</code>; this session independently
+re-fetched seven hubs to spot-check them and read event pages directly for golf, baseball, darts,
+motor racing, snooker and greyhounds. A further 50 rows came from those event pages and official
+competition sites. Each row keeps the exact tip split, event label and URL.</p>
+
+<h2>2. Originating a price</h2>
+<p>A tip split <i>w/n</i> is not a probability. We shrink it toward a structural prior:</p>
+<pre>p = (w + k × prior) / (n + k)
+published decimal = 1 / (p × 1.05), floored at 1.40 and capped at 101.00</pre>
+<ul>
+<li><b>Two-way markets</b> (money line, win match, handicap, totals, yes/no): prior 1/2, k = 6.</li>
+<li><b>Three-way markets</b> (handball rows where OLBG displayed 'Tie'): prior 1/3, k = 6.</li>
+<li><b>Race winners</b> (six-dog greyhound races): prior 1/6, adjusted to 1/4 or 1/5 where the
+official racecard shows vacant traps, using OLBG's published Romford trap-1 rate of 19.4%.</li>
+<li><b>Outrights with a published field size</b>: prior 1/N with N = 120 (Mexico Open, PGA TOUR),
+54 (Simmons Bank Championship, official tournament site) or 128 (Players Championship 31, PDC),
+and k = clamp(ceil(N/8), 6, 12).</li>
+<li><b>Outrights without a published field size</b>: conservative prior 1/32, k = 6, flagged
+<code>field-size-default-32</code>. The field size is never guessed as a fact.</li>
+<li><b>No tip split</b>: a documented prior from official data (ranking gap, series state, group
+standings, trap draw) with the basis named on the row, or an equal-chance structural prior.</li>
+</ul>
+<p>The 1.05 factor is our margin. Prices shorter than 1.40 (−250) are floored, prices longer than
+101.00 (+10000) are capped, the unrounded fair price stays in the data and both cases are flagged.
+That keeps every published line inside the band the brief specifies without pretending a 1/10 shot
+is a value bet.</p>
+
+<h2>3. Confidence</h2>
+<p>Confidence measures the strength of the evidence, not the implied chance of winning — the brief
+explicitly asks for high-confidence picks out to +10000, not just 70%+ favourites.</p>
+<ul>
+<li><b>High</b>: price in band, fair p ≥ 0.07, at least two sourced facts and at least one from an
+official competition site or OLBG, with the author judging the evidence strong.</li>
+<li><b>Medium</b>: price in band, at least one official/OLBG source, but thinner evidence, a small
+tip sample or a long-dated event.</li>
+<li><b>Low</b>: structural-prior-only prices, longshots, or rows whose facts could not be checked
+against an official source.</li>
+</ul>
+<p>The rule is applied in <code>tools/value_build.py</code>, so a label cannot be inflated by hand.
+30 high / 41 medium / 14 low resulted.</p>
+
+<h2>4. Verification rules</h2>
+<ul>
+<li>Every table row — pick, line, source and flag — carries at least one https source URL. Open the
+<a href="sources.html">sources page</a> to review all 59 of them.</li>
+<li>If a value cannot be confirmed from an official source it is left blank: bookmaker odds,
+injury/team news, exact start timezone and unverified field sizes are all blank rather than filled.</li>
+<li>Secondary sources (aggregators, wiki, tipster comments) are labelled and flagged on the row.
+Nothing from them is presented as an official statistic.</li>
+<li>Every prediction is at least 30 words (ours are 53-73), unique, names the selection and its
+price, and avoids the words “model” and “verified”.</li>
+<li><code>tools/value_check.py</code> re-checks all of the above and internal link integrity; the
+site is only published when it exits clean.</li>
+</ul>
+
+<h2>5. Known limits</h2>
+<p>OLBG's retrievable HTML does not include bookmaker odds, so there is no price comparison.
+The snooker and greyhound hubs had no tips at all on 27 October; their rows come from WST and
+Romford official publications and are not OLBG community picks. Tip samples as small as 1/1 are
+common and are flagged. Ante-post markets for 2027 are inherently uncertain. Handball hub rows that
+display 'Tie' as the most-tipped outcome are treated as a display artefact and priced as three-way
+contests. All 221 findings are on the <a href="flagged.html">flagged page</a>.</p>
+</section>
+</main>
+<footer class="foot wrap">
+  <p><a href="../index.html">← Back to the main OLBG board</a></p>
+  <p><b>OLBG Value Desk</b> — session <code>sess-arena-7cf491a1</code>, Tuesday 27 October 2026.
+  Market rows transcribed from public OLBG pages; facts checked against official competition sites.
+  All prices on this site are our own originating lines, never bookmaker offers.
+  <a href="flagged.html">Read every irregularity before using a pick.</a></p>
+  <p class="muted">18+ only. Betting involves risk. Nothing here is a recommendation to stake; no bookmaker price was retrievable from OLBG's HTML.</p>
+</footer>
+</body>
+</html>

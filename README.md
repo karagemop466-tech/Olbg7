@@ -7,6 +7,21 @@ Rugby League.
 
 Live site: **https://karagemop466-tech.github.io/Olbg7/**
 
+## Today's picks — start here
+
+The consolidated **[OLBG Value Desk](value-desk/index.html)** (live at
+<https://karagemop466-tech.github.io/Olbg7/value-desk/>) is one clearly labelled board with a single
+executive summary and one picks table: **85 unique written predictions** (5-6 per sport, 53-73 words
+each, including Snooker and Greyhounds where OLBG printed "No tips found."), **193 independently
+originated lines** covering every OLBG market row plus official fixtures, 175 source-linked facts,
+30 high / 41 medium / 14 low confidence labels, **29 plus-money picks** inside -250 to +10000, and
+[all 221 flagged items](value-desk/flagged.html) published rather than hidden. There is one page per
+sport, an all-lines table, a sources register and a method page that documents every formula.
+Rebuild with `python3 tools/value_build.py && python3 tools/value_site.py && python3 tools/value_check.py`.
+Data and provenance: `data/value/`. The other boards in this repo are separate research snapshots;
+`desk/` remains the relocated Coverage Desk and is guarded by CI.
+
+
 ## Live Root Dashboard — 2026-10-27 Multi-Market Origination & Official-Source Desk (`/index.html` & `/oct27/`)
 
 Built and cross-checked on **2026-10-27 (UTC)** from `data/oct27/*.json` via `tools/oct27/{audit_repo,originate_lines,build_picks_oct27,build_oct27_site,verify_oct27}.py`:
