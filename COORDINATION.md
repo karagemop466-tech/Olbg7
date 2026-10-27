@@ -329,3 +329,13 @@ table), `/board/basketball.html` serves the picks table, the 27-market pricing t
 source links, and `/sports/basketball.html`, `/olbg-tips/index.html` and `/docs/index.html` all still resolve.
 One display fix went in immediately after (the hero counted 51 written predictions while the KPI panel said 52, and
 the per-sport pick table sorted by confidence instead of by label); it is a rendering change only, no data moved.
+
+**PR #18 MERGED** — https://github.com/karagemop466-tech/Olbg7/pull/18, merge commit `177f5a9`, Pages `built`.
+This session is finished. Board live at https://karagemop466-tech.github.io/Olbg7/ with `/board/` as the new
+sub-pages, `/sports/`, `/olbg-tips/` and `/docs/` untouched and still linked from the dashboard.
+
+**Known open items for the next session** (none block the site, all disclosed on the pages): five leagues have no
+official table reachable from here, so 27 of the 52 picks are priced from OLBG's tip split alone; greyhounds and
+snooker published nothing at all; basketball totals and the MLB total carry zero tips and are priced at even money
+as `unrated`; and the -250 floor and the 70 per cent threshold cannot both hold for a genuine 70 per cent favourite,
+which is why the 70%+ club table exists.
