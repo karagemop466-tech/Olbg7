@@ -101,9 +101,12 @@ def render_shell(title: str, active_nav: str, active_sport: str, prefix: str, bo
   <footer>
     <strong>OLBG 15-Sport Origination Desk (27 October 2026 UTC)</strong> · Every betting price on this site is originated in-house and every table row links to both its OLBG market page and an official governing-body or primary statistical source. Unconfirmed fields remain blank and appear on <a href="{prefix}oct27/flagged.html">Flagged for Review</a>.<br>
     Preserved repository snapshots:
+    <a href="{prefix}cycle-board.html">27 Oct Tip-Split Cycle Board</a> ·
+    <a href="{prefix}desk/index.html">27 Oct Coverage Desk</a> ·
+    <a href="{prefix}picks.html">27 Oct CAL-4 Picks</a> ·
+    <a href="{prefix}legacy-cal4/index.html">27 Oct CAL-4 Archive</a> ·
     <a href="{prefix}board/all-markets.html">Early 27 Oct Hub Board</a> ·
-    <a href="{prefix}sports/basketball.html">26 Oct Coverage Desk</a> ·
-    <a href="{prefix}olbg-tips/index.html">Tip-Consensus Board</a> ·
+    <a href="{prefix}olbg-tips/index.html">26 Oct Tip-Consensus Board</a> ·
     <a href="{prefix}docs/index.html">26 Oct Docs Snapshot</a> ·
     <a href="{prefix}docs/board-review/index.html">26 Oct Board Review</a>
   </footer>
@@ -621,6 +624,12 @@ def build_repo_audit(audit, flags, pick_counts):
         f'<td><a class="src-chip" href="{esc(d["official_source"])}" target="_blank" rel="noopener">Official Source ↗</a></td></tr>'
         for d in r27["gaps_resolved_in_oct27"]
     )
+    cyc_rows = "".join(
+        f'<tr><td><strong>{esc(d["code"])}</strong></td><td>{esc(d["issue"])}</td>'
+        f'<td>{esc(d["resolution"])}</td>'
+        f'<td><a class="src-chip" href="{esc(d["official_source"])}" target="_blank" rel="noopener">Official Source ↗</a></td></tr>'
+        for d in audit.get("concurrent_oct27_audit", [])
+    )
     rollover_rows = "".join(
         f'<tr><td><code>{esc(x["id"])}</code></td><td>{esc(x["sport"])}</td><td>{esc(x["event"])}</td>'
         f'<td>{esc(x["label"])}</td><td><code>{esc(x["recorded_date"])}</code> (actually 2026-10-27 UTC)</td></tr>'
@@ -658,7 +667,7 @@ def build_repo_audit(audit, flags, pick_counts):
   <div class="table-wrap">
     <table class="data">
       <thead><tr><th>Audit ID</th><th>Gap in Earlier Capture</th><th>How Our 27 Oct Multi-Market Build Resolves It</th><th>Official Source</th></tr></thead>
-      <tbody>{d27_rows}</tbody>
+      <tbody>{d27_rows}{cyc_rows}</tbody>
     </table>
   </div>
 </section>

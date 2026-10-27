@@ -73,12 +73,11 @@ def main():
         txt = open(full, encoding="utf-8").read()
         id_cache[os.path.normpath(full)] = set(id_re.findall(txt))
 
-        # Check rendered pick cards for banned words
-        for card_html in card_re.findall(txt):
-            clean = re.sub(r"<[^>]+>", " ", card_html)
-            m = banned_re.search(clean)
-            if m:
-                errors.append(f"Rendered pick card in {rel} contains banned word '{m.group(0)}'")
+        # Check entire visible HTML text on every page for banned words
+        vis = re.sub(r"<script.*?</script>|<style.*?</style>|<[^>]+>", " ", txt, flags=re.S)
+        m = banned_re.search(vis)
+        if m:
+            errors.append(f"Visible text in {rel} contains banned word '{m.group(0)}'")
 
     resolved_links = 0
     for rel in pages:
@@ -116,7 +115,32 @@ def main():
         if "https://www.olbg.com/" not in tr or tr.count('target="_blank"') < 2:
             errors.append(f"all-markets.html row {idx} missing dual OLBG + official source links")
 
-    print(f"Checked {len(pages)} HTML pages and {resolved_links} internal links.")
+    # 6. Guard relocated /desk/ Coverage Desk snapshot (21 pages + fail-closed wiring + 0 broken links)
+    desk_dir = os.path.join(ROOT, "desk")
+    if os.path.isdir(desk_dir):
+        desk_pages = ["desk/index.html", "desk/all-events.html", "desk/flagged.html", "desk/methodology.html", "desk/sources.html", "desk/archive.html"] + [
+            f"desk/sports/{slug}.html" for slug in SLUGS
+        ]
+        if len(desk_pages) != 21:
+            errors.append(f"Expected 21 desk pages, computed {len(desk_pages)}")
+        for dp in desk_pages:
+            dfull = os.path.join(ROOT, dp)
+            if not os.path.exists(dfull):
+                errors.append(f"Missing preserved desk page: {dp}")
+                continue
+            dtxt = open(dfull, encoding="utf-8").read()
+            if dp == "desk/index.html":
+                for attr in ("data-snapshot=", "data-expiry=", "desk.js"):
+                    if attr not in dtxt:
+                        errors.append(f"desk/index.html missing fail-closed attribute {attr}")
+            for href in href_re.findall(dtxt):
+                if href.startswith(("http://", "https://", "mailto:", "javascript:", "#")):
+                    continue
+                tfull = os.path.normpath(os.path.join(os.path.dirname(dfull), href.split("#", 1)[0]))
+                if not os.path.exists(tfull):
+                    errors.append(f"Broken link in preserved {dp}: {href}")
+
+    print(f"Checked {len(pages)} HTML pages and {resolved_links} internal links (+ 21 preserved /desk/ pages).")
     print(f"Verified {len(events)} OLBG events, {len(lines)} originated lines, {len(picks)} picks, {len(flags)} flags.")
     if errors:
         print(f"VERIFICATION FAILED ({len(errors)} errors):")

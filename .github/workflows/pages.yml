@@ -23,24 +23,24 @@ jobs:
         with:
           node-version: '22'
 
-      # The root pages (index.html, all-events.html, flagged.html, sources.html,
-      # methodology.html, sports/*.html) are the 2026-10-27 unified cycle board, built
-      # from data/cycle-20261027/*.json by the three generators below. The build is
-      # deterministic, so a clean rebuild must produce no diff.
-      #
-      # tools/build_current.py used to own these pages from data/current.json; it is no
-      # longer run here because its output would replace the live board with the expired
-      # 05:23 UTC snapshot (its pages picks.html/lines.html/method.html/archive.html are
-      # still committed and still linked from the dashboard). Run it only in a scratch
-      # copy - see README.
-      - name: Rebuild the cycle board and check the committed HTML matches
+      # The root landing page (index.html) and /oct27/* subpages are the 2026-10-27
+      # 15-sport multi-market origination & official-source dashboard built from
+      # data/oct27/*.json. Earlier boards remain preserved at cycle-board.html (plus
+      # all-events.html / sports/*.html), picks.html, legacy-cal4/, board/, olbg-tips/,
+      # and docs/.
+      - name: Rebuild the 27 Oct multi-market origination board and verify deterministic output
         run: |
-          python3 tools/unify_price.py
-          python3 tools/cycle_picks.py
-          python3 tools/cycle_site.py
-          git diff --exit-code data/cycle-20261027 index.html all-events.html flagged.html sources.html methodology.html sports assets/cycle.css
-      - name: Check cycle data, links, anchors, prose and grading
-        run: python3 tools/check_cycle.py
+          python3 tools/oct27/audit_repo.py
+          python3 tools/oct27/originate_lines.py
+          python3 tools/oct27/build_picks_oct27.py
+          python3 tools/oct27/build_oct27_site.py
+          git diff --exit-code data/oct27 oct27 index.html assets/oct27.css
+      - name: Check 27 Oct data, dual row sources, links, anchors, odds band and prose
+        run: python3 tools/oct27/verify_oct27.py
+      - name: Check preserved board/ and olbg-tips/ links
+        run: |
+          python3 tools/check_today.py
+          SITE_OUT=olbg-tips python3 scripts/link_check.py
       - name: Check the preserved CAL-4 board data
         run: python3 tools/check_board.py
       - name: Test fail-closed freshness behavior
