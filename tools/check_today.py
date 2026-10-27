@@ -19,6 +19,7 @@ from urllib.parse import urlparse
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
 from picks_source import PICKS  # noqa: E402
+from price_today import confidence  # noqa: E402
 
 LINES = {r["id"]: r for r in json.load(open(os.path.join(ROOT, "data", "today", "lines.json")))["lines"]}
 SPORTS = ["Golf", "Volleyball", "Rugby Union", "Cricket", "Snooker", "Darts", "Baseball",
@@ -27,6 +28,13 @@ SPORTS = ["Golf", "Volleyball", "Rugby Union", "Cricket", "Snooker", "Darts", "B
 SLUG = {s: s.lower().replace(" ", "-") for s in SPORTS}
 
 problems = []
+# Confidence boundary regression tests: strictly above 70%, with evidence and in-band.
+if confidence(0.70, 8, False, True) == "high":
+    problems.append("confidence rule labels exactly 70% as high")
+if confidence(0.701, 8, False, True) != "high":
+    problems.append("confidence rule does not label an in-band estimate above 70% as high")
+if confidence(0.80, 8, False, False) == "high":
+    problems.append("confidence rule labels an out-of-band estimate as high")
 pages = ["index.html"] + [os.path.join("board", SLUG[s] + ".html") for s in SPORTS] + [
     os.path.join("board", p) for p in ("all-markets.html", "method.html", "sources.html", "flagged.html")]
 
@@ -49,6 +57,11 @@ for rel in pages:
         checked += 1
         if not os.path.exists(resolved):
             problems.append("broken link: %s -> %s" % (rel, href))
+
+# ---- confidence policy: a High label must be strictly >70% and in band
+for r in LINES.values():
+    if r["confidence"].startswith("high") and not (r["p"] is not None and r["p"] > 0.70 and r["band"] == "in"):
+        problems.append("line %s is labelled High without >70%% and in-band price" % r["id"])
 
 # ---- picks
 words = []
@@ -90,10 +103,12 @@ for p in band_out:
 
 # ---- every market row on the all-markets page must carry a link
 am = open(os.path.join(ROOT, "board", "all-markets.html")).read()
-rows = am.count("<tr><td>")
-olbg_links = am.count("https://www.olbg.com/")
-if olbg_links < rows * 0.5:
-    problems.append("all-markets page has %d rows but only %d OLBG links" % (rows, olbg_links))
+market_rows = re.findall(r"<tr><td>.*?</tr>", am, re.S)
+if len(market_rows) != len(LINES):
+    problems.append("all-markets page has %d rows but engine has %d market lines" % (len(market_rows), len(LINES)))
+for i, row in enumerate(market_rows, 1):
+    if not re.search(r'<a href="https://www\.olbg\.com/', row):
+        problems.append("all-markets row %d has no OLBG source link" % i)
 
 print("pages checked: %d" % len(pages))
 print("internal links resolved: %d" % checked)

@@ -11,7 +11,7 @@ could not be confirmed, the card carries a "not checked" line instead.
 
 PICKS = [
     # ------------------------------------------------------------------ BASKETBALL
-    dict(id="L096", label="BB-1", confidence="high",
+    dict(id="L096", label="BB-1", confidence="medium",
          headline="Panathinaikos to beat Milano",
          prediction=(
              "Take Panathinaikos on the money line against Milano. The Greeks are 6-1 through seven "
@@ -78,7 +78,7 @@ PICKS = [
          not_checked="Travel and rest days were not published, so freshness is not part of this case."),
 
     # ------------------------------------------------------------------ ICE HOCKEY
-    dict(id="L086", label="IH-1", confidence="high",
+    dict(id="L086", label="IH-1", confidence="medium",
          headline="Boston Bruins +1.50 on the puck line at Carolina",
          prediction=(
              "Boston with a 1.5-goal start in Raleigh. The Bruins are 9-2-1 with a plus 22 goal difference and "
@@ -260,7 +260,7 @@ PICKS = [
                      src="https://www.olbg.com/betting-tips/Cricket/All_Cricket/All_Events/Brisbane_Heat_W_vs_Sydney_Sixers_W_T20_Big_Bash/7?event_id=188865")],
          not_checked="No official WBBL table or squad list was read, so no standings or team news are quoted."),
 
-    dict(id="L035", label="CK-6", confidence="high",
+    dict(id="L035", label="CK-6", confidence="medium",
          headline="Afghanistan to beat Zimbabwe in the first T20",
          prediction=(
              "Afghanistan to win the opening T20 in Zimbabwe. Fifteen of the sixteen tips on the match are with the "
@@ -385,7 +385,7 @@ PICKS = [
          not_checked="No URC table, team sheet or weather forecast was read, so none of those is claimed."),
 
     # ------------------------------------------------------------------ HANDBALL
-    dict(id="L073A", label="HB-1", confidence="high",
+    dict(id="L073A", label="HB-1", confidence="medium",
          headline="Veszprem to win in Porto",
          prediction=(
              "Veszprem to win at Porto in the EHF Champions League. The Hungarians have won all five group games "
@@ -398,7 +398,7 @@ PICKS = [
                      src="https://ehfcl.eurohandball.com/men/2026-27/standings/")],
          not_checked="No injury or squad report was published for either club in a form we could read."),
 
-    dict(id="L066H", label="HB-2", confidence="high",
+    dict(id="L066H", label="HB-2", confidence="medium",
          headline="Magdeburg to beat Kriens-Luzern",
          prediction=(
              "Magdeburg at home to Kriens-Luzern. The German champions have won all five group games and are plus "
@@ -411,7 +411,7 @@ PICKS = [
                      src="https://ehfcl.eurohandball.com/men/2026-27/standings/")],
          not_checked="No team news for either side was available."),
 
-    dict(id="L069H", label="HB-3", confidence="high",
+    dict(id="L069H", label="HB-3", confidence="medium",
          headline="Kielce to beat Kolstad",
          prediction=(
              "Kielce at home to Kolstad. Kielce are 3-2 in Group F and plus two on goal difference, while Kolstad "
@@ -451,7 +451,7 @@ PICKS = [
          not_checked="Neither squad was confirmed, so no team news is claimed."),
 
     # ------------------------------------------------------------------ BASEBALL
-    dict(id="L046", label="BL-1", confidence="high",
+    dict(id="L046", label="BL-1", confidence="medium",
          headline="Milwaukee Brewers to win Game 4 of the World Series",
          prediction=(
              "Milwaukee to win Game 4 at Tropicana Field and complete the sweep. The Brewers lead the series 3-0 "

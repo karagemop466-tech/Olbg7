@@ -190,7 +190,7 @@ def confidence(p, t, form_used, band):
     """High is deliberately scarce: it needs both a strong chance and a reason to
     believe the chance, either a large tip sample or an official table behind it."""
     t = t or 0
-    if p >= 0.64 and (t >= 8 or form_used):
+    if p > 0.70 and (t >= 8 or form_used) and band:
         base = "high"
     elif p >= 0.545:
         base = "medium"

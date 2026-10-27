@@ -58,6 +58,8 @@ def main():
     pages = sorted(DOCS.glob("*.html"))
     if not pages:
         problems.append("no pages built")
+    elif "Historical snapshot" not in (DOCS / "index.html").read_text():
+        problems.append("tip-consensus landing page is missing its historical-snapshot warning")
     seen = set()
     for f in pages:
         for href in re.findall(r'href="([^"]+)"', f.read_text()):

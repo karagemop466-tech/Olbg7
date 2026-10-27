@@ -1,6 +1,6 @@
 {
  "engine": "TS-27",
- "generated_at": "2026-10-27T05:29Z",
+ "generated_at": "2026-10-27T05:42Z",
  "constants": {
   "shrink_k": 6.0,
   "margin": 1.02,
@@ -31,11 +31,11 @@
    "none": 13
   },
   "by_confidence": {
-   "high": 8,
-   "medium": 67,
+   "high": 0,
+   "medium": 75,
    "low": 63,
-   "high-outside-band": 3,
-   "medium-outside-band": 1,
+   "high-outside-band": 0,
+   "medium-outside-band": 4,
    "unrated": 4,
    "unpriced": 13
   },
@@ -121,7 +121,7 @@
    "fair": 1.475,
    "price_dec": 1.446,
    "price_am": -224,
-   "confidence": "high",
+   "confidence": "medium",
    "band": "in"
   },
   {
@@ -779,7 +779,7 @@
    "fair": 1.515,
    "price_dec": 1.485,
    "price_am": -206,
-   "confidence": "high",
+   "confidence": "medium",
    "band": "in"
   },
   {
@@ -1046,7 +1046,7 @@
    "fair": 1.222,
    "price_dec": 1.198,
    "price_am": -504,
-   "confidence": "high-outside-band",
+   "confidence": "medium-outside-band",
    "band": "too-short"
   },
   {
@@ -1246,7 +1246,7 @@
    "fair": 1.52,
    "price_dec": 1.49,
    "price_am": -204,
-   "confidence": "high",
+   "confidence": "medium",
    "band": "in"
   },
   {
@@ -1271,7 +1271,7 @@
    "fair": 1.447,
    "price_dec": 1.419,
    "price_am": -239,
-   "confidence": "high",
+   "confidence": "medium",
    "band": "in"
   },
   {
@@ -1296,7 +1296,7 @@
    "fair": 1.48,
    "price_dec": 1.451,
    "price_am": -222,
-   "confidence": "high",
+   "confidence": "medium",
    "band": "in"
   },
   {
@@ -1662,7 +1662,7 @@
    "fair": 1.533,
    "price_dec": 1.503,
    "price_am": -199,
-   "confidence": "high",
+   "confidence": "medium",
    "band": "in"
   },
   {
@@ -2084,7 +2084,7 @@
    "fair": 1.533,
    "price_dec": 1.503,
    "price_am": -199,
-   "confidence": "high",
+   "confidence": "medium",
    "band": "in"
   },
   {
@@ -2506,7 +2506,7 @@
    "fair": 1.533,
    "price_dec": 1.503,
    "price_am": -199,
-   "confidence": "high",
+   "confidence": "medium",
    "band": "in"
   },
   {
@@ -2731,7 +2731,7 @@
    "fair": 1.426,
    "price_dec": 1.398,
    "price_am": -252,
-   "confidence": "high-outside-band",
+   "confidence": "medium-outside-band",
    "band": "too-short"
   },
   {
@@ -3818,7 +3818,7 @@
    "fair": 1.385,
    "price_dec": 1.357,
    "price_am": -280,
-   "confidence": "high-outside-band",
+   "confidence": "medium-outside-band",
    "band": "too-short"
   },
   {

@@ -83,6 +83,9 @@ for p in PICKS:
         allowed = allowed | {"low", "medium", "high"}
     if p["confidence"] not in allowed:
         errors.append("pick %s: label %s disagrees with engine %s" % (p["id"], p["confidence"], eng))
+    else:
+        # Publish the engine's full tier, including an explicit outside-band suffix.
+        p["confidence"] = eng
     words = len(p["prediction"].split())
     if words < 30:
         errors.append("pick %s: prediction only %d words" % (p["id"], words))
@@ -109,13 +112,16 @@ order = {"high": 0, "medium": 1, "low": 2}
 
 def rank(p):
     r = BY_ID[p["id"]]
-    return (order[p["confidence"]], -(r["p"] or 0))
+    core = p["confidence"].replace("-outside-band", "")
+    return (order[core], -(r["p"] or 0))
 
 
-top_picks = sorted([p for p in PICKS if p["confidence"] in ("high", "medium")], key=rank)
+top_picks = sorted([p for p in PICKS
+                    if p["confidence"].replace("-outside-band", "") in ("high", "medium")], key=rank)
 
-# every line where our chance is 70 per cent or better, wherever it prices
-seventy = sorted([r for r in LINES["lines"] if r["p"] and r["p"] >= 0.70], key=lambda r: -r["p"])
+# Every line above 70 per cent, reported separately because the 2% margin
+# pushes these model prices below the requested -250 floor in this capture.
+seventy = sorted([r for r in LINES["lines"] if r["p"] and r["p"] > 0.70], key=lambda r: -r["p"])
 seventy_rows = "\n".join(
     "<tr><td>{s}</td><td>{ev}</td><td>{sel}</td><td class=\"num\">{p}</td><td class=\"num\">{price}</td>"
     "<td>{band}</td><td><a href=\"{l}\" rel=\"noopener\">OLBG</a></td></tr>".format(
@@ -213,12 +219,8 @@ and left the rest priced but unpicked. Every pick below names the selection, the
 </section>
 
 <section class="panel">
-<h2>The 70%+ club &mdash; every line at a 70 per cent chance or better</h2>
-<p class="note">The brief asks for high-confidence picks at a 70 per cent chance or better and for picks inside the
--250 to +10000 band. Those two asks pull against each other: a 70 per cent chance is -233 on fair odds and roughly
--250 once any margin is applied, so almost everything the tables make a 70 per cent favourite prices shorter than the
-floor. Both lists are published rather than one being quietly dropped: the pick table above uses a 64 per cent
-threshold so that it can stay inside the band, and this table shows every line that clears 70 per cent.</p>
+<h2>Above 70% &mdash; lines outside the requested price band</h2>
+<p class="note">High confidence now requires an estimated chance strictly above 70%, an adequate evidence base (at least eight tips or an official table), and a price between -250 and +10000. With the published 2% margin, every line above 70% in this capture prices shorter than -250, so none qualifies as a high-confidence pick. These lines are shown separately, with their OLBG links, rather than mislabeled as in-band picks. A line at exactly 70% is not above the threshold.</p>
 <table class="grid small">
 <thead><tr><th>Sport</th><th>Event</th><th>Selection</th><th>Our chance</th><th>Our price</th><th>Band</th><th>Source</th></tr></thead>
 <tbody>{seventy_rows}</tbody></table>
@@ -269,7 +271,7 @@ here is ours, with a 2 per cent margin over our own estimate.</li>
 </section>
 """.format(n_rows=SUMMARY["rows"], n_events=len({(r["sport"], r["event"]) for r in LINES["lines"]}),
            n_priced=SUMMARY["priced"], n_picks=len(PICKS), n_high=len(highs),
-           n_med=sum(1 for p in PICKS if p["confidence"] == "medium"),
+           n_med=sum(1 for p in PICKS if p["confidence"].replace("-outside-band", "") == "medium"),
            n_flags=len(FLAGS["flags"]), n_blanks=len(FLAGS["blanks"]),
            top_rows=top_rows, cov_rows=cov_rows, seventy_rows=seventy_rows)
 
@@ -449,7 +451,7 @@ anything the table makes a stronger favourite than that is published but labelle
 <table class="grid small">
 <thead><tr><th>Label</th><th>Rule</th><th>Count today</th></tr></thead>
 <tbody>
-<tr><td><span class="b b-high">High</span></td><td>chance of 64 per cent or better <em>and</em> either eight or more tips in the market or an official table behind it</td><td>{ch}</td></tr>
+<tr><td><span class="b b-high">High</span></td><td>chance strictly above 70 per cent, price inside -250 to +10000, and either eight or more tips in the market or an official table behind it</td><td>{ch}</td></tr>
 <tr><td><span class="b b-medium">Medium</span></td><td>chance of 54.5 per cent or better</td><td>{cm}</td></tr>
 <tr><td><span class="b b-low">Low</span></td><td>everything else that has a line</td><td>{cl}</td></tr>
 <tr><td><span class="b b-unrated">Unrated</span></td><td>no tips on the market at all, so the line is the bare prior</td><td>{cu}</td></tr>
@@ -614,5 +616,5 @@ open(os.path.join(ROOT, "assets", "today.css"), "w").write(CSS)
 print("built: index.html + %d board pages" % (len(SPORTS) + 4))
 print("picks: %d (high %d, medium %d, low %d)" % (
     len(PICKS), len(highs),
-    sum(1 for p in PICKS if p["confidence"] == "medium"),
+    sum(1 for p in PICKS if p["confidence"].replace("-outside-band", "") == "medium"),
     sum(1 for p in PICKS if p["confidence"] == "low")))
