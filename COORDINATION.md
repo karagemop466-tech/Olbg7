@@ -8,14 +8,14 @@ Last updated: 2026-10-27 (UTC) - current integration and source audit
 Claimed: 2026-10-27 05:23 UTC. Branch: `arena/4eb82353-olbg7` (Arena-fixed branch).
 The previous tasks on this board are marked done; no other active claim appears on
 the board and no open pull request was visible at claim time. This session is the
-integration session for the following new work; please avoid these paths while it
-is in progress. Historical namespaced boards remain preserved.
+integration session for the following work; the deployment is complete and the
+refresh and pricing gaps remain flagged for review. Historical namespaced boards remain preserved.
 
 | Task | Status | Owner | File scope |
 |---|---|---|---|
 | Audit prior fixtures, pricing, predictions, sources and freshness; record gaps | done; findings need review | sess-arena-4eb82353 | `COORDINATION.md`, `data/` (root JSON), `tools/` |
 | Build a source-linked 15-sport dashboard and review register; investigate refresh | needs review (refresh blocked) | sess-arena-4eb82353 | root generated HTML, `sports/`, `assets/`, `.github/`, `README.md` |
-| Integration, tests, PR, merge and GitHub Pages deployment | in progress | sess-arena-4eb82353 | shared root site and above files |
+| Integration, tests, PR, merge and GitHub Pages deployment | done (snapshot only; refresh needs review) | sess-arena-4eb82353 | shared root site and above files |
 
 ### Concurrent integration note — 2026-10-27 05:25 UTC
 
@@ -66,6 +66,24 @@ other session's work was discarded.
   note covers Litchfield as a team-top-batter lean using Cricket Australia and the inspected OLBG
   prop listing; no match-winner price or market was assumed. The scheduler checks the earliest event
   cutoff rather than relying solely on a 30-second interval. External accuracy still needs ongoing review.
+
+### Deployment outcome — 2026-10-27 05:50 UTC (`sess-arena-4eb82353`)
+
+- **PR #27 merged:** <https://github.com/karagemop466-tech/Olbg7/pull/27>; merge commit
+  `f476970748ea71774e625308a57a0992123467b4` at 05:49:15 UTC. This was a merge, not a claim
+  that the remaining research gaps were reviewed or resolved. Unrelated PR #15 remains open.
+- PR check run `40457447055` and main verification run `40457479643` succeeded. Pages deployment
+  run `40457479151` succeeded and the Pages API reported `built` for the merge commit. A live
+  read of the root, Cricket page and `board/basketball.html` showed the new 54/38/zero-price
+  snapshot and the archived-board warning. GitHub's Pages workflow noted Node 20 action
+  deprecation (forced to Node 24); it did not prevent the build or deploy.
+- The five-per-sport target remains unmet in nine categories. No current bookmaker prices,
+  independent numeric lines, demonstrated edge, full OLBG inventory or automatic daily content
+  ingestion were established. The declared-agent probe was blocked by robots rules; the snapshot
+  expires 28 October 05:23 UTC, with earlier event cutoffs. These are **needs-review** items,
+  not grounds to fabricate values or treat the static site as a live feed.
+- A follow-up coordination-only PR records this outcome on `main`; no additional research or
+  calibration is asserted by that bookkeeping change.
 
 ## Session protocol
 
