@@ -603,3 +603,15 @@ This session's own additions:
   and neither tool runs in CI. `archive.html` remains a committed build_current product and was
   regenerated with the new legacy-calc1 entry only.
 
+
+### Follow-up after rebasing onto PRs #34/#38 (oct27 board)
+
+The active workflow now runs the `tools/oct27/*` pipeline and diff-gates `data/oct27`,
+`oct27/`, `index.html` and `assets/oct27.css`. `tools/oct27/audit_repo.py` deterministically
+audits the root `data/*.json` set, so refreshing `data/events.json` (121 -> 143 events) and
+`data/picks.json` (56 -> 49 picks) necessarily regenerates `data/oct27/repo_audit.json` and
+`oct27/repo-audit.html`; both regenerated artifacts are included in this branch. The audit's
+hard-coded 26 October structural-defect narratives (AUD-26-01 etc.) are preserved verbatim as
+historical findings; only the computed counts change. Re-running the full workflow job locally
+is green: oct27 diff gate, `verify_oct27.py`, `check_today.py`, `scripts/link_check.py`,
+`check_board.py` and the freshness tests all pass.
