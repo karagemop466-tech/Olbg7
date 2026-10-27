@@ -1,0 +1,129 @@
+{
+  "retrieved_at": "2026-10-27",
+  "policy": "Only values printed on the source page are stored. 'tier' is official for a league/tour governing body, statsdb for a reference database, media for a news outlet. Anything not retrieved is absent rather than guessed.",
+  "tables": {
+    "MLB": {
+      "source": "https://www.mlb.com/standings",
+      "label": "MLB 2026 regular-season standings (final)",
+      "tier": "official",
+      "teams": {
+        "MIL": {"name": "Milwaukee Brewers", "w": 103, "l": 59, "pct": 0.636, "rs": 832, "ra": 618, "diff": 214, "l10": "8-2", "strk": "W5", "home": "55-26", "away": "48-33"},
+        "TB": {"name": "Tampa Bay Rays", "w": 98, "l": 64, "pct": 0.605, "rs": 736, "ra": 650, "diff": 86, "l10": "5-5", "strk": "L1", "home": "55-26", "away": "43-38"}
+      }
+    },
+    "MLB_GAME": {
+      "source": "https://www.mlb.com/gameday/brewers-vs-rays/2026/10/27/849803/preview",
+      "label": "Brewers at Rays, 27 October 2026",
+      "tier": "official",
+      "venue": "Tropicana Field, St. Petersburg, FL",
+      "first_pitch": "8:00 PM EDT",
+      "broadcast": "FOX / FOX ONE, Fox Deportes",
+      "series": "Brewers lead 3-0",
+      "probable_pitchers": {"TB": "Jax, RHP #22, 0-1, 6.00 ERA, 6 K", "MIL": "TBD"},
+      "note": "MLB prints the Brewers 3-0 and the Rays 0-3 on the game page; the game is therefore Game 4 of the series."
+    },
+    "NHL": {
+      "source": "https://www.nhl.com/standings/2026-10-26/wildcard",
+      "label": "NHL standings, 26 October 2026",
+      "tier": "official",
+      "teams": {
+        "BOS": {"name": "Boston Bruins", "gp": 12, "w": 9, "l": 2, "ot": 1, "pts": 19, "gf": 48, "ga": 26, "diff": 22, "l10": "7-2-1", "strk": "W2"},
+        "CAR": {"name": "Carolina Hurricanes", "gp": 13, "w": 9, "l": 2, "ot": 2, "pts": 20, "gf": 51, "ga": 33, "diff": 18, "l10": "8-1-1", "strk": "W1"},
+        "PHI": {"name": "Philadelphia Flyers", "gp": 13, "w": 3, "l": 7, "ot": 3, "pts": 9, "gf": 24, "ga": 42, "diff": -18, "l10": "3-6-1", "strk": "L1"},
+        "CBJ": {"name": "Columbus Blue Jackets", "gp": 9, "w": 4, "l": 5, "ot": 0, "pts": 8, "gf": 22, "ga": 30, "diff": -8, "l10": "4-5-0", "strk": "W1"}
+      }
+    },
+    "EUROLEAGUE": {
+      "source": "https://www.basketball-reference.com/international/euroleague/2027.html",
+      "label": "EuroLeague 2026-27 regular season, through 26 October 2026",
+      "tier": "statsdb",
+      "teams": {
+        "Panathinaikos": {"w": 6, "l": 1, "ppg": 87.6, "oppg": 73.9},
+        "Fenerbahce": {"w": 6, "l": 1, "ppg": 80.7, "oppg": 72.6},
+        "Valencia": {"w": 5, "l": 2, "ppg": 99.1, "oppg": 91.7}
+      },
+      "note": "Only the three clubs used in a pick were transcribed. Ranks confirmed against basketnews standings of 19 October 2026 (Panathinaikos 1st, Fenerbahce 2nd, Valencia 3rd)."
+    },
+    "EHF_CL": {
+      "source": "https://ehfcl.eurohandball.com/men/2026-27/standings/",
+      "label": "EHF Champions League Men 2026/27 group phase standings",
+      "tier": "official",
+      "teams": {
+        "SC Magdeburg": {"group": "F", "gp": 5, "w": 5, "d": 0, "l": 0, "gf": 176, "ga": 140, "pts": 10},
+        "Industria Kielce": {"group": "F", "gp": 5, "w": 3, "d": 0, "l": 2, "gf": 155, "ga": 153, "pts": 6},
+        "HC Kriens-Luzern": {"group": "F", "gp": 5, "w": 2, "d": 0, "l": 3, "gf": 158, "ga": 161, "pts": 4},
+        "Kolstad": {"group": "F", "gp": 5, "w": 0, "d": 0, "l": 5, "gf": 143, "ga": 178, "pts": 0},
+        "One Veszprem": {"group": "A", "gp": 5, "w": 5, "d": 0, "l": 0, "gf": 185, "ga": 146, "pts": 10},
+        "Fuchse Berlin": {"group": "A", "gp": 5, "w": 3, "d": 0, "l": 2, "gf": 184, "ga": 172, "pts": 6},
+        "FC Porto": {"group": "A", "gp": 5, "w": 1, "d": 1, "l": 3, "gf": 158, "ga": 173, "pts": 3},
+        "RK Partizan": {"group": "A", "gp": 5, "w": 0, "d": 1, "l": 4, "gf": 148, "ga": 184, "pts": 1},
+        "Sporting CP": {"group": "D", "gp": 5, "w": 4, "d": 1, "l": 0, "gf": 191, "ga": 165, "pts": 9},
+        "GOG": {"group": "D", "gp": 5, "w": 3, "d": 1, "l": 1, "gf": 178, "ga": 172, "pts": 7},
+        "Pick Szeged": {"group": "D", "gp": 5, "w": 1, "d": 2, "l": 2, "gf": 172, "ga": 169, "pts": 4},
+        "IFK Kristianstad": {"group": "D", "gp": 5, "w": 0, "d": 0, "l": 5, "gf": 162, "ga": 197, "pts": 0}
+      }
+    },
+    "URC": {
+      "source": "https://www.bbc.com/sport/rugby-union/pro-tournament/table",
+      "label": "United Rugby Championship table after four rounds (26 October 2026)",
+      "tier": "official",
+      "teams": {
+        "Glasgow Warriors": {"pos": 2, "p": 4, "w": 3, "d": 1, "l": 0, "pf": 119, "pa": 92, "pts": 18},
+        "Leinster": {"pos": 6, "p": 4, "w": 2, "d": 0, "l": 2, "pf": 99, "pa": 76, "pts": 13},
+        "Munster": {"pos": 9, "p": 4, "w": 1, "d": 1, "l": 2, "pf": 90, "pa": 98, "pts": 10}
+      },
+      "note": "Rank/points cross-checked against all.rugby and the 2026-27 URC article on Wikipedia; all three agree."
+    },
+    "ATP": {
+      "source": "https://www.tennisworlditalia.com/en/tennis/news/Ranking_Atp_Wta/108226/atp-rankings-oct-26-2026-musetti-and-cobolli-make-no-gains-fils-rises-fonseca-falls/",
+      "secondary_source": "https://en.wikipedia.org/wiki/Current_tennis_rankings",
+      "label": "ATP singles rankings, 26 October 2026",
+      "tier": "media",
+      "players": {
+        "Jannik Sinner": {"rank": 1, "points": 10450},
+        "Alexander Zverev": {"rank": 2, "points": 9750},
+        "Carlos Alcaraz": {"rank": 3, "points": 5610},
+        "Ben Shelton": {"rank": 4, "points": 4680},
+        "Daniil Medvedev": {"rank": 5, "points": 3860},
+        "Flavio Cobolli": {"rank": 6, "points": 3690},
+        "Novak Djokovic": {"rank": 12, "points": 3090}
+      }
+    },
+    "CRICKET_SERIES": {
+      "source": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/match-schedule-fixtures-and-results",
+      "match_report": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-2nd-t20i-1539433/match-report",
+      "label": "India tour of New Zealand 2026-27, T20I series",
+      "tier": "media",
+      "facts": [
+        "India lead the five-match T20I series 2-0 after wins in the first two matches at Hagley Oval, Christchurch (22 and 24 October 2026).",
+        "2nd T20I, 24 October: New Zealand 180/5 (Phillips 70, Jacobs 58, Arshdeep 2-33) lost to India 181/6 in 19.5 overs (Tilak Varma 51*, Santner 4-21) by four wickets.",
+        "3rd T20I is scheduled for Tuesday 27 October 2026 in Wellington, 12:30 pm IST, per the Sporting News series schedule."
+      ]
+    },
+    "PDC_OOM": {
+      "source": "https://dartsnews.com/pdc/pdc-order-of-merit-update-michael-van-gerwen-on-brink-of-dropping-out-of-worlds-top-10-as-gary-anderson-overtakes-three-time-world-champion",
+      "secondary_source": "https://www.sportingnews.com/us/darts/news/updated-pdc-darts-order-merit-world-rankings/d7b82f3bcfa0f8365c9a39cf",
+      "label": "PDC Order of Merit, 20 October 2026",
+      "tier": "media",
+      "players": {
+        "Luke Littler": {"rank": 1, "prize": "£3,113.5k"},
+        "Luke Humphries": {"rank": 2, "prize": "£1,062.5k"},
+        "Gian van Veen": {"rank": 3, "prize": "£1,045.75k"},
+        "Gerwyn Price": {"rank": 4, "prize": "£787k"},
+        "Nathan Aspinall": {"rank": 11, "prize": "£584.5k"}
+      },
+      "note": "A 25 October update from Sporting News shows Aspinall 10th on £597k; the two orderings disagree and both are reported on the flagged page."
+    },
+    "OWGR": {
+      "source": "https://golfweek.usatoday.com/story/sports/golf/2026/10/20/robert-macintyre-tom-kim-jump-in-new-official-world-golf-ranking/92341766007/",
+      "women_source": "https://en.wikipedia.org/wiki/Women%27s_World_Golf_Rankings",
+      "label": "Official World Golf Ranking, week of 20 October 2026",
+      "tier": "media",
+      "players": {
+        "Wyndham Clark": {"rank": 5, "avg": 6.25, "events": 49, "tour": "men"},
+        "Lottie Woad": {"rank": 7, "avg": 5.85, "tour": "women"}
+      },
+      "note": "Stewart Cink is not in either top-50 list that was retrieved, so no ranking is claimed for him."
+    }
+  }
+}

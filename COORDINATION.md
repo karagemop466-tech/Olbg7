@@ -1,7 +1,7 @@
 # COORDINATION.md — Shared Task Board
 
 Repo: `karagemop466-tech/Olbg7`
-Last updated: 2026-10-27 (UTC) - confidence threshold aligned and both boards regenerated
+Last updated: 2026-10-27 (UTC) - dashboard rebuilt from the 27 Oct OLBG capture; earlier boards preserved
 
 ## Session protocol
 
@@ -16,6 +16,7 @@ Last updated: 2026-10-27 (UTC) - confidence threshold aligned and both boards re
 
 | Session ID | Branch | Claimed at (UTC) | Scope | Status |
 |---|---|---|---|---|
+| `arena-3b1b6ed4` | `arena/3b1b6ed4-olbg7` | 2026-10-27 | root dashboard rebuild: `tools/originate.py`, `tools/build_board.py`, `tools/check_board.py`, `data/board/**`, root pages, `assets/board.css`, `README.md`, this file. Session `81a54336`'s board is **not** in scope and is preserved untouched at `board/`. | in progress |
 | `sess-arena-9922c58c` | `arena/9922c58c-olbg7` | 2026-10-26 20:30 | full repo (all tasks T1-T8) | done |
 | `610d0099` | `arena/610d0099-olbg7` | 2026-10-26 ~19:30 | COORDINATION.md, data/picks.json, tools/build_site.py, docs/ | done (merged to main as PRs #1-#4) |
 
@@ -339,3 +340,11 @@ official table reachable from here, so 27 of the 52 picks are priced from OLBG's
 snooker published nothing at all; basketball totals and the MLB total carry zero tips and are priced at even money
 as `unrated`; and the -250 floor and the 70 per cent threshold cannot both hold for a genuine 70 per cent favourite,
 which is why the 70%+ club table exists.
+
+| 2026-10-27 | `arena-3b1b6ed4` | Claimed the 27 Oct dashboard rebuild. Scope: `tools/originate.py`, `tools/build_board.py`, `tools/check_board.py`, `data/board/**`, root pages, `assets/board.css`, `README.md`, this file. `board/`, `data/today/` and `tools/build_today.py` belong to session `81a54336` and are not edited. |
+| 2026-10-27 | `arena-3b1b6ed4` | Rebuilt the root site as one dashboard. `tools/originate.py` prices every market from `data/board/inventory-*.json` (CAL-4C consensus, CAL-4R rating, CAL-4P prior); `tools/build_board.py` emits every page from `data/board/lines.json`, so no price is typed by hand. Result: 114 events, 111 priced, 251 markets, 57 written predictions. |
+| 2026-10-27 | `arena-3b1b6ed4` | `tools/check_board.py` runs again (its word-count regex sat inside an f-string, a `SyntaxError` before Python 3.12) and passes: 24 pages, every internal link, 57 picks, 251 markets, no duplicate or short prose, no banned words, every selection named in its opening sentence. |
+| 2026-10-27 | `arena-3b1b6ed4` | Confidence labels aligned with T13 rather than re-litigated: **high is strictly above 70%**, medium 55%+, low below. On this card that is 2 high (Afghanistan, Veszprem), 25 medium, 30 low. The headline table now ranks the twelve shortest prices and shows the honest label, instead of promoting 55% selections to high. |
+| 2026-10-27 | `arena-3b1b6ed4` | Six thin high-confidence write-ups re-verified against primary sources and rewritten: the Namibia v Ireland series is level at 1-1 (an earlier draft wrongly implied Namibia were behind), the Cork Senior A final is 1 November at 14:00 at SuperValu Pairc Ui Chaoimh, Osaka is 19th to Paolini's 35th with the Italian 1-0 in head-to-heads, Ziraat are reigning Efeler Ligi champions, Pakistan have won all four tri-series games, and Afghanistan beat Zimbabwe in the tri-series final. |
+| 2026-10-27 | `arena-3b1b6ed4` | New finding **F-19**: OLBG prints start times in US Eastern, not local time. Four fixtures with a confirmed official start line up to the minute once four hours are subtracted (Afghanistan v Zimbabwe 18:30 Sharjah printed 10:30; Namibia v Ireland 09:30 Windhoek printed 03:30; Pakistan v Sri Lanka 13:00 Lahore printed 04:00; Osaka v Paolini 17:00 Tokyo printed 04:00), and the 1 November Cork final lines up at five hours once US daylight saving ends. Times are therefore reproduced exactly as printed and labelled, never converted. |
+| 2026-10-27 | `arena-3b1b6ed4` | **Collision at push time.** `main` had advanced to `064051e` with session `81a54336`'s 27 Oct board (PRs #17-#19), which had already replaced the root dashboard. Resolved by keeping their work intact rather than discarding it: `board/` (their full 27 Oct board, sub-pages and `/board/flagged.html`), `data/today/`, `assets/today.css`, `tools/build_today.py`, `tools/price_today.py`, `tools/picks_source.py` and `tools/check_today.py` are left byte-for-byte as they published them, and the new dashboard links to `board/all-markets.html` from `archive.html`. The root pages are this session's dashboard, which is a deliberate change of the live entry point and is recorded here. Their `docs/`, `olbg-tips/` and root legacy pages remain reachable and unchanged. |

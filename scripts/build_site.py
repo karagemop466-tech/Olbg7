@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+import os as _os
+if _os.environ.get("LEGACY_BUILD") != "1":
+    raise SystemExit("Superseded by tools/build_board.py (2026-10-27 board). "
+                     "Set LEGACY_BUILD=1 and SITE_OUT=<dir> to run this historical generator.")
 """Build the static dashboard from data/*.json into docs/."""
 import html
 import json
