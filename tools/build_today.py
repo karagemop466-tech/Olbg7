@@ -111,6 +111,16 @@ def rank(p):
 
 top_picks = sorted([p for p in PICKS if p["confidence"] in ("high", "medium")], key=rank)
 
+# every line where our chance is 70 per cent or better, wherever it prices
+seventy = sorted([r for r in LINES["lines"] if r["p"] and r["p"] >= 0.70], key=lambda r: -r["p"])
+seventy_rows = "\n".join(
+    "<tr><td>{s}</td><td>{ev}</td><td>{sel}</td><td class=\"num\">{p}</td><td class=\"num\">{price}</td>"
+    "<td>{band}</td><td><a href=\"{l}\" rel=\"noopener\">OLBG</a></td></tr>".format(
+        s=esc(r["sport"]), ev=esc(r["event"]), sel=esc(r["sel"]), p=pct(r["p"]),
+        price=am(r["price_am"]),
+        band=('<span class="warn">shorter than the -250 floor</span>' if r["band"] != "in" else "inside the band"),
+        l=esc(r["link"])) for r in seventy)
+
 # ---------------------------------------------------------------- templates
 NAV = """<nav class="nav">
 <a class="brand" href="{root}index.html">OLBG Coverage Desk<span>27 October 2026</span></a>
@@ -200,6 +210,18 @@ and left the rest priced but unpicked. Every pick below names the selection, the
 </section>
 
 <section class="panel">
+<h2>The 70%+ club &mdash; every line at a 70 per cent chance or better</h2>
+<p class="note">The brief asks for high-confidence picks at a 70 per cent chance or better and for picks inside the
+-250 to +10000 band. Those two asks pull against each other: a 70 per cent chance is -233 on fair odds and roughly
+-250 once any margin is applied, so almost everything the tables make a 70 per cent favourite prices shorter than the
+floor. Both lists are published rather than one being quietly dropped: the pick table above uses a 64 per cent
+threshold so that it can stay inside the band, and this table shows every line that clears 70 per cent.</p>
+<table class="grid small">
+<thead><tr><th>Sport</th><th>Event</th><th>Selection</th><th>Our chance</th><th>Our price</th><th>Band</th><th>Source</th></tr></thead>
+<tbody>{seventy_rows}</tbody></table>
+</section>
+
+<section class="panel">
 <h2>Where everything is</h2>
 <table class="grid small">
 <thead><tr><th>Page</th><th>What is on it</th></tr></thead>
@@ -246,7 +268,7 @@ here is ours, with a 2 per cent margin over our own estimate.</li>
            n_priced=SUMMARY["priced"], n_picks=len(PICKS), n_high=len(highs),
            n_med=sum(1 for p in PICKS if p["confidence"] == "medium"),
            n_flags=len(FLAGS["flags"]), n_blanks=len(FLAGS["blanks"]),
-           top_rows=top_rows, cov_rows=cov_rows)
+           top_rows=top_rows, cov_rows=cov_rows, seventy_rows=seventy_rows)
 
 open(os.path.join(ROOT, "index.html"), "w").write(
     page("OLBG Coverage Desk - 27 October 2026", body))

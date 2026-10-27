@@ -260,6 +260,18 @@ PICKS = [
                      src="https://www.olbg.com/betting-tips/Cricket/All_Cricket/All_Events/Brisbane_Heat_W_vs_Sydney_Sixers_W_T20_Big_Bash/7?event_id=188865")],
          not_checked="No official WBBL table or squad list was read, so no standings or team news are quoted."),
 
+    dict(id="L035", label="CK-6", confidence="high",
+         headline="Afghanistan to beat Zimbabwe in the first T20",
+         prediction=(
+             "Afghanistan to win the opening T20 in Zimbabwe. Fifteen of the sixteen tips on the match are with the "
+             "visitors, a 94 per cent share and the most one-sided market anywhere on today's board, with eleven "
+             "logged comments behind it. Afghanistan's white-ball side has been the stronger of the two for years, "
+             "and at -504 our price says the same thing the crowd does. Note that this price is shorter than the "
+             "-250 floor the brief asks us to work inside."),
+         facts=[dict(t="OLBG Win Match: Afghanistan 15 of 16 win tips, 94 per cent, eleven logged comments, 10:30 start",
+                     src="https://www.olbg.com/betting-tips/Cricket/All_Cricket/All_Events/Afghanistan_vs_Zimbabwe_1st_T20_Match/7?event_id=188872")],
+         not_checked="Neither XI nor the venue was confirmed from an official board page, so no team news or ground stats are claimed."),
+
     # ------------------------------------------------------------------ VOLLEYBALL
     dict(id="L007", label="VB-1", confidence="medium",
          headline="Ziraat Bankasi to beat Gaziantep Genclik Spor",

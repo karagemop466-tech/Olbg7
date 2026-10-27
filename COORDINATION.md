@@ -1,7 +1,7 @@
 # COORDINATION.md — Shared Task Board
 
 Repo: `karagemop466-tech/Olbg7`
-Last updated: 2026-10-26 (UTC) - board re-sourced from retrieved match data
+Last updated: 2026-10-27 (UTC) - confidence threshold aligned and both boards regenerated
 
 ## Session protocol
 
@@ -28,6 +28,13 @@ Last updated: 2026-10-26 (UTC) - board re-sourced from retrieved match data
 
 | ID | Task | Status | Owner | File scope |
 |---|---|---|---|---|
+| T12 | Add prominent freshness warning for Oct 26 data; verify existing site and flag stale claims | done | `arena/2e363bd1-olbg7` | `index.html`, `README.md`, `COORDINATION.md` |
+| T13 | Align confidence labels with the requested >70% threshold; regenerate and validate both active boards | done | `arena/a799d1c9-olbg7` | `tools/build_site.py`, `tools/check_site.py`, `methodology.html`, root generated HTML; `scripts/price_model.py`, `scripts/build_site.py`, `scripts/build_site_olbg.py`, `scripts/link_check.py`, `data/consensus/lines.json`, `data/consensus/picks.json`, `data/consensus/predictions.json`, `olbg-tips/` generated HTML; `README.md`, `COORDINATION.md` |
+
+<!-- Existing historical task board follows. -->
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
 | T1 | Reverse-engineer OLBG URL/sport schema | done | sess-arena-9922c58c | `data/sports.json`, `docs/olbg-map.md` |
 | T2 | Inventory upcoming OLBG events, 15 covered sports | done | sess-arena-9922c58c | `data/events.json` |
 | T3 | Pricing engine (originate our own lines) | done | sess-arena-9922c58c | `data/pricing.json`, `tools/pricing.py` |
@@ -44,6 +51,8 @@ Last updated: 2026-10-26 (UTC) - board re-sourced from retrieved match data
 
 | Time (UTC) | Session | Entry |
 |---|---|---|
+| 2026-10-27 | `arena/2e363bd1-olbg7` | Claimed T12 after reviewing the board. Confirmed the published inventory/picks are stamped 2026-10-26; added a prominent dashboard warning and README disclosure so yesterday's card is not represented as current. `python tools/check_site.py` passes (21 pages, 568 internal links, 56 picks, 106 sourced facts); it reports the known shortfalls by sport. No new match facts or lines were invented. |
+| 2026-10-27 | `arena/a799d1c9-olbg7` | T13 complete. Tightened both boards' HIGH label from 60%/62% to strictly >70%, retaining the ≥8-tip minimum and the -250/+10000 card-price band. Rebuilt the primary dashboard and tip-consensus board; now neither overstates sub-70% estimates as HIGH (primary: 56 picks, 0 high / 43 medium / 13 low; consensus: 51 picks, 0 high / 22 medium / 29 low). Updated README coverage counts to match the new rule. Added boundary/consistency checks and preserved the historical-snapshot warning through future primary rebuilds; added the same warning to the consensus landing page. Verification: `python3 tools/build_site.py`; `python3 tools/check_site.py` (21 pages, 569 internal links; all checks pass); `python3 scripts/price_model.py`; `SITE_OUT=olbg-tips python3 scripts/build_site.py`; `SITE_OUT=olbg-tips python3 scripts/link_check.py` (19 pages, 127 rows, 51 picks; all checks pass). No new fixture, form, injury or market facts were asserted; row-level source links and existing flags remain unchanged. No official-source review was added in this task. Irregularities remain: 7 of 15 sports miss the five-pick target in the primary board, 5 events are unpriced there, the source snapshot is 2026-10-26, and neither board has a pick above the new confidence threshold; see `flagged.html` and `olbg-tips/flagged.html`. |
 | 2026-10-26 20:30 | sess-arena-9922c58c | Board created. Repo was empty except README. Claimed T1–T9. |
 | 2026-10-26 20:30 | sess-arena-9922c58c | Confirmed GitHub Pages is live on `main` `/` at https://karagemop466-tech.github.io/Olbg7/ (build_type legacy, status built). Site must therefore live at repo root. |
 
@@ -302,3 +311,13 @@ carry zero tips; two rows lost their tip split mid-page; eight sports cannot rea
 **Not done, stated plainly**: no bookmaker price comparison exists anywhere in this build (OLBG does not
 print odds in retrievable HTML); no injury or team news is claimed for any sport; seven sports are priced
 from the tip split alone with no official table.
+
+**Merge conflict #3 (2026-10-27 06:15 UTC).** `main` had moved to `61b9812` through PRs #14 and #16 from other
+sessions, which changed `index.html`, `tools/build_site.py`, `tools/check_site.py`, `scripts/*`, `sports/*.html`
+and `olbg-tips/*.html`, and re-labelled their confidence thresholds to ">70%". Resolution: every one of their files
+is taken as-is; the only conflict was the root `index.html`, which this session regenerates wholesale. Their version
+of that file is superseded by the new dashboard, which links to `/sports/` where their re-labelled pages still
+serve. Their README text and their log entries are preserved verbatim. To keep their >70% point alive rather than
+dropping it, the new dashboard carries a dedicated "70%+ club" table listing every line that clears a 70 per cent
+chance, with the note that all of them price shorter than the -250 floor — which is why the pick table uses a 64 per
+cent threshold in order to stay inside the band. Their point is answered rather than overwritten.

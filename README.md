@@ -47,7 +47,7 @@ Rugby League.
 
 Live site: **https://karagemop466-tech.github.io/Olbg7/**
 
-Retrieval date for everything in this repository: **2026-10-26**.
+Retrieval date for the published event inventory, prices and predictions: **2026-10-26**. This is a historical snapshot, not a current 2026-10-27 betting card; event status, markets, start times and team news have not been refreshed. See the dashboard freshness warning before using any entry.
 
 ## What is in here
 
@@ -136,7 +136,7 @@ so every one of its 127 rows can be checked back to an OLBG page.
 | `olbg-tips/` | Executive summary, 15 sport pages, all-lines table, method page, flagged-for-review page |
 | `.github/workflows/pages.yml` | Re-runs pricing, build and checks on pushes and pull requests |
 
-Coverage: 51 picks in 14 sports, 7 high confidence. Snooker has none — OLBG's snooker tips page returns "No tips found.",
+Coverage: 51 picks in 14 sports, 0 high-confidence picks under the strict >70% estimate threshold (with at least eight tips and the requested price band). Snooker has none — OLBG's snooker tips page returns "No tips found.",
 so there are no tip counts to price from; the fixtures themselves are covered on the other boards. Every shortfall is
 stated on the board rather than padded out.
 
