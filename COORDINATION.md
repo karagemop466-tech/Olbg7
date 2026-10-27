@@ -98,6 +98,7 @@ other session's work was discarded.
 
 | Session ID | Branch | Claimed at (UTC) | Scope | Status |
 |---|---|---|---|---|
+| `arena-31a3e6af` | `arena/31a3e6af-olbg7` | 2026-10-27 | T14 archived-snapshot and integration audit; `COORDINATION.md`, `README.md`, `freshness.html`, `archive.html`, `tools/build_board.py`, legacy snapshot records | in progress |
 | `arena-3b1b6ed4` | `arena/3b1b6ed4-olbg7` | 2026-10-27 | root dashboard rebuild: `tools/originate.py`, `tools/build_board.py`, `tools/check_board.py`, `data/board/**`, root pages, `assets/board.css`, `README.md`, this file. Session `81a54336`'s board is **not** in scope and is preserved untouched at `board/`. | in progress |
 | `arena-b42ae9fe` | `arena/b42ae9fe-olbg7` | 2026-10-27 05:55 | `.github/workflows/pages.yml`, `COORDINATION.md` only. No board page, data file or generator is edited: the 27 Oct dashboard stays exactly as `arena-3b1b6ed4` published it. | done (PR #22 merged) |
 | `sess-arena-9922c58c` | `arena/9922c58c-olbg7` | 2026-10-26 20:30 | full repo (all tasks T1-T8) | done |
@@ -114,6 +115,7 @@ other session's work was discarded.
 |---|---|---|---|---|
 | T12 | Add prominent freshness warning for Oct 26 data; verify existing site and flag stale claims | done | `arena/2e363bd1-olbg7` | `index.html`, `README.md`, `COORDINATION.md` |
 | T13 | Align confidence labels with the requested >70% threshold; regenerate and validate both active boards | done | `arena/a799d1c9-olbg7` | `tools/build_site.py`, `tools/check_site.py`, `methodology.html`, root generated HTML; `scripts/price_model.py`, `scripts/build_site.py`, `scripts/build_site_olbg.py`, `scripts/link_check.py`, `data/consensus/lines.json`, `data/consensus/picks.json`, `data/consensus/predictions.json`, `olbg-tips/` generated HTML; `README.md`, `COORDINATION.md` |
+| T14 | Integrate archived snapshot notes without overwriting the 27 Oct current board; expose legacy F-020 | in progress | arena-31a3e6af | `COORDINATION.md`, `README.md`, `freshness.html`, `archive.html`, `tools/build_board.py`, `data/flags.json` |
 
 <!-- Existing historical task board follows. -->
 
@@ -135,6 +137,7 @@ other session's work was discarded.
 
 | Time (UTC) | Session | Entry |
 |---|---|---|
+| 2026-10-27 | arena-31a3e6af | Claimed T14 after reviewing the current 27 Oct dashboard and its archive structure. Scope is additive: publish the 26 Oct legacy-snapshot note and link it from the current Archive page; preserve the current board and all prior sessions unchanged. |
 | 2026-10-27 | `arena/2e363bd1-olbg7` | Claimed T12 after reviewing the board. Confirmed the published inventory/picks are stamped 2026-10-26; added a prominent dashboard warning and README disclosure so yesterday's card is not represented as current. `python tools/check_site.py` passes (21 pages, 568 internal links, 56 picks, 106 sourced facts); it reports the known shortfalls by sport. No new match facts or lines were invented. |
 | 2026-10-27 | `arena/a799d1c9-olbg7` | T13 complete. Tightened both boards' HIGH label from 60%/62% to strictly >70%, retaining the ≥8-tip minimum and the -250/+10000 card-price band. Rebuilt the primary dashboard and tip-consensus board; now neither overstates sub-70% estimates as HIGH (primary: 56 picks, 0 high / 43 medium / 13 low; consensus: 51 picks, 0 high / 22 medium / 29 low). Updated README coverage counts to match the new rule. Added boundary/consistency checks and preserved the historical-snapshot warning through future primary rebuilds; added the same warning to the consensus landing page. Verification: `python3 tools/build_site.py`; `python3 tools/check_site.py` (21 pages, 569 internal links; all checks pass); `python3 scripts/price_model.py`; `SITE_OUT=olbg-tips python3 scripts/build_site.py`; `SITE_OUT=olbg-tips python3 scripts/link_check.py` (19 pages, 127 rows, 51 picks; all checks pass). No new fixture, form, injury or market facts were asserted; row-level source links and existing flags remain unchanged. No official-source review was added in this task. Irregularities remain: 7 of 15 sports miss the five-pick target in the primary board, 5 events are unpriced there, the source snapshot is 2026-10-26, and neither board has a pick above the new confidence threshold; see `flagged.html` and `olbg-tips/flagged.html`. |
 | 2026-10-26 20:30 | sess-arena-9922c58c | Board created. Repo was empty except README. Claimed T1–T9. |
