@@ -91,7 +91,63 @@ python3 tools/cycle_site.py     #                  -> index, 15 sport pages, all
 python3 tools/check_cycle.py    # verification pass on the built board
 ```
 
-No third-party packages are required. 18+. No assurance of profit. Support: GamCare, GambleAware.
+No third-party packages are required. ## The Coverage Desk snapshot pages (`picks.html`, `lines.html`, `method.html`, `archive.html`)
+
+Those four root pages are session `a799d1c9`'s board and are **not** rebuilt by this cycle. They are generated from
+`data/current.json` by `tools/build_current.py`, and they are fail-closed by design: `assets/desk.js` hides scheduled
+rows and research notes at the earlier of a fixture's cutoff and 28 October 2026 05:23 UTC. Their own disclosures are
+reproduced below so nothing they flagged quietly is lost in the merge.
+
+**Caution for the next session:** `python3 tools/build_current.py` (no `--check`) regenerates the root `index.html`,
+`all-events.html`, `flagged.html`, `methodology.html`, `sources.html` and `sports/*.html` from `data/current.json` -
+that would overwrite this cycle's unified board. Build this board with the four commands in the "Rebuild" section
+above instead, and if you take the root, record it in `COORDINATION.md`.
+
+## Freshness and source access (Coverage Desk snapshot pages)
+
+- No automatic content ingestion or refresh is working. A GitHub-hosted probe checked OLBG's `robots.txt` with its declared `CoverageDeskResearch/1.0` identity and was denied the three tested paths. It did not evade the denial. A scheduled probe checks access only; it **does not update the site**.
+- The display is intentionally fail-closed: the browser hides scheduled rows and research notes at the earlier of the event's start/conservative cutoff and **28 October 2026 at 05:23 UTC**. It uses the visitor's device clock; if JavaScript is disabled or the clock predates the snapshot, those items remain hidden. Source links and the review register remain available.
+- Exact start times come from official sources where established. Unknown sequential tennis or tournament times are blank, with an earlier safety cutoff that is not presented as an event time. OLBG's ambiguous displayed timezone was not inferred.
+- Team news, prices, settlement rules, event availability and complete market coverage need further checking. [Flagged for review](flagged.html) records the gaps; a flag is not proof a fixture is false.
+- Older boards are preserved under `legacy-cal4/`, `board/`, `docs/` and `olbg-tips/` with prominent warnings. Their dated fixtures, tip-share-derived prices and confidence labels have not been rechecked and should not be used as current picks. The concurrent 26 October freshness disclosure from PR #14 remains preserved in the coordination history.
+
+## Layout
+
+| Path | Purpose |
+| --- | --- |
+| `data/current.json` | Canonical research snapshot, official links, explicit unknowns, conservative cutoffs and written notes |
+| `tools/build_current.py` | Generator for the Coverage Desk snapshot data. **It also writes the root page names, and CI no longer runs it** - see the caution above; use it only in a scratch copy |
+| `tools/check_current.py` | Checks the `data/current.json` snapshot and its own page template; it asserts an official link on every table row, so it does not pass against the root board (which prints blanks by policy) and is not in CI |
+| `assets/desk.css`, `assets/desk.js` | Dashboard styling and fail-closed freshness behavior |
+| `tests/freshness.test.js` | Boundary and clock-error tests for freshness behavior |
+| `tools/probe_olbg.py` | Identified, robots-aware access probe only |
+| `index.html`, `sports/*.html`, `all-events.html`, `flagged.html`, `methodology.html`, `sources.html` | Published Pages site - now built from `data/cycle-20261027/` (see "What is in here" above), not by `build_current.py` |
+| `picks.html`, `lines.html`, `method.html`, `archive.html` | The Coverage Desk snapshot pages kept from session `a799d1c9`; fail-closed via `assets/desk.js`, linked from the dashboard's "This board in context" section |
+| `legacy-cal4/`, `board/`, `docs/`, `olbg-tips/`, older `data/` and generators | Preserved historical work, not the current dashboard |
+| `COORDINATION.md` | Session claims, integration, evidence and deployment log |
+
+## Build and test for the preserved boards
+
+Python 3 and Node.js are sufficient; no third-party packages are required.
+
+```sh
+# the live board (root pages) - this is what CI runs
+python3 tools/unify_price.py && python3 tools/cycle_picks.py && python3 tools/cycle_site.py
+python3 tools/check_cycle.py
+python3 tools/check_board.py          # preserved CAL-4 board data
+node --test tests/freshness.test.js   # desk.js fail-closed behavior
+```
+
+The Coverage Desk snapshot in `data/current.json` is checked by `tools/check_current.py` when it is regenerated into a
+scratch copy; it is deliberately not wired into the workflow any more because its row-level "must link an official
+source" rule contradicts this board's blank-and-flag policy and its generator writes over the root pages.
+
+The old `tools/build_board.py` and `tools/build_today.py` generators are guarded by `LEGACY_BUILD=1` because they overwrite root pages or archive warnings; use them only in an isolated copy. `tools/warn_historical.py` can restore warnings to preserved archive pages.
+
+Checks validate shape, source presence, word count, internal links, generated files and freshness logic. They do **not** independently verify external claims or current odds. Adding a new snapshot requires a responsible operator or an explicitly authorized, rate-limited source, event-by-event official corroboration, new capture and expiration times, and a fresh build; the probe alone cannot do this.
+
+18+. Gambling carries risk. Support: [GamCare](https://www.gamcare.org.uk/) and [GambleAware](https://www.gambleaware.org/).
+
 
 ---
 
