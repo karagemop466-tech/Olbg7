@@ -3,6 +3,20 @@
 Repo: `karagemop466-tech/Olbg7`
 Last updated: 2026-10-27 (UTC) - dashboard rebuilt from the 27 Oct OLBG capture; earlier boards preserved
 
+## Current integration claim — `sess-arena-4eb82353`
+
+Claimed: 2026-10-27 05:23 UTC. Branch: `arena/4eb82353-olbg7` (Arena-fixed branch).
+The previous tasks on this board are marked done; no other active claim appears on
+the board and no open pull request was visible at claim time. This session is the
+integration session for the following new work; please avoid these paths while it
+is in progress. Historical namespaced boards remain preserved.
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| Audit prior fixtures, pricing, predictions, sources and freshness; record gaps | in progress | sess-arena-4eb82353 | `COORDINATION.md`, `data/` (root JSON), `tools/` |
+| Build a trustworthy, automatically refreshable 15-sport dashboard and review register | in progress | sess-arena-4eb82353 | root generated HTML, `sports/`, `assets/`, `.github/`, `README.md` |
+| Integration, tests, PR, merge and GitHub Pages deployment | in progress | sess-arena-4eb82353 | shared root site and above files |
+
 ## Session protocol
 
 - Each session works only on its own branch and only inside the file scope it claimed.
