@@ -182,6 +182,32 @@ def main():
             if not f.get(k):
                 err.append(f"flag {f.get('id')}: missing {k}")
 
+    # Neighbour boards. The 2026-10-27 merge took the root page names from session
+    # a799d1c9's Coverage Desk and republished its board under desk/; this guard fails if
+    # anyone drops, truncates or unlinks the relocated pages, or leaves a stale link behind.
+    desk_pages = []
+    desk_root = os.path.join(ROOT, "desk")
+    for dirpath, _dirs, files in os.walk(desk_root):
+        desk_pages += [os.path.join(dirpath, fn) for fn in sorted(files) if fn.endswith(".html")]
+    if len(desk_pages) != 21:
+        err.append(f"desk/: {len(desk_pages)} html pages, expected 21 (5 root pages + archive index + "
+                   f"15 sport pages of the relocated Coverage Desk)")
+    else:
+        moved = re.compile(r'(?:href|src)="(?!https?:|mailto:|#)([^"#]+)')
+        for pg in desk_pages:
+            rel = os.path.relpath(pg, ROOT)
+            txt = open(pg, encoding="utf-8").read()
+            if "Moved here on 27 Oct 2026" not in txt:
+                err.append(f"{rel}: the relocated board is missing its move notice")
+            for m in moved.finditer(txt):
+                tgt = os.path.normpath(os.path.join(os.path.dirname(pg), m.group(1)))
+                if not os.path.exists(tgt):
+                    err.append(f"{rel}: broken link {m.group(1)}")
+        index_txt = open(os.path.join(desk_root, "index.html"), encoding="utf-8").read()
+        for must in ("data-snapshot", "data-expiry", "assets/desk.js"):
+            if must not in index_txt:
+                err.append(f"desk/index.html: relocated page lost its {must} attribute/file")
+
     print(f"pages: {len(pages)}   links: {sum(len(v) for v in hrefs.values())}   "
           f"markets: {len(lines['lines'])} (priced {lines['totals']['priced']}, unpriced {lines['totals']['unpriced']})")
     print(f"picks: {len(preds)} over {len(per)}/{len(SPORTS)} sports   grades: {grades}   "

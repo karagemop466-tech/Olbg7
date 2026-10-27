@@ -200,35 +200,56 @@ def main():
 </section>
 
 <section id="context">
-  <h2>This board in context &mdash; every other board, still live and untouched</h2>
-  <p class="lede">Four parallel sessions have published boards into this repository. None of them was overwritten by
-  this cycle; they are listed here so the site has one front door instead of five.</p>
+  <h2>This board in context &mdash; the other boards, and what happened at the merge</h2>
+  <p class="lede">Five sessions have published boards into this repository on 26&ndash;27 October. This cycle is the
+  integration session, so it owns the root page names now. Nothing else was deleted: one board was <em>relocated</em>
+  (the only one whose files were the same page names), and the rest were already namespaced. What each one holds:</p>
   <table class="tbl">
-    <thead><tr><th>Board</th><th>What it is</th><th>Coverage</th><th>Status</th></tr></thead><tbody>
+    <thead><tr><th>Board</th><th>Whose it is</th><th>What it covers</th><th>Status after the 27 Oct merge</th></tr></thead>
+    <tbody>
+    <tr><td>this page, plus <a href="all-events.html">all-events</a>, <a href="flagged.html">flagged</a>,
+      <a href="sources.html">sources</a>, <a href="methodology.html">methodology</a> and <a href="sports/golf.html">15
+      sport pages</a></td>
+      <td>session <span class="mono">6ebe13e2</span> (this cycle)</td>
+      <td>152 markets captured from 12 OLBG sport pages and 6 OLBG event pages, 141 lines originated, 52 written
+      predictions, 20 flags, 61 sources. Two-sided market coverage (both money-line sides, both handicaps, both
+      totals) and an A/B/C reliability grade that blocks draw-clustered and 1-2-tip lines from high confidence.</td>
+      <td>Live at the root</td></tr>
     <tr><td><a href="picks.html">picks.html</a> &middot; <a href="lines.html">lines.html</a> &middot;
       <a href="method.html">method.html</a> &middot; <a href="archive.html">archive.html</a></td>
-      <td>The "Coverage Desk" snapshot of the 05:23 UTC manual capture. It is deliberately <em>fail-closed</em>: its
-      script hides scheduled rows and notes after 28 October 2026 05:23 UTC, so those pages show less with time, not
-      more. Its own summary states that no priced high-confidence pick was established there.</td>
-      <td>54 listings with official schedule references, 71 listings flagged for time/fixture checks, 38 written leans</td>
-      <td>Live and unchanged; intentionally expiring</td></tr>
-    <tr><td><a href="board/all-markets.html">board/</a></td>
-      <td>Session 81a54336's 27 October board: its own executive summary, all-markets table and flagged page</td>
-      <td>Its full 27 Oct board exactly as published</td><td>Live, byte-for-byte as shipped</td></tr>
-    <tr><td><a href="olbg-map.html">olbg-map.html</a> &middot; <a href="legacy-cal4/index.html">legacy-cal4/</a></td>
-      <td>The reverse-engineered OLBG structure (URL grammar, sport ids, what each page returns) and the archived
-      CAL-4 board kept behind historical warnings</td>
-      <td>Structure reference + archived 26 October board</td><td>Live, preserved</td></tr>
-    <tr><td><a href="olbg-tips/index.html">olbg-tips/</a> &middot; <a href="docs/index.html">docs/</a> &middot;
+      <td>session <span class="mono">3b1b6ed4</span>, with the archive banner added later by
+      <span class="mono">a799d1c9</span></td>
+      <td>A 27 October board of its own: 114 events, 251 market rows, 57 written predictions priced from the OLBG
+      tip splits, plus its own method page and the archive index that points at every older board.</td>
+      <td>Live at the root, untouched, labelled historical</td></tr>
+    <tr><td><a href="desk/index.html">desk/</a> &middot; <a href="desk/all-events.html">all-events</a> &middot;
+      <a href="desk/flagged.html">review flags</a> &middot; <a href="desk/methodology.html">method</a></td>
+      <td>session <span class="mono">a799d1c9</span> ("Coverage Desk")</td>
+      <td>A manual 05:23 UTC research snapshot: 54 listings with official schedule references, 71 listings flagged for
+      fixture/time checks, 38 written leans. It states plainly that no priced high-confidence pick was established
+      there. It is <em>fail-closed</em>: its script hides scheduled rows and notes after 28 Oct 2026 05:23 UTC, so it
+      deliberately shows less with time.</td>
+      <td><strong>Relocated, not replaced.</strong> Its pages were the five root names plus
+      <span class="mono">sports/</span>, so this cycle copied them verbatim into <span class="mono">desk/</span> with
+      a notice and re-pointed links (0 broken). Its data
+      <span class="mono">data/current.json</span> and generator <span class="mono">tools/build_current.py</span> are
+      unchanged &mdash; but that generator writes to the root names, so run it only in a scratch copy.</td></tr>
+    <tr><td><a href="board/all-markets.html">board/</a></td><td>session <span class="mono">81a54336</span></td>
+      <td>Its 27 October board (executive summary, all-markets table, flagged page) with the price-band rule applied
+      per market</td><td>Live under its own prefix, byte-for-byte as shipped</td></tr>
+    <tr><td><a href="olbg-map.html">olbg-map.html</a> &middot; <a href="legacy-cal4/index.html">legacy-cal4/</a>
+      &middot; <a href="olbg-tips/index.html">olbg-tips/</a> &middot; <a href="docs/index.html">docs/</a> &middot;
       <a href="docs/board-review/index.html">docs/board-review/</a></td>
-      <td>The tip-consensus board, the first session's board and an independent board review with its own tiered
-      rating method</td><td>127 market rows / 51 picks; 119 events / 44 predictions</td>
+      <td>sessions <span class="mono">9922c58c</span>, <span class="mono">dfa8f20c</span>,
+      <span class="mono">88221c1f</span>, <span class="mono">610d0099</span></td>
+      <td>The reverse-engineered OLBG structure map (URL grammar, sport ids, what each page returns), the archived
+      CAL-4 board behind historical warnings, the tip-consensus board (127 market rows / 51 picks), the first
+      session's board (119 events / 44 predictions) and an independent board review with its own tiered method</td>
       <td>Live, preserved</td></tr>
     </tbody></table>
-  <p class="lede">What is new on this front page is the 27 October re-capture itself: two-sided coverage read off
-  OLBG's event pages (152 markets rather than the single most-tipped selection per event), the A/B/C reliability grade
-  that blocks draw-clustered and 1-2-tip lines from high confidence, and 52 written predictions with a source link on
-  every fact. The previous day's board is kept as the comparison baseline in
+  <p class="lede">If you only want today's work: the table at the top of this page is the whole pick set, each row
+  links to the full write-up on that sport's page, and every number that could not be confirmed is printed blank and
+  listed on <a href="flagged.html">Flagged for review</a>. The 26 October board is the comparison baseline in
   <span class="mono">data/events.json</span> and <span class="mono">data/picks.json</span>.</p>
 </section>
 
