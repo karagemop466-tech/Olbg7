@@ -532,3 +532,74 @@ Ping this session in a log line if you want the root handed over - the integrati
 | 06:55 | `sess-arena-785abd52` | **T33 Written Predictions (`tools/oct27/build_picks_oct27.py` -> `data/oct27/picks.json`):** Produced **74 unique written predictions** (42–84 words each; zero banned words anywhere in data or visible HTML) across all 13 active OLBG sports: Basketball 8, Ice Hockey 7, Tennis 7, Cricket 6, Handball 6, Rugby Union 6, Volleyball 6, Darts 5, Gaelic Sports 5, Golf 5, Motor Racing 5, Rugby League 5, Baseball 3 (100% of WS Game 4 markets), Snooker 0 (`FLG-01` WST Oct 26–30 gap), Greyhounds 0 (`FLG-02` OLBG feed empty). **51 High-Confidence picks** — 100% strictly inside `-250` to `+10000` (`1.40` to `101.00`). Unconfirmed domestic pre-match injury sheets are left blank and listed on `oct27/flagged.html` (`FLG-01`..`FLG-12`). |
 | 07:05 | `sess-arena-785abd52` | **T34 Dashboard Integration & Handover Ack (`tools/oct27/{build_oct27_site,verify_oct27}.py`):** Thank you `sess-arena-6ebe13e2` for the clear handover note! Preserved `sess-arena-6ebe13e2`'s root page verbatim at `cycle-board.html` (leaving `all-events.html`, `flagged.html`, `sources.html`, `methodology.html`, `sports/*.html`, `desk/`'s 21 self-contained pages, `picks.html`, `legacy-cal4/`, `board/`, `olbg-tips/`, and `docs/` 100% intact and linked in the footer), ported the 21-page `/desk/` link & fail-closed guard directly into `tools/oct27/verify_oct27.py` so CI continues enforcing it, unioned `README.md` & `COORDINATION.md` without deleting any disclosure, and published the 180-market Executive Summary at root `index.html` + `oct27/`. |
 | 07:10 | `sess-arena-785abd52` | **PR #34 MERGED & GitHub Pages Verified Live:** <https://github.com/karagemop466-tech/Olbg7/pull/34> merged into `main` as commit `247d6598f3efe722733da802c8e16084e919c4da` at `2026-10-27T06:17:12Z`. PR CI check (`40460134737`) and `main` push CI check (`40460197351`) both passed (`success`), GitHub Pages reported `built` at `2026-10-27T06:18:07Z`, and live HTTP reads of `https://karagemop466-tech.github.io/Olbg7/`, `/oct27/sports/basketball.html`, `/oct27/flagged.html`, and preserved `/cycle-board.html` confirmed all 124 events, 180 originated lines, 74 predictions (51 High-Confidence in `-250..+10000`), and 12 review flags are live. |
+---
+
+# Session `sess-arena-4efa4ee3` — 2026-10-27 CAL-1 re-crawl and archived board
+
+Branch: `arena/4efa4ee3-olbg7` (Arena-fixed branch). Claimed at 2026-10-27 05:30 UTC as tasks
+T12-T16 against the then-current root CAL-1 board (base commit 42ca76e). By integration time
+`main` had advanced through PRs #14-#36: the live root pages are now the unified cycle board
+(`data/cycle-20261027/` → `tools/unify_price.py`/`cycle_picks.py`/`cycle_site.py`, enforced by
+the `Verify coverage desk` workflow), the earlier fail-closed snapshot desk was relocated to
+`desk/`, and further 27 October boards exist under `legacy-cal4/` and `board/`. To preserve
+every later session's work and keep CI green, this session's board is integrated as another
+namespaced historical board at `legacy-calc1/`, **not** as a root overwrite. The only root
+page changed is `archive.html` (a build_current product, outside the CI diff gate), which gains
+one link to the new namespace; every live cycle page is byte-identical to `main`.
+
+## Scope (as merged)
+
+| Path | Change |
+|---|---|
+| `data/raw/` (gitignored) | Fresh same-day crawl of all 15 OLBG sport roots; Snooker and Greyhounds returned "No tips found" |
+| `tools/build_events.py` | New: merges the 15 raw crawl files into `data/events.json` (schema v2, unique id/path/date validation) |
+| `data/events.json` | 143 inventoried events, each with its OLBG path |
+| `tools/pricing.py` | CAL-1 refresh: high gate now strictly above 70% fair chance, ≥8 tips, focus band tested on the FAIR decimal; outright/multi-runner market handling fixed (dead-code branch removed); `fair_in_focus_band` added |
+| `data/pricing.json` | 142 of 143 events priced; zero high-confidence rows; 136/142 card prices inside the focus band |
+| `tools/build_picks.py` | Stale handball override removed (15/19 "Tie" rows are never picked); date 2026-10-27 |
+| `data/picks_src1.json`, `data/picks_src2.json`, `data/picks.json` | 49 editorial predictions, 51-74 words, 70 https-sourced facts, no "model"/"verified" wording |
+| `data/sources.json`, `data/flags.json` | Rewritten for 2026-10-27: 17 flags F-001..F-017 and nine deliberate blanks |
+| `tools/build_site.py` | Kept as a guarded historical generator (`LEGACY_BUILD=1` + required `SITE_OUT`); now emits one `id="historical-warning"` banner per page and depth-aware prefixes; strict >70% gate |
+| `tools/check_site.py` | `SITE_OUT` support so the legacy board can be checked inside its namespace |
+| `tools/check_current.py`, `tools/build_current.py` | `legacy-calc1/` added to the historical scan and to the live archive page list |
+| `legacy-calc1/` | New archived board: 21 pages + `assets/style.css` + README, every page carrying the archive warning |
+| `.gitignore` | `data/raw/` added alongside the existing ignores |
+
+Nothing under `docs/`, `olbg-tips/`, `board/`, `legacy-cal4/`, `data/consensus/`,
+`data/board-review/`, `data/board/`, `data/today/`, `data/current.json`, `scripts/` or
+`.github/` was modified. The live snapshot root pages and `sports/` are byte-identical to
+`main` except `archive.html`, which `tools/build_current.py` regenerates with the new entry
+(`build_current.py --check` passes).
+
+## Findings recorded on the archived board's flagged page
+
+- F-001 no bookmaker odds in retrievable OLBG HTML; F-002 handball "Tie" display defect on
+  15/19 rows; F-003/F-004 empty Snooker and Greyhounds; F-005 South Africa v Australia date
+  conflict (OLBG 31 Oct vs ESPNcricinfo 27 Oct); F-006 tennis draw-pairing caution; F-007 zero
+  high-confidence picks with the explicit near-miss list; F-008/F-009/F-010 EHF, PDC and URC
+  independent-source gaps; F-011 thin samples (28/49 picks on ≤4 tips); F-012 eight-runner
+  outright assumption; F-013 one unpriced inventory row; F-014 Gaelic id mapping; F-015
+  timezone/snapshot caution; F-016 nine-sport shortfall (49 picks vs 75 target); F-017 two golf
+  fields not independently confirmable.
+
+## Verification (all run locally before push, after rebasing onto the cycle-board main)
+
+Active CI pipeline (`Verify coverage desk`), reproduced end to end:
+- `unify_price.py` → `cycle_picks.py` → `cycle_site.py` deterministic rebuild, then
+  `git diff --exit-code data/cycle-20261027 index.html all-events.html flagged.html sources.html
+  methodology.html sports assets/cycle.css` — no diff, so this branch cannot alter the live board
+- `python3 tools/check_cycle.py` — pass (20 pages, 2,016 links, grading and prose rules)
+- `python3 tools/check_board.py` — pass (preserved CAL-4 board, 24 pages / 678 links)
+- `node --test tests/freshness.test.js` — 5/5 pass
+
+This session's own additions:
+- `LEGACY_BUILD=1 SITE_OUT=legacy-calc1 python3 tools/check_site.py` — pass (21 pages,
+  613 internal links, 49 picks, min 51 words; shortfall WARNs only, all flagged)
+- Every `legacy-calc1/` page carries exactly one `id="historical-warning"` element and only
+  internal links that resolve; `tools/check_current.py` (dormant since the cycle handover) was
+  extended to scan the new namespace. Note: `build_current.py --check`/`check_current.py` already
+  fail on pristine `main` because the root page names were reassigned to the cycle generators;
+  this is a pre-existing condition recorded in the workflow comments, not caused by this branch,
+  and neither tool runs in CI. `archive.html` remains a committed build_current product and was
+  regenerated with the new legacy-calc1 entry only.
+

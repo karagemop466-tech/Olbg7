@@ -1,11 +1,29 @@
 #!/usr/bin/env python3
-"""Build the static GitHub Pages site at the repo root from data/*.json."""
+"""Historical CAL-1 board generator (2026-10-27 snapshot).
+
+Superseded on the live site by tools/build_current.py (the fail-closed snapshot desk driven
+by data/current.json). It is kept to rebuild the archived CAL-1 board under a namespaced
+directory and cannot write to the repo root:
+
+    LEGACY_BUILD=1 SITE_OUT=legacy-calc1 python3 tools/build_site.py
+"""
+import os as _os
+if _os.environ.get("LEGACY_BUILD") != "1":
+    raise SystemExit("Superseded by tools/build_current.py (live snapshot board). "
+                     "Set LEGACY_BUILD=1 and SITE_OUT=<dir> to rebuild this historical CAL-1 board.")
 import json, os, re, html
 from datetime import date
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
 TODAY = "2026-10-27"
+
+# Historical output namespace (relative to ROOT). Required: an unguarded run must never
+# overwrite the live snapshot pages at the repo root.
+SITE_OUT = os.environ.get("SITE_OUT", "").strip("/")
+if not SITE_OUT:
+    raise SystemExit("SITE_OUT=<dir> is required; the legacy CAL-1 generator cannot write to the repo root.")
+OUT = os.path.join(ROOT, SITE_OUT)
 
 SPORTS = [
     ("golf", "Golf"),
@@ -81,13 +99,14 @@ def price_for(pick, pricing_index):
 
 
 def confidence_of(p_fair, card, tips_total):
-    # Mirrors tools/pricing.py: 70% fair-chance gate (owner rule, 2026-10-27), >=8 tips,
-    # and the focus band tested on the FAIR decimal (1/p_fair), not the margined card.
+    # Mirrors tools/pricing.py and the boundary tests in tools/check_site.py: the owner rule
+    # is STRICTLY greater than 70% fair chance, >=8 tips, and the focus band tested on the
+    # FAIR decimal (1/p_fair), not the margined card. Exactly 0.70 stays medium.
     if p_fair is None or card is None:
         return "low"
     fair_dec = 1.0 / p_fair
     fair_in_band = 1.40 <= fair_dec <= 101.0
-    if p_fair >= 0.70 and (tips_total or 0) >= 8 and fair_in_band:
+    if p_fair > 0.70 and (tips_total or 0) >= 8 and fair_in_band:
         return "high"
     if p_fair >= 0.50:
         return "medium"
@@ -151,20 +170,32 @@ footer{max-width:1180px;margin:0 auto;padding:24px 20px 50px;color:var(--muted);
 
 
 def head(title, nav_on=""):
-    prefix = "../" if nav_on.startswith("sports/") else ""
+    in_sports = nav_on.startswith("sports/")
+    prefix = "../" if in_sports else ""           # inside the legacy namespace
+    up = "../../" if in_sports else "../"          # escape namespace -> live repo root
     navs = [("index.html", "Dashboard"), ("all-events.html", "All events &amp; lines"),
             ("olbg-map.html", "OLBG site map"), ("methodology.html", "Pricing method"),
             ("sources.html", "Sources"), ("flagged.html", "Flagged for review"),
-            ("olbg-tips/index.html", "Tip-consensus board")]
+            (f"{up}olbg-tips/index.html", "Tip-consensus board")]
     on_cls = ' class="on"'
     links = "".join(
-        f'<a href="{prefix}{h}"{on_cls if nav_on == h else ""}>{t}</a>' for h, t in navs
+        f'<a href="{h if h.startswith(("http", "../")) else prefix + h}"'
+        f'{on_cls if nav_on == h else ""}>{t}</a>' for h, t in navs
     )
     sport_links = "".join(f'<a href="{prefix}sports/{s}.html">{t}</a>' for s, t in SPORTS)
+    warning = (
+        '<div id="historical-warning" role="note" style="padding:14px 20px;background:#fff0cd;'
+        'color:#543800;border-bottom:2px solid #c99a42;font:600 15px/1.5 system-ui,sans-serif">'
+        'ARCHIVED 27 OCTOBER 2026 CAL-1 BOARD &mdash; not live; these lines are historical, '
+        'uncalibrated tip-split estimates, not bookmaker quotes, and the claims have not been '
+        'rechecked since capture. Do not use as current betting advice. '
+        f'<a style="color:#163c4d;text-decoration:underline" href="{up}archive.html">'
+        'Archive warning and current desk</a>.</div>'
+    )
     return f"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{esc(title)}</title><link rel="stylesheet" href="{prefix}assets/style.css"></head>
-<body><header><div class="wrap"><div><h1>OLBG Coverage Desk</h1>
+<body>{warning}<header><div class="wrap"><div><h1>OLBG Coverage Desk</h1>
 <div class="sub">15 sports &middot; our own lines &middot; written predictions &middot; retrieved {TODAY}</div></div></div></header>
 <nav><div class="wrap">{links}</div></nav>
 <nav style="border-top:1px solid var(--line)"><div class="wrap">{sport_links}</div></nav>
@@ -172,11 +203,13 @@ def head(title, nav_on=""):
 
 
 def foot(prefix=""):
+    up = "../../" if prefix else "../"
     return f"""</main><footer>
 <p><strong>Method.</strong> Lines are originated by this desk from OLBG's published tip splits using the CAL-1
 engine described on the <a href="{prefix}methodology.html">pricing method</a> page; they are not bookmaker prices.
 Predictions are editorial. Every factual claim carries a source link on the row or card it appears in.</p>
-<p>Earlier board from the first session: <a href="{prefix}docs/index.html">docs/</a>.</p>
+<p>This is a namespaced historical board. The current snapshot desk is at <a href="{up}index.html">the live dashboard</a>;
+the earlier first-session board remains at <a href="{up}docs/index.html">docs/</a>.</p>
 <p>18+. Betting involves risk. If gambling is causing you concern, support is available from GamCare and GambleAware.
 This site republishes no paid tipster content and gives no assurance of profit.</p>
 </footer></body></html>"""
@@ -212,9 +245,9 @@ def main():
         p["_slug"] = NAME_TO_SLUG.get(p["sport"], "index")
         enriched.append(p)
 
-    os.makedirs(os.path.join(ROOT, "assets"), exist_ok=True)
-    os.makedirs(os.path.join(ROOT, "sports"), exist_ok=True)
-    with open(os.path.join(ROOT, "assets", "style.css"), "w") as fh:
+    os.makedirs(os.path.join(OUT, "assets"), exist_ok=True)
+    os.makedirs(os.path.join(OUT, "sports"), exist_ok=True)
+    with open(os.path.join(OUT, "assets", "style.css"), "w") as fh:
         fh.write(CSS)
 
     # ---------- index ----------
@@ -278,7 +311,7 @@ source supports.</p>
 </div>
 <div class="note"><strong>How to read the picks.</strong> Confidence is computed from our fair probability, the size of
 the tip sample and the price band, not typed in by hand. A pick only earns <span class="pill high">high</span> if the
-fair probability is at least 70%, the market has at least 8 tips, and the fair decimal price sits inside the requested
+fair probability is above 70%, the market has at least 8 tips, and the fair decimal price sits inside the requested
 &minus;250 to +10000 band (1.40 to 101.00). The band is tested on the fair price rather than the margined card, so the
 5% margin cannot disqualify a qualifying pick. Selection prices shown are <em>our</em> originating prices, not
 bookmaker prices - see the <a href="methodology.html">pricing method</a>.</div>
@@ -313,14 +346,14 @@ eight-runner assumption, also labelled on each card.</div>
 <li><strong>How prices are made</strong> is on <a href="methodology.html">Pricing method</a>.</li>
 <li><strong>Everything we could not confirm</strong> is on <a href="flagged.html">Flagged for review</a>.</li>
 <li><strong>Tip-consensus board.</strong> A third session's 127-row market capture, with its own method and its
-own flagged list, is published at <a href="olbg-tips/index.html">olbg-tips/</a> (requested in COORDINATION.md).</li>
+own flagged list, is published at <a href="../olbg-tips/index.html">olbg-tips/</a> (requested in COORDINATION.md).</li>
 <li><strong>Earlier board.</strong> A separate 75-row board produced earlier the same day in another session is
-preserved untouched at <a href="docs/index.html">docs/</a>. It uses a different method (hand-set probabilities) and
+preserved untouched at <a href="../docs/index.html">docs/</a>. It uses a different method (hand-set probabilities) and
 is kept for comparison, not merged into these totals.</li>
 </ul>
 """
     doc += foot()
-    with open(os.path.join(ROOT, "index.html"), "w") as fh:
+    with open(os.path.join(OUT, "index.html"), "w") as fh:
         fh.write(doc)
 
     # ---------- sport pages ----------
@@ -382,7 +415,7 @@ carries no picks. The reason and the supporting evidence are on the
 <td class="num">{line}</td><td class="small"><a href="https://www.olbg.com{esc(e['path'])}" target="_blank" rel="noopener">OLBG</a></td></tr>"""
         doc += "</tbody></table>"
         doc += foot("../")
-        with open(os.path.join(ROOT, "sports", f"{slug}.html"), "w") as fh:
+        with open(os.path.join(OUT, "sports", f"{slug}.html"), "w") as fh:
             fh.write(doc)
 
     # ---------- all events ----------
@@ -409,7 +442,7 @@ of {pricing['totals']['priced']} priced selections fall inside that band.</div>
 <td class="small"><a href="https://www.olbg.com{esc(r['path'])}" target="_blank" rel="noopener">OLBG</a></td></tr>"""
     doc += "</tbody></table>"
     doc += foot()
-    with open(os.path.join(ROOT, "all-events.html"), "w") as fh:
+    with open(os.path.join(OUT, "all-events.html"), "w") as fh:
         fh.write(doc)
 
     # ---------- olbg map ----------
@@ -445,7 +478,7 @@ favourite. Bookmaker prices are rendered client-side and were absent from every 
 project originates its own lines instead of quoting OLBG's.</p>
 """
     doc += foot()
-    with open(os.path.join(ROOT, "olbg-map.html"), "w") as fh:
+    with open(os.path.join(OUT, "olbg-map.html"), "w") as fh:
         fh.write(doc)
 
     # ---------- methodology ----------
@@ -468,7 +501,8 @@ three-way money line, 0.125 for an outright (assumed eight runners, which is an 
 so every price we publish is shorter than our fair number.</td></tr>
 <tr><td>5. American</td><td>Standard conversion: <code>(dec &minus; 1) &times; 100</code> at 2.00 and above,
 <code>&minus;100 / (dec &minus; 1)</code> below 2.00.</td></tr>
-<tr><td>6. Confidence</td><td><span class="pill high">high</span> needs fair probability &ge; 70%, a sample of at least
+<tr><td>6. Confidence</td><td><span class="pill high">high</span> needs fair probability &gt; 70% (strictly greater;
+exactly 70% stays medium), a sample of at least
 8 tips and a <em>fair</em> decimal price inside {m['band_min_decimal']} to {m['band_max_decimal']}.
 <span class="pill medium">medium</span> is fair probability &ge; 50% (including 70%+ shots whose price falls outside
 the band). Everything else is <span class="pill low">low</span>. The label is computed, never typed.</td></tr>
@@ -506,7 +540,7 @@ page was read.</li>
 </ul>
 """
     doc += foot()
-    with open(os.path.join(ROOT, "methodology.html"), "w") as fh:
+    with open(os.path.join(OUT, "methodology.html"), "w") as fh:
         fh.write(doc)
 
     # ---------- sources ----------
@@ -522,7 +556,7 @@ Retrieved {TODAY}.</p>"""
 <td class="small">{esc(it['use'])}</td></tr>"""
         doc += "</tbody></table>"
     doc += foot()
-    with open(os.path.join(ROOT, "sources.html"), "w") as fh:
+    with open(os.path.join(OUT, "sources.html"), "w") as fh:
         fh.write(doc)
 
     # ---------- flagged ----------
@@ -542,7 +576,7 @@ pages disagree with each other. Nothing here blocks publication; it marks what n
         doc += f"<li>{esc(b)}</li>"
     doc += "</ul>"
     doc += foot()
-    with open(os.path.join(ROOT, "flagged.html"), "w") as fh:
+    with open(os.path.join(OUT, "flagged.html"), "w") as fh:
         fh.write(doc)
 
     print(f"wrote index.html, {len(SPORTS)} sport pages, all-events.html, olbg-map.html, "

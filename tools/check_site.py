@@ -11,6 +11,9 @@ from build_site import confidence_of
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
+# Historical CAL-1 boards are namespaced (e.g. legacy-calc1). SITE_OUT points the page
+# checks at that directory; data checks always run against the primary data/*.json files.
+SITE_ROOT = os.path.join(ROOT, os.environ.get("SITE_OUT", "").strip("/")) if os.environ.get("SITE_OUT") else ROOT
 
 SPORTS = ["golf", "volleyball", "rugby-union", "cricket", "snooker", "darts", "baseball",
           "gaelic-sports", "greyhounds", "tennis", "motor-racing", "handball",
@@ -109,7 +112,7 @@ def main():
              "sources.html", "flagged.html"] + [f"sports/{s}.html" for s in SPORTS]
     total_links = 0
     for page in pages:
-        path = os.path.join(ROOT, page)
+        path = os.path.join(SITE_ROOT, page)
         if not os.path.exists(path):
             errors.append(f"missing page {page}")
             continue

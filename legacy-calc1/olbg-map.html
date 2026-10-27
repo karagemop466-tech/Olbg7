@@ -1,0 +1,75 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OLBG site map - reverse engineered</title><link rel="stylesheet" href="assets/style.css"></head>
+<body><div id="historical-warning" role="note" style="padding:14px 20px;background:#fff0cd;color:#543800;border-bottom:2px solid #c99a42;font:600 15px/1.5 system-ui,sans-serif">ARCHIVED 27 OCTOBER 2026 CAL-1 BOARD &mdash; not live; these lines are historical, uncalibrated tip-split estimates, not bookmaker quotes, and the claims have not been rechecked since capture. Do not use as current betting advice. <a style="color:#163c4d;text-decoration:underline" href="../archive.html">Archive warning and current desk</a>.</div><header><div class="wrap"><div><h1>OLBG Coverage Desk</h1>
+<div class="sub">15 sports &middot; our own lines &middot; written predictions &middot; retrieved 2026-10-27</div></div></div></header>
+<nav><div class="wrap"><a href="index.html">Dashboard</a><a href="all-events.html">All events &amp; lines</a><a href="olbg-map.html" class="on">OLBG site map</a><a href="methodology.html">Pricing method</a><a href="sources.html">Sources</a><a href="flagged.html">Flagged for review</a><a href="../olbg-tips/index.html">Tip-consensus board</a></div></nav>
+<nav style="border-top:1px solid var(--line)"><div class="wrap"><a href="sports/golf.html">Golf</a><a href="sports/volleyball.html">Volleyball</a><a href="sports/rugby-union.html">Rugby Union</a><a href="sports/cricket.html">Cricket</a><a href="sports/snooker.html">Snooker</a><a href="sports/darts.html">Darts</a><a href="sports/baseball.html">Baseball</a><a href="sports/gaelic-sports.html">Gaelic Sports</a><a href="sports/greyhounds.html">Greyhounds</a><a href="sports/tennis.html">Tennis</a><a href="sports/motor-racing.html">Motor Racing</a><a href="sports/handball.html">Handball</a><a href="sports/ice-hockey.html">Ice Hockey</a><a href="sports/basketball.html">Basketball</a><a href="sports/rugby-league.html">Rugby League</a></div></nav>
+<main><h2>How OLBG is put together</h2>
+<p class="lede">Every page we read, the URL pattern it follows, and what it actually returned on 2026-10-27. This is the
+map we work from when we refresh the board.</p>
+<h3>URL grammar</h3><table><thead><tr><th>Page type</th><th>Pattern</th></tr></thead><tbody><tr><td><span class="tag">sport_root</span></td><td class="small"><code>https://www.olbg.com/betting-tips/{Sport}/{sport_id}</code></td></tr><tr><td><span class="tag">competition_page</span></td><td class="small"><code>https://www.olbg.com/betting-tips/{Sport}/{Group}/{Competition}/{sport_id}</code></td></tr><tr><td><span class="tag">all_events_page</span></td><td class="small"><code>https://www.olbg.com/betting-tips/{Sport}/All_{Sport}/All_Events/{sport_id}</code></td></tr><tr><td><span class="tag">event_page</span></td><td class="small"><code>https://www.olbg.com/betting-tips/{Sport}/{Group}/{Competition}/{Event_Slug}/{sport_id}?event_id={id}</code></td></tr><tr><td><span class="tag">tipster_page</span></td><td class="small"><code>https://www.olbg.com/best-tipsters/{Sport}/{sport_id}</code></td></tr></tbody></table><div class="note"><strong>Notes from the crawl</strong><ul class="small"><li>The trailing number is the sport id and is identical on every page for that sport.</li><li>The event_id query parameter is required. Slugs alone are ambiguous and the same slug can appear under different groups.</li><li>Some listings use a group segment of All_{Sport} (Rugby Union, Volleyball, Handball, Darts, Motor Racing, Greyhounds, Gaelic, Snooker) and some use real groups (Basketball/Euroleague, Ice_Hockey/NHL/NHL, Baseball/MLB/MLB).</li><li>Guessing a wrong sport id returns a hard 404, e.g. /betting-tips/Tennis/6 - the correct id is 3.</li><li>Event pages expose every market with its line and per-outcome tip split; listing pages expose only the most-tipped selection.</li><li>Bookmaker prices are client-side rendered and were absent from every page retrieved on 2026-10-27 (flag F-001).</li><li>On 2026-10-27 the Snooker (id 8) and Greyhounds (id 28) roots and all-events pages returned &#x27;No tips found&#x27;.</li></ul></div><h3>Sport ids and status</h3><table><thead><tr><th>Sport</th><th>Sport id</th><th>Root page</th>
+<th>Events with tips</th><th>Status at retrieval</th><th>Markets seen</th></tr></thead><tbody><tr><td><strong>Golf</strong></td><td class="num">5</td>
+<td class="small"><a href="https://www.olbg.com/betting-tips/Golf/5" target="_blank" rel="noopener">root page</a></td>
+<td class="num">3</td><td class="small"><span class="tag">live, tournament-level only, two tips each</span></td>
+<td class="small">Win Tournament</td></tr><tr><td><strong>Volleyball</strong></td><td class="num">21</td>
+<td class="small"><a href="https://www.olbg.com/betting-tips/Volleyball/21" target="_blank" rel="noopener">root page</a></td>
+<td class="num">20</td><td class="small"><span class="tag">live</span></td>
+<td class="small">Win Match</td></tr><tr><td><strong>Rugby Union</strong></td><td class="num">9</td>
+<td class="small"><a href="https://www.olbg.com/betting-tips/Rugby_Union/9" target="_blank" rel="noopener">root page</a></td>
+<td class="num">13</td><td class="small"><span class="tag">live, Pro D2/URC plus one outright</span></td>
+<td class="small">To Win, Handicap, Win Tournament</td></tr><tr><td><strong>Cricket</strong></td><td class="num">7</td>
+<td class="small"><a href="https://www.olbg.com/betting-tips/Cricket/7" target="_blank" rel="noopener">root page</a></td>
+<td class="num">18</td><td class="small"><span class="tag">live; one outright row printed no split</span></td>
+<td class="small">Win Match, Top Team1 Batsman, Outright Winner</td></tr><tr><td><strong>Snooker</strong></td><td class="num">8</td>
+<td class="small"><a href="https://www.olbg.com/betting-tips/Snooker/8" target="_blank" rel="noopener">root page</a></td>
+<td class="num">0</td><td class="small"><span class="tag">empty - &#x27;No tips found&#x27; on root and all-events</span></td>
+<td class="small"></td></tr><tr><td><strong>Darts</strong></td><td class="num">15</td>
+<td class="small"><a href="https://www.olbg.com/betting-tips/Darts/15" target="_blank" rel="noopener">root page</a></td>
+<td class="num">2</td><td class="small"><span class="tag">live, tournament-level only</span></td>
+<td class="small">Win Tournament</td></tr><tr><td><strong>Baseball</strong></td><td class="num">12</td>
+<td class="small"><a href="https://www.olbg.com/betting-tips/Baseball/12" target="_blank" rel="noopener">root page</a></td>
+<td class="num">1</td><td class="small"><span class="tag">live, one World Series game only</span></td>
+<td class="small">Money Line</td></tr><tr><td><strong>Gaelic Sports (Football)</strong></td><td class="num">25</td>
+<td class="small"><a href="https://www.olbg.com/betting-tips/Gaelic_Football/25" target="_blank" rel="noopener">root page</a></td>
+<td class="num">3</td><td class="small"><span class="tag">live, club handicaps plus 2027 outright</span></td>
+<td class="small">Handicap, Win Tournament</td></tr><tr><td><strong>Gaelic Sports (Hurling)</strong></td><td class="num">26</td>
+<td class="small"><a href="https://www.olbg.com/betting-tips/Hurling/26" target="_blank" rel="noopener">root page</a></td>
+<td class="num">1</td><td class="small"><span class="tag">live, 2027 ante-post only</span></td>
+<td class="small">Win Hurling</td></tr><tr><td><strong>Greyhounds</strong></td><td class="num">28</td>
+<td class="small"><a href="https://www.olbg.com/betting-tips/Greyhounds/28" target="_blank" rel="noopener">root page</a></td>
+<td class="num">0</td><td class="small"><span class="tag">empty - &#x27;No tips found&#x27; on root and all-events</span></td>
+<td class="small"></td></tr><tr><td><strong>Tennis</strong></td><td class="num">3</td>
+<td class="small"><a href="https://www.olbg.com/betting-tips/Tennis/3" target="_blank" rel="noopener">root page</a></td>
+<td class="num">20</td><td class="small"><span class="tag">live, ATP/WTA tour stops</span></td>
+<td class="small">Win Match</td></tr><tr><td><strong>Motor Racing</strong></td><td class="num">14</td>
+<td class="small"><a href="https://www.olbg.com/betting-tips/Motor_Racing/14" target="_blank" rel="noopener">root page</a></td>
+<td class="num">2</td><td class="small"><span class="tag">live, thin; Mexico GP plus reduced-field championship</span></td>
+<td class="small">Win Tournament, Podium Finish</td></tr><tr><td><strong>Handball</strong></td><td class="num">20</td>
+<td class="small"><a href="https://www.olbg.com/betting-tips/Handball/20" target="_blank" rel="noopener">root page</a></td>
+<td class="num">19</td><td class="small"><span class="tag">live, 15 of 19 rows show &#x27;Tie&#x27; as most-tipped (flag F-002)</span></td>
+<td class="small">Money Line</td></tr><tr><td><strong>Ice Hockey</strong></td><td class="num">13</td>
+<td class="small"><a href="https://www.olbg.com/betting-tips/Ice_Hockey/13" target="_blank" rel="noopener">root page</a></td>
+<td class="num">18</td><td class="small"><span class="tag">live, NHL/SHL/Liiga/DEL</span></td>
+<td class="small">Money Line, Puck Line, Game Totals</td></tr><tr><td><strong>Basketball</strong></td><td class="num">4</td>
+<td class="small"><a href="https://www.olbg.com/betting-tips/Basketball/4" target="_blank" rel="noopener">root page</a></td>
+<td class="num">20</td><td class="small"><span class="tag">live, EuroLeague round plus other competitions</span></td>
+<td class="small">Money Line, Pointspread</td></tr><tr><td><strong>Rugby League</strong></td><td class="num">10</td>
+<td class="small"><a href="https://www.olbg.com/betting-tips/Rugby_League/10" target="_blank" rel="noopener">root page</a></td>
+<td class="num">3</td><td class="small"><span class="tag">ante-post only, 2027 futures</span></td>
+<td class="small">Win Tournament, Grand Final Winner</td></tr></tbody></table><h3>What the event pages give you that the listings do not</h3>
+<p class="small">A sport listing shows one row per event: the most-tipped selection, its market, the split
+(e.g. 9/16) and the comment count. An <em>event</em> page breaks the same match into every market OLBG carries -
+money line, pointspread or handicap with the actual line (e.g. CLE &minus;4.50, Under 232.50), game totals - and gives
+the split for each outcome, plus the tipster's written comment. That is the page to read when pricing more than the
+favourite. Bookmaker prices are rendered client-side and were absent from every page we retrieved, which is why this
+project originates its own lines instead of quoting OLBG's.</p>
+</main><footer>
+<p><strong>Method.</strong> Lines are originated by this desk from OLBG's published tip splits using the CAL-1
+engine described on the <a href="methodology.html">pricing method</a> page; they are not bookmaker prices.
+Predictions are editorial. Every factual claim carries a source link on the row or card it appears in.</p>
+<p>This is a namespaced historical board. The current snapshot desk is at <a href="../index.html">the live dashboard</a>;
+the earlier first-session board remains at <a href="../docs/index.html">docs/</a>.</p>
+<p>18+. Betting involves risk. If gambling is causing you concern, support is available from GamCare and GambleAware.
+This site republishes no paid tipster content and gives no assurance of profit.</p>
+</footer></body></html>
