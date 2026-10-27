@@ -8,7 +8,7 @@
    "id": "GF-01",
    "sport": "Golf",
    "line_id": "X-GF-01",
-   "prediction": "Lottie Woad has already won twice since turning professional, including the 2026 Kroger Queen City Championship, and LPGA's entries page confirms her in this week's Maybank field. Only two OLBG tips have been placed on the tournament outright and one of them backs Woad, so our own line stays long: she is the selection, with the modest tip sample the reason to keep stakes small.",
+   "prediction": "Lottie Woad has already won on the LPGA circuit, including the 2026 Kroger Queen City Championship, and LPGA's entries page confirms her in this week's Maybank field. Only two OLBG tips have been placed on the tournament outright and one of them backs Woad, so our own line stays long: she is the selection, with the modest tip sample the reason to keep stakes small.",
    "facts": [
     {
      "claim": "LPGA's official tournament page confirms the Maybank Championship runs 29 October-1 November at Kuala Lumpur Golf & Country Club's West Course, and its entries page lists Lottie Woad",
@@ -38,7 +38,7 @@
    "id": "GF-02",
    "sport": "Golf",
    "line_id": "X-GF-02",
-   "prediction": "Hye Jin Choi shares the Maybank Championship tip lead with Lottie Woad at one win tip apiece, yet she is the one the OLBG event page calls the Most Popular Tip. The official LPGA schedule puts this 72-hole limited-field event on the West Course from 29 October, where a player with Choi's ranking profile can outlast a larger field. Choi is our outright play at a big price.",
+   "prediction": "Hye Jin Choi shares the Maybank Championship tip lead with Lottie Woad at one win tip apiece, yet she is the one the OLBG event page calls the Most Popular Tip. The official LPGA schedule puts this four-round event on the West Course from 29 October, where a player with Choi's ranking profile can outlast a larger field. Choi is our outright play at a big price.",
    "facts": [
     {
      "claim": "LPGA's official tournament page confirms the Maybank Championship runs 29 October-1 November at Kuala Lumpur Golf & Country Club's West Course, and its entries page lists Lottie Woad",
@@ -435,7 +435,7 @@
    "prediction": "India have won both opening T20Is in Christchurch by four wickets, chasing with one ball and then two balls to spare, so a 2-0 lead is the strongest form line on this card. OLBG's 35 of 49 win tips back them again in Wellington on 27 October. Our own line makes India a solid favourite inside the value band: back India to complete the series win.",
    "facts": [
     {
-     "claim": "ESPNcricinfo's series page: India won the first two T20Is in Christchurch by four wickets each and lead New Zealand 2-0 before the third match in Wellington on 27 October",
+     "claim": "ESPNcricinfo's series page: India won the first two T20Is in Christchurch by four wickets each, with one ball and then two balls remaining, and lead 2-0 before the third match in Wellington on 27 October",
      "source": "https://www.espncricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-3rd-t20i-1539434/full-scorecard",
      "kind": "media"
     },
@@ -460,7 +460,7 @@
    "prediction": "New Zealand have lost two tight T20Is at home after scoring 225 and 180, with Glenn Phillips making 82 not out and 70, and they are written off by OLBG's 35-49 tip split in the third match. That is exactly the sort of one-sided market where a plus-money home side has value. Take New Zealand to finally convert a good batting start in Wellington.",
    "facts": [
     {
-     "claim": "ESPNcricinfo's series page: India won the first two T20Is in Christchurch by four wickets each and lead New Zealand 2-0 before the third match in Wellington on 27 October",
+     "claim": "ESPNcricinfo's series page: India won the first two T20Is in Christchurch by four wickets each, with one ball and then two balls remaining, and lead 2-0 before the third match in Wellington on 27 October",
      "source": "https://www.espncricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-3rd-t20i-1539434/full-scorecard",
      "kind": "media"
     },
@@ -556,7 +556,7 @@
    "prediction": "India are the most-tipped winner of the 2027 World Cup on OLBG with six of twelve outright tips, and they are also 2-0 up in a T20 series in New Zealand this week. Long-dated ante-post markets carry enormous uncertainty, so our line stretches to a big price and the confidence is only medium. India to win the 2027 World Cup is the selection for anyone playing the long game.",
    "facts": [
     {
-     "claim": "ESPNcricinfo's series page: India won the first two T20Is in Christchurch by four wickets each and lead New Zealand 2-0 before the third match in Wellington on 27 October",
+     "claim": "ESPNcricinfo's series page: India won the first two T20Is in Christchurch by four wickets each, with one ball and then two balls remaining, and lead 2-0 before the third match in Wellington on 27 October",
      "source": "https://www.espncricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-3rd-t20i-1539434/full-scorecard",
      "kind": "media"
     },
@@ -612,7 +612,7 @@
    "id": "SK-02",
    "sport": "Snooker",
    "line_id": "X-SK-02",
-   "prediction": "Shaun Murphy sits seventh in the official WST rankings on 884,150 pounds and has 19 centuries this season, while specialist draw listings place Mitchell Mann outside the top 90. Their round-two match in Nanjing is listed on WST's own match centre. Over a best-of-eleven frames contest that class gap should tell: Murphy to beat Mann is the selection.",
+   "prediction": "Shaun Murphy sits seventh in the official WST rankings on 884,150 pounds, while specialist draw listings place Mitchell Mann outside the top 90. Their round-two match in Nanjing is listed on WST's own match centre. Over a best-of-eleven frames contest that class gap should tell: Murphy to beat Mann is the selection.",
    "facts": [
     {
      "claim": "WST match centre lists the International Championship 2026 round-two and held-over matches in Nanjing on 30-31 October",
@@ -656,6 +656,11 @@
      "claim": "WST's official Home Nations bonus list has Liam Davies ninth on GBP 18,600",
      "source": "https://www.wst.tv/rankings/",
      "kind": "official"
+    },
+    {
+     "claim": "The specialist International Championship draw lists Zhou Yuelong at 18 and Liam Davies at 90",
+     "source": "https://www.snooker.org/res/index.asp?event=2762",
+     "kind": "secondary"
     },
     {
      "claim": "OLBG's snooker hub showed 'No tips found.' when checked on 27 October, so no community tip split exists for these matches",
@@ -977,7 +982,7 @@
    "id": "BS-02",
    "sport": "Baseball",
    "line_id": "X-BS-02",
-   "prediction": "Milwaukee's 10-1 Game 3 win was their fourth straight road postseason victory, and OLBG's only run-line tip for Game 4 takes the Brewers at -1.50 rather than Tampa Bay at +1.50. With Griffin Jax starting for the Rays and Milwaukee's starter still listed as TBA on MLB.com, the run line carries real risk. Take Milwaukee -1.50 at a plus-money price.",
+   "prediction": "Milwaukee's 10-1 Game 3 win was their eighth straight postseason victory, and OLBG's only run-line tip for Game 4 takes the Brewers at -1.50 rather than Tampa Bay at +1.50. With Griffin Jax starting for the Rays and Milwaukee's starter still listed as TBA on MLB.com, the run line carries real risk. Take Milwaukee -1.50 at a plus-money price.",
    "facts": [
     {
      "claim": "MLB's official postseason schedule shows Milwaukee winning 3-2, 5-4 and 10-1 to lead the World Series 3-0, with Game 4 on 27 October at 8pm ET",
@@ -2143,6 +2148,11 @@
      "claim": "NBA.com preseason power rankings placed Detroit 10th and New York 3rd",
      "source": "https://www.nba.com/news/power-rankings-2026-27-week-1",
      "kind": "official"
+    },
+    {
+     "claim": "2026-27 NBA standings list Detroit 3-0 and New York 0-3",
+     "source": "https://www.foxsports.com/nba/standings",
+     "kind": "media"
     }
    ],
    "conf_hint": "low",
