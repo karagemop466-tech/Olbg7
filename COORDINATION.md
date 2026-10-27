@@ -1,7 +1,7 @@
 # COORDINATION.md — Shared Task Board
 
 Repo: `karagemop466-tech/Olbg7`
-Last updated: 2026-10-26 (UTC) - board re-sourced from retrieved match data
+Last updated: 2026-10-27 (UTC) - claim + new-cycle task board added by `sess-arena-6ebe13e2`
 
 ## Session protocol
 
@@ -16,6 +16,8 @@ Last updated: 2026-10-26 (UTC) - board re-sourced from retrieved match data
 
 | Session ID | Branch | Claimed at (UTC) | Scope | Status |
 |---|---|---|---|---|
+| `sess-arena-6ebe13e2` | `arena/6ebe13e2-olbg7` | 2026-10-27 05:30 | full repo - refresh + unify (tasks T20-T27 below) | in progress |
+
 | `sess-arena-9922c58c` | `arena/9922c58c-olbg7` | 2026-10-26 20:30 | full repo (all tasks T1-T8) | done |
 | `610d0099` | `arena/610d0099-olbg7` | 2026-10-26 ~19:30 | COORDINATION.md, data/picks.json, tools/build_site.py, docs/ | done (merged to main as PRs #1-#4) |
 
@@ -39,6 +41,23 @@ Last updated: 2026-10-26 (UTC) - board re-sourced from retrieved match data
 | T10 | Re-source every prediction from retrieved match data (scores, team news, venue, official times) | done | sess-arena-9922c58c | `data/picks_src1.json`, `data/picks_src2.json`, `tools/build_picks.py`, `data/flags.json` | 2026-10-26 22:40 |
 | T11 | Recompute all originating lines with corrected market structure (2-way vs 3-way by sport) | done | sess-arena-9922c58c | `tools/pricing.py`, `data/pricing.json` | 2026-10-26 22:45 |
 | T9 | Integration: PRs → main, merge, Pages live | done | sess-arena-9922c58c | repo root |
+
+
+### New cycle 2026-10-27 (session `sess-arena-6ebe13e2`)
+
+The owner's standing complaint is that four separate boards are live and the picks are hard to find.
+This cycle re-sources OLBG for 27 Oct and consolidates into one dashboard. Prior boards stay live and unmodified.
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| T20 | Re-capture OLBG sport + event pages for 2026-10-27, all 15 sports | in progress | sess-arena-6ebe13e2 | `data/cycle-20261027/raw/` |
+| T21 | Event inventory with markets, selections, tip counts, percentages | unclaimed -> sess-arena-6ebe13e2 | sess-arena-6ebe13e2 | `data/cycle-20261027/events.json` |
+| T22 | Originate a line for every priced market; keep the -250..+10000 band rule | unclaimed -> sess-arena-6ebe13e2 | sess-arena-6ebe13e2 | `data/cycle-20261027/lines.json`, `tools/pricing.py` (read-only use) |
+| T23 | Written predictions, 5 per sport, sourced facts, confidence labels | unclaimed -> sess-arena-6ebe13e2 | sess-arena-6ebe13e2 | `data/cycle-20261027/predictions.json` |
+| T24 | Official-source register, one https link per table row | unclaimed -> sess-arena-6ebe13e2 | sess-arena-6ebe13e2 | `data/cycle-20261027/sources.json` |
+| T25 | Flagged-for-review register for anything not confirmable | unclaimed -> sess-arena-6ebe13e2 | sess-arena-6ebe13e2 | `data/cycle-20261027/flags.json` |
+| T26 | Single unified dashboard: executive summary first, picks obvious, 15 sport pages | unclaimed -> sess-arena-6ebe13e2 | sess-arena-6ebe13e2 | `index.html`, `sports/`, `assets/style.css`, `tools/build_unified.py` |
+| T27 | Link check, PR to main, merge, Pages verify | unclaimed -> sess-arena-6ebe13e2 | sess-arena-6ebe13e2 | `tools/check_site.py` |
 
 ## Log
 
