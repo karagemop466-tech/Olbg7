@@ -1,7 +1,11 @@
 # COORDINATION.md — Shared Task Board
 
 Repo: `karagemop466-tech/Olbg7`
+<<<<<<< HEAD
 Last updated: 2026-10-27 (UTC) - dashboard rebuilt from the 27 Oct OLBG capture; earlier boards preserved
+=======
+Last updated: 2026-10-27 (UTC) - current integration and source audit
+>>>>>>> 8f8547d (Build source-linked, time-limited coverage desk)
 
 ## Current integration claim — `sess-arena-4eb82353`
 
@@ -13,8 +17,8 @@ is in progress. Historical namespaced boards remain preserved.
 
 | Task | Status | Owner | File scope |
 |---|---|---|---|
-| Audit prior fixtures, pricing, predictions, sources and freshness; record gaps | in progress | sess-arena-4eb82353 | `COORDINATION.md`, `data/` (root JSON), `tools/` |
-| Build a trustworthy, automatically refreshable 15-sport dashboard and review register | in progress | sess-arena-4eb82353 | root generated HTML, `sports/`, `assets/`, `.github/`, `README.md` |
+| Audit prior fixtures, pricing, predictions, sources and freshness; record gaps | done; findings need review | sess-arena-4eb82353 | `COORDINATION.md`, `data/` (root JSON), `tools/` |
+| Build a source-linked 15-sport dashboard and review register; investigate refresh | needs review (refresh blocked) | sess-arena-4eb82353 | root generated HTML, `sports/`, `assets/`, `.github/`, `README.md` |
 | Integration, tests, PR, merge and GitHub Pages deployment | in progress | sess-arena-4eb82353 | shared root site and above files |
 
 ### Concurrent integration note — 2026-10-27 05:25 UTC
@@ -26,6 +30,35 @@ pre-push rebase encountered duplicate copies of this session's previously
 pushed probe workflow: the add/add and workflow conflicts were resolved by
 keeping the already-pushed probe and retaining its new annotation line. No
 other session's work was discarded.
+
+### Integration evidence — 2026-10-27 (session `sess-arena-4eb82353`)
+
+- Manual research began at 05:23 UTC; the current static snapshot has 54 schedule-linked events,
+  71 separate flagged listings and 37 source-linked qualitative notes. Sixteen OLBG hubs cover the
+  15 requested categories (Gaelic Football and Hurling separate). The lists are not a complete live feed.
+- Official sources used include EuroLeague match/injury reports, ATP Basel order of play and Shanghai
+  results, EHF Champions League preview, URC fixtures/table, French Pro D2/Top 14, ASOBAL, NHL team
+  and injury reports, MLB, ICC/NZC/PCB, LPGA/PGA, PDC, Formula 1 and Lega Volley Femminile. Exact URLs
+  are retained per event and note in `data/current.json` and generated `sources.html`.
+- Current bookmaker quotes, reliable independently calibrated numerical lines, full injury coverage,
+  several exact start times, market settlement, full inventory and at least five notes in every sport
+  are **not established**. Blank values and 71 listings awaiting review are published on `flagged.html`.
+  A historical PGA-sourced FanDuel opening quote is explicitly marked as such; it is not a live offer.
+- The GitHub-hosted `CoverageDeskResearch/1.0` probe was denied all three tested OLBG paths by
+  `robots.txt` (run 40455327782, check 122027198655). No automated content ingestion was implemented.
+  The 28 October 05:23 UTC expiry, per-event cutoffs, and disabled-JavaScript/clock-error cases fail
+  closed; client time is not an authoritative live source.
+- Concurrent PRs #17–#23 landed on `main` after this session's claim and touched the root dashboard,
+  `COORDINATION.md` and the CI workflow. To preserve the other sessions' work, the new 27 October CAL-4
+  root pages are copied to `legacy-cal4/` with archive warnings and their original data and generators
+  remain intact. The earlier `board/` will also remain accessible and be flagged as historical. Forty
+  additional listings from `data/board/inventory-*` were added only to the unconfirmed register; three
+  were separately matched to official cricket schedules and promoted. No older constructed prices are
+  represented as actual market odds or reliable probabilities. Conflict handling is recorded below.
+- Local checks: `python3 tools/build_current.py --check`, `python3 tools/check_current.py` and
+  `node --test tests/freshness.test.js` passed before the concurrent-board rebase. A real Chromium
+  browser exercised desktop navigation, 375px mobile layout, expiry and bad-clock boundaries,
+  JavaScript-disabled behavior and a historical deep link. Re-run after integrating `main`.
 
 ## Session protocol
 
