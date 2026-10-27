@@ -1,7 +1,5 @@
 name: Verify coverage desk
 
-# GitHub Pages serves committed HTML from main:/ (legacy Pages build).
-# Nothing here regenerates or overwrites the preserved historical boards.
 on:
   push:
     branches: [main, arena/4eb82353-olbg7]
@@ -24,10 +22,27 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Check committed pages match the snapshot
-        run: python tools/build_current.py --check
-      - name: Check data, internal links and archive warnings
-        run: python tools/check_current.py
+
+      # The root pages (index.html, all-events.html, flagged.html, sources.html,
+      # methodology.html, sports/*.html) are the 2026-10-27 unified cycle board, built
+      # from data/cycle-20261027/*.json by the three generators below. The build is
+      # deterministic, so a clean rebuild must produce no diff.
+      #
+      # tools/build_current.py used to own these pages from data/current.json; it is no
+      # longer run here because its output would replace the live board with the expired
+      # 05:23 UTC snapshot (its pages picks.html/lines.html/method.html/archive.html are
+      # still committed and still linked from the dashboard). Run it only in a scratch
+      # copy - see README.
+      - name: Rebuild the cycle board and check the committed HTML matches
+        run: |
+          python3 tools/unify_price.py
+          python3 tools/cycle_picks.py
+          python3 tools/cycle_site.py
+          git diff --exit-code data/cycle-20261027 index.html all-events.html flagged.html sources.html methodology.html sports assets/cycle.css
+      - name: Check cycle data, links, anchors, prose and grading
+        run: python3 tools/check_cycle.py
+      - name: Check the preserved CAL-4 board data
+        run: python3 tools/check_board.py
       - name: Test fail-closed freshness behavior
         run: node --test tests/freshness.test.js
 
@@ -41,7 +56,7 @@ jobs:
         with:
           python-version: '3.12'
       - name: Check declared-agent access under robots.txt
-        run: python tools/probe_olbg.py
+        run: python3 tools/probe_olbg.py
       - uses: actions/upload-artifact@v4
         if: always()
         with:

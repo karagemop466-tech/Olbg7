@@ -1,0 +1,246 @@
+{
+ "cycle": "2026-10-27",
+ "flags": [
+  {
+   "id": "U-001",
+   "sport": "All",
+   "severity": "structural",
+   "title": "No bookmaker prices exist in retrievable OLBG HTML",
+   "detail": "Every decimal and American price on this site is originated by us from OLBG's printed tip split (X of Y Win Tips) using the CAL-1R method: a per-market prior, K=6 pseudo-tips of shrinkage, and a 5% margin. No sportsbook quote is reproduced anywhere on the board, and none should be assumed. OLBG renders its odds widgets client-side, so they are not in the HTML that can be read.",
+   "action": "Read prices as our line, never as the market's.",
+   "source": [
+    "https://www.olbg.com/betting-tips/",
+    "OLBG tip pages"
+   ]
+  },
+  {
+   "id": "U-002",
+   "sport": "Handball",
+   "severity": "defect",
+   "title": "Handball draw/tie clustering across 11 of 15 priced handball markets",
+   "detail": "The EHF Champions League markets on the OLBG card are overwhelmingly tipped on the 'Tie' outcome (PSG v Aalborg 7/9, Wisla Plock v Nantes 8/11, Magdeburg v Kriens-Luzern 9/14, Vardar v Melsungen 8/13, Celje v Zagreb 6/8, Kielce v Kolstad 7/11 and more). Handball draws are rare: the EHF's own group-phase table shows only one drawn result across the matches already played in these groups (Aalborg 33-33 PSG). A line built from those votes would imply a 40-60% draw chance, so every handball Tie selection is graded C, capped at low confidence and excluded from the high-confidence set; the team-side prices are published instead, with the clustering named on each row.",
+   "action": "Do not stake on any Tie line on this board.",
+   "source": [
+    "https://ehfcl.eurohandball.com/men/2026-27/standings/",
+    "EHF Champions League standings"
+   ]
+  },
+  {
+   "id": "U-003",
+   "sport": "All",
+   "severity": "method",
+   "title": "Reliability grades applied to every priced line",
+   "detail": "Grade A: 8 or more tips counted on the market and no structural anomaly. Grade B: 3 to 7 tips. Grade C: fewer than 3 tips, a degenerate 0%/100% split, or a 3-way draw-cluster artefact. High confidence is blocked on any grade C line and requires at least 8 tips, a price inside the -250 to +10000 focus band and a consensus probability of at least 60% after shrinkage.",
+   "action": "Grade is printed next to every line on the sport pages.",
+   "source": [
+    "",
+    ""
+   ]
+  },
+  {
+   "id": "U-004",
+   "sport": "All outrights",
+   "severity": "method",
+   "title": "Outright field sizes are assumed, not printed",
+   "detail": "OLBG's outright markets (F1 title-without-Antonelli, PDC World Championship, Six Nations 2027, State of Origin 2027, Super League and NRL grand finals, GAA All-Ireland championships, golf winners, man-of-the-match markets) do not print the number of entries in the field. The pricing assumes an eight-way field for a uniform prior, which moves the price of a lightly-tipped runner by more than any other single assumption in the method.",
+   "action": "Outright prices are directional only.",
+   "source": [
+    "",
+    ""
+   ]
+  },
+  {
+   "id": "U-005",
+   "sport": "Cricket",
+   "severity": "data",
+   "title": "Third Test start time reported two ways",
+   "detail": "cricket.com.au lists the Cape Town Test as 7:30pm AEDT / 10:30am local; the OLBG event page for the same fixture prints a 31 October 04:30 card time (the scheduled final day, not the first) and a match-preview page shows 8:30 AM GMT. No single official start time could be confirmed, so the time column shows the fixture window (27-31 October) and the exact first-ball time is left blank.",
+   "action": "Treat the printed card time as unusable; play the day, not the hour.",
+   "source": [
+    "https://www.cricket.com.au/news/4597818/south-africa-v-australia-third-test-match-preview-guide-cape-town-newlands-broadcast-details-how-to-watch-team-news-session-start-times-2026",
+    "cricket.com.au"
+   ]
+  },
+  {
+   "id": "U-006",
+   "sport": "Motor Racing",
+   "severity": "data",
+   "title": "Antonelli 'Top 6' tip split carried forward from the 26 October capture",
+   "detail": "On 26 October the OLBG motor-racing page printed 17 of 18 tips on 'Kimi Antonelli - Yes' to finish in the top six of the Mexico City Grand Prix. The 27 October capture listed the same market with no numbers attached. The split is published with the earlier capture date labelled on the row rather than restated as today's signal, and it is not used for any high-confidence pick.",
+   "action": "Row is labelled carried-forward; price it as stale.",
+   "source": [
+    "https://www.olbg.com/betting-tips/Motor_Racing",
+    "OLBG motor racing page"
+   ]
+  },
+  {
+   "id": "U-007",
+   "sport": "Motor Racing",
+   "severity": "defect",
+   "title": "OLBG tipster commentary contradicts the official 2026 standings",
+   "detail": "The comment thread on the F1 title-without-Antonelli outright states that George Russell has 238 points against Lewis Hamilton 229 and Max Verstappen 221, with 'six races to go'. Formula1.com's own 2026 drivers' results page after round 18 reads Russell 242, Hamilton 241, Verstappen 236, Leclerc 233, Norris 211, with five rounds and 125 points remaining. The tipster figures are stale by 4 to 15 points and a full round; our line is built from the official standings, not the comments.",
+   "action": "Ignore the numbers quoted inside OLBG comments.",
+   "source": [
+    "https://www.formula1.com/en/results/2026/drivers",
+    "Formula1.com official results"
+   ]
+  },
+  {
+   "id": "U-008",
+   "sport": "Rugby Union",
+   "severity": "conflict",
+   "title": "Two league tables disagree on the same Pro D2 round",
+   "detail": "The LNR's own club page for Provence Rugby has Provence second on 29 points with Oyonnax leading on 34, and shows round 8 as Provence 0-3 Beziers (a forfeit or correction). L'Equipe's Pro D2 table prints Provence on 34 and Dax in the lower half for the same fixture list. Because the two sources cannot be reconciled, no Provence or Dax points figure is published on the pick row and the Dax handicap line is graded on the tip split alone.",
+   "action": "Pro D2 table positions are left blank; only the fixture and kick-off time are asserted.",
+   "source": [
+    "https://prod2.lnr.fr/club/provence-rugby",
+    "LNR (official Pro D2)"
+   ]
+  },
+  {
+   "id": "U-009",
+   "sport": "Ice Hockey",
+   "severity": "conflict",
+   "title": "Carolina's Taylor Hall: activated on IR? ",
+   "detail": "The NHL's status report of 26 October had Taylor Hall activated and available, while the injury report on the ESPN game page for Boston at Carolina - read on 26/27 October - still lists Hall in the IR column with an estimated 7 November return, alongside Jordan Staal (IR, 3 December), Mark Jankowski (out) and Alexander Nikishin (not released). The conflict is unresolved, so no pick on this game claims Hall's availability either way.",
+   "action": "Lineup-dependent claims suppressed for BOS @ CAR.",
+   "source": [
+    "https://www.espn.com/nhl/game/_/gameId/401892586/bruins-hurricanes",
+    "ESPN NHL injury report"
+   ]
+  },
+  {
+   "id": "U-010",
+   "sport": "Ice Hockey / Baseball",
+   "severity": "defect",
+   "title": "OLBG's printed start times are unreliable for North American fixtures",
+   "detail": "OLBG prints its card times on a US-Eastern clock, and the pattern was confirmed against four non-US fixtures (a URC kick-off printed 15:45 for 19:45 UK, the Afghanistan v Zimbabwe T20I printed 10:30 for 14:30 GMT, Pakistan v Sri Lanka printed 04:00 for 08:00 GMT, Aalborg v Wisla Plock printed 13:45 for 18:45 local). Against official listings the North American games then come out wrong: World Series Game 4 is printed 21:00 for an 8:00pm ET first pitch, and the NHL games print 20:07 / 19:07 for 8:00pm and 7:00pm ET puck drops. The printed minutes are not used anywhere in the copy; official times are quoted instead.",
+   "action": "Times on every row come from the governing body, never from the OLBG card.",
+   "source": [
+    "https://www.mlb.com/news/2026-mlb-playoff-and-world-series-schedule",
+    "MLB.com"
+   ]
+  },
+  {
+   "id": "T-001",
+   "sport": "Tennis",
+   "severity": "blank",
+   "title": "Four OLBG tennis rows carry no tournament, round or venue",
+   "detail": "The Fernandez v Sakatsume, Osaka v Paolini, Tager v Williams and Kudermetova v Tien markets appear on the OLBG tennis page with a time and a tip percentage but no named event, and no tour schedule page we could reach tied those pairings to a published draw for 27 October 2026. Because the brief is to price every market we capture, the rows are priced and shown; because the fixture itself is not confirmable, tournament, round, surface and head-to-head are left blank and the predictions on them state that limitation instead of papering over it.",
+   "action": "No staking case on these rows; the price is a prior on a tip vote.",
+   "source": [
+    "https://www.olbg.com/betting-tips/Tennis",
+    "OLBG tennis page"
+   ]
+  },
+  {
+   "id": "SN-001",
+   "sport": "Snooker",
+   "severity": "empty",
+   "title": "Snooker slate was empty at capture time",
+   "detail": "The OLBG snooker page (sport id 8) returned the literal text 'No tips found.' when it was fetched at 05:45 UTC on 27 October 2026, with no events, markets or tip rows. That is a genuine empty slate rather than a failed capture: the page rendered normally. One side effect is worth noting - with no tip rows the page's own sport menu degrades its label to 'All Sports', so a naive scraper reading the menu would mis-assign the rows.",
+   "action": "No snooker picks today. Re-check later in the day; the World Snooker Tour calendar was not the blocker.",
+   "source": [
+    "https://www.olbg.com/betting-tips/Snooker",
+    "OLBG snooker page"
+   ]
+  },
+  {
+   "id": "G-001",
+   "sport": "Greyhounds",
+   "severity": "empty",
+   "title": "Greyhounds slate was empty at capture time",
+   "detail": "The OLBG greyhounds page (sport id 28) returned 'No tips found.' at 05:42 UTC on 27 October 2026. Greyhound tip markets are usually published against specific early-morning UK track fixtures, so an empty card at 05:42 UTC (06:42 UK) is expected but not proof of an absence of races; the sport is recorded as captured-and-empty with zero originated lines rather than omitted.",
+   "action": "No greyhound picks today; treat as 'no markets', not 'no racing'.",
+   "source": [
+    "https://www.olbg.com/betting-tips/Greyhounds",
+    "OLBG greyhound page"
+   ]
+  },
+  {
+   "id": "V-001",
+   "sport": "Volleyball",
+   "severity": "blank",
+   "title": "OLBG volleyball rows carry no competition label",
+   "detail": "Fifteen volleyball markets were captured with team names and tip percentages only - the card prints no league, round or gender for any of them. The Turkish rows were matched to the Efeler Ligi men's fixture list from the federation's own reporting, but the Italian women's rows (Conegliano v Vallefoglia, Marignano v Bergamo), the Polish, Finnish and Brazilian rows could not be tied to an official league source inside the capture window. Where a row could not be tied to a governing body, the competition field is blank and the prediction says the price is market-only.",
+   "action": "Only the three Turkish picks carry match facts; the rest are flagged.",
+   "source": [
+    "https://tvf.org.tr/icerik/efeler-liginde-birinci-hafta-sona-erdi",
+    "Turkish Volleyball Federation"
+   ]
+  },
+  {
+   "id": "V-002",
+   "sport": "Volleyball",
+   "severity": "blank",
+   "title": "Serie A1 women's standings not retrievable during capture",
+   "detail": "No Italian league source printed the current matchday, table or line-ups inside our window, so the two Italian women's markets on the board (Marignano v Bergamo, Conegliano v Vallefoglia) are priced from the OLBG tip vote alone with all form fields blank.",
+   "action": "Treat these two rows as market-only.",
+   "source": [
+    "",
+    ""
+   ]
+  },
+  {
+   "id": "HB-001",
+   "sport": "Handball",
+   "severity": "blank",
+   "title": "Handicap and totals markets printed with zero tips",
+   "detail": "The PSG v Aalborg and Wisla Plock v Nantes event pages both list Match Handicap and Points Total markets (PSG -0.5 / Aalborg +0.5, total 63.5; Nantes +1.5 / Plock -1.5, total 57.5) with no tips on either side. Those four markets are shown as unpriced with the reason attached: with a 0/0 split there is no signal to shrink, and inventing a number would put a fake price on a real market.",
+   "action": "Markets are listed with 'not priced' rather than filled in.",
+   "source": [
+    "https://www.olbg.com/betting-tips/Handball/All_Handball/All_Events",
+    "OLBG handball event pages"
+   ]
+  },
+  {
+   "id": "B-001",
+   "sport": "Baseball",
+   "severity": "blank",
+   "title": "World Series Game 4 totals market has no priceable split",
+   "detail": "The BOS @ CAR-style totals pattern repeats here: the OLBG event page for Game 4 lists Game Totals at 7.5 runs with zero tips on either side, and the money line carries only 2 tips (both on Milwaukee) with nothing on Tampa Bay's side of the split. The totals market is therefore unpriced on the board, and both run-line and money-line rows are graded C for sample size even where the baseball situation is not close.",
+   "action": "No total offered for Game 4; the series situation is published instead.",
+   "source": [
+    "https://www.espn.com/mlb/game/_/gameId/401908045/brewers-rays",
+    "ESPN"
+   ]
+  },
+  {
+   "id": "GOLF-001",
+   "sport": "Golf",
+   "severity": "conflict",
+   "title": "Two of the three OLBG golf events could not be confirmed on a tour schedule",
+   "detail": "The Maybank Championship is confirmed on the LPGA's own tournament page (29 October - 1 November, KLGCC West). The other two golf outrights on the OLBG card - 'Mexico Open' with 1 of 2 tips on Wyndham Clark and 'Simmons Bank Championship' with 1 of 2 tips on Stewart Cink, both printed 01 November 17:45 - were not matched to a PGA Tour or Korn Ferry Tour listing in this window, and one preview article names the wrong defending champion for the Maybank field. Those two rows are priced and flagged with no prediction written, and the defending-champion correction is noted on the Woad row.",
+   "action": "No written analysis for Mexico Open / Simmons Bank until the events are confirmed.",
+   "source": [
+    "https://www.lpga.com/tournaments/maybank-championship",
+    "LPGA (official)"
+   ]
+  },
+  {
+   "id": "BK-001",
+   "sport": "Basketball",
+   "severity": "blank",
+   "title": "Two EuroLeague rows are priced without standings data",
+   "detail": "The standings and results pages readable during this window printed the top six and bottom two rows of the EuroLeague table, which is enough to write about Panathinaikos, Fenerbahce, Dubai, Baskonia's last result and Paris, but not enough to state Crvena Zvezda's or Maccabi Tel Aviv's records, or Real Madrid's Round 7 result. Those cells are blank on the two affected pick rows and the picks say so in the body text instead of carrying a number we could not read.",
+   "action": "Belgrade and Vitoria picks are price-only; do not treat them as form cases.",
+   "source": [
+    "https://www.eurohoops.net/euroleague-standings/",
+    "Eurohoops (EuroLeague standings)"
+   ]
+  },
+  {
+   "id": "P-001",
+   "sport": "Coverage",
+   "severity": "method",
+   "title": "Five of fifteen sports are priced from two or three tips, or not at all",
+   "detail": "Of the fifteen sports in scope, thirteen produced markets on 27 October (152 unique markets, 140 priced, 12 unpriced with reasons). Snooker and greyhounds produced nothing. High-confidence lines exist in one sport only - cricket, three of them - because the brief asks for picks inside the -250 to +10000 band while the near-certain outcomes on this card (Afghanistan at 1.16, Fernandez at 1.32, Antonelli at 1.15, Ziraat at 1.36, KalPa at 1.31) all price shorter than -250 by our method. Those lines are published as 'strong, outside band' rather than promoted.",
+   "action": "The executive summary ranks what is actionable, and the shortfall is stated rather than padded.",
+   "source": [
+    "",
+    ""
+   ]
+  }
+ ],
+ "count": 20
+}

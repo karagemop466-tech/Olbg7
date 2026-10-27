@@ -1,0 +1,2535 @@
+{
+ "cycle": "2026-10-27",
+ "count": 52,
+ "by_sport": {
+  "Baseball": 4,
+  "Basketball": 5,
+  "Cricket": 5,
+  "Darts": 2,
+  "Gaelic Sports": 4,
+  "Golf": 1,
+  "Handball": 4,
+  "Ice Hockey": 5,
+  "Motor Racing": 4,
+  "Rugby League": 3,
+  "Rugby Union": 5,
+  "Tennis": 5,
+  "Volleyball": 5
+ },
+ "picks": [
+  {
+   "id": "P-20261027-01",
+   "cycle": "2026-10-27",
+   "sport": "Baseball",
+   "competition": "MLB World Series",
+   "event": "MIL Brewers @ TB Rays",
+   "when_official": "",
+   "market": "Money Line",
+   "selection": "MIL Brewers",
+   "pick_label": "Milwaukee Brewers to win Game 4 and the World Series (money line)",
+   "prediction": "Milwaukee leads this World Series three matches to none and can close it out tonight at Tropicana Field, having already won 3-2, 5-4 and 10-1. The Brewers finished 103-59 and are 48-33 on the road, while Tampa Bay came into the Finals 98-64 with a 55-26 home record. Milwaukee have conceded seven runs in three games, which is the whole argument: no side in baseball history has recovered from 3-0 down in this series. Take the Brewers on the money line at 1.52 (-192).",
+   "word_count": 84,
+   "our_line": 1.52,
+   "our_line_american": -192,
+   "implied_pct": 65.8,
+   "confidence": "medium",
+   "grade": "C",
+   "p_fair": 0.625,
+   "structure": "2-way",
+   "notes": [
+    "thin sample: 2 tip(s) counted",
+    "0%/100% split - no information in the tail, capped at medium"
+   ],
+   "tips_on_pick": 2,
+   "tips_total": 2,
+   "pct": 100,
+   "olbg_url": "https://www.olbg.com/betting-tips/Baseball/MLB/MLB/MIL_Brewers_@_TB_Rays/12?event_id=160799",
+   "event_id": "160799",
+   "angle": "Two OLBG tips on the market, both on Milwaukee, so the price is our own number rather than a market reading.",
+   "risk": "Only two tips were counted on this market, so the line is graded C - it is a one-win series situation, not a price we would lay out blind.",
+   "facts": [
+    {
+     "text": "Milwaukee leads the World Series 3-0; Game 4 is Tuesday 27 October at 8:00pm ET from Tropicana Field",
+     "url": "https://www.mlb.com/news/2026-world-series-game-4-storylines-brewers-rays",
+     "site": "MLB.com"
+    },
+    {
+     "text": "Series scores: Brewers 3-2, 5-4 and 10-1, Game 3 won by nine runs",
+     "url": "https://www.espn.com/mlb/game/_/gameId/401908045/brewers-rays",
+     "site": "ESPN"
+    },
+    {
+     "text": "Records: Brewers 103-59 (48-33 away), Rays 98-64 (55-26 home)",
+     "url": "https://www.espn.com/mlb/game/_/gameId/401908045/brewers-rays",
+     "site": "ESPN"
+    },
+    {
+     "text": "MLB's own Game 4 lead-in lists Tampa Bay's projected starter as Griffin Jax with Milwaukee's still TBA",
+     "url": "https://www.mlb.com/news/2026-world-series-game-4-storylines-brewers-rays",
+     "site": "MLB.com"
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-02",
+   "cycle": "2026-10-27",
+   "sport": "Baseball",
+   "competition": "MLB World Series",
+   "event": "MIL Brewers @ TB Rays",
+   "when_official": "",
+   "market": "Money Line",
+   "selection": "TB Rays",
+   "pick_label": "Tampa Bay Rays to avoid the sweep in Game 4 (money line, 2.54)",
+   "prediction": "Tampa Bay are priced at 2.54 (+154) to win Game 4, which is the only price on this card that pays out for the situation rather than the series. The Rays went 55-26 at home in the regular season, lost 3-2 and 5-4 in Milwaukee by a run apiece, and were only folded 10-1 in Game 3; a 3-0 deficit also asks their pitching staff to carry a full game. Take the Rays here as a ticket to force a Game 5 at Tropicana Field, not as a comeback thesis.",
+   "word_count": 90,
+   "our_line": 2.54,
+   "our_line_american": 154,
+   "implied_pct": 39.4,
+   "confidence": "low",
+   "grade": "C",
+   "p_fair": 0.375,
+   "structure": "2-way",
+   "notes": [
+    "thin sample: 2 tip(s) counted",
+    "0%/100% split - no information in the tail, capped at medium"
+   ],
+   "tips_on_pick": 0,
+   "tips_total": 2,
+   "pct": 0,
+   "olbg_url": "https://www.olbg.com/betting-tips/Baseball/MLB/MLB/MIL_Brewers_@_TB_Rays/12?event_id=160799",
+   "event_id": "160799",
+   "angle": "Publishing the other side of the same market so the two-sided price is visible.",
+   "risk": "Zero of two tipsters backed this side; the price carries no tail information and is graded C.",
+   "facts": [
+    {
+     "text": "MLB confirms the Rays host Games 3, 4 and 5 (if needed) at Tropicana Field",
+     "url": "https://www.mlb.com/news/2026-mlb-world-series-faq-schedule-times-teams-and-more",
+     "site": "MLB.com"
+    },
+    {
+     "text": "Rays were 55-26 at home in the regular season",
+     "url": "https://www.espn.com/mlb/game/_/gameId/401908045/brewers-rays",
+     "site": "ESPN"
+    },
+    {
+     "text": "OLBG's card prices Tampa Bay at 0 of 2 tips, which is why our own line is 2.54",
+     "url": "https://www.olbg.com/betting-tips/",
+     "site": ""
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-03",
+   "cycle": "2026-10-27",
+   "sport": "Baseball",
+   "competition": "MLB World Series",
+   "event": "MIL Brewers @ TB Rays",
+   "when_official": "",
+   "market": "Run Line",
+   "selection": "MIL Brewers -1.50",
+   "pick_label": "Milwaukee -1.5 runs in Game 4 (one-run margin still wins it at 1.67)",
+   "prediction": "The Brewers' run line is priced at 1.67 (-149) with one tip printed on it, and it is the more interesting number on this card because Milwaukee already covered 1.5 twice in this series, winning 3-2, 5-4 and 10-1. A two-run margin is all that is needed and the middle-order batting that chased 226 in Game 1 has produced in every game. Take Milwaukee -1.5, accepting that a one-run Brewers win in a sweep attempt kills the bet.",
+   "word_count": 78,
+   "our_line": 1.67,
+   "our_line_american": -149,
+   "implied_pct": 59.9,
+   "confidence": "medium",
+   "grade": "C",
+   "p_fair": 0.5714,
+   "structure": "2-way",
+   "notes": [
+    "thin sample: 1 tip(s) counted",
+    "0%/100% split - no information in the tail, capped at medium"
+   ],
+   "tips_on_pick": 1,
+   "tips_total": 1,
+   "pct": 100,
+   "olbg_url": "https://www.olbg.com/betting-tips/Baseball/MLB/MLB/MIL_Brewers_@_TB_Rays/12?event_id=160799",
+   "event_id": "160799",
+   "angle": "Handicap priced from the same two-tip market as the money line.",
+   "risk": "One tip on this selection; the margin market on a sweep game is coin-flip thin, graded C.",
+   "facts": [
+    {
+     "text": "Game scores 3-2, 5-4, 10-1: two of the three wins cleared a 1.5-run line",
+     "url": "https://www.espn.com/mlb/game/_/gameId/401908045/brewers-rays",
+     "site": "ESPN"
+    },
+    {
+     "text": "Brewers 103-59 with 48 runs scored margin advantage on the road",
+     "url": "https://www.espn.com/mlb/game/_/gameId/401908045/brewers-rays",
+     "site": "ESPN"
+    },
+    {
+     "text": "Milwaukee's Game 3 was a 10-1 win, won by nine runs",
+     "url": "https://www.mlb.com/news/2026-world-series-game-4-storylines-brewers-rays",
+     "site": "MLB.com"
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-04",
+   "cycle": "2026-10-27",
+   "sport": "Baseball",
+   "competition": "MLB World Series",
+   "event": "MIL Brewers @ TB Rays",
+   "when_official": "",
+   "market": "Run Line",
+   "selection": "TB Rays +1.50",
+   "pick_label": "Tampa Bay +1.5 runs against Milwaukee (2.22)",
+   "prediction": "Tampa Bay +1.5 is the contrarian half of this handicap market at 2.22 (+122) and it wins if the Rays lose by a single run, which is exactly how Game 1 went before they dropped 5-4 and 10-1. Milwaukee's three wins have produced an average margin of four runs, so the case here rests on the Rays keeping a game short rather than on them stealing the series. Small stake only: no tipster priced this side on the OLBG card, so the number is ours.",
+   "word_count": 85,
+   "our_line": 2.22,
+   "our_line_american": 122,
+   "implied_pct": 45.0,
+   "confidence": "low",
+   "grade": "C",
+   "p_fair": 0.4286,
+   "structure": "2-way",
+   "notes": [
+    "thin sample: 1 tip(s) counted",
+    "0%/100% split - no information in the tail, capped at medium"
+   ],
+   "tips_on_pick": 0,
+   "tips_total": 1,
+   "pct": 0,
+   "olbg_url": "https://www.olbg.com/betting-tips/Baseball/MLB/MLB/MIL_Brewers_@_TB_Rays/12?event_id=160799",
+   "event_id": "160799",
+   "angle": "Completes the two-sided run-line grid for the game.",
+   "risk": "Zero tips on this side; graded C and offered only so the handicap price is visible next to the -1.5 number.",
+   "facts": [
+    {
+     "text": "Game 1 finished 3-2, inside the 1.5-run line",
+     "url": "https://www.espn.com/mlb/game/_/gameId/401908045/brewers-rays",
+     "site": "ESPN"
+    },
+    {
+     "text": "Game 3 finished 10-1, well outside it",
+     "url": "https://www.mlb.com/news/2026-world-series-game-4-storylines-brewers-rays",
+     "site": "MLB.com"
+    },
+    {
+     "text": "OLBG shows 0 of 1 tips on this side of the run line",
+     "url": "https://www.olbg.com/betting-tips/",
+     "site": ""
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-05",
+   "cycle": "2026-10-27",
+   "sport": "Basketball",
+   "competition": "Euroleague",
+   "event": "Panathinaikos vs Milano",
+   "when_official": "",
+   "market": "Money Line",
+   "selection": "Panathinaikos",
+   "pick_label": "Panathinaikos AKTOR Athens to beat Olimpia Milano at home (1.67)",
+   "prediction": "Panathinaikos are top of the EuroLeague after seven rounds on 6-1, outscoring opposition 613-517 and 5-1 at home, and they have just put 85 on Baskonia. Olimpia Milano sit 19th on 1-6 with a -63 margin, 0-3 away, and they arrive on a run of five straight defeats including 81-89 to Barcelona and 97-101 at home to Dubai. Back the hosts at 1.67 (-149), tip of the day on this card with five of eight tips behind it.",
+   "word_count": 78,
+   "our_line": 1.67,
+   "our_line_american": -149,
+   "implied_pct": 59.9,
+   "confidence": "medium",
+   "grade": "A",
+   "p_fair": 0.5714,
+   "structure": "2-way",
+   "notes": [],
+   "tips_on_pick": 5,
+   "tips_total": 8,
+   "pct": 63,
+   "olbg_url": "https://www.olbg.com/betting-tips/Basketball/Euroleague/Panathinaikos_vs_Milano/4",
+   "event_id": "536177",
+   "angle": "Highest-volume basketball market on the card and the strongest structural gap on it - first against 19th.",
+   "risk": "Eight tips counted; the price is our own 5% margin line, not a sportsbook quote.",
+   "facts": [
+    {
+     "text": "Round 8: Panathinaikos AKTOR Athens (1st) v Armani Olimpia Milan (19th) is listed on the league's own competition page for Tuesday",
+     "url": "https://www.euroleaguebasketball.net/en/euroleague/?pcode=005009",
+     "site": "EuroLeague (official)"
+    },
+    {
+     "text": "Standings after 7 rounds: Panathinaikos 6-1 (613-517, +96), form W-L-W-W-W; Milano 1-6 (585-648, -63), form L-L-L-L-L",
+     "url": "https://www.365scores.com/en-us/basketball/match/euroleague-569/olimpia-milano-panathinaikos-275-1041-569",
+     "site": "365Scores (match page)"
+    },
+    {
+     "text": "Panathinaikos beat Baskonia 85-79 on 22 October; their only loss was 81-91 to Hapoel Tel Aviv on 16 October; they are 5-1 at home",
+     "url": "https://dailysports.net/stat/basketball/olimpia-milano-vs-panathinaikos-bc/",
+     "site": "DailySports (match stats page)"
+    },
+    {
+     "text": "Milano lost 97-101 at home to Dubai Basketball on 15 October and are 0-3 away from home",
+     "url": "https://www.eurohoops.net/euroleague-standings/",
+     "site": "Eurohoops"
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-06",
+   "cycle": "2026-10-27",
+   "sport": "Basketball",
+   "competition": "Euroleague",
+   "event": "Valencia vs Fenerbahce",
+   "when_official": "",
+   "market": "Money Line",
+   "selection": "Fenerbahce",
+   "pick_label": "Fenerbahce to win at Valencia (1.63)",
+   "prediction": "Fenerbahce are 6-1 and second in the EuroLeague, having won 64-61 at Olympiacos on Friday and 99-80 and 74-65 in the rounds before, and the OLBG vote sits with the visitors rather than the home floor. Valencia are 5-2 but have lost three of their four at the top end of the table, most recently 104-93 at Paris, and they were picked apart at home by Maccabi 91-88. Take Fenerbahce on the road at 1.63 (-159).",
+   "word_count": 76,
+   "our_line": 1.63,
+   "our_line_american": -159,
+   "implied_pct": 61.3,
+   "confidence": "medium",
+   "grade": "B",
+   "p_fair": 0.5833,
+   "structure": "2-way",
+   "notes": [
+    "thin sample: 6 tip(s) counted"
+   ],
+   "tips_on_pick": 4,
+   "tips_total": 6,
+   "pct": 67,
+   "olbg_url": "https://www.olbg.com/betting-tips/Basketball/Euroleague/Valencia_vs_Fenerbahce/4",
+   "event_id": "536179",
+   "angle": "The away side at a price, chosen because the tip vote and the underlying form point the same way.",
+   "risk": "Six tips only. Valencia are 5-2 in their own right, so this is a one-possession margin read, not a lock.",
+   "facts": [
+    {
+     "text": "Round 8: Valencia Basket v Fenerbahce, Tuesday 27 October, 20:30 CET",
+     "url": "https://sportando.basketball/en/euroleague-new-round-tips-off-tomorrow-panathinaikos-milano-and-valencia-fenerbahce-among-the-highlights/",
+     "site": "Sportando"
+    },
+    {
+     "text": "Fenerbahce 6-1 (565-508): 64-61 win at Olympiacos on 23 October, 74-65 over Partizan, 99-80 over Zalgiris; their only loss was 74-92 at Panathinaikos on 8 October",
+     "url": "https://dailysports.net/stat/basketball/olimpia-milano-vs-panathinaikos-bc/",
+     "site": "DailySports (match stats page)"
+    },
+    {
+     "text": "Valencia 5-2 (687-630): won 104-93 at Paris on 23 October but lost 88-91 at home to Maccabi and 97-102 at home to Olympiacos",
+     "url": "https://dailysports.net/stat/basketball/olimpia-milano-vs-panathinaikos-bc/",
+     "site": "DailySports (match stats page)"
+    },
+    {
+     "text": "Tip split on the OLBG market: 4 of 6 tips on Fenerbahce",
+     "url": "https://www.olbg.com/betting-tips/",
+     "site": ""
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-07",
+   "cycle": "2026-10-27",
+   "sport": "Basketball",
+   "competition": "Euroleague",
+   "event": "BC Dubai vs Paris",
+   "when_official": "",
+   "market": "Money Line",
+   "selection": "BC Dubai",
+   "pick_label": "Dubai Basketball to beat Paris Basketball at home (1.77)",
+   "prediction": "Dubai are 5-2 and 6th after wins over Olimpia Milano (101-97 in Italy) and Bayern Munich (107-91), while Paris are 1-6, 18th, with a -52 margin and a 1-4 home record. The OLBG card leans 4 of 7 to the hosts and the gap in point differential is 37 points across seven rounds. Take Dubai at 1.77 (-130) at 17:00 CET on Tuesday.",
+   "word_count": 63,
+   "our_line": 1.77,
+   "our_line_american": -130,
+   "implied_pct": 56.5,
+   "confidence": "medium",
+   "grade": "B",
+   "p_fair": 0.5385,
+   "structure": "2-way",
+   "notes": [
+    "thin sample: 7 tip(s) counted"
+   ],
+   "tips_on_pick": 4,
+   "tips_total": 7,
+   "pct": 57,
+   "olbg_url": "https://www.olbg.com/betting-tips/Basketball/Euroleague/BC_Dubai_vs_Paris/4",
+   "event_id": "536176",
+   "angle": "A clean standings gap: 6th against 18th with 37 points of differential between them.",
+   "risk": "Seven tips. Paris have covered as home underdogs before, and this is our number, not a book price.",
+   "facts": [
+    {
+     "text": "Round 8: Dubai Basketball v Paris Basketball, Tuesday 27 October, 17:00 CET",
+     "url": "https://sportando.basketball/en/euroleague-new-round-tips-off-tomorrow-panathinaikos-milano-and-valencia-fenerbahce-among-the-highlights/",
+     "site": "Sportando"
+    },
+    {
+     "text": "Dubai 5-2 (597-584), beat Bayern Munich 107-91 on 22 October and Olimpia Milano 101-97 on 15 October",
+     "url": "https://dailysports.net/stat/basketball/olimpia-milano-vs-panathinaikos-bc/",
+     "site": "DailySports (match stats page)"
+    },
+    {
+     "text": "Paris 1-6 (597-649), 18th, 1-4 at home, lost 93-104 at home to Valencia on 23 October",
+     "url": "https://www.eurohoops.net/euroleague-standings/",
+     "site": "Eurohoops"
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-08",
+   "cycle": "2026-10-27",
+   "sport": "Basketball",
+   "competition": "Euroleague",
+   "event": "Baskonia vs Real Madrid",
+   "when_official": "",
+   "market": "Money Line",
+   "selection": "Baskonia",
+   "pick_label": "Baskonia to get up in the home game against Real Madrid (1.90)",
+   "prediction": "Baskonia's last outing was a six-point game at the top of the table - 85-79 to league-leading Panathinaikos on 22 October - and their reward is a Tuesday-night fixture at the Fernando Buesa Arena where the OLBG vote splits three of six for the home side. Real Madrid carry the bigger name in this fixture, which is exactly why 1.90 (+190) is on the board at all: near-even-money on a split market is where an originated line can be wrong in both directions, and we are not going to dress a three-tip lean up as more than that.",
+   "word_count": 98,
+   "our_line": 1.9,
+   "our_line_american": -111,
+   "implied_pct": 52.6,
+   "confidence": "medium",
+   "grade": "B",
+   "p_fair": 0.5,
+   "structure": "2-way",
+   "notes": [
+    "thin sample: 6 tip(s) counted"
+   ],
+   "tips_on_pick": 3,
+   "tips_total": 6,
+   "pct": 50,
+   "olbg_url": "https://www.olbg.com/betting-tips/Basketball/Euroleague/Baskonia_vs_Real_Madrid/4",
+   "event_id": "536178",
+   "angle": "Priced at the near-even-money end of the card, which is where a split vote should be published rather than dropped.",
+   "risk": "Six tips, no Real Madrid record we could cite, and no injury list for either club. The price is a prior with three votes on it.",
+   "facts": [
+    {
+     "text": "Round 8: Baskonia v Real Madrid, Tuesday 27 October, 21:00 CET",
+     "url": "https://sportando.basketball/en/euroleague-new-round-tips-off-tomorrow-panathinaikos-milano-and-valencia-fenerbahce-among-the-highlights/",
+     "site": "Sportando"
+    },
+    {
+     "text": "Round 7: Baskonia lost 85-79 at Panathinaikos on 22 October (a six-point margin at the league leaders)",
+     "url": "https://dailysports.net/stat/basketball/olimpia-milano-vs-panathinaikos-bc/",
+     "site": "DailySports (match stats page)"
+    },
+    {
+     "text": "Real Madrid's own record and Round 7 result: BLANK - the standings feeds readable tonight printed positions 1, 2, 3, 6, 18 and 19 only",
+     "url": "",
+     "site": ""
+    },
+    {
+     "text": "OLBG tip split: 3 of 6 on Baskonia",
+     "url": "https://www.olbg.com/betting-tips/",
+     "site": ""
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-09",
+   "cycle": "2026-10-27",
+   "sport": "Basketball",
+   "competition": "Euroleague",
+   "event": "Crvena Zvezda vs Maccabi Tel Aviv",
+   "when_official": "",
+   "market": "Money Line",
+   "selection": "Crvena Zvezda",
+   "pick_label": "Crvena Zvezda to defend their home floor against Maccabi (1.90)",
+   "prediction": "This is the weakest-supported pick on the basketball page and it is published anyway, because the brief is to price every market: Crvena Zvezda host Maccabi Tel Aviv in Belgrade at 20:00 CET on Tuesday, two of four OLBG tips are on the home side, and we originate 1.90 (+190) from that split. What we are not doing is describing either team's form: the standings feeds readable in this window printed the top six and bottom two positions only, so Zvezda's and Maccabi's records, both clubs' injury lists and their Round 7 results are left blank and flagged rather than filled in from memory.",
+   "word_count": 104,
+   "our_line": 1.9,
+   "our_line_american": -111,
+   "implied_pct": 52.6,
+   "confidence": "medium",
+   "grade": "B",
+   "p_fair": 0.5,
+   "structure": "2-way",
+   "notes": [
+    "thin sample: 4 tip(s) counted"
+   ],
+   "tips_on_pick": 2,
+   "tips_total": 4,
+   "pct": 50,
+   "olbg_url": "https://www.olbg.com/betting-tips/Basketball/Euroleague/Crvena_Zvezda_vs_Maccabi_Tel_Aviv/4",
+   "event_id": "536175",
+   "angle": "Published with the gaps marked, because the tip split is thin and the standings number was not confirmable.",
+   "risk": "Four tips, no standings row for either club and no availability list. Read it as a priced market, not as a football opinion.",
+   "facts": [
+    {
+     "text": "Round 8: Crvena Zvezda v Maccabi Tel Aviv, Tuesday 27 October, 20:00 CET",
+     "url": "https://sportando.basketball/en/euroleague-new-round-tips-off-tomorrow-panathinaikos-milano-and-valencia-fenerbahce-among-the-highlights/",
+     "site": "Sportando"
+    },
+    {
+     "text": "OLBG market shows 2 of 4 tips on Crvena Zvezda",
+     "url": "https://www.olbg.com/betting-tips/",
+     "site": ""
+    },
+    {
+     "text": "Both clubs' records, recent results and availability: BLANK - not printed on any source readable during this capture (flag BK-001)",
+     "url": "",
+     "site": ""
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-10",
+   "cycle": "2026-10-27",
+   "sport": "Cricket",
+   "competition": "",
+   "event": "Pakistan vs Sri Lanka One Day Match",
+   "when_official": "",
+   "market": "Win Match",
+   "selection": "Pakistan",
+   "pick_label": "Pakistan to beat Sri Lanka in the tri-series match in Lahore",
+   "prediction": "Pakistan are 3 wins from 3 in this one-day tri-series on a net run rate of +0.949, having beaten Sri Lanka by 37 runs in Rawalpindi, England by 87 runs and England again by a wicket in Lahore, and 22 of the 32 tips counted on this OLBG market sit with them. Sri Lanka have played one fewer game and chased 430 to beat England only last weekend. The fourth-over-forcing Pakistan pace attack is the difference. Back Pakistan at 1.41 (-244), our highest-confidence selection of the day.",
+   "word_count": 87,
+   "our_line": 1.41,
+   "our_line_american": -244,
+   "implied_pct": 70.9,
+   "confidence": "high",
+   "grade": "A",
+   "p_fair": 0.6757,
+   "structure": "2-way",
+   "notes": [],
+   "tips_on_pick": 22,
+   "tips_total": 31,
+   "pct": 71,
+   "olbg_url": "https://www.olbg.com/betting-tips/Cricket/All_Cricket/All_Events/Pakistan_vs_Sri_Lanka_One_Day_Match/7?event_id=188868",
+   "event_id": "188868",
+   "angle": "Grade A, 32 tips, and a price inside the -250 to +10000 focus band - the pick we would put our name to.",
+   "risk": "Pakistan have effectively finished the round-robin in front and may rotate their side; no confirmed playing XI was printed on any page we read for this fixture, so no lineup claim is made here.",
+   "facts": [
+    {
+     "text": "5th match of the Pakistan ODI tri-series, Lahore, Tuesday 27 October, play 08:00 GMT / 13:00 local",
+     "url": "https://www.cricinfo.com/series/pakistan-odi-tri-series-2026-27-1550706/match-schedule-fixtures-and-results",
+     "site": "ESPNcricinfo"
+    },
+    {
+     "text": "Table after 3 rounds: Pakistan 3-0, 6 points, NRR +0.949; Sri Lanka 1-1, 2 points, NRR -0.348; England 0-3",
+     "url": "https://www.cricinfo.com/series/pakistan-odi-tri-series-2026-27-1550706/pakistan-vs-sri-lanka-5th-match-1550717/live-cricket-score",
+     "site": "ESPNcricinfo"
+    },
+    {
+     "text": "Pakistan beat Sri Lanka by 37 runs in the opener: 305 all out (Salman Agha 107; Dilshan Madhushanka/Malinga 4-46), SL 268 (Afridi 3/55, Naseem 2/43)",
+     "url": "https://www.cricinfo.com/series/pakistan-odi-tri-series-2026-27-1550706/pakistan-vs-sri-lanka-1st-match-1550713/match-report",
+     "site": "ESPNcricinfo"
+    },
+    {
+     "text": "Pakistan beat England by 87 runs at Rawalpindi and by one wicket at Lahore; Sri Lanka beat England by two wickets",
+     "url": "https://www.bbc.co.uk/sport/cricket/articles/cy0jrekkwnzo",
+     "site": "BBC Sport"
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-11",
+   "cycle": "2026-10-27",
+   "sport": "Cricket",
+   "competition": "",
+   "event": "Namibia vs Ireland 3rd ODI",
+   "when_official": "",
+   "market": "Win Match",
+   "selection": "Ireland",
+   "pick_label": "Ireland to win the third ODI in Windhoek and go 2-1 up",
+   "prediction": "The five-match series is 1-1 and 22 of 32 OLBG tips back Ireland tonight at the High Performance Oval. Paul Stirling has 56 and 77 in the two innings so far, and Namibia have been bowled out once in this series. The concern is the 322-6 chase Namibia set up by Gerhard Erasmus' career-best 156 not out, and Ireland's death bowling, which went for 1-71 and 1-74 to McDonough and Campher. Take Ireland at 1.45 (-196) on the back of a top order in form.",
+   "word_count": 85,
+   "our_line": 1.45,
+   "our_line_american": -222,
+   "implied_pct": 69.0,
+   "confidence": "high",
+   "grade": "A",
+   "p_fair": 0.6579,
+   "structure": "2-way",
+   "notes": [],
+   "tips_on_pick": 22,
+   "tips_total": 32,
+   "pct": 69,
+   "olbg_url": "https://www.olbg.com/betting-tips/Cricket/All_Cricket/All_Events/Namibia_vs_Ireland_3rd_ODI/7?event_id=188854",
+   "event_id": "188854",
+   "angle": "Grade A market with 32 tips and a real match-up story: Ireland's top order against a Namibia side that just made 321.",
+   "risk": "Namibia posted 321-6 on this ground two days ago; if the pitch stays true the 1.45 price is short for the away side.",
+   "facts": [
+    {
+     "text": "Series is 1-1 after Namibia won the 2nd ODI by 31 runs: NAM 321-6 (Erasmus 156* off 125, Frylinck 76), IRE 290 all out (Stirling 77 off 71; Brassell 4-52, Hoey 3-53)",
+     "url": "https://www.bbc.co.uk/sport/cricket/articles/cvx28ex38x7ko",
+     "site": "BBC Sport"
+    },
+    {
+     "text": "Ireland won the 1st ODI by 55 runs; Gavin Hoey took 3 wickets in that match and matched it in the 2nd",
+     "url": "https://www.bbc.co.uk/sport/cricket/articles/cvx28ex38x7ko",
+     "site": "BBC Sport"
+    },
+    {
+     "text": "Ireland are still without their leading seamer Mark Adair for this series",
+     "url": "https://www.bbc.co.uk/sport/cricket/articles/cvx28ex38x7ko",
+     "site": "BBC Sport"
+    },
+    {
+     "text": "3rd ODI, High Performance Oval, Windhoek, Tuesday 27 October, 10:00 local",
+     "url": "https://www.cricinfo.com/series/ireland-in-namibia-2026-27-1558225/namibia-vs-ireland-2nd-odi-1558232/live-cricket-score",
+     "site": "ESPNcricinfo"
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-12",
+   "cycle": "2026-10-27",
+   "sport": "Cricket",
+   "competition": "",
+   "event": "New Zealand vs India 3rd T20 Match",
+   "when_official": "",
+   "market": "Win Match",
+   "selection": "India",
+   "pick_label": "India to take the series 3-0 in Wellington",
+   "prediction": "India have chased 226 and 181 in this series and lead 2-0, both wins by four wickets, and the OLBG vote is overwhelming at 35 of 49 tips. New Zealand are without Matt Henry for the rest of the series and Lockie Ferguson for this game, and their captain James Santner conceded dropped catches were the difference on Saturday. India's reply of 181-6 came from 70-5, so this is a batting-depth match-up. We price India at 1.38 (-263) - just outside the -250 focus floor, so it is confidence but not a value bet.",
+   "word_count": 94,
+   "our_line": 1.38,
+   "our_line_american": -263,
+   "implied_pct": 72.5,
+   "confidence": "medium",
+   "grade": "A",
+   "p_fair": 0.6909,
+   "structure": "2-way",
+   "notes": [
+    "strong but outside the -250..+10000 focus band"
+   ],
+   "tips_on_pick": 35,
+   "tips_total": 49,
+   "pct": 71,
+   "olbg_url": "https://www.olbg.com/betting-tips/Cricket/All_Cricket/All_Events/New_Zealand_vs_India_3rd_T20_Match/7?event_id=188852",
+   "event_id": "188852",
+   "angle": "49 tips counted - the largest sample on the whole card.",
+   "risk": "The price is shorter than the -250 floor the brief sets for high-confidence work, and Wellington's headwind flatters the short ball. Graded medium for that reason.",
+   "facts": [
+    {
+     "text": "3rd T20I, Wellington, Tuesday 27 October, 8:00pm local / 07:00 GMT; India lead the series 2-0",
+     "url": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/match-schedule-fixtures-and-results",
+     "site": "ESPNcricinfo"
+    },
+    {
+     "text": "India chased 226 and 181 at Christchurch, winning both by four wickets - the second from 70-5 (Tilak Varma 51* off 26)",
+     "url": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-3rd-t20i-1539434/match-preview",
+     "site": "ESPNcricinfo"
+    },
+    {
+     "text": "New Zealand are without Matt Henry (rest of series) and Lockie Ferguson (this match); India are without Ishan Kishan and Vaibhav Sooryavanshi bats No. 3",
+     "url": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-3rd-t20i-1539434/match-preview",
+     "site": "ESPNcricinfo"
+    },
+    {
+     "text": "New Zealand skipped on four chances in the second innings; Santner: 'The small stuff can change games quickly'",
+     "url": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/match-schedule-fixtures-and-results",
+     "site": "ESPNcricinfo"
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-13",
+   "cycle": "2026-10-27",
+   "sport": "Cricket",
+   "competition": "",
+   "event": "Afghanistan vs Zimbabwe 1st T20 Match",
+   "when_official": "",
+   "market": "Win Match",
+   "selection": "Afghanistan",
+   "pick_label": "Afghanistan to win the opening T20I at Sharjah",
+   "prediction": "Afghanistan bowled Zimbabwe out for 169 and chased it down with 93 balls left in the UAE tri-series final nine days ago, Rashid Khan taking three and being named player of the series with 11 wickets while Ibrahim Zadran made 194 runs. Zimbabwe are without Craig Ervine and Newman Nyamhuri through injury for this match and are playing without Bradley Ngarava as well, with Sikandar Raza captaining. Fifteen of sixteen OLBG tips are on Afghanistan and the price we originate is 1.16 - a real edge, no value. Pass unless you can trade it.",
+   "word_count": 94,
+   "our_line": 1.16,
+   "our_line_american": -625,
+   "implied_pct": 86.2,
+   "confidence": "medium",
+   "grade": "A",
+   "p_fair": 0.8182,
+   "structure": "2-way",
+   "notes": [
+    "strong but outside the -250..+10000 focus band"
+   ],
+   "tips_on_pick": 15,
+   "tips_total": 16,
+   "pct": 94,
+   "olbg_url": "https://www.olbg.com/betting-tips/Cricket/All_Cricket/All_Events/Afghanistan_vs_Zimbabwe_1st_T20_Match/7?event_id=188872",
+   "event_id": "188872",
+   "angle": "Strongest form and availability gap of any match on the card.",
+   "risk": "Priced at 1.16, far short of the focus band. Confidence is high, the bet is not - flagged as a no-bet.",
+   "facts": [
+    {
+     "text": "1st T20I of a three-match series, Sharjah Cricket Stadium, Tuesday 27 October, 18:30 local (14:30 GMT)",
+     "url": "https://www.espn.com/cricket/series/24799/game/1555120/afghanistan-vs-zimbabwe-1st-t20i-24799",
+     "site": "ESPN (match centre)"
+    },
+    {
+     "text": "Afghanistan beat Zimbabwe by 7 wickets in the UAE tri-series final on 23 October: ZIM 169 (Raza 68), AFG 170/3 with 93 balls unused; Rashid 3/41, Nabi 2/25",
+     "url": "https://www.espn.com/cricket/series/10931/game/1556871/afghanistan-vs-zimbabwe-final-uae-odi-tri-series-2026-27",
+     "site": "ESPN"
+    },
+    {
+     "text": "Tri-series leading run-scorer Ibrahim Zadran 194 at a 132.19 strike rate; leading wicket-taker Rashid Khan 11",
+     "url": "https://www.cricinfo.com/series/afghanistan-v-zimbabwe-2026-27-1555105/afghanistan-vs-zimbabwe-1st-t20i-1555120/live-cricket-score",
+     "site": "ESPNcricinfo"
+    },
+    {
+     "text": "Zimbabwe are without Ervine and Nyamhuri (injury) for this match and Ngarava is absent, Raza leading the side",
+     "url": "https://cricketaddictor.com/cricket-news/afg-vs-zim-playing-11-today-live-streaming-pitch-weather-afghanistan-vs-zimbabwe-1st-t20i-2026-465277/",
+     "site": "Cricket Addictor"
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-14",
+   "cycle": "2026-10-27",
+   "sport": "Cricket",
+   "competition": "Australia tour of South Africa - 3rd Test",
+   "event": "South Africa vs Australia",
+   "when_official": "",
+   "market": "Win Match",
+   "selection": "South Africa",
+   "pick_label": "South Africa to win the series-deciding third Test at Newlands",
+   "prediction": "This series is 1-1: Australia won the first Test at Durban by 214 runs and South Africa won the second at Gqeberha by an innings and 31 runs after Marco Jansen took 5-33 and Australia were shot out for 99 and 295. South Africa are unchanged apart from Gerald Coetzee replacing the injured Anrich Nortje, while Australia are selecting around Steven Smith's neck, which has cost him 25, 27, 28 and 3 this series. At 2.67 (+167) on a Newlands pitch that just produced an innings margin, back South Africa.",
+   "word_count": 90,
+   "our_line": 2.67,
+   "our_line_american": 167,
+   "implied_pct": 37.5,
+   "confidence": "low",
+   "grade": "A",
+   "p_fair": 0.3571,
+   "structure": "3-way (OLBG printed a Draw/Tie row on this match)",
+   "notes": [],
+   "tips_on_pick": 3,
+   "tips_total": 8,
+   "pct": 38,
+   "olbg_url": "https://www.olbg.com/betting-tips/Cricket/All_Cricket/All_Events/South_Africa_vs_Australia/7?event_id=188835",
+   "event_id": "188835",
+   "angle": "The best combination of price (+167, inside the focus band), sample (8 tips) and confirmed team news on the card.",
+   "risk": "Only 3 of 8 OLBG tips are on South Africa and the Draw is priced at the same 2.67, so a fifth-day draw is the live risk. Start time is also reported inconsistently (10:00 vs 10:30 local) - see flags.",
+   "facts": [
+    {
+     "text": "3rd Test, Newlands, Cape Town, 27-31 October; series level after Australia won the 1st Test by 214 runs and South Africa the 2nd by an innings and 31 runs",
+     "url": "https://www.cricket.com.au/news/4597818/south-africa-v-australia-third-test-match-preview-guide-cape-town-newlands-broadcast-details-how-to-watch-team-news-session-start-times-2026",
+     "site": "cricket.com.au"
+    },
+    {
+     "text": "South Africa XI confirmed: Markram, Ackerman, Bedingham, Bavuma (c), Breetzke, Rickelton (wk), Mulder, Jansen, Harmer, Coetzee, Rabada - Coetzee in for the injured Anrich Nortje (groin, ruled out of the series)",
+     "url": "https://www.cricket.com.au/news/4597818/south-africa-v-australia-third-test-match-preview-guide-cape-town-newlands-broadcast-details-how-to-watch-team-news-session-start-times-2026",
+     "site": "cricket.com.au"
+    },
+    {
+     "text": "Cameron Green (abdominal strain) and Josh Inglis (broken finger) are back at full fitness; Maharaj starts on the bench",
+     "url": "https://www.cricket.com.au/news/4597818/south-africa-v-australia-third-test-match-preview-guide-cape-town-newlands-broadcast-details-how-to-watch-team-news-session-start-times-2026",
+     "site": "cricket.com.au"
+    },
+    {
+     "text": "Steven Smith faces a fitness test on his neck after scores of 25, 27, 28 and 3 in the series; Maddinson has been omitted and flown home",
+     "url": "https://www.cricinfo.com/story/sa-vs-aus-3rd-wtc-test-steven-smith-faces-fitness-test-ahead-of-test-series-decider-in-cape-town-1560077",
+     "site": "ESPNcricinfo"
+    },
+    {
+     "text": "Australia 99 all out (Jansen 5-33) and 295 in the 2nd Test despite Travis Head's 121, follow-on enforced from 326 in front",
+     "url": "https://www.skysports.com/cricket/news/13602302/south-africa-vs-australia-proteas-complete-emphatic-innings-victory-to-level-three-test-series",
+     "site": "Sky Sports"
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-15",
+   "cycle": "2026-10-27",
+   "sport": "Darts",
+   "competition": "All Darts",
+   "event": "PDC World Championship 2027",
+   "when_official": "",
+   "market": "Win Tournament",
+   "selection": "Luke Littler",
+   "pick_label": "Luke Littler to retain the world title (1.76)",
+   "prediction": "Littler has now won two world championships in three appearances and is the man who retained the crown, beating Gian van Veen 7-1 in the final at Alexandra Palace on 3 January at a 106.02 average, losing only four sets in seven matches. He is the current world number one, won the 2026 World Matchplay and Premier League, and 22 of the 36 tips on this OLBG outright are on him. Our line is 1.76 (-132) on the tournament that runs 11 December to 3 January, with the top 32 of the Order of Merit seeded.",
+   "word_count": 96,
+   "our_line": 1.76,
+   "our_line_american": -132,
+   "implied_pct": 56.8,
+   "confidence": "medium",
+   "grade": "A",
+   "p_fair": 0.5417,
+   "structure": "outright - field size not printed on OLBG, 8 assumed (U-004)",
+   "notes": [],
+   "tips_on_pick": 22,
+   "tips_total": 36,
+   "pct": 61,
+   "olbg_url": "https://www.olbg.com/betting-tips/Darts/All_Darts/All_Events/PDC_World_Championship_2027/15?event_id=26023",
+   "event_id": "26023",
+   "angle": "Ante-post outright priced inside the focus band with 36 tips behind it, so the price is not a small-sample artefact.",
+   "risk": "This is an eight-month outcome, not a match. Van Veen, Humphries and van Gerwen are all in the field and the seeded 32 do not have to play each other early.",
+   "facts": [
+    {
+     "text": "Littler beat Gian van Veen 7-1 in the 2026 final at Alexandra Palace (3 January 2026), averaging 106.02 with 16 maximums and losing four sets in the whole event",
+     "url": "https://www.skysports.com/darts/news/12040/13489993/world-darts-championship-2026-luke-littler-thrashes-gian-van-veen-in-final-to-retain-title-at-alexandra-palace",
+     "site": "Sky Sports"
+    },
+    {
+     "text": "The 2026/27 PDC World Championship runs 11 December 2026 to 3 January 2027 at Alexandra Palace, \u00a35m prize fund, \u00a31m to the winner, 128 players, top 32 of the Order of Merit seeded",
+     "url": "https://www.pdc.tv/news/2026/october/26/2026-players-championships-31-32-entries-confirmed",
+     "site": "PDC (official)"
+    },
+    {
+     "text": "Littler is world number one and also won the 2026 World Matchplay and Premier League",
+     "url": "https://www.pdc.tv/news/2026/october/26/2026-players-championships-31-32-entries-confirmed",
+     "site": "PDC (official)"
+    },
+    {
+     "text": "OLBG outright market: 22 of 36 tips on Littler; printed event date 03 Jan 2027 is the final day of the tournament",
+     "url": "https://www.olbg.com/betting-tips/",
+     "site": ""
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-16",
+   "cycle": "2026-10-27",
+   "sport": "Darts",
+   "competition": "All Darts",
+   "event": "Players Championship 31",
+   "when_official": "",
+   "market": "Win Tournament",
+   "selection": "Nathan Aspinall",
+   "pick_label": "Nathan Aspinall each-way case in a thinned-out Den Bosch field (4.90)",
+   "prediction": "Players Championship 31 is at the Maaspoort in Den Bosch on Wednesday 28 October with 128 players from a 13:00 CET start, and the entry list has been hollowed out: Luke Humphries, Gerwyn Price, Rob Cross, Jonny Clayton, Stephen Bunting, Josh Rock and Mike de Decker are all among the withdrawals. Aspinall is in the draw and the single selection the OLBG market carries, with one of three tips, so we originate 4.90 (+390) on him. Thin market, honest price, no pretending otherwise.",
+   "word_count": 83,
+   "our_line": 4.9,
+   "our_line_american": 390,
+   "implied_pct": 20.4,
+   "confidence": "low",
+   "grade": "B",
+   "p_fair": 0.1944,
+   "structure": "outright - field size not printed on OLBG, 8 assumed (U-004)",
+   "notes": [
+    "thin sample: 3 tip(s) counted"
+   ],
+   "tips_on_pick": 1,
+   "tips_total": 3,
+   "pct": 33,
+   "olbg_url": "https://www.olbg.com/betting-tips/Darts/All_Darts/All_Events/Players_Championship_31/15?event_id=32446",
+   "event_id": "32446",
+   "angle": "Published because the market exists and the field is materially weaker than the entry list implies.",
+   "risk": "Three tips total and van Veen/van Gerwen in a Den Bosch field: graded B, low confidence, and the withdrawal list should be re-read at the morning deadline.",
+   "facts": [
+    {
+     "text": "Players Championships 31 and 32 are Wednesday 28 and Thursday 29 October at the Maaspoort, Den Bosch, 128 players, 13:00 CET, \u00a3125,000 each",
+     "url": "https://www.pdc.tv/news/2026/october/26/2026-players-championships-31-32-entries-confirmed",
+     "site": "PDC (official)"
+    },
+    {
+     "text": "Luke Littler, Luke Humphries, Gerwyn Price, Rob Cross, Jonny Clayton, Stephen Bunting, Josh Rock and others withdrew from both events",
+     "url": "https://dartsnews.com/pdc/entries-players-championship-31-and-32-mass-withdrawals-as-luke-littler-and-many-other-world-class-players-skip-den-bosch",
+     "site": "Darts News"
+    },
+    {
+     "text": "Michael van Gerwen and Gian van Veen play on home soil; Aspinall is entered",
+     "url": "https://www.pdc.tv/news/2026/october/26/2026-players-championships-31-32-entries-confirmed",
+     "site": "PDC (official)"
+    },
+    {
+     "text": "OLBG market carries 1 of 3 tips on Aspinall",
+     "url": "https://www.olbg.com/betting-tips/",
+     "site": ""
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-17",
+   "cycle": "2026-10-27",
+   "sport": "Gaelic Sports",
+   "competition": "Gaelic Football",
+   "event": "Kanturk v Eire Og Cor",
+   "when_official": "",
+   "market": "Handicap",
+   "selection": "Eire Og Cor +0.50",
+   "pick_label": "Eire Og +0.5 in the Cork intermediate club tie (1.27)",
+   "prediction": "All six tips counted on this OLBG handicap market are on Eire Og +0.5, which is a level-ballot line: a draw is a win for the selection and only a straight defeat loses it. Club championship fixtures at this level are played to a result, with a replay or extra time when the scores are level, so the half-point cushion matters less than the market's belief that these two are within a point of each other. We price it at 1.27 and grade it B.",
+   "word_count": 85,
+   "our_line": 1.27,
+   "our_line_american": -370,
+   "implied_pct": 78.7,
+   "confidence": "medium",
+   "grade": "B",
+   "p_fair": 0.75,
+   "structure": "2-way",
+   "notes": [
+    "thin sample: 6 tip(s) counted",
+    "0%/100% split - no information in the tail, capped at medium"
+   ],
+   "tips_on_pick": 6,
+   "tips_total": 6,
+   "pct": 100,
+   "olbg_url": "https://www.olbg.com/betting-tips/Gaelic_Football/All_Gaelic_Football/All_Events/Kanturk_v_Eire_Og_Cor/25?event_id=3531",
+   "event_id": "3531",
+   "angle": "Published so the handicap market is not silently dropped, and graded B on sample alone.",
+   "risk": "The fixture itself is unconfirmed against the GAA's own fixtures pages, and 6 of 6 tips with no opposing side printed is a degenerate split. Do not stake on this.",
+   "facts": [
+    {
+     "text": "OLBG lists this Cork club fixture with a +0.5 / -0.5 handicap and 6 of 6 tips on Eire Og +0.5, printed for Sunday 01 November 09:00 (US Eastern on the card)",
+     "url": "https://www.olbg.com/betting-tips/",
+     "site": ""
+    },
+    {
+     "text": "Competition, grade and venue are not printed anywhere on the OLBG card: left BLANK rather than inferred",
+     "url": "",
+     "site": ""
+    },
+    {
+     "text": "BLANK - no official GAA fixture listing for this pairing could be retrieved at capture time",
+     "url": "",
+     "site": ""
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-18",
+   "cycle": "2026-10-27",
+   "sport": "Gaelic Sports",
+   "competition": "Gaelic Football",
+   "event": "Fr Caseys v Kildimo Pallaskenry",
+   "when_official": "",
+   "market": "Handicap",
+   "selection": "Kildimo Pallaskenry +3.50",
+   "pick_label": "Kildimo Pallaskenry +3.5 points in the Limerick club tie (1.55)",
+   "prediction": "Five of seven tips on this market sit with Kildimo Pallaskenry +3.5, a cushion of more than a converted point either way, and our originated price is 1.55 (-182). This is a club championship handicap priced entirely from the tip vote: neither the round, the grade nor either team's most recent result was printed on the OLBG card and no club-results source we could reach carried the fixture at capture time, so those fields stay blank on the table rather than guessed at.",
+   "word_count": 83,
+   "our_line": 1.55,
+   "our_line_american": -182,
+   "implied_pct": 64.5,
+   "confidence": "medium",
+   "grade": "B",
+   "p_fair": 0.6154,
+   "structure": "2-way",
+   "notes": [
+    "thin sample: 7 tip(s) counted"
+   ],
+   "tips_on_pick": 5,
+   "tips_total": 7,
+   "pct": 71,
+   "olbg_url": "https://www.olbg.com/betting-tips/Gaelic_Football/All_Gaelic_Football/All_Events/Fr_Caseys_v_Kildimo_Pallaskenry/25?event_id=3537",
+   "event_id": "3537",
+   "angle": "Second Gaelic handicap kept on the board with its limits stated plainly.",
+   "risk": "Thin, unconfirmed fixture data. Flagged rather than filled.",
+   "facts": [
+    {
+     "text": "OLBG market prints 5 of 7 tips on Kildimo Pallaskenry +3.5 for a Sunday 01 November 10:30 (US Eastern) start",
+     "url": "https://www.olbg.com/betting-tips/",
+     "site": ""
+    },
+    {
+     "text": "Round, grade, venue and both teams' last results: BLANK - not available on any retrievable official source at capture",
+     "url": "",
+     "site": ""
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-19",
+   "cycle": "2026-10-27",
+   "sport": "Gaelic Sports",
+   "competition": "Gaelic Football",
+   "event": "All Ireland Football Championship 2027",
+   "when_official": "",
+   "market": "Win Tournament",
+   "selection": "Kerry",
+   "pick_label": "Kerry to win the 2027 All-Ireland football championship (1.98)",
+   "prediction": "Kerry hold six of the eight tips on this OLBG Sam Maguire outright, priced at 1.98 (-102) for the final on 25 July 2027. It is an ante-post market, so the shortlist of counties, the provincial championship results and the Panel's 2026 landing are not yet settled - and that is the whole point of the price. We are comfortable calling this a lean rather than a bet, with the market's own two dissenting tips on Armagh, Derry and company still unpriced.",
+   "word_count": 82,
+   "our_line": 1.98,
+   "our_line_american": -102,
+   "implied_pct": 50.5,
+   "confidence": "low",
+   "grade": "A",
+   "p_fair": 0.4821,
+   "structure": "outright - field size not printed on OLBG, 8 assumed (U-004)",
+   "notes": [],
+   "tips_on_pick": 6,
+   "tips_total": 8,
+   "pct": 75,
+   "olbg_url": "https://www.olbg.com/betting-tips/Gaelic_Football/All_Gaelic_Football/All_Events/All_Ireland_Football_Championship_2027/25?event_id=3327",
+   "event_id": "3327",
+   "angle": "Grade A on sample within an eight-way structure, priced at 1.98 inside the focus band.",
+   "risk": "Twelve months out with no squad, management or championship-path information we could put our name to; the assumed 1/8 prior moves this price more than any fact on the row.",
+   "facts": [
+    {
+     "text": "OLBG outright: 6 of 8 tips on Kerry, market dated 25 Jul 2027 (All-Ireland football final day)",
+     "url": "https://www.olbg.com/betting-tips/",
+     "site": ""
+    },
+    {
+     "text": "Field size is not printed on the OLBG card, so our prior assumes 8 entries - see flag U-004",
+     "url": "https://www.olbg.com/betting-tips/",
+     "site": ""
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-20",
+   "cycle": "2026-10-27",
+   "sport": "Gaelic Sports",
+   "competition": "Hurling",
+   "event": "All Ireland Hurling Championship 2027",
+   "when_official": "",
+   "market": "Win Hurling",
+   "selection": "Galway",
+   "pick_label": "Galway in the 2027 All-Ireland hurling outright (2.95)",
+   "prediction": "Galway are the most-backed side on the OLBG Liam MacCarthy outright with seven of eighteen tips, and we price them at 2.95 (+195) for the final on 18 July 2027. The field is genuinely wide - eleven of the eighteen tips are spread across Limerick, Cork, Kilkenny, Clare and Tipperary - so this is a value lean on a team that has been in every recent championship argument rather than a claim about a defined hierarchy. No 2026 results or panel news are attached to this row because none could be confirmed from an official source at capture time.",
+   "word_count": 99,
+   "our_line": 2.95,
+   "our_line_american": 195,
+   "implied_pct": 33.9,
+   "confidence": "low",
+   "grade": "A",
+   "p_fair": 0.3229,
+   "structure": "outright - field size not printed on OLBG, 8 assumed (U-004)",
+   "notes": [],
+   "tips_on_pick": 7,
+   "tips_total": 18,
+   "pct": 39,
+   "olbg_url": "https://www.olbg.com/betting-tips/Hurling/All_Hurling/All_Events/All_Ireland_Hurling_Championship_2027/26?event_id=675",
+   "event_id": "675",
+   "angle": "The most-backed selection in a wide, genuinely split outright market.",
+   "risk": "Ante-post a year out, field size assumed at 8, zero team news. Graded C on evidence even though the sample is 18.",
+   "facts": [
+    {
+     "text": "OLBG outright: 7 of 18 tips on Galway, market dated 18 Jul 2027",
+     "url": "https://www.olbg.com/betting-tips/",
+     "site": ""
+    },
+    {
+     "text": "Limerick, Cork, Kilkenny, Clare and Tipperary share the remaining 11 tips on the same market",
+     "url": "https://www.olbg.com/betting-tips/",
+     "site": ""
+    },
+    {
+     "text": "BLANK - no official GAA source for the 2026 championship result or the 2027 entry list was retrieved at capture",
+     "url": "",
+     "site": ""
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-21",
+   "cycle": "2026-10-27",
+   "sport": "Handball",
+   "competition": "EHF Champions League",
+   "event": "Wisla Plock vs Nantes",
+   "when_official": "",
+   "market": "Money Line",
+   "selection": "Nantes",
+   "pick_label": "Nantes to win at Wisla Plock and take the last main-round place (4.05)",
+   "prediction": "Three clubs in this group are on six points with one main-round ticket left and Nantes travel to Plock knowing a win does it themselves. Nantes are 3-0-2 with a 142-143 record, they took revenge on Melsungen 33-25 in Round 5, and they already beat Plock 26-25 in the first meeting, so the away side has the head-to-head. Only 2 of 11 OLBG tips back them and we originate 4.05 (+305) - a live price on a fixture the market is mispricing by leaning on the draw.",
+   "word_count": 87,
+   "our_line": 4.05,
+   "our_line_american": 305,
+   "implied_pct": 24.7,
+   "confidence": "low",
+   "grade": "A",
+   "p_fair": 0.2353,
+   "structure": "3-way (draw is a listed outcome)",
+   "notes": [],
+   "tips_on_pick": 2,
+   "tips_total": 11,
+   "pct": 18,
+   "olbg_url": "https://www.olbg.com/betting-tips/Handball/All_Handball/All_Events/Wisla_Plock_vs_Nantes?event_id=12138",
+   "event_id": "12138",
+   "angle": "The strongest handball case on the card: a qualification stake, a head-to-head win and a price of +305.",
+   "risk": "The OLBG market's own 8-of-11 tip vote is on the draw, which is graded C and excluded from high confidence - read the flagged note on this fixture before staking.",
+   "facts": [
+    {
+     "text": "Group B after 5 rounds: Wisla Plock 3-0-2 (141-136, 6 pts), Nantes 3-0-2 (142-143, 6 pts), Melsungen 6 pts, Vardar 2 - three clubs still in contention for the main round",
+     "url": "https://ehfcl.eurohandball.com/men/2026-27/standings/",
+     "site": "EHF Champions League (official)"
+    },
+    {
+     "text": "Round 6 fixture: Orlen Wisla Plock v HBC Nantes, Wednesday 28 October, 18:45 local (17:45 CET)",
+     "url": "https://www.eurohandball.com/en/club/UlvtLsTlg8pJWiC7dxqtTg/HBCNantes/",
+     "site": "EHF (official club page)"
+    },
+    {
+     "text": "Nantes won the first meeting 26-25; Nantes beat Melsungen 33-25 in Round 5, Plock beat Vardar 33-32",
+     "url": "https://ehfcl.eurohandball.com/men/2026-27/news/en/magdeburg-aalborg-and-paris-in-main-round-four-clubs-out/",
+     "site": "EHF Champions League (official)"
+    },
+    {
+     "text": "EHF's own round-6 preview lists all three main-round scenarios as still open",
+     "url": "https://www.eurohandball.com/en/news/en/three-main-round-spots-still-open-before-final-round-6",
+     "site": "EHF (official)"
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-22",
+   "cycle": "2026-10-27",
+   "sport": "Handball",
+   "competition": "EHF Champions League",
+   "event": "Wisla Plock vs Nantes",
+   "when_official": "",
+   "market": "Money Line",
+   "selection": "Wisla Plock",
+   "pick_label": "Wisla Plock to win at home (5.40) - the other side of the same market",
+   "prediction": "Plock's home record in this group is the spine of the case against us: 141-136 in a five-match group with wins over Melsungen 25-24 and Vardar 33-32, meaning they have won two one-possession games in front of their own crowd and lost the other meeting in Nantes by a single point. We price Plock at 5.40 (+440), a number that only exists because just one of eleven tips sat with them while eight sat on the tie. Both sides are published so the grid is complete and the clustering is visible.",
+   "word_count": 91,
+   "our_line": 5.4,
+   "our_line_american": 440,
+   "implied_pct": 18.5,
+   "confidence": "low",
+   "grade": "A",
+   "p_fair": 0.1765,
+   "structure": "3-way (draw is a listed outcome)",
+   "notes": [],
+   "tips_on_pick": 1,
+   "tips_total": 11,
+   "pct": 9,
+   "olbg_url": "https://www.olbg.com/betting-tips/Handball/All_Handball/All_Events/Wisla_Plock_vs_Nantes?event_id=12138",
+   "event_id": "12138",
+   "angle": "Two-sided publishing: the away price and the home price on one fixture, side by side.",
+   "risk": "1 of 11 tips. The 5.40 is an artefact of a draw-clustered market as much as a real assessment; graded C for the fixture overall.",
+   "facts": [
+    {
+     "text": "Group B: Plock 3-0-2, 141-136, +5 differential on 6 points with 5 rounds played",
+     "url": "https://ehfcl.eurohandball.com/men/2026-27/standings/",
+     "site": "EHF Champions League (official)"
+    },
+    {
+     "text": "Plock beat Melsungen 25-24 and Vardar 33-32, losing 25-26 at Nantes in the first meeting",
+     "url": "https://ehfcl.eurohandball.com/men/2026-27/standings/",
+     "site": "EHF Champions League (official)"
+    },
+    {
+     "text": "Round 6 plays Wednesday 28 October, 18:45 in Plock",
+     "url": "https://www.eurohandball.com/en/club/UlvtLsTlg8pJWiC7dxqtTg/HBCNantes/",
+     "site": "EHF (official club page)"
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-23",
+   "cycle": "2026-10-27",
+   "sport": "Handball",
+   "competition": "EHF Champions League",
+   "event": "PSG Handball vs Aalborg Handbold",
+   "when_official": "",
+   "market": "Money Line",
+   "selection": "Aalborg Handbold",
+   "pick_label": "Aalborg to take both points in Paris (4.76)",
+   "prediction": "Aalborg lead this group on nine points from five matches, 170-145, and are still unbeaten - four wins and a draw - having already booked their main-round place. They held PSG to 33-33 when the sides met in September, which is the only time these two have cancelled each other out this season, and PSG's one group defeat came at Zagreb. The OLBG market puts one of nine tips on Aalborg and we price the Danes at 4.76 (+376).",
+   "word_count": 79,
+   "our_line": 4.76,
+   "our_line_american": 376,
+   "implied_pct": 21.0,
+   "confidence": "low",
+   "grade": "A",
+   "p_fair": 0.2,
+   "structure": "3-way (draw is a listed outcome)",
+   "notes": [],
+   "tips_on_pick": 1,
+   "tips_total": 9,
+   "pct": 11,
+   "olbg_url": "https://www.olbg.com/betting-tips/Handball/All_Handball/All_Events/PSG_Handball_vs_Aalborg_Handbold?event_id=12134",
+   "event_id": "12134",
+   "angle": "Group-leaders-and-draw-nothing angle at +376, plus the seeded tie vote shows the market is not on the teams at all.",
+   "risk": "One of nine tips. Nothing on either side's availability, and a dead-rubber incentive for Aalborg, who already qualify.",
+   "facts": [
+    {
+     "text": "Group C after 5 rounds: Aalborg 4-1-0, 170-145, 9 pts (leaders); PSG 3-1-1, 182-157, 7 pts; both already through",
+     "url": "https://ehfcl.eurohandball.com/men/2026-27/standings/",
+     "site": "EHF Champions League (official)"
+    },
+    {
+     "text": "First meeting ended 33-33 (Aalborg v PSG, 9 September 2026); head-to-head over the fixture's history is 6-1-1",
+     "url": "https://www.eurohandball.com/en/news/en/three-main-round-spots-still-open-before-final-round-6",
+     "site": "EHF (official)"
+    },
+    {
+     "text": "Round 6: Paris Saint-Germain Handball v Aalborg Handbold, Stade Pierre de Coubertin, Wednesday 28 October, 20:45 CET, EHFTV",
+     "url": "https://www.eurohandball.com/en/news/en/three-main-round-spots-still-open-before-final-round-6",
+     "site": "EHF (official)"
+    },
+    {
+     "text": "PSG beat Celje 46-35 but lost 28-29 at Zagreb in the group",
+     "url": "https://ehfcl.eurohandball.com/men/2026-27/news/en/magdeburg-aalborg-and-paris-in-main-round-four-clubs-out/",
+     "site": "EHF Champions League (official)"
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-24",
+   "cycle": "2026-10-27",
+   "sport": "Handball",
+   "competition": "EHF Champions League",
+   "event": "PSG Handball vs Aalborg Handbold",
+   "when_official": "",
+   "market": "Money Line",
+   "selection": "PSG Handball",
+   "pick_label": "PSG to win at home (4.76) with the goal difference in play",
+   "prediction": "PSG's price on this card is identical to Aalborg's at 4.76 and that symmetry is the story: the tip vote is sitting on the draw and both teams are priced as afterthoughts. The home side have outscored group opposition 182-157, including a 46-35 win over Celje, and they know the seeding across the group decides who plays whom in the main round. On the numbers in front of us the match-up is even; on the price, PSG at 4.76 is where the market is clearly wrong if either team has to win.",
+   "word_count": 92,
+   "our_line": 4.76,
+   "our_line_american": 376,
+   "implied_pct": 21.0,
+   "confidence": "low",
+   "grade": "A",
+   "p_fair": 0.2,
+   "structure": "3-way (draw is a listed outcome)",
+   "notes": [],
+   "tips_on_pick": 1,
+   "tips_total": 9,
+   "pct": 11,
+   "olbg_url": "https://www.olbg.com/betting-tips/Handball/All_Handball/All_Events/PSG_Handball_vs_Aalborg_Handbold?event_id=12134",
+   "event_id": "12134",
+   "angle": "The published second half of the same two-sided market.",
+   "risk": "Draw-clustered market: the 4.76 is our number off a 1/9 tip share, and no team news was retrievable for either club.",
+   "facts": [
+    {
+     "text": "PSG 3-1-1, 182-157 (+25), 7 points after 5 rounds in Group C",
+     "url": "https://ehfcl.eurohandball.com/men/2026-27/standings/",
+     "site": "EHF Champions League (official)"
+    },
+    {
+     "text": "PSG 46-35 v Celje; lost 28-29 at Zagreb; drew 33-33 with Aalborg in September",
+     "url": "https://ehfcl.eurohandball.com/men/2026-27/news/en/magdeburg-aalborg-and-paris-in-main-round-four-clubs-out/",
+     "site": "EHF Champions League (official)"
+    },
+    {
+     "text": "OLBG market: 1 of 9 tips on PSG, 1 of 9 on Aalborg, 7 of 9 on the tie",
+     "url": "https://www.olbg.com/betting-tips/",
+     "site": ""
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-25",
+   "cycle": "2026-10-27",
+   "sport": "Ice Hockey",
+   "competition": "NHL",
+   "event": "BOS Bruins @ CAR Hurricanes",
+   "when_official": "",
+   "market": "Puck Line",
+   "selection": "BOS Bruins +1.50",
+   "pick_label": "Boston +1.5 goals against Carolina (1.52)",
+   "prediction": "Boston go to Raleigh having won seven of their first twelve games (9-2-1, 19 points) with 4.00 goals a game for and 2.17 against, and Jeremy Swayman is 6-1-1 at a 1.98 goals-against and .928 save percentage. Carolina lead the East on 9-2-2 but their support-goalie numbers are the crack: Bussi is 2-2-2 at 3.27 and .865 behind Kochetkov's 1.98. On a +1.5 cushion the Bruins cover in a regulation loss by one, which is how three of their games have already gone. Take Boston +1.5 at 1.52 (-192), 8:00pm ET at Lenovo Center.",
+   "word_count": 94,
+   "our_line": 1.52,
+   "our_line_american": -192,
+   "implied_pct": 65.8,
+   "confidence": "medium",
+   "grade": "C",
+   "p_fair": 0.625,
+   "structure": "2-way",
+   "notes": [
+    "thin sample: 2 tip(s) counted",
+    "0%/100% split - no information in the tail, capped at medium"
+   ],
+   "tips_on_pick": 2,
+   "tips_total": 2,
+   "pct": 100,
+   "olbg_url": "https://www.olbg.com/betting-tips/Ice_Hockey/NHL/NHL/BOS_Bruins_@_CAR_Hurricanes/13?event_id=200104",
+   "event_id": "200104",
+   "angle": "The only NHL market on the card with a two-sided split and a structural cushion, priced inside the band.",
+   "risk": "Two tips on the market and Boston are the road side against the Conference leader; the +1.5 line is ours, not a book price. Note Taylor Hall: the NHL's status report had him activated on 26 October while ESPN's injury page still lists him as IR - unresolved, see flags.",
+   "facts": [
+    {
+     "text": "Game: Boston at Carolina, Tuesday 27 October, 8:00pm ET, Lenovo Center, on ESPN",
+     "url": "https://www.espn.com/nhl/game/_/gameId/401892586/bruins-hurricanes",
+     "site": "ESPN (NHL injury page)"
+    },
+    {
+     "text": "Boston 9-2-1 (19 points), 4.00 goals for / 2.17 against per game; Carolina 9-2-2 (20 points), 3.92 for / 2.46 against",
+     "url": "https://www.nhl.com/standings",
+     "site": "NHL.com"
+    },
+    {
+     "text": "Goaltending listed on the game page: Swayman 6-1-1, 1.98 GAA, .928 SV%; Boston's DiPietro 2-1-0, 1.69, .941. Carolina's Bussi 2-2-2, 3.27 GAA, .865 SV%",
+     "url": "https://www.espn.com/nhl/game/_/gameId/401892586/bruins-hurricanes",
+     "site": "ESPN (NHL injury page)"
+    },
+    {
+     "text": "Carolina injuries on the same page: Taylor Hall (IR, estimated 7 November), Jordan Staal (IR, estimated 3 December), Mark Jankowski out, Alexander Nikishin not released; Sebastian Aho has 18 points in 13 games",
+     "url": "https://www.espn.com/nhl/game/_/gameId/401892586/bruins-hurricanes",
+     "site": "ESPN (NHL injury page)"
+    },
+    {
+     "text": "Sebastian Aho: 7 goals, 18 points, plus-6, 38 shots, 12 hits in 13 games; Carolina beat St. Louis 4-0 on Saturday",
+     "url": "https://www.espn.com/nhl/game/_/gameId/401892586/bruins-hurricanes",
+     "site": "ESPN (NHL injury page)"
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-26",
+   "cycle": "2026-10-27",
+   "sport": "Ice Hockey",
+   "competition": "Finland SM Liiga",
+   "event": "Kalpa vs Sport",
+   "when_official": "",
+   "market": "Money Line",
+   "selection": "Kalpa",
+   "pick_label": "KalPa over Vaasan Sport in Kuopio (1.31 originated, 5 of 5 tips)",
+   "prediction": "KalPa and Sport are level on 19 points - KalPa 6-8 from 15 games at 37-37, Sport 5-8-1-2 from 16 at 30-46 - and every one of the five tips counted on the OLBG market is on the home side. KalPa's edge is the goal differential: even across the league - KalPa have not been outscored at 37-37, while Sport are sixteen in the red on 30 scored and 46 conceded. The fixture is Tuesday 18:30 Finnish time in Kuopio. We originate KalPa at 1.31 and label it confidence rather than value, because five tips do not make a market.",
+   "word_count": 100,
+   "our_line": 1.31,
+   "our_line_american": -323,
+   "implied_pct": 76.3,
+   "confidence": "medium",
+   "grade": "B",
+   "p_fair": 0.7273,
+   "structure": "2-way",
+   "notes": [
+    "thin sample: 5 tip(s) counted",
+    "0%/100% split - no information in the tail, capped at medium"
+   ],
+   "tips_on_pick": 5,
+   "tips_total": 5,
+   "pct": 100,
+   "olbg_url": "https://www.olbg.com/betting-tips/Ice_Hockey/Other/Finland_SM_Liiga/Kalpa_vs_Sport/13",
+   "event_id": "200081",
+   "angle": "A 100% tip vote is not evidence, so the write-up rests on the differential instead.",
+   "risk": "Five tips, one-sided split (capped medium by rule), and the club's own published schedule lists a different date for this pairing - see flags.",
+   "facts": [
+    {
+     "text": "Liiga game week: KalPa v Vaasan Sport, Tuesday 27 October, 16:30 UTC (18:30 Finnish start) - league schedule page",
+     "url": "https://www.liiga.fi/en/schedule?kausi=2026-2027&sarja=runkosarja",
+     "site": "Liiga.fi"
+    },
+    {
+     "text": "Standings: KalPa 15 GP, 6-8, 37-37, 19 points; Sport 16 GP, 5-8-1-2, 30-46, 19 points",
+     "url": "https://www.eliteprospects.com/league/liiga",
+     "site": "Elite Prospects"
+    },
+    {
+     "text": "OLBG card prints 5 of 5 tips on KalPa with nothing on the other side of the money line",
+     "url": "https://www.olbg.com/betting-tips/",
+     "site": ""
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-27",
+   "cycle": "2026-10-27",
+   "sport": "Ice Hockey",
+   "competition": "Swedish Hockey League",
+   "event": "IF Malmo Redhawks vs Linkoping HC",
+   "when_official": "",
+   "market": "Money Line",
+   "selection": "IF Malmo Redhawks",
+   "pick_label": "Malmo Redhawks to beat Linkoping at home (1.43)",
+   "prediction": "Malmo have 17 points from eleven SHL games (4-4-3) with a 31-29 goal record and sit mid-table in front of a Linkoping side on 12 points from eleven (4-6-1) in 13th. Linkoping's games keep landing close - 6-4 over Orebro on 24 October, a 3-2 shootout win at HV71, 2-4 to Jarpenstal - but they have not stopped conceding, and the Redhawks play this at Malm\u00f6 Arena on Tuesday 20:00 CET. All three OLBG tips are on the home side; we price Malmo at 1.43 (-233).",
+   "word_count": 86,
+   "our_line": 1.43,
+   "our_line_american": -233,
+   "implied_pct": 69.9,
+   "confidence": "medium",
+   "grade": "B",
+   "p_fair": 0.6667,
+   "structure": "2-way",
+   "notes": [
+    "thin sample: 3 tip(s) counted",
+    "0%/100% split - no information in the tail, capped at medium"
+   ],
+   "tips_on_pick": 3,
+   "tips_total": 3,
+   "pct": 100,
+   "olbg_url": "https://www.olbg.com/betting-tips/Ice_Hockey/Other/Swedish_Hockey_League/IF_Malmo_Redhawks_vs_Linkoping_HC/13",
+   "event_id": "200082",
+   "angle": "Sample of three tips but a real 5-point gap plus home ice, priced short of the -250 floor at 1.43.",
+   "risk": "Three tips. Linkoping have taken a point in each of their last two close games, so the one-goal line at 1.43 is not padded.",
+   "facts": [
+    {
+     "text": "SHL: IF Malmo Redhawks v Linkoping HC, Tuesday 27 October, 20:00 CET (18:00 UTC)",
+     "url": "https://stats.swehockey.se/ScheduleAndResults/Overview/20961",
+     "site": "SweHockey (official SHL stats)"
+    },
+    {
+     "text": "Malmo 11 GP, 4-4-3, 31-29, 17 points; Linkoping 11 GP, 4-6-1, 12 points, 13th",
+     "url": "https://eliteprospects.com/team/6/linkoping-hc",
+     "site": "Elite Prospects"
+    },
+    {
+     "text": "Linkoping's last three: 6-4 v Orebro (24 Oct), 3-2 SO win at HV71 (20 Oct), 2-4 v Jarpenstal (17 Oct)",
+     "url": "https://eliteprospects.com/team/6/linkoping-hc",
+     "site": "Elite Prospects"
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-28",
+   "cycle": "2026-10-27",
+   "sport": "Ice Hockey",
+   "competition": "Swedish Hockey League",
+   "event": "Frolunda HC vs Rogle BK",
+   "when_official": "",
+   "market": "Money Line",
+   "selection": "Frolunda HC",
+   "pick_label": "Frolunda to see off Roingle at Scandinavium (1.71)",
+   "prediction": "Frolunda are at home in Gothenburg against a Roingle side who have been travelling through a difficult October, and the OLBG market carries two of three tips on the hosts with a two-way price we originate at 1.71 (-141). The fixture is on the same SHL round as Malmo-Linkoping, 20:00 CET Tuesday. What we cannot do is claim an injury or line-up edge: neither club's availability list was printed on a source we could read at capture time, so those fields are blank on the table and this pick is priced on fixture, venue and the tip lean alone.",
+   "word_count": 99,
+   "our_line": 1.71,
+   "our_line_american": -141,
+   "implied_pct": 58.5,
+   "confidence": "medium",
+   "grade": "B",
+   "p_fair": 0.5556,
+   "structure": "2-way",
+   "notes": [
+    "thin sample: 3 tip(s) counted"
+   ],
+   "tips_on_pick": 2,
+   "tips_total": 3,
+   "pct": 67,
+   "olbg_url": "https://www.olbg.com/betting-tips/Ice_Hockey/Other/Swedish_Hockey_League/Frolunda_HC_vs_Rogle_BK/13",
+   "event_id": "200083",
+   "angle": "Included to show the round honestly, with its gaps named.",
+   "risk": "Three tips, no team news, and the two clubs' records were not confirmable tonight. Low staking case.",
+   "facts": [
+    {
+     "text": "SHL round of Tuesday 27 October: Frolunda HC v Roingle BK, 20:00 CET",
+     "url": "https://stats.swehockey.se/ScheduleAndResults/Overview/20961",
+     "site": "SweHockey (official SHL stats)"
+    },
+    {
+     "text": "OLBG: 2 of 3 tips on Frolunda",
+     "url": "https://www.olbg.com/betting-tips/",
+     "site": ""
+    },
+    {
+     "text": "Team news, injuries and current standings position for both clubs: BLANK - no retrievable official list at capture",
+     "url": "",
+     "site": ""
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-29",
+   "cycle": "2026-10-27",
+   "sport": "Ice Hockey",
+   "competition": "NHL",
+   "event": "CLB Blue Jackets @ PHI Flyers",
+   "when_official": "",
+   "market": "Money Line",
+   "selection": "PHI Flyers",
+   "pick_label": "Philadelphia to end the losing run against Columbus (1.71)",
+   "prediction": "Philadelphia are 3-7-3 after thirteen games with 9 points, 2-3-2 at home, and the OLBG market puts two of three tips on the Flyers to beat a Columbus side who are 4-5 with 9 points of their own and 0-2 on the road. That is a two-point gap between two struggling teams at a 1.71 price. Columbus's own injury column is the reason to lean the other way: Provorov is week-to-week, Fabbro is near a return and Lundestrom is on long-term term reserve. Take the home side small, at the Wells Fargo Center 7:00pm ET.",
+   "word_count": 95,
+   "our_line": 1.71,
+   "our_line_american": -141,
+   "implied_pct": 58.5,
+   "confidence": "medium",
+   "grade": "B",
+   "p_fair": 0.5556,
+   "structure": "2-way",
+   "notes": [
+    "thin sample: 3 tip(s) counted"
+   ],
+   "tips_on_pick": 2,
+   "tips_total": 3,
+   "pct": 67,
+   "olbg_url": "https://www.olbg.com/betting-tips/Ice_Hockey/NHL/NHL/CLB_Blue_Jackets_@_PHI_Flyers/13",
+   "event_id": "200108",
+   "angle": "The only NHL money line on the card where both sides were printed with an actual split.",
+   "risk": "Three tips. Both clubs are within two points of each other on a bad start, so this is a price, not a statement about either team.",
+   "facts": [
+    {
+     "text": "NHL standings: Philadelphia 13 GP, 3-7-3, 9 pts (2-3-2 home); Columbus 9 GP, 4-5-0, 9 pts (0-2-0 away)",
+     "url": "https://www.nhl.com/standings",
+     "site": "NHL.com"
+    },
+    {
+     "text": "Columbus availability: Provorov week-to-week, Fabbro close to returning, Lundestrom long-term reserve, MacDonald non-roster/injured - reported 26 October",
+     "url": "https://www.nhl.com/standings",
+     "site": "NHL.com"
+    },
+    {
+     "text": "Philadelphia injuries on the same read: Ristolainen out around two weeks, York a game-time decision after skating, Konecny, Tippett and Grebenkin on reserve, Foerster day-to-day",
+     "url": "https://www.nhl.com/standings",
+     "site": "NHL.com"
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-30",
+   "cycle": "2026-10-27",
+   "sport": "Motor Racing",
+   "competition": "F1 Drivers Championship 2026 (excluding Kimi Antonelli)",
+   "event": "Formula 1 Drivers Championship 2026 Without Kimi Antonelli",
+   "when_official": "",
+   "market": "Win Tournament",
+   "selection": "Max Verstappen",
+   "pick_label": "Verstappen to finish highest of everyone behind Antonelli (2.61)",
+   "prediction": "With five races and 125 points still on the table after Austin, Kimi Antonelli leads on 365 and can clinch the title in Mexico by finishing ninth, which leaves the private fight behind him: George Russell 242, Lewis Hamilton 241, Max Verstappen 236, Charles Leclerc 233, Lando Norris 211. Four of the seven tips on this OLBG outright are on Verstappen and we price him at 2.61 (+161) to be the best of the rest. It is a five-race sprint with six points covering three drivers, so volatility, not form, decides it.",
+   "word_count": 92,
+   "our_line": 2.61,
+   "our_line_american": 161,
+   "implied_pct": 38.3,
+   "confidence": "low",
+   "grade": "B",
+   "p_fair": 0.3654,
+   "structure": "outright - field size not printed on OLBG, 8 assumed (U-004)",
+   "notes": [
+    "thin sample: 7 tip(s) counted"
+   ],
+   "tips_on_pick": 4,
+   "tips_total": 7,
+   "pct": 57,
+   "olbg_url": "https://www.olbg.com/betting-tips/Motor_Racing/All_Motor_Racing/All_Events/Formula_1_Drivers_Championship_2026_Without_Kimi_Antonelli/14?event_id=912",
+   "event_id": "912",
+   "angle": "An in-band outright price (+161) on a fight the tip vote has engaged with, with the official standings as the spine.",
+   "risk": "Seven tips. Verstappen's ceiling depends on other cars failing: 125 points across five rounds is enough for Hamilton or Russell to move past him without him winning a race.",
+   "facts": [
+    {
+     "text": "Official 2026 drivers' standings after round 18 (Austin): Antonelli 365, Russell 242, Hamilton 241, Verstappen 236, Leclerc 233, Norris 211, Piastri 144",
+     "url": "https://www.formula1.com/en/results/2026/drivers",
+     "site": "Formula1.com (official)"
+    },
+    {
+     "text": "Antonelli wins the championship in Mexico City on Sunday 1 November if he finishes ninth or higher, regardless of the rest",
+     "url": "https://www.abc.net.au/news/2026-10-26/how-kimi-antonelli-can-win-f1-drivers-championship/107308200",
+     "site": "ABC News (Australia)"
+    },
+    {
+     "text": "Five rounds remain after Austin, 125 points available; Russell and Hamilton both survived the Austin race to within a point of each other",
+     "url": "https://grandepremio.com/en/f1/antonelli-moves-within-2-points-of-f1-title-as-russell-and-hamilton-survive-austin-showdown/",
+     "site": "Grandepremio"
+    },
+    {
+     "text": "OLBG outright market: Verstappen 4/7, Hamilton 2/7, Russell 1/7, Leclerc/Norris/Piastri 0/7",
+     "url": "https://www.olbg.com/betting-tips/",
+     "site": ""
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-31",
+   "cycle": "2026-10-27",
+   "sport": "Motor Racing",
+   "competition": "F1 Drivers Championship 2026 (excluding Kimi Antonelli)",
+   "event": "Formula 1 Drivers Championship 2026 Without Kimi Antonelli",
+   "when_official": "",
+   "market": "Win Tournament",
+   "selection": "Lewis Hamilton",
+   "pick_label": "Hamilton to out-point Russell and Verstappen for best-of-the-rest (4.50)",
+   "prediction": "Lewis Hamilton is one point behind Russell and five ahead of Verstappen with five races to go, and two of seven tips on this OLBG market back him to head the field behind the champion-in-waiting. We price that at 4.50 (+350). Austin is the argument: he scored there while the championship fight moved rather than ended, and the remaining calendar is where a Mercedes that can qualify on the front row banks points. This is a five-race consistency bet against two drivers on almost the same score, so the price is doing most of the work.",
+   "word_count": 96,
+   "our_line": 4.5,
+   "our_line_american": 350,
+   "implied_pct": 22.2,
+   "confidence": "low",
+   "grade": "B",
+   "p_fair": 0.2115,
+   "structure": "outright - field size not printed on OLBG, 8 assumed (U-004)",
+   "notes": [
+    "thin sample: 7 tip(s) counted"
+   ],
+   "tips_on_pick": 2,
+   "tips_total": 7,
+   "pct": 29,
+   "olbg_url": "https://www.olbg.com/betting-tips/Motor_Racing/All_Motor_Racing/All_Events/Formula_1_Drivers_Championship_2026_Without_Kimi_Antonelli/14?event_id=912",
+   "event_id": "912",
+   "angle": "Published as the other runner in the same market so the grid is two-sided, not cherry-picked.",
+   "risk": "Two of seven tips, and the whole case is a one-point standings gap that could move on a single Saturday qualifying session.",
+   "facts": [
+    {
+     "text": "Official standings: Hamilton 241, Russell 242, Verstappen 236 with five rounds left after Austin",
+     "url": "https://www.formula1.com/en/results/2026/drivers",
+     "site": "Formula1.com (official)"
+    },
+    {
+     "text": "Russell and Hamilton both finished the Austin GP inside the same points structure with a point between them",
+     "url": "https://grandepremio.com/en/f1/antonelli-moves-within-2-points-of-f1-title-as-russell-and-hamilton-survive-austin-showdown/",
+     "site": "Grandepremio"
+    },
+    {
+     "text": "Antonelli can clinch as early as Mexico City on 1 November (14:00 local), which is when this side-battle would start being settled",
+     "url": "https://www.abc.net.au/news/2026-10-26/how-kimi-antonelli-can-win-f1-drivers-championship/107308200",
+     "site": "ABC News (Australia)"
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-32",
+   "cycle": "2026-10-27",
+   "sport": "Motor Racing",
+   "competition": "F1 Drivers Championship 2026 (excluding Kimi Antonelli)",
+   "event": "Formula 1 Drivers Championship 2026 Without Kimi Antonelli",
+   "when_official": "",
+   "market": "Win Tournament",
+   "selection": "George Russell",
+   "pick_label": "Russell at 7.07 to be top of the rest - the value end of this outright",
+   "prediction": "George Russell leads the fight behind Antonelli on 242 points, one ahead of Hamilton and six ahead of Verstappen with 125 still available, and yet the OLBG market gives him only one of seven tips - the price we originate, 7.07 (+707), reflects a tip vote chasing the name rather than the scoreboard. The point worth making is about the card itself: one OLBG comment quotes Russell on 238 with Hamilton 229 and Verstappen 221 and says six races remain, which is stale against the official timing sheets by 4, 12 and 15 points and one round.",
+   "word_count": 97,
+   "our_line": 7.07,
+   "our_line_american": 607,
+   "implied_pct": 14.1,
+   "confidence": "low",
+   "grade": "B",
+   "p_fair": 0.1346,
+   "structure": "outright - field size not printed on OLBG, 8 assumed (U-004)",
+   "notes": [
+    "thin sample: 7 tip(s) counted"
+   ],
+   "tips_on_pick": 1,
+   "tips_total": 7,
+   "pct": 14,
+   "olbg_url": "https://www.olbg.com/betting-tips/Motor_Racing/All_Motor_Racing/All_Events/Formula_1_Drivers_Championship_2026_Without_Kimi_Antonelli/14?event_id=912",
+   "event_id": "912",
+   "angle": "Highest price on the card with a standings fact behind it, published with the source conflict named.",
+   "risk": "One of seven tips, and a market whose own commentary is demonstrably stale.",
+   "facts": [
+    {
+     "text": "Official 2026 drivers' standings: Russell 242 after 18 of 23 rounds",
+     "url": "https://www.formula1.com/en/results/2026/drivers",
+     "site": "Formula1.com (official)"
+    },
+    {
+     "text": "Five rounds, 125 points remain after Austin; Antonelli needs ninth place in Mexico to clinch the title itself",
+     "url": "https://www.abc.net.au/news/2026-10-26/how-kimi-antonelli-can-win-f1-drivers-championship/107308200",
+     "site": "ABC News (Australia)"
+    },
+    {
+     "text": "The OLBG comment thread on this market cites 238/229/221 and 'six races to go', which does not match the official standings - flagged as U-007",
+     "url": "https://www.olbg.com/betting-tips/",
+     "site": ""
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-33",
+   "cycle": "2026-10-27",
+   "sport": "Motor Racing",
+   "competition": "Formula 1",
+   "event": "Mexico City Grand Prix",
+   "when_official": "",
+   "market": "Top 6 Finish",
+   "selection": "Kimi Antonelli - Yes",
+   "pick_label": "Antonelli to finish in the top six in Mexico (1.15 - top of the card, no value)",
+   "prediction": "The single heaviest-voted market we captured today is Antonelli to finish top six in Mexico City, with 17 of 18 tips on yes, and the reason is arithmetic: ninth place is enough to secure the 2026 drivers' title, and he is on 365 points with five races left. Our originated price of 1.15 (-667) is a certainty tax - there is nothing to take here. We publish it because the market is on the card, and because the same market is the only reason the outright prices above exist.",
+   "word_count": 89,
+   "our_line": 1.29,
+   "our_line_american": -345,
+   "implied_pct": 77.5,
+   "confidence": "medium",
+   "grade": "A",
+   "p_fair": 0.7396,
+   "structure": "player outright - field size not printed, 8 assumed (U-004)",
+   "notes": [
+    "strong but outside the -250..+10000 focus band"
+   ],
+   "tips_on_pick": 17,
+   "tips_total": 18,
+   "pct": 94,
+   "olbg_url": "https://www.olbg.com/betting-tips/Motor_Racing/All_Motor_Racing/All_Events/Mexico_City_Grand_Prix/14?event_id=914",
+   "event_id": "914",
+   "angle": "Documented for completeness with the carry-forward stated.",
+   "risk": "Priced at 1.15, which is 0.25 shorter than the -250 floor, and the split is carried from the previous day's capture rather than re-printed. Not a bet.",
+   "facts": [
+    {
+     "text": "Antonelli leads the 2026 championship on 365 points after round 18 with 125 points left across five rounds",
+     "url": "https://www.formula1.com/en/results/2026/drivers",
+     "site": "Formula1.com (official)"
+    },
+    {
+     "text": "A ninth-place finish in Mexico City on Sunday 1 November (14:00 local) would clinch the title whatever rivals do",
+     "url": "https://www.abc.net.au/news/2026-10-26/how-kimi-antonelli-can-win-f1-drivers-championship/107308200",
+     "site": "ABC News (Australia)"
+    },
+    {
+     "text": "The tip split for this market (17/18) comes from the 26 October capture of the OLBG motor-racing page; the 27 October page listed the market without reprinting the split - carried forward and labelled, see flag U-006",
+     "url": "https://www.olbg.com/betting-tips/",
+     "site": ""
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-34",
+   "cycle": "2026-10-27",
+   "sport": "Rugby League",
+   "competition": "International",
+   "event": "State of Origin 2027",
+   "when_official": "",
+   "market": "Win Tournament",
+   "selection": "New South Wales",
+   "pick_label": "New South Wales to take the 2027 State of Origin series (1.86)",
+   "prediction": "Nine of the thirteen tips on this OLBG Origin outright sit with New South Wales and we originate 1.86 (-116) for the series to start on 27 May 2027. This is a market on a best-of-three almost seven months away with no squads, no selectors and no representative coaching appointments printed anywhere on the card, so the price is the whole argument: the tip vote is leaning to the side the market considers deeper, and the three dissenting tips are what keeps the number inside the band rather than around evens.",
+   "word_count": 91,
+   "our_line": 1.86,
+   "our_line_american": -116,
+   "implied_pct": 53.8,
+   "confidence": "medium",
+   "grade": "A",
+   "p_fair": 0.5132,
+   "structure": "outright - field size not printed on OLBG, 8 assumed (U-004)",
+   "notes": [],
+   "tips_on_pick": 9,
+   "tips_total": 13,
+   "pct": 69,
+   "olbg_url": "https://www.olbg.com/betting-tips/Rugby_League/All_Rugby_League/All_Events/State_of_Origin_2027/10?event_id=2695857",
+   "event_id": "2695857",
+   "angle": "The only Origin market available; published with its evidence base on the table.",
+   "risk": "Ante-post, no team news exists yet, field assumed at 8 (flag U-004). Treat as a price, not a prediction of rugby.",
+   "facts": [
+    {
+     "text": "OLBG market: 9 of 13 tips on New South Wales to win the 2027 State of Origin series, dated 27 May 2027",
+     "url": "https://www.olbg.com/betting-tips/",
+     "site": ""
+    },
+    {
+     "text": "Queensland share the remaining 4 of 13 tips on the same market",
+     "url": "https://www.olbg.com/betting-tips/",
+     "site": ""
+    },
+    {
+     "text": "Squad, selector and venue information: BLANK - no official representative-team source was consulted at capture because none exists yet for the 2027 series",
+     "url": "",
+     "site": ""
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-35",
+   "cycle": "2026-10-27",
+   "sport": "Rugby League",
+   "competition": "Super League",
+   "event": "Super League 2027",
+   "when_official": "",
+   "market": "Grand Final Winner",
+   "selection": "Wigan Warriors",
+   "pick_label": "Wigan to win the 2027 Super League grand final (3.46)",
+   "prediction": "Two of four tips on this OLBG outright name Wigan for the grand final at Old Trafford on 2 October 2027, which we price at 3.46 (+246). The field on the card carries the other two tips spread across the remaining clubs, and no Super League table, squad or transfer information was confirmed against an official source at capture time - so those columns stay blank and this is a market-led selection, not a football argument. It goes on the board because the brief is to price every available market, and the flag says what the reader can and cannot rely on.",
+   "word_count": 102,
+   "our_line": 3.46,
+   "our_line_american": 246,
+   "implied_pct": 28.9,
+   "confidence": "low",
+   "grade": "B",
+   "p_fair": 0.275,
+   "structure": "outright - field size not printed on OLBG, 8 assumed (U-004)",
+   "notes": [
+    "thin sample: 4 tip(s) counted"
+   ],
+   "tips_on_pick": 2,
+   "tips_total": 4,
+   "pct": 50,
+   "olbg_url": "https://www.olbg.com/betting-tips/Rugby_League/All_Rugby_League/All_Events/Super_League_2027/10?event_id=2801554",
+   "event_id": "2801554",
+   "angle": "Published to keep the league's outright market on the grid with its limits visible.",
+   "risk": "Four tips, an assumed eight-team field, and no verifiable club facts. Graded C by the reliability rule even though the sample is B.",
+   "facts": [
+    {
+     "text": "OLBG market: 2 of 4 tips on Wigan Warriors to win the 2027 Super League grand final, printed for 02 Oct 2027",
+     "url": "https://www.olbg.com/betting-tips/",
+     "site": ""
+    },
+    {
+     "text": "2026 Super League table, play-off structure, Wigan's squad list: BLANK - not retrievable from an official source at capture",
+     "url": "",
+     "site": ""
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-36",
+   "cycle": "2026-10-27",
+   "sport": "Rugby League",
+   "competition": "NRL",
+   "event": "NRL 2027",
+   "when_official": "",
+   "market": "Grand Final Winner",
+   "selection": "Penrith Panthers",
+   "pick_label": "Penrith to win the 2027 NRL grand final (4.90)",
+   "prediction": "The NRL outright on this card carries one of three tips on Penrith, priced by us at 4.90 (+390) for the grand final dated 3 October 2027. A three-tip market on a season that has not started is the thinnest structure on the whole board, and we are not going to describe it as anything else: no 2026 finals results, salary-cap news or renewal information has been attached to this row because none could be confirmed at capture time. The price here is a marker for the market existing, nothing more.",
+   "word_count": 91,
+   "our_line": 4.9,
+   "our_line_american": 390,
+   "implied_pct": 20.4,
+   "confidence": "low",
+   "grade": "B",
+   "p_fair": 0.1944,
+   "structure": "outright - field size not printed on OLBG, 8 assumed (U-004)",
+   "notes": [
+    "thin sample: 3 tip(s) counted"
+   ],
+   "tips_on_pick": 1,
+   "tips_total": 3,
+   "pct": 33,
+   "olbg_url": "https://www.olbg.com/betting-tips/Rugby_League/All_Rugby_League/All_Events/NRL_2027/10?event_id=2801600",
+   "event_id": "2801600",
+   "angle": "The NRL market is priced and published rather than dropped.",
+   "risk": "Three tips and no verifiable team facts. Not for staking.",
+   "facts": [
+    {
+     "text": "OLBG market: 1 of 3 tips on Penrith Panthers for the 2027 NRL grand final, dated 03 Oct 2027",
+     "url": "https://www.olbg.com/betting-tips/",
+     "site": ""
+    },
+    {
+     "text": "Remaining 2 tips on the market are spread across other NRL clubs",
+     "url": "https://www.olbg.com/betting-tips/",
+     "site": ""
+    },
+    {
+     "text": "2026 NRL finals results and 2027 squad movement: BLANK - no official source consulted successfully at capture",
+     "url": "",
+     "site": ""
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-37",
+   "cycle": "2026-10-27",
+   "sport": "Rugby Union",
+   "competition": "Pro D2",
+   "event": "Dax v Provence",
+   "when_official": "",
+   "market": "To Win",
+   "selection": "Dax",
+   "pick_label": "Dax to win the Pro D2 Friday-night fixture at Maurice-Boyau (2.14)",
+   "prediction": "Two of three OLBG tips back Dax at home on Thursday 29 October (21:00 CET start, listed 16:00 US Eastern on the card) and we price the home win at 2.14 (+114). Provence are the better side on paper this season - the LNR standings have them second on 29 points, level with the 34-point leaders on a game in hand - which is exactly why this is a home-venue play rather than a table play. Note the source conflict: L'Equipe's own table prints different points for the same two clubs, so no claim is made about Provence's exact position beyond second.",
+   "word_count": 102,
+   "our_line": 2.14,
+   "our_line_american": 114,
+   "implied_pct": 46.7,
+   "confidence": "low",
+   "grade": "B",
+   "p_fair": 0.4444,
+   "structure": "3-way (draw is a listed outcome)",
+   "notes": [
+    "thin sample: 3 tip(s) counted"
+   ],
+   "tips_on_pick": 2,
+   "tips_total": 3,
+   "pct": 67,
+   "olbg_url": "https://www.olbg.com/betting-tips/Rugby_Union/All_Rugby_Union/All_Events/Dax_v_Provence/9?event_id=609605",
+   "event_id": "609605",
+   "angle": "Only Pro D2 market on the card with a printed split, priced at +114 for a home side against a promotion candidate.",
+   "risk": "Three tips and two contradictory league tables. The fixture date is Thursday night, not the Friday listed on most of this round's card - re-check lineups before kickoff.",
+   "facts": [
+    {
+     "text": "Pro D2 round 9 fixture: US Dax v Provence Rugby at Stade Maurice-Boyau, Thursday 29 October, 21:00 CET",
+     "url": "https://prod2.lnr.fr/club/provence-rugby",
+     "site": "LNR Pro D2 (official)"
+    },
+    {
+     "text": "LNR official club page for Provence Rugby shows them second in Pro D2 on 29 points behind Oyonnax (34) at the time of writing",
+     "url": "https://prod2.lnr.fr/club/provence-rugby",
+     "site": "LNR Pro D2 (official)"
+    },
+    {
+     "text": "L'Equipe's Pro D2 table prints Provence on 34 and Dax in the lower half for the same round - conflict, see flag U-008",
+     "url": "https://www.lequipe.fr/Rugby/rangements-pro-d2/",
+     "site": "L'Equipe"
+    },
+    {
+     "text": "OLBG market: 2 of 3 tips on Dax",
+     "url": "https://www.olbg.com/betting-tips/",
+     "site": ""
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-38",
+   "cycle": "2026-10-27",
+   "sport": "Rugby Union",
+   "competition": "URC",
+   "event": "Connacht v Leinster",
+   "when_official": "",
+   "market": "Handicap",
+   "selection": "Connacht +3.50",
+   "pick_label": "Connacht +3.5 points against Leinster at Dexcom (2.22)",
+   "prediction": "This United Rugby Championship round-5 opener is Friday 30 October, 19:45 UK at the Sportsport Arena, and the handicap market on the OLBG card carries one tip on Connacht +3.5, which we price at 2.22 (+122). The table context is real: after four rounds Glasgow lead the province's own standings chase from second on 18 points, Leinster are 6th on 13 (2-0-2) and Connacht 8th on 10 (2-0-2) with a 104-111 record, so Connacht have been in every game and Leinster have not been winning them comfortably. A three-and-a-half cushion in this fixture is a reasonable line, not a longshot.",
+   "word_count": 100,
+   "our_line": 2.22,
+   "our_line_american": 122,
+   "implied_pct": 45.0,
+   "confidence": "low",
+   "grade": "C",
+   "p_fair": 0.4286,
+   "structure": "3-way (draw is a listed outcome)",
+   "notes": [
+    "thin sample: 1 tip(s) counted",
+    "0%/100% split - no information in the tail, capped at medium"
+   ],
+   "tips_on_pick": 1,
+   "tips_total": 1,
+   "pct": 100,
+   "olbg_url": "https://www.olbg.com/betting-tips/Rugby_Union/All_Rugby_Union/All_Events/Connacht_v_Leinster/9?event_id=609584",
+   "event_id": "609584",
+   "angle": "The union market with the clearest structural read - two provinces within three table points of each other.",
+   "risk": "One tip on the market, so the +3.5 number is entirely ours. Leinster's away form in this competition was not confirmable from a retrievable source, and no team news is claimed.",
+   "facts": [
+    {
+     "text": "URC round 5 fixtures Friday 30 October: Connacht v Leinster and Glasgow Warriors v Lions, both 19:45 UK kick-off",
+     "url": "https://www.unitedrugby.com/latest/news/2026-27-fixtures-in-full/",
+     "site": "United Rugby Championship (official)"
+    },
+    {
+     "text": "Standings after 4 rounds: Leinster 2-0-2, 99-76, 13 points (6th); Connacht 2-0-2, 104-111, 10 points (8th); Glasgow 3-1-0, 18 points (2nd)",
+     "url": "https://www.bbc.com/sport/rugby-union/pro-tournament/table",
+     "site": "BBC Sport (URC table)"
+    },
+    {
+     "text": "OLBG card prints the handicap market as Connacht +3.50 with 1 of 1 tip",
+     "url": "https://www.olbg.com/betting-tips/",
+     "site": ""
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-39",
+   "cycle": "2026-10-27",
+   "sport": "Rugby Union",
+   "competition": "URC",
+   "event": "Glasgow Warriors v Lions",
+   "when_official": "",
+   "market": "To Win",
+   "selection": "Glasgow Warriors",
+   "pick_label": "Glasgow to beat the Lions at Scotstoun (2.22 originated from a single tip)",
+   "prediction": "Glasgow are the second-placed team in the URC after four rounds, 3-1-0 with 18 points and 119-92 on the board, while the Lions sit 11th on 9 points from 2-0-2 with a 87-133 record - a 46-point swing in the underlying numbers before Friday's 19:45 kick-off at Scotstoun. The OLBG market only carries a single win tip, on Glasgow, so the 2.22 price is a prior with one vote attached. That is a lean to watch, and a stake of nothing.",
+   "word_count": 81,
+   "our_line": 2.22,
+   "our_line_american": 122,
+   "implied_pct": 45.0,
+   "confidence": "low",
+   "grade": "C",
+   "p_fair": 0.4286,
+   "structure": "3-way (draw is a listed outcome)",
+   "notes": [
+    "thin sample: 1 tip(s) counted",
+    "0%/100% split - no information in the tail, capped at medium"
+   ],
+   "tips_on_pick": 1,
+   "tips_total": 1,
+   "pct": 100,
+   "olbg_url": "https://www.olbg.com/betting-tips/Rugby_Union/All_Rugby_Union/All_Events/Glasgow_Warriors_v_Lions/9?event_id=609590",
+   "event_id": "609590",
+   "angle": "Published to price the market, and to show that the biggest table gap on the union card has almost no tip volume on it.",
+   "risk": "One tip. At 2.22 the price implies ~45% when the standings gap says more than that, which is why we flag the line as our own construction rather than a market signal.",
+   "facts": [
+    {
+     "text": "URC round 5: Glasgow Warriors v Honda Lions, Friday 30 October, 19:45 UK",
+     "url": "https://www.unitedrugby.com/latest/news/2026-27-fixtures-in-full/",
+     "site": "United Rugby Championship (official)"
+    },
+    {
+     "text": "After 4 rounds: Glasgow 3-1-0, 119-92, 18 pts (2nd); Lions 2-0-2, 87-133, 9 pts (11th)",
+     "url": "https://www.bbc.com/sport/rugby-union/pro-tournament/table",
+     "site": "BBC Sport (URC table)"
+    },
+    {
+     "text": "Same table on Sky Sports confirms Glasgow's second place and the Lions in the bottom five",
+     "url": "https://www.skysports.com/rugby-union/united-rugby-championship/table",
+     "site": "Sky Sports (URC table)"
+    },
+    {
+     "text": "OLBG: 1 of 1 tips on Glasgow to win",
+     "url": "https://www.olbg.com/betting-tips/",
+     "site": ""
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-40",
+   "cycle": "2026-10-27",
+   "sport": "Rugby Union",
+   "competition": "URC",
+   "event": "Stormers v Ulster",
+   "when_official": "",
+   "market": "Handicap",
+   "selection": "Ulster +12.50",
+   "pick_label": "Ulster +12.5 points at the Coolbet Stadium (2.22)",
+   "prediction": "The Stormers host Ulster on Saturday 31 October in a Saturday-night Cape Town fixture, and the only union market on it carries a single tip on Ulster +12.5. Twelve and a half is a big number to be laying off in a southern hemisphere away trip and we price it at 2.22 (+122), which is the honest consequence of a one-tip handicap. Ulster's conference position and the Stormers' home record are both left blank in the table: neither was printed on a source we could read at capture time, and we are not going to fill them from memory.",
+   "word_count": 99,
+   "our_line": 2.22,
+   "our_line_american": 122,
+   "implied_pct": 45.0,
+   "confidence": "low",
+   "grade": "C",
+   "p_fair": 0.4286,
+   "structure": "3-way (draw is a listed outcome)",
+   "notes": [
+    "thin sample: 1 tip(s) counted",
+    "0%/100% split - no information in the tail, capped at medium"
+   ],
+   "tips_on_pick": 1,
+   "tips_total": 1,
+   "pct": 100,
+   "olbg_url": "https://www.olbg.com/betting-tips/Rugby_Union/All_Rugby_Union/All_Events/Stormers_v_Ulster/9?event_id=609588",
+   "event_id": "609588",
+   "angle": "Keeps a large-margin handicap on the record instead of quietly deleting the only market printed on the fixture.",
+   "risk": "One tip, a 12.5-point cushion and no verifiable team data. Graded C. Skip it.",
+   "facts": [
+    {
+     "text": "URC round 5: DHL Stormers v Ulster Rugby, Saturday 31 October (SA evening kick-off; OLBG card prints 08:45 US Eastern)",
+     "url": "https://www.unitedrugby.com/latest/news/2026-27-fixtures-in-full/",
+     "site": "United Rugby Championship (official)"
+    },
+    {
+     "text": "OLBG: 1 of 1 tips on Ulster +12.50",
+     "url": "https://www.olbg.com/betting-tips/",
+     "site": ""
+    },
+    {
+     "text": "Both provinces' current points, last-five form and travel/availability news: BLANK - not confirmable at capture",
+     "url": "",
+     "site": ""
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-41",
+   "cycle": "2026-10-27",
+   "sport": "Rugby Union",
+   "competition": "Six Nations",
+   "event": "Six Nations 2027",
+   "when_official": "",
+   "market": "Win Tournament",
+   "selection": "Ireland",
+   "pick_label": "Ireland to win the 2027 Six Nations (4.32)",
+   "prediction": "Ireland are the most-backed side on the OLBG Six Nations 2027 outright with three of eleven tips, and we originate 4.32 (+332) for the tournament concluding 14 March 2027. Eleven tips across a six-nation field means the other eight are spread over England, France, Scotland, Italy and Wales, so this is the market's least-worst runner rather than a lock - and with no 2026 championship results, coaching news or injury list attached to the row, the price is the entire case. If you want the outright, take the earliest available ante-post number before the autumn internationals move it.",
+   "word_count": 98,
+   "our_line": 4.32,
+   "our_line_american": 332,
+   "implied_pct": 23.1,
+   "confidence": "low",
+   "grade": "A",
+   "p_fair": 0.2206,
+   "structure": "outright - field size not printed on OLBG, 8 assumed (U-004)",
+   "notes": [],
+   "tips_on_pick": 3,
+   "tips_total": 11,
+   "pct": 27,
+   "olbg_url": "https://www.olbg.com/betting-tips/Rugby_Union/All_Rugby_Union/All_Events/Six_Nations_2027/9?event_id=609013",
+   "event_id": "609013",
+   "angle": "Grade A sample within an outright structure and the highest-confidence union line on the card by volume.",
+   "risk": "Assumed field size (U-004), zero team news, and a six-month window. Value read only, not a selection with a rugby argument attached.",
+   "facts": [
+    {
+     "text": "OLBG outright: 3 of 11 tips on Ireland to win the 2027 Six Nations, market dated 14 Mar 2027",
+     "url": "https://www.olbg.com/betting-tips/",
+     "site": ""
+    },
+    {
+     "text": "Remaining 8 tips spread across the other five nations in the field",
+     "url": "https://www.olbg.com/betting-tips/",
+     "site": ""
+    },
+    {
+     "text": "2026 Six Nations final standings, 2027 squad news, coaching changes: BLANK - no official source consulted at capture",
+     "url": "",
+     "site": ""
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-42",
+   "cycle": "2026-10-27",
+   "sport": "Tennis",
+   "competition": "",
+   "event": "Novak Djokovic vs Ugo Humbert",
+   "when_official": "",
+   "market": "Win Match",
+   "selection": "Novak Djokovic",
+   "pick_label": "Djokovic to beat Humbert in his Basel return (1.50)",
+   "prediction": "Novak Djokovic plays the Swiss Indoors for the first time since 2011 and opens against Ugo Humbert, a man he beat in their only previous meeting at Wimbledon 2019. He is 12-2 at this tournament, won it on his debut in 2009 and was runner-up a year later, and his season is being run around a place at the ATP Finals - the live Race to Turin has him 11th on 2,840 points with 3,340 as a theoretical ceiling. Four of five OLBG tips are on him and we price the match win at 1.50 (-200) for a centre-court start in Basel.",
+   "word_count": 102,
+   "our_line": 1.5,
+   "our_line_american": -200,
+   "implied_pct": 66.7,
+   "confidence": "medium",
+   "grade": "B",
+   "p_fair": 0.6364,
+   "structure": "2-way",
+   "notes": [
+    "thin sample: 5 tip(s) counted"
+   ],
+   "tips_on_pick": 4,
+   "tips_total": 5,
+   "pct": 80,
+   "olbg_url": "https://www.olbg.com/betting-tips/Tennis/All_Tennis/All_Events/Novak_Djokovic_vs_Ugo_Humbert/3?event_id=902233",
+   "event_id": "902233",
+   "angle": "Five tips only, but every one of the facts on this row is from the tour's own reporting and the price is inside the band.",
+   "risk": "Sample of five blocks the high grade by rule. Two score feeds list the match on Tuesday 27 October while the ATP report says Wednesday, so check the day order before kickoff.",
+   "facts": [
+    {
+     "text": "ATP Tour: Djokovic begins his Basel campaign against Humbert, his first appearance at the event since 2011, with a 12-2 record and a title in 2009",
+     "url": "https://www.atptour.com/en/news/djokovic-basel-2026-first-match",
+     "site": "ATP Tour (official)"
+    },
+    {
+     "text": "Head-to-head is 1-0 to Djokovic (Wimbledon 2019)",
+     "url": "https://www.atptour.com/en/news/djokovic-basel-2026-first-match",
+     "site": "ATP Tour (official)"
+    },
+    {
+     "text": "Live Race to Turin shows Djokovic 11th on 2,840 points with the next match at Basel, still inside reach of the top eight",
+     "url": "https://www.atptour.com/en/rankings/singles-race-to-turin",
+     "site": "ATP Tour (official)"
+    },
+    {
+     "text": "Basel is a 26 October - 1 November ATP 500 on indoor hard courts; Djokovic is seeded fourth and could meet top seed Ben Shelton in the semi-finals",
+     "url": "https://www.atptour.com/en/news/djokovic-basel-2026-draw-preview",
+     "site": "ATP Tour (official)"
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-43",
+   "cycle": "2026-10-27",
+   "sport": "Tennis",
+   "competition": "",
+   "event": "Alejandro Tabilo vs Rafael Jodar",
+   "when_official": "",
+   "market": "Win Match",
+   "selection": "Rafael Jodar",
+   "pick_label": "Jodar to get past Tabilo in Basel (1.63)",
+   "prediction": "Rafael Jodar arrives in Basel as the third seed and the OLBG market gives him four of six tips, which we price at 1.63 (-159) against Alejandro Tabilo. The draw context matters: Jodar sits in the half of the draw the tour's own preview projects to meet Ben Shelton, Taylor Fritz or Djokovic at either the quarter-final or the semi-final stage, so a first-match slip here is expensive for a seeded player and the seeded side of a first round is where these prices tend to be softest. Take Jodar to cover the round, not the trophy.",
+   "word_count": 97,
+   "our_line": 1.63,
+   "our_line_american": -159,
+   "implied_pct": 61.3,
+   "confidence": "medium",
+   "grade": "B",
+   "p_fair": 0.5833,
+   "structure": "2-way",
+   "notes": [
+    "thin sample: 6 tip(s) counted"
+   ],
+   "tips_on_pick": 4,
+   "tips_total": 6,
+   "pct": 67,
+   "olbg_url": "https://www.olbg.com/betting-tips/Tennis/All_Tennis/All_Events/Alejandro_Tabilo_vs_Rafael_Jodar/3?event_id=902238",
+   "event_id": "902238",
+   "angle": "Seeding against a first-round opponent, in-band price, six tips counted.",
+   "risk": "Jodar's win-loss record for 2026 and either player's fitness were not printed on a retrievable source, so no form claim is made. Six tips is a thin market.",
+   "facts": [
+    {
+     "text": "ATP draw projection lists Rafael Jodar as a seeded quarter-final possibility opposite Djokovic, with Shelton (1), Fritz (6) and Davidovich Fokina (5) in the same projected path",
+     "url": "https://www.atptour.com/en/news/djokovic-basel-2026-draw-preview",
+     "site": "ATP Tour (official)"
+    },
+    {
+     "text": "Basel's updated main draw after three withdrawals pairs Tabilo with third seed Jodar",
+     "url": "https://www.tennisworlditalia.com/en/tennis/news/Atp_Tennis/108227/atp-500-basel-hit-by-three-major-withdrawals-updated-main-draw/",
+     "site": "Tennis World Italia"
+    },
+    {
+     "text": "OLBG market: 4 of 6 tips on Jodar",
+     "url": "https://www.olbg.com/betting-tips/",
+     "site": ""
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-44",
+   "cycle": "2026-10-27",
+   "sport": "Tennis",
+   "competition": "",
+   "event": "Hubert Hurkacz vs Zizou Bergs",
+   "when_official": "",
+   "market": "Win Match",
+   "selection": "Hubert Hurkacz",
+   "pick_label": "Hurkacz over Bergs on home-circuit conditions (1.43)",
+   "prediction": "Hubert Hurkacz is seeded tenth in Basel and every one of the three tips counted on this OLBG market is on him, against a Zizou Bergs who is projected in the same quarter of the draw as seventh seed Alexander Bublik. Our line of 1.43 (-233) is just inside the focus floor, and the case is the serve: Hurkacz's rating and tournament seeding put him a clear place ahead on paper, while Bergs has been the player drawing the awkward indoor paths rather than winning through them. Small sample, honest number.",
+   "word_count": 91,
+   "our_line": 1.43,
+   "our_line_american": -233,
+   "implied_pct": 69.9,
+   "confidence": "medium",
+   "grade": "B",
+   "p_fair": 0.6667,
+   "structure": "2-way",
+   "notes": [
+    "thin sample: 3 tip(s) counted",
+    "0%/100% split - no information in the tail, capped at medium"
+   ],
+   "tips_on_pick": 3,
+   "tips_total": 3,
+   "pct": 100,
+   "olbg_url": "https://www.olbg.com/betting-tips/Tennis/All_Tennis/All_Events/Hubert_Hurkacz_vs_Zizou_Bergs/3?event_id=902322",
+   "event_id": "902322",
+   "angle": "A unanimous but tiny vote, priced from the prior rather than the crowd.",
+   "risk": "Three tips with no opposing side printed. No current-match-fitness or head-to-head data could be attached, so those fields are blank.",
+   "facts": [
+    {
+     "text": "Updated Basel main draw shows Hurkacz [10] v Bergs in one section and Bublik [7] in the quarter above",
+     "url": "https://www.tennisworlditalia.com/en/tennis/news/Atp_Tennis/108227/atp-500-basel-hit-by-three-major-withdrawals-updated-main-draw/",
+     "site": "Tennis World Italia"
+    },
+    {
+     "text": "Djokovic's projected quarter-final is Bublik or Bergs, per the tour's own draw write-up",
+     "url": "https://www.atptour.com/en/news/djokovic-basel-2026-draw-preview",
+     "site": "ATP Tour (official)"
+    },
+    {
+     "text": "OLBG market: 3 of 3 tips on Hurkacz",
+     "url": "https://www.olbg.com/betting-tips/",
+     "site": ""
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-45",
+   "cycle": "2026-10-27",
+   "sport": "Tennis",
+   "competition": "",
+   "event": "Stan Wawrinka vs Jiri Lehecka",
+   "when_official": "",
+   "market": "Win Match",
+   "selection": "Stan Wawrinka",
+   "pick_label": "Wawrinka to win his farewell home match against Lehecka (1.90)",
+   "prediction": "Stan Wawrinka is in the Basel draw on a wildcard and meets eighth seed Jiri Lehecka in the round of 32 - a pairing the ATP's own draw preview leads on. The OLBG market splits four of eight tips his way and we originate 1.90 (+190). That is as far as we go: no ranking, recent-match record or fitness statement for either player could be read from a retrievable source in this window, so this is a price on a split vote at a home tournament rather than a form case. Lehecka is the higher-rated man on seeding alone, which is the point of the price.",
+   "word_count": 106,
+   "our_line": 1.9,
+   "our_line_american": -111,
+   "implied_pct": 52.6,
+   "confidence": "medium",
+   "grade": "A",
+   "p_fair": 0.5,
+   "structure": "2-way",
+   "notes": [],
+   "tips_on_pick": 4,
+   "tips_total": 8,
+   "pct": 50,
+   "olbg_url": "https://www.olbg.com/betting-tips/Tennis/All_Tennis/All_Events/Stan_Wawrinka_vs_Jiri_Lehecka/3?event_id=902232",
+   "event_id": "902232",
+   "angle": "The best price on the tennis card with a genuine narrative and eight tips counted.",
+   "risk": "Nearly even tip split (4/8) and no player-level data we could put in print. Graded medium at best, and only because the market is a clean two-way one.",
+   "facts": [
+    {
+     "text": "ATP Tour draw preview: 'Novak Djokovic, Ben Shelton in same half of Basel draw; Stan Wawrinka meets Jiri Lehecka'",
+     "url": "https://www.atptour.com/en/news/djokovic-basel-2026-draw-preview",
+     "site": "ATP Tour (official)"
+    },
+    {
+     "text": "Wawrinka's entry is a wildcard and Lehecka carries the eighth seed in that section of the draw",
+     "url": "https://www.atptour.com/en/news/djokovic-basel-2026-draw-preview",
+     "site": "ATP Tour (official)"
+    },
+    {
+     "text": "OLBG market: 4 of 8 tips on Wawrinka",
+     "url": "https://www.olbg.com/betting-tips/",
+     "site": ""
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-46",
+   "cycle": "2026-10-27",
+   "sport": "Tennis",
+   "competition": "",
+   "event": "Leylah Fernandez vs Himeno Sakatsume",
+   "when_official": "",
+   "market": "Win Match",
+   "selection": "Leylah Fernandez",
+   "pick_label": "Fernandez to get over the first-round hurdle (1.32 - priced short, flagged)",
+   "prediction": "Ten of twelve tips on this OLBG market back Leylah Fernandez, which is the heaviest tennis vote on the card, but we are publishing it with a warning rather than a claim: the OLBG card does not name the tournament for this fixture or for the Osaka, Tager and Kudermetova rows alongside it, and no tour results page we could reach tied Fernandez to Sakatsume on a published draw for 27 October. The line we originate, 1.32 (-312), is a prior with a vote on top, and the venue, surface and both players' match fitness are left blank until the fixture is confirmable.",
+   "word_count": 103,
+   "our_line": 1.32,
+   "our_line_american": -312,
+   "implied_pct": 75.8,
+   "confidence": "medium",
+   "grade": "A",
+   "p_fair": 0.7222,
+   "structure": "2-way",
+   "notes": [
+    "strong but outside the -250..+10000 focus band"
+   ],
+   "tips_on_pick": 10,
+   "tips_total": 12,
+   "pct": 83,
+   "olbg_url": "https://www.olbg.com/betting-tips/Tennis/All_Tennis/All_Events/Leylah_Fernandez_vs_Himeno_Sakatsume/3?event_id=902172",
+   "event_id": "902172",
+   "angle": "Included because the brief is to price every market we capture, and flagged because it cannot be vouched for.",
+   "risk": "Unconfirmable fixture. Do not stake on this row; it is here to document the card, not to recommend it.",
+   "facts": [
+    {
+     "text": "OLBG market: 10 of 12 tips on Fernandez, printed 02:00 US Eastern with no competition or venue named on the card",
+     "url": "https://www.olbg.com/betting-tips/",
+     "site": ""
+    },
+    {
+     "text": "Tournament, round, surface and head-to-head: BLANK - not printed on the OLBG card and not confirmable against the WTA's own schedule at capture (flag T-001)",
+     "url": "",
+     "site": ""
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-47",
+   "cycle": "2026-10-27",
+   "sport": "Volleyball",
+   "competition": "",
+   "event": "TFL Altekma vs Halkbank Ankara",
+   "when_official": "",
+   "market": "Win Match",
+   "selection": "Halkbank Ankara",
+   "pick_label": "Halkbank to make it three wins from three in Izmir (1.50)",
+   "prediction": "Halkbank opened the Efeler Ligi with 3-1 wins over Galatasaray and then took five sets at Spor Toto, so they arrive at Altekma with six points from two rounds, and four of five OLBG tips are on them at 1.50 (-200). Altekma pushed the defending champions Ziraat Bankkart to five sets last time out - Ziraat won 3-2 without Yuki Ishikawa in the line-up - so this is not a walkover, but Halkbank have closed their own matches out inside four sets against Galatasaray and Spor Toto, which is the cleanest read on this board today.",
+   "word_count": 96,
+   "our_line": 1.5,
+   "our_line_american": -200,
+   "implied_pct": 66.7,
+   "confidence": "medium",
+   "grade": "B",
+   "p_fair": 0.6364,
+   "structure": "2-way",
+   "notes": [
+    "thin sample: 5 tip(s) counted"
+   ],
+   "tips_on_pick": 4,
+   "tips_total": 5,
+   "pct": 80,
+   "olbg_url": "https://www.olbg.com/betting-tips/Volleyball/All_Volleyball/All_Events/TFL_Altekma_vs_Halkbank_Ankara/21?event_id=37126",
+   "event_id": "37126",
+   "angle": "Grade B sample with a real league-form story and a price inside the band.",
+   "risk": "Five tips. Turkish club volleyball line-ups rotate heavily and no confirmed roster was printed on the federation page we read, so no player-level claim is made.",
+   "facts": [
+    {
+     "text": "Efeler Ligi round 1: Halkbank 3-1 Galatasaray; Ziraat Bankkart 3-0 Fenerbahce (25-22, 25-21, 25-22)",
+     "url": "https://tvf.org.tr/icerik/efeler-liginde-birinci-hafta-sona-erdi",
+     "site": "Turkish Volleyball Federation (official)"
+    },
+    {
+     "text": "Round 2: Ziraat Bankkart beat Altekma 3-2 in the absence of Yuki Ishikawa; Halkbank beat Spor Toto 3-2",
+     "url": "https://www.voleybolaktuel.com/sms-grup-efeler-liginde-2hafta-sona-erdi",
+     "site": "Voleybol Aktuel"
+    },
+    {
+     "text": "Matchday 3 fixtures include TFL Altekma v Halkbank Ankara, Tuesday 27 October (OLBG prints 08:00 US Eastern)",
+     "url": "https://www.voleybolaktuel.com/sms-grup-efeler-liginde-2hafta-sona-erdi",
+     "site": "Voleybol Aktuel"
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-48",
+   "cycle": "2026-10-27",
+   "sport": "Volleyball",
+   "competition": "",
+   "event": "Ziraat Bankasi vs Gaziantep Genclik Spor",
+   "when_official": "",
+   "market": "Win Match",
+   "selection": "Ziraat Bankasi",
+   "pick_label": "Ziraat Bankkart to keep their perfect start going (1.36)",
+   "prediction": "Ziraat Bankkart are the club that has taken the Efeler Ligi in 2021, 2022, 2023, 2025 and 2026 and they have started the defence of it 2 wins from 2, 3-0 over Fenerbahce and 3-2 at Altekma, with all four OLBG tips on them for the third round game against Gaziantep. We price them at 1.36 (-278), which is outside the value zone the brief asks us to work in but is the strongest structural pick in the sport today - they were good enough to beat the previous round's 3-0 winners and the run of titles does not stop because a rotation is resting a player.",
+   "word_count": 107,
+   "our_line": 1.36,
+   "our_line_american": -278,
+   "implied_pct": 73.5,
+   "confidence": "medium",
+   "grade": "B",
+   "p_fair": 0.7,
+   "structure": "2-way",
+   "notes": [
+    "thin sample: 4 tip(s) counted",
+    "0%/100% split - no information in the tail, capped at medium"
+   ],
+   "tips_on_pick": 4,
+   "tips_total": 4,
+   "pct": 100,
+   "olbg_url": "https://www.olbg.com/betting-tips/Volleyball/All_Volleyball/All_Events/Ziraat_Bankasi_vs_Gaziantep_Genclik_Spor/21?event_id=37121",
+   "event_id": "37121",
+   "angle": "A four-tip unanimous vote on the most decorated club in the league.",
+   "risk": "1.36 is 0.04 outside our focus floor and four tips is not a market. Confidence high, value absent - flagged as a no-bet.",
+   "facts": [
+    {
+     "text": "Round 1: Ziraat Bankkart 3-0 Fenerbahce (25-22, 25-21, 25-22); round 2: 3-2 win over Altekma without Yuki Ishikawa in the line-up",
+     "url": "https://tvf.org.tr/icerik/efeler-liginde-birinci-hafta-sona-erdi",
+     "site": "Turkish Volleyball Federation (official)"
+    },
+    {
+     "text": "Ziraat Bankkart are the 2026 Efeler Ligi champions and previous title holders",
+     "url": "https://www.voleybolaktuel.com/ishikawanin-yoklugunda-ziraat-bankkart-altekmayi-5-sette-gecebildi",
+     "site": "Voleybol Aktuel"
+    },
+    {
+     "text": "OLBG market: 4 of 4 tips on Ziraat Bankasi for Tuesday's round-3 fixture",
+     "url": "https://www.olbg.com/betting-tips/",
+     "site": ""
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-49",
+   "cycle": "2026-10-27",
+   "sport": "Volleyball",
+   "competition": "",
+   "event": "Fenerbahce vs Alanya Bld",
+   "when_official": "",
+   "market": "Win Match",
+   "selection": "Alanya Bld",
+   "pick_label": "Alanya Belediye to make it three from three at Burhan Felek (1.71)",
+   "prediction": "Here is the away-side value on this league board: Alanya have won both their opening Efeler Ligi rounds and are unbeaten alongside Gebze and Istanbul Bld, while Fenerbahce were swept 3-0 by Ziraat Bankkart in round 1 and then needed five sets at Gaziantep. Two of three OLBG tips already sit with Alanya and we price them at 1.71 (+120). Fenerbahce's roster is the better one on paper, but a team that has dropped a set at home to a side on zero wins is not the price the market is offering.",
+   "word_count": 92,
+   "our_line": 1.71,
+   "our_line_american": -141,
+   "implied_pct": 58.5,
+   "confidence": "medium",
+   "grade": "B",
+   "p_fair": 0.5556,
+   "structure": "2-way",
+   "notes": [
+    "thin sample: 3 tip(s) counted"
+   ],
+   "tips_on_pick": 2,
+   "tips_total": 3,
+   "pct": 67,
+   "olbg_url": "https://www.olbg.com/betting-tips/Volleyball/All_Volleyball/All_Events/Fenerbahce_vs_Alanya_Bld/21?event_id=37125",
+   "event_id": "37125",
+   "angle": "The best combination of price (+120), a real result gap and a tip lean on this card.",
+   "risk": "Three tips only, and no confirmed line-up for either side; Alanya's schedule strength was not published on the federation page we could read.",
+   "facts": [
+    {
+     "text": "Round 1: Fenerbahce lost 0-3 to Ziraat Bankkart; round 2: Fenerbahce won 3-2 at Gaziantep Bld",
+     "url": "https://tvf.org.tr/icerik/efeler-liginde-birinci-hafta-sona-erdi",
+     "site": "Turkish Volleyball Federation (official)"
+    },
+    {
+     "text": "Alanya Belediye are unbeaten after two rounds along with Gebze Bld and Istanbul Bld Spor",
+     "url": "https://www.voleybolaktuel.com/sms-grup-efeler-liginde-2hafta-sona-erdi",
+     "site": "Voleybol Aktuel"
+    },
+    {
+     "text": "OLBG market: 2 of 3 tips on Alanya Bld",
+     "url": "https://www.olbg.com/betting-tips/",
+     "site": ""
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-50",
+   "cycle": "2026-10-27",
+   "sport": "Volleyball",
+   "competition": "",
+   "event": "Istanbul Genclik Spor vs IBB Spor",
+   "when_official": "",
+   "market": "Win Match",
+   "selection": "IBB Spor",
+   "pick_label": "Istanbul Buyuksehire to stay perfect (1.75)",
+   "prediction": "Istanbul Bld Spor are one of three clubs still unbeaten after two Efeler Ligi rounds, alongside Alanya and Gebze, and three of five tips on this OLBG market are on them to beat Istanbul Gencelikspor at 1.75 (+114). The unbeaten tag alone is not the case - Bld's results have come inside three sets, which means the squad has closed matches out rather than ground them, and a fifth-set habit from the hosts is the only thing that beats this line. No individual player data is attached because the federation page does not print one for this fixture.",
+   "word_count": 98,
+   "our_line": 1.75,
+   "our_line_american": -133,
+   "implied_pct": 57.1,
+   "confidence": "medium",
+   "grade": "B",
+   "p_fair": 0.5455,
+   "structure": "2-way",
+   "notes": [
+    "thin sample: 5 tip(s) counted"
+   ],
+   "tips_on_pick": 3,
+   "tips_total": 5,
+   "pct": 60,
+   "olbg_url": "https://www.olbg.com/betting-tips/Volleyball/All_Volleyball/All_Events/Istanbul_Genclik_Spor_vs_IBB_Spor/21?event_id=37124",
+   "event_id": "37124",
+   "angle": "Second of three unbeaten sides in the league, priced above evens.",
+   "risk": "Five tips, no player-level confirmation, and the opponent's record was not printed. Graded B, confidence medium at best.",
+   "facts": [
+    {
+     "text": "Istanbul Bld Spor are unbeaten after two rounds of the Efeler Ligi along with Alanya Bld and Gebze Genclik",
+     "url": "https://www.voleybolaktuel.com/sms-grup-efeler-liginde-2hafta-sona-erdi",
+     "site": "Voleybol Aktuel"
+    },
+    {
+     "text": "OLBG market: 3 of 5 tips on IBB Spor",
+     "url": "https://www.olbg.com/betting-tips/",
+     "site": ""
+    },
+    {
+     "text": "Rosters, MVPs and set-by-set statistics for this fixture: BLANK - not published on the retrievable federation page",
+     "url": "",
+     "site": ""
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-51",
+   "cycle": "2026-10-27",
+   "sport": "Volleyball",
+   "competition": "",
+   "event": "Marignano W vs Bergamo W",
+   "when_official": "",
+   "market": "Win Match",
+   "selection": "Bergamo W",
+   "pick_label": "Bergamo women at number one on the OLBG vote, priced 1.55",
+   "prediction": "This Italian Serie A1 women's market is priced entirely from the tip split: five of seven OLBG tips sit with Bergamo on the road at Marignano and we originate 1.55 (-182). We are not writing a form argument. The federation and league sources for the Italian women's competition were not retrievable during this capture window, so the current standings, both teams' last results, and any injury or rotation news are left blank on the table and the row is flagged as market-only rather than filled in from memory.",
+   "word_count": 88,
+   "our_line": 1.55,
+   "our_line_american": -182,
+   "implied_pct": 64.5,
+   "confidence": "medium",
+   "grade": "B",
+   "p_fair": 0.6154,
+   "structure": "2-way",
+   "notes": [
+    "thin sample: 7 tip(s) counted"
+   ],
+   "tips_on_pick": 5,
+   "tips_total": 7,
+   "pct": 71,
+   "olbg_url": "https://www.olbg.com/betting-tips/Volleyball/All_Volleyball/All_Events/Marignano_W_vs_Bergamo_W/21?event_id=37075",
+   "event_id": "37075",
+   "angle": "Published for completeness of the market grid, with the gap in the evidence named in the row.",
+   "risk": "Seven tips and no external confirmation of the fixture at all. Graded C on evidence; do not stake.",
+   "facts": [
+    {
+     "text": "OLBG market: 5 of 7 tips on Bergamo W for the Tuesday fixture, printed 15:00 US Eastern",
+     "url": "https://www.olbg.com/betting-tips/",
+     "site": ""
+    },
+    {
+     "text": "Serie A1 standings, matchday number, venue and team news: BLANK - no official league source retrievable at capture (flag V-002)",
+     "url": "",
+     "site": ""
+    }
+   ]
+  },
+  {
+   "id": "P-20261027-52",
+   "cycle": "2026-10-27",
+   "sport": "Golf",
+   "competition": "DP World Tour",
+   "event": "Maybank Championship",
+   "when_official": "",
+   "market": "Win Tournament",
+   "selection": "Lottie Woad",
+   "pick_label": "Lottie Woad to lead the Maybank Championship field (4.35 originated)",
+   "prediction": "Lottie Woad is the player to name at the Maybank Championship, which runs 29 October to 1 November at the Kuala Lumpur Golf Club's West course for US$3m and 500 Race to CME Global points. She won the Kroger Queen City Championship in 2026 at 268, twelve under, sits seventh in the Rolex Rankings, and her most recent start was a round she finished 33rd at the BMW Ladies Championship after a tie for sixth at the AIG Women's Open - the form line is up-to-date and the venue has suited her game. The OLBG market carries one of two tips on her, which is why our 4.35 (+335) is an origination, not a quote.",
+   "word_count": 115,
+   "our_line": 4.35,
+   "our_line_american": 335,
+   "implied_pct": 23.0,
+   "confidence": "low",
+   "grade": "C",
+   "p_fair": 0.2188,
+   "structure": "outright - field size not printed on OLBG, 8 assumed (U-004)",
+   "notes": [
+    "thin sample: 2 tip(s) counted"
+   ],
+   "tips_on_pick": 1,
+   "tips_total": 2,
+   "pct": 50,
+   "olbg_url": "https://www.olbg.com/betting-tips/Golf/All_Golf/All_Events/Maybank_Championship/5?event_id=101913",
+   "event_id": "101913",
+   "angle": "The only golf selection on the card that can be tied to a confirmed tournament, a confirmed course and a current ranking.",
+   "risk": "Two tips on a 78-player-plus field. The price is a prior on an eight-way assumed field (U-004), so read it as 'best name in the field', not as 4.35 of value.",
+   "facts": [
+    {
+     "text": "LPGA official tournament page: Maybank Championship, Kuala Lumpur Golf & Country Club (West), 29 October - 1 November 2026, US$3,000,000",
+     "url": "https://www.lpga.com/tournaments/maybank-championship",
+     "site": "LPGA (official)"
+    },
+    {
+     "text": "Woad is ranked seventh in the Rolex Rankings and the 2026 Kroger Queen City Championship winner (268, -12)",
+     "url": "https://thegolfnewsnet.com/golfnewsnetteam/2026-10-25/2026-maybank-championship-field-lpga-tour-players-rankings-145290/",
+     "site": "The Golf News Net"
+    },
+    {
+     "text": "Recent starts: 33rd at the BMW Ladies Championship, T6 at the AIG Women's Open",
+     "url": "https://www.golfpost.com/us/tournaments/lpga-tour-maybank-championship-2026/",
+     "site": "Golf Post"
+    },
+    {
+     "text": "Course details on the LPGA's own tournament page: Kuala Lumpur Golf & Country Club, West course, par 72 at 6,536 yards",
+     "url": "https://www.lpga.com/tournaments/maybank-championship",
+     "site": "LPGA (official)"
+    },
+    {
+     "text": "One field report dated 26 October lists Nelly Korda and Atthaya Thitikul among the withdrawals; the same outlet's defending-champion line contradicts another and is unresolved, so no claim is made about who won the 2025 edition (flag GOLF-001)",
+     "url": "https://www.golfpost.com/us/tournaments/lpga-tour-maybank-championship-2026/",
+     "site": "Golf Post"
+    }
+   ]
+  }
+ ]
+}
