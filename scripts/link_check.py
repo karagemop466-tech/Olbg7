@@ -28,6 +28,19 @@ def main():
     for row in lines:
         if not row["url"].startswith("https://www.olbg.com/"):
             problems.append(f"line {row['event_id']} has no source url")
+    for p in lines:
+        n, probability = p.get("total"), p.get("probability")
+        if probability is None:
+            expected_conf = "none"
+        elif n >= 8 and probability > 0.70:
+            expected_conf = "high"
+        elif n >= 3 and probability >= 0.58:
+            expected_conf = "medium"
+        else:
+            expected_conf = "low"
+        if p.get("confidence") != expected_conf:
+            problems.append(f"line {p['event_id']} confidence mismatch: expected {expected_conf}, got {p.get('confidence')}")
+
     for p in picks:
         if p["price_decimal"] is None or not (1.40 <= p["price_decimal"] <= 101.0):
             problems.append(f"pick {p['event_id']} outside the -250/+10000 band")
