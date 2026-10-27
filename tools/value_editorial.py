@@ -50,7 +50,7 @@ F_NHL = ("NHL standings through 26 October: Carolina 9-2-2 with 51 goals for and
 F_NBA = ("NBA.com's official Nets page lists Brooklyn 0-3 and Boston 2-1 ahead of their 27 October game; NBA.com preseason power rankings had Boston first in defensive rating and Brooklyn first in offensive rating", "https://www.nba.com/team/1610612751/nets", "official")
 F_EURO = ("EuroLeague standings after seven rounds list Panathinaikos and Fenerbahce at 6-1, with Panathinaikos scoring 87.6 points per game and conceding 73.9", "https://basketnews.com/leagues/25-euroleague/standings.html", "secondary")
 F_ATP = ("ATP's official Basel coverage: the Swiss Indoors runs 26 October-1 November, Djokovic accepted a wild card, and Hurkacz is the No.10 seed", "https://www.atptour.com/en/news/basel-atp-500-2026-history-draw-schedule", "official")
-F_CRIC = ("ESPNcricinfo's series page: India won the first two T20Is in Christchurch by four wickets each and lead New Zealand 2-0 before the third match in Wellington on 27 October", "https://www.espncricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-3rd-t20i-1539434/full-scorecard", "media")
+F_CRIC = ("ESPNcricinfo's series page: India won the first two T20Is in Christchurch by four wickets each, with one ball and then two balls remaining, and lead 2-0 before the third match in Wellington on 27 October", "https://www.espncricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-3rd-t20i-1539434/full-scorecard", "media")
 F_RLWC = ("The official RLWC 2026 schedule lists England v Papua New Guinea (30 Oct, WIN Stadium), New Zealand v Fiji and Australia v Cook Islands (both 31 Oct)", "https://leagueworldcup2026.com/schedule/", "official")
 F_GAA = ("Munster GAA's official club championship table lists Glen Rovers v Inagh-Kilnamona on 1 November at Pairc Ui Rinn, 1:15pm, and Ballygunner v Kilmallock in the semi-finals on 15 November", "https://munster.gaa.ie/fixtures/club-championships-2026/", "official")
 F_CBV = ("CBV's official Superliga table shows the 2026-27 season in round one, with Suzano, Praia Clube, Goias and Sao Jose all yet to record a point", "https://cbv.com.br/volei-de-quadra/superliga-a-masculina", "official")
@@ -73,11 +73,11 @@ def P(id, sport, line_id, prediction, facts, conf="medium", selection=None,
 PICKS = [
     # ------------------------------- GOLF ---------------------------------
     P("GF-01", "Golf", "X-GF-01",
-      "Lottie Woad has already won twice since turning professional, including the 2026 Kroger Queen City Championship, and LPGA's entries page confirms her in this week's Maybank field. Only two OLBG tips have been placed on the tournament outright and one of them backs Woad, so our own line stays long: she is the selection, with the modest tip sample the reason to keep stakes small.",
+      "Lottie Woad has already won on the LPGA circuit, including the 2026 Kroger Queen City Championship, and LPGA's entries page confirms her in this week's Maybank field. Only two OLBG tips have been placed on the tournament outright and one of them backs Woad, so our own line stays long: she is the selection, with the modest tip sample the reason to keep stakes small.",
       [F_LPGA, ("Woad won the 2026 Kroger Queen City Championship and the 2025 ISPS Handa Scottish Open", "https://www.espn.com/golf/schedule/_/tour/lpga", "media"),
        ("OLBG's Maybank Championship event page shows Lottie Woad on 1/2 Win Tips", "https://www.olbg.com/betting-tips/Golf/All_Golf/All_Events/Maybank_Championship/5?event_id=101913", "olbg")], "high"),
     P("GF-02", "Golf", "X-GF-02",
-      "Hye Jin Choi shares the Maybank Championship tip lead with Lottie Woad at one win tip apiece, yet she is the one the OLBG event page calls the Most Popular Tip. The official LPGA schedule puts this 72-hole limited-field event on the West Course from 29 October, where a player with Choi's ranking profile can outlast a larger field. Choi is our outright play at a big price.",
+      "Hye Jin Choi shares the Maybank Championship tip lead with Lottie Woad at one win tip apiece, yet she is the one the OLBG event page calls the Most Popular Tip. The official LPGA schedule puts this four-round event on the West Course from 29 October, where a player with Choi's ranking profile can outlast a larger field. Choi is our outright play at a big price.",
       [F_LPGA, ("2026 Maybank Championship field rankings place Hye Jin Choi 27th in the world", "https://thegolfnewsnet.com/golfnewsnetteam/2026/10/25/2026-maybank-championship-field-lpga-tour-players-rankings-145290/", "secondary"),
        ("OLBG event page names Hye Jin Choi the Most Popular Tip on 1/2 Win Tips", "https://www.olbg.com/betting-tips/Golf/All_Golf/All_Events/Maybank_Championship/5?event_id=101913", "olbg")], "medium", flags=["ranking-from-secondary-source"]),
     P("GF-03", "Golf", "X-GF-03",
@@ -157,11 +157,12 @@ PICKS = [
       "Mark Selby is fourth in WST's official world rankings with 1,070,500 pounds and tops the one-year list on 348,350 pounds, a stark advantage over Jimmy White in their International Championship second-round match in Nanjing. OLBG has no snooker tips at all today, so this line comes from the ranking gap rather than community opinion. Take Selby to win the match.",
       [F_WST_FIXTURES, F_WST_RANKINGS, F_OLBG_SNOOKER_EMPTY], "high", flags=["no-olbg-market-today"]),
     P("SK-02", "Snooker", "X-SK-02",
-      "Shaun Murphy sits seventh in the official WST rankings on 884,150 pounds and has 19 centuries this season, while specialist draw listings place Mitchell Mann outside the top 90. Their round-two match in Nanjing is listed on WST's own match centre. Over a best-of-eleven frames contest that class gap should tell: Murphy to beat Mann is the selection.",
+      "Shaun Murphy sits seventh in the official WST rankings on 884,150 pounds, while specialist draw listings place Mitchell Mann outside the top 90. Their round-two match in Nanjing is listed on WST's own match centre. Over a best-of-eleven frames contest that class gap should tell: Murphy to beat Mann is the selection.",
       [F_WST_FIXTURES, F_WST_RANKINGS, F_OLBG_SNOOKER_EMPTY], "high", flags=["opponent-rank-from-secondary-source", "no-olbg-market-today"]),
     P("SK-03", "Snooker", "X-SK-03",
       "Zhou Yuelong has home-country backing in Nanjing and meets Liam Davies in a round-two match confirmed by WST's match centre. Davies appears ninth on WST's Home Nations bonus list with 18,600 pounds, while Zhou is a long-established top-32 player. With no OLBG snooker market to lean on, our price is deliberately cautious: Zhou Yuelong to win is the pick.",
-      [F_WST_FIXTURES, ("WST's official Home Nations bonus list has Liam Davies ninth on GBP 18,600", "https://www.wst.tv/rankings/", "official"), F_OLBG_SNOOKER_EMPTY], "medium", flags=["no-olbg-market-today"]),
+      [F_WST_FIXTURES, ("WST's official Home Nations bonus list has Liam Davies ninth on GBP 18,600", "https://www.wst.tv/rankings/", "official"),
+       ("The specialist International Championship draw lists Zhou Yuelong at 18 and Liam Davies at 90", "https://www.snooker.org/res/index.asp?event=2762", "secondary"), F_OLBG_SNOOKER_EMPTY], "medium", flags=["no-olbg-market-today"]),
     P("SK-04", "Snooker", "X-SK-04",
       "Kyren Wilson won the Northern Ireland Open in Belfast on 25 October, with WST's own headline 'Wilson Reigns Supreme In Belfast', and he is ninth in the official world rankings. He now faces Liam Highfield in Nanjing in the International Championship. Riding a title-winning week is the clearest form signal in this section, so Wilson to win is our selection.",
       [("WST official news, 25 October 2026: 'Wilson Reigns Supreme In Belfast'", "https://www.wst.tv/news/2026/october/25/Wilson-Reigns-Supreme-In-Belfast/", "official"), F_WST_RANKINGS,
@@ -200,7 +201,7 @@ PICKS = [
       [F_MLB_SCHED, F_MLB_G3, F_MLB_G4,
        ("OLBG Game 4 event page: MIL Brewers 2/2 Money Line Win Tips", "https://www.olbg.com/betting-tips/Baseball/MLB/MLB/MIL_Brewers_@_TB_Rays/12?event_id=160799", "olbg")], "high"),
     P("BS-02", "Baseball", "X-BS-02",
-      "Milwaukee's 10-1 Game 3 win was their fourth straight road postseason victory, and OLBG's only run-line tip for Game 4 takes the Brewers at -1.50 rather than Tampa Bay at +1.50. With Griffin Jax starting for the Rays and Milwaukee's starter still listed as TBA on MLB.com, the run line carries real risk. Take Milwaukee -1.50 at a plus-money price.",
+      "Milwaukee's 10-1 Game 3 win was their eighth straight postseason victory, and OLBG's only run-line tip for Game 4 takes the Brewers at -1.50 rather than Tampa Bay at +1.50. With Griffin Jax starting for the Rays and Milwaukee's starter still listed as TBA on MLB.com, the run line carries real risk. Take Milwaukee -1.50 at a plus-money price.",
       [F_MLB_SCHED, F_MLB_G4,
        ("OLBG Game 4 event page: MIL Brewers -1.50 1/1 Run Line Win Tips; TB Rays +1.50 0/1", "https://www.olbg.com/betting-tips/Baseball/MLB/MLB/MIL_Brewers_@_TB_Rays/12?event_id=160799", "olbg")], "medium", flags=["starting-pitcher-unconfirmed"]),
     P("BS-03", "Baseball", "X-BS-03",
@@ -348,7 +349,8 @@ PICKS = [
     P("BB-04", "Basketball", "143",
       "New York are 0-3 on NBA.com's official standings and host a Detroit side that is 3-0 and first in the Eastern Conference, yet OLBG's one tip for the game is on the Knicks. Our own line follows the official records rather than that lone tip, which is why this is a contrarian play. New York to win at home is the low-confidence value pick.",
       [F_NBA, ("OLBG 27 October listing: NY Knicks 1/1 Money Line tip vs DET Pistons", "https://www.olbg.com/betting-tips/Basketball/4", "olbg"),
-       ("NBA.com preseason power rankings placed Detroit 10th and New York 3rd", "https://www.nba.com/news/power-rankings-2026-27-week-1", "official")], "low", flags=["value-against-tips", "no-official-injury-report"]),
+       ("NBA.com preseason power rankings placed Detroit 10th and New York 3rd", "https://www.nba.com/news/power-rankings-2026-27-week-1", "official"),
+       ("2026-27 NBA standings list Detroit 3-0 and New York 0-3", "https://www.foxsports.com/nba/standings", "media")], "low", flags=["value-against-tips", "no-official-injury-report"]),
     P("BB-05", "Basketball", "135",
       "Frankfurt Skyliners have both OLBG pointspread tips at +1.50 against U BT Cluj Napoca, the only handicap basketball row on today's card. No official Basketball Champions League or German league form table was retrievable for the pairing, so the selection rests on that unanimous two-tip sample. Frankfurt +1.50 is the pick, low confidence.",
       [("OLBG 27 October listing: Frankfurt Skyliners +1.50 2/2 Pointspread tips", "https://www.olbg.com/betting-tips/Basketball/4", "olbg")], "low", flags=["no-official-form-data"]),

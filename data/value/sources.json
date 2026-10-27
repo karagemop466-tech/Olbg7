@@ -387,9 +387,9 @@
     "Cricket"
    ],
    "claims": [
-    "ESPNcricinfo's series page: India won the first two T20Is in Christchurch by four wickets each and lead New Zealand 2-0 before the third match in Wellington on 27 October",
-    "ESPNcricinfo's series page: India won the first two T20Is in Christchurch by four wickets each and lead New Zealand 2-0 before the third match in Wellington on 27 October",
-    "ESPNcricinfo's series page: India won the first two T20Is in Christchurch by four wickets each and lead New Zealand 2-0 before the third match in Wellington on 27 October"
+    "ESPNcricinfo's series page: India won the first two T20Is in Christchurch by four wickets each, with one ball and then two balls remaining, and lead 2-0 before the third match in Wellington on 27 October",
+    "ESPNcricinfo's series page: India won the first two T20Is in Christchurch by four wickets each, with one ball and then two balls remaining, and lead 2-0 before the third match in Wellington on 27 October",
+    "ESPNcricinfo's series page: India won the first two T20Is in Christchurch by four wickets each, with one ball and then two balls remaining, and lead 2-0 before the third match in Wellington on 27 October"
    ]
   },
   {
@@ -624,6 +624,20 @@
    ]
   },
   {
+   "url": "https://www.snooker.org/res/index.asp?event=2762",
+   "count": 2,
+   "kinds": [
+    "secondary"
+   ],
+   "sports": [
+    "Snooker"
+   ],
+   "claims": [
+    "The specialist International Championship draw lists Zhou Yuelong at 18 and Liam Davies at 90",
+    "The International Championship round-two draw lists Liam Highfield v Kyren Wilson on 1 November"
+   ]
+  },
+  {
    "url": "https://sports.yahoo.com/articles/zealand-vs-india-3rd-t20i-050525124.html",
    "count": 1,
    "kinds": [
@@ -754,6 +768,19 @@
    ]
   },
   {
+   "url": "https://www.foxsports.com/nba/standings",
+   "count": 1,
+   "kinds": [
+    "media"
+   ],
+   "sports": [
+    "Basketball"
+   ],
+   "claims": [
+    "2026-27 NBA standings list Detroit 3-0 and New York 0-3"
+   ]
+  },
+  {
    "url": "https://www.olbg.com/betting-tips/Darts/15",
    "count": 1,
    "kinds": [
@@ -816,19 +843,6 @@
    ],
    "claims": [
     "The PGA TOUR's own betting article quoted FanDuel prices of +1200 for Clark, +17500 for defending champion Brian Campbell and +8000 for 2023 winner Tony Finau"
-   ]
-  },
-  {
-   "url": "https://www.snooker.org/res/index.asp?event=2762",
-   "count": 1,
-   "kinds": [
-    "secondary"
-   ],
-   "sports": [
-    "Snooker"
-   ],
-   "claims": [
-    "The International Championship round-two draw lists Liam Highfield v Kyren Wilson on 1 November"
    ]
   },
   {
