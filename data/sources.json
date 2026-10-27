@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "retrieved_at": "2026-10-26",
+  "retrieved_at": "2026-10-27",
   "olbg_url_grammar": {
     "sport_root": "https://www.olbg.com/betting-tips/{Sport}/{sport_id}",
     "competition_page": "https://www.olbg.com/betting-tips/{Sport}/{Group}/{Competition}/{sport_id}",
@@ -10,128 +10,100 @@
     "notes": [
       "The trailing number is the sport id and is identical on every page for that sport.",
       "The event_id query parameter is required. Slugs alone are ambiguous and the same slug can appear under different groups.",
-      "Some listings use a group segment of All_{Sport} (Rugby Union, Volleyball, Handball, Darts, Motor Racing, Greyhounds, Gaelic, Snooker) and some use real groups (Basketball/NBA/NBA, Ice_Hockey/NHL/NHL, Baseball/MLB/MLB).",
+      "Some listings use a group segment of All_{Sport} (Rugby Union, Volleyball, Handball, Darts, Motor Racing, Greyhounds, Gaelic, Snooker) and some use real groups (Basketball/Euroleague, Ice_Hockey/NHL/NHL, Baseball/MLB/MLB).",
       "Guessing a wrong sport id returns a hard 404, e.g. /betting-tips/Tennis/6 - the correct id is 3.",
       "Event pages expose every market with its line and per-outcome tip split; listing pages expose only the most-tipped selection.",
-      "Bookmaker prices are client-side rendered and were absent from every page retrieved."
+      "Bookmaker prices are client-side rendered and were absent from every page retrieved on 2026-10-27 (flag F-001).",
+      "On 2026-10-27 the Snooker (id 8) and Greyhounds (id 28) roots and all-events pages returned 'No tips found'."
     ]
   },
   "sports_status": [
-    {"sport": "Golf", "id": "5", "root": "https://www.olbg.com/betting-tips/Golf/5", "events": 3, "status": "live, tournament-level only", "markets": ["Win Tournament"]},
-    {"sport": "Volleyball", "id": "21", "root": "https://www.olbg.com/betting-tips/Volleyball/21", "events": 16, "status": "live", "markets": ["Win Match"]},
-    {"sport": "Rugby Union", "id": "9", "root": "https://www.olbg.com/betting-tips/Rugby_Union/9", "events": 16, "status": "live", "markets": ["To Win", "Handicap", "Win Tournament"]},
-    {"sport": "Cricket", "id": "7", "root": "https://www.olbg.com/betting-tips/Cricket/7", "events": 14, "status": "live", "markets": ["Win Match", "Top Team1 Batsman", "Outright Winner", "Man Of The Match"]},
-    {"sport": "Snooker", "id": "8", "root": "https://www.olbg.com/betting-tips/Snooker/8", "events": 0, "status": "empty - 'No tips found'", "markets": []},
-    {"sport": "Darts", "id": "15", "root": "https://www.olbg.com/betting-tips/Darts/15", "events": 2, "status": "live, tournament-level", "markets": ["Win Tournament"]},
-    {"sport": "Baseball", "id": "12", "root": "https://www.olbg.com/betting-tips/Baseball/12", "events": 1, "status": "live, one game only", "markets": ["Money Line", "Game Totals", "Run Line (documented, untipped)"]},
-    {"sport": "Gaelic Sports (Football)", "id": "25", "root": "https://www.olbg.com/betting-tips/Gaelic_Football/25", "events": 3, "status": "live", "markets": ["Handicap", "Win Tournament"]},
-    {"sport": "Gaelic Sports (Hurling)", "id": "26", "root": "https://www.olbg.com/betting-tips/Hurling/26", "events": 1, "status": "live, ante-post only", "markets": ["Win Hurling"]},
-    {"sport": "Greyhounds", "id": "28", "root": "https://www.olbg.com/betting-tips/Greyhounds/28", "events": 8, "status": "live, race-by-race", "markets": ["Daily Races"]},
-    {"sport": "Tennis", "id": "3", "root": "https://www.olbg.com/betting-tips/Tennis/3", "events": 15, "status": "live", "markets": ["Win Match"]},
-    {"sport": "Motor Racing", "id": "14", "root": "https://www.olbg.com/betting-tips/Motor_Racing/14", "events": 2, "status": "live, thin", "markets": ["Win Race", "Podium Finish", "Top 6 Finish", "Win Tournament"]},
-    {"sport": "Handball", "id": "20", "root": "https://www.olbg.com/betting-tips/Handball/20", "events": 15, "status": "live, display defect", "markets": ["Money Line", "Match Handicap (documented)", "Points Total (documented)"]},
-    {"sport": "Ice Hockey", "id": "13", "root": "https://www.olbg.com/betting-tips/Ice_Hockey/13", "events": 13, "status": "live", "markets": ["Money Line", "Puck Line", "Game Totals"]},
-    {"sport": "Basketball", "id": "4", "root": "https://www.olbg.com/betting-tips/Basketball/4", "events": 18, "status": "live", "markets": ["Money Line", "Pointspread", "Game Totals"]},
-    {"sport": "Rugby League", "id": "10", "root": "https://www.olbg.com/betting-tips/Rugby_League/10", "events": 3, "status": "ante-post only", "markets": ["Win Tournament", "Grand Final Winner"]}
+    {"sport": "Golf", "id": "5", "root": "https://www.olbg.com/betting-tips/Golf/5", "events": 3, "status": "live, tournament-level only, two tips each", "markets": ["Win Tournament"]},
+    {"sport": "Volleyball", "id": "21", "root": "https://www.olbg.com/betting-tips/Volleyball/21", "events": 20, "status": "live", "markets": ["Win Match"]},
+    {"sport": "Rugby Union", "id": "9", "root": "https://www.olbg.com/betting-tips/Rugby_Union/9", "events": 13, "status": "live, Pro D2/URC plus one outright", "markets": ["To Win", "Handicap", "Win Tournament"]},
+    {"sport": "Cricket", "id": "7", "root": "https://www.olbg.com/betting-tips/Cricket/7", "events": 18, "status": "live; one outright row printed no split", "markets": ["Win Match", "Top Team1 Batsman", "Outright Winner"]},
+    {"sport": "Snooker", "id": "8", "root": "https://www.olbg.com/betting-tips/Snooker/8", "events": 0, "status": "empty - 'No tips found' on root and all-events", "markets": []},
+    {"sport": "Darts", "id": "15", "root": "https://www.olbg.com/betting-tips/Darts/15", "events": 2, "status": "live, tournament-level only", "markets": ["Win Tournament"]},
+    {"sport": "Baseball", "id": "12", "root": "https://www.olbg.com/betting-tips/Baseball/12", "events": 1, "status": "live, one World Series game only", "markets": ["Money Line"]},
+    {"sport": "Gaelic Sports (Football)", "id": "25", "root": "https://www.olbg.com/betting-tips/Gaelic_Football/25", "events": 3, "status": "live, club handicaps plus 2027 outright", "markets": ["Handicap", "Win Tournament"]},
+    {"sport": "Gaelic Sports (Hurling)", "id": "26", "root": "https://www.olbg.com/betting-tips/Hurling/26", "events": 1, "status": "live, 2027 ante-post only", "markets": ["Win Hurling"]},
+    {"sport": "Greyhounds", "id": "28", "root": "https://www.olbg.com/betting-tips/Greyhounds/28", "events": 0, "status": "empty - 'No tips found' on root and all-events", "markets": []},
+    {"sport": "Tennis", "id": "3", "root": "https://www.olbg.com/betting-tips/Tennis/3", "events": 20, "status": "live, ATP/WTA tour stops", "markets": ["Win Match"]},
+    {"sport": "Motor Racing", "id": "14", "root": "https://www.olbg.com/betting-tips/Motor_Racing/14", "events": 2, "status": "live, thin; Mexico GP plus reduced-field championship", "markets": ["Win Tournament", "Podium Finish"]},
+    {"sport": "Handball", "id": "20", "root": "https://www.olbg.com/betting-tips/Handball/20", "events": 19, "status": "live, 15 of 19 rows show 'Tie' as most-tipped (flag F-002)", "markets": ["Money Line"]},
+    {"sport": "Ice Hockey", "id": "13", "root": "https://www.olbg.com/betting-tips/Ice_Hockey/13", "events": 18, "status": "live, NHL/SHL/Liiga/DEL", "markets": ["Money Line", "Puck Line", "Game Totals"]},
+    {"sport": "Basketball", "id": "4", "root": "https://www.olbg.com/betting-tips/Basketball/4", "events": 20, "status": "live, EuroLeague round plus other competitions", "markets": ["Money Line", "Pointspread"]},
+    {"sport": "Rugby League", "id": "10", "root": "https://www.olbg.com/betting-tips/Rugby_League/10", "events": 3, "status": "ante-post only, 2027 futures", "markets": ["Win Tournament", "Grand Final Winner"]}
   ],
   "register": {
-    "OLBG (core data: events, splits, markets, published stats)": [
-      {"name": "OLBG betting tips index", "url": "https://www.olbg.com/betting-tips", "use": "Master event list; confirmed Gaelic Football and Hurling are separate sports"},
-      {"name": "OLBG Basketball", "url": "https://www.olbg.com/betting-tips/Basketball/4", "use": "NBA/EuroLeague/NBB events and splits"},
-      {"name": "OLBG Basketball event page (MIN@CLE)", "url": "https://www.olbg.com/betting-tips/Basketball/NBA/NBA/MIN_Timberwolves_@_CLE_Cavaliers/4?event_id=536203", "use": "Full market breakdown: money line, spread -4.50, totals 232.50"},
-      {"name": "OLBG Ice Hockey", "url": "https://www.olbg.com/betting-tips/Ice_Hockey/13", "use": "NHL/SHL/Liiga/DEL events and splits"},
-      {"name": "OLBG Cricket", "url": "https://www.olbg.com/betting-tips/Cricket/7", "use": "International and domestic cricket events and splits"},
-      {"name": "OLBG Rugby Union", "url": "https://www.olbg.com/betting-tips/Rugby_Union/9", "use": "URC/Pro D2/Top 14 events, handicaps, Six Nations ante-post"},
-      {"name": "OLBG Tennis", "url": "https://www.olbg.com/betting-tips/Tennis/3", "use": "ATP/WTA match list and splits"},
-      {"name": "OLBG Volleyball", "url": "https://www.olbg.com/betting-tips/Volleyball/21", "use": "16 volleyball matches and splits"},
-      {"name": "OLBG Handball", "url": "https://www.olbg.com/betting-tips/Handball/20", "use": "EHF Champions League fixtures; published favourite base rates (446/654, 68.2%)"},
-      {"name": "OLBG Greyhounds", "url": "https://www.olbg.com/betting-tips/Greyhounds/28", "use": "Race cards, plus published trap and favourite win-rate tables"},
-      {"name": "OLBG Gaelic Football", "url": "https://www.olbg.com/betting-tips/Gaelic_Football/25", "use": "Club handicaps, All-Ireland ante-post, competition history and 2026 scoring rules"},
-      {"name": "OLBG Hurling", "url": "https://www.olbg.com/betting-tips/Hurling/26", "use": "All-Ireland hurling ante-post market"},
-      {"name": "OLBG Golf", "url": "https://www.olbg.com/betting-tips/Golf/5", "use": "Three tournament outrights only"},
-      {"name": "OLBG Darts", "url": "https://www.olbg.com/betting-tips/Darts/15", "use": "PDC World Championship and Players Championship 31"},
-      {"name": "OLBG Darts event page", "url": "https://www.olbg.com/betting-tips/Darts/All_Darts/All_Events/Players_Championship_31/15?event_id=32446", "use": "Four-way 25% split and tipster comment"},
-      {"name": "OLBG Motor Racing", "url": "https://www.olbg.com/betting-tips/Motor_Racing/14", "use": "Mexico City GP and Drivers' Championship without Antonelli"},
-      {"name": "OLBG Mexico City GP event page", "url": "https://www.olbg.com/betting-tips/Motor_Racing/All_Motor_Racing/All_Events/Mexico_City_Grand_Prix/14?event_id=914", "use": "Win Race 1/3 splits; Podium and Top 6 markets empty; circuit length 4.3km, 71 laps"},
-      {"name": "OLBG Baseball", "url": "https://www.olbg.com/betting-tips/Baseball/12", "use": "World Series Game 3 markets"},
-      {"name": "OLBG MLB page", "url": "https://www.olbg.com/betting-tips/Baseball/MLB/12", "use": "Home favourite .588 / road favourite .567 five-season win rates"},
-      {"name": "OLBG Rugby League", "url": "https://www.olbg.com/betting-tips/Rugby_League/10", "use": "Ante-post markets only"},
-      {"name": "OLBG Snooker", "url": "https://www.olbg.com/betting-tips/Snooker/8", "use": "Returned 'No tips found' on retrieval"},
-      {"name": "OLBG Snooker all-events", "url": "https://www.olbg.com/betting-tips/Snooker/All_Snooker/All_Events/8", "use": "Also returned 'No tips found'"}
-    ],
-    "Basketball": [
-      {"name": "NBA official injury report 25 Oct 2026 (05:15 PM)", "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-25_05_15PM.pdf", "use": "DiVincenzo out (Achilles), Diop out (left knee), Tomlin out (back)"},
-      {"name": "NBA official injury report 25 Oct 2026 (04:45 PM)", "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-25_04_45PM.pdf", "use": "Pacers: Furphy out (ACL), Smith out, Brown probable"},
-      {"name": "USA Today box score, Raptors at Timberwolves", "url": "https://sportsdata.usatoday.com/basketball/nba/summary/3018820", "use": "117-94 Minnesota win, 3-0 start, Edwards knee management"},
-      {"name": "ESPN NBA scoreboard 25 Oct 2026", "url": "https://www.espn.com/nba/scoreboard/_/date/20261025", "use": "Raptors 94 - Timberwolves 117"},
-      {"name": "Round-up of 24-25 October NBA results", "url": "https://thesportsencounter.com/2026/10/26/nba-doncic-52-lakers-thunder-weekend-october-2026/", "use": "Cavaliers 125-121 Nets; Bucks 116-127 76ers; Pacers 136-109 Nets"},
-      {"name": "CBS Sports Cavaliers team page", "url": "https://www.cbssports.com/nba/teams/CLE/cleveland-cavaliers/", "use": "Khalifa Diop out for a third straight game"}
-    ],
-    "Ice Hockey": [
-      {"name": "NHL.com game recap, Maple Leafs at Oilers", "url": "https://www.nhl.com/news/toronto-maple-leafs-edmonton-oilers-game-recap-october-24-2026", "use": "7-2 Toronto win, Nylander 300th goal, Stolarz 30 saves, records 7-4-2 and 8-2-1, Draisaitl and McDavid streaks, Carolina as defending champions"},
-      {"name": "NHL.com Maple Leafs recap", "url": "https://www.nhl.com/mapleleafs/news/recap-leafs-oilers-oct-24-2026", "use": "Toronto 7-4-2, 16 points; Edmonton 8-2-1, 17 points"}
+    "OLBG (core data: events, splits, markets)": [
+      {"name": "OLBG betting tips index", "url": "https://www.olbg.com/betting-tips", "use": "Master entry point; Gaelic Football (25) and Hurling (26) confirmed as separate OLBG sports"},
+      {"name": "OLBG Golf", "url": "https://www.olbg.com/betting-tips/Golf/5", "use": "Three tournament outrights, each with a 1/2 split"},
+      {"name": "OLBG Volleyball", "url": "https://www.olbg.com/betting-tips/Volleyball/21", "use": "20 win-match markets and splits"},
+      {"name": "OLBG Rugby Union", "url": "https://www.olbg.com/betting-tips/Rugby_Union/9", "use": "Pro D2 and URC cards, handicaps and one outright"},
+      {"name": "OLBG Cricket", "url": "https://www.olbg.com/betting-tips/Cricket/7", "use": "18 international and domestic markets; T20 Blast 2027 row printed no split"},
+      {"name": "OLBG Snooker", "url": "https://www.olbg.com/betting-tips/Snooker/8", "use": "Returned 'No tips found' on root and all-events pages"},
+      {"name": "OLBG Darts", "url": "https://www.olbg.com/betting-tips/Darts/15", "use": "PDC World Championship 2027 (22/36) and Players Championship 31 (2/8)"},
+      {"name": "OLBG Baseball", "url": "https://www.olbg.com/betting-tips/Baseball/12", "use": "World Series Game 4 money line, 2/2 split"},
+      {"name": "OLBG Gaelic Football", "url": "https://www.olbg.com/betting-tips/Gaelic_Football/25", "use": "Two club handicaps and the 2027 All-Ireland football outright, including all-time titles table"},
+      {"name": "OLBG Hurling", "url": "https://www.olbg.com/betting-tips/Hurling/26", "use": "2027 All-Ireland hurling outright (Galway 7/18)"},
+      {"name": "OLBG Greyhounds", "url": "https://www.olbg.com/betting-tips/Greyhounds/28", "use": "Returned 'No tips found' on root and all-events pages"},
+      {"name": "OLBG Tennis", "url": "https://www.olbg.com/betting-tips/Tennis/3", "use": "20 ATP/WTA win-match markets and splits"},
+      {"name": "OLBG Motor Racing", "url": "https://www.olbg.com/betting-tips/Motor_Racing/14", "use": "Mexico City GP podium market and reduced-field 2026 drivers' championship"},
+      {"name": "OLBG Handball", "url": "https://www.olbg.com/betting-tips/Handball/20", "use": "19 money-line rows; 15 print 'Tie' as most-tipped and are excluded, four real-club rows are priced"},
+      {"name": "OLBG Ice Hockey", "url": "https://www.olbg.com/betting-tips/Ice_Hockey/13", "use": "NHL, SHL, Liiga and DEL money lines, puck lines and totals"},
+      {"name": "OLBG Basketball", "url": "https://www.olbg.com/betting-tips/Basketball/4", "use": "20 markets including all six of today's EuroLeague Round 8 games"},
+      {"name": "OLBG Rugby League", "url": "https://www.olbg.com/betting-tips/Rugby_League/10", "use": "Three 2027 ante-post markets only; no match-level tips"}
     ],
     "Cricket": [
-      {"name": "ESPNcricinfo match preview, NZ v India 3rd T20I", "url": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-3rd-t20i-1539434/match-preview", "use": "Probable XIs, Wellington venue, series context"},
-      {"name": "ESPNcricinfo 3rd T20I Guwahati scorecard (Jan 2026)", "url": "https://www.cricinfo.com/series/new-zealand-in-india-2025-26-1490228/india-vs-new-zealand-3rd-t20i-1490236/full-scorecard", "use": "Consulted only to separate the January 2026 match from the October 2026 fixture - not used as evidence for the pick"}
-    ],
-    "Rugby Union": [
-      {"name": "BBC Sport, Glasgow Warriors 36-19 Connacht", "url": "https://www.bbc.co.uk/sport/rugby-union/articles/cwx285l666ejo", "use": "Glasgow five-try bonus-point win, tries and scorers"},
-      {"name": "RTE Sport, URC Round 3 guide", "url": "https://www.rte.ie/sport/united-rugby-championship/2026/1008/1594529-united-rugby-championship-round-3-all-you-need-to-know/", "use": "Ulster winless with five points; Munster 26-22 win over Bulls"},
-      {"name": "Wikipedia, 2026-27 Leinster Rugby season", "url": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Leinster_Rugby_season", "use": "URC standings after three rounds; Connacht v Leinster fixture 30 Oct 2026"},
-      {"name": "URC.tv fixtures", "url": "https://urc.tv/", "use": "Glasgow Warriors v Lions, Round 5, 30 Oct 2026, 19:45 GMT"},
-      {"name": "Wikipedia, 2026-27 United Rugby Championship", "url": "https://en.wikipedia.org/wiki/2026%E2%80%9327_United_Rugby_Championship", "use": "Coaches and captains cross-check"}
+      {"name": "ESPNcricinfo, India in New Zealand 2026-27 schedule", "url": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/match-schedule-fixtures-and-results", "use": "3rd T20I at Wellington listed for 27 October, confirming the OLBG card"},
+      {"name": "ESPNcricinfo, Afghanistan v Zimbabwe 1st T20I", "url": "https://www.cricinfo.com/series/afghanistan-v-zimbabwe-2026-27-1555105/afghanistan-vs-zimbabwe-1st-t20i-1555120/live-cricket-score", "use": "Sharjah venue and series opener"},
+      {"name": "ESPNcricinfo, Pakistan ODI tri-series 5th match", "url": "https://www.cricinfo.com/series/pakistan-odi-tri-series-2026-27-1550706/pakistan-vs-sri-lanka-5th-match-1550717/match-preview", "use": "Lahore fixture and match number"},
+      {"name": "ESPNcricinfo, Namibia v Ireland 3rd ODI", "url": "https://www.cricinfo.com/series/ireland-in-namibia-2026-27-1558225/namibia-vs-ireland-3rd-odi-1558233/live-cricket-score", "use": "Windhoek venue and deciding match"}
     ],
     "Tennis": [
-      {"name": "ATP Tour draw preview, Basel 2026", "url": "https://www.atptour.com/en/news/djokovic-basel-2026-draw-preview", "use": "Djokovic v Humbert first round, fourth seed, 19-8 in 2026, first appearance since 2011, Wawrinka v Lehecka"},
-      {"name": "Lente Desportiva, Djokovic schedule", "url": "https://lentedesportiva.com/novak-djokovic-makes-surprise-schedule-change-as-atp-finals-hopes-hang-in-the-balance/", "use": "Humbert world No. 35, four of seven titles indoors, schedule conflict"},
-      {"name": "Tennis Majors, Djokovic v Humbert", "url": "https://www.tennismajors.com/matches/atp/swiss-indoors-basel/novak-djokovic-vs-ugo-humbert", "use": "Fixture listed for 28 October 2026 at Swiss Indoors Basel"},
-      {"name": "Mundo Deportivo, Davidovich withdrawal", "url": "https://www.mundodeportivo.com/en/20261025/1004243049/davidovich-withdraws-from-basel-tournament-at-the-last-minute-denying-jodar-rematch.html", "use": "Basel draw composition, Djokovic v Humbert, Jodar in draw"}
+      {"name": "ESPN tennis scoreboard", "url": "https://www.espn.com/tennis/scoreboard", "use": "Tournament mapping: Swiss Indoors Basel and Guangzhou Open first-round pairings"},
+      {"name": "ESPN Toray Pan Pacific Open event page", "url": "https://www.espn.com/tennis/scoreboard/tournament/_/eventId/264-2026", "use": "Tokyo WTA 500 dates 23 Oct - 1 Nov, defending champion Belinda Bencic, first-round board including Fernandez v Sakatsume and Valentova v Pohankova"}
     ],
-    "Volleyball": [
-      {"name": "ge.globo, Cruzeiro 2026/27 first-half schedule", "url": "https://ge.globo.com/mg/triangulo-mineiro/volei/noticia/2026/10/08/superliga-masculina-202627-veja-tabela-de-jogos-do-cruzeiro-no-1o-turno.ghtml", "use": "Round 1: Montes Claros v Cruzeiro, 26/10, 18h30, Tancredo Neves"},
-      {"name": "O Tempo, Superliga 2026/27 club guide", "url": "https://www.otempo.com.br/sports/volei/2026/10/18/superliga-masculina-de-volei-2026-27-veja-os-times-confirmados-e-elencos", "use": "Cruzeiro reigning champions, 10 titles"},
-      {"name": "O Tempo, Supercopa winners", "url": "https://www.otempo.com.br/sports/volei/2026/10/24/todos-os-campeoes-supercopa", "use": "Cruzeiro beat Volei Renata 3-2 in the Supercopa on 23 October"},
-      {"name": "Diario do Nordeste, Superliga guide", "url": "https://diariodonordeste.verdesmares.com.br/jogada/superliga-masculina-202627-veja-o-guia-com-norde-volei-e-outros-11-times-1.3800023", "use": "Cruzeiro coached by Filipe Ferraz, five-time world champions"}
+    "Basketball": [
+      {"name": "EuroLeague official site, 2026-27 home", "url": "https://www.euroleaguebasketball.net/en/euroleague/", "use": "Round 8 schedule with standings positions for all six games on 27 October and Round 7 results; ESPN's EuroLeague scoreboard rendered no data"}
     ],
-    "Handball": [
-      {"name": "EHF Champions League men 2026/27 official standings", "url": "https://ehfcl.eurohandball.com/men/2026-27/standings/", "use": "Group A, C and F records, goals and points"},
-      {"name": "EHF official review, round 5", "url": "https://ehfcl.eurohandball.com/men/2026-27/news/en/kielce-to-main-round-high-octane-veszprem-take-fuechse/", "use": "Veszprem 39-35 Fuchse Berlin; Kielce into the main round"},
-      {"name": "EHF official review, round 4", "url": "https://ehfcl.eurohandball.com/men/2026-27/news/en/magdeburg-aalborg-and-paris-in-main-round-four-clubs-out/", "use": "Magdeburg 30-27 Kielce, scorers"},
-      {"name": "Handball-Planet round 4 report", "url": "https://www.handball-planet.com/ehf-cl-26-27-magdeburg-beat-kielce-veszprem-cruise-past-partizan-aalborg-survive-zagreb-thriller/", "use": "Veszprem 38-28 Partizan, Pechmalbec 8, Appelgren 18 saves"},
-      {"name": "SC Magdeburg official match report", "url": "https://www.scm-handball.de/en/scm-news/match-center/match-report/against-kielce-sc-magdeburg-secures-the-main-round/", "use": "30-27 (13:14) win, main-round qualification"},
-      {"name": "Wikipedia, 2026-27 EHF Champions League", "url": "https://en.wikipedia.org/wiki/2026%E2%80%9327_EHF_Champions_League", "use": "Group F cross-table; group stage tie fixtures"}
-    ],
-    "Golf": [
-      {"name": "OLBG Golf", "url": "https://www.olbg.com/betting-tips/Golf/5", "use": "The only three golf markets with tips"}
-    ],
-    "Darts": [
-      {"name": "OLBG Darts", "url": "https://www.olbg.com/betting-tips/Darts/15", "use": "PDC World Championship 22/36; Players Championship 31 listing"},
-      {"name": "OLBG Players Championship 31 event page", "url": "https://www.olbg.com/betting-tips/Darts/All_Darts/All_Events/Players_Championship_31/15?event_id=32446", "use": "Full market table and Aspinall comment"}
-    ],
-    "Motor Racing": [
-      {"name": "Formula1.com 2026 drivers' standings", "url": "https://www.formula1.com/en/results/2026/drivers", "use": "Points: Antonelli 365, Russell 242, Hamilton 241, Verstappen 236, Leclerc 233"},
-      {"name": "BBC Sport, Mexico City GP preview", "url": "https://www.bbc.com/sport/formula1/articles/c6wyrgejp0w8o", "use": "Antonelli needs a top-nine finish to clinch the title"},
-      {"name": "RNT Motorsports, title permutations", "url": "https://rnt-motorsports.com/f1-2026-championship-permutations/", "use": "Austin result: Antonelli from pole by 13.078s over Leclerc, Verstappen third; 125 points remaining"},
-      {"name": "OLBG Mexico City GP event page", "url": "https://www.olbg.com/betting-tips/Motor_Racing/All_Motor_Racing/All_Events/Mexico_City_Grand_Prix/14?event_id=914", "use": "Win Race 1/3 splits; empty Podium and Top 6 markets; circuit facts"}
+    "Ice Hockey": [
+      {"name": "ESPN NHL scoreboard, 27 October 2026", "url": "https://www.espn.com/nhl/scoreboard/_/date/20261027", "use": "11-game slate; Columbus at Philadelphia records (4-5-0 at 3-7-3), venue and DraftKings money line; only one NHL game maps to an OLBG event"}
     ],
     "Baseball": [
-      {"name": "MLB.com 2026 playoff and World Series schedule", "url": "https://www.mlb.com/news/2026-mlb-playoff-and-world-series-schedule", "use": "Game 3 Brewers @ Rays, 26 October, 8pm"},
-      {"name": "Wikipedia, 2026 World Series", "url": "https://en.wikipedia.org/wiki/2026_World_Series", "use": "Series score, records 103-59 and 98-64, game log"},
-      {"name": "Baseball-Reference World Series Game 2 box", "url": "https://www.baseball-reference.com/boxes/MIL/MIL202610240.shtml", "use": "5-4 Milwaukee win"},
-      {"name": "CBS Sports series coverage", "url": "https://www.cbssports.com/mlb/news/2026-mlb-playoff-bracket-schedule-scores-results-how-to-watch/", "use": "Game 2 comeback from 4-0 off Logan Henderson"},
-      {"name": "USA Today, World Series Game 2 live report", "url": "https://www.usatoday.com/story/sports/mlb/brewers/2026/10/24/brewers-vs-rays-live-updates-world-series-game-2--live/92402379007/", "use": "Ashby struck out Yandy Diaz to end Game 2"}
+      {"name": "ESPN MLB scoreboard, 27 October 2026", "url": "https://www.espn.com/mlb/scoreboard/_/date/20261027", "use": "World Series Game 4 at Tropicana Field, Milwaukee leads 3-0, records 103-59 vs 98-64, DraftKings ML -141/+117, Tampa probable Garrett Jax 0-1, 6.00 ERA"}
+    ],
+    "Rugby Union": [
+      {"name": "United Rugby Championship official homepage", "url": "https://www.unitedrugby.com/", "use": "Round 4 review (25 October) and countdown to Round 5 beginning 30 October"},
+      {"name": "URC disciplinary update, Tadhg Furlong", "url": "https://www.unitedrugby.com/latest/media-centre/disciplinary-update-tadhg-furlong/", "use": "Leinster prop cited under Law 9.27 for the 37th-minute incident against Gavin Coombes on 24 October; hearing process in progress"}
+    ],
+    "Golf": [
+      {"name": "ESPN PGA Tour schedule", "url": "https://www.espn.com/golf/schedule", "use": "VidantaWorld Mexico Open (OLBG 'Mexico Open'), Vidanta Vallarta, 29 Oct - 1 Nov, purse $6.0M, defending champion Brian Campbell; Maybank and Simmons Bank fields not independently confirmable"}
+    ],
+    "Motor Racing": [
+      {"name": "Formula1.com Mexico City Grand Prix page", "url": "https://www.formula1.com/en/racing/2026/mexico", "use": "Weekend session times, race 1 November 15:00, Autodromo Hermanos Rodriguez, 71 laps and 305.354 km race distance"}
+    ],
+    "Handball": [
+      {"name": "OLBG Handball root only", "url": "https://www.olbg.com/betting-tips/Handball/20", "use": "The EHF Champions League site could not be retrieved (flag F-008); all four handball picks rely on OLBG-printed splits and carry no independent form claim"}
+    ],
+    "Darts": [
+      {"name": "OLBG Darts root only", "url": "https://www.olbg.com/betting-tips/Darts/15", "use": "PDC.tv returned only a cookie-consent wall with no fixture content (flag F-009); both darts picks rely on OLBG-printed splits"}
+    ],
+    "Volleyball": [
+      {"name": "OLBG Volleyball root only", "url": "https://www.olbg.com/betting-tips/Volleyball/21", "use": "No independent federation source was retrieved for this round; picks state only OLBG-printed splits and make no form or injury claim"}
+    ],
+    "Gaelic Sports": [
+      {"name": "OLBG Gaelic Football and Hurling roots", "url": "https://www.olbg.com/betting-tips/Gaelic_Football/25", "use": "Club handicap splits and 2027 outright markets; no independent county-board source was retrieved"}
     ],
     "Rugby League": [
-      {"name": "BBC Sport, England's World Cup route", "url": "https://www.bbc.com/sport/rugby-league/articles/c6wyvpz0epywo", "use": "England 82-0 France, +64 differential, remaining fixtures"},
-      {"name": "The Guardian, England 82-0 France", "url": "https://www.theguardian.com/sport/2026/oct/24/england-france-rugby-league-world-cup-match-report", "use": "Samoa +132 differential; England's position"},
-      {"name": "Sky Sports, World Cup qualification scenarios", "url": "https://www.skysports.com/rugby-league/news/13602986/rugby-league-world-cup-how-can-england-still-qualify-for-the-semi-finals-scenarios-to-avoid-historic-group-stage-exit", "use": "England v PNG, 30 October, WIN Stadium Wollongong, 9.05am GMT"},
-      {"name": "OLBG Rugby League", "url": "https://www.olbg.com/betting-tips/Rugby_League/10", "use": "Only the three ante-post markets carried tips"}
+      {"name": "OLBG Rugby League root only", "url": "https://www.olbg.com/betting-tips/Rugby_League/10", "use": "Three 2027 futures markets; no match-level OLBG markets and no independent league source retrieved"}
     ],
     "Snooker": [
-      {"name": "BBC Sport, Northern Ireland Open final", "url": "https://www.bbc.com/sport/snooker/articles/cqwyrgg0nylwo", "use": "Kyren Wilson beat Jak Jones 9-2, 11th ranking title"},
-      {"name": "snooker.org, Northern Ireland Open 2026 results", "url": "https://www.snooker.org/res/index.asp?template=22&event=2548", "use": "Frame-by-frame final result, 25 October 2026"},
-      {"name": "Wikipedia, 2026 Northern Ireland Open", "url": "https://en.wikipedia.org/wiki/2026_Northern_Ireland_Open", "use": "Champion, runner-up, highest break 139"}
+      {"name": "OLBG Snooker root", "url": "https://www.olbg.com/betting-tips/Snooker/8", "use": "'No tips found'; no snooker event, line or pick exists on the 2026-10-27 board"}
+    ],
+    "Greyhounds": [
+      {"name": "OLBG Greyhounds root", "url": "https://www.olbg.com/betting-tips/Greyhounds/28", "use": "'No tips found'; no greyhound event, line or pick exists on the 2026-10-27 board"}
     ]
   }
 }

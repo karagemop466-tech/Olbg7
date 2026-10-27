@@ -1,149 +1,136 @@
 {
  "schema_version": 1,
- "generated_at": "2026-10-26",
+ "generated_at": "2026-10-27",
  "flags": [
   {
    "id": "F-001",
    "area": "All sports - pricing",
-   "finding": "Bookmaker odds never appear in the OLBG pages we retrieved. The listings print the selection, market, tip split and percentage, but the price column is empty, and event pages show 'WIN @' with nothing after it. The prices are rendered client-side.",
-   "impact": "We cannot quote or check market prices, so the whole board is priced by us (CAL-1/CAL-2) and the -250 to +10000 band is applied to our own numbers. Any statement about 'market prices' would be unverifiable, so none is made.",
-   "source": "https://www.olbg.com/betting-tips/Basketball/NBA/NBA/MIN_Timberwolves_@_CLE_Cavaliers/4?event_id=536203"
+   "finding": "Bookmaker odds never appear in the OLBG pages retrieved on 2026-10-27. Listings print the selection, market, tip split and percentage, but the price column is empty and event pages show 'WIN @' with nothing after it; the prices are rendered client-side.",
+   "impact": "No bookmaker price is quoted anywhere on this site. Every price is originated by this desk from the printed tip split (CAL-1), and the -250 to +10000 focus band is applied to our own numbers.",
+   "source": "https://www.olbg.com/betting-tips/Cricket/All_Cricket/All_Events/New_Zealand_vs_India_3rd_T20_Match/7?event_id=188852"
   },
   {
    "id": "F-002",
-   "area": "Handball",
-   "finding": "The OLBG handball listing shows 'Tie' as the most-popular pick for 11 of the 15 events, including matches where one side is a heavy favourite (Magdeburg v Kriens, PSG v Aalborg, Skanderborg v Barcelona). A 62% share of tips on draws across the whole Champions League round is not credible.",
-   "impact": "Handball splits are unusable. Those picks use CAL-2 (published EHF favourite base rate, 446/654 = 68.2%) instead, and no 'Tie' pick is published. Worth reporting to OLBG if the pattern persists.",
+   "area": "Handball - display defect",
+   "finding": "15 of the 19 OLBG handball money-line rows print 'Tie' as the most-tipped selection, including heavyweight club fixtures. A draw consensus across most of a round is not a credible market signal.",
+   "impact": "No 'Tie' pick is published and those splits are not used. Only the four rows with a real club selection (VasterasIrsta 2/4, Skovde 2/4, HBW Balingen-Weilstetten 1/1, Skanderborg 1/3) are priced and picked, all at low confidence.",
    "source": "https://www.olbg.com/betting-tips/Handball/20"
   },
   {
    "id": "F-003",
-   "area": "Darts - internal inconsistency",
-   "finding": "Players Championship 31 shows Nathan Aspinall at 1/3 (33%) on the sport listing but 1/4 (25%) on the event page for the same market. The event page also splits the four tips across van Veen, Aspinall, Doets and 'Other'.",
-   "impact": "We use the event-page figure (1/4) because it is the more granular view, and the pick is labelled medium/low accordingly.",
-   "source": "https://www.olbg.com/betting-tips/Darts/All_Darts/All_Events/Players_Championship_31/15?event_id=32446"
-  },
-  {
-   "id": "F-004",
-   "area": "All sports - kick-off times",
-   "finding": "OLBG prints no timezone and several of its times disagree with the governing body: Glasgow Warriors v Lions is 15:45 on OLBG against 19:45 UK on URC.tv; Djokovic v Humbert is 28 Oct 06:00 on OLBG, the ATP page says Wednesday 28 October and two other outlets say Tuesday 27 October at 12:00 local; Montes Claros v Cruzeiro is 22:00 on OLBG against 18:30 on the CBV's official table (19:00 Brasilia); New Zealand v India 3rd T20 is 03:00 on OLBG against 07:00 GMT (20:00 local) on ESPNcricinfo; the greyhound races are labelled 8:24, 8:36, 8:34 in the race name but 16:24, 16:36, 16:34 in OLBG's start column.",
-   "impact": "Every time on this site is quoted exactly as OLBG printed it and is not treated as a settled kick-off time. Where an official time was retrieved it is given in the fact list on the pick card. Do not assume any OLBG time is UK time.",
-   "source": "https://urc.tv/"
-  },
-  {
-   "id": "F-005",
-   "area": "Basketball - internal inconsistency",
-   "finding": "MIN Timberwolves @ CLE Cavaliers shows a 9/16 split on the Basketball listing and 9/17 on the event page, one hour apart on the same day.",
-   "impact": "Tip totals on OLBG move as tips arrive, so a split is a snapshot, not a fixed number. Our price uses the listing snapshot and is therefore only valid at the stated retrieval time.",
-   "source": "https://www.olbg.com/betting-tips/Basketball/4"
-  },
-  {
-   "id": "F-006",
    "area": "Snooker - no coverage",
-   "finding": "Both https://www.olbg.com/betting-tips/Snooker/8 and the all-events variant return 'No tips found', and the sport filter on the page renders as 'All Sports' rather than 'Snooker'. Search-engine captures from mid-October do show snooker tips, so the page is capable of listing them.",
-   "impact": "Zero snooker events and zero snooker picks. The most likely cause is the gap after the Northern Ireland Open final on 25 October, but the filter rendering wrongly suggests a page-level problem we cannot fix from outside. No line is originated where there is no market.",
+   "finding": "Both https://www.olbg.com/betting-tips/Snooker/8 and its all-events variant returned 'No tips found' on 2026-10-27, and the sport filter rendered as 'All Sports' rather than 'Snooker'.",
+   "impact": "Zero snooker events, lines and picks. No line is originated where there is no printed market; the sport page states this plainly instead of padding.",
    "source": "https://www.olbg.com/betting-tips/Snooker/8"
   },
   {
+   "id": "F-004",
+   "area": "Greyhounds - no coverage",
+   "finding": "Both https://www.olbg.com/betting-tips/Greyhounds/28 and its all-events variant returned 'No tips found' on 2026-10-27. The previous day's card had carried race rows, so this is a same-week gap rather than a permanent empty sport.",
+   "impact": "Zero greyhound events, lines and picks on today's board. The sport page states the gap instead of inventing race cards.",
+   "source": "https://www.olbg.com/betting-tips/Greyhounds/28"
+  },
+  {
+   "id": "F-005",
+   "area": "Cricket - fixture date conflict",
+   "finding": "OLBG cards South Africa v Australia (3rd Test) for 31 October 04:30, while ESPNcricinfo's schedule lists the Cape Town Test as starting on 27 October. The two sources disagree by four days.",
+   "impact": "The event is inventoried with OLBG's date because OLBG is the board's primary source, and it is not picked. A human should reconcile the two schedules before any staking decision.",
+   "source": "https://www.olbg.com/betting-tips/Cricket/7"
+  },
+  {
+   "id": "F-006",
+   "area": "Tennis - draw pairing caution",
+   "finding": "Some OLBG card pairings do not appear in ESPN's first-round draw as retrieved (for example Borges v Ruud at Basel is not on the ESPN R1 board, and the Djokovic/Humbert pairing seen on earlier cards is absent). OLBG and the tour draw appear out of step on individual ties.",
+   "impact": "Tennis write-ups assert only the tournament, round and facts visible on the specific ESPN event page actually retrieved, and do not assert head-to-head history beyond what OLBG prints.",
+   "source": "https://www.espn.com/tennis/scoreboard"
+  },
+  {
    "id": "F-007",
-   "area": "Rugby League - coverage mismatch",
-   "finding": "The Rugby League World Cup is in progress (England v Papua New Guinea on 30 October, Tonga v Samoa on 1 November) yet OLBG's Rugby League page carries only three season ante-post markets and no match-level tips.",
-   "impact": "Three rugby league picks instead of five, all long-dated ante-post. The live World Cup fixtures are listed on the site as verified events but cannot be priced from OLBG data.",
-   "source": "https://www.olbg.com/betting-tips/Rugby_League/10"
+   "area": "All sports - zero high-confidence picks",
+   "finding": "The high bar requires at least 70% fair chance, at least 8 tips and a fair decimal price inside 1.40-101.00. 25 rows have 8+ tips but none clears all three gates. Near-misses: Afghanistan 0.818 fair but 1.22 fair price (outside band); Eire Og Cor 0.750 but only 6 tips and 1.33 fair price; Fernandez 0.722 but 1.38 fair price; Ziraat Bankasi and Osaka at 0.700 with only 4 tips; India 0.691 and Pakistan 0.676 inside the band but below the 70% gate.",
+   "impact": "The high-confidence tier is empty by construction rather than downgraded by hand. The near-misses remain published at medium confidence with the reason visible in their numbers.",
+   "source": "https://www.olbg.com/betting-tips"
   },
   {
    "id": "F-008",
-   "area": "Baseball - one live game",
-   "finding": "Only one MLB game (World Series Game 3) carried any tips, with two markets. The MLB sub-page documents Money Line, Run Line and Game Totals, but only Money Line and Over/Under had selections.",
-   "impact": "Two baseball picks, not five. Run Line could not be priced.",
-   "source": "https://www.olbg.com/betting-tips/Baseball/MLB/12"
+   "area": "Handball - no independent source",
+   "finding": "The EHF Champions League competition site could not be retrieved during this session (page fetch failed), so no independent form, squad or standings source supports the handball picks.",
+   "impact": "All four handball predictions rely solely on OLBG-printed splits, make no form or injury claim, and are published at low confidence with this gap stated on each card.",
+   "source": "https://www.olbg.com/betting-tips/Handball/20"
   },
   {
    "id": "F-009",
-   "area": "Golf - tournament-level only",
-   "finding": "Golf carries three tournament outrights, each with a 1/2 split and no comments. There are no match-play or round markets with tips.",
-   "impact": "Three golf picks, all low confidence. A two-tip market cannot support a stronger label.",
-   "source": "https://www.olbg.com/betting-tips/Golf/5"
+   "area": "Darts - no independent source",
+   "finding": "PDC.tv returned only a cookie-consent wall with no fixture or player content, so no independent source corroborates the two darts markets.",
+   "impact": "Both darts picks (Luke Littler 22/36, Nathan Aspinall 2/8) rely on OLBG-printed splits alone and state no form claims beyond them.",
+   "source": "https://www.olbg.com/betting-tips/Darts/15"
   },
   {
    "id": "F-010",
-   "area": "Cricket - fixture ambiguity",
-   "finding": "Searches for 'New Zealand vs India 3rd T20' return a January 2026 match played in Guwahati. The OLBG event is a different fixture, the third T20I of India's 2026-27 tour of New Zealand at Wellington.",
-   "impact": "The Guwahati scorecard was read only to rule it out. Only the October 2026 preview is cited as evidence for the pick. Anyone auditing should check they are on the right series.",
-   "source": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-3rd-t20i-1539434/match-preview"
+   "area": "Rugby Union - limited official corroboration",
+   "finding": "The URC fixtures-and-results URL returned 404; only the unitedrugby.com homepage (Round 4 review and Round 5 countdown) and the Furlong disciplinary article were reachable. The Pro D2 fixtures carry no independent source at all.",
+   "impact": "URC picks use only the two reachable official pages plus OLBG; the three Pro D2 picks cite OLBG alone and are labelled low/medium accordingly.",
+   "source": "https://www.unitedrugby.com/"
   },
   {
    "id": "F-011",
-   "area": "Handball - missing opponent records",
-   "finding": "The Group F table we could reach lists Magdeburg and Kielce records in full but does not show Kriens Luzern or Kolstad columns with values. Those two opponents' group records are therefore unconfirmed.",
-   "impact": "Two handball picks (Magdeburg, Kielce) are priced as ordinary home favourites rather than as mismatches, and both are capped at medium confidence. The blank is deliberate.",
-   "source": "https://en.wikipedia.org/wiki/2026%E2%80%9327_EHF_Champions_League"
+   "area": "All sports - thin tip samples",
+   "finding": "28 of the 49 written predictions rest on four tips or fewer, and four rest on a single tip. The small samples are a property of OLBG's card, not of our selection process.",
+   "impact": "Shrinkage pulls those rows toward the market prior, so they price close to even money and are labelled low or medium. They are published for completeness, not as conviction bets.",
+   "source": "https://www.olbg.com/betting-tips"
   },
   {
    "id": "F-012",
-   "area": "Rugby Union - stale form note",
-   "finding": "The RTE round-three guide used for Ulster's and Munster's form is dated 8 October 2026, two rounds before the fixtures we are pricing (29-31 October).",
-   "impact": "Ulster in particular may have won since. The Ulster pick is low confidence and the note is marked stale on the card.",
-   "source": "https://www.rte.ie/sport/united-rugby-championship/2026/1008/1594529-united-rugby-championship-round-3-all-you-need-to-know/"
+   "area": "Outright markets - eight-runner assumption",
+   "finding": "11 picks sit in outright or tournament markets (three golf, two darts, two Gaelic, two rugby league, two motor racing) where OLBG does not print the number of runners. The engine assumes eight runners (prior 1/8).",
+   "impact": "These prices are assumption-sensitive: a larger real field means the prior is too generous and the fair price is too short. Every such row is labelled with the 'outright assumed 8 runners' structure on the pricing table.",
+   "source": "https://www.olbg.com/betting-tips/Golf/5"
   },
   {
    "id": "F-013",
-   "area": "Rugby Union - secondary source for standings",
-   "finding": "URC standings after three rounds come from a Wikipedia season page, not from unitedrugby.com. The figures are internally consistent (played, won, drawn, lost, points) but a secondary source is not an official one.",
-   "impact": "The two URC picks that rely on the table (Glasgow, Connacht) should be re-checked against the official URC table before any staking decision.",
-   "source": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Leinster_Rugby_season"
+   "area": "Cricket - unpriced inventory row",
+   "finding": "The T20 Blast 2027 outright row (event 188350) printed no tip split or percentage at retrieval.",
+   "impact": "It is listed in the inventory and on the sport's event table but deliberately left unpriced; 142 of 143 inventoried events carry a line. No number is guessed.",
+   "source": "https://www.olbg.com/betting-tips/Cricket/7"
   },
   {
    "id": "F-014",
-   "area": "Gaelic Sports - scope",
-   "finding": "OLBG runs Gaelic Football (sport id 25) and Hurling (sport id 26) as two separate sports. The brief lists 'Gaelic Sports' as one.",
-   "impact": "Both pages are inventoried and combined under one Gaelic Sports page, with the sport id shown for each event so the split is visible.",
+   "area": "Gaelic Sports - scope mapping",
+   "finding": "OLBG runs Gaelic Football (sport id 25) and Hurling (sport id 26) as two separate sports while the brief lists one 'Gaelic Sports' sport.",
+   "impact": "Both pages are inventoried and combined on one Gaelic Sports page, with the OLBG sport id visible on every row so the split is auditable.",
    "source": "https://www.olbg.com/betting-tips/Hurling/26"
   },
   {
    "id": "F-015",
-   "area": "All sports - thin samples",
-   "finding": "19 of the 56 written predictions rest on four tips or fewer, and 9 rest on a single tip. OLBG's own sample sizes, not our selection, cause this.",
-   "impact": "Those rows are labelled low or medium and are priced close to even money by the shrinkage step. They are published for completeness, not as conviction bets.",
+   "area": "All sports - kick-off times",
+   "finding": "OLBG prints no timezone on its start labels, and some labels differ from official governing-body schedules. OLBG times are snapshots at retrieval and tip totals move as new tips arrive.",
+   "impact": "Every time is quoted exactly as OLBG printed it and is not treated as a settled local kick-off. Where an official schedule was retrieved (F1, PGA, URC, ESPN cards) it is given in the fact list on the relevant card.",
    "source": "https://www.olbg.com/betting-tips"
   },
   {
    "id": "F-016",
-   "area": "Tennis - venue and round naming",
-   "finding": "One aggregator describes Djokovic v Humbert as 'Basel, 1/16 round' while the ATP describes it as the first round of the 32-player draw at the Swiss Indoors Basel.",
-   "impact": "We use the ATP wording: Swiss Indoors Basel, first round. The aggregator's round label is not repeated.",
-   "source": "https://www.atptour.com/en/news/djokovic-basel-2026-draw-preview"
+   "area": "Coverage gap - nine sports short of the five-pick target",
+   "finding": "Golf (3), Darts (2), Baseball (1), Gaelic Sports (4), Motor Racing (2), Handball (4), Rugby League (3), Snooker (0) and Greyhounds (0) cannot reach five picks. Rugby League offers only 2027 ante-post markets, Baseball one live game, and two sports have no market at all.",
+   "impact": "49 predictions are published against a 75-pick target. The shortfall is named on the dashboard, each sport page and here, rather than filled with invented fixtures or prices.",
+   "source": "https://www.olbg.com/betting-tips"
   },
   {
    "id": "F-017",
-   "area": "Handball - no independent source",
-   "finding": "No form, injury or squad source was retrieved for the five handball fixtures we priced. The EHF club pages are behind a competition site we could not read, and the OLBG splits on this sport are unusable (F-002).",
-   "impact": "All five handball prices are fixture-level estimates labelled CAL-2 and capped at medium. They are the weakest rows on the board and should be re-priced against the EHF match centre before any stake.",
-   "source": "https://www.olbg.com/betting-tips/Handball/20"
-  },
-  {
-   "id": "F-018",
-   "area": "Outright markets - estimated prices",
-   "finding": "Nine published selections sit in outright or tournament markets (three golf, two darts, four Gaelic, two rugby league, one motor racing) where the number of runners is not printed and the tip sample is between one and thirty-six tips.",
-   "impact": "These rows carry an explicit probability rather than a repriced split, and are labelled CAL-3 on the page. They are honest estimates, not market-derived prices, and every one of them is labelled low confidence except where noted.",
+   "area": "Golf - fields not independently confirmable",
+   "finding": "Only the Mexico Open could be corroborated against ESPN's PGA Tour schedule. No independent field or schedule source was available for the Maybank Championship or the Simmons Bank Championship at retrieval.",
+   "impact": "The Lottie Woad and Stewart Cink picks cite OLBG alone, are labelled low confidence, and say explicitly on the card that no confirmable field existed at retrieval.",
    "source": "https://www.olbg.com/betting-tips/Golf/5"
-  },
-  {
-   "id": "F-019",
-   "area": "Coverage gap - seven sports short of the five-pick target",
-   "finding": "Golf (3), Darts (2), Baseball (2), Gaelic Sports (4), Motor Racing (2), Rugby League (3) and Snooker (0) cannot reach five picks. Between them OLBG lists 16 events, several of them season outrights a year away, and one entire sport with no tips at all.",
-   "impact": "56 predictions were published against a 75-pick target. The shortfall is named on the dashboard and on each sport page rather than filled with invented fixtures. Closing it needs either a licensed odds feed or the official fixture lists of each competition, neither of which OLBG exposes.",
-   "source": "https://www.olbg.com/betting-tips"
   }
  ],
  "blanks": [
-  "No bookmaker prices are quoted anywhere on this site, because none could be read from OLBG. Every price shown is ours.",
-  "Handball: no 'Tie' selections are published and no handball split is used, because the printed splits look like a display defect.",
-  "Handball: Kriens Luzern's and Kolstad's group records are left blank rather than estimated.",
-  "Snooker: no events, no lines, no picks - OLBG returned no tips.",
-  "Gaelic club matches: no team news or form data was available from an official source, so those two picks make no claim about players, injuries or recent results.",
-  "Volleyball, Handball, Greyhounds and Darts picks make no injury claims; no official team-news source exists for those fixtures at this level.",
+  "No bookmaker prices are quoted anywhere on this site, because none could be read from OLBG. Every price shown is originated by this desk.",
+  "Handball: no 'Tie' selections are published. The 15 rows where OLBG prints 'Tie' as most-tipped are excluded rather than repriced.",
+  "Snooker and Greyhounds: no events, lines or picks - OLBG returned 'No tips found' for both on 2026-10-27.",
+  "Cricket: the T20 Blast 2027 outright row is left unpriced because OLBG printed no tip split for it.",
+  "Gaelic club matches: no team news, player or form data from an official source, so those picks make no claim about injuries or recent results.",
+  "Volleyball, Handball, Darts, Gaelic Sports and Rugby League picks make no injury claims; no official team-news source for those fixtures was reachable.",
+  "Golf: Maybank Championship and Simmons Bank Championship fields are left unconfirmed rather than assumed; only the Mexico Open has an independent schedule source.",
   "No weather, referee, surface-speed or travel-distance numbers are stated unless a source link on the same card supports them.",
-  "Rugby League World Cup fixtures (England v PNG 30 Oct, Lebanon v France 1 Nov, Tonga v Samoa 1 Nov) are listed as confirmed events but are not priced, because OLBG carries no market for them."
+  "Rugby League: only three 2027 ante-post markets exist on OLBG; no match-level lines are originated because no match-level market was printed."
  ]
 }

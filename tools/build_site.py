@@ -1,15 +1,11 @@
 #!/usr/bin/env python3
-import os as _os
-if _os.environ.get("LEGACY_BUILD") != "1":
-    raise SystemExit("Superseded by tools/build_board.py (2026-10-27 board). "
-                     "Set LEGACY_BUILD=1 and SITE_OUT=<dir> to run this historical generator.")
 """Build the static GitHub Pages site at the repo root from data/*.json."""
 import json, os, re, html
 from datetime import date
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
-TODAY = "2026-10-26"
+TODAY = "2026-10-27"
 
 SPORTS = [
     ("golf", "Golf"),
@@ -85,10 +81,13 @@ def price_for(pick, pricing_index):
 
 
 def confidence_of(p_fair, card, tips_total):
+    # Mirrors tools/pricing.py: 70% fair-chance gate (owner rule, 2026-10-27), >=8 tips,
+    # and the focus band tested on the FAIR decimal (1/p_fair), not the margined card.
     if p_fair is None or card is None:
         return "low"
-    in_band = 1.40 <= card <= 101.0
-    if p_fair > 0.70 and (tips_total or 0) >= 8 and in_band:
+    fair_dec = 1.0 / p_fair
+    fair_in_band = 1.40 <= fair_dec <= 101.0
+    if p_fair >= 0.70 and (tips_total or 0) >= 8 and fair_in_band:
         return "high"
     if p_fair >= 0.50:
         return "medium"
@@ -261,22 +260,12 @@ def main():
     method_line = ", ".join(f"{k}: {v}" for k, v in sorted(methods.items()))
 
     doc = head("OLBG Coverage Desk - dashboard", "index.html")
-    snapshot_day = date.fromisoformat(TODAY)
-    build_day = date.today()
-    freshness_note = (
-        f'<div class="note" style="border-left:4px solid #b45309;background:#fff7ed">'
-        f'<strong>Data freshness warning — {build_day:%d %B %Y}.</strong> This board uses a snapshot retrieved '
-        f'{snapshot_day:%d %B %Y} and has not been refreshed for today. Do not treat its selections as current or '
-        'actionable; event status, start times, team news and markets may have changed or expired. '
-        'Review the <a href="flagged.html">Flagged for review</a> page for known uncertainties.</div>'
-    ) if build_day > snapshot_day else ''
-    doc += freshness_note
     doc += f"""
 <h2>Executive summary</h2>
 <p class="lede">We inventoried every OLBG event we could reach across the 15 sports in scope, originated a price for
 each one that carries a printed tip split, and wrote {n_picks} full predictions. {len(highs)} selections clear our
 high-confidence bar, {len(meds)} are medium and {len(lows)} are low. {short_n} sports cannot reach the five-pick
-the five-pick target in this snapshot because OLBG carries too little priced market data in them ({short_list}); those are named below
+target today because OLBG itself carries too little priced market data in them ({short_list}); those are named below
 and on the <a href="flagged.html">Flagged for review</a> page rather than padded out with fixtures and prices that no
 source supports.</p>
 <div class="grid">
@@ -284,32 +273,37 @@ source supports.</p>
 <div class="kpi"><div class="n">{len(events)}</div><div class="l">OLBG events inventoried</div></div>
 <div class="kpi"><div class="n">{pricing['totals']['priced']}</div><div class="l">events with our own line</div></div>
 <div class="kpi"><div class="n">{n_picks}</div><div class="l">written predictions</div></div>
-<div class="kpi"><div class="n">{len(todays)}</div><div class="l">picks marked Today in snapshot</div></div>
+<div class="kpi"><div class="n">{len(todays)}</div><div class="l">picks on today's card</div></div>
 <div class="kpi"><div class="n">{len(flags['flags'])}</div><div class="l">irregularities flagged</div></div>
 </div>
 <div class="note"><strong>How to read the picks.</strong> Confidence is computed from our fair probability, the size of
 the tip sample and the price band, not typed in by hand. A pick only earns <span class="pill high">high</span> if the
-fair probability is greater than 70%, the market has at least 8 tips, and our price sits inside the requested
-&minus;250 to +10000 band (1.40 to 101.00 decimal). Selection prices shown are <em>our</em> originating prices, not
+fair probability is at least 70%, the market has at least 8 tips, and the fair decimal price sits inside the requested
+&minus;250 to +10000 band (1.40 to 101.00). The band is tested on the fair price rather than the margined card, so the
+5% margin cannot disqualify a qualifying pick. Selection prices shown are <em>our</em> originating prices, not
 bookmaker prices - see the <a href="methodology.html">pricing method</a>.</div>
 
 <h2>Picks ranked by confidence, then by our fair chance</h2>
 <table><thead><tr><th>Sport</th><th>Selection &amp; event</th><th>Market</th><th>Our price</th>
 <th>Fair chance</th><th>Confidence</th></tr></thead><tbody>{''.join(rows)}</tbody></table>
-<p class="small muted">The high-confidence tier is {', '.join(f"{esc(x['selection'])} ({esc(x['sport'])})" for x in sorted(highs, key=lambda y: -(y['_p_fair'] or 0))) or 'empty in this snapshot'}.
+<p class="small muted">The high-confidence tier is {', '.join(f"{esc(x['selection'])} ({esc(x['sport'])})" for x in sorted(highs, key=lambda y: -(y['_p_fair'] or 0))) or 'empty today'}.
 Full written reasoning for every pick is on each sport page; all {n_picks} picks run to at least 30 words and none
 reuse a template.</p>
 
 <h2>Coverage by sport</h2>
 <table><thead><tr><th>Sport</th><th>Events found</th><th>Events priced</th><th>Picks written</th>
 <th>High confidence</th><th>5-pick target</th></tr></thead><tbody>{''.join(cov_rows)}</tbody></table>
-<div class="note flag"><strong>Gaps, stated plainly.</strong> In this snapshot, Snooker returned no tips at all from OLBG, Golf
-carried only three tournament markets with two tips each, Baseball had a single live game, Rugby League offered only
-season ante-post markets, Darts and Motor Racing two markets each, and Gaelic Sports four selections. We publish what
-the data supports and flag the rest instead of inventing fixtures, prices or form lines.</div>
-<div class="note"><strong>How each price was made.</strong> {method_line}. CAL-1 reprices the tip split OLBG prints.
-CAL-2 is used where the printed split is unusable (the handball draw artefact) and CAL-3 where a tournament market has
-too few runners and tips to reprice at all. Every row on this site carries its method on the pick card.</div>
+<div class="note flag"><strong>Gaps, stated plainly.</strong> Snooker and Greyhounds both returned 'No tips found' from
+OLBG today. Handball shows 'Tie' as the most-tipped selection on 15 of its 19 rows, a display defect we do not price,
+leaving four usable handball picks. Golf carried only three tournament markets with two tips each, Baseball had a
+single live game, Rugby League offered only 2027 season ante-post markets, Darts and Motor Racing two markets each, and
+Gaelic Sports four selections. We publish what the data supports and flag the rest instead of inventing fixtures,
+prices or form lines.</div>
+<div class="note"><strong>How each price was made.</strong> {method_line}. Every published pick is CAL-1, a reprice of
+the tip split OLBG printed at retrieval. The CAL-2 and CAL-3 fallback methods remain documented on the
+<a href="methodology.html">pricing method</a> page but produce no rows on today's board: the unusable handball 'Tie'
+splits are excluded rather than estimated, and no zero-tip market is picked. Outright rows carry an explicit
+eight-runner assumption, also labelled on each card.</div>
 
 <h3>What is where</h3>
 <ul class="small">
@@ -474,28 +468,31 @@ three-way money line, 0.125 for an outright (assumed eight runners, which is an 
 so every price we publish is shorter than our fair number.</td></tr>
 <tr><td>5. American</td><td>Standard conversion: <code>(dec &minus; 1) &times; 100</code> at 2.00 and above,
 <code>&minus;100 / (dec &minus; 1)</code> below 2.00.</td></tr>
-<tr><td>6. Confidence</td><td><span class="pill high">high</span> needs fair probability &gt; 70%, a sample of at least
-8 tips and a price inside {m['band_min_decimal']} to {m['band_max_decimal']}. <span class="pill medium">medium</span>
-is fair probability &ge; 50%. Everything else is <span class="pill low">low</span>. The label is computed, never
-typed.</td></tr>
+<tr><td>6. Confidence</td><td><span class="pill high">high</span> needs fair probability &ge; 70%, a sample of at least
+8 tips and a <em>fair</em> decimal price inside {m['band_min_decimal']} to {m['band_max_decimal']}.
+<span class="pill medium">medium</span> is fair probability &ge; 50% (including 70%+ shots whose price falls outside
+the band). Everything else is <span class="pill low">low</span>. The label is computed, never typed.</td></tr>
 </tbody></table>
 
-<h3>CAL-2, used for Handball only</h3>
-<p class="small">OLBG's handball listing prints "Tie" as the most-popular selection for nearly every Champions League
-match, which makes the printed split unusable (flag F-002). For those five matches we price from the
-competition base rate OLBG itself publishes - EHF Champions League men, favourites won 446 of 654 games (68.2%) -
-shrunk 15% toward 50% to allow for what we do not know about the specific tie. The results and standings we cite are
-official EHF data.</p>
+<h3>CAL-2, the fallback for unusable splits (no rows on this board)</h3>
+<p class="small">OLBG's handball listing prints "Tie" as the most-popular selection for 15 of the 19 rows on today's
+card, which makes those splits unusable (flag F-002). The CAL-2 fallback exists for exactly this situation: price from
+an independently sourced competition base rate rather than from the defective split, and label the estimate. On this
+board no CAL-2 rows are published at all - the 15 "Tie" rows are excluded, and only the four rows with a real club
+selection are priced through CAL-1.</p>
 
-<h3>CAL-3, used where there is no market at all</h3>
-<p class="small">One pick (Antonelli, top-six finish in Mexico City) sits in a market with zero tips. It is priced by
-us from the championship arithmetic and is labelled CAL-3 so it can never be mistaken for a market-derived number.</p>
+<h3>CAL-3, the fallback for markets with no split (no rows on this board)</h3>
+<p class="small">CAL-3 covers a market that prints zero tips, where no reprice is possible. It would price from explicit
+championship or event arithmetic and carry a visible estimate label. Today's board contains no such pick; the one
+inventory row without a split (T20 Blast 2027 outright) is left unpriced and flagged instead.</p>
 
 <h3>The &minus;250 to +10000 band</h3>
-<p class="small">&minus;250 American is {m['band_min_decimal']} decimal; +10000 is {m['band_max_decimal']}. The band is
-applied to our card price. A strong favourite priced under 1.40 is a real pick but is excluded from the high-confidence
-tier, because beating a 1.20 shot is not the part of the market the brief wants us working. Recorded constants:
-margin {m['margin']}, pseudo-count {m['K_pseudo_tips']}, band {m['band_min_decimal']}-{m['band_max_decimal']}.</p>
+<p class="small">&minus;250 American is {m['band_min_decimal']} decimal; +10000 is {m['band_max_decimal']}. The
+confidence gate applies the band to the <em>fair</em> decimal (1 / p_fair), because it describes market odds: a 70%
+shot has a 1.43 fair price but a 1.36 card once the 5% margin is applied, so testing the margined card would make the
+70% rule and the band mutually exclusive. The card price keeps its own separate in-band flag on the data table. A
+strong favourite under 1.40 remains a real, published pick but is excluded from the high-confidence tier. Recorded
+constants: margin {m['margin']}, pseudo-count {m['K_pseudo_tips']}, band {m['band_min_decimal']}-{m['band_max_decimal']}.</p>
 
 <h3>Known limits of this approach</h3>
 <ul class="small">
