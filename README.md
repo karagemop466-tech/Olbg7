@@ -1,5 +1,45 @@
 # OLBG Coverage Desk
 
+**Current board: 27 October 2026.** Live at **https://karagemop466-tech.github.io/Olbg7/**
+
+A daily board of our own betting lines and written predictions for the 15 sports OLBG covers
+(Golf, Volleyball, Rugby Union, Cricket, Snooker, Darts, Baseball, Gaelic Sports, Greyhounds,
+Tennis, Motor Racing, Handball, Ice Hockey, Basketball, Rugby League).
+
+| Path | What it is |
+|---|---|
+| `index.html` | Today's dashboard: executive summary, the pick table, coverage by sport |
+| `board/<sport>.html` | One page per sport: picks table, full written predictions with sourced facts, then every market we priced |
+| `board/all-markets.html` | Every market captured from OLBG today, with our line, chance and confidence |
+| `board/method.html` | How a line is originated (engine TS-27), the constants, the confidence and band rules |
+| `board/sources.html` | The eight pages this build was made from |
+| `board/flagged.html` | 16 irregularities and 4 deliberate blanks, each with an evidence link |
+| `data/today/capture.json` | Raw capture: 126 market rows read off the 15 OLBG sport hubs |
+| `data/today/lines.json` | Engine output: 159 rows with a price or an explicit "unpriced" |
+| `data/today/picks_source.py` | The 51 hand-written predictions (facts + links), validated at build time |
+| `data/today/form.json` | The official tables: EuroLeague, NHL, EHF Champions League, World Series |
+| `data/today/flags.json` | The irregularity register |
+| `tools/price_today.py` | Pricing engine: OLBG tip split blended with the official table |
+| `tools/build_today.py` | Site generator for `index.html` and `board/` |
+| `tools/check_today.py` | Verification: links, word counts, banned words, sources, band |
+
+Rebuild:
+
+```bash
+python3 tools/price_today.py    # capture + tables -> lines.json
+python3 tools/build_today.py    # lines + picks -> index.html, board/
+python3 tools/check_today.py    # fails on a broken link, a short prediction or a missing source
+```
+
+Today's coverage in one line: 51 written predictions of 58-78 words across 13 sports, 6 at high
+confidence, 146 markets priced from 126 captured, and two sports (snooker, greyhounds) with no
+markets published by OLBG at all. Eight sports fall short of five picks; the reason for each is on
+that sport's page and on `board/flagged.html`.
+
+---
+
+## Earlier boards in this repository (all still served)
+
 A daily board of **our own** betting lines and written predictions for the 15 sports covered on
 [OLBG](https://www.olbg.com/betting-tips): Golf, Volleyball, Rugby Union, Cricket, Snooker, Darts,
 Baseball, Gaelic Sports, Greyhounds, Tennis, Motor Racing, Handball, Ice Hockey, Basketball and
