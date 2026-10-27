@@ -644,3 +644,22 @@ source link, 0 broken links, 0 duplicate ids, 0 banned words, 0 sports under fiv
 `tools/check_board.py`, `node --test tests/freshness.test.js`, and the four-script CI rebuild pipeline.
 Result saved to `data/value/verification.json`. Rebase conflicts in this file were resolved by keeping
 every other session's entries and appending ours.
+
+### Close-out (2026-10-27 06:24 UTC)
+
+PR #37 merged to `main` as merge commit `ad88360` after rebasing through PRs #31-#38; the
+`Verify coverage desk` run passed on the PR and again on `main`
+([run 40460866435](https://github.com/karagemop466-tech/Olbg7/actions/runs/40460866435)), and
+GitHub Pages reported build `built` for `ad88360f`. Live verification (cache-busted fetches):
+
+- `/Olbg7/legacy-calc1/` serves the new CAL-1 board with the archive banner, 143 events,
+  142 lines, 49 predictions, 0 high-confidence picks and 17 flags; internal links self-contained.
+- `/Olbg7/archive.html` lists the new board first and links every historical namespace.
+- `/Olbg7/` still serves the current oct27 origination desk (unchanged by this branch).
+- `/Olbg7/docs/`, `/Olbg7/docs/board-review/` and `/Olbg7/olbg-tips/` all still resolve with
+  their historical warnings.
+
+T12-T16 as originally claimed by this session are complete. The branch
+`arena/4efa4ee3-olbg7` contains three commits: dataset refresh, archived-board integration,
+and the deterministic oct27 audit regeneration.
+
