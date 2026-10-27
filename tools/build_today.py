@@ -185,8 +185,8 @@ cov_rows = "\n".join(
 
 body = """
 <section class="hero">
-<h1>Fifty-one written predictions across fifteen sports, with our own price on every market OLBG listed today</h1>
-<p class="lede">OLBG gave us <strong>{n_rows}</strong> priced markets across <strong>{n_events}</strong> events this
+<h1>{n_picks} written predictions across fifteen sports, with our own price on every market OLBG listed today</h1>
+<p class="lede">OLBG gave us <strong>{n_rows}</strong> market rows across <strong>{n_events}</strong> events this
 morning. We put a number on <strong>{n_priced}</strong> of them, wrote up <strong>{n_picks}</strong> of those as picks,
 and left the rest priced but unpicked. Every pick below names the selection, the market, our price and how sure we are.</p>
 <div class="kpis">
@@ -279,7 +279,7 @@ sport_links = "".join('<li><a href="%s.html">%s</a> <span class="muted">%d picks
                       % (SLUG[s], esc(s), len(picks_by_sport[s])) for s in SPORTS)
 
 for s in SPORTS:
-    pk = sorted(picks_by_sport[s], key=rank)
+    pk = sorted(picks_by_sport[s], key=lambda p: p["label"])
     rows = sorted(rows_by_sport[s], key=lambda r: (r["event"], r["market"], r["sel"]))
     cards = []
     for p in pk:

@@ -321,3 +321,11 @@ serve. Their README text and their log entries are preserved verbatim. To keep t
 dropping it, the new dashboard carries a dedicated "70%+ club" table listing every line that clears a 70 per cent
 chance, with the note that all of them price shorter than the -250 floor — which is why the pick table uses a 64 per
 cent threshold in order to stay inside the band. Their point is answered rather than overwritten.
+
+**PR #17 MERGED** — https://github.com/karagemop466-tech/Olbg7/pull/17, merge commit `13b3114`, merged 2026-10-27T05:34Z.
+GitHub Pages rebuilt from `main` / (status `built`) and the live site was read back with a cache-buster:
+`/` serves the new dashboard (52 written predictions, 7 high confidence, 146 markets priced, 16 flags, the 70%+ club
+table), `/board/basketball.html` serves the picks table, the 27-market pricing table and the writeups with their
+source links, and `/sports/basketball.html`, `/olbg-tips/index.html` and `/docs/index.html` all still resolve.
+One display fix went in immediately after (the hero counted 51 written predictions while the KPI panel said 52, and
+the per-sport pick table sorted by confidence instead of by label); it is a rendering change only, no data moved.
