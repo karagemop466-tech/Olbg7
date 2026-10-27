@@ -711,3 +711,63 @@ here rather than acted on unilaterally.
 internal links**; the v3 build reproduces from
 `scripts/v3_{events,pricing,picks,flags,build}.py` with 0 broken links and 0
 dangling anchors.
+
+---
+
+## Final record — session `arena/254c7925` (PRs #42 and #44, both merged)
+
+| Item | Result |
+| --- | --- |
+| PR #42 | https://github.com/karagemop466-tech/Olbg7/pull/42 — **merged**, merge commit `88b5af5` |
+| PR #44 | https://github.com/karagemop466-tech/Olbg7/pull/44 — **merged**, merge commit `c9cca34` |
+| CI | `verify` **pass** on both PRs; `mergeable_state=clean` before each merge. Every step reproduced locally first: determinism `git diff --exit-code` clean, `verify_oct27.py`, `check_today.py`, `link_check.py`, `check_board.py` all exit 0, node freshness tests 5 pass / 0 fail |
+| Pages deploy | `pages build and deployment` for `c9cca34` returned **built** |
+| Live check | `https://karagemop466-tech.github.io/Olbg7/v3/index.html` serves the executive summary with all 6 KPIs, the 19-row high-confidence table and the full prose for each. `v3/sports/golf.html` re-fetched with a cache-buster after the deploy and confirmed showing the corrected "1 priced by us" and the Clark +481 origination. A first fetch returned the CDN's stale pre-fix artefact; the rebuilt page served correctly once the deploy finished |
+| Namespace | `/v3/` — 22 pages. The repo root and every other session's board are untouched apart from one additive nav entry |
+
+### Delivered
+
+| | |
+| --- | --- |
+| Markets swept | **115** across all 15 sports, from `olbg.com/betting-tips` on 2026-10-27 |
+| Lines originated | **103** priced, **12** left blank for want of a confirmed field size, **100** inside −250…+10000 |
+| Written picks | **65** — exactly 5 per sport for all 13 tip-able sports. 19 HIGH / 36 MEDIUM / 10 LOW |
+| Prose | shortest 91 words, longest 164 (floor is 30). 0 occurrences of "model" or "verified", enforced by a gate in `scripts/v3_picks.py` |
+| Flags | **31** irregularities plus 33 per-pick flags, every one carrying sources |
+| Sources | **138** distinct official URLs across 58 hosts |
+| Raw findings | `data/v3/raw/verified-facts-part{1,2,3}.md` |
+| Reproducible | `scripts/v3_events.py → v3_pricing.py → v3_picks.py → v3_flags.py → v3_build.py` |
+
+### Conflict resolution (PR #42)
+
+`main` advanced by **83 commits** from four other sessions while #42 was open, and merging
+produced **51 conflicts** across the repo root and all 15 `sports/*.html`. The merge was aborted
+and the branch reset onto `origin/main` so that **not one line of any other session's work was
+discarded**; the v3 deliverables were restored and rebuilt into `v3/`.
+
+The root nav link had to go into `tools/oct27/build_oct27_site.py` rather than being hand-added to
+`index.html`, because `pages.yml` regenerates the root dashboard and fails on any diff — a
+hand-edited `index.html` can never pass. The change is one extra `nav_items` entry; the only diff
+across their 21 regenerated pages is that single `<a>`.
+
+### Defects found after deploy (PR #44)
+
+Caught by reading the deployed pages rather than trusting the build:
+
+1. The engine writes Track R line maps under `orig_lines`; the builder looked for `lines`. Where
+   OLBG tips exist a row keeps its Track T headline with Track R attached in parallel, so **29 rows
+   silently dropped the price we actually originated**. The Golf page claimed "0 priced by us"
+   while the card above it showed Clark +481. Corrected totals: 103 priced (was 95), 12 blank (was
+   20), 100 in band (was 91).
+2. `TIER_LABEL` values held the entity `&middot;` but were passed through the escaper, so every
+   tier pill printed the literal text.
+3. Biarritz −161 on the pick card against the engine's −162 for the same p=0.618. Aligned to the
+   engine, since the engine is what reproduces.
+
+### Note for whoever integrates next
+
+The brief asked for the older boards to be moved under `archive/` and the root repointed. This
+session did **not** do that: by merge time four other sessions had published their own boards at
+the root (`oct27/`, `desk/`, `board/`, `value-desk/`, `legacy-calc1/`, `legacy-cal4/`), and
+consolidating seven boards into one front door is a decision that spans all of them. It is logged
+here rather than acted on unilaterally. `v3/archive.html` links out to all of them.
